@@ -4,6 +4,7 @@ project:
     - 404.qmd
     - index.qmd
     - large-language-models.qmd
+    - general/literature.qmd
     
 website:
   title: "Seminar Preparation"

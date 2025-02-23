@@ -1,5 +1,5 @@
 ---
-title: "Working with Large Language Models!"
+title: "Working with Large Language Models"
 subtitle: "University of Hamburg - Spring 2025"
 author: "Dr. Tobias Vlćek"
 
@@ -16,18 +16,24 @@ html:
     code-block-border-left: "#AD1F00"
 ---
 
-# Welcome to today's short workshop on Large Language Models!
+# Welcome to today's short workshop!
 
 In this workshop, we'll explore the world of Large Language Models (LLMs). You've probably already interacted with LLMs - think ChatGPT, Google's Gemini, or Claude. But how do they *actually* work on a high level, and what can we do with them?
 
 ## What is an LLM? (And Why Should You Care?)
 
-Before diving into the technical details, let's get a high-level understanding.  LLMs are a type of Artificial Intelligence (AI), specifically within the field of Natural Language Processing (NLP). They're designed to understand, generate, and interact with human language.
+Before diving into the technical details, let's get a high-level understanding. LLMs are a type of Artificial Intelligence (AI), specifically within the field of Natural Language Processing (NLP). They're designed to understand, generate, and interact with human language in ways that can seem remarkably human-like.
 
 ::: {.callout-tip}
+**Why should you care?** LLMs are rapidly transforming how we:
+- Write and edit content
+- Develop software
+- Conduct research
+- Analyze data
+- Automate tasks
+- Learn new concepts
 
-**Why should you care?** LLMs are rapidly changing how we interact with technology and information.  Understanding them is becoming increasingly important in many fields, from software development to research to creative writing.
-
+Understanding these tools is becoming essential across nearly every professional field.
 :::
 
 ## A Great Overview: 3Blue1Brown
@@ -163,11 +169,25 @@ Training an LLM is like teaching a child a language, but on a colossal scale.
 
 ## The Training Process
 
-LLMs learn by being fed massive datasets of text and code. The basic process is:
+LLMs learn through a process called "pre-training" on massive datasets of text and code. Here's how it works:
 
-1. **Input:** The model receives a sequence of tokens.
-2. **Prediction:** It's asked to predict the *next* token in the sequence.
-3. **Adjustment:** The model compares its prediction to the actual next token and adjusts its internal parameters to minimize the error.  This is how it learns the statistical patterns of language.
+1. **Input Processing:** 
+   - The model receives a sequence of tokens
+   - Text is broken down into smaller units (words, subwords, or characters)
+
+2. **Prediction Task:** 
+   - Given a sequence, predict what comes next
+   - This is like filling in the blank: "The cat sat on the ___"
+
+3. **Learning Loop:**
+   - Make a prediction
+   - Compare with actual answer
+   - Adjust internal parameters
+   - Repeat billions of times
+
+::: {.callout-note}
+This process requires enormous computational resources - training a large model can cost millions of dollars in computing power!
+:::
 
 ## Computational Power and Parallelism
 
@@ -316,12 +336,18 @@ However, running LLMs locally requires understanding the hardware requirements a
 
 ## Hardware Requirements: RAM, CPU, and GPU
 
-Running LLMs locally requires sufficient computing resources. The key factors are:
+Running LLMs locally requires sufficient computing resources:
 
-* **RAM:** This is *crucial*. The entire LLM (its parameters) needs to be loaded into RAM to run fast. Larger models require more RAM. *Minimum* 8GB, but 16GB or more is recommended for a good experience. 32GB+ is ideal for larger models.
-* **CPU:** While GPUs are generally preferred, smaller LLMs (under 7B parameters, see below) can often run reasonably well on a modern CPU, especially if you have enough RAM. A faster CPU will improve performance!
-* **GPU:** GPUs are *much* better suited for the parallel processing required by LLMs. The more VRAM (video RAM) your GPU has, the larger the models you can run.
-* **Disk Space:** LLMs can take up a quite a lot of disk space (several gigabytes). Make sure you have enough free space.
+| Component | Requirement | Notes |
+|-----------|-------------|--------|
+| RAM | Minimum 8GB | - 16GB recommended<br>- 32GB+ for larger models |
+| CPU | Modern multi-core | - Can run smaller models (< 7B params)<br>- Faster = better performance |
+| GPU | VRAM dependent | - More VRAM = larger models<br>- NVIDIA GPUs preferred |
+| Storage | 10GB+ free | - Models can be several GB each |
+
+::: {.callout-warning}
+**Performance Note:** While you can run some models on CPU-only systems, the experience may be significantly slower than with a GPU.
+:::
 
 ## Model Sizes: Billions of Parameters (B)
 
