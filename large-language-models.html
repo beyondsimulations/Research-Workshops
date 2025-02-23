@@ -8,7 +8,7 @@
 
 <meta name="author" content="Dr.&nbsp;Tobias Vlćek">
 
-<title>Working with Large Language Models! – Seminar Preparation</title>
+<title>Working with Large Language Models – Seminar Preparation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -135,7 +135,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#welcome-to-todays-short-workshop-on-large-language-models" id="toc-welcome-to-todays-short-workshop-on-large-language-models" class="nav-link active" data-scroll-target="#welcome-to-todays-short-workshop-on-large-language-models">Welcome to today’s short workshop on Large Language Models!</a>
+  <li><a href="#welcome-to-todays-short-workshop" id="toc-welcome-to-todays-short-workshop" class="nav-link active" data-scroll-target="#welcome-to-todays-short-workshop">Welcome to today’s short workshop!</a>
   <ul class="collapse">
   <li><a href="#what-is-an-llm-and-why-should-you-care" id="toc-what-is-an-llm-and-why-should-you-care" class="nav-link" data-scroll-target="#what-is-an-llm-and-why-should-you-care">What is an LLM? (And Why Should You Care?)</a></li>
   <li><a href="#a-great-overview-3blue1brown" id="toc-a-great-overview-3blue1brown" class="nav-link" data-scroll-target="#a-great-overview-3blue1brown">A Great Overview: 3Blue1Brown</a></li>
@@ -197,7 +197,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Working with Large Language Models!</h1>
+<h1 class="title">Working with Large Language Models</h1>
 <p class="subtitle lead">University of Hamburg - Spring 2025</p>
 </div>
 
@@ -221,12 +221,12 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="welcome-to-todays-short-workshop-on-large-language-models" class="level1">
-<h1>Welcome to today’s short workshop on Large Language Models!</h1>
+<section id="welcome-to-todays-short-workshop" class="level1">
+<h1>Welcome to today’s short workshop!</h1>
 <p>In this workshop, we’ll explore the world of Large Language Models (LLMs). You’ve probably already interacted with LLMs - think ChatGPT, Google’s Gemini, or Claude. But how do they <em>actually</em> work on a high level, and what can we do with them?</p>
 <section id="what-is-an-llm-and-why-should-you-care" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-an-llm-and-why-should-you-care">What is an LLM? (And Why Should You Care?)</h2>
-<p>Before diving into the technical details, let’s get a high-level understanding. LLMs are a type of Artificial Intelligence (AI), specifically within the field of Natural Language Processing (NLP). They’re designed to understand, generate, and interact with human language.</p>
+<p>Before diving into the technical details, let’s get a high-level understanding. LLMs are a type of Artificial Intelligence (AI), specifically within the field of Natural Language Processing (NLP). They’re designed to understand, generate, and interact with human language in ways that can seem remarkably human-like.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -237,7 +237,8 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>Why should you care?</strong> LLMs are rapidly changing how we interact with technology and information. Understanding them is becoming increasingly important in many fields, from software development to research to creative writing.</p>
+<p><strong>Why should you care?</strong> LLMs are rapidly transforming how we: - Write and edit content - Develop software - Conduct research - Analyze data - Automate tasks - Learn new concepts</p>
+<p>Understanding these tools is becoming essential across nearly every professional field.</p>
 </div>
 </div>
 </section>
@@ -371,19 +372,6 @@ Tip
 <li><p><strong>Analogy:</strong> Think of a large company with different departments (marketing, sales, engineering). When a new project comes in, a manager (gating network) decides which departments need to be involved based on the project’s requirements.</p></li>
 <li><p><strong>Key Feature:</strong> Allows for efficient scaling to very large models and datasets, as only a subset of experts are activated for each input. This improves performance and reduces computational cost. Some large chatbot models may also use MoE to improve their capabilities.</p></li>
 </ul>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>Chatbots (like ChatGPT, Gemini, Claude):</strong> Most modern conversational AI systems are built using the <strong>decoder-only</strong> architecture. This is because a chatbot’s primary job is to <em>generate</em> responses in a conversation. The decoder takes the conversation history (the “context”) as input and generates the next turn in the conversation. The model is trained to predict the most likely next utterance given the preceding conversation. This is why they can maintain context and engage in (relatively) coherent dialogue.</p>
-</div>
-</div>
 </section>
 </section>
 </section>
@@ -392,12 +380,39 @@ Tip
 <p>Training an LLM is like teaching a child a language, but on a colossal scale.</p>
 <section id="the-training-process" class="level2">
 <h2 class="anchored" data-anchor-id="the-training-process">The Training Process</h2>
-<p>LLMs learn by being fed massive datasets of text and code. The basic process is:</p>
+<p>LLMs learn through a process called “pre-training” on massive datasets of text and code. Here’s how it works:</p>
 <ol type="1">
-<li><strong>Input:</strong> The model receives a sequence of tokens.</li>
-<li><strong>Prediction:</strong> It’s asked to predict the <em>next</em> token in the sequence.</li>
-<li><strong>Adjustment:</strong> The model compares its prediction to the actual next token and adjusts its internal parameters to minimize the error. This is how it learns the statistical patterns of language.</li>
+<li><strong>Input Processing:</strong>
+<ul>
+<li>The model receives a sequence of tokens</li>
+<li>Text is broken down into smaller units (words, subwords, or characters)</li>
+</ul></li>
+<li><strong>Prediction Task:</strong>
+<ul>
+<li>Given a sequence, predict what comes next</li>
+<li>This is like filling in the blank: “The cat sat on the ___”</li>
+</ul></li>
+<li><strong>Learning Loop:</strong>
+<ul>
+<li>Make a prediction</li>
+<li>Compare with actual answer</li>
+<li>Adjust internal parameters</li>
+<li>Repeat billions of times</li>
+</ul></li>
 </ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This process requires enormous computational resources - training a large model can cost millions of dollars in computing power!</p>
+</div>
+</div>
 </section>
 <section id="computational-power-and-parallelism" class="level2">
 <h2 class="anchored" data-anchor-id="computational-power-and-parallelism">Computational Power and Parallelism</h2>
@@ -559,13 +574,56 @@ Tip
 </section>
 <section id="hardware-requirements-ram-cpu-and-gpu" class="level2">
 <h2 class="anchored" data-anchor-id="hardware-requirements-ram-cpu-and-gpu">Hardware Requirements: RAM, CPU, and GPU</h2>
-<p>Running LLMs locally requires sufficient computing resources. The key factors are:</p>
-<ul>
-<li><strong>RAM:</strong> This is <em>crucial</em>. The entire LLM (its parameters) needs to be loaded into RAM to run fast. Larger models require more RAM. <em>Minimum</em> 8GB, but 16GB or more is recommended for a good experience. 32GB+ is ideal for larger models.</li>
-<li><strong>CPU:</strong> While GPUs are generally preferred, smaller LLMs (under 7B parameters, see below) can often run reasonably well on a modern CPU, especially if you have enough RAM. A faster CPU will improve performance!</li>
-<li><strong>GPU:</strong> GPUs are <em>much</em> better suited for the parallel processing required by LLMs. The more VRAM (video RAM) your GPU has, the larger the models you can run.</li>
-<li><strong>Disk Space:</strong> LLMs can take up a quite a lot of disk space (several gigabytes). Make sure you have enough free space.</li>
-</ul>
+<p>Running LLMs locally requires sufficient computing resources:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 34%">
+<col style="width: 40%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Component</th>
+<th>Requirement</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>RAM</td>
+<td>Minimum 8GB</td>
+<td>- 16GB recommended<br>- 32GB+ for larger models</td>
+</tr>
+<tr class="even">
+<td>CPU</td>
+<td>Modern multi-core</td>
+<td>- Can run smaller models (&lt; 7B params)<br>- Faster = better performance</td>
+</tr>
+<tr class="odd">
+<td>GPU</td>
+<td>VRAM dependent</td>
+<td>- More VRAM = larger models<br>- NVIDIA GPUs preferred</td>
+</tr>
+<tr class="even">
+<td>Storage</td>
+<td>10GB+ free</td>
+<td>- Models can be several GB each</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Performance Note:</strong> While you can run some models on CPU-only systems, the experience may be significantly slower than with a GPU.</p>
+</div>
+</div>
 </section>
 <section id="model-sizes-billions-of-parameters-b" class="level2">
 <h2 class="anchored" data-anchor-id="model-sizes-billions-of-parameters-b">Model Sizes: Billions of Parameters (B)</h2>

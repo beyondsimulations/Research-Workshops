@@ -82,9 +82,9 @@
   {
     "objectID": "large-language-models.html",
     "href": "large-language-models.html",
-    "title": "Working with Large Language Models!",
+    "title": "Working with Large Language Models",
     "section": "",
-    "text": "In this workshop, we’ll explore the world of Large Language Models (LLMs). You’ve probably already interacted with LLMs - think ChatGPT, Google’s Gemini, or Claude. But how do they actually work on a high level, and what can we do with them?\n\n\nBefore diving into the technical details, let’s get a high-level understanding. LLMs are a type of Artificial Intelligence (AI), specifically within the field of Natural Language Processing (NLP). They’re designed to understand, generate, and interact with human language.\n\n\n\n\n\n\nTip\n\n\n\nWhy should you care? LLMs are rapidly changing how we interact with technology and information. Understanding them is becoming increasingly important in many fields, from software development to research to creative writing.\n\n\n\n\n\nGreg Sanderson provides an excellent, concise explanation of LLMs in this video. It’s a great starting point. (If you’re curious to learn more, check out his YouTube channel, 3Blue1Brown).\n\n\n\n\nIn this workshop, we’ll cover:\n\nThe fundamental principles behind how LLMs work.\nThe process of training these powerful models.\nThe limitations and ethical considerations of LLMs.\nPractical applications, including pair-programming.\nHow to use LLMs with your own data (Retrieval Augmented Generation).\nFurther resources and tools.",
+    "text": "In this workshop, we’ll explore the world of Large Language Models (LLMs). You’ve probably already interacted with LLMs - think ChatGPT, Google’s Gemini, or Claude. But how do they actually work on a high level, and what can we do with them?\n\n\nBefore diving into the technical details, let’s get a high-level understanding. LLMs are a type of Artificial Intelligence (AI), specifically within the field of Natural Language Processing (NLP). They’re designed to understand, generate, and interact with human language in ways that can seem remarkably human-like.\n\n\n\n\n\n\nTip\n\n\n\nWhy should you care? LLMs are rapidly transforming how we: - Write and edit content - Develop software - Conduct research - Analyze data - Automate tasks - Learn new concepts\nUnderstanding these tools is becoming essential across nearly every professional field.\n\n\n\n\n\nGreg Sanderson provides an excellent, concise explanation of LLMs in this video. It’s a great starting point. (If you’re curious to learn more, check out his YouTube channel, 3Blue1Brown).\n\n\n\n\nIn this workshop, we’ll cover:\n\nThe fundamental principles behind how LLMs work.\nThe process of training these powerful models.\nThe limitations and ethical considerations of LLMs.\nPractical applications, including pair-programming.\nHow to use LLMs with your own data (Retrieval Augmented Generation).\nFurther resources and tools.",
     "crumbs": [
       "Large Language Models"
     ]
@@ -92,9 +92,9 @@
   {
     "objectID": "large-language-models.html#what-is-an-llm-and-why-should-you-care",
     "href": "large-language-models.html#what-is-an-llm-and-why-should-you-care",
-    "title": "Working with Large Language Models!",
+    "title": "Working with Large Language Models",
     "section": "",
-    "text": "Before diving into the technical details, let’s get a high-level understanding. LLMs are a type of Artificial Intelligence (AI), specifically within the field of Natural Language Processing (NLP). They’re designed to understand, generate, and interact with human language.\n\n\n\n\n\n\nTip\n\n\n\nWhy should you care? LLMs are rapidly changing how we interact with technology and information. Understanding them is becoming increasingly important in many fields, from software development to research to creative writing.",
+    "text": "Before diving into the technical details, let’s get a high-level understanding. LLMs are a type of Artificial Intelligence (AI), specifically within the field of Natural Language Processing (NLP). They’re designed to understand, generate, and interact with human language in ways that can seem remarkably human-like.\n\n\n\n\n\n\nTip\n\n\n\nWhy should you care? LLMs are rapidly transforming how we: - Write and edit content - Develop software - Conduct research - Analyze data - Automate tasks - Learn new concepts\nUnderstanding these tools is becoming essential across nearly every professional field.",
     "crumbs": [
       "Large Language Models"
     ]
@@ -102,7 +102,7 @@
   {
     "objectID": "large-language-models.html#a-great-overview-3blue1brown",
     "href": "large-language-models.html#a-great-overview-3blue1brown",
-    "title": "Working with Large Language Models!",
+    "title": "Working with Large Language Models",
     "section": "",
     "text": "Greg Sanderson provides an excellent, concise explanation of LLMs in this video. It’s a great starting point. (If you’re curious to learn more, check out his YouTube channel, 3Blue1Brown).",
     "crumbs": [
@@ -112,7 +112,7 @@
   {
     "objectID": "large-language-models.html#key-concepts-what-youll-learn",
     "href": "large-language-models.html#key-concepts-what-youll-learn",
-    "title": "Working with Large Language Models!",
+    "title": "Working with Large Language Models",
     "section": "",
     "text": "In this workshop, we’ll cover:\n\nThe fundamental principles behind how LLMs work.\nThe process of training these powerful models.\nThe limitations and ethical considerations of LLMs.\nPractical applications, including pair-programming.\nHow to use LLMs with your own data (Retrieval Augmented Generation).\nFurther resources and tools.",
     "crumbs": [
@@ -122,7 +122,7 @@
   {
     "objectID": "large-language-models.html#deep-learning-and-text-data",
     "href": "large-language-models.html#deep-learning-and-text-data",
-    "title": "Working with Large Language Models!",
+    "title": "Working with Large Language Models",
     "section": "Deep Learning and Text Data",
     "text": "Deep Learning and Text Data\nAt their core, LLMs are deep learning models. This means they’re built using artificial neural networks with many layers (hence “deep”). They’re trained on enormous amounts of text data - think the internet, books, articles, code, and more!\nThis training allows them to learn the statistical patterns of language. Essentially, they become incredibly good at predicting the probability of a sequence of words. This ability is the foundation for many tasks, such as:\n\nText Generation: Creating new text that’s similar in style and content to the training data.\nTranslation: Converting text from one language to another.\nSummarization: Condensing large amounts of text into shorter summaries.\nQuestion Answering: Providing answers to questions based on the information they’ve learned.\nSentiment Analysis: Determining the emotional tone of a piece of text.",
     "crumbs": [
@@ -132,7 +132,7 @@
   {
     "objectID": "large-language-models.html#the-transformer-a-key-innovation",
     "href": "large-language-models.html#the-transformer-a-key-innovation",
-    "title": "Working with Large Language Models!",
+    "title": "Working with Large Language Models",
     "section": "The Transformer: A Key Innovation",
     "text": "The Transformer: A Key Innovation\nThe magic behind modern LLMs lies in a specific type of neural network architecture called the transformer model. Introduced in the paper “Attention is All You Need” (Vaswani et al., 2017), transformers changed what was possible in NLP.\nHow Transformers Work (Simplified):\n\nTokenization: The input text is broken down into smaller units called tokens (more on this later).\nMathematical Relationships: The transformer uses mathematical equations to identify relationships between these tokens, understanding how words and phrases connect within a sentence and across larger contexts.\nAttention Mechanism: This is the crucial part. The attention mechanism allows the model to focus on the most relevant parts of the input when generating output. It’s like paying attention to the most important words in a sentence to understand its meaning.\n\nExample: The Power of Attention\nConsider the sentence: “The cat sat on the mat because it was warm.”\nThe attention mechanism helps the LLM understand that “it” refers to “the mat,” not “the cat,” by considering the context provided by the surrounding words and their relationships.",
     "crumbs": [
@@ -142,7 +142,7 @@
   {
     "objectID": "large-language-models.html#tokens-the-building-blocks-of-language",
     "href": "large-language-models.html#tokens-the-building-blocks-of-language",
-    "title": "Working with Large Language Models!",
+    "title": "Working with Large Language Models",
     "section": "Tokens: The Building Blocks of Language",
     "text": "Tokens: The Building Blocks of Language\nLLMs don’t process text as whole words. Instead, they break it down into tokens. A token can be:\n\nA whole word (e.g., “cat”)\nA subword (e.g., “un-”, “break”, “-able” for “unbreakable”)\nEven individual characters\n\nWhy use tokens?\n\nHandles Unknown Words: The LLM can still process words it hasn’t seen before by breaking them down into known subword units.\nEfficiency: It’s more efficient to learn relationships between tokens than between every possible word.\n\nChallenges with Tokenization:\nTokenization can be tricky, especially for languages that don’t use spaces to separate words (like Chinese or Japanese). Current tokenization methods often work better for languages with similar scripts (like English, Spanish, French), potentially disadvantaging others. This is an area of ongoing research.\n\n\n\n\n\n\nNote\n\n\n\nThink about this: How might this impact the fairness and inclusivity of LLMs?",
     "crumbs": [
@@ -152,7 +152,7 @@
   {
     "objectID": "large-language-models.html#context-window-the-llms-memory",
     "href": "large-language-models.html#context-window-the-llms-memory",
-    "title": "Working with Large Language Models!",
+    "title": "Working with Large Language Models",
     "section": "Context Window: The LLM’s “Memory”",
     "text": "Context Window: The LLM’s “Memory”\nThe context window is like the LLM’s short-term memory. It refers to the number of tokens the model can process at once. A larger context window means the LLM can “remember” more of the conversation or document, leading to more coherent and contextually relevant responses.\n\nLonger Context Window = More information considered, but also more computational resources needed (and potentially less coherence if too long).\nShorter Context Window = Faster processing, but the LLM might lose track of earlier parts of the conversation.\n\n\n\n\n\n\n\nTip\n\n\n\nThere is a trade-off between the context window and the size of the model. A larger model can usually handle a larger context window, but it will also take more computational resources to run.",
     "crumbs": [
@@ -162,7 +162,7 @@
   {
     "objectID": "large-language-models.html#encoder-decoder",
     "href": "large-language-models.html#encoder-decoder",
-    "title": "Working with Large Language Models!",
+    "title": "Working with Large Language Models",
     "section": "Encoder-Decoder",
     "text": "Encoder-Decoder\n\nHow it works: The encoder processes the input text and transforms it into a condensed representation (a “thought vector”). The decoder then takes this representation and generates the output text. It’s a two-step process: understand, then create.\nAnalogy: Imagine translating a sentence from English to German. You first need to understand the English sentence (encoder). Then, you construct the German sentence (decoder).\nKey Feature: Excellent for tasks where the input and output are different sequences of text.",
     "crumbs": [
@@ -172,7 +172,7 @@
   {
     "objectID": "large-language-models.html#encoder-only",
     "href": "large-language-models.html#encoder-only",
-    "title": "Working with Large Language Models!",
+    "title": "Working with Large Language Models",
     "section": "Encoder-Only",
     "text": "Encoder-Only\n\nHow it works: This architecture focuses solely on understanding the input. It processes the input and creates a rich representation of its meaning.\nAnalogy: Think of a detective analyzing a crime scene. They gather all the clues (input) to build a complete picture of what happened, but they don’t necessarily write a long report (output).\nKey Feature: Great for tasks where the goal is to classify or extract information from the input.",
     "crumbs": [
@@ -182,9 +182,9 @@
   {
     "objectID": "large-language-models.html#decoder-only",
     "href": "large-language-models.html#decoder-only",
-    "title": "Working with Large Language Models!",
+    "title": "Working with Large Language Models",
     "section": "Decoder-Only",
-    "text": "Decoder-Only\n\nHow it works: This architecture focuses on generating text. It takes a starting point (a prompt, or the history of a conversation) and predicts the next most likely word, then the next, and so on, building up the output sequence.\nAnalogy: Imagine a creative writer starting with a single sentence and then continuing to write a story, one sentence at a time. Or, think of a conversation: each response builds upon the previous turns.\nKey Feature: Ideal for tasks where you need the LLM to create original text.\n\n\n3.1.4 Mixture of Experts (MoE)\n\nHow it works: Instead of one large model, MoE uses multiple smaller “expert” models. Each expert specializes in a different aspect of the task. A “gating network” decides which expert(s) to use for a given input.\nAnalogy: Think of a large company with different departments (marketing, sales, engineering). When a new project comes in, a manager (gating network) decides which departments need to be involved based on the project’s requirements.\nKey Feature: Allows for efficient scaling to very large models and datasets, as only a subset of experts are activated for each input. This improves performance and reduces computational cost. Some large chatbot models may also use MoE to improve their capabilities.\n\n\n\n\n\n\n\nTip\n\n\n\nChatbots (like ChatGPT, Gemini, Claude): Most modern conversational AI systems are built using the decoder-only architecture. This is because a chatbot’s primary job is to generate responses in a conversation. The decoder takes the conversation history (the “context”) as input and generates the next turn in the conversation. The model is trained to predict the most likely next utterance given the preceding conversation. This is why they can maintain context and engage in (relatively) coherent dialogue.",
+    "text": "Decoder-Only\n\nHow it works: This architecture focuses on generating text. It takes a starting point (a prompt, or the history of a conversation) and predicts the next most likely word, then the next, and so on, building up the output sequence.\nAnalogy: Imagine a creative writer starting with a single sentence and then continuing to write a story, one sentence at a time. Or, think of a conversation: each response builds upon the previous turns.\nKey Feature: Ideal for tasks where you need the LLM to create original text.\n\n\n3.1.4 Mixture of Experts (MoE)\n\nHow it works: Instead of one large model, MoE uses multiple smaller “expert” models. Each expert specializes in a different aspect of the task. A “gating network” decides which expert(s) to use for a given input.\nAnalogy: Think of a large company with different departments (marketing, sales, engineering). When a new project comes in, a manager (gating network) decides which departments need to be involved based on the project’s requirements.\nKey Feature: Allows for efficient scaling to very large models and datasets, as only a subset of experts are activated for each input. This improves performance and reduces computational cost. Some large chatbot models may also use MoE to improve their capabilities.",
     "crumbs": [
       "Large Language Models"
     ]
@@ -192,9 +192,9 @@
   {
     "objectID": "large-language-models.html#the-training-process",
     "href": "large-language-models.html#the-training-process",
-    "title": "Working with Large Language Models!",
+    "title": "Working with Large Language Models",
     "section": "The Training Process",
-    "text": "The Training Process\nLLMs learn by being fed massive datasets of text and code. The basic process is:\n\nInput: The model receives a sequence of tokens.\nPrediction: It’s asked to predict the next token in the sequence.\nAdjustment: The model compares its prediction to the actual next token and adjusts its internal parameters to minimize the error. This is how it learns the statistical patterns of language.",
+    "text": "The Training Process\nLLMs learn through a process called “pre-training” on massive datasets of text and code. Here’s how it works:\n\nInput Processing:\n\nThe model receives a sequence of tokens\nText is broken down into smaller units (words, subwords, or characters)\n\nPrediction Task:\n\nGiven a sequence, predict what comes next\nThis is like filling in the blank: “The cat sat on the ___”\n\nLearning Loop:\n\nMake a prediction\nCompare with actual answer\nAdjust internal parameters\nRepeat billions of times\n\n\n\n\n\n\n\n\nNote\n\n\n\nThis process requires enormous computational resources - training a large model can cost millions of dollars in computing power!",
     "crumbs": [
       "Large Language Models"
     ]
@@ -202,7 +202,7 @@
   {
     "objectID": "large-language-models.html#computational-power-and-parallelism",
     "href": "large-language-models.html#computational-power-and-parallelism",
-    "title": "Working with Large Language Models!",
+    "title": "Working with Large Language Models",
     "section": "Computational Power and Parallelism",
     "text": "Computational Power and Parallelism\nBecause LLMs are so large and the datasets are so vast, training requires immense computational power. This is where specialized hardware like GPUs (Graphics Processing Units) comes in.\nModel Parallelism: To speed up training, developers use model parallelism, which distributes parts of the model across multiple GPUs. This allows for parallel processing, making training much more efficient. (This is a major reason why Nvidia’s stock has skyrocketed in recent years!)",
     "crumbs": [
@@ -212,7 +212,7 @@
   {
     "objectID": "large-language-models.html#training-phases",
     "href": "large-language-models.html#training-phases",
-    "title": "Working with Large Language Models!",
+    "title": "Working with Large Language Models",
     "section": "Training Phases",
     "text": "Training Phases\nThe training process is often divided into phases:\n\nSelf-Supervised Learning:\n\nThe model is trained on a massive dataset without explicit labels.\nIt learns to predict the next token, essentially learning the basic rules and patterns of the language.\nThis is like learning grammar and vocabulary by reading lots of books.\n\nSupervised Fine-tuning:\n\nThe model is trained on a smaller, labeled dataset for specific tasks (e.g., a dataset of questions and answers).\nThis helps it specialize in tasks like question answering or summarization.\nThis is like taking a specialized course after learning the basics.\n\nReinforcement Learning from Human Feedback (RLHF):\n\nHuman feedback is used to refine the model’s output, making it more helpful, honest, and harmless.\nThis helps the model learn to generate text that is more aligned with human preferences.\nThis is like getting feedback from a teacher to improve your writing.",
     "crumbs": [
@@ -222,7 +222,7 @@
   {
     "objectID": "large-language-models.html#bias-a-reflection-of-the-data",
     "href": "large-language-models.html#bias-a-reflection-of-the-data",
-    "title": "Working with Large Language Models!",
+    "title": "Working with Large Language Models",
     "section": "Bias: A Reflection of the Data",
     "text": "Bias: A Reflection of the Data\nLLMs can exhibit biases (gender, racial, cultural, etc.) because they learn from the data they’re trained on. If the training data contains biases, the model will likely reflect those biases in its output.\nExample: If an LLM is trained mostly on text written by men, it might generate text that reflects male perspectives or stereotypes.\nImpact of Bias:\n\nUnfair or discriminatory outcomes.\nReinforcement of harmful stereotypes.\nErosion of trust in AI systems.\n\nMitigating Bias:\n\nData Curation: Carefully selecting and diversifying training data is essential. This means including data from different demographics, languages, and cultures.\nModel Fine-tuning: Training the model on datasets specifically designed to counteract bias.\nAuditing and Evaluation: Rigorously testing models for bias.",
     "crumbs": [
@@ -232,7 +232,7 @@
   {
     "objectID": "large-language-models.html#adversarial-attacks-tricking-the-model",
     "href": "large-language-models.html#adversarial-attacks-tricking-the-model",
-    "title": "Working with Large Language Models!",
+    "title": "Working with Large Language Models",
     "section": "Adversarial Attacks: Tricking the Model",
     "text": "Adversarial Attacks: Tricking the Model\nAdversarial attacks involve making small, often imperceptible changes to the input to intentionally mislead the LLM. These changes exploit the model’s vulnerabilities.\nExample: Slightly changing the wording of a prompt might cause the LLM to generate a biased, harmful, or nonsensical response.\nWhy is this a problem? Adversarial attacks can be used to manipulate LLMs for malicious purposes, spreading misinformation or generating harmful content.",
     "crumbs": [
@@ -242,7 +242,7 @@
   {
     "objectID": "large-language-models.html#ethical-implications-a-broader-view",
     "href": "large-language-models.html#ethical-implications-a-broader-view",
-    "title": "Working with Large Language Models!",
+    "title": "Working with Large Language Models",
     "section": "Ethical Implications: A Broader View",
     "text": "Ethical Implications: A Broader View\nBeyond bias and attacks, LLMs raise broader ethical concerns:\n\nJob Displacement: As LLMs become more capable, they could automate tasks currently done by humans, potentially leading to job losses. How can we prepare for this shift?\nMisinformation: LLMs can generate realistic but fake news articles, social media posts, etc., with minimal human effort. How can we combat the spread of misinformation?\nMalicious Use: LLMs can be used to create deepfakes, generate harmful content, or spread propaganda. What safeguards are needed?\nPrivacy: LLMs can be trained on personal data. What regulations do we need in terms of data usage and privacy?\nAccountability: When a LLM generates text, it is not always clear who is responsible for the content. How can we hold LLM producers and users accountable?\nTransparency: It can be diffcult to understand the decision-making processes of LLMs. How can we make LLMs more transparent?\n\nAddressing these ethical concerns requires a multi-faceted approach involving researchers, policymakers, and the public.",
     "crumbs": [
@@ -252,7 +252,7 @@
   {
     "objectID": "large-language-models.html#pair-programming-with-llms-your-ai-coding-assistant",
     "href": "large-language-models.html#pair-programming-with-llms-your-ai-coding-assistant",
-    "title": "Working with Large Language Models!",
+    "title": "Working with Large Language Models",
     "section": "Pair Programming with LLMs: Your AI Coding Assistant",
     "text": "Pair Programming with LLMs: Your AI Coding Assistant\nPair programming is a software development technique where two programmers work together. One writes code, and the other reviews it and provides feedback. LLMs can act as your “AI pair programmer,” assisting with:\n\nCode Completion: Suggesting code snippets and completing lines of code.\nError Detection: Identifying potential bugs and suggesting fixes.\nCode Generation: Generating entire functions or code blocks based on your instructions.\nCode Explanation: Providing explanations of how code works.\nBest Practices: Suggesting improvements and best practices.\n\nTools for Pair Programming:\n\nGitHub Copilot: Integrates with Visual Studio Code and provides AI-powered code suggestions.\nCursor: A fork of Visual Studio Code with even more powerful AI features (in many users’ experience).\nZed: A code editor designed specifically for pair programming (with both LLMs and humans). Allows use of local and API-connected models.",
     "crumbs": [
@@ -262,7 +262,7 @@
   {
     "objectID": "large-language-models.html#tips-for-effective-pair-programming-with-llms",
     "href": "large-language-models.html#tips-for-effective-pair-programming-with-llms",
-    "title": "Working with Large Language Models!",
+    "title": "Working with Large Language Models",
     "section": "Tips for Effective Pair Programming with LLMs",
     "text": "Tips for Effective Pair Programming with LLMs\n\nStart Small: Begin with simple tasks like code completion. Gradually move to more complex tasks as you become more comfortable.\nBe Specific: Provide clear and concise instructions to the LLM. The more specific you are, the better the results.\nReview Carefully: Always review the code generated by an LLM. They can make mistakes!\nLearn from the LLM: Use LLMs to learn new coding techniques and explore different coding styles.\n\n\n\n\n\n\n\nTip\n\n\n\nManage Context: Be mindful of the context window. For longer codebases, the LLM might “forget” earlier parts of the code, leading to inconsistencies. Break down large tasks into smaller, more manageable chunks.",
     "crumbs": [
@@ -272,7 +272,7 @@
   {
     "objectID": "large-language-models.html#ollama-a-local-llm-manager",
     "href": "large-language-models.html#ollama-a-local-llm-manager",
-    "title": "Working with Large Language Models!",
+    "title": "Working with Large Language Models",
     "section": "Ollama: A Local LLM Manager",
     "text": "Ollama: A Local LLM Manager\nOllama is a free, open-source tool that simplifies the process of downloading, installing, and running LLMs on your computer (macOS, Linux, and Windows). It provides a command-line interface (CLI) and supports a wide variety of models.\nKey Features of Ollama:\n\nEasy Installation: Simple download and installation process.\nModel Management: Easily download and manage different LLMs from a curated library (including models from Hugging Face - more on this later in the links).\nCommand-Line Interface: Interact with LLMs using simple commands.\nAPI Server: Ollama can also act as a local API server, allowing you to integrate local LLMs into your applications.",
     "crumbs": [
@@ -282,9 +282,9 @@
   {
     "objectID": "large-language-models.html#hardware-requirements-ram-cpu-and-gpu",
     "href": "large-language-models.html#hardware-requirements-ram-cpu-and-gpu",
-    "title": "Working with Large Language Models!",
+    "title": "Working with Large Language Models",
     "section": "Hardware Requirements: RAM, CPU, and GPU",
-    "text": "Hardware Requirements: RAM, CPU, and GPU\nRunning LLMs locally requires sufficient computing resources. The key factors are:\n\nRAM: This is crucial. The entire LLM (its parameters) needs to be loaded into RAM to run fast. Larger models require more RAM. Minimum 8GB, but 16GB or more is recommended for a good experience. 32GB+ is ideal for larger models.\nCPU: While GPUs are generally preferred, smaller LLMs (under 7B parameters, see below) can often run reasonably well on a modern CPU, especially if you have enough RAM. A faster CPU will improve performance!\nGPU: GPUs are much better suited for the parallel processing required by LLMs. The more VRAM (video RAM) your GPU has, the larger the models you can run.\nDisk Space: LLMs can take up a quite a lot of disk space (several gigabytes). Make sure you have enough free space.",
+    "text": "Hardware Requirements: RAM, CPU, and GPU\nRunning LLMs locally requires sufficient computing resources:\n\n\n\n\n\n\n\n\nComponent\nRequirement\nNotes\n\n\n\n\nRAM\nMinimum 8GB\n- 16GB recommended- 32GB+ for larger models\n\n\nCPU\nModern multi-core\n- Can run smaller models (&lt; 7B params)- Faster = better performance\n\n\nGPU\nVRAM dependent\n- More VRAM = larger models- NVIDIA GPUs preferred\n\n\nStorage\n10GB+ free\n- Models can be several GB each\n\n\n\n\n\n\n\n\n\nWarning\n\n\n\nPerformance Note: While you can run some models on CPU-only systems, the experience may be significantly slower than with a GPU.",
     "crumbs": [
       "Large Language Models"
     ]
@@ -292,7 +292,7 @@
   {
     "objectID": "large-language-models.html#model-sizes-billions-of-parameters-b",
     "href": "large-language-models.html#model-sizes-billions-of-parameters-b",
-    "title": "Working with Large Language Models!",
+    "title": "Working with Large Language Models",
     "section": "Model Sizes: Billions of Parameters (B)",
     "text": "Model Sizes: Billions of Parameters (B)\nLLMs are often described by the number of parameters they have. Parameters are the internal values that the model learns during training. More parameters generally mean a more capable model, but also a larger model that requires more resources. Still, the size of the model is not the only thing that matters as the quality of the model depends on the quality of the training data, the training process, and the model architecture. Newer models are often more capable and require less resources than older models.\n\nSmall Models (under 7B): Can often run on CPUs with sufficient RAM (16GB+). Good for experimentation and less demanding tasks.\nMedium Models (7B - 13B): Benefit greatly from a GPU, but can sometimes run on a CPU with a lot of RAM (32GB+).\nLarge Models (30B+): Require a powerful GPU with significant VRAM.\nVery Large Models (70B+): Require high-end GPUs or multiple GPUs.\n\n\n\n\n\n\n\nTip\n\n\n\nThis is why you’ll often see model names like mistral:7b, codellama:34b, etc. The number followed by “b” indicates the billions of parameters.",
     "crumbs": [
@@ -302,7 +302,7 @@
   {
     "objectID": "large-language-models.html#quantization-making-models-smaller",
     "href": "large-language-models.html#quantization-making-models-smaller",
-    "title": "Working with Large Language Models!",
+    "title": "Working with Large Language Models",
     "section": "Quantization: Making Models Smaller",
     "text": "Quantization: Making Models Smaller\nQuantization is a technique used to reduce the size and computational requirements of LLMs “without significantly impacting performance”. It involves representing the model’s parameters (which are normally 32-bit floating-point numbers) with lower precision (e.g., 8-bit, 4-bit, or even 2-bit integers).\n\nBenefits of Quantization:\n\nSmaller Model Size: Reduces the amount of RAM and disk space needed.\nFaster Inference: Lower-precision calculations are faster.\nLower Power Consumption: Less demanding on your hardware.\n\nTrade-offs: There’s usually a small decrease in accuracy with quantization. The more aggressive the quantization (e.g., 2-bit), the greater the potential impact on performance.\nOllama and Quantization: Ollama supports quantized models downloaded from Hugging Face. Here are some examples of model names with suffixes like q4_0, q8_0, etc. These indicate the level of quantization:\n\nq4_0: 4-bit quantization (a good balance between size and quality).\nq8_0: 8-bit quantization (closer to the original model’s precision, larger size).\n\n\n\n\n\n\n\n\nTip\n\n\n\nThe different quantization levels can provide a different balance of speed, size, and quality. If you are really into LLMS, it’s worth experimenting to find the best option for your hardware and needs. For most users, the default model should be sufficient and quantized models are not needed.",
     "crumbs": [
@@ -312,7 +312,7 @@
   {
     "objectID": "large-language-models.html#getting-started-with-ollama",
     "href": "large-language-models.html#getting-started-with-ollama",
-    "title": "Working with Large Language Models!",
+    "title": "Working with Large Language Models",
     "section": "Getting Started with Ollama",
     "text": "Getting Started with Ollama\n\nDownload and Install Ollama: Go to ollama.com and follow the installation instructions for your operating system.\nPull a Model: Open your terminal (or command prompt) and use the ollama pull command to download a model. For example, to download the mistral:7b model: ollama pull mistral:7b\nRun the Model: Use the ollama run command to start interacting with the model: ollama run mistral:7b This will open a chat interface in your terminal.\nAsk a Question: Type your question or prompt and press Enter. The LLM will generate a response.\nExperiment: Try different models and see what works best on your system. The Ollama website has a library of available models. More models with different sizes and quantization levels are available from Hugging Face.\n\nBy using Ollama and understanding the concepts of model size, RAM, and quantization, you can use LLMs on your own computer and explore the possibilities of local AI. As Ollama also supports running models with an APU, you can use the downloaded models as coding assistants in your IDE (VS Code with Continue or Zed) or while building your own RAG apps.",
     "crumbs": [
@@ -322,7 +322,7 @@
   {
     "objectID": "large-language-models.html#hosted-llms-accessed-via-api",
     "href": "large-language-models.html#hosted-llms-accessed-via-api",
-    "title": "Working with Large Language Models!",
+    "title": "Working with Large Language Models",
     "section": "Hosted LLMs (Accessed via API)",
     "text": "Hosted LLMs (Accessed via API)\nThese are powerful LLMs hosted by companies, which you can access through APIs (Application Programming Interfaces). You typically pay for usage.\n\nOpenAI (ChatGPT): The creators of ChatGPT and GPT-4, offering a range of models.\nMistral: A European-based company offering competitive models.\nGoogle (Gemini): Google’s LLM, offering strong performance and integration with Google services.\nAnthropic (Claude): Known for its its ability to handle code effectively.",
     "crumbs": [
@@ -332,7 +332,7 @@
   {
     "objectID": "large-language-models.html#local-llms-run-on-your-own-computer",
     "href": "large-language-models.html#local-llms-run-on-your-own-computer",
-    "title": "Working with Large Language Models!",
+    "title": "Working with Large Language Models",
     "section": "Local LLMs (Run on Your Own Computer)",
     "text": "Local LLMs (Run on Your Own Computer)\nThese tools can be used to run open-source LLMs that you can download and run on your own machine. This gives you more privacy and control, but requires more technical expertise and computational resources.\n\nOllama: Free and open-source tool to run large language models locally, supports a wide range of models. Note, that the models are not as powerful as the hosted ones and that your computer needs to have a good GPU to run larger models. Smaller models with less than 8B parameters can also often be run on a CPU with enough available RAM. Great for privacy and if you don’t want to pay for the hosted models.\nHugging Face: Hosts a wide range of large language models, including models fine-tuned for specific tasks by the community. Models can also be downloaded to Ollama and run locally, if your computer is powerful enough.",
     "crumbs": [
@@ -342,7 +342,7 @@
   {
     "objectID": "large-language-models.html#working-with-data",
     "href": "large-language-models.html#working-with-data",
-    "title": "Working with Large Language Models!",
+    "title": "Working with Large Language Models",
     "section": "Working with data",
     "text": "Working with data\nIn addition to the hosted and local LLMs, there are also tools that allow you to work with LLMs in a browser to build RAG apps or custom chatbots.\n\nNotebookLM: Google’s Gemini that can be fed with files, images and YouTube videos to generate text based on the content. Only works within a workspace of Google, you can’t make it available to the public (yet).\nOpen Web UI: Open Web UI is a tool to run large language models locally (in conjuction with, for example, Ollama). It is a browser-based interface that allows you to interact with the models and build RAG apps.",
     "crumbs": [
