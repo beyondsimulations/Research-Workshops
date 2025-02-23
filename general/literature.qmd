@@ -16,30 +16,38 @@ This section provides a curated list of books and resources to enhance your unde
 
 ## Books
 
-- [Geospatial Data Science with Julia](https://juliaearth.github.io/geospatial-data-science-with-julia/02-geoviz.html)
-    - A book that is great for beginners and covers Geographical Data Analysis from the ground up with Julia.
+- [Geospatial Data Science with Julia](https://juliaearth.github.io/geospatial-data-science-with-julia/02-geoviz.html): A book that is great for beginners and covers Geographical Data Analysis from the ground up with Julia.
 
 ## Resources
 
-- [QGis](https://www.qgis.org/en/site/)
-    - A free and open-source GIS software that is very powerful and flexible.
-- [Mapbox](https://www.mapbox.com/)
-    - A platform that provides tools for creating maps and geospatial data. It has a great documentation and very generous free tier.
-- [OpenStreetMap](https://www.openstreetmap.org/)
-    - A free and open-source map of the world. It is very detailed and can be used for a a lot of purposes. Great for getting started with Geographical Data Analysis and getting data.
+- [QGis](https://www.qgis.org/en/site/): A free and open-source GIS software that is very powerful and flexible.
+- [Mapbox](https://www.mapbox.com/): A platform that provides tools for creating maps and geospatial data. It has a great documentation and very generous free tier.
+- [OpenStreetMap](https://www.openstreetmap.org/): A free and open-source map of the world. It is very detailed and can be used for a a lot of purposes. Great for getting started with Geographical Data Analysis and getting data.
 
 # Large Language Models
 
-## Books
+## Hosted LLMs
 
-## Resources
+These are powerful LLMs hosted by companies, which you can access through APIs (Application Programming Interfaces). You typically pay for usage.
 
-- [Cursor](https://cursor.sh)
-    - A code editor based on VS Code that is very powerful and flexible. It uses AI to help you write code.
-- [Ollama](https://ollama.com)
-    - A tool to run large language models locally on your own machine. It is easy to install and use and you can choose from a variety of models.
-- [Mistral](https://mistral.ai)
-    - A french company that provides large language models. Most known for Le Chat, a chatbot based on their large language model.
+- [OpenAI (ChatGPT)](https://chatgpt.com): The creators of ChatGPT and GPT-4, offering a range of models.
+- [Mistral](https://mistral.ai/): A European-based company offering competitive models.
+- [Google (Gemini)](https://gemini.google.com/): Google's LLM, offering strong performance and integration with Google services.
+- [Anthropic (Claude)](https://www.anthropic.com/claude): Known for its its ability to handle code effectively.
+
+## Local LLMs
+
+These tools can be used to run open-source LLMs that you can download and run on your own machine. This gives you more privacy and control, but requires more technical expertise and computational resources.
+
+- [Ollama](https://ollama.com/): Free and open-source tool to run large language models locally, supports a wide range of models. Note, that the models are not as powerful as the hosted ones and that your computer needs to have a good GPU to run larger models. Smaller models with less than 8B parameters can also often be run on a CPU with enough available RAM. Great for privacy and if you don't want to pay for the hosted models.
+- [Hugging Face](https://huggingface.co/): Hosts a wide range of large language models, including models fine-tuned for specific tasks by the community. Models can also be downloaded to Ollama and run locally, if your computer is powerful enough.
+
+## Working with data
+
+In addition to the hosted and local LLMs, there are also tools that allow you to work with LLMs in a browser to build RAG apps or custom chatbots.
+
+- [NotebookLM](https://notebooklm.google/)**: Google's Gemini that can be fed with files, images and YouTube videos to generate text based on the content. Only works within a workspace of Google, you can't make it available to the public (yet).
+- [Open Web UI](https://openwebui.com/)**: Open Web UI is a tool to run large language models locally (in conjuction with, for example, Ollama). It is a browser-based interface that allows you to interact with the models and build RAG apps.
 
 # Data Science
 
