@@ -1,5 +1,5 @@
 ---
-title: "Welcome to the Seminar Preparation!"
+title: "Welcome to the workshops!"
 subtitle: "University of Hamburg - Spring 2025"
 
 html:
@@ -9,33 +9,20 @@ html:
 ---
 
 # Description
-Welcome to my seminar preparation resources! This website hosts a collection of short courses covering various topics that will help you prepare for your seminar thesis. If you are interested in large language models, or geographical data analysis, these materials are designed to you. Each course is self-contained and provides you with the fundamental knowledge and practical skills needed for your research project.
+Welcome to this collection of resources! This website hosts a collection of information and resources that will help you prepare for your research. If you are interested in large language models, these materials are designed for you. The material is self-contained and provides you with the fundamental knowledge and practical skills needed for your research project.
 
 # Learning Outcomes
-My goal is to introduce you to some basics and tools that will help you in your seminar thesis. 
+My goal is to introduce you to some basics and tools that will help you in your research. 
 
 Upon completing the sections, you will...
 
-- know how to work with geographical data and GIS tools
 - understand how to interact with and utilize large language models
+- know how to work with geographical datasets (upcoming)
 
-Please note that these topics are **specifically designed for beginners**. No prior programming experience is required although it is helpful. The format accommodates different skill levels to ensure everyone can follow along and learn effectively.
-
-# Blocks
-The content of the course is currently organized in three blocks:
-
-1. **Part I**: Geographical Data Analysis
-2. **Part II**: Large Language Models
+Please note that these topics are **specifically designed for beginners**. No prior experience is required although it is helpful. The format accommodates different skill levels to ensure everyone can follow along and learn effectively.
 
 # Structure
-The resources are mostly available on this website and some are also available as interactive Jupyter notebooks, which you can download and run locally on your computer. I will try to update the website as often as possible, to extend the content and reflect the latest developments in the field.
-
-# How to see the slides
-- This course is based on [Quarto](https://quarto.org/) 
-- It uses [revealjs](https://revealjs.com/) to render the slides
-- You find the slides for each lecture in the corresponding lecture
-- To see the slides, click on `RevealJS` in the top right side in the lecture
-- You can also just scroll on the website to see all content without the slide styling
+The resources are mostly available on this website with links to some other resources. I will try to update the website in the future, to extend the content and reflect the latest developments in the field.
 
 # Questions
 If you have any questions, please contact me under [tobias.vlcek@uni-hamburg.de](mailto:tobias.vlcek@uni-hamburg.de?subject=Seminar%20Preparation%3A%20%3CYour%20subject%3E).

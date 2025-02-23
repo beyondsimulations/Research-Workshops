@@ -3,11 +3,13 @@ project:
   render:
     - 404.qmd
     - index.qmd
+    - large-language-models.qmd
+    
 website:
   title: "Seminar Preparation"
-  repo-url: https://github.com/beyondsimulations/Seminar-Preparation
+  repo-url: https://github.com/beyondsimulations/Research-Workshops
   repo-actions: [edit, source, issue]
-  site-url: https://beyondsimulations.github.io/Seminar-Preparation
+  site-url: https://beyondsimulations.github.io/Research-Workshops
   bread-crumbs: true
   sidebar:
     style: floating
@@ -17,14 +19,16 @@ website:
     contents:
       - text: "Welcome"
         href: index.qmd
+      - text: "Large Language Models"
+        href: large-language-models.qmd
       - text: "Literature"
         href: general/literature.qmd
 
   page-footer: 
-    center: "Seminar Preparation Workshops, Tobias Vlćek</br>CC BY-NC-SA 4.0" 
+    center: "Research Workshops, Tobias Vlćek</br>CC BY-NC-SA 4.0" 
     right: 
       - icon: github
-        href: https://github.com/beyondsimulations/Seminar-Preparation
+        href: https://github.com/beyondsimulations/Research-Workshops
       - icon: linkedin
         href: https://linkedin.com/in/tobiasvlcek
 

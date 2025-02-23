@@ -1,1 +1,1 @@
-Sitemap: https://beyondsimulations.github.io/Seminar-Preparation/sitemap.xml
+Sitemap: https://beyondsimulations.github.io/Research-Workshops/sitemap.xml
