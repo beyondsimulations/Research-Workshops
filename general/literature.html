@@ -141,13 +141,14 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#large-language-models" id="toc-large-language-models" class="nav-link" data-scroll-target="#large-language-models">Large Language Models</a>
   <ul class="collapse">
-  <li><a href="#books-1" id="toc-books-1" class="nav-link" data-scroll-target="#books-1">Books</a></li>
-  <li><a href="#resources-1" id="toc-resources-1" class="nav-link" data-scroll-target="#resources-1">Resources</a></li>
+  <li><a href="#hosted-llms" id="toc-hosted-llms" class="nav-link" data-scroll-target="#hosted-llms">Hosted LLMs</a></li>
+  <li><a href="#local-llms" id="toc-local-llms" class="nav-link" data-scroll-target="#local-llms">Local LLMs</a></li>
+  <li><a href="#working-with-data" id="toc-working-with-data" class="nav-link" data-scroll-target="#working-with-data">Working with data</a></li>
   </ul></li>
   <li><a href="#data-science" id="toc-data-science" class="nav-link" data-scroll-target="#data-science">Data Science</a>
   <ul class="collapse">
-  <li><a href="#books-2" id="toc-books-2" class="nav-link" data-scroll-target="#books-2">Books</a></li>
-  <li><a href="#resources-2" id="toc-resources-2" class="nav-link" data-scroll-target="#resources-2">Resources</a></li>
+  <li><a href="#books-1" id="toc-books-1" class="nav-link" data-scroll-target="#books-1">Books</a></li>
+  <li><a href="#resources-1" id="toc-resources-1" class="nav-link" data-scroll-target="#resources-1">Resources</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/beyondsimulations/Research-Workshops/edit/main/general/literature.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/blob/main/general/literature.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="literature.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
@@ -181,57 +182,51 @@ ul.task-list li input[type="checkbox"] {
 <section id="books" class="level2">
 <h2 class="anchored" data-anchor-id="books">Books</h2>
 <ul>
-<li><a href="https://juliaearth.github.io/geospatial-data-science-with-julia/02-geoviz.html">Geospatial Data Science with Julia</a>
-<ul>
-<li>A book that is great for beginners and covers Geographical Data Analysis from the ground up with Julia.</li>
-</ul></li>
+<li><a href="https://juliaearth.github.io/geospatial-data-science-with-julia/02-geoviz.html">Geospatial Data Science with Julia</a>: A book that is great for beginners and covers Geographical Data Analysis from the ground up with Julia.</li>
 </ul>
 </section>
 <section id="resources" class="level2">
 <h2 class="anchored" data-anchor-id="resources">Resources</h2>
 <ul>
-<li><a href="https://www.qgis.org/en/site/">QGis</a>
-<ul>
-<li>A free and open-source GIS software that is very powerful and flexible.</li>
-</ul></li>
-<li><a href="https://www.mapbox.com/">Mapbox</a>
-<ul>
-<li>A platform that provides tools for creating maps and geospatial data. It has a great documentation and very generous free tier.</li>
-</ul></li>
-<li><a href="https://www.openstreetmap.org/">OpenStreetMap</a>
-<ul>
-<li>A free and open-source map of the world. It is very detailed and can be used for a a lot of purposes. Great for getting started with Geographical Data Analysis and getting data.</li>
-</ul></li>
+<li><a href="https://www.qgis.org/en/site/">QGis</a>: A free and open-source GIS software that is very powerful and flexible.</li>
+<li><a href="https://www.mapbox.com/">Mapbox</a>: A platform that provides tools for creating maps and geospatial data. It has a great documentation and very generous free tier.</li>
+<li><a href="https://www.openstreetmap.org/">OpenStreetMap</a>: A free and open-source map of the world. It is very detailed and can be used for a a lot of purposes. Great for getting started with Geographical Data Analysis and getting data.</li>
 </ul>
 </section>
 </section>
 <section id="large-language-models" class="level1">
 <h1>Large Language Models</h1>
-<section id="books-1" class="level2">
-<h2 class="anchored" data-anchor-id="books-1">Books</h2>
+<section id="hosted-llms" class="level2">
+<h2 class="anchored" data-anchor-id="hosted-llms">Hosted LLMs</h2>
+<p>These are powerful LLMs hosted by companies, which you can access through APIs (Application Programming Interfaces). You typically pay for usage.</p>
+<ul>
+<li><a href="https://chatgpt.com">OpenAI (ChatGPT)</a>: The creators of ChatGPT and GPT-4, offering a range of models.</li>
+<li><a href="https://mistral.ai/">Mistral</a>: A European-based company offering competitive models.</li>
+<li><a href="https://gemini.google.com/">Google (Gemini)</a>: Google’s LLM, offering strong performance and integration with Google services.</li>
+<li><a href="https://www.anthropic.com/claude">Anthropic (Claude)</a>: Known for its its ability to handle code effectively.</li>
+</ul>
 </section>
-<section id="resources-1" class="level2">
-<h2 class="anchored" data-anchor-id="resources-1">Resources</h2>
+<section id="local-llms" class="level2">
+<h2 class="anchored" data-anchor-id="local-llms">Local LLMs</h2>
+<p>These tools can be used to run open-source LLMs that you can download and run on your own machine. This gives you more privacy and control, but requires more technical expertise and computational resources.</p>
 <ul>
-<li><a href="https://cursor.sh">Cursor</a>
+<li><a href="https://ollama.com/">Ollama</a>: Free and open-source tool to run large language models locally, supports a wide range of models. Note, that the models are not as powerful as the hosted ones and that your computer needs to have a good GPU to run larger models. Smaller models with less than 8B parameters can also often be run on a CPU with enough available RAM. Great for privacy and if you don’t want to pay for the hosted models.</li>
+<li><a href="https://huggingface.co/">Hugging Face</a>: Hosts a wide range of large language models, including models fine-tuned for specific tasks by the community. Models can also be downloaded to Ollama and run locally, if your computer is powerful enough.</li>
+</ul>
+</section>
+<section id="working-with-data" class="level2">
+<h2 class="anchored" data-anchor-id="working-with-data">Working with data</h2>
+<p>In addition to the hosted and local LLMs, there are also tools that allow you to work with LLMs in a browser to build RAG apps or custom chatbots.</p>
 <ul>
-<li>A code editor based on VS Code that is very powerful and flexible. It uses AI to help you write code.</li>
-</ul></li>
-<li><a href="https://ollama.com">Ollama</a>
-<ul>
-<li>A tool to run large language models locally on your own machine. It is easy to install and use and you can choose from a variety of models.</li>
-</ul></li>
-<li><a href="https://mistral.ai">Mistral</a>
-<ul>
-<li>A french company that provides large language models. Most known for Le Chat, a chatbot based on their large language model.</li>
-</ul></li>
+<li><a href="https://notebooklm.google/">NotebookLM</a>**: Google’s Gemini that can be fed with files, images and YouTube videos to generate text based on the content. Only works within a workspace of Google, you can’t make it available to the public (yet).</li>
+<li><a href="https://openwebui.com/">Open Web UI</a>**: Open Web UI is a tool to run large language models locally (in conjuction with, for example, Ollama). It is a browser-based interface that allows you to interact with the models and build RAG apps.</li>
 </ul>
 </section>
 </section>
 <section id="data-science" class="level1">
 <h1>Data Science</h1>
-<section id="books-2" class="level2">
-<h2 class="anchored" data-anchor-id="books-2">Books</h2>
+<section id="books-1" class="level2">
+<h2 class="anchored" data-anchor-id="books-1">Books</h2>
 <ul>
 <li>Wilke, C. (2019). Fundamentals of data visualization: A primer on making informative and compelling figures (First edition). O’Reilly Media.
 <ul>
@@ -244,8 +239,8 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 </ul>
 </section>
-<section id="resources-2" class="level2">
-<h2 class="anchored" data-anchor-id="resources-2">Resources</h2>
+<section id="resources-1" class="level2">
+<h2 class="anchored" data-anchor-id="resources-1">Resources</h2>
 <ul>
 <li><a href="https://quarto.org">Quarto</a>
 <ul>
