@@ -1,5 +1,85 @@
 [
   {
+    "objectID": "general/literature.html",
+    "href": "general/literature.html",
+    "title": "Literature and Resources",
+    "section": "",
+    "text": "This section provides a curated list of books and resources to enhance your understanding of Geographical Data Analysis and Large Language Models. Each recommendation includes a brief description to help you choose the most suitable resources for you.",
+    "crumbs": [
+      "Literature"
+    ]
+  },
+  {
+    "objectID": "general/literature.html#books",
+    "href": "general/literature.html#books",
+    "title": "Literature and Resources",
+    "section": "Books",
+    "text": "Books\n\nGeospatial Data Science with Julia\n\nA book that is great for beginners and covers Geographical Data Analysis from the ground up with Julia.",
+    "crumbs": [
+      "Literature"
+    ]
+  },
+  {
+    "objectID": "general/literature.html#resources",
+    "href": "general/literature.html#resources",
+    "title": "Literature and Resources",
+    "section": "Resources",
+    "text": "Resources\n\nQGis\n\nA free and open-source GIS software that is very powerful and flexible.\n\nMapbox\n\nA platform that provides tools for creating maps and geospatial data. It has a great documentation and very generous free tier.\n\nOpenStreetMap\n\nA free and open-source map of the world. It is very detailed and can be used for a a lot of purposes. Great for getting started with Geographical Data Analysis and getting data.",
+    "crumbs": [
+      "Literature"
+    ]
+  },
+  {
+    "objectID": "general/literature.html#books-1",
+    "href": "general/literature.html#books-1",
+    "title": "Literature and Resources",
+    "section": "Books",
+    "text": "Books",
+    "crumbs": [
+      "Literature"
+    ]
+  },
+  {
+    "objectID": "general/literature.html#resources-1",
+    "href": "general/literature.html#resources-1",
+    "title": "Literature and Resources",
+    "section": "Resources",
+    "text": "Resources\n\nCursor\n\nA code editor based on VS Code that is very powerful and flexible. It uses AI to help you write code.\n\nOllama\n\nA tool to run large language models locally on your own machine. It is easy to install and use and you can choose from a variety of models.\n\nMistral\n\nA french company that provides large language models. Most known for Le Chat, a chatbot based on their large language model.",
+    "crumbs": [
+      "Literature"
+    ]
+  },
+  {
+    "objectID": "general/literature.html#books-2",
+    "href": "general/literature.html#books-2",
+    "title": "Literature and Resources",
+    "section": "Books",
+    "text": "Books\n\nWilke, C. (2019). Fundamentals of data visualization: A primer on making informative and compelling figures (First edition). O’Reilly Media.\n\nA book that is highly recommended to understand the principles of data visualization and how to create effective visualizations.\nLink to the free book website\n\nThomas, D., & Hunt, A. (2019). The pragmatic programmer, 20th anniversary edition: Journey to mastery (Second edition). Addison-Wesley.\n\nA fantasticbook to understand the principles of software development and how to create effective software.",
+    "crumbs": [
+      "Literature"
+    ]
+  },
+  {
+    "objectID": "general/literature.html#resources-2",
+    "href": "general/literature.html#resources-2",
+    "title": "Literature and Resources",
+    "section": "Resources",
+    "text": "Resources\n\nQuarto\n\nA static website generator that is very powerful and flexible. Used to create the slides and the website for the course.\n\nJupyter\n\nA web application that allows you to create and share documents that contain code, equations, visualizations and text. It is very popular in the field of data science and academia and also part of Quarto.\n\nGithub\n\nThe largest provider for git repositories owned by Microsoft. A lot of open source projects are hosted here and you can read the code.\n\nDaily Dose of Data Science\n\nA website and a newsletter with lots of easy-to-digest resources to improve your skills in Data Science.",
+    "crumbs": [
+      "Literature"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to the workshops!",
+    "section": "",
+    "text": "Description\nWelcome to this collection of resources! This website hosts a collection of information and resources that will help you prepare for your research. If you are interested in large language models, these materials are designed for you. The material is self-contained and provides you with the fundamental knowledge and practical skills needed for your research project.\n\n\nLearning Outcomes\nMy goal is to introduce you to some basics and tools that will help you in your research.\nUpon completing the sections, you will…\n\nunderstand how to interact with and utilize large language models\nknow how to work with geographical datasets (upcoming)\n\nPlease note that these topics are specifically designed for beginners. No prior experience is required although it is helpful. The format accommodates different skill levels to ensure everyone can follow along and learn effectively.\n\n\nStructure\nThe resources are mostly available on this website with links to some other resources. I will try to update the website in the future, to extend the content and reflect the latest developments in the field.\n\n\nQuestions\nIf you have any questions, please contact me under tobias.vlcek@uni-hamburg.de.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
     "objectID": "large-language-models.html",
     "href": "large-language-models.html",
     "title": "Working with Large Language Models!",
@@ -267,16 +347,6 @@
     "text": "Working with data\nIn addition to the hosted and local LLMs, there are also tools that allow you to work with LLMs in a browser to build RAG apps or custom chatbots.\n\nNotebookLM: Google’s Gemini that can be fed with files, images and YouTube videos to generate text based on the content. Only works within a workspace of Google, you can’t make it available to the public (yet).\nOpen Web UI: Open Web UI is a tool to run large language models locally (in conjuction with, for example, Ollama). It is a browser-based interface that allows you to interact with the models and build RAG apps.",
     "crumbs": [
       "Large Language Models"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome to the workshops!",
-    "section": "",
-    "text": "Description\nWelcome to this collection of resources! This website hosts a collection of information and resources that will help you prepare for your research. If you are interested in large language models, these materials are designed for you. The material is self-contained and provides you with the fundamental knowledge and practical skills needed for your research project.\n\n\nLearning Outcomes\nMy goal is to introduce you to some basics and tools that will help you in your research.\nUpon completing the sections, you will…\n\nunderstand how to interact with and utilize large language models\nknow how to work with geographical datasets (upcoming)\n\nPlease note that these topics are specifically designed for beginners. No prior experience is required although it is helpful. The format accommodates different skill levels to ensure everyone can follow along and learn effectively.\n\n\nStructure\nThe resources are mostly available on this website with links to some other resources. I will try to update the website in the future, to extend the content and reflect the latest developments in the field.\n\n\nQuestions\nIf you have any questions, please contact me under tobias.vlcek@uni-hamburg.de.",
-    "crumbs": [
-      "Welcome"
     ]
   }
 ]
