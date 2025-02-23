@@ -1,0 +1,64 @@
+---
+title: "Literature and Resources"
+subtitle: "Good books and resources to read"
+
+html:
+    theme: [default, ../styles.scss]
+    code-copy: true
+    code-link: true
+    toc: true
+    toc-location: right
+---
+
+This section provides a curated list of books and resources to enhance your understanding of Geographical Data Analysis and Large Language Models. Each recommendation includes a brief description to help you choose the most suitable resources for you.
+
+# Geographical Data Analysis
+
+## Books
+
+- [Geospatial Data Science with Julia](https://juliaearth.github.io/geospatial-data-science-with-julia/02-geoviz.html)
+    - A book that is great for beginners and covers Geographical Data Analysis from the ground up with Julia.
+
+## Resources
+
+- [QGis](https://www.qgis.org/en/site/)
+    - A free and open-source GIS software that is very powerful and flexible.
+- [Mapbox](https://www.mapbox.com/)
+    - A platform that provides tools for creating maps and geospatial data. It has a great documentation and very generous free tier.
+- [OpenStreetMap](https://www.openstreetmap.org/)
+    - A free and open-source map of the world. It is very detailed and can be used for a a lot of purposes. Great for getting started with Geographical Data Analysis and getting data.
+
+# Large Language Models
+
+## Books
+
+## Resources
+
+- [Cursor](https://cursor.sh)
+    - A code editor based on VS Code that is very powerful and flexible. It uses AI to help you write code.
+- [Ollama](https://ollama.com)
+    - A tool to run large language models locally on your own machine. It is easy to install and use and you can choose from a variety of models.
+- [Mistral](https://mistral.ai)
+    - A french company that provides large language models. Most known for Le Chat, a chatbot based on their large language model.
+
+# Data Science
+
+## Books
+
+- Wilke, C. (2019). Fundamentals of data visualization: A primer on making informative and compelling figures (First edition). O’Reilly Media.
+    - A book that is highly recommended to understand the principles of data visualization and how to create effective visualizations.
+    - [Link to the free book website](https://clauswilke.com/dataviz/)
+- Thomas, D., & Hunt, A. (2019). The pragmatic programmer, 20th anniversary edition: Journey to mastery (Second edition). Addison-Wesley.
+    - A fantasticbook to understand the principles of software development and how to create effective software.
+
+## Resources
+
+- [Quarto](https://quarto.org)
+    - A static website generator that is very powerful and flexible. Used to create the slides and the website for the course.
+- [Jupyter](https://jupyter.org)
+    - A web application that allows you to create and share documents that contain code, equations, visualizations and text. It is very popular in the field of data science and academia and also part of Quarto.
+- [Github](https://github.com)
+    - The largest provider for git repositories owned by Microsoft. A lot of open source projects are hosted here and you can read the code. 
+- [Daily Dose of Data Science](https://www.dailydoseofds.com)
+    - A website and a newsletter with lots of easy-to-digest resources to improve your skills in Data Science.
+    

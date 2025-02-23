@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.40">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Dr.&nbsp;Tobias Vlćek">
+
+<title>Working with Large Language Models! – Seminar Preparation</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-e01b572fd6df323fa0a06f4c024c686d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script defer="" data-domain="beyondsimulations.github.io/applied-optimization" src="https://plausible.io/js/script.file-downloads.outbound-links.js"></script>
+<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./large-language-models.html">Large Language Models</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="https://images.beyondsimulations.com/logo/midjourney-solar-mirror.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./large-language-models.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Large Language Models</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./general/literature.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Literature</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#welcome-to-todays-short-workshop-on-large-language-models" id="toc-welcome-to-todays-short-workshop-on-large-language-models" class="nav-link active" data-scroll-target="#welcome-to-todays-short-workshop-on-large-language-models">Welcome to today’s short workshop on Large Language Models!</a>
+  <ul class="collapse">
+  <li><a href="#what-is-an-llm-and-why-should-you-care" id="toc-what-is-an-llm-and-why-should-you-care" class="nav-link" data-scroll-target="#what-is-an-llm-and-why-should-you-care">What is an LLM? (And Why Should You Care?)</a></li>
+  <li><a href="#a-great-overview-3blue1brown" id="toc-a-great-overview-3blue1brown" class="nav-link" data-scroll-target="#a-great-overview-3blue1brown">A Great Overview: 3Blue1Brown</a></li>
+  <li><a href="#key-concepts-what-youll-learn" id="toc-key-concepts-what-youll-learn" class="nav-link" data-scroll-target="#key-concepts-what-youll-learn">Key Concepts: What You’ll Learn</a></li>
+  </ul></li>
+  <li><a href="#inside-llms-how-they-work" id="toc-inside-llms-how-they-work" class="nav-link" data-scroll-target="#inside-llms-how-they-work">Inside LLMs: How they work</a>
+  <ul class="collapse">
+  <li><a href="#deep-learning-and-text-data" id="toc-deep-learning-and-text-data" class="nav-link" data-scroll-target="#deep-learning-and-text-data">Deep Learning and Text Data</a></li>
+  <li><a href="#the-transformer-a-key-innovation" id="toc-the-transformer-a-key-innovation" class="nav-link" data-scroll-target="#the-transformer-a-key-innovation">The Transformer: A Key Innovation</a></li>
+  <li><a href="#tokens-the-building-blocks-of-language" id="toc-tokens-the-building-blocks-of-language" class="nav-link" data-scroll-target="#tokens-the-building-blocks-of-language">Tokens: The Building Blocks of Language</a></li>
+  <li><a href="#context-window-the-llms-memory" id="toc-context-window-the-llms-memory" class="nav-link" data-scroll-target="#context-window-the-llms-memory">Context Window: The LLM’s “Memory”</a></li>
+  </ul></li>
+  <li><a href="#llm-architectures-choosing-the-right-tool" id="toc-llm-architectures-choosing-the-right-tool" class="nav-link" data-scroll-target="#llm-architectures-choosing-the-right-tool">LLM Architectures: Choosing the Right Tool</a>
+  <ul class="collapse">
+  <li><a href="#encoder-decoder" id="toc-encoder-decoder" class="nav-link" data-scroll-target="#encoder-decoder">Encoder-Decoder</a></li>
+  <li><a href="#encoder-only" id="toc-encoder-only" class="nav-link" data-scroll-target="#encoder-only">Encoder-Only</a></li>
+  <li><a href="#decoder-only" id="toc-decoder-only" class="nav-link" data-scroll-target="#decoder-only">Decoder-Only</a>
+  <ul class="collapse">
+  <li><a href="#mixture-of-experts-moe" id="toc-mixture-of-experts-moe" class="nav-link" data-scroll-target="#mixture-of-experts-moe">3.1.4 Mixture of Experts (MoE)</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#training-llms-a-massive-undertaking" id="toc-training-llms-a-massive-undertaking" class="nav-link" data-scroll-target="#training-llms-a-massive-undertaking">Training LLMs: A Massive Undertaking</a>
+  <ul class="collapse">
+  <li><a href="#the-training-process" id="toc-the-training-process" class="nav-link" data-scroll-target="#the-training-process">The Training Process</a></li>
+  <li><a href="#computational-power-and-parallelism" id="toc-computational-power-and-parallelism" class="nav-link" data-scroll-target="#computational-power-and-parallelism">Computational Power and Parallelism</a></li>
+  <li><a href="#training-phases" id="toc-training-phases" class="nav-link" data-scroll-target="#training-phases">Training Phases</a></li>
+  </ul></li>
+  <li><a href="#limitations-and-ethical-considerations" id="toc-limitations-and-ethical-considerations" class="nav-link" data-scroll-target="#limitations-and-ethical-considerations">Limitations and Ethical Considerations</a>
+  <ul class="collapse">
+  <li><a href="#bias-a-reflection-of-the-data" id="toc-bias-a-reflection-of-the-data" class="nav-link" data-scroll-target="#bias-a-reflection-of-the-data">Bias: A Reflection of the Data</a></li>
+  <li><a href="#adversarial-attacks-tricking-the-model" id="toc-adversarial-attacks-tricking-the-model" class="nav-link" data-scroll-target="#adversarial-attacks-tricking-the-model">Adversarial Attacks: Tricking the Model</a></li>
+  <li><a href="#ethical-implications-a-broader-view" id="toc-ethical-implications-a-broader-view" class="nav-link" data-scroll-target="#ethical-implications-a-broader-view">Ethical Implications: A Broader View</a></li>
+  </ul></li>
+  <li><a href="#putting-llms-to-work-practical-applications" id="toc-putting-llms-to-work-practical-applications" class="nav-link" data-scroll-target="#putting-llms-to-work-practical-applications">Putting LLMs to Work: Practical Applications</a>
+  <ul class="collapse">
+  <li><a href="#pair-programming-with-llms-your-ai-coding-assistant" id="toc-pair-programming-with-llms-your-ai-coding-assistant" class="nav-link" data-scroll-target="#pair-programming-with-llms-your-ai-coding-assistant">Pair Programming with LLMs: Your AI Coding Assistant</a></li>
+  <li><a href="#tips-for-effective-pair-programming-with-llms" id="toc-tips-for-effective-pair-programming-with-llms" class="nav-link" data-scroll-target="#tips-for-effective-pair-programming-with-llms">Tips for Effective Pair Programming with LLMs</a></li>
+  </ul></li>
+  <li><a href="#using-llms-with-your-own-data-retrieval-augmented-generation-rag" id="toc-using-llms-with-your-own-data-retrieval-augmented-generation-rag" class="nav-link" data-scroll-target="#using-llms-with-your-own-data-retrieval-augmented-generation-rag">Using LLMs with Your Own Data: Retrieval Augmented Generation (RAG)</a></li>
+  <li><a href="#running-llms-locally-with-ollama" id="toc-running-llms-locally-with-ollama" class="nav-link" data-scroll-target="#running-llms-locally-with-ollama">Running LLMs Locally with Ollama</a>
+  <ul class="collapse">
+  <li><a href="#ollama-a-local-llm-manager" id="toc-ollama-a-local-llm-manager" class="nav-link" data-scroll-target="#ollama-a-local-llm-manager">Ollama: A Local LLM Manager</a></li>
+  <li><a href="#hardware-requirements-ram-cpu-and-gpu" id="toc-hardware-requirements-ram-cpu-and-gpu" class="nav-link" data-scroll-target="#hardware-requirements-ram-cpu-and-gpu">Hardware Requirements: RAM, CPU, and GPU</a></li>
+  <li><a href="#model-sizes-billions-of-parameters-b" id="toc-model-sizes-billions-of-parameters-b" class="nav-link" data-scroll-target="#model-sizes-billions-of-parameters-b">Model Sizes: Billions of Parameters (B)</a></li>
+  <li><a href="#quantization-making-models-smaller" id="toc-quantization-making-models-smaller" class="nav-link" data-scroll-target="#quantization-making-models-smaller">Quantization: Making Models Smaller</a></li>
+  <li><a href="#getting-started-with-ollama" id="toc-getting-started-with-ollama" class="nav-link" data-scroll-target="#getting-started-with-ollama">Getting Started with Ollama</a></li>
+  </ul></li>
+  <li><a href="#resources-and-tools" id="toc-resources-and-tools" class="nav-link" data-scroll-target="#resources-and-tools">Resources and Tools</a>
+  <ul class="collapse">
+  <li><a href="#hosted-llms-accessed-via-api" id="toc-hosted-llms-accessed-via-api" class="nav-link" data-scroll-target="#hosted-llms-accessed-via-api">Hosted LLMs (Accessed via API)</a></li>
+  <li><a href="#local-llms-run-on-your-own-computer" id="toc-local-llms-run-on-your-own-computer" class="nav-link" data-scroll-target="#local-llms-run-on-your-own-computer">Local LLMs (Run on Your Own Computer)</a></li>
+  <li><a href="#working-with-data" id="toc-working-with-data" class="nav-link" data-scroll-target="#working-with-data">Working with data</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/beyondsimulations/Research-Workshops/edit/main/large-language-models.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/blob/main/large-language-models.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="large-language-models.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Working with Large Language Models!</h1>
+<p class="subtitle lead">University of Hamburg - Spring 2025</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Dr.&nbsp;Tobias Vlćek </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="welcome-to-todays-short-workshop-on-large-language-models" class="level1">
+<h1>Welcome to today’s short workshop on Large Language Models!</h1>
+<p>In this workshop, we’ll explore the world of Large Language Models (LLMs). You’ve probably already interacted with LLMs - think ChatGPT, Google’s Gemini, or Claude. But how do they <em>actually</em> work on a high level, and what can we do with them?</p>
+<section id="what-is-an-llm-and-why-should-you-care" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-an-llm-and-why-should-you-care">What is an LLM? (And Why Should You Care?)</h2>
+<p>Before diving into the technical details, let’s get a high-level understanding. LLMs are a type of Artificial Intelligence (AI), specifically within the field of Natural Language Processing (NLP). They’re designed to understand, generate, and interact with human language.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Why should you care?</strong> LLMs are rapidly changing how we interact with technology and information. Understanding them is becoming increasingly important in many fields, from software development to research to creative writing.</p>
+</div>
+</div>
+</section>
+<section id="a-great-overview-3blue1brown" class="level2">
+<h2 class="anchored" data-anchor-id="a-great-overview-3blue1brown">A Great Overview: 3Blue1Brown</h2>
+<p>Greg Sanderson provides an excellent, concise explanation of LLMs in this video. It’s a great starting point. (If you’re curious to learn more, check out his <a href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw">YouTube channel, 3Blue1Brown</a>).</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/LPZh9BOjkQs" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</section>
+<section id="key-concepts-what-youll-learn" class="level2">
+<h2 class="anchored" data-anchor-id="key-concepts-what-youll-learn">Key Concepts: What You’ll Learn</h2>
+<p>In this workshop, we’ll cover:</p>
+<ul>
+<li>The fundamental principles behind how LLMs work.</li>
+<li>The process of training these powerful models.</li>
+<li>The limitations and ethical considerations of LLMs.</li>
+<li>Practical applications, including pair-programming.</li>
+<li>How to use LLMs with your own data (Retrieval Augmented Generation).</li>
+<li>Further resources and tools.</li>
+</ul>
+</section>
+</section>
+<section id="inside-llms-how-they-work" class="level1">
+<h1>Inside LLMs: How they work</h1>
+<p>Let’s see how LLMs work at a high level without getting into the technicaldetails.</p>
+<section id="deep-learning-and-text-data" class="level2">
+<h2 class="anchored" data-anchor-id="deep-learning-and-text-data">Deep Learning and Text Data</h2>
+<p>At their core, LLMs are <em>deep learning</em> models. This means they’re built using artificial neural networks with many layers (hence “deep”). They’re trained on <em>enormous</em> amounts of text data - think the internet, books, articles, code, and more!</p>
+<p>This training allows them to learn the statistical patterns of language. Essentially, they become incredibly good at predicting the probability of a sequence of words. This ability is the foundation for many tasks, such as:</p>
+<ul>
+<li><strong>Text Generation:</strong> Creating new text that’s similar in style and content to the training data.</li>
+<li><strong>Translation:</strong> Converting text from one language to another.</li>
+<li><strong>Summarization:</strong> Condensing large amounts of text into shorter summaries.</li>
+<li><strong>Question Answering:</strong> Providing answers to questions based on the information they’ve learned.</li>
+<li><strong>Sentiment Analysis:</strong> Determining the emotional tone of a piece of text.</li>
+</ul>
+</section>
+<section id="the-transformer-a-key-innovation" class="level2">
+<h2 class="anchored" data-anchor-id="the-transformer-a-key-innovation">The Transformer: A Key Innovation</h2>
+<p>The magic behind modern LLMs lies in a specific type of neural network architecture called the <strong>transformer model</strong>. Introduced in the paper “<a href="https://arxiv.org/abs/1706.03762">Attention is All You Need</a>” (Vaswani et al., 2017), transformers changed what was possible in NLP.</p>
+<p><strong>How Transformers Work (Simplified):</strong></p>
+<ol type="1">
+<li><strong>Tokenization:</strong> The input text is broken down into smaller units called <em>tokens</em> (more on this later).</li>
+<li><strong>Mathematical Relationships:</strong> The transformer uses mathematical equations to identify relationships between these tokens, understanding how words and phrases connect within a sentence and across larger contexts.</li>
+<li><strong>Attention Mechanism:</strong> This is the <em>crucial</em> part. The attention mechanism allows the model to focus on the most relevant parts of the input when generating output. It’s like paying attention to the most important words in a sentence to understand its meaning.</li>
+</ol>
+<p><strong>Example: The Power of Attention</strong></p>
+<p>Consider the sentence: “The cat sat on the mat because it was warm.”</p>
+<p>The attention mechanism helps the LLM understand that “it” refers to “the mat,” not “the cat,” by considering the context provided by the surrounding words and their relationships.</p>
+</section>
+<section id="tokens-the-building-blocks-of-language" class="level2">
+<h2 class="anchored" data-anchor-id="tokens-the-building-blocks-of-language">Tokens: The Building Blocks of Language</h2>
+<p>LLMs don’t process text as whole words. Instead, they break it down into <strong>tokens</strong>. A token can be:</p>
+<ul>
+<li>A whole word (e.g., “cat”)</li>
+<li>A subword (e.g., “un-”, “break”, “-able” for “unbreakable”)</li>
+<li>Even individual characters</li>
+</ul>
+<p><strong>Why use tokens?</strong></p>
+<ul>
+<li><strong>Handles Unknown Words:</strong> The LLM can still process words it hasn’t seen before by breaking them down into known subword units.</li>
+<li><strong>Efficiency:</strong> It’s more efficient to learn relationships between tokens than between every possible word.</li>
+</ul>
+<p><strong>Challenges with Tokenization:</strong></p>
+<p>Tokenization can be tricky, especially for languages that don’t use spaces to separate words (like Chinese or Japanese). Current tokenization methods often work better for languages with similar scripts (like English, Spanish, French), potentially disadvantaging others. This is an area of ongoing research.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><em>Think about this: How might this impact the fairness and inclusivity of LLMs?</em></p>
+</div>
+</div>
+</section>
+<section id="context-window-the-llms-memory" class="level2">
+<h2 class="anchored" data-anchor-id="context-window-the-llms-memory">Context Window: The LLM’s “Memory”</h2>
+<p>The <strong>context window</strong> is like the LLM’s short-term memory. It refers to the number of tokens the model can process at once. A larger context window means the LLM can “remember” more of the conversation or document, leading to more coherent and contextually relevant responses.</p>
+<ul>
+<li><strong>Longer Context Window =</strong> More information considered, but also more computational resources needed (and potentially less coherence if <em>too</em> long).</li>
+<li><strong>Shorter Context Window =</strong> Faster processing, but the LLM might lose track of earlier parts of the conversation.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>There is a trade-off between the context window and the size of the model. A larger model can usually handle a larger context window, but it will also take more computational resources to run.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="llm-architectures-choosing-the-right-tool" class="level1">
+<h1>LLM Architectures: Choosing the Right Tool</h1>
+<p>Think of LLMs like a versatile tools. Different tasks require different tools, and LLMs are no different. There are several main <em>architectures</em>, each designed with specific strengths.</p>
+<section id="encoder-decoder" class="level2">
+<h2 class="anchored" data-anchor-id="encoder-decoder">Encoder-Decoder</h2>
+<ul>
+<li><p><strong>How it works:</strong> The encoder processes the input text and transforms it into a condensed representation (a “thought vector”). The decoder then takes this representation and generates the output text. It’s a two-step process: understand, then create.</p></li>
+<li><p><strong>Analogy:</strong> Imagine translating a sentence from English to German. You first need to <em>understand</em> the English sentence (encoder). Then, you <em>construct</em> the German sentence (decoder).</p></li>
+<li><p><strong>Key Feature:</strong> Excellent for tasks where the input and output are different sequences of text.</p></li>
+</ul>
+</section>
+<section id="encoder-only" class="level2">
+<h2 class="anchored" data-anchor-id="encoder-only">Encoder-Only</h2>
+<ul>
+<li><p><strong>How it works:</strong> This architecture focuses solely on <em>understanding</em> the input. It processes the input and creates a rich representation of its meaning.</p></li>
+<li><p><strong>Analogy:</strong> Think of a detective analyzing a crime scene. They gather all the clues (input) to build a complete picture of what happened, but they don’t necessarily write a long report (output).</p></li>
+<li><p><strong>Key Feature:</strong> Great for tasks where the goal is to classify or extract information from the input.</p></li>
+</ul>
+</section>
+<section id="decoder-only" class="level2">
+<h2 class="anchored" data-anchor-id="decoder-only">Decoder-Only</h2>
+<ul>
+<li><p><strong>How it works:</strong> This architecture focuses on <em>generating</em> text. It takes a starting point (a prompt, or the history of a conversation) and predicts the next most likely word, then the next, and so on, building up the output sequence.</p></li>
+<li><p><strong>Analogy:</strong> Imagine a creative writer starting with a single sentence and then continuing to write a story, one sentence at a time. Or, think of a conversation: each response builds upon the previous turns.</p></li>
+<li><p><strong>Key Feature:</strong> Ideal for tasks where you need the LLM to create original text.</p></li>
+</ul>
+<section id="mixture-of-experts-moe" class="level3">
+<h3 class="anchored" data-anchor-id="mixture-of-experts-moe">3.1.4 Mixture of Experts (MoE)</h3>
+<ul>
+<li><p><strong>How it works:</strong> Instead of one large model, MoE uses multiple smaller “expert” models. Each expert specializes in a different aspect of the task. A “gating network” decides which expert(s) to use for a given input.</p></li>
+<li><p><strong>Analogy:</strong> Think of a large company with different departments (marketing, sales, engineering). When a new project comes in, a manager (gating network) decides which departments need to be involved based on the project’s requirements.</p></li>
+<li><p><strong>Key Feature:</strong> Allows for efficient scaling to very large models and datasets, as only a subset of experts are activated for each input. This improves performance and reduces computational cost. Some large chatbot models may also use MoE to improve their capabilities.</p></li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Chatbots (like ChatGPT, Gemini, Claude):</strong> Most modern conversational AI systems are built using the <strong>decoder-only</strong> architecture. This is because a chatbot’s primary job is to <em>generate</em> responses in a conversation. The decoder takes the conversation history (the “context”) as input and generates the next turn in the conversation. The model is trained to predict the most likely next utterance given the preceding conversation. This is why they can maintain context and engage in (relatively) coherent dialogue.</p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="training-llms-a-massive-undertaking" class="level1">
+<h1>Training LLMs: A Massive Undertaking</h1>
+<p>Training an LLM is like teaching a child a language, but on a colossal scale.</p>
+<section id="the-training-process" class="level2">
+<h2 class="anchored" data-anchor-id="the-training-process">The Training Process</h2>
+<p>LLMs learn by being fed massive datasets of text and code. The basic process is:</p>
+<ol type="1">
+<li><strong>Input:</strong> The model receives a sequence of tokens.</li>
+<li><strong>Prediction:</strong> It’s asked to predict the <em>next</em> token in the sequence.</li>
+<li><strong>Adjustment:</strong> The model compares its prediction to the actual next token and adjusts its internal parameters to minimize the error. This is how it learns the statistical patterns of language.</li>
+</ol>
+</section>
+<section id="computational-power-and-parallelism" class="level2">
+<h2 class="anchored" data-anchor-id="computational-power-and-parallelism">Computational Power and Parallelism</h2>
+<p>Because LLMs are so large and the datasets are so vast, training requires <em>immense</em> computational power. This is where specialized hardware like GPUs (Graphics Processing Units) comes in.</p>
+<p><strong>Model Parallelism:</strong> To speed up training, developers use <em>model parallelism</em>, which distributes parts of the model across multiple GPUs. This allows for parallel processing, making training much more efficient. (This is a major reason why Nvidia’s stock has skyrocketed in recent years!)</p>
+</section>
+<section id="training-phases" class="level2">
+<h2 class="anchored" data-anchor-id="training-phases">Training Phases</h2>
+<p>The training process is often divided into phases:</p>
+<ul>
+<li><strong>Self-Supervised Learning:</strong>
+<ul>
+<li>The model is trained on a massive dataset <em>without</em> explicit labels.</li>
+<li>It learns to predict the next token, essentially learning the basic rules and patterns of the language.</li>
+<li>This is like learning grammar and vocabulary by reading lots of books.</li>
+</ul></li>
+<li><strong>Supervised Fine-tuning:</strong>
+<ul>
+<li>The model is trained on a smaller, <em>labeled</em> dataset for specific tasks (e.g., a dataset of questions and answers).</li>
+<li>This helps it specialize in tasks like question answering or summarization.</li>
+<li>This is like taking a specialized course after learning the basics.</li>
+</ul></li>
+<li><strong>Reinforcement Learning from Human Feedback (RLHF):</strong>
+<ul>
+<li>Human feedback is used to refine the model’s output, making it more helpful, honest, and harmless.</li>
+<li>This helps the model learn to generate text that is more aligned with human preferences.</li>
+<li>This is like getting feedback from a teacher to improve your writing.</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="limitations-and-ethical-considerations" class="level1">
+<h1>Limitations and Ethical Considerations</h1>
+<p>While incredibly powerful, LLMs are not perfect. It’s crucial to understand their limitations and the ethical implications of using them.</p>
+<section id="bias-a-reflection-of-the-data" class="level2">
+<h2 class="anchored" data-anchor-id="bias-a-reflection-of-the-data">Bias: A Reflection of the Data</h2>
+<p>LLMs can exhibit biases (gender, racial, cultural, etc.) because they learn from the data they’re trained on. If the training data contains biases, the model will likely reflect those biases in its output.</p>
+<p><strong>Example:</strong> If an LLM is trained mostly on text written by men, it might generate text that reflects male perspectives or stereotypes.</p>
+<p><strong>Impact of Bias:</strong></p>
+<ul>
+<li>Unfair or discriminatory outcomes.</li>
+<li>Reinforcement of harmful stereotypes.</li>
+<li>Erosion of trust in AI systems.</li>
+</ul>
+<p><strong>Mitigating Bias:</strong></p>
+<ul>
+<li><strong>Data Curation:</strong> Carefully selecting and diversifying training data is essential. This means including data from different demographics, languages, and cultures.</li>
+<li><strong>Model Fine-tuning:</strong> Training the model on datasets specifically designed to counteract bias.</li>
+<li><strong>Auditing and Evaluation:</strong> Rigorously testing models for bias.</li>
+</ul>
+</section>
+<section id="adversarial-attacks-tricking-the-model" class="level2">
+<h2 class="anchored" data-anchor-id="adversarial-attacks-tricking-the-model">Adversarial Attacks: Tricking the Model</h2>
+<p>Adversarial attacks involve making small, often imperceptible changes to the input to intentionally mislead the LLM. These changes exploit the model’s vulnerabilities.</p>
+<p><strong>Example:</strong> Slightly changing the wording of a prompt might cause the LLM to generate a biased, harmful, or nonsensical response.</p>
+<p><strong>Why is this a problem?</strong> Adversarial attacks can be used to manipulate LLMs for malicious purposes, spreading misinformation or generating harmful content.</p>
+</section>
+<section id="ethical-implications-a-broader-view" class="level2">
+<h2 class="anchored" data-anchor-id="ethical-implications-a-broader-view">Ethical Implications: A Broader View</h2>
+<p>Beyond bias and attacks, LLMs raise broader ethical concerns:</p>
+<ul>
+<li><strong>Job Displacement:</strong> As LLMs become more capable, they could automate tasks currently done by humans, potentially leading to job losses. <em>How can we prepare for this shift?</em></li>
+<li><strong>Misinformation:</strong> LLMs can generate realistic but fake news articles, social media posts, etc., with minimal human effort. <em>How can we combat the spread of misinformation?</em></li>
+<li><strong>Malicious Use:</strong> LLMs can be used to create deepfakes, generate harmful content, or spread propaganda. <em>What safeguards are needed?</em></li>
+<li><strong>Privacy</strong>: LLMs can be trained on personal data. <em>What regulations do we need in terms of data usage and privacy?</em></li>
+<li><strong>Accountability</strong>: When a LLM generates text, it is not always clear who is responsible for the content. <em>How can we hold LLM producers and users accountable?</em></li>
+<li><strong>Transparency:</strong> It can be diffcult to understand the decision-making processes of LLMs. <em>How can we make LLMs more transparent?</em></li>
+</ul>
+<p>Addressing these ethical concerns requires a multi-faceted approach involving researchers, policymakers, and the public.</p>
+</section>
+</section>
+<section id="putting-llms-to-work-practical-applications" class="level1">
+<h1>Putting LLMs to Work: Practical Applications</h1>
+<p>Now, let’s explore how you can actually <em>use</em> LLMs.</p>
+<section id="pair-programming-with-llms-your-ai-coding-assistant" class="level2">
+<h2 class="anchored" data-anchor-id="pair-programming-with-llms-your-ai-coding-assistant">Pair Programming with LLMs: Your AI Coding Assistant</h2>
+<p>Pair programming is a software development technique where two programmers work together. One writes code, and the other reviews it and provides feedback. LLMs can act as your “AI pair programmer,” assisting with:</p>
+<ul>
+<li><strong>Code Completion:</strong> Suggesting code snippets and completing lines of code.</li>
+<li><strong>Error Detection:</strong> Identifying potential bugs and suggesting fixes.</li>
+<li><strong>Code Generation:</strong> Generating entire functions or code blocks based on your instructions.</li>
+<li><strong>Code Explanation:</strong> Providing explanations of how code works.</li>
+<li><strong>Best Practices:</strong> Suggesting improvements and best practices.</li>
+</ul>
+<p><strong>Tools for Pair Programming:</strong></p>
+<ul>
+<li><strong>GitHub Copilot:</strong> Integrates with Visual Studio Code and provides AI-powered code suggestions.</li>
+<li><strong>Cursor:</strong> A fork of Visual Studio Code with even more powerful AI features (in many users’ experience).</li>
+<li><strong>Zed:</strong> A code editor designed specifically for pair programming (with both LLMs and humans). Allows use of local and API-connected models.</li>
+</ul>
+</section>
+<section id="tips-for-effective-pair-programming-with-llms" class="level2">
+<h2 class="anchored" data-anchor-id="tips-for-effective-pair-programming-with-llms">Tips for Effective Pair Programming with LLMs</h2>
+<ul>
+<li><strong>Start Small:</strong> Begin with simple tasks like code completion. Gradually move to more complex tasks as you become more comfortable.</li>
+<li><strong>Be Specific:</strong> Provide clear and concise instructions to the LLM. The more specific you are, the better the results.</li>
+<li><strong>Review Carefully:</strong> <em>Always</em> review the code generated by an LLM. They can make mistakes!</li>
+<li><strong>Learn from the LLM:</strong> Use LLMs to learn new coding techniques and explore different coding styles.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Manage Context:</strong> Be mindful of the context window. For longer codebases, the LLM might “forget” earlier parts of the code, leading to inconsistencies. Break down large tasks into smaller, more manageable chunks.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="using-llms-with-your-own-data-retrieval-augmented-generation-rag" class="level1">
+<h1>Using LLMs with Your Own Data: Retrieval Augmented Generation (RAG)</h1>
+<p>Retrieval Augmented Generation (RAG) is a powerful technique that combines the strengths of LLMs with external knowledge sources. It’s like giving your LLM access to a vast library and a research assistant.</p>
+<p><strong>Why is RAG important?</strong></p>
+<ul>
+<li><strong>Up-to-Date Information:</strong> LLMs are trained on a snapshot of data. RAG allows them to access <em>current</em> information.</li>
+<li><strong>Reduced Hallucinations:</strong> RAG grounds the LLM’s responses in factual information, reducing the likelihood of it making things up.</li>
+<li><strong>Domain-Specific Knowledge:</strong> You can connect the LLM to your own documents, databases, or APIs, making it an expert in your specific area.</li>
+</ul>
+<p><strong>How RAG Works:</strong></p>
+<ol type="1">
+<li><strong>Query:</strong> You ask a question or provide a prompt.</li>
+<li><strong>Retrieval:</strong> The RAG system searches through relevant external sources (documents, databases, etc.) to find information related to your query.</li>
+<li><strong>Augmentation:</strong> The retrieved information is added to the LLM’s prompt, providing it with context.</li>
+<li><strong>Generation:</strong> The LLM generates a response based on its pre-trained knowledge <em>and</em> the retrieved information.</li>
+</ol>
+<p><strong>Example:</strong></p>
+<ul>
+<li><strong>Question:</strong> “What are the latest advancements in quantum computing?”</li>
+<li><strong>Retrieval:</strong> The RAG system searches scientific publications, news articles, and research databases for recent information on quantum computing.</li>
+<li><strong>Augmentation:</strong> Key findings are added to the prompt.</li>
+<li><strong>Generation:</strong> The LLM uses this information to provide a comprehensive and up-to-date answer.</li>
+</ul>
+</section>
+<section id="running-llms-locally-with-ollama" class="level1">
+<h1>Running LLMs Locally with Ollama</h1>
+<p>While cloud-based LLMs (like those from OpenAI, Google, etc.) are convenient, running LLMs locally on your own computer offers several advantages:</p>
+<ul>
+<li><strong>Privacy:</strong> Your data never leaves your machine.</li>
+<li><strong>Cost Savings:</strong> No per-use API fees.</li>
+<li><strong>Customization:</strong> You can experiment with different models and fine-tune them for your specific needs.</li>
+<li><strong>Offline Access:</strong> Use LLMs even without an internet connection.</li>
+</ul>
+<p>However, running LLMs locally requires understanding the hardware requirements and some technical setup. Let’s explore how to do this using <strong>Ollama</strong>, a popular and user-friendly tool.</p>
+<section id="ollama-a-local-llm-manager" class="level2">
+<h2 class="anchored" data-anchor-id="ollama-a-local-llm-manager">Ollama: A Local LLM Manager</h2>
+<p><a href="https://ollama.com/">Ollama</a> is a free, open-source tool that simplifies the process of downloading, installing, and running LLMs on your computer (macOS, Linux, and Windows). It provides a command-line interface (CLI) and supports a wide variety of models.</p>
+<p><strong>Key Features of Ollama:</strong></p>
+<ul>
+<li><strong>Easy Installation:</strong> Simple download and installation process.</li>
+<li><strong>Model Management:</strong> Easily download and manage different LLMs from a curated library (including models from Hugging Face - more on this later in the links).</li>
+<li><strong>Command-Line Interface:</strong> Interact with LLMs using simple commands.</li>
+<li><strong>API Server:</strong> Ollama can also act as a local API server, allowing you to integrate local LLMs into your applications.</li>
+</ul>
+</section>
+<section id="hardware-requirements-ram-cpu-and-gpu" class="level2">
+<h2 class="anchored" data-anchor-id="hardware-requirements-ram-cpu-and-gpu">Hardware Requirements: RAM, CPU, and GPU</h2>
+<p>Running LLMs locally requires sufficient computing resources. The key factors are:</p>
+<ul>
+<li><strong>RAM:</strong> This is <em>crucial</em>. The entire LLM (its parameters) needs to be loaded into RAM to run fast. Larger models require more RAM. <em>Minimum</em> 8GB, but 16GB or more is recommended for a good experience. 32GB+ is ideal for larger models.</li>
+<li><strong>CPU:</strong> While GPUs are generally preferred, smaller LLMs (under 7B parameters, see below) can often run reasonably well on a modern CPU, especially if you have enough RAM. A faster CPU will improve performance!</li>
+<li><strong>GPU:</strong> GPUs are <em>much</em> better suited for the parallel processing required by LLMs. The more VRAM (video RAM) your GPU has, the larger the models you can run.</li>
+<li><strong>Disk Space:</strong> LLMs can take up a quite a lot of disk space (several gigabytes). Make sure you have enough free space.</li>
+</ul>
+</section>
+<section id="model-sizes-billions-of-parameters-b" class="level2">
+<h2 class="anchored" data-anchor-id="model-sizes-billions-of-parameters-b">Model Sizes: Billions of Parameters (B)</h2>
+<p>LLMs are often described by the number of <em>parameters</em> they have. Parameters are the internal values that the model learns during training. More parameters generally mean a more capable model, but also a larger model that requires more resources. Still, the size of the model is not the only thing that matters as the quality of the model depends on the quality of the training data, the training process, and the model architecture. Newer models are often more capable and require less resources than older models.</p>
+<ul>
+<li><strong>Small Models (under 7B):</strong> Can often run on CPUs with sufficient RAM (16GB+). Good for experimentation and less demanding tasks.</li>
+<li><strong>Medium Models (7B - 13B):</strong> Benefit greatly from a GPU, but can sometimes run on a CPU with a lot of RAM (32GB+).</li>
+<li><strong>Large Models (30B+):</strong> Require a powerful GPU with significant VRAM.</li>
+<li><strong>Very Large Models (70B+):</strong> Require high-end GPUs or multiple GPUs.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This is why you’ll often see model names like <code>mistral:7b</code>, <code>codellama:34b</code>, etc. The number followed by “b” indicates the billions of parameters.</p>
+</div>
+</div>
+</section>
+<section id="quantization-making-models-smaller" class="level2">
+<h2 class="anchored" data-anchor-id="quantization-making-models-smaller">Quantization: Making Models Smaller</h2>
+<p><strong>Quantization</strong> is a technique used to reduce the size and computational requirements of LLMs “without significantly impacting performance”. It involves representing the model’s parameters (which are normally 32-bit floating-point numbers) with lower precision (e.g., 8-bit, 4-bit, or even 2-bit integers).</p>
+<ul>
+<li><p><strong>Benefits of Quantization:</strong></p>
+<ul>
+<li><strong>Smaller Model Size:</strong> Reduces the amount of RAM and disk space needed.</li>
+<li><strong>Faster Inference:</strong> Lower-precision calculations are faster.</li>
+<li><strong>Lower Power Consumption:</strong> Less demanding on your hardware.</li>
+</ul></li>
+<li><p><strong>Trade-offs:</strong> There’s usually a small decrease in accuracy with quantization. The more aggressive the quantization (e.g., 2-bit), the greater the potential impact on performance.</p></li>
+<li><p><strong>Ollama and Quantization</strong>: Ollama supports quantized models downloaded from Hugging Face. Here are some examples of model names with suffixes like <code>q4_0</code>, <code>q8_0</code>, etc. These indicate the level of quantization:</p>
+<ul>
+<li><code>q4_0</code>: 4-bit quantization (a good balance between size and quality).</li>
+<li><code>q8_0</code>: 8-bit quantization (closer to the original model’s precision, larger size).</li>
+</ul></li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The different quantization levels can provide a different balance of speed, size, and quality. If you are really into LLMS, it’s worth experimenting to find the best option for your hardware and needs. For most users, the default model should be sufficient and quantized models are not needed.</p>
+</div>
+</div>
+</section>
+<section id="getting-started-with-ollama" class="level2">
+<h2 class="anchored" data-anchor-id="getting-started-with-ollama">Getting Started with Ollama</h2>
+<ol type="1">
+<li><p><strong>Download and Install Ollama:</strong> Go to <a href="https://ollama.com/">ollama.com</a> and follow the installation instructions for your operating system.</p></li>
+<li><p><strong>Pull a Model:</strong> Open your terminal (or command prompt) and use the <code>ollama pull</code> command to download a model. For example, to download the <code>mistral:7b</code> model: <code>ollama pull mistral:7b</code></p></li>
+<li><p><strong>Run the Model:</strong> Use the <code>ollama run</code> command to start interacting with the model: <code>ollama run mistral:7b</code> This will open a chat interface in your terminal.</p></li>
+<li><p><strong>Ask a Question:</strong> Type your question or prompt and press Enter. The LLM will generate a response.</p></li>
+<li><p><strong>Experiment:</strong> Try different models and see what works best on your system. The Ollama website has a library of available models. More models with different sizes and quantization levels are available from Hugging Face.</p></li>
+</ol>
+<p>By using Ollama and understanding the concepts of model size, RAM, and quantization, you can use LLMs on your own computer and explore the possibilities of local AI. As Ollama also supports running models with an APU, you can use the downloaded models as coding assistants in your IDE (VS Code with Continue or Zed) or while building your own RAG apps.</p>
+</section>
+</section>
+<section id="resources-and-tools" class="level1">
+<h1>Resources and Tools</h1>
+<section id="hosted-llms-accessed-via-api" class="level2">
+<h2 class="anchored" data-anchor-id="hosted-llms-accessed-via-api">Hosted LLMs (Accessed via API)</h2>
+<p>These are powerful LLMs hosted by companies, which you can access through APIs (Application Programming Interfaces). You typically pay for usage.</p>
+<ul>
+<li><strong><a href="https://chatgpt.com">OpenAI (ChatGPT)</a>:</strong> The creators of ChatGPT and GPT-4, offering a range of models.</li>
+<li><strong><a href="https://mistral.ai/">Mistral</a>:</strong> A European-based company offering competitive models.</li>
+<li><strong><a href="https://gemini.google.com/">Google (Gemini)</a>:</strong> Google’s LLM, offering strong performance and integration with Google services.</li>
+<li><strong><a href="https://www.anthropic.com/claude">Anthropic (Claude)</a>:</strong> Known for its its ability to handle code effectively.</li>
+</ul>
+</section>
+<section id="local-llms-run-on-your-own-computer" class="level2">
+<h2 class="anchored" data-anchor-id="local-llms-run-on-your-own-computer">Local LLMs (Run on Your Own Computer)</h2>
+<p>These tools can be used to run open-source LLMs that you can download and run on your own machine. This gives you more privacy and control, but requires more technical expertise and computational resources.</p>
+<ul>
+<li><strong><a href="https://ollama.com/">Ollama</a>:</strong> Free and open-source tool to run large language models locally, supports a wide range of models. Note, that the models are not as powerful as the hosted ones and that your computer needs to have a good GPU to run larger models. Smaller models with less than 8B parameters can also often be run on a CPU with enough available RAM. Great for privacy and if you don’t want to pay for the hosted models.</li>
+<li><strong><a href="https://huggingface.co/">Hugging Face</a>:</strong> Hosts a wide range of large language models, including models fine-tuned for specific tasks by the community. Models can also be downloaded to Ollama and run locally, if your computer is powerful enough.</li>
+</ul>
+</section>
+<section id="working-with-data" class="level2">
+<h2 class="anchored" data-anchor-id="working-with-data">Working with data</h2>
+<p>In addition to the hosted and local LLMs, there are also tools that allow you to work with LLMs in a browser to build RAG apps or custom chatbots.</p>
+<ul>
+<li><strong><a href="https://notebooklm.google/">NotebookLM</a></strong>: Google’s Gemini that can be fed with files, images and YouTube videos to generate text based on the content. Only works within a workspace of Google, you can’t make it available to the public (yet).</li>
+<li><strong><a href="https://openwebui.com/">Open Web UI</a></strong>: Open Web UI is a tool to run large language models locally (in conjuction with, for example, Ollama). It is a browser-based interface that allows you to interact with the models and build RAG apps.</li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/beyondsimulations\.github\.io\/Research-Workshops");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>Research Workshops, Tobias Vlćek<br>CC BY-NC-SA 4.0</p>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/beyondsimulations/Research-Workshops/edit/main/large-language-models.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/blob/main/large-language-models.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/beyondsimulations/Research-Workshops">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://linkedin.com/in/tobiasvlcek">
+      <i class="bi bi-linkedin" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
