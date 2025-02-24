@@ -36,14 +36,11 @@ In addition to the hosted and local LLMs, there are also tools that allow you to
 
 - [NotebookLM](https://notebooklm.google/)**: Google's Gemini that can be fed with files, images and YouTube videos to generate text based on the content. Only works within a workspace of Google, you can't make it available to the public (yet).
 - [LM Studio](https://lmstudio.ai/): An application for discovering, downloading, and running LLMs locally. It supports various model architectures and offers both a Chat UI and an OpenAI-compatible local server. Features include offline document chat capabilities and easy model downloads from Hugging Face.
-- [Open Web UI](https://openwebui.com/)**: Open Web UI is a tool to run large language models locally (in conjuction with, for example, Ollama). It is a browser-based interface that allows you to interact with the models and build RAG apps.
+- [Open Web UI](https://openwebui.com/): Open Web UI is a tool to run large language models locally (in conjuction with, for example, Ollama). It is a browser-based interface that allows you to interact with the models and build RAG apps.
 
 ## Further resources
 
-- [Quarto](https://quarto.org)
-    - A static website generator that is very powerful and flexible. Used to create the slides and the website for the course.
-- [Github](https://github.com)
-    - The largest provider for git repositories owned by Microsoft. A lot of open source projects are hosted here and you can read the code. 
-- [Daily Dose of Data Science](https://www.dailydoseofds.com)
-    - A website and a newsletter with lots of easy-to-digest resources to improve your skills in Data Science and Large Language Models.
-    
+- [Quarto](https://quarto.org): A static website generator that is very powerful and flexible. Used to create the slides and the website for the course.
+- [Github](https://github.com): The largest provider for git repositories owned by Microsoft. A lot of open source projects are hosted here and you can read the code. 
+- [Daily Dose of Data Science](https://www.dailydoseofds.com): A website and a newsletter with lots of easy-to-digest resources to improve your skills in Data Science and Large Language Models.
+- [Alpha Signal](https://alphasignal.ai/): A newsletter with lots of resources on the current developments of Large Language Models.
