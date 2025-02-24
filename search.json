@@ -318,5 +318,15 @@
     "crumbs": [
       "Large Language Models"
     ]
+  },
+  {
+    "objectID": "large-language-models.html#talk-to-the-llm-in-code",
+    "href": "large-language-models.html#talk-to-the-llm-in-code",
+    "title": "Working with Large Language Models",
+    "section": "Talk to the LLM in code",
+    "text": "Talk to the LLM in code\n\nTo talk to the LLM in code, you can use the following code\nMake sure that you have a local Ollama with the model you want to use running!\n\n\nimport requests\nimport json\n\ndef ask_llm(prompt, model=\"mistral:7b\"):\n    \"\"\"\n    Send a prompt to a locally running Ollama model and get the response.\n    \n    Args:\n        prompt (str): The question or prompt to send to the model\n        model (str): The name of the model to use (default: \"mistral:7b\")\n    \n    Returns:\n        str: The model's response\n    \"\"\"\n\n    url = \"http://localhost:11434/api/generate\"\n    \n    data = {\n        \"model\": model,\n        \"prompt\": prompt,\n        \"stream\": False\n    }\n    \n    try:\n        response = requests.post(url, json=data)\n        response.raise_for_status()  # Raise an exception for bad status\n        result = response.json()\n        return result[\"response\"]\n    except requests.exceptions.RequestException as e:\n        return f\"Error: {str(e)}\\nMake sure Ollama is running locally!\"\n\ndef main():\n    print(\"Local LLM Chat (type 'quit' to exit)\")\n    print(\"-\" * 50)\n    \n    while True:\n        user_input = input(\"\\nYour question: \")\n        \n        if user_input.lower() in ['quit', 'exit']:\n            print(\"\\nGoodbye!\")\n            break\n            \n        response = ask_llm(user_input)\n        print(\"\\nResponse:\", response)\n\nif __name__ == \"__main__\":\n    main()",
+    "crumbs": [
+      "Large Language Models"
+    ]
   }
 ]
