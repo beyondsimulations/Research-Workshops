@@ -135,18 +135,18 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#welcome-to-todays-short-workshop" id="toc-welcome-to-todays-short-workshop" class="nav-link active" data-scroll-target="#welcome-to-todays-short-workshop">Welcome to today’s short workshop!</a></li>
-  <li><a href="#what-is-an-llm-and-why-should-you-care" id="toc-what-is-an-llm-and-why-should-you-care" class="nav-link" data-scroll-target="#what-is-an-llm-and-why-should-you-care">What is an LLM? (And Why Should You Care?)</a></li>
-  <li><a href="#a-great-overview-3blue1brown" id="toc-a-great-overview-3blue1brown" class="nav-link" data-scroll-target="#a-great-overview-3blue1brown">A Great Overview: 3Blue1Brown</a></li>
-  <li><a href="#key-concepts-what-youll-learn" id="toc-key-concepts-what-youll-learn" class="nav-link" data-scroll-target="#key-concepts-what-youll-learn">Key Concepts: What You’ll Learn</a></li>
-  <li><a href="#inside-llms-how-they-work" id="toc-inside-llms-how-they-work" class="nav-link" data-scroll-target="#inside-llms-how-they-work">Inside LLMs: How they work</a>
+  <li><a href="#welcome-to-todays-workshop" id="toc-welcome-to-todays-workshop" class="nav-link active" data-scroll-target="#welcome-to-todays-workshop">Welcome to today’s workshop!</a></li>
+  <li><a href="#what-is-an-llm" id="toc-what-is-an-llm" class="nav-link" data-scroll-target="#what-is-an-llm">What is an LLM?</a></li>
+  <li><a href="#a-great-overview-by-3blue1brown" id="toc-a-great-overview-by-3blue1brown" class="nav-link" data-scroll-target="#a-great-overview-by-3blue1brown">A Great Overview by 3Blue1Brown</a></li>
+  <li><a href="#todays-key-concepts" id="toc-todays-key-concepts" class="nav-link" data-scroll-target="#todays-key-concepts">Today’s Key Concepts</a></li>
+  <li><a href="#how-they-work" id="toc-how-they-work" class="nav-link" data-scroll-target="#how-they-work">How they work</a>
   <ul class="collapse">
   <li><a href="#deep-learning-and-text-data" id="toc-deep-learning-and-text-data" class="nav-link" data-scroll-target="#deep-learning-and-text-data">Deep Learning and Text Data</a></li>
-  <li><a href="#the-transformer-a-key-innovation" id="toc-the-transformer-a-key-innovation" class="nav-link" data-scroll-target="#the-transformer-a-key-innovation">The Transformer: A Key Innovation</a></li>
-  <li><a href="#tokens-the-building-blocks-of-language" id="toc-tokens-the-building-blocks-of-language" class="nav-link" data-scroll-target="#tokens-the-building-blocks-of-language">Tokens: The Building Blocks of Language</a></li>
-  <li><a href="#context-window-the-llms-memory" id="toc-context-window-the-llms-memory" class="nav-link" data-scroll-target="#context-window-the-llms-memory">Context Window: The LLM’s “Memory”</a></li>
+  <li><a href="#the-transformer" id="toc-the-transformer" class="nav-link" data-scroll-target="#the-transformer">The Transformer</a></li>
+  <li><a href="#tokens-the-building-blocks" id="toc-tokens-the-building-blocks" class="nav-link" data-scroll-target="#tokens-the-building-blocks">Tokens: The Building Blocks</a></li>
+  <li><a href="#context-window-llms-memory" id="toc-context-window-llms-memory" class="nav-link" data-scroll-target="#context-window-llms-memory">Context Window: LLM’s “Memory”</a></li>
   </ul></li>
-  <li><a href="#llm-architectures-choosing-the-right-tool" id="toc-llm-architectures-choosing-the-right-tool" class="nav-link" data-scroll-target="#llm-architectures-choosing-the-right-tool">LLM Architectures: Choosing the Right Tool</a>
+  <li><a href="#llm-architectures" id="toc-llm-architectures" class="nav-link" data-scroll-target="#llm-architectures">LLM Architectures</a>
   <ul class="collapse">
   <li><a href="#encoder-decoder" id="toc-encoder-decoder" class="nav-link" data-scroll-target="#encoder-decoder">Encoder-Decoder</a></li>
   <li><a href="#encoder-only" id="toc-encoder-only" class="nav-link" data-scroll-target="#encoder-only">Encoder-Only</a></li>
@@ -155,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#mixture-of-experts-moe" id="toc-mixture-of-experts-moe" class="nav-link" data-scroll-target="#mixture-of-experts-moe">Mixture of Experts (MoE)</a></li>
   </ul></li>
   </ul></li>
-  <li><a href="#training-llms-a-massive-undertaking" id="toc-training-llms-a-massive-undertaking" class="nav-link" data-scroll-target="#training-llms-a-massive-undertaking">Training LLMs: A Massive Undertaking</a>
+  <li><a href="#training-llms" id="toc-training-llms" class="nav-link" data-scroll-target="#training-llms">Training LLMs</a>
   <ul class="collapse">
   <li><a href="#the-training-process" id="toc-the-training-process" class="nav-link" data-scroll-target="#the-training-process">The Training Process</a></li>
   <li><a href="#computational-power-and-parallelism" id="toc-computational-power-and-parallelism" class="nav-link" data-scroll-target="#computational-power-and-parallelism">Computational Power and Parallelism</a></li>
@@ -165,19 +165,20 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#bias-a-reflection-of-the-data" id="toc-bias-a-reflection-of-the-data" class="nav-link" data-scroll-target="#bias-a-reflection-of-the-data">Bias: A Reflection of the Data</a></li>
   <li><a href="#adversarial-attacks-tricking-the-model" id="toc-adversarial-attacks-tricking-the-model" class="nav-link" data-scroll-target="#adversarial-attacks-tricking-the-model">Adversarial Attacks: Tricking the Model</a></li>
-  <li><a href="#ethical-implications-a-broader-view" id="toc-ethical-implications-a-broader-view" class="nav-link" data-scroll-target="#ethical-implications-a-broader-view">Ethical Implications: A Broader View</a></li>
+  <li><a href="#a-broader-view" id="toc-a-broader-view" class="nav-link" data-scroll-target="#a-broader-view">A Broader View</a></li>
   </ul></li>
-  <li><a href="#putting-llms-to-work-practical-applications" id="toc-putting-llms-to-work-practical-applications" class="nav-link" data-scroll-target="#putting-llms-to-work-practical-applications">Putting LLMs to Work: Practical Applications</a>
+  <li><a href="#putting-llms-to-work" id="toc-putting-llms-to-work" class="nav-link" data-scroll-target="#putting-llms-to-work">Putting LLMs to Work</a>
   <ul class="collapse">
-  <li><a href="#pair-programming-with-llms-your-ai-coding-assistant" id="toc-pair-programming-with-llms-your-ai-coding-assistant" class="nav-link" data-scroll-target="#pair-programming-with-llms-your-ai-coding-assistant">Pair Programming with LLMs: Your AI Coding Assistant</a></li>
-  <li><a href="#tips-for-effective-pair-programming-with-llms" id="toc-tips-for-effective-pair-programming-with-llms" class="nav-link" data-scroll-target="#tips-for-effective-pair-programming-with-llms">Tips for Effective Pair Programming with LLMs</a></li>
+  <li><a href="#pair-programming-with-llms" id="toc-pair-programming-with-llms" class="nav-link" data-scroll-target="#pair-programming-with-llms">Pair Programming with LLMs</a></li>
+  <li><a href="#tips-for-effective-pair-programming" id="toc-tips-for-effective-pair-programming" class="nav-link" data-scroll-target="#tips-for-effective-pair-programming">Tips for Effective Pair Programming</a></li>
   </ul></li>
-  <li><a href="#using-llms-with-your-own-data-retrieval-augmented-generation-rag" id="toc-using-llms-with-your-own-data-retrieval-augmented-generation-rag" class="nav-link" data-scroll-target="#using-llms-with-your-own-data-retrieval-augmented-generation-rag">Using LLMs with Your Own Data: Retrieval Augmented Generation (RAG)</a></li>
+  <li><a href="#retrieval-augmented-generation-rag" id="toc-retrieval-augmented-generation-rag" class="nav-link" data-scroll-target="#retrieval-augmented-generation-rag">Retrieval Augmented Generation (RAG)</a></li>
   <li><a href="#running-llms-locally-with-ollama" id="toc-running-llms-locally-with-ollama" class="nav-link" data-scroll-target="#running-llms-locally-with-ollama">Running LLMs Locally with Ollama</a>
   <ul class="collapse">
-  <li><a href="#ollama-a-local-llm-manager" id="toc-ollama-a-local-llm-manager" class="nav-link" data-scroll-target="#ollama-a-local-llm-manager">Ollama: A Local LLM Manager</a></li>
-  <li><a href="#hardware-requirements-ram-cpu-and-gpu" id="toc-hardware-requirements-ram-cpu-and-gpu" class="nav-link" data-scroll-target="#hardware-requirements-ram-cpu-and-gpu">Hardware Requirements: RAM, CPU, and GPU</a></li>
-  <li><a href="#model-sizes-billions-of-parameters-b" id="toc-model-sizes-billions-of-parameters-b" class="nav-link" data-scroll-target="#model-sizes-billions-of-parameters-b">Model Sizes: Billions of Parameters (B)</a></li>
+  <li><a href="#ollama" id="toc-ollama" class="nav-link" data-scroll-target="#ollama">Ollama</a></li>
+  <li><a href="#hardware-requirements" id="toc-hardware-requirements" class="nav-link" data-scroll-target="#hardware-requirements">Hardware Requirements</a></li>
+  <li><a href="#billions-of-parameters-b" id="toc-billions-of-parameters-b" class="nav-link" data-scroll-target="#billions-of-parameters-b">Billions of Parameters (B)</a></li>
+  <li><a href="#size-overview" id="toc-size-overview" class="nav-link" data-scroll-target="#size-overview">Size Overview</a></li>
   <li><a href="#quantization-making-models-smaller" id="toc-quantization-making-models-smaller" class="nav-link" data-scroll-target="#quantization-making-models-smaller">Quantization: Making Models Smaller</a></li>
   <li><a href="#getting-started-with-ollama" id="toc-getting-started-with-ollama" class="nav-link" data-scroll-target="#getting-started-with-ollama">Getting Started with Ollama</a></li>
   </ul></li>
@@ -214,10 +215,10 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="welcome-to-todays-short-workshop" class="level2">
-<h2 class="anchored" data-anchor-id="welcome-to-todays-short-workshop">Welcome to today’s short workshop!</h2>
+<section id="welcome-to-todays-workshop" class="level2">
+<h2 class="anchored" data-anchor-id="welcome-to-todays-workshop">Welcome to today’s workshop!</h2>
 <ul>
-<li>Explore the world of Large Language Models (LLMs).</li>
+<li>Explore Large Language Models (LLMs).</li>
 <li>You’ve likely interacted with LLMs already:
 <ul>
 <li>ChatGPT</li>
@@ -231,8 +232,8 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 </ul>
 </section>
-<section id="what-is-an-llm-and-why-should-you-care" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-an-llm-and-why-should-you-care">What is an LLM? (And Why Should You Care?)</h2>
+<section id="what-is-an-llm" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-an-llm">What is an LLM?</h2>
 <ul>
 <li>LLMs are a type of Artificial Intelligence (AI).</li>
 <li>Specifically within Natural Language Processing (NLP).</li>
@@ -254,13 +255,21 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>Why should you care?</strong> LLMs are rapidly transforming how we: - Write and edit content - Develop software - Conduct research - Analyze data - Automate tasks - Learn new concepts</p>
+<p><strong>Why should you care?</strong> LLMs are rapidly transforming how we:</p>
+<ul>
+<li>Write and edit content</li>
+<li>Develop software</li>
+<li>Conduct research</li>
+<li>Analyze data</li>
+<li>Automate tasks</li>
+<li>Learn new concepts</li>
+</ul>
 <p>Understanding these tools is becoming essential across nearly every professional field.</p>
 </div>
 </div>
 </section>
-<section id="a-great-overview-3blue1brown" class="level2">
-<h2 class="anchored" data-anchor-id="a-great-overview-3blue1brown">A Great Overview: 3Blue1Brown</h2>
+<section id="a-great-overview-by-3blue1brown" class="level2">
+<h2 class="anchored" data-anchor-id="a-great-overview-by-3blue1brown">A Great Overview by 3Blue1Brown</h2>
 <ul>
 <li>Greg Sanderson provides an excellent, concise explanation of LLMs.</li>
 <li>Great starting point to understand LLMs.</li>
@@ -268,8 +277,8 @@ Tip
 </ul>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/LPZh9BOjkQs" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 </section>
-<section id="key-concepts-what-youll-learn" class="level2">
-<h2 class="anchored" data-anchor-id="key-concepts-what-youll-learn">Key Concepts: What You’ll Learn</h2>
+<section id="todays-key-concepts" class="level2">
+<h2 class="anchored" data-anchor-id="todays-key-concepts">Today’s Key Concepts</h2>
 <ul>
 <li>Fundamental principles behind how LLMs work.</li>
 <li>The process of training these powerful models.</li>
@@ -279,8 +288,8 @@ Tip
 <li>Further resources and tools.</li>
 </ul>
 </section>
-<section id="inside-llms-how-they-work" class="level1">
-<h1>Inside LLMs: How they work</h1>
+<section id="how-they-work" class="level1">
+<h1>How they work</h1>
 <ul>
 <li>High-level overview of LLM workings.</li>
 <li>No deep technical details.</li>
@@ -310,8 +319,8 @@ Tip
 </ul></li>
 </ul>
 </section>
-<section id="the-transformer-a-key-innovation" class="level2">
-<h2 class="anchored" data-anchor-id="the-transformer-a-key-innovation">The Transformer: A Key Innovation</h2>
+<section id="the-transformer" class="level2">
+<h2 class="anchored" data-anchor-id="the-transformer">The Transformer</h2>
 <ul>
 <li>Modern LLMs powered by <strong>transformer model</strong> architecture.</li>
 <li>Introduced in “<a href="https://arxiv.org/abs/1706.03762">Attention is All You Need</a>” (Vaswani et al., 2017).</li>
@@ -340,8 +349,8 @@ Tip
 </ul></li>
 </ul>
 </section>
-<section id="tokens-the-building-blocks-of-language" class="level2">
-<h2 class="anchored" data-anchor-id="tokens-the-building-blocks-of-language">Tokens: The Building Blocks of Language</h2>
+<section id="tokens-the-building-blocks" class="level2">
+<h2 class="anchored" data-anchor-id="tokens-the-building-blocks">Tokens: The Building Blocks</h2>
 <ul>
 <li>LLMs process text as <strong>tokens</strong>, not whole words.</li>
 <li>Token can be:
@@ -378,8 +387,8 @@ Note
 </div>
 </div>
 </section>
-<section id="context-window-the-llms-memory" class="level2">
-<h2 class="anchored" data-anchor-id="context-window-the-llms-memory">Context Window: The LLM’s “Memory”</h2>
+<section id="context-window-llms-memory" class="level2">
+<h2 class="anchored" data-anchor-id="context-window-llms-memory">Context Window: LLM’s “Memory”</h2>
 <ul>
 <li><strong>Context window:</strong> LLM’s short-term memory.</li>
 <li>Number of tokens the model can process at once.</li>
@@ -411,8 +420,8 @@ Tip
 </div>
 </section>
 </section>
-<section id="llm-architectures-choosing-the-right-tool" class="level1">
-<h1>LLM Architectures: Choosing the Right Tool</h1>
+<section id="llm-architectures" class="level1">
+<h1>LLM Architectures</h1>
 <ul>
 <li>LLMs are versatile tools.</li>
 <li>Different tasks need different architectures.</li>
@@ -490,8 +499,8 @@ Tip
 </section>
 </section>
 </section>
-<section id="training-llms-a-massive-undertaking" class="level1">
-<h1>Training LLMs: A Massive Undertaking</h1>
+<section id="training-llms" class="level1">
+<h1>Training LLMs</h1>
 <ul>
 <li>Training an LLM: like teaching a child language, but huge scale.</li>
 </ul>
@@ -537,7 +546,7 @@ Note
 <h2 class="anchored" data-anchor-id="computational-power-and-parallelism">Computational Power and Parallelism</h2>
 <ul>
 <li>Training needs <em>immense</em> computational power.</li>
-<li>Specialized hardware: GPUs (Graphics Processing Units).</li>
+<li><strong>Specialized hardware:</strong> GPUs (Graphics Processing Units).</li>
 <li><strong>Model Parallelism:</strong> Distributes model parts across multiple GPUs.
 <ul>
 <li>Speeds up training via parallel processing.</li>
@@ -618,27 +627,45 @@ Note
 <li>Spreading misinformation or generating harmful content.</li>
 </ul>
 </section>
-<section id="ethical-implications-a-broader-view" class="level2">
-<h2 class="anchored" data-anchor-id="ethical-implications-a-broader-view">Ethical Implications: A Broader View</h2>
+<section id="a-broader-view" class="level2">
+<h2 class="anchored" data-anchor-id="a-broader-view">A Broader View</h2>
 <ul>
-<li><p>LLMs raise broader ethical concerns:</p></li>
-<li><p><strong>Job Displacement:</strong> Automate human tasks -&gt; potential job losses. <em>How to prepare for this shift?</em></p></li>
-<li><p><strong>Misinformation:</strong> Generate realistic fake news easily. <em>How to combat misinformation spread?</em></p></li>
-<li><p><strong>Malicious Use:</strong> Deepfakes, harmful content, propaganda. <em>What safeguards are needed?</em></p></li>
-<li><p><strong>Privacy</strong>: Trained on personal data. <em>Data usage and privacy regulations needed?</em></p></li>
-<li><p><strong>Accountability</strong>: Unclear who is responsible for LLM-generated content. <em>How to hold producers/users accountable?</em></p></li>
-<li><p><strong>Transparency:</strong> Difficult to understand LLM decision-making. <em>How to make LLMs more transparent?</em></p></li>
-<li><p>Addressing ethical concerns requires: researchers, policymakers, public.</p></li>
+<li>LLMs raise broader ethical concerns:</li>
+<li><strong>Job Displacement:</strong> Automate human tasks -&gt; potential job losses.
+<ul>
+<li><em>How to prepare for this shift?</em></li>
+</ul></li>
+<li><strong>Misinformation:</strong> Generate realistic fake news easily.
+<ul>
+<li><em>How to combat misinformation spread?</em></li>
+</ul></li>
+<li><strong>Malicious Use:</strong> Deepfakes, harmful content, propaganda.
+<ul>
+<li><em>What safeguards are needed?</em></li>
+</ul></li>
+<li><strong>Privacy</strong>: Trained on personal data.
+<ul>
+<li><em>Data usage and privacy regulations needed?</em></li>
+</ul></li>
+<li><strong>Accountability</strong>: Unclear who is responsible for LLM-generated content.
+<ul>
+<li><em>How to hold producers/users accountable?</em></li>
+</ul></li>
+<li><strong>Transparency:</strong> Difficult to understand LLM decision-making.
+<ul>
+<li><em>How to make LLMs more transparent?</em></li>
+</ul></li>
+<li>Addressing ethical concerns requires: <strong>researchers, policymakers, public</strong>.</li>
 </ul>
 </section>
 </section>
-<section id="putting-llms-to-work-practical-applications" class="level1">
-<h1>Putting LLMs to Work: Practical Applications</h1>
+<section id="putting-llms-to-work" class="level1">
+<h1>Putting LLMs to Work</h1>
 <ul>
 <li>Explore how to <em>use</em> LLMs practically.</li>
 </ul>
-<section id="pair-programming-with-llms-your-ai-coding-assistant" class="level2">
-<h2 class="anchored" data-anchor-id="pair-programming-with-llms-your-ai-coding-assistant">Pair Programming with LLMs: Your AI Coding Assistant</h2>
+<section id="pair-programming-with-llms" class="level2">
+<h2 class="anchored" data-anchor-id="pair-programming-with-llms">Pair Programming with LLMs</h2>
 <ul>
 <li>Pair programming: two programmers work together.
 <ul>
@@ -660,8 +687,8 @@ Note
 <li><strong>Zed:</strong> Code editor for pair programming (LLMs and humans). Local and API models.</li>
 </ul>
 </section>
-<section id="tips-for-effective-pair-programming-with-llms" class="level2">
-<h2 class="anchored" data-anchor-id="tips-for-effective-pair-programming-with-llms">Tips for Effective Pair Programming with LLMs</h2>
+<section id="tips-for-effective-pair-programming" class="level2">
+<h2 class="anchored" data-anchor-id="tips-for-effective-pair-programming">Tips for Effective Pair Programming</h2>
 <ul>
 <li><strong>Start Small:</strong> Begin with code completion, then complex tasks.</li>
 <li><strong>Be Specific:</strong> Clear, concise instructions to LLM.</li>
@@ -683,8 +710,8 @@ Tip
 </div>
 </section>
 </section>
-<section id="using-llms-with-your-own-data-retrieval-augmented-generation-rag" class="level1">
-<h1>Using LLMs with Your Own Data: Retrieval Augmented Generation (RAG)</h1>
+<section id="retrieval-augmented-generation-rag" class="level1">
+<h1>Retrieval Augmented Generation (RAG)</h1>
 <ul>
 <li>Retrieval Augmented Generation (RAG): combines LLMs with external knowledge.</li>
 <li>LLM with vast library and research assistant.</li>
@@ -693,7 +720,8 @@ Tip
 <ul>
 <li><strong>Up-to-Date Information:</strong> Access <em>current</em> information beyond training data.</li>
 <li><strong>Reduced Hallucinations:</strong> Responses grounded in facts, less making things up.</li>
-<li><strong>Domain-Specific Knowledge:</strong> Connect to your documents, databases, APIs. Expert in your area.</li>
+<li><strong>Domain-Specific Knowledge:</strong> Connect to your documents, databases, APIs.</li>
+<li><strong>Expert in your area:</strong> Tailored to specific domain without retraining.</li>
 </ul>
 <p><strong>How RAG Works:</strong></p>
 <ol type="1">
@@ -721,15 +749,15 @@ Tip
 </ul>
 <p><strong>Advantages:</strong></p>
 <ul>
-<li><p><strong>Privacy:</strong> Data stays on your machine.</p></li>
-<li><p><strong>Cost Savings:</strong> No API fees.</p></li>
-<li><p><strong>Customization:</strong> Experiment, fine-tune for needs.</p></li>
-<li><p><strong>Offline Access:</strong> Use without internet.</p></li>
-<li><p>Requires understanding hardware and technical setup.</p></li>
-<li><p><strong>Ollama</strong>: user-friendly tool for local LLMs.</p></li>
+<li><strong>Privacy:</strong> Data stays on your machine.</li>
+<li><strong>Cost Savings:</strong> No API fees.</li>
+<li><strong>Customization:</strong> Experiment, fine-tune for needs.</li>
+<li><strong>Offline Access:</strong> Use without internet.</li>
+<li>Requires understanding hardware and technical setup.</li>
+<li><strong>Ollama</strong>: user-friendly tool for local LLMs.</li>
 </ul>
-<section id="ollama-a-local-llm-manager" class="level2">
-<h2 class="anchored" data-anchor-id="ollama-a-local-llm-manager">Ollama: A Local LLM Manager</h2>
+<section id="ollama" class="level2">
+<h2 class="anchored" data-anchor-id="ollama">Ollama</h2>
 <ul>
 <li><a href="https://ollama.com/">Ollama</a>: free, open-source.</li>
 <li>Simplifies downloading, installing, running LLMs (macOS, Linux, Windows).</li>
@@ -743,8 +771,8 @@ Tip
 <li><strong>API Server:</strong> Local API server, integrate in applications.</li>
 </ul>
 </section>
-<section id="hardware-requirements-ram-cpu-and-gpu" class="level2">
-<h2 class="anchored" data-anchor-id="hardware-requirements-ram-cpu-and-gpu">Hardware Requirements: RAM, CPU, and GPU</h2>
+<section id="hardware-requirements" class="level2">
+<h2 class="anchored" data-anchor-id="hardware-requirements">Hardware Requirements</h2>
 <ul>
 <li>Local LLMs need sufficient resources:</li>
 </ul>
@@ -794,21 +822,26 @@ Warning
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>Performance Note:</strong> CPU-only can be slow compared to GPU.</p>
+<p><strong>Performance Note:</strong> CPU-only can be much slower compared to GPU.</p>
 </div>
 </div>
 </section>
-<section id="model-sizes-billions-of-parameters-b" class="level2">
-<h2 class="anchored" data-anchor-id="model-sizes-billions-of-parameters-b">Model Sizes: Billions of Parameters (B)</h2>
+<section id="billions-of-parameters-b" class="level2">
+<h2 class="anchored" data-anchor-id="billions-of-parameters-b">Billions of Parameters (B)</h2>
 <ul>
-<li><p>LLMs described by <em>parameters</em> (internal learned values).</p></li>
-<li><p>More parameters -&gt; more capable (generally), larger model, more resources.</p></li>
-<li><p>Model size not everything, quality depends on data/training/architecture.</p></li>
-<li><p>Newer models can be more efficient.</p></li>
-<li><p><strong>Small Models (&lt; 7B):</strong> CPU with 16GB+ RAM. Experimentation, less demanding tasks.</p></li>
-<li><p><strong>Medium Models (7B - 13B):</strong> Benefit from GPU, sometimes CPU with 32GB+ RAM.</p></li>
-<li><p><strong>Large Models (30B+):</strong> Powerful GPU with VRAM needed.</p></li>
-<li><p><strong>Very Large Models (70B+):</strong> High-end/multiple GPUs.</p></li>
+<li>LLMs described by <em>parameters</em> (internal learned values).</li>
+<li>More parameters -&gt; more capable (generally), larger model, more resources.</li>
+<li>Model size not everything, quality depends on data/training/architecture.</li>
+<li>Newer models can be more efficient.</li>
+</ul>
+</section>
+<section id="size-overview" class="level2">
+<h2 class="anchored" data-anchor-id="size-overview">Size Overview</h2>
+<ul>
+<li><strong>Small Models (&lt; 7B):</strong> CPU with 16GB+ RAM. Experimentation, less demanding tasks.</li>
+<li><strong>Medium Models (7B - 13B):</strong> Benefit from GPU, sometimes CPU with 32GB+ RAM.</li>
+<li><strong>Large Models (30B+):</strong> Powerful GPU with VRAM needed.</li>
+<li><strong>Very Large Models (70B+):</strong> High-end/multiple GPUs.</li>
 </ul>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -832,11 +865,11 @@ Tip
 </ul>
 <p><strong>Benefits of Quantization:</strong></p>
 <ul>
-<li><p><strong>Smaller Model Size:</strong> Less RAM/disk needed.</p></li>
-<li><p><strong>Faster Inference:</strong> Faster low-precision calculations.</p></li>
-<li><p><strong>Lower Power Consumption:</strong> Less hardware demand.</p></li>
-<li><p><strong>Trade-offs:</strong> Small accuracy decrease possible. More aggressive quantization = more performance impact.</p></li>
-<li><p><strong>Ollama and Quantization</strong>: Supports quantized models from Hugging Face.</p>
+<li><strong>Smaller Model Size:</strong> Less RAM/disk needed.</li>
+<li><strong>Faster Inference:</strong> Faster low-precision calculations.</li>
+<li><strong>Lower Power Consumption:</strong> Less hardware demand.</li>
+<li><strong>Trade-offs:</strong> Small accuracy decrease possible. More aggressive quantization = more performance impact.</li>
+<li><strong>Ollama and Quantization</strong>: Supports quantized models from Hugging Face.
 <ul>
 <li><code>q4_0</code>, <code>q8_0</code> suffixes indicate quantization level.</li>
 <li><code>q4_0</code>: 4-bit (balance size/quality).</li>

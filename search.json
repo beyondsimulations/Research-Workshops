@@ -4,27 +4,7 @@
     "href": "general/literature.html",
     "title": "Literature and Resources",
     "section": "",
-    "text": "This section provides a curated list of books and resources to enhance your understanding of Geographical Data Analysis and Large Language Models. Each recommendation includes a brief description to help you choose the most suitable resources for you.",
-    "crumbs": [
-      "Literature"
-    ]
-  },
-  {
-    "objectID": "general/literature.html#books",
-    "href": "general/literature.html#books",
-    "title": "Literature and Resources",
-    "section": "Books",
-    "text": "Books\n\nGeospatial Data Science with Julia: A book that is great for beginners and covers Geographical Data Analysis from the ground up with Julia.",
-    "crumbs": [
-      "Literature"
-    ]
-  },
-  {
-    "objectID": "general/literature.html#resources",
-    "href": "general/literature.html#resources",
-    "title": "Literature and Resources",
-    "section": "Resources",
-    "text": "Resources\n\nQGis: A free and open-source GIS software that is very powerful and flexible.\nMapbox: A platform that provides tools for creating maps and geospatial data. It has a great documentation and very generous free tier.\nOpenStreetMap: A free and open-source map of the world. It is very detailed and can be used for a a lot of purposes. Great for getting started with Geographical Data Analysis and getting data.",
+    "text": "This section provides a curated list of books and resources to enhance your understanding of Large Language Models. Each recommendation includes a brief description to help you choose the most suitable resources for you.",
     "crumbs": [
       "Literature"
     ]
@@ -54,27 +34,17 @@
     "href": "general/literature.html#working-with-data",
     "title": "Literature and Resources",
     "section": "Working with data",
-    "text": "Working with data\nIn addition to the hosted and local LLMs, there are also tools that allow you to work with LLMs in a browser to build RAG apps or custom chatbots.\n\nNotebookLM**: Google’s Gemini that can be fed with files, images and YouTube videos to generate text based on the content. Only works within a workspace of Google, you can’t make it available to the public (yet).\nOpen Web UI**: Open Web UI is a tool to run large language models locally (in conjuction with, for example, Ollama). It is a browser-based interface that allows you to interact with the models and build RAG apps.",
+    "text": "Working with data\nIn addition to the hosted and local LLMs, there are also tools that allow you to work with LLMs in a browser to build RAG apps or custom chatbots.\n\nNotebookLM**: Google’s Gemini that can be fed with files, images and YouTube videos to generate text based on the content. Only works within a workspace of Google, you can’t make it available to the public (yet).\nLM Studio: An application for discovering, downloading, and running LLMs locally. It supports various model architectures and offers both a Chat UI and an OpenAI-compatible local server. Features include offline document chat capabilities and easy model downloads from Hugging Face.\nOpen Web UI**: Open Web UI is a tool to run large language models locally (in conjuction with, for example, Ollama). It is a browser-based interface that allows you to interact with the models and build RAG apps.",
     "crumbs": [
       "Literature"
     ]
   },
   {
-    "objectID": "general/literature.html#books-1",
-    "href": "general/literature.html#books-1",
+    "objectID": "general/literature.html#further-resources",
+    "href": "general/literature.html#further-resources",
     "title": "Literature and Resources",
-    "section": "Books",
-    "text": "Books\n\nWilke, C. (2019). Fundamentals of data visualization: A primer on making informative and compelling figures (First edition). O’Reilly Media.\n\nA book that is highly recommended to understand the principles of data visualization and how to create effective visualizations.\nLink to the free book website\n\nThomas, D., & Hunt, A. (2019). The pragmatic programmer, 20th anniversary edition: Journey to mastery (Second edition). Addison-Wesley.\n\nA fantasticbook to understand the principles of software development and how to create effective software.",
-    "crumbs": [
-      "Literature"
-    ]
-  },
-  {
-    "objectID": "general/literature.html#resources-1",
-    "href": "general/literature.html#resources-1",
-    "title": "Literature and Resources",
-    "section": "Resources",
-    "text": "Resources\n\nQuarto\n\nA static website generator that is very powerful and flexible. Used to create the slides and the website for the course.\n\nJupyter\n\nA web application that allows you to create and share documents that contain code, equations, visualizations and text. It is very popular in the field of data science and academia and also part of Quarto.\n\nGithub\n\nThe largest provider for git repositories owned by Microsoft. A lot of open source projects are hosted here and you can read the code.\n\nDaily Dose of Data Science\n\nA website and a newsletter with lots of easy-to-digest resources to improve your skills in Data Science.",
+    "section": "Further resources",
+    "text": "Further resources\n\nQuarto\n\nA static website generator that is very powerful and flexible. Used to create the slides and the website for the course.\n\nGithub\n\nThe largest provider for git repositories owned by Microsoft. A lot of open source projects are hosted here and you can read the code.\n\nDaily Dose of Data Science\n\nA website and a newsletter with lots of easy-to-digest resources to improve your skills in Data Science and Large Language Models.",
     "crumbs": [
       "Literature"
     ]
@@ -84,7 +54,7 @@
     "href": "index.html",
     "title": "Welcome to the workshops!",
     "section": "",
-    "text": "Description\nWelcome to this collection of resources! This website hosts a collection of information and resources that will help you prepare for your research. If you are interested in large language models, these materials are designed for you. The material is self-contained and provides you with the fundamental knowledge and practical skills needed for your research project.\n\n\nLearning Outcomes\nMy goal is to introduce you to some basics and tools that will help you in your research.\nUpon completing the sections, you will…\n\nunderstand how to interact with and utilize large language models\nknow how to work with geographical datasets (upcoming)\n\nPlease note that these topics are specifically designed for beginners. No prior experience is required although it is helpful. The format accommodates different skill levels to ensure everyone can follow along and learn effectively.\n\n\nStructure\nThe resources are mostly available on this website with links to some other resources. I will try to update the website in the future, to extend the content and reflect the latest developments in the field.\n\n\nQuestions\nIf you have any questions, please contact me under tobias.vlcek@uni-hamburg.de.",
+    "text": "Description\nWelcome to this collection of resources! This website hosts a collection of information and resources that will help you prepare for your research. If you are interested in large language models, these materials are designed for you. The material is self-contained and provides you with the fundamental knowledge and practical skills needed for your research project.\nThe resources are mostly available on this website with links to some other resources. I will try to update the website in the future, to extend the content and reflect the latest developments in the field.\n\n\nQuestions\nIf you have any questions, please contact me under tobias.vlcek@uni-hamburg.de.",
     "crumbs": [
       "Welcome"
     ]
@@ -94,47 +64,47 @@
     "href": "large-language-models.html",
     "title": "Working with Large Language Models",
     "section": "",
-    "text": "Explore the world of Large Language Models (LLMs).\nYou’ve likely interacted with LLMs already:\n\nChatGPT\nGoogle’s Gemini\nClaude\n\nUnderstand:\n\nHow LLMs work on a high level.\nWhat you can do with them.",
+    "text": "Explore Large Language Models (LLMs).\nYou’ve likely interacted with LLMs already:\n\nChatGPT\nGoogle’s Gemini\nClaude\n\nUnderstand:\n\nHow LLMs work on a high level.\nWhat you can do with them.",
     "crumbs": [
       "Large Language Models"
     ]
   },
   {
-    "objectID": "large-language-models.html#welcome-to-todays-short-workshop",
-    "href": "large-language-models.html#welcome-to-todays-short-workshop",
+    "objectID": "large-language-models.html#welcome-to-todays-workshop",
+    "href": "large-language-models.html#welcome-to-todays-workshop",
     "title": "Working with Large Language Models",
     "section": "",
-    "text": "Explore the world of Large Language Models (LLMs).\nYou’ve likely interacted with LLMs already:\n\nChatGPT\nGoogle’s Gemini\nClaude\n\nUnderstand:\n\nHow LLMs work on a high level.\nWhat you can do with them.",
+    "text": "Explore Large Language Models (LLMs).\nYou’ve likely interacted with LLMs already:\n\nChatGPT\nGoogle’s Gemini\nClaude\n\nUnderstand:\n\nHow LLMs work on a high level.\nWhat you can do with them.",
     "crumbs": [
       "Large Language Models"
     ]
   },
   {
-    "objectID": "large-language-models.html#what-is-an-llm-and-why-should-you-care",
-    "href": "large-language-models.html#what-is-an-llm-and-why-should-you-care",
+    "objectID": "large-language-models.html#what-is-an-llm",
+    "href": "large-language-models.html#what-is-an-llm",
     "title": "Working with Large Language Models",
-    "section": "What is an LLM? (And Why Should You Care?)",
-    "text": "What is an LLM? (And Why Should You Care?)\n\nLLMs are a type of Artificial Intelligence (AI).\nSpecifically within Natural Language Processing (NLP).\nDesigned to:\n\nUnderstand human language.\nGenerate human language.\nInteract with human language.\nIn remarkably human-like ways.\n\n\n\n\n\n\n\n\nTip\n\n\n\nWhy should you care? LLMs are rapidly transforming how we: - Write and edit content - Develop software - Conduct research - Analyze data - Automate tasks - Learn new concepts\nUnderstanding these tools is becoming essential across nearly every professional field.",
+    "section": "What is an LLM?",
+    "text": "What is an LLM?\n\nLLMs are a type of Artificial Intelligence (AI).\nSpecifically within Natural Language Processing (NLP).\nDesigned to:\n\nUnderstand human language.\nGenerate human language.\nInteract with human language.\nIn remarkably human-like ways.\n\n\n\n\n\n\n\n\nTip\n\n\n\nWhy should you care? LLMs are rapidly transforming how we:\n\nWrite and edit content\nDevelop software\nConduct research\nAnalyze data\nAutomate tasks\nLearn new concepts\n\nUnderstanding these tools is becoming essential across nearly every professional field.",
     "crumbs": [
       "Large Language Models"
     ]
   },
   {
-    "objectID": "large-language-models.html#a-great-overview-3blue1brown",
-    "href": "large-language-models.html#a-great-overview-3blue1brown",
+    "objectID": "large-language-models.html#a-great-overview-by-3blue1brown",
+    "href": "large-language-models.html#a-great-overview-by-3blue1brown",
     "title": "Working with Large Language Models",
-    "section": "A Great Overview: 3Blue1Brown",
-    "text": "A Great Overview: 3Blue1Brown\n\nGreg Sanderson provides an excellent, concise explanation of LLMs.\nGreat starting point to understand LLMs.\nCheck out his YouTube channel, 3Blue1Brown for more.",
+    "section": "A Great Overview by 3Blue1Brown",
+    "text": "A Great Overview by 3Blue1Brown\n\nGreg Sanderson provides an excellent, concise explanation of LLMs.\nGreat starting point to understand LLMs.\nCheck out his YouTube channel, 3Blue1Brown for more.",
     "crumbs": [
       "Large Language Models"
     ]
   },
   {
-    "objectID": "large-language-models.html#key-concepts-what-youll-learn",
-    "href": "large-language-models.html#key-concepts-what-youll-learn",
+    "objectID": "large-language-models.html#todays-key-concepts",
+    "href": "large-language-models.html#todays-key-concepts",
     "title": "Working with Large Language Models",
-    "section": "Key Concepts: What You’ll Learn",
-    "text": "Key Concepts: What You’ll Learn\n\nFundamental principles behind how LLMs work.\nThe process of training these powerful models.\nLimitations and ethical considerations of LLMs.\nPractical applications, including pair-programming.\nHow to use LLMs with your own data (Retrieval Augmented Generation).\nFurther resources and tools.",
+    "section": "Today’s Key Concepts",
+    "text": "Today’s Key Concepts\n\nFundamental principles behind how LLMs work.\nThe process of training these powerful models.\nLimitations and ethical considerations of LLMs.\nPractical applications, including pair-programming.\nHow to use LLMs with your own data (Retrieval Augmented Generation).\nFurther resources and tools.",
     "crumbs": [
       "Large Language Models"
     ]
@@ -150,31 +120,31 @@
     ]
   },
   {
-    "objectID": "large-language-models.html#the-transformer-a-key-innovation",
-    "href": "large-language-models.html#the-transformer-a-key-innovation",
+    "objectID": "large-language-models.html#the-transformer",
+    "href": "large-language-models.html#the-transformer",
     "title": "Working with Large Language Models",
-    "section": "The Transformer: A Key Innovation",
-    "text": "The Transformer: A Key Innovation\n\nModern LLMs powered by transformer model architecture.\nIntroduced in “Attention is All You Need” (Vaswani et al., 2017).\nTransformers revolutionized NLP.\n\nHow Transformers Work (Simplified):\n\nTokenization: Input text broken into tokens.\nMathematical Relationships: Identifies relationships between tokens.\n\nUnderstands word/phrase connections in sentences and context.\n\nAttention Mechanism: Crucial part.\n\nFocuses on most relevant input parts when generating output.\nPays “attention” to important words for meaning.\n\n\nExample: The Power of Attention\n\nSentence: “The cat sat on the mat because it was warm.”\nAttention mechanism understands:\n\n“it” refers to “the mat,” not “the cat.”\nBy considering context of surrounding words and relationships.",
+    "section": "The Transformer",
+    "text": "The Transformer\n\nModern LLMs powered by transformer model architecture.\nIntroduced in “Attention is All You Need” (Vaswani et al., 2017).\nTransformers revolutionized NLP.\n\nHow Transformers Work (Simplified):\n\nTokenization: Input text broken into tokens.\nMathematical Relationships: Identifies relationships between tokens.\n\nUnderstands word/phrase connections in sentences and context.\n\nAttention Mechanism: Crucial part.\n\nFocuses on most relevant input parts when generating output.\nPays “attention” to important words for meaning.\n\n\nExample: The Power of Attention\n\nSentence: “The cat sat on the mat because it was warm.”\nAttention mechanism understands:\n\n“it” refers to “the mat,” not “the cat.”\nBy considering context of surrounding words and relationships.",
     "crumbs": [
       "Large Language Models"
     ]
   },
   {
-    "objectID": "large-language-models.html#tokens-the-building-blocks-of-language",
-    "href": "large-language-models.html#tokens-the-building-blocks-of-language",
+    "objectID": "large-language-models.html#tokens-the-building-blocks",
+    "href": "large-language-models.html#tokens-the-building-blocks",
     "title": "Working with Large Language Models",
-    "section": "Tokens: The Building Blocks of Language",
-    "text": "Tokens: The Building Blocks of Language\n\nLLMs process text as tokens, not whole words.\nToken can be:\n\nWhole word (e.g., “cat”)\nSubword (e.g., “un-”, “break”, “-able” for “unbreakable”)\nIndividual characters\n\n\nWhy use tokens?\n\nHandles Unknown Words: Processes unseen words via subword units.\nEfficiency: Learning relationships between tokens is more efficient.\n\nChallenges with Tokenization:\n\nTokenization can be tricky.\nEspecially for languages without spaces (Chinese, Japanese).\nCurrent methods better for languages with similar scripts (English, Spanish, French).\nPotentially disadvantages other languages.\nArea of ongoing research.\n\n\n\n\n\n\n\nNote\n\n\n\nThink about this: How might this impact the fairness and inclusivity of LLMs?",
+    "section": "Tokens: The Building Blocks",
+    "text": "Tokens: The Building Blocks\n\nLLMs process text as tokens, not whole words.\nToken can be:\n\nWhole word (e.g., “cat”)\nSubword (e.g., “un-”, “break”, “-able” for “unbreakable”)\nIndividual characters\n\n\nWhy use tokens?\n\nHandles Unknown Words: Processes unseen words via subword units.\nEfficiency: Learning relationships between tokens is more efficient.\n\nChallenges with Tokenization:\n\nTokenization can be tricky.\nEspecially for languages without spaces (Chinese, Japanese).\nCurrent methods better for languages with similar scripts (English, Spanish, French).\nPotentially disadvantages other languages.\nArea of ongoing research.\n\n\n\n\n\n\n\nNote\n\n\n\nThink about this: How might this impact the fairness and inclusivity of LLMs?",
     "crumbs": [
       "Large Language Models"
     ]
   },
   {
-    "objectID": "large-language-models.html#context-window-the-llms-memory",
-    "href": "large-language-models.html#context-window-the-llms-memory",
+    "objectID": "large-language-models.html#context-window-llms-memory",
+    "href": "large-language-models.html#context-window-llms-memory",
     "title": "Working with Large Language Models",
-    "section": "Context Window: The LLM’s “Memory”",
-    "text": "Context Window: The LLM’s “Memory”\n\nContext window: LLM’s short-term memory.\nNumber of tokens the model can process at once.\nLarger context window:\n\n“Remembers” more of conversation/document.\nMore coherent and contextually relevant responses.\nMore computational resources needed.\nPotentially less coherence if too long.\n\nShorter context window:\n\nFaster processing.\nMay lose track of earlier conversation parts.\n\n\n\n\n\n\n\n\nTip\n\n\n\nThere is a trade-off between the context window and the size of the model. A larger model can usually handle a larger context window, but it will also take more computational resources to run.",
+    "section": "Context Window: LLM’s “Memory”",
+    "text": "Context Window: LLM’s “Memory”\n\nContext window: LLM’s short-term memory.\nNumber of tokens the model can process at once.\nLarger context window:\n\n“Remembers” more of conversation/document.\nMore coherent and contextually relevant responses.\nMore computational resources needed.\nPotentially less coherence if too long.\n\nShorter context window:\n\nFaster processing.\nMay lose track of earlier conversation parts.\n\n\n\n\n\n\n\n\nTip\n\n\n\nThere is a trade-off between the context window and the size of the model. A larger model can usually handle a larger context window, but it will also take more computational resources to run.",
     "crumbs": [
       "Large Language Models"
     ]
@@ -260,61 +230,71 @@
     ]
   },
   {
-    "objectID": "large-language-models.html#ethical-implications-a-broader-view",
-    "href": "large-language-models.html#ethical-implications-a-broader-view",
+    "objectID": "large-language-models.html#a-broader-view",
+    "href": "large-language-models.html#a-broader-view",
     "title": "Working with Large Language Models",
-    "section": "Ethical Implications: A Broader View",
-    "text": "Ethical Implications: A Broader View\n\nLLMs raise broader ethical concerns:\nJob Displacement: Automate human tasks -&gt; potential job losses. How to prepare for this shift?\nMisinformation: Generate realistic fake news easily. How to combat misinformation spread?\nMalicious Use: Deepfakes, harmful content, propaganda. What safeguards are needed?\nPrivacy: Trained on personal data. Data usage and privacy regulations needed?\nAccountability: Unclear who is responsible for LLM-generated content. How to hold producers/users accountable?\nTransparency: Difficult to understand LLM decision-making. How to make LLMs more transparent?\nAddressing ethical concerns requires: researchers, policymakers, public.",
+    "section": "A Broader View",
+    "text": "A Broader View\n\nLLMs raise broader ethical concerns:\nJob Displacement: Automate human tasks -&gt; potential job losses.\n\nHow to prepare for this shift?\n\nMisinformation: Generate realistic fake news easily.\n\nHow to combat misinformation spread?\n\nMalicious Use: Deepfakes, harmful content, propaganda.\n\nWhat safeguards are needed?\n\nPrivacy: Trained on personal data.\n\nData usage and privacy regulations needed?\n\nAccountability: Unclear who is responsible for LLM-generated content.\n\nHow to hold producers/users accountable?\n\nTransparency: Difficult to understand LLM decision-making.\n\nHow to make LLMs more transparent?\n\nAddressing ethical concerns requires: researchers, policymakers, public.",
     "crumbs": [
       "Large Language Models"
     ]
   },
   {
-    "objectID": "large-language-models.html#pair-programming-with-llms-your-ai-coding-assistant",
-    "href": "large-language-models.html#pair-programming-with-llms-your-ai-coding-assistant",
+    "objectID": "large-language-models.html#pair-programming-with-llms",
+    "href": "large-language-models.html#pair-programming-with-llms",
     "title": "Working with Large Language Models",
-    "section": "Pair Programming with LLMs: Your AI Coding Assistant",
-    "text": "Pair Programming with LLMs: Your AI Coding Assistant\n\nPair programming: two programmers work together.\n\nOne writes code, other reviews/feedback.\n\nLLMs as “AI pair programmer”:\n\nCode Completion: Suggest code snippets, complete lines.\nError Detection: Identify bugs, suggest fixes.\nCode Generation: Generate functions/blocks from instructions.\nCode Explanation: Explain how code works.\nBest Practices: Suggest improvements and best practices.\n\n\nTools for Pair Programming:\n\nGitHub Copilot: VS Code integration, AI-powered suggestions.\nCursor: VS Code fork, more powerful AI features.\nZed: Code editor for pair programming (LLMs and humans). Local and API models.",
+    "section": "Pair Programming with LLMs",
+    "text": "Pair Programming with LLMs\n\nPair programming: two programmers work together.\n\nOne writes code, other reviews/feedback.\n\nLLMs as “AI pair programmer”:\n\nCode Completion: Suggest code snippets, complete lines.\nError Detection: Identify bugs, suggest fixes.\nCode Generation: Generate functions/blocks from instructions.\nCode Explanation: Explain how code works.\nBest Practices: Suggest improvements and best practices.\n\n\nTools for Pair Programming:\n\nGitHub Copilot: VS Code integration, AI-powered suggestions.\nCursor: VS Code fork, more powerful AI features.\nZed: Code editor for pair programming (LLMs and humans). Local and API models.",
     "crumbs": [
       "Large Language Models"
     ]
   },
   {
-    "objectID": "large-language-models.html#tips-for-effective-pair-programming-with-llms",
-    "href": "large-language-models.html#tips-for-effective-pair-programming-with-llms",
+    "objectID": "large-language-models.html#tips-for-effective-pair-programming",
+    "href": "large-language-models.html#tips-for-effective-pair-programming",
     "title": "Working with Large Language Models",
-    "section": "Tips for Effective Pair Programming with LLMs",
-    "text": "Tips for Effective Pair Programming with LLMs\n\nStart Small: Begin with code completion, then complex tasks.\nBe Specific: Clear, concise instructions to LLM.\nReview Carefully: Always review LLM-generated code. Mistakes can happen!\nLearn from the LLM: Learn new techniques and coding styles.\n\n\n\n\n\n\n\nTip\n\n\n\nManage Context: Be mindful of context window. For longer codebases, LLM may “forget” earlier parts. Break down large tasks.",
+    "section": "Tips for Effective Pair Programming",
+    "text": "Tips for Effective Pair Programming\n\nStart Small: Begin with code completion, then complex tasks.\nBe Specific: Clear, concise instructions to LLM.\nReview Carefully: Always review LLM-generated code. Mistakes can happen!\nLearn from the LLM: Learn new techniques and coding styles.\n\n\n\n\n\n\n\nTip\n\n\n\nManage Context: Be mindful of context window. For longer codebases, LLM may “forget” earlier parts. Break down large tasks.",
     "crumbs": [
       "Large Language Models"
     ]
   },
   {
-    "objectID": "large-language-models.html#ollama-a-local-llm-manager",
-    "href": "large-language-models.html#ollama-a-local-llm-manager",
+    "objectID": "large-language-models.html#ollama",
+    "href": "large-language-models.html#ollama",
     "title": "Working with Large Language Models",
-    "section": "Ollama: A Local LLM Manager",
-    "text": "Ollama: A Local LLM Manager\n\nOllama: free, open-source.\nSimplifies downloading, installing, running LLMs (macOS, Linux, Windows).\nCommand-line interface (CLI), wide model support.\n\nKey Features of Ollama:\n\nEasy Installation: Simple download and install.\nModel Management: Download/manage models from library (Hugging Face).\nCommand-Line Interface: Interact via commands.\nAPI Server: Local API server, integrate in applications.",
+    "section": "Ollama",
+    "text": "Ollama\n\nOllama: free, open-source.\nSimplifies downloading, installing, running LLMs (macOS, Linux, Windows).\nCommand-line interface (CLI), wide model support.\n\nKey Features of Ollama:\n\nEasy Installation: Simple download and install.\nModel Management: Download/manage models from library (Hugging Face).\nCommand-Line Interface: Interact via commands.\nAPI Server: Local API server, integrate in applications.",
     "crumbs": [
       "Large Language Models"
     ]
   },
   {
-    "objectID": "large-language-models.html#hardware-requirements-ram-cpu-and-gpu",
-    "href": "large-language-models.html#hardware-requirements-ram-cpu-and-gpu",
+    "objectID": "large-language-models.html#hardware-requirements",
+    "href": "large-language-models.html#hardware-requirements",
     "title": "Working with Large Language Models",
-    "section": "Hardware Requirements: RAM, CPU, and GPU",
-    "text": "Hardware Requirements: RAM, CPU, and GPU\n\nLocal LLMs need sufficient resources:\n\n\n\n\n\n\n\n\n\nComponent\nRequirement\nNotes\n\n\n\n\nRAM\nMinimum 8GB\n- 16GB recommended- 32GB+ for larger models\n\n\nCPU\nModern multi-core\n- Can run smaller models (&lt; 7B params)- Faster = better performance\n\n\nGPU\nVRAM dependent\n- More VRAM = larger models- NVIDIA GPUs preferred\n\n\nStorage\n10GB+ free\n- Models can be several GB each\n\n\n\n\n\n\n\n\n\nWarning\n\n\n\nPerformance Note: CPU-only can be slow compared to GPU.",
+    "section": "Hardware Requirements",
+    "text": "Hardware Requirements\n\nLocal LLMs need sufficient resources:\n\n\n\n\n\n\n\n\n\nComponent\nRequirement\nNotes\n\n\n\n\nRAM\nMinimum 8GB\n- 16GB recommended- 32GB+ for larger models\n\n\nCPU\nModern multi-core\n- Can run smaller models (&lt; 7B params)- Faster = better performance\n\n\nGPU\nVRAM dependent\n- More VRAM = larger models- NVIDIA GPUs preferred\n\n\nStorage\n10GB+ free\n- Models can be several GB each\n\n\n\n\n\n\n\n\n\nWarning\n\n\n\nPerformance Note: CPU-only can be much slower compared to GPU.",
     "crumbs": [
       "Large Language Models"
     ]
   },
   {
-    "objectID": "large-language-models.html#model-sizes-billions-of-parameters-b",
-    "href": "large-language-models.html#model-sizes-billions-of-parameters-b",
+    "objectID": "large-language-models.html#billions-of-parameters-b",
+    "href": "large-language-models.html#billions-of-parameters-b",
     "title": "Working with Large Language Models",
-    "section": "Model Sizes: Billions of Parameters (B)",
-    "text": "Model Sizes: Billions of Parameters (B)\n\nLLMs described by parameters (internal learned values).\nMore parameters -&gt; more capable (generally), larger model, more resources.\nModel size not everything, quality depends on data/training/architecture.\nNewer models can be more efficient.\nSmall Models (&lt; 7B): CPU with 16GB+ RAM. Experimentation, less demanding tasks.\nMedium Models (7B - 13B): Benefit from GPU, sometimes CPU with 32GB+ RAM.\nLarge Models (30B+): Powerful GPU with VRAM needed.\nVery Large Models (70B+): High-end/multiple GPUs.\n\n\n\n\n\n\n\nTip\n\n\n\nModel names like mistral:7b, codellama:34b - “b” = billions of parameters.",
+    "section": "Billions of Parameters (B)",
+    "text": "Billions of Parameters (B)\n\nLLMs described by parameters (internal learned values).\nMore parameters -&gt; more capable (generally), larger model, more resources.\nModel size not everything, quality depends on data/training/architecture.\nNewer models can be more efficient.",
+    "crumbs": [
+      "Large Language Models"
+    ]
+  },
+  {
+    "objectID": "large-language-models.html#size-overview",
+    "href": "large-language-models.html#size-overview",
+    "title": "Working with Large Language Models",
+    "section": "Size Overview",
+    "text": "Size Overview\n\nSmall Models (&lt; 7B): CPU with 16GB+ RAM. Experimentation, less demanding tasks.\nMedium Models (7B - 13B): Benefit from GPU, sometimes CPU with 32GB+ RAM.\nLarge Models (30B+): Powerful GPU with VRAM needed.\nVery Large Models (70B+): High-end/multiple GPUs.\n\n\n\n\n\n\n\nTip\n\n\n\nModel names like mistral:7b, codellama:34b - “b” = billions of parameters.",
     "crumbs": [
       "Large Language Models"
     ]
