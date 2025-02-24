@@ -471,8 +471,7 @@ Quantization levels offer different balance of speed, size, quality. Experiment 
 - To talk to the LLM in code, you can use the following code
 - Make sure that you have a local Ollama with the model you want to use running!
 
-```{python}
-#| eval: false
+```python
 
 import requests
 import json
@@ -525,8 +524,7 @@ if __name__ == "__main__":
 
 To ask questions in Julia, you can use the following code:
 
-```{julia}
-#| eval: false
+```julia
 
 using HTTP
 using JSON3
