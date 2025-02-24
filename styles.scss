@@ -1,4 +1,3 @@
-
 /*-- scss:defaults --*/
 $presentation-title-slide-text-align: left;
 
@@ -92,3 +91,9 @@ $presentation-heading-line-height: 1.5 !default;
     background-position: left 3456px top 1944px;
   }
 }
+
+.reveal pre code {
+  font-size: 0.8em;  // Makes code blocks 80% of the default size
+  line-height: 1.2;  // Slightly tighter line spacing for code
+}
+

@@ -11,17 +11,6 @@ html:
 # Description
 Welcome to this collection of resources! This website hosts a collection of information and resources that will help you prepare for your research. If you are interested in large language models, these materials are designed for you. The material is self-contained and provides you with the fundamental knowledge and practical skills needed for your research project.
 
-# Learning Outcomes
-My goal is to introduce you to some basics and tools that will help you in your research. 
-
-Upon completing the sections, you will...
-
-- understand how to interact with and utilize large language models
-- know how to work with geographical datasets (upcoming)
-
-Please note that these topics are **specifically designed for beginners**. No prior experience is required although it is helpful. The format accommodates different skill levels to ensure everyone can follow along and learn effectively.
-
-# Structure
 The resources are mostly available on this website with links to some other resources. I will try to update the website in the future, to extend the content and reflect the latest developments in the field.
 
 # Questions

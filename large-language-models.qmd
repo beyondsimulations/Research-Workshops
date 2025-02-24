@@ -16,9 +16,9 @@ html:
     code-block-border-left: "#AD1F00"
 ---
 
-## Welcome to today's short workshop!
+## Welcome to today's workshop!
 
-- Explore the world of Large Language Models (LLMs).
+- Explore Large Language Models (LLMs).
 - You've likely interacted with LLMs already:
     - ChatGPT
     - Google's Gemini
@@ -27,7 +27,7 @@ html:
     - How LLMs work on a high level.
     - What you can do with them.
 
-## What is an LLM? (And Why Should You Care?)
+## What is an LLM?
 
 - LLMs are a type of Artificial Intelligence (AI).
 - Specifically within Natural Language Processing (NLP).
@@ -39,6 +39,7 @@ html:
 
 ::: {.callout-tip}
 **Why should you care?** LLMs are rapidly transforming how we:
+
 - Write and edit content
 - Develop software
 - Conduct research
@@ -49,7 +50,7 @@ html:
 Understanding these tools is becoming essential across nearly every professional field.
 :::
 
-## A Great Overview: 3Blue1Brown
+## A Great Overview by 3Blue1Brown
 
 - Greg Sanderson provides an excellent, concise explanation of LLMs.
 - Great starting point to understand LLMs.
@@ -57,7 +58,7 @@ Understanding these tools is becoming essential across nearly every professional
 
 {{< video https://www.youtube.com/embed/LPZh9BOjkQs >}}
 
-## Key Concepts: What You'll Learn
+## Today's Key Concepts
 
 - Fundamental principles behind how LLMs work.
 - The process of training these powerful models.
@@ -66,7 +67,7 @@ Understanding these tools is becoming essential across nearly every professional
 - How to use LLMs with your own data (Retrieval Augmented Generation).
 - Further resources and tools.
 
-# Inside LLMs: How they work
+# How they work
 
 - High-level overview of LLM workings.
 - No deep technical details.
@@ -91,7 +92,7 @@ Understanding these tools is becoming essential across nearly every professional
     - **Question Answering:** Answering questions based on learned information.
     - **Sentiment Analysis:** Determining emotional tone of text.
 
-## The Transformer: A Key Innovation
+## The Transformer
 
 - Modern LLMs powered by **transformer model** architecture.
 - Introduced in "[Attention is All You Need](https://arxiv.org/abs/1706.03762)" (Vaswani et al., 2017).
@@ -113,7 +114,7 @@ Understanding these tools is becoming essential across nearly every professional
     - "it" refers to "the mat," not "the cat."
     - By considering context of surrounding words and relationships.
 
-## Tokens: The Building Blocks of Language
+## Tokens: The Building Blocks
 
 - LLMs process text as **tokens**, not whole words.
 - Token can be:
@@ -138,7 +139,7 @@ Understanding these tools is becoming essential across nearly every professional
 *Think about this: How might this impact the fairness and inclusivity of LLMs?*
 :::
 
-## Context Window: The LLM's "Memory"
+## Context Window: LLM's "Memory"
 
 - **Context window:** LLM's short-term memory.
 - Number of tokens the model can process at once.
@@ -155,7 +156,7 @@ Understanding these tools is becoming essential across nearly every professional
 There is a trade-off between the context window and the size of the model. A larger model can usually handle a larger context window, but it will also take more computational resources to run.
 :::
 
-# LLM Architectures: Choosing the Right Tool
+# LLM Architectures
 
 - LLMs are versatile tools.
 - Different tasks need different architectures.
@@ -206,7 +207,7 @@ There is a trade-off between the context window and the size of the model. A lar
     - Improves performance and reduces cost.
     - Used in large chatbot models.
 
-# Training LLMs: A Massive Undertaking
+# Training LLMs
 
 - Training an LLM: like teaching a child language, but huge scale.
 
@@ -235,7 +236,7 @@ This process requires enormous computational resources - training a large model 
 ## Computational Power and Parallelism
 
 - Training needs *immense* computational power.
-- Specialized hardware: GPUs (Graphics Processing Units).
+- **Specialized hardware:** GPUs (Graphics Processing Units).
 - **Model Parallelism:** Distributes model parts across multiple GPUs.
     - Speeds up training via parallel processing.
     - Reason for Nvidia's stock increase.
@@ -300,24 +301,29 @@ This process requires enormous computational resources - training a large model 
 - Manipulate LLMs for malicious purposes.
 - Spreading misinformation or generating harmful content.
 
-## Ethical Implications: A Broader View
+## A Broader View
 
 - LLMs raise broader ethical concerns:
+- **Job Displacement:** Automate human tasks -> potential job losses. 
+    - *How to prepare for this shift?*
+- **Misinformation:** Generate realistic fake news easily. 
+    - *How to combat misinformation spread?*
+- **Malicious Use:** Deepfakes, harmful content, propaganda. 
+    - *What safeguards are needed?*
+- **Privacy**: Trained on personal data. 
+    - *Data usage and privacy regulations needed?*
+- **Accountability**: Unclear who is responsible for LLM-generated content. 
+    - *How to hold producers/users accountable?*
+- **Transparency:** Difficult to understand LLM decision-making. 
+    - *How to make LLMs more transparent?*
 
-- **Job Displacement:** Automate human tasks -> potential job losses. *How to prepare for this shift?*
-- **Misinformation:** Generate realistic fake news easily. *How to combat misinformation spread?*
-- **Malicious Use:** Deepfakes, harmful content, propaganda. *What safeguards are needed?*
-- **Privacy**: Trained on personal data. *Data usage and privacy regulations needed?*
-- **Accountability**: Unclear who is responsible for LLM-generated content. *How to hold producers/users accountable?*
-- **Transparency:** Difficult to understand LLM decision-making. *How to make LLMs more transparent?*
+- Addressing ethical concerns requires: **researchers, policymakers, public**.
 
-- Addressing ethical concerns requires: researchers, policymakers, public.
-
-# Putting LLMs to Work: Practical Applications
+# Putting LLMs to Work
 
 - Explore how to *use* LLMs practically.
 
-## Pair Programming with LLMs: Your AI Coding Assistant
+## Pair Programming with LLMs
 
 - Pair programming: two programmers work together.
     - One writes code, other reviews/feedback.
@@ -334,7 +340,7 @@ This process requires enormous computational resources - training a large model 
 - **Cursor:** VS Code fork, more powerful AI features.
 - **Zed:** Code editor for pair programming (LLMs and humans). Local and API models.
 
-## Tips for Effective Pair Programming with LLMs
+## Tips for Effective Pair Programming
 
 - **Start Small:** Begin with code completion, then complex tasks.
 - **Be Specific:** Clear, concise instructions to LLM.
@@ -345,7 +351,7 @@ This process requires enormous computational resources - training a large model 
 **Manage Context:** Be mindful of context window. For longer codebases, LLM may "forget" earlier parts. Break down large tasks.
 :::
 
-# Using LLMs with Your Own Data: Retrieval Augmented Generation (RAG)
+# Retrieval Augmented Generation (RAG)
 
 - Retrieval Augmented Generation (RAG): combines LLMs with external knowledge.
 - LLM with vast library and research assistant.
@@ -354,7 +360,8 @@ This process requires enormous computational resources - training a large model 
 
 - **Up-to-Date Information:** Access *current* information beyond training data.
 - **Reduced Hallucinations:** Responses grounded in facts, less making things up.
-- **Domain-Specific Knowledge:** Connect to your documents, databases, APIs. Expert in your area.
+- **Domain-Specific Knowledge:** Connect to your documents, databases, APIs. 
+- **Expert in your area:** Tailored to specific domain without retraining.
 
 **How RAG Works:**
 
@@ -382,11 +389,10 @@ This process requires enormous computational resources - training a large model 
 - **Cost Savings:** No API fees.
 - **Customization:** Experiment, fine-tune for needs.
 - **Offline Access:** Use without internet.
-
 - Requires understanding hardware and technical setup.
 - **Ollama**: user-friendly tool for local LLMs.
 
-## Ollama: A Local LLM Manager
+## Ollama
 
 - [Ollama](https://ollama.com/): free, open-source.
 - Simplifies downloading, installing, running LLMs (macOS, Linux, Windows).
@@ -399,7 +405,7 @@ This process requires enormous computational resources - training a large model 
 - **Command-Line Interface:** Interact via commands.
 - **API Server:** Local API server, integrate in applications.
 
-## Hardware Requirements: RAM, CPU, and GPU
+## Hardware Requirements
 
 - Local LLMs need sufficient resources:
 
@@ -411,15 +417,17 @@ This process requires enormous computational resources - training a large model 
 | Storage | 10GB+ free | - Models can be several GB each |
 
 ::: {.callout-warning}
-**Performance Note:** CPU-only can be slow compared to GPU.
+**Performance Note:** CPU-only can be much slower compared to GPU.
 :::
 
-## Model Sizes: Billions of Parameters (B)
+## Billions of Parameters (B)
 
 - LLMs described by *parameters* (internal learned values).
 - More parameters -> more capable (generally), larger model, more resources.
 - Model size not everything, quality depends on data/training/architecture.
 - Newer models can be more efficient.
+
+## Size Overview
 
 - **Small Models (< 7B):** CPU with 16GB+ RAM. Experimentation, less demanding tasks.
 - **Medium Models (7B - 13B):** Benefit from GPU, sometimes CPU with 32GB+ RAM.
@@ -440,11 +448,8 @@ Model names like `mistral:7b`, `codellama:34b` - "b" = billions of parameters.
 - **Smaller Model Size:** Less RAM/disk needed.
 - **Faster Inference:** Faster low-precision calculations.
 - **Lower Power Consumption:** Less hardware demand.
-
 - **Trade-offs:** Small accuracy decrease possible. More aggressive quantization = more performance impact.
-
 - **Ollama and Quantization**: Supports quantized models from Hugging Face.
-
     - `q4_0`, `q8_0` suffixes indicate quantization level.
     - `q4_0`: 4-bit (balance size/quality).
     - `q8_0`: 8-bit (closer to original, larger size).
@@ -460,6 +465,63 @@ Quantization levels offer different balance of speed, size, quality. Experiment 
 3.  **Run the Model:** `ollama run mistral:7b` (terminal). Chat interface opens.
 4.  **Ask a Question:** Type prompt and press Enter.
 5.  **Experiment:** Try different models from the Ollama website model library. Use Hugging Face for more models/quantization.
+
+## Talk to the LLM in code
+
+- To talk to the LLM in code, you can use the following code
+- Make sure that you have a local Ollama with the model you want to use running!
+
+```{python}
+#| eval: false
+
+import requests
+import json
+
+def ask_llm(prompt, model="mistral:7b"):
+    """
+    Send a prompt to a locally running Ollama model and get the response.
+    
+    Args:
+        prompt (str): The question or prompt to send to the model
+        model (str): The name of the model to use (default: "mistral:7b")
+    
+    Returns:
+        str: The model's response
+    """
+
+    url = "http://localhost:11434/api/generate"
+    
+    data = {
+        "model": model,
+        "prompt": prompt,
+        "stream": False
+    }
+    
+    try:
+        response = requests.post(url, json=data)
+        response.raise_for_status()  # Raise an exception for bad status
+        result = response.json()
+        return result["response"]
+    except requests.exceptions.RequestException as e:
+        return f"Error: {str(e)}\nMake sure Ollama is running locally!"
+
+def main():
+    print("Local LLM Chat (type 'quit' to exit)")
+    print("-" * 50)
+    
+    while True:
+        user_input = input("\nYour question: ")
+        
+        if user_input.lower() in ['quit', 'exit']:
+            print("\nGoodbye!")
+            break
+            
+        response = ask_llm(user_input)
+        print("\nResponse:", response)
+
+if __name__ == "__main__":
+    main()
+```
 
 # Wrap-up
 
