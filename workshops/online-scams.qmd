@@ -1,0 +1,157 @@
+---
+title: "Online Scams: Recognizing and Preventing Modern Digital Threats"
+subtitle: "University of Hamburg - Spring 2025"
+author: "Dr. Tobias Vlćek"
+
+html:
+    theme: [default, styles.scss]
+    toc: true
+    highlight-style: arrow
+    linkcolor: "#a60000"
+    code-copy: true
+    code-link: true
+    toc-location: right
+    code-overflow: wrap
+    code-block-bg: true
+    code-block-border-left: "#AD1F00"
+---
+
+## Introduction
+
+- **Definition**: Online scams are fraudulent schemes conducted through digital platforms designed to steal money, personal information, or both
+- **Prevalence**: 
+  - Americans lost $8.8 billion to scams in 2022 (FTC)
+  - 2.4 million fraud reports in the US alone
+  - Average loss per victim increasing yearly
+- **Why it matters**: Everyone with internet access is a potential target
+
+## Common Types of Online Scams
+
+- Phishing/Smishing
+- Tech Support Scams
+- Employment Scams
+- Investment Scams
+- **Love/Romance Scams** ⬅️
+- **Pig Butchering Scams** ⬅️
+- Shopping Scams
+- Lottery/Prize Scams
+
+## Romance Scams: What Are They?
+
+- **Definition**: Fraudsters create fake identities to establish romantic relationships with victims, then manipulate them for financial gain
+- **Platforms**: Dating apps, social media, messaging platforms
+- **Targets**: People of all ages, but often middle-aged or elderly individuals seeking companionship
+- **Scale**: Americans lost $1.3 billion to romance scams in 2022 (FTC)
+
+## Romance Scams: How They Work
+
+1. **Creation of attractive profile** with stolen photos
+2. **Love bombing**: Intense attention, affection, and compliments
+3. **Quick emotional attachment** and talks of a future together
+4. **Physical meeting prevented** by convenient circumstances
+5. **Financial emergency** or investment opportunity presented
+6. **Repeated requests** for money as the relationship progresses
+
+## Romance Scam Red Flags
+
+- Profile seems too perfect
+- Quickly professes strong feelings
+- Vague or inconsistent personal details
+- Unable to video chat or meet in person
+- Poor grammar/language inconsistencies
+- Requests for money for emergencies
+- Requests to move communication off-platform
+- Reluctance to answer specific questions about their life
+
+## Pig Butchering Scams: What Are They?
+
+- **Definition**: A sophisticated scam combining relationship manipulation with fraudulent investment schemes
+- **Origin**: Term "pig butchering" refers to "fattening up" victims before "slaughtering" them financially
+- **Scale**: FBI reported over $3 billion lost to crypto investment scams (2022-2023)
+- **Evolution**: Increasingly sophisticated, often involving multiple scammers working together
+
+## Pig Butchering: How It Works
+
+1. **Contact initiation**: Wrong number texts, dating apps, social media
+2. **Relationship building**: Establishing trust over weeks or months
+3. **Introduction to "investment opportunity"**: Often cryptocurrency or forex
+4. **Demonstration of "returns"**: Showing fake profits on fraudulent platforms
+5. **Encouragement to invest more**: "Fattening up" the victim
+6. **Prevention of withdrawals**: Fees, taxes, or platform "issues"
+7. **Disappearance**: Complete ghosting once victim stops investing
+
+## Pig Butchering Red Flags
+
+- Unsolicited contact claiming wrong number that evolves into friendship
+- Affluent lifestyle displays and discussions about investments
+- Custom-built fraudulent investment platforms/apps
+- Too-good-to-be-true returns on investments
+- Pressure to act quickly on "opportunities"
+- Inability to withdraw funds
+- "Exclusive" investment opportunities not available to the general public
+
+## Case Study: Romance Scam
+
+> Maria, 58, widowed, met "Richard" on Facebook. After 3 months of daily communication, he claimed to be stuck overseas with a medical emergency. Maria sent $32,000 over 6 months before realizing it was a scam when "Richard" never returned as promised.
+
+**Warning signs**: Never video called, always had emergencies, requested wire transfers and gift cards
+
+## Case Study: Pig Butchering Scam
+
+> James, 34, received a text from "Amanda" claiming a wrong number. They began chatting daily. After 2 months, she mentioned her success in crypto trading. James invested $5,000 initially, saw his investment "grow" to $30,000 on the platform, then invested his life savings of $200,000. When trying to withdraw, the platform demanded $50,000 in "taxes." He lost everything.
+
+**Warning signs**: Unsolicited contact, quick friendship, impressive returns, withdrawal problems
+
+## Prevention Strategies
+
+- **Research thoroughly**: Reverse image search profile pictures
+- **Verify identities**: Video calls early in relationships
+- **Never send money** to someone you haven't met in person
+- **Discuss with trusted friends/family** before investing
+- **Verify investment opportunities** through official channels
+- **Be skeptical** of unexpected contacts and relationships
+- **Take your time**: Scammers create urgency to prevent rational thinking
+
+## Technical Prevention Steps
+
+- Use privacy settings on social media
+- Enable two-factor authentication on all accounts
+- Use unique, strong passwords
+- Be cautious about information you share online
+- Research investment platforms independently
+- Only download apps from official app stores
+- Keep software and devices updated
+
+## If You Suspect a Scam
+
+1. **Stop communication immediately**
+2. **Do not send more money**
+3. **Report to relevant authorities**:
+   - FBI Internet Crime Complaint Center (IC3)
+   - Federal Trade Commission (FTC)
+   - Local police
+4. **Notify platforms** where you met the scammer
+5. **Secure your accounts** and monitor for identity theft
+6. **Seek support** from friends, family, or support groups
+
+## Resources for Victims
+
+- **FBI IC3**: [www.ic3.gov](https://www.ic3.gov)
+- **FTC**: [ReportFraud.ftc.gov](https://reportfraud.ftc.gov)
+- **Romance Scams.org**: Peer support forum
+- **Global Anti-Scam Organization**: [www.gaso.org](https://www.gaso.org)
+- **National Suicide Prevention Lifeline**: 988 (US)
+- **Financial counseling services** for recovery planning
+
+## Q&A
+
+Thank you for your attention!
+
+Any questions?
+
+## References
+
+- Federal Trade Commission. (2023). *Consumer Sentinel Network Data Book 2022*.
+- FBI Internet Crime Complaint Center. (2023). *2022 Internet Crime Report*.
+- Global Anti-Scam Organization. (2023). *Pig Butchering Scam Research Report*.
+- Interpol. (2023). *Online Romance Scams: Trends and Prevention*.

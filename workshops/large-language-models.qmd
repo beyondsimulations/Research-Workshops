@@ -23,19 +23,22 @@ html:
     - ChatGPT
     - Google's Gemini
     - Claude
-- Understand:
-    - How LLMs work on a high level.
-    - What you can do with them.
+- By the end of this workshop, you'll understand:
+    - How LLMs work at a conceptual level
+    - The practical applications of these powerful tools
+    - How to effectively use them in your own work
 
 ## What is an LLM?
 
-- LLMs are a type of Artificial Intelligence (AI).
-- Specifically within Natural Language Processing (NLP).
-- Designed to:
-    - Understand human language.
-    - Generate human language.
-    - Interact with human language.
-    - In remarkably human-like ways.
+- LLMs are sophisticated Artificial Intelligence (AI) systems.
+- They represent a breakthrough in Natural Language Processing (NLP).
+- These models are designed to:
+    - Comprehend human language in its nuance and complexity
+    - Generate coherent and contextually appropriate text
+    - Engage in natural conversation and respond to queries
+    - Perform language tasks with human-like understanding
+- They achieve this by training on vast datasets of text from diverse sources.
+- The underlying technology uses advanced statistical methods to identify patterns and predict language.
 
 ::: {.callout-tip}
 **Why should you care?** LLMs are rapidly transforming how we:
@@ -94,25 +97,25 @@ Understanding these tools is becoming essential across nearly every professional
 
 ## The Transformer
 
-- Modern LLMs powered by **transformer model** architecture.
-- Introduced in "[Attention is All You Need](https://arxiv.org/abs/1706.03762)" (Vaswani et al., 2017).
-- Transformers revolutionized NLP.
+- Modern LLMs are powered by the revolutionary **transformer architecture**.
+- Introduced in the groundbreaking paper "[Attention is All You Need](https://arxiv.org/abs/1706.03762)" (Vaswani et al., 2017).
+- This innovation fundamentally changed the landscape of NLP.
 
 **How Transformers Work (Simplified):**
 
-1.  **Tokenization:** Input text broken into *tokens*.
-2.  **Mathematical Relationships:** Identifies relationships between tokens.
-    - Understands word/phrase connections in sentences and context.
-3.  **Attention Mechanism:** *Crucial* part.
-    - Focuses on most relevant input parts when generating output.
-    - Pays "attention" to important words for meaning.
+1.  **Tokenization:** Text is segmented into meaningful units called *tokens*.
+2.  **Relationship Mapping:** The model creates a mathematical representation of how tokens relate to each other.
+    - This allows understanding of complex connections between words and phrases in context.
+3.  **Attention Mechanism:** The *critical innovation* that makes transformers so powerful.
+    - Enables the model to focus selectively on relevant parts of the input.
+    - Weighs the importance of different words based on their relevance to the current task.
 
 **Example: The Power of Attention**
 
-- Sentence: "The cat sat on the mat because it was warm."
-- Attention mechanism understands:
+- Consider the sentence: "The cat sat on the mat because it was warm."
+- The attention mechanism helps the model understand that:
     - "it" refers to "the mat," not "the cat."
-    - By considering context of surrounding words and relationships.
+    - This is determined by analyzing the contextual relationships between all words in the sentence.
 
 ## Tokens: The Building Blocks
 
@@ -342,13 +345,14 @@ This process requires enormous computational resources - training a large model 
 
 ## Tips for Effective Pair Programming
 
-- **Start Small:** Begin with code completion, then complex tasks.
-- **Be Specific:** Clear, concise instructions to LLM.
-- **Review Carefully:** *Always* review LLM-generated code. Mistakes can happen!
-- **Learn from the LLM:** Learn new techniques and coding styles.
+- **Start with Simple Tasks:** Begin with code completion and gradually move to more complex tasks.
+- **Be Precise in Your Instructions:** The more specific your prompt, the better the LLM's response.
+- **Always Review Generated Code:** LLMs can make mistakes or suggest inefficient solutions.
+- **Learn as You Collaborate:** Pay attention to new techniques and patterns the LLM introduces.
+- **Iterate and Refine:** Use the LLM's output as a starting point, then improve through conversation.
 
 ::: {.callout-tip}
-**Manage Context:** Be mindful of context window. For longer codebases, LLM may "forget" earlier parts. Break down large tasks.
+**Manage Context Effectively:** Remember that LLMs have a finite context window. For large codebases, focus on specific components rather than the entire project at once. Break down complex problems into manageable chunks.
 :::
 
 # Retrieval Augmented Generation (RAG)
@@ -577,8 +581,34 @@ end
 chat()
 ```
 
+# Recent Developments in LLM Technology
+
+## Multimodality: Beyond Text
+
+- Modern LLMs are evolving to work with multiple types of data:
+  - **Text-to-Image Models**: Create detailed images from textual descriptions (DALL-E, Midjourney, Stable Diffusion)
+  - **Image Understanding**: Analyze and describe visual content with sophisticated language
+  - **Audio Processing**: Convert speech to text and generate natural-sounding speech
+  - **Video Analysis**: Comprehend and narrate the content of video sequences
+
+## Specialized LLMs
+
+- Domain-specific models are emerging to address specialized needs:
+  - **Medical LLMs**: Trained on medical literature to assist healthcare professionals
+  - **Legal LLMs**: Specialized in analyzing legal documents and case law
+  - **Scientific Models**: Focused on research papers and scientific terminology
+  - **Code-specific Models**: Optimized for software development across multiple languages
+
+## Frontier Research
+
+- Cutting-edge research is addressing key challenges:
+  - **Enhanced Reasoning**: Developing models with stronger logical analysis capabilities
+  - **Improved Factuality**: Reducing hallucinations and increasing reliability of information
+  - **Model Efficiency**: Creating powerful models that require fewer computational resources
+  - **Better Alignment**: Ensuring models behave according to human values and expectations
+
 # Wrap-up
 
-- LLMs are powerful tools for many tasks.
-- Understand their capabilities and limitations.
-- Use them effectively in your work.
+- LLMs represent a new technology with wide-ranging applications.
+- Understanding both their capabilities and limitations is essential.
+- The field is evolving rapidly—staying curious and experimental will serve you well.

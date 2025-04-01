@@ -3,7 +3,7 @@ project:
   render:
     - 404.qmd
     - index.qmd
-    - large-language-models.qmd
+    - workshops/large-language-models.qmd
     - general/literature.qmd
     
 website:
@@ -21,7 +21,7 @@ website:
       - text: "Welcome"
         href: index.qmd
       - text: "Large Language Models"
-        href: large-language-models.qmd
+        href: workshops/large-language-models.qmd
       - text: "Literature"
         href: general/literature.qmd
 
