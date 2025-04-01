@@ -64,209 +64,299 @@
     "href": "workshops/large-language-models.html",
     "title": "Working with Large Language Models",
     "section": "",
-    "text": "Explore Large Language Models (LLMs).\nYou’ve likely interacted with LLMs already:\n\nChatGPT\nGoogle’s Gemini\nClaude\n\nBy the end of this workshop, you’ll understand:\n\nHow LLMs work at a conceptual level\nThe practical applications of these powerful tools\nHow to effectively use them in your own work"
+    "text": "Explore Large Language Models (LLMs).\nYou’ve likely interacted with LLMs already:\n\nChatGPT\nGoogle’s Gemini\nClaude\n\nBy the end of this workshop, you’ll understand:\n\nHow LLMs work at a conceptual level\nThe practical applications of these powerful tools\nHow to effectively use them in your own work",
+    "crumbs": [
+      "Large Language Models"
+    ]
   },
   {
     "objectID": "workshops/large-language-models.html#welcome-to-todays-workshop",
     "href": "workshops/large-language-models.html#welcome-to-todays-workshop",
     "title": "Working with Large Language Models",
     "section": "",
-    "text": "Explore Large Language Models (LLMs).\nYou’ve likely interacted with LLMs already:\n\nChatGPT\nGoogle’s Gemini\nClaude\n\nBy the end of this workshop, you’ll understand:\n\nHow LLMs work at a conceptual level\nThe practical applications of these powerful tools\nHow to effectively use them in your own work"
+    "text": "Explore Large Language Models (LLMs).\nYou’ve likely interacted with LLMs already:\n\nChatGPT\nGoogle’s Gemini\nClaude\n\nBy the end of this workshop, you’ll understand:\n\nHow LLMs work at a conceptual level\nThe practical applications of these powerful tools\nHow to effectively use them in your own work",
+    "crumbs": [
+      "Large Language Models"
+    ]
   },
   {
     "objectID": "workshops/large-language-models.html#what-is-an-llm",
     "href": "workshops/large-language-models.html#what-is-an-llm",
     "title": "Working with Large Language Models",
     "section": "What is an LLM?",
-    "text": "What is an LLM?\n\nLLMs are sophisticated Artificial Intelligence (AI) systems.\nThey represent a breakthrough in Natural Language Processing (NLP).\nThese models are designed to:\n\nComprehend human language in its nuance and complexity\nGenerate coherent and contextually appropriate text\nEngage in natural conversation and respond to queries\nPerform language tasks with human-like understanding\n\nThey achieve this by training on vast datasets of text from diverse sources.\nThe underlying technology uses advanced statistical methods to identify patterns and predict language.\n\n\n\n\n\n\n\nTip\n\n\n\nWhy should you care? LLMs are rapidly transforming how we:\n\nWrite and edit content\nDevelop software\nConduct research\nAnalyze data\nAutomate tasks\nLearn new concepts\n\nUnderstanding these tools is becoming essential across nearly every professional field."
+    "text": "What is an LLM?\n\nLLMs are sophisticated Artificial Intelligence (AI) systems.\nThey represent a breakthrough in Natural Language Processing (NLP).\nThese models are designed to:\n\nComprehend human language in its nuance and complexity\nGenerate coherent and contextually appropriate text\nEngage in natural conversation and respond to queries\nPerform language tasks with human-like understanding\n\nThey achieve this by training on vast datasets of text from diverse sources.\nThe underlying technology uses advanced statistical methods to identify patterns and predict language.\n\n\n\n\n\n\n\nTip\n\n\n\nWhy should you care? LLMs are rapidly transforming how we:\n\nWrite and edit content\nDevelop software\nConduct research\nAnalyze data\nAutomate tasks\nLearn new concepts\n\nUnderstanding these tools is becoming essential across nearly every professional field.",
+    "crumbs": [
+      "Large Language Models"
+    ]
   },
   {
     "objectID": "workshops/large-language-models.html#a-great-overview-by-3blue1brown",
     "href": "workshops/large-language-models.html#a-great-overview-by-3blue1brown",
     "title": "Working with Large Language Models",
     "section": "A Great Overview by 3Blue1Brown",
-    "text": "A Great Overview by 3Blue1Brown\n\nGreg Sanderson provides an excellent, concise explanation of LLMs.\nGreat starting point to understand LLMs.\nCheck out his YouTube channel, 3Blue1Brown for more."
+    "text": "A Great Overview by 3Blue1Brown\n\nGreg Sanderson provides an excellent, concise explanation of LLMs.\nGreat starting point to understand LLMs.\nCheck out his YouTube channel, 3Blue1Brown for more.",
+    "crumbs": [
+      "Large Language Models"
+    ]
   },
   {
     "objectID": "workshops/large-language-models.html#todays-key-concepts",
     "href": "workshops/large-language-models.html#todays-key-concepts",
     "title": "Working with Large Language Models",
     "section": "Today’s Key Concepts",
-    "text": "Today’s Key Concepts\n\nFundamental principles behind how LLMs work.\nThe process of training these powerful models.\nLimitations and ethical considerations of LLMs.\nPractical applications, including pair-programming.\nHow to use LLMs with your own data (Retrieval Augmented Generation).\nFurther resources and tools."
+    "text": "Today’s Key Concepts\n\nFundamental principles behind how LLMs work.\nThe process of training these powerful models.\nLimitations and ethical considerations of LLMs.\nPractical applications, including pair-programming.\nHow to use LLMs with your own data (Retrieval Augmented Generation).\nFurther resources and tools.",
+    "crumbs": [
+      "Large Language Models"
+    ]
   },
   {
     "objectID": "workshops/large-language-models.html#deep-learning-and-text-data",
     "href": "workshops/large-language-models.html#deep-learning-and-text-data",
     "title": "Working with Large Language Models",
     "section": "Deep Learning and Text Data",
-    "text": "Deep Learning and Text Data\n\nLLMs are deep learning models.\nBuilt using artificial neural networks with many layers (“deep”).\nTrained on enormous amounts of text data:\n\nInternet\nBooks\nArticles\nCode\nAnd more!\n\nTraining allows them to learn statistical patterns of language.\nBecome incredibly good at predicting word sequences.\nFoundation for tasks like:\n\nText Generation: Creating new text similar to training data.\nTranslation: Converting text between languages.\nSummarization: Condensing text into shorter summaries.\nQuestion Answering: Answering questions based on learned information.\nSentiment Analysis: Determining emotional tone of text."
+    "text": "Deep Learning and Text Data\n\nLLMs are deep learning models.\nBuilt using artificial neural networks with many layers (“deep”).\nTrained on enormous amounts of text data:\n\nInternet\nBooks\nArticles\nCode\nAnd more!\n\nTraining allows them to learn statistical patterns of language.\nBecome incredibly good at predicting word sequences.\nFoundation for tasks like:\n\nText Generation: Creating new text similar to training data.\nTranslation: Converting text between languages.\nSummarization: Condensing text into shorter summaries.\nQuestion Answering: Answering questions based on learned information.\nSentiment Analysis: Determining emotional tone of text.",
+    "crumbs": [
+      "Large Language Models"
+    ]
   },
   {
     "objectID": "workshops/large-language-models.html#the-transformer",
     "href": "workshops/large-language-models.html#the-transformer",
     "title": "Working with Large Language Models",
     "section": "The Transformer",
-    "text": "The Transformer\n\nModern LLMs are powered by the revolutionary transformer architecture.\nIntroduced in the groundbreaking paper “Attention is All You Need” (Vaswani et al., 2017).\nThis innovation fundamentally changed the landscape of NLP.\n\nHow Transformers Work (Simplified):\n\nTokenization: Text is segmented into meaningful units called tokens.\nRelationship Mapping: The model creates a mathematical representation of how tokens relate to each other.\n\nThis allows understanding of complex connections between words and phrases in context.\n\nAttention Mechanism: The critical innovation that makes transformers so powerful.\n\nEnables the model to focus selectively on relevant parts of the input.\nWeighs the importance of different words based on their relevance to the current task.\n\n\nExample: The Power of Attention\n\nConsider the sentence: “The cat sat on the mat because it was warm.”\nThe attention mechanism helps the model understand that:\n\n“it” refers to “the mat,” not “the cat.”\nThis is determined by analyzing the contextual relationships between all words in the sentence."
+    "text": "The Transformer\n\nModern LLMs are powered by the revolutionary transformer architecture.\nIntroduced in the groundbreaking paper “Attention is All You Need” (Vaswani et al., 2017).\nThis innovation fundamentally changed the landscape of NLP.\n\nHow Transformers Work (Simplified):\n\nTokenization: Text is segmented into meaningful units called tokens.\nRelationship Mapping: The model creates a mathematical representation of how tokens relate to each other.\n\nThis allows understanding of complex connections between words and phrases in context.\n\nAttention Mechanism: The critical innovation that makes transformers so powerful.\n\nEnables the model to focus selectively on relevant parts of the input.\nWeighs the importance of different words based on their relevance to the current task.\n\n\nExample: The Power of Attention\n\nConsider the sentence: “The cat sat on the mat because it was warm.”\nThe attention mechanism helps the model understand that:\n\n“it” refers to “the mat,” not “the cat.”\nThis is determined by analyzing the contextual relationships between all words in the sentence.",
+    "crumbs": [
+      "Large Language Models"
+    ]
   },
   {
     "objectID": "workshops/large-language-models.html#tokens-the-building-blocks",
     "href": "workshops/large-language-models.html#tokens-the-building-blocks",
     "title": "Working with Large Language Models",
     "section": "Tokens: The Building Blocks",
-    "text": "Tokens: The Building Blocks\n\nLLMs process text as tokens, not whole words.\nToken can be:\n\nWhole word (e.g., “cat”)\nSubword (e.g., “un-”, “break”, “-able” for “unbreakable”)\nIndividual characters\n\n\nWhy use tokens?\n\nHandles Unknown Words: Processes unseen words via subword units.\nEfficiency: Learning relationships between tokens is more efficient.\n\nChallenges with Tokenization:\n\nTokenization can be tricky.\nEspecially for languages without spaces (Chinese, Japanese).\nCurrent methods better for languages with similar scripts (English, Spanish, French).\nPotentially disadvantages other languages.\nArea of ongoing research.\n\n\n\n\n\n\n\nNote\n\n\n\nThink about this: How might this impact the fairness and inclusivity of LLMs?"
+    "text": "Tokens: The Building Blocks\n\nLLMs process text as tokens, not whole words.\nToken can be:\n\nWhole word (e.g., “cat”)\nSubword (e.g., “un-”, “break”, “-able” for “unbreakable”)\nIndividual characters\n\n\nWhy use tokens?\n\nHandles Unknown Words: Processes unseen words via subword units.\nEfficiency: Learning relationships between tokens is more efficient.\n\nChallenges with Tokenization:\n\nTokenization can be tricky.\nEspecially for languages without spaces (Chinese, Japanese).\nCurrent methods better for languages with similar scripts (English, Spanish, French).\nPotentially disadvantages other languages.\nArea of ongoing research.\n\n\n\n\n\n\n\nNote\n\n\n\nThink about this: How might this impact the fairness and inclusivity of LLMs?",
+    "crumbs": [
+      "Large Language Models"
+    ]
   },
   {
     "objectID": "workshops/large-language-models.html#context-window-llms-memory",
     "href": "workshops/large-language-models.html#context-window-llms-memory",
     "title": "Working with Large Language Models",
     "section": "Context Window: LLM’s “Memory”",
-    "text": "Context Window: LLM’s “Memory”\n\nContext window: LLM’s short-term memory.\nNumber of tokens the model can process at once.\nLarger context window:\n\n“Remembers” more of conversation/document.\nMore coherent and contextually relevant responses.\nMore computational resources needed.\nPotentially less coherence if too long.\n\nShorter context window:\n\nFaster processing.\nMay lose track of earlier conversation parts.\n\n\n\n\n\n\n\n\nTip\n\n\n\nThere is a trade-off between the context window and the size of the model. A larger model can usually handle a larger context window, but it will also take more computational resources to run."
+    "text": "Context Window: LLM’s “Memory”\n\nContext window: LLM’s short-term memory.\nNumber of tokens the model can process at once.\nLarger context window:\n\n“Remembers” more of conversation/document.\nMore coherent and contextually relevant responses.\nMore computational resources needed.\nPotentially less coherence if too long.\n\nShorter context window:\n\nFaster processing.\nMay lose track of earlier conversation parts.\n\n\n\n\n\n\n\n\nTip\n\n\n\nThere is a trade-off between the context window and the size of the model. A larger model can usually handle a larger context window, but it will also take more computational resources to run.",
+    "crumbs": [
+      "Large Language Models"
+    ]
   },
   {
     "objectID": "workshops/large-language-models.html#encoder-decoder",
     "href": "workshops/large-language-models.html#encoder-decoder",
     "title": "Working with Large Language Models",
     "section": "Encoder-Decoder",
-    "text": "Encoder-Decoder\n\nHow it works:\n\nEncoder: Processes input text -&gt; condensed representation (“thought vector”).\nDecoder: Takes representation -&gt; generates output text.\nTwo-step process: understand, then create.\n\nAnalogy: Translation.\n\nUnderstand English sentence (encoder).\nConstruct German sentence (decoder).\n\nKey Feature: Excellent for tasks with different input and output sequences."
+    "text": "Encoder-Decoder\n\nHow it works:\n\nEncoder: Processes input text -&gt; condensed representation (“thought vector”).\nDecoder: Takes representation -&gt; generates output text.\nTwo-step process: understand, then create.\n\nAnalogy: Translation.\n\nUnderstand English sentence (encoder).\nConstruct German sentence (decoder).\n\nKey Feature: Excellent for tasks with different input and output sequences.",
+    "crumbs": [
+      "Large Language Models"
+    ]
   },
   {
     "objectID": "workshops/large-language-models.html#encoder-only",
     "href": "workshops/large-language-models.html#encoder-only",
     "title": "Working with Large Language Models",
     "section": "Encoder-Only",
-    "text": "Encoder-Only\n\nHow it works:\n\nFocuses on understanding input.\nProcesses input -&gt; rich representation of meaning.\n\nAnalogy: Detective analyzing crime scene.\n\nGather clues (input) -&gt; build complete picture.\nNo long report needed (output).\n\nKey Feature: Great for classification or information extraction."
+    "text": "Encoder-Only\n\nHow it works:\n\nFocuses on understanding input.\nProcesses input -&gt; rich representation of meaning.\n\nAnalogy: Detective analyzing crime scene.\n\nGather clues (input) -&gt; build complete picture.\nNo long report needed (output).\n\nKey Feature: Great for classification or information extraction.",
+    "crumbs": [
+      "Large Language Models"
+    ]
   },
   {
     "objectID": "workshops/large-language-models.html#decoder-only",
     "href": "workshops/large-language-models.html#decoder-only",
     "title": "Working with Large Language Models",
     "section": "Decoder-Only",
-    "text": "Decoder-Only\n\nHow it works:\n\nFocuses on generating text.\nTakes prompt/conversation history -&gt; predicts next word, then next, etc.\nBuilds output sequence.\n\nAnalogy: Creative writer or conversation.\n\nWriter starts with sentence and continues story.\nConversation builds upon previous turns.\n\nKey Feature: Ideal for original text creation.\n\n\nMixture of Experts (MoE)\n\nHow it works:\n\nUses multiple smaller “expert” models.\nEach expert specialized in different aspect.\n“Gating network” decides which expert(s) to use.\n\nAnalogy: Large company with departments.\n\nManager (gating network) assigns project to relevant departments.\n\nKey Feature: Efficient scaling to large models/datasets.\n\nOnly subset of experts activated per input.\nImproves performance and reduces cost.\nUsed in large chatbot models."
+    "text": "Decoder-Only\n\nHow it works:\n\nFocuses on generating text.\nTakes prompt/conversation history -&gt; predicts next word, then next, etc.\nBuilds output sequence.\n\nAnalogy: Creative writer or conversation.\n\nWriter starts with sentence and continues story.\nConversation builds upon previous turns.\n\nKey Feature: Ideal for original text creation.\n\n\nMixture of Experts (MoE)\n\nHow it works:\n\nUses multiple smaller “expert” models.\nEach expert specialized in different aspect.\n“Gating network” decides which expert(s) to use.\n\nAnalogy: Large company with departments.\n\nManager (gating network) assigns project to relevant departments.\n\nKey Feature: Efficient scaling to large models/datasets.\n\nOnly subset of experts activated per input.\nImproves performance and reduces cost.\nUsed in large chatbot models.",
+    "crumbs": [
+      "Large Language Models"
+    ]
   },
   {
     "objectID": "workshops/large-language-models.html#the-training-process",
     "href": "workshops/large-language-models.html#the-training-process",
     "title": "Working with Large Language Models",
     "section": "The Training Process",
-    "text": "The Training Process\n\nLLMs learn via “pre-training” on massive text/code datasets.\n\n\nInput Processing:\n\nModel receives token sequence.\nText broken into tokens (words, subwords, characters).\n\nPrediction Task:\n\nGiven sequence, predict next token.\nLike filling in the blank: “The cat sat on the ___”\n\nLearning Loop:\n\nMake prediction.\nCompare to actual answer.\nAdjust internal parameters.\nRepeat billions of times.\n\n\n\n\n\n\n\n\nNote\n\n\n\nThis process requires enormous computational resources - training a large model can cost millions of dollars in computing power!"
+    "text": "The Training Process\n\nLLMs learn via “pre-training” on massive text/code datasets.\n\n\nInput Processing:\n\nModel receives token sequence.\nText broken into tokens (words, subwords, characters).\n\nPrediction Task:\n\nGiven sequence, predict next token.\nLike filling in the blank: “The cat sat on the ___”\n\nLearning Loop:\n\nMake prediction.\nCompare to actual answer.\nAdjust internal parameters.\nRepeat billions of times.\n\n\n\n\n\n\n\n\nNote\n\n\n\nThis process requires enormous computational resources - training a large model can cost millions of dollars in computing power!",
+    "crumbs": [
+      "Large Language Models"
+    ]
   },
   {
     "objectID": "workshops/large-language-models.html#computational-power-and-parallelism",
     "href": "workshops/large-language-models.html#computational-power-and-parallelism",
     "title": "Working with Large Language Models",
     "section": "Computational Power and Parallelism",
-    "text": "Computational Power and Parallelism\n\nTraining needs immense computational power.\nSpecialized hardware: GPUs (Graphics Processing Units).\nModel Parallelism: Distributes model parts across multiple GPUs.\n\nSpeeds up training via parallel processing.\nReason for Nvidia’s stock increase."
+    "text": "Computational Power and Parallelism\n\nTraining needs immense computational power.\nSpecialized hardware: GPUs (Graphics Processing Units).\nModel Parallelism: Distributes model parts across multiple GPUs.\n\nSpeeds up training via parallel processing.\nReason for Nvidia’s stock increase.",
+    "crumbs": [
+      "Large Language Models"
+    ]
   },
   {
     "objectID": "workshops/large-language-models.html#training-phases",
     "href": "workshops/large-language-models.html#training-phases",
     "title": "Working with Large Language Models",
     "section": "Training Phases",
-    "text": "Training Phases\n\nTraining process often divided into phases:\nSelf-Supervised Learning:\n\nTrained on massive dataset without explicit labels.\nLearns to predict next token.\nLearns basic language rules and patterns.\nLike learning grammar/vocab by reading books.\n\nSupervised Fine-tuning:\n\nTrained on smaller, labeled dataset for specific tasks.\nSpecialized for tasks like question answering, summarization.\nLike specialized course after learning basics.\n\nReinforcement Learning from Human Feedback (RLHF):\n\nHuman feedback refines model output.\nMakes output more helpful, honest, and harmless.\nAligns text generation with human preferences.\nLike teacher feedback to improve writing."
+    "text": "Training Phases\n\nTraining process often divided into phases:\nSelf-Supervised Learning:\n\nTrained on massive dataset without explicit labels.\nLearns to predict next token.\nLearns basic language rules and patterns.\nLike learning grammar/vocab by reading books.\n\nSupervised Fine-tuning:\n\nTrained on smaller, labeled dataset for specific tasks.\nSpecialized for tasks like question answering, summarization.\nLike specialized course after learning basics.\n\nReinforcement Learning from Human Feedback (RLHF):\n\nHuman feedback refines model output.\nMakes output more helpful, honest, and harmless.\nAligns text generation with human preferences.\nLike teacher feedback to improve writing.",
+    "crumbs": [
+      "Large Language Models"
+    ]
   },
   {
     "objectID": "workshops/large-language-models.html#bias-a-reflection-of-the-data",
     "href": "workshops/large-language-models.html#bias-a-reflection-of-the-data",
     "title": "Working with Large Language Models",
     "section": "Bias: A Reflection of the Data",
-    "text": "Bias: A Reflection of the Data\n\nLLMs can exhibit biases (gender, racial, cultural, etc.).\nLearn biases from training data.\nBiased training data -&gt; biased output.\n\nExample:\n\nTrained mostly on text by men -&gt; reflect male perspectives/stereotypes.\n\nImpact of Bias:\n\nUnfair/discriminatory outcomes.\nReinforcement of harmful stereotypes.\nErosion of trust in AI.\n\nMitigating Bias:\n\nData Curation: Carefully select diverse training data. Include data from different demographics, languages, cultures.\nModel Fine-tuning: Train on datasets to counteract bias.\nAuditing and Evaluation: Rigorously test models for bias."
+    "text": "Bias: A Reflection of the Data\n\nLLMs can exhibit biases (gender, racial, cultural, etc.).\nLearn biases from training data.\nBiased training data -&gt; biased output.\n\nExample:\n\nTrained mostly on text by men -&gt; reflect male perspectives/stereotypes.\n\nImpact of Bias:\n\nUnfair/discriminatory outcomes.\nReinforcement of harmful stereotypes.\nErosion of trust in AI.\n\nMitigating Bias:\n\nData Curation: Carefully select diverse training data. Include data from different demographics, languages, cultures.\nModel Fine-tuning: Train on datasets to counteract bias.\nAuditing and Evaluation: Rigorously test models for bias.",
+    "crumbs": [
+      "Large Language Models"
+    ]
   },
   {
     "objectID": "workshops/large-language-models.html#adversarial-attacks-tricking-the-model",
     "href": "workshops/large-language-models.html#adversarial-attacks-tricking-the-model",
     "title": "Working with Large Language Models",
     "section": "Adversarial Attacks: Tricking the Model",
-    "text": "Adversarial Attacks: Tricking the Model\n\nAdversarial attacks: small input changes to mislead LLM.\nExploit model vulnerabilities.\n\nExample:\n\nSlightly change prompt wording -&gt; biased/harmful/nonsensical response.\n\nWhy is this a problem?\n\nManipulate LLMs for malicious purposes.\nSpreading misinformation or generating harmful content."
+    "text": "Adversarial Attacks: Tricking the Model\n\nAdversarial attacks: small input changes to mislead LLM.\nExploit model vulnerabilities.\n\nExample:\n\nSlightly change prompt wording -&gt; biased/harmful/nonsensical response.\n\nWhy is this a problem?\n\nManipulate LLMs for malicious purposes.\nSpreading misinformation or generating harmful content.",
+    "crumbs": [
+      "Large Language Models"
+    ]
   },
   {
     "objectID": "workshops/large-language-models.html#a-broader-view",
     "href": "workshops/large-language-models.html#a-broader-view",
     "title": "Working with Large Language Models",
     "section": "A Broader View",
-    "text": "A Broader View\n\nLLMs raise broader ethical concerns:\nJob Displacement: Automate human tasks -&gt; potential job losses.\n\nHow to prepare for this shift?\n\nMisinformation: Generate realistic fake news easily.\n\nHow to combat misinformation spread?\n\nMalicious Use: Deepfakes, harmful content, propaganda.\n\nWhat safeguards are needed?\n\nPrivacy: Trained on personal data.\n\nData usage and privacy regulations needed?\n\nAccountability: Unclear who is responsible for LLM-generated content.\n\nHow to hold producers/users accountable?\n\nTransparency: Difficult to understand LLM decision-making.\n\nHow to make LLMs more transparent?\n\nAddressing ethical concerns requires: researchers, policymakers, public."
+    "text": "A Broader View\n\nLLMs raise broader ethical concerns:\nJob Displacement: Automate human tasks -&gt; potential job losses.\n\nHow to prepare for this shift?\n\nMisinformation: Generate realistic fake news easily.\n\nHow to combat misinformation spread?\n\nMalicious Use: Deepfakes, harmful content, propaganda.\n\nWhat safeguards are needed?\n\nPrivacy: Trained on personal data.\n\nData usage and privacy regulations needed?\n\nAccountability: Unclear who is responsible for LLM-generated content.\n\nHow to hold producers/users accountable?\n\nTransparency: Difficult to understand LLM decision-making.\n\nHow to make LLMs more transparent?\n\nAddressing ethical concerns requires: researchers, policymakers, public.",
+    "crumbs": [
+      "Large Language Models"
+    ]
   },
   {
     "objectID": "workshops/large-language-models.html#pair-programming-with-llms",
     "href": "workshops/large-language-models.html#pair-programming-with-llms",
     "title": "Working with Large Language Models",
     "section": "Pair Programming with LLMs",
-    "text": "Pair Programming with LLMs\n\nPair programming: two programmers work together.\n\nOne writes code, other reviews/feedback.\n\nLLMs as “AI pair programmer”:\n\nCode Completion: Suggest code snippets, complete lines.\nError Detection: Identify bugs, suggest fixes.\nCode Generation: Generate functions/blocks from instructions.\nCode Explanation: Explain how code works.\nBest Practices: Suggest improvements and best practices.\n\n\nTools for Pair Programming:\n\nGitHub Copilot: VS Code integration, AI-powered suggestions.\nCursor: VS Code fork, more powerful AI features.\nZed: Code editor for pair programming (LLMs and humans). Local and API models."
+    "text": "Pair Programming with LLMs\n\nPair programming: two programmers work together.\n\nOne writes code, other reviews/feedback.\n\nLLMs as “AI pair programmer”:\n\nCode Completion: Suggest code snippets, complete lines.\nError Detection: Identify bugs, suggest fixes.\nCode Generation: Generate functions/blocks from instructions.\nCode Explanation: Explain how code works.\nBest Practices: Suggest improvements and best practices.\n\n\nTools for Pair Programming:\n\nGitHub Copilot: VS Code integration, AI-powered suggestions.\nCursor: VS Code fork, more powerful AI features.\nZed: Code editor for pair programming (LLMs and humans). Local and API models.",
+    "crumbs": [
+      "Large Language Models"
+    ]
   },
   {
     "objectID": "workshops/large-language-models.html#tips-for-effective-pair-programming",
     "href": "workshops/large-language-models.html#tips-for-effective-pair-programming",
     "title": "Working with Large Language Models",
     "section": "Tips for Effective Pair Programming",
-    "text": "Tips for Effective Pair Programming\n\nStart with Simple Tasks: Begin with code completion and gradually move to more complex tasks.\nBe Precise in Your Instructions: The more specific your prompt, the better the LLM’s response.\nAlways Review Generated Code: LLMs can make mistakes or suggest inefficient solutions.\nLearn as You Collaborate: Pay attention to new techniques and patterns the LLM introduces.\nIterate and Refine: Use the LLM’s output as a starting point, then improve through conversation.\n\n\n\n\n\n\n\nTip\n\n\n\nManage Context Effectively: Remember that LLMs have a finite context window. For large codebases, focus on specific components rather than the entire project at once. Break down complex problems into manageable chunks."
+    "text": "Tips for Effective Pair Programming\n\nStart with Simple Tasks: Begin with code completion and gradually move to more complex tasks.\nBe Precise in Your Instructions: The more specific your prompt, the better the LLM’s response.\nAlways Review Generated Code: LLMs can make mistakes or suggest inefficient solutions.\nLearn as You Collaborate: Pay attention to new techniques and patterns the LLM introduces.\nIterate and Refine: Use the LLM’s output as a starting point, then improve through conversation.\n\n\n\n\n\n\n\nTip\n\n\n\nManage Context Effectively: Remember that LLMs have a finite context window. For large codebases, focus on specific components rather than the entire project at once. Break down complex problems into manageable chunks.",
+    "crumbs": [
+      "Large Language Models"
+    ]
   },
   {
     "objectID": "workshops/large-language-models.html#ollama",
     "href": "workshops/large-language-models.html#ollama",
     "title": "Working with Large Language Models",
     "section": "Ollama",
-    "text": "Ollama\n\nOllama: free, open-source.\nSimplifies downloading, installing, running LLMs (macOS, Linux, Windows).\nCommand-line interface (CLI), wide model support.\n\nKey Features of Ollama:\n\nEasy Installation: Simple download and install.\nModel Management: Download/manage models from library (Hugging Face).\nCommand-Line Interface: Interact via commands.\nAPI Server: Local API server, integrate in applications."
+    "text": "Ollama\n\nOllama: free, open-source.\nSimplifies downloading, installing, running LLMs (macOS, Linux, Windows).\nCommand-line interface (CLI), wide model support.\n\nKey Features of Ollama:\n\nEasy Installation: Simple download and install.\nModel Management: Download/manage models from library (Hugging Face).\nCommand-Line Interface: Interact via commands.\nAPI Server: Local API server, integrate in applications.",
+    "crumbs": [
+      "Large Language Models"
+    ]
   },
   {
     "objectID": "workshops/large-language-models.html#hardware-requirements",
     "href": "workshops/large-language-models.html#hardware-requirements",
     "title": "Working with Large Language Models",
     "section": "Hardware Requirements",
-    "text": "Hardware Requirements\n\nLocal LLMs need sufficient resources:\n\n\n\n\n\n\n\n\n\nComponent\nRequirement\nNotes\n\n\n\n\nRAM\nMinimum 8GB\n- 16GB recommended- 32GB+ for larger models\n\n\nCPU\nModern multi-core\n- Can run smaller models (&lt; 7B params)- Faster = better performance\n\n\nGPU\nVRAM dependent\n- More VRAM = larger models- NVIDIA GPUs preferred\n\n\nStorage\n10GB+ free\n- Models can be several GB each\n\n\n\n\n\n\n\n\n\nWarning\n\n\n\nPerformance Note: CPU-only can be much slower compared to GPU."
+    "text": "Hardware Requirements\n\nLocal LLMs need sufficient resources:\n\n\n\n\n\n\n\n\n\nComponent\nRequirement\nNotes\n\n\n\n\nRAM\nMinimum 8GB\n- 16GB recommended- 32GB+ for larger models\n\n\nCPU\nModern multi-core\n- Can run smaller models (&lt; 7B params)- Faster = better performance\n\n\nGPU\nVRAM dependent\n- More VRAM = larger models- NVIDIA GPUs preferred\n\n\nStorage\n10GB+ free\n- Models can be several GB each\n\n\n\n\n\n\n\n\n\nWarning\n\n\n\nPerformance Note: CPU-only can be much slower compared to GPU.",
+    "crumbs": [
+      "Large Language Models"
+    ]
   },
   {
     "objectID": "workshops/large-language-models.html#billions-of-parameters-b",
     "href": "workshops/large-language-models.html#billions-of-parameters-b",
     "title": "Working with Large Language Models",
     "section": "Billions of Parameters (B)",
-    "text": "Billions of Parameters (B)\n\nLLMs described by parameters (internal learned values).\nMore parameters -&gt; more capable (generally), larger model, more resources.\nModel size not everything, quality depends on data/training/architecture.\nNewer models can be more efficient."
+    "text": "Billions of Parameters (B)\n\nLLMs described by parameters (internal learned values).\nMore parameters -&gt; more capable (generally), larger model, more resources.\nModel size not everything, quality depends on data/training/architecture.\nNewer models can be more efficient.",
+    "crumbs": [
+      "Large Language Models"
+    ]
   },
   {
     "objectID": "workshops/large-language-models.html#size-overview",
     "href": "workshops/large-language-models.html#size-overview",
     "title": "Working with Large Language Models",
     "section": "Size Overview",
-    "text": "Size Overview\n\nSmall Models (&lt; 7B): CPU with 16GB+ RAM. Experimentation, less demanding tasks.\nMedium Models (7B - 13B): Benefit from GPU, sometimes CPU with 32GB+ RAM.\nLarge Models (30B+): Powerful GPU with VRAM needed.\nVery Large Models (70B+): High-end/multiple GPUs.\n\n\n\n\n\n\n\nTip\n\n\n\nModel names like mistral:7b, codellama:34b - “b” = billions of parameters."
+    "text": "Size Overview\n\nSmall Models (&lt; 7B): CPU with 16GB+ RAM. Experimentation, less demanding tasks.\nMedium Models (7B - 13B): Benefit from GPU, sometimes CPU with 32GB+ RAM.\nLarge Models (30B+): Powerful GPU with VRAM needed.\nVery Large Models (70B+): High-end/multiple GPUs.\n\n\n\n\n\n\n\nTip\n\n\n\nModel names like mistral:7b, codellama:34b - “b” = billions of parameters.",
+    "crumbs": [
+      "Large Language Models"
+    ]
   },
   {
     "objectID": "workshops/large-language-models.html#quantization-making-models-smaller",
     "href": "workshops/large-language-models.html#quantization-making-models-smaller",
     "title": "Working with Large Language Models",
     "section": "Quantization: Making Models Smaller",
-    "text": "Quantization: Making Models Smaller\n\nQuantization: Reduce size/compute of LLMs “without significantly impacting performance”.\nRepresent parameters with lower precision (e.g., 8-bit, 4-bit integers).\n\nBenefits of Quantization:\n\nSmaller Model Size: Less RAM/disk needed.\nFaster Inference: Faster low-precision calculations.\nLower Power Consumption: Less hardware demand.\nTrade-offs: Small accuracy decrease possible. More aggressive quantization = more performance impact.\nOllama and Quantization: Supports quantized models from Hugging Face.\n\nq4_0, q8_0 suffixes indicate quantization level.\nq4_0: 4-bit (balance size/quality).\nq8_0: 8-bit (closer to original, larger size).\n\n\n\n\n\n\n\n\nTip\n\n\n\nQuantization levels offer different balance of speed, size, quality. Experiment to find best option for your hardware/needs. Default model often sufficient, quantization not always needed."
+    "text": "Quantization: Making Models Smaller\n\nQuantization: Reduce size/compute of LLMs “without significantly impacting performance”.\nRepresent parameters with lower precision (e.g., 8-bit, 4-bit integers).\n\nBenefits of Quantization:\n\nSmaller Model Size: Less RAM/disk needed.\nFaster Inference: Faster low-precision calculations.\nLower Power Consumption: Less hardware demand.\nTrade-offs: Small accuracy decrease possible. More aggressive quantization = more performance impact.\nOllama and Quantization: Supports quantized models from Hugging Face.\n\nq4_0, q8_0 suffixes indicate quantization level.\nq4_0: 4-bit (balance size/quality).\nq8_0: 8-bit (closer to original, larger size).\n\n\n\n\n\n\n\n\nTip\n\n\n\nQuantization levels offer different balance of speed, size, quality. Experiment to find best option for your hardware/needs. Default model often sufficient, quantization not always needed.",
+    "crumbs": [
+      "Large Language Models"
+    ]
   },
   {
     "objectID": "workshops/large-language-models.html#getting-started-with-ollama",
     "href": "workshops/large-language-models.html#getting-started-with-ollama",
     "title": "Working with Large Language Models",
     "section": "Getting Started with Ollama",
-    "text": "Getting Started with Ollama\n\nDownload and Install Ollama: ollama.com.\nPull a Model: ollama pull mistral:7b (terminal/command prompt).\nRun the Model: ollama run mistral:7b (terminal). Chat interface opens.\nAsk a Question: Type prompt and press Enter.\nExperiment: Try different models from the Ollama website model library. Use Hugging Face for more models/quantization."
+    "text": "Getting Started with Ollama\n\nDownload and Install Ollama: ollama.com.\nPull a Model: ollama pull mistral:7b (terminal/command prompt).\nRun the Model: ollama run mistral:7b (terminal). Chat interface opens.\nAsk a Question: Type prompt and press Enter.\nExperiment: Try different models from the Ollama website model library. Use Hugging Face for more models/quantization.",
+    "crumbs": [
+      "Large Language Models"
+    ]
   },
   {
     "objectID": "workshops/large-language-models.html#talk-to-the-llm-in-code",
     "href": "workshops/large-language-models.html#talk-to-the-llm-in-code",
     "title": "Working with Large Language Models",
     "section": "Talk to the LLM in code",
-    "text": "Talk to the LLM in code\n\nTo talk to the LLM in code, you can use the following code\nMake sure that you have a local Ollama with the model you want to use running!\n\n\nimport requests\nimport json\n\ndef ask_llm(prompt, model=\"mistral:7b\"):\n    \"\"\"\n    Send a prompt to a locally running Ollama model and get the response.\n    \n    Args:\n        prompt (str): The question or prompt to send to the model\n        model (str): The name of the model to use (default: \"mistral:7b\")\n    \n    Returns:\n        str: The model's response\n    \"\"\"\n\n    url = \"http://localhost:11434/api/generate\"\n    \n    data = {\n        \"model\": model,\n        \"prompt\": prompt,\n        \"stream\": False\n    }\n    \n    try:\n        response = requests.post(url, json=data)\n        response.raise_for_status()  # Raise an exception for bad status\n        result = response.json()\n        return result[\"response\"]\n    except requests.exceptions.RequestException as e:\n        return f\"Error: {str(e)}\\nMake sure Ollama is running locally!\"\n\ndef main():\n    print(\"Local LLM Chat (type 'quit' to exit)\")\n    print(\"-\" * 50)\n    \n    while True:\n        user_input = input(\"\\nYour question: \")\n        \n        if user_input.lower() in ['quit', 'exit']:\n            print(\"\\nGoodbye!\")\n            break\n            \n        response = ask_llm(user_input)\n        print(\"\\nResponse:\", response)\n\nif __name__ == \"__main__\":\n    main()\nTo ask questions in Julia, you can use the following code:\n\nusing HTTP\nusing JSON3\n\nfunction send_prompt(prompt::String, model::String=\"mistral:7b\")\n    url = \"http://localhost:11434/api/generate\"\n    headers = [\"Content-Type\" =&gt; \"application/json\"]\n    \n    body = JSON3.write(Dict(\n        \"model\" =&gt; model,\n        \"prompt\" =&gt; prompt,\n        \"stream\" =&gt; false\n    ))\n    \n    response = HTTP.post(url, headers, body)\n    result = JSON3.read(response.body)\n    return result.response\nend\n\nfunction chat()\n    println(\"Chat with AI (type 'exit' to quit)\")\n    println(\"Loading model...\")\n    println(\"Note: Working in the REPL in VS Code is tricky with user input.\")\n    println(\"Thus, you first need to enter some random value and press enter.\")\n    println(\"Then, you can start chatting by asking a question.\")\n    println(\"Afterwards, you can continue by asking questions and pressing enter.\")\n    println(\"To prevent this, you have to run the code in a terminal directly.\")\n    \n    while true\n        print(\"\\nYou: \")\n        user_input = readline()\n        \n        if lowercase(user_input) == \"exit\"\n            println(\"\\nGoodbye!\")\n            break\n        end\n        \n        try\n            response = send_prompt(user_input)\n            println(\"\\nAI: \", response)\n        catch e\n            println(\"\\nError: Make sure Ollama is running and the model is installed.\")\n            println(\"You can install the model with: ollama pull mistral:7b\")\n            break\n        end\n    end\nend\n\n# Start the chat\nchat()"
+    "text": "Talk to the LLM in code\n\nTo talk to the LLM in code, you can use the following code\nMake sure that you have a local Ollama with the model you want to use running!\n\n\nimport requests\nimport json\n\ndef ask_llm(prompt, model=\"mistral:7b\"):\n    \"\"\"\n    Send a prompt to a locally running Ollama model and get the response.\n    \n    Args:\n        prompt (str): The question or prompt to send to the model\n        model (str): The name of the model to use (default: \"mistral:7b\")\n    \n    Returns:\n        str: The model's response\n    \"\"\"\n\n    url = \"http://localhost:11434/api/generate\"\n    \n    data = {\n        \"model\": model,\n        \"prompt\": prompt,\n        \"stream\": False\n    }\n    \n    try:\n        response = requests.post(url, json=data)\n        response.raise_for_status()  # Raise an exception for bad status\n        result = response.json()\n        return result[\"response\"]\n    except requests.exceptions.RequestException as e:\n        return f\"Error: {str(e)}\\nMake sure Ollama is running locally!\"\n\ndef main():\n    print(\"Local LLM Chat (type 'quit' to exit)\")\n    print(\"-\" * 50)\n    \n    while True:\n        user_input = input(\"\\nYour question: \")\n        \n        if user_input.lower() in ['quit', 'exit']:\n            print(\"\\nGoodbye!\")\n            break\n            \n        response = ask_llm(user_input)\n        print(\"\\nResponse:\", response)\n\nif __name__ == \"__main__\":\n    main()\nTo ask questions in Julia, you can use the following code:\n\nusing HTTP\nusing JSON3\n\nfunction send_prompt(prompt::String, model::String=\"mistral:7b\")\n    url = \"http://localhost:11434/api/generate\"\n    headers = [\"Content-Type\" =&gt; \"application/json\"]\n    \n    body = JSON3.write(Dict(\n        \"model\" =&gt; model,\n        \"prompt\" =&gt; prompt,\n        \"stream\" =&gt; false\n    ))\n    \n    response = HTTP.post(url, headers, body)\n    result = JSON3.read(response.body)\n    return result.response\nend\n\nfunction chat()\n    println(\"Chat with AI (type 'exit' to quit)\")\n    println(\"Loading model...\")\n    println(\"Note: Working in the REPL in VS Code is tricky with user input.\")\n    println(\"Thus, you first need to enter some random value and press enter.\")\n    println(\"Then, you can start chatting by asking a question.\")\n    println(\"Afterwards, you can continue by asking questions and pressing enter.\")\n    println(\"To prevent this, you have to run the code in a terminal directly.\")\n    \n    while true\n        print(\"\\nYou: \")\n        user_input = readline()\n        \n        if lowercase(user_input) == \"exit\"\n            println(\"\\nGoodbye!\")\n            break\n        end\n        \n        try\n            response = send_prompt(user_input)\n            println(\"\\nAI: \", response)\n        catch e\n            println(\"\\nError: Make sure Ollama is running and the model is installed.\")\n            println(\"You can install the model with: ollama pull mistral:7b\")\n            break\n        end\n    end\nend\n\n# Start the chat\nchat()",
+    "crumbs": [
+      "Large Language Models"
+    ]
   },
   {
     "objectID": "workshops/large-language-models.html#multimodality-beyond-text",
     "href": "workshops/large-language-models.html#multimodality-beyond-text",
     "title": "Working with Large Language Models",
     "section": "Multimodality: Beyond Text",
-    "text": "Multimodality: Beyond Text\n\nModern LLMs are evolving to work with multiple types of data:\n\nText-to-Image Models: Create detailed images from textual descriptions (DALL-E, Midjourney, Stable Diffusion)\nImage Understanding: Analyze and describe visual content with sophisticated language\nAudio Processing: Convert speech to text and generate natural-sounding speech\nVideo Analysis: Comprehend and narrate the content of video sequences"
+    "text": "Multimodality: Beyond Text\n\nModern LLMs are evolving to work with multiple types of data:\n\nText-to-Image Models: Create detailed images from textual descriptions (DALL-E, Midjourney, Stable Diffusion)\nImage Understanding: Analyze and describe visual content with sophisticated language\nAudio Processing: Convert speech to text and generate natural-sounding speech\nVideo Analysis: Comprehend and narrate the content of video sequences",
+    "crumbs": [
+      "Large Language Models"
+    ]
   },
   {
     "objectID": "workshops/large-language-models.html#specialized-llms",
     "href": "workshops/large-language-models.html#specialized-llms",
     "title": "Working with Large Language Models",
     "section": "Specialized LLMs",
-    "text": "Specialized LLMs\n\nDomain-specific models are emerging to address specialized needs:\n\nMedical LLMs: Trained on medical literature to assist healthcare professionals\nLegal LLMs: Specialized in analyzing legal documents and case law\nScientific Models: Focused on research papers and scientific terminology\nCode-specific Models: Optimized for software development across multiple languages"
+    "text": "Specialized LLMs\n\nDomain-specific models are emerging to address specialized needs:\n\nMedical LLMs: Trained on medical literature to assist healthcare professionals\nLegal LLMs: Specialized in analyzing legal documents and case law\nScientific Models: Focused on research papers and scientific terminology\nCode-specific Models: Optimized for software development across multiple languages",
+    "crumbs": [
+      "Large Language Models"
+    ]
   },
   {
     "objectID": "workshops/large-language-models.html#frontier-research",
     "href": "workshops/large-language-models.html#frontier-research",
     "title": "Working with Large Language Models",
     "section": "Frontier Research",
-    "text": "Frontier Research\n\nCutting-edge research is addressing key challenges:\n\nEnhanced Reasoning: Developing models with stronger logical analysis capabilities\nImproved Factuality: Reducing hallucinations and increasing reliability of information\nModel Efficiency: Creating powerful models that require fewer computational resources\nBetter Alignment: Ensuring models behave according to human values and expectations"
+    "text": "Frontier Research\n\nCutting-edge research is addressing key challenges:\n\nEnhanced Reasoning: Developing models with stronger logical analysis capabilities\nImproved Factuality: Reducing hallucinations and increasing reliability of information\nModel Efficiency: Creating powerful models that require fewer computational resources\nBetter Alignment: Ensuring models behave according to human values and expectations",
+    "crumbs": [
+      "Large Language Models"
+    ]
   }
 ]
