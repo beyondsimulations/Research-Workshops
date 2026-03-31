@@ -8,7 +8,7 @@
 
 <meta name="author" content="Dr.&nbsp;Tobias Vlćek">
 
-<title>Lecture - Structured Literature Research – Seminar Preparation</title>
+<title>Lecture - Git and GitHub – Seminar Preparation</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -124,7 +124,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../workshops/literature-research-page.html">Literature</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../workshops/git-github-page.html">Git</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -179,13 +179,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../workshops/literature-research-page.html" class="sidebar-item-text sidebar-link active">
+  <a href="../workshops/literature-research-page.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Literature</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../workshops/git-github-page.html" class="sidebar-item-text sidebar-link">
+  <a href="../workshops/git-github-page.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Git</span></a>
   </div>
 </li>
@@ -208,52 +208,46 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#why-structured-research" id="toc-why-structured-research" class="nav-link active" data-scroll-target="#why-structured-research"><span class="flow">Why Structured Research?</span></a>
+  <li><a href="#why-version-control" id="toc-why-version-control" class="nav-link active" data-scroll-target="#why-version-control"><span class="flow">Why Version Control?</span></a>
   <ul class="collapse">
   <li><a href="#welcome" id="toc-welcome" class="nav-link" data-scroll-target="#welcome">Welcome</a></li>
-  <li><a href="#common-mistakes" id="toc-common-mistakes" class="nav-link" data-scroll-target="#common-mistakes">Common mistakes</a></li>
-  <li><a href="#a-structured-approach" id="toc-a-structured-approach" class="nav-link" data-scroll-target="#a-structured-approach">A structured approach</a></li>
+  <li><a href="#the-problem-and-the-solution" id="toc-the-problem-and-the-solution" class="nav-link" data-scroll-target="#the-problem-and-the-solution">The problem and the solution</a></li>
+  <li><a href="#git-vs-github" id="toc-git-vs-github" class="nav-link" data-scroll-target="#git-vs-github">Git vs GitHub</a></li>
   </ul></li>
-  <li><a href="#formulating-your-research-question" id="toc-formulating-your-research-question" class="nav-link" data-scroll-target="#formulating-your-research-question"><span class="flow">Formulating Your Research Question</span></a>
+  <li><a href="#setting-up-git" id="toc-setting-up-git" class="nav-link" data-scroll-target="#setting-up-git"><span class="flow">Setting Up Git</span></a>
   <ul class="collapse">
-  <li><a href="#start-broad-then-narrow-down" id="toc-start-broad-then-narrow-down" class="nav-link" data-scroll-target="#start-broad-then-narrow-down">Start broad, then narrow down</a></li>
-  <li><a href="#use-a-framework-to-structure-your-question" id="toc-use-a-framework-to-structure-your-question" class="nav-link" data-scroll-target="#use-a-framework-to-structure-your-question">Use a framework to structure your question</a></li>
+  <li><a href="#installing-and-configuring-git" id="toc-installing-and-configuring-git" class="nav-link" data-scroll-target="#installing-and-configuring-git">Installing and configuring Git</a></li>
   </ul></li>
-  <li><a href="#search-strategy" id="toc-search-strategy" class="nav-link" data-scroll-target="#search-strategy"><span class="flow">Search Strategy</span></a>
+  <li><a href="#the-core-git-workflow" id="toc-the-core-git-workflow" class="nav-link" data-scroll-target="#the-core-git-workflow"><span class="flow">The Core Git Workflow</span></a>
   <ul class="collapse">
-  <li><a href="#google-scholar" id="toc-google-scholar" class="nav-link" data-scroll-target="#google-scholar">Google Scholar</a></li>
-  <li><a href="#specialized-databases" id="toc-specialized-databases" class="nav-link" data-scroll-target="#specialized-databases">Specialized databases</a></li>
-  <li><a href="#building-search-strings" id="toc-building-search-strings" class="nav-link" data-scroll-target="#building-search-strings">Building search strings</a></li>
-  <li><a href="#snowballing" id="toc-snowballing" class="nav-link" data-scroll-target="#snowballing">Snowballing</a></li>
+  <li><a href="#how-git-works" id="toc-how-git-works" class="nav-link" data-scroll-target="#how-git-works">How Git works</a></li>
+  <li><a href="#starting-a-new-project" id="toc-starting-a-new-project" class="nav-link" data-scroll-target="#starting-a-new-project">Starting a new project</a></li>
+  <li><a href="#staging-and-committing" id="toc-staging-and-committing" class="nav-link" data-scroll-target="#staging-and-committing">Staging and committing</a></li>
+  <li><a href="#commit-messages-and-history" id="toc-commit-messages-and-history" class="nav-link" data-scroll-target="#commit-messages-and-history">Commit messages and history</a></li>
+  <li><a href="#ignoring-files-you-do-not-need" id="toc-ignoring-files-you-do-not-need" class="nav-link" data-scroll-target="#ignoring-files-you-do-not-need">Ignoring files you do not need</a></li>
   </ul></li>
-  <li><a href="#ai-tools-for-literature-research" id="toc-ai-tools-for-literature-research" class="nav-link" data-scroll-target="#ai-tools-for-literature-research"><span class="flow">AI Tools for Literature Research</span></a>
+  <li><a href="#connecting-to-github" id="toc-connecting-to-github" class="nav-link" data-scroll-target="#connecting-to-github"><span class="flow">Connecting to GitHub</span></a>
   <ul class="collapse">
-  <li><a href="#ai-discovery-tools" id="toc-ai-discovery-tools" class="nav-link" data-scroll-target="#ai-discovery-tools">AI discovery tools</a></li>
-  <li><a href="#using-ai-tools-effectively" id="toc-using-ai-tools-effectively" class="nav-link" data-scroll-target="#using-ai-tools-effectively">Using AI tools effectively</a></li>
+  <li><a href="#setting-up-github" id="toc-setting-up-github" class="nav-link" data-scroll-target="#setting-up-github">Setting up GitHub</a></li>
+  <li><a href="#pushing-to-github" id="toc-pushing-to-github" class="nav-link" data-scroll-target="#pushing-to-github">Pushing to GitHub</a></li>
   </ul></li>
-  <li><a href="#reference-management-with-zotero" id="toc-reference-management-with-zotero" class="nav-link" data-scroll-target="#reference-management-with-zotero"><span class="flow">Reference Management with Zotero</span></a>
+  <li><a href="#branching" id="toc-branching" class="nav-link" data-scroll-target="#branching"><span class="flow">Branching</span></a>
   <ul class="collapse">
-  <li><a href="#why-use-a-reference-manager" id="toc-why-use-a-reference-manager" class="nav-link" data-scroll-target="#why-use-a-reference-manager">Why use a reference manager?</a></li>
-  <li><a href="#zotero-and-the-workflow" id="toc-zotero-and-the-workflow" class="nav-link" data-scroll-target="#zotero-and-the-workflow">Zotero and the workflow</a></li>
-  </ul></li>
-  <li><a href="#evaluating-sources" id="toc-evaluating-sources" class="nav-link" data-scroll-target="#evaluating-sources"><span class="flow">Evaluating Sources</span></a>
-  <ul class="collapse">
-  <li><a href="#source-types-and-quality-indicators" id="toc-source-types-and-quality-indicators" class="nav-link" data-scroll-target="#source-types-and-quality-indicators">Source types and quality indicators</a></li>
-  <li><a href="#reading-critically" id="toc-reading-critically" class="nav-link" data-scroll-target="#reading-critically">Reading critically</a></li>
+  <li><a href="#working-with-branches" id="toc-working-with-branches" class="nav-link" data-scroll-target="#working-with-branches">Working with branches</a></li>
   </ul></li>
   <li><a href="#wrap-up" id="toc-wrap-up" class="nav-link" data-scroll-target="#wrap-up"><span class="flow">Wrap-up</span></a>
   <ul class="collapse">
-  <li><a href="#summary-and-resources" id="toc-summary-and-resources" class="nav-link" data-scroll-target="#summary-and-resources">Summary and resources</a></li>
+  <li><a href="#reference-and-resources" id="toc-reference-and-resources" class="nav-link" data-scroll-target="#reference-and-resources">Reference and resources</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/beyondsimulations/Research-Workshops/edit/main/workshops/literature-research.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/blob/main/workshops/literature-research.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/beyondsimulations/Research-Workshops/edit/main/workshops/git-github.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/blob/main/workshops/git-github.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lecture - Structured Literature Research</h1>
+<h1 class="title">Lecture - Git and GitHub</h1>
 <p class="subtitle lead">Seminar Preparation</p>
 </div>
 
@@ -277,441 +271,42 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="why-structured-research" class="level1">
-<h1><span class="flow">Why Structured Research?</span></h1>
+<section id="why-version-control" class="level1">
+<h1><span class="flow">Why Version Control?</span></h1>
 <section id="welcome" class="level2">
 <h2 class="anchored" data-anchor-id="welcome">Welcome</h2>
-<p>This workshop covers <span class="highlight">structured literature research</span> – a core skill for any Bachelor or Master thesis. You will learn how to formulate a clear research question, build effective search strategies, use AI tools for discovery, organize references with Zotero, and evaluate sources critically.</p>
+<p>This workshop covers <span class="highlight">Git and GitHub</span>. By the end, you will be able to track changes to your files with Git, use Zed’s built-in Git integration to stage and commit, push your work to GitHub as a backup, and understand the terminal commands behind what Zed does visually.</p>
 <div class="callout callout-style-simple callout-tip">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>Finding the right literature early saves you weeks of work later.</p>
+<p>Version control is not just for programmers. It protects every document you write – thesis drafts, code, data analysis scripts.</p>
 </div>
 </div>
 </div>
 </section>
-<section id="common-mistakes" class="level2">
-<h2 class="anchored" data-anchor-id="common-mistakes">Common mistakes</h2>
-<p>Most students start by <span class="highlight">Googling randomly</span> and hoping for the best. Other common pitfalls include reading only what is cited in one paper, stopping after the first five results, not keeping track of what you have already read, and relying on a single database or search engine.</p>
-<div class="callout callout-style-simple callout-warning">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>These mistakes lead to incomplete reviews, missed papers, and wasted time.</p>
-</div>
-</div>
-</div>
-</section>
-<section id="a-structured-approach" class="level2">
-<h2 class="anchored" data-anchor-id="a-structured-approach">A structured approach</h2>
-<p>A systematic process <span class="highlight">saves time and produces better results</span>. The goal is to find, evaluate, and organize relevant literature. The process at a glance:</p>
-<ol type="1">
-<li><strong>Formulate</strong> a clear research question</li>
-<li><strong>Search</strong> systematically across databases</li>
-<li><strong>Snowball</strong> forwards and backwards</li>
-<li><strong>Organize</strong> references in a manager</li>
-<li><strong>Evaluate</strong> sources critically</li>
-<li><strong>Write</strong> your literature review</li>
-</ol>
-</section>
-</section>
-<section id="formulating-your-research-question" class="level1">
-<h1><span class="flow">Formulating Your Research Question</span></h1>
-<section id="start-broad-then-narrow-down" class="level2">
-<h2 class="anchored" data-anchor-id="start-broad-then-narrow-down">Start broad, then narrow down</h2>
-<p>Begin with your <span class="highlight">general topic area</span>, ask yourself what specifically you want to investigate, and narrow down step by step.</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Too broad:</strong></p>
-<p>“Vehicle routing problems”</p>
-</div><div class="column" style="width:50%;">
-<p><strong>Focused:</strong></p>
-<p>“How do metaheuristics compare to exact methods for vehicle routing problems with time windows?”</p>
-</div>
-</div>
-</section>
-<section id="use-a-framework-to-structure-your-question" class="level2">
-<h2 class="anchored" data-anchor-id="use-a-framework-to-structure-your-question">Use a framework to structure your question</h2>
-<p>The <span class="highlight">PICO framework</span> helps you define your question clearly:</p>
-<div data-tbl-colwidths="[15,30,55]">
-<table class="caption-top table">
-<colgroup>
-<col style="width: 15%">
-<col style="width: 30%">
-<col style="width: 55%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Meaning</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>P</strong>opulation</td>
-<td>What problem or domain?</td>
-<td>Vehicle routing with time windows</td>
-</tr>
-<tr class="even">
-<td><strong>I</strong>ntervention</td>
-<td>What approach or method?</td>
-<td>Metaheuristic algorithms</td>
-</tr>
-<tr class="odd">
-<td><strong>C</strong>omparison</td>
-<td>Compared to what?</td>
-<td>Exact methods (branch-and-bound)</td>
-</tr>
-<tr class="even">
-<td><strong>O</strong>utcome</td>
-<td>What do you measure?</td>
-<td>Solution quality, computation time</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="callout callout-style-simple callout-note">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>Not every research question fits PICO perfectly. Use it as a guide, not a strict rule.</p>
-</div>
-</div>
-</div>
-<p>A <span class="highlight">well-defined question</span> determines which databases to search, which keywords to use, which papers are relevant, and when you have covered enough ground.</p>
-<div class="callout callout-style-simple callout-important">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>Write down your research question before you start searching. Revisit and refine it as you learn more about the field.</p>
-</div>
-</div>
-</div>
-</section>
-</section>
-<section id="search-strategy" class="level1">
-<h1><span class="flow">Search Strategy</span></h1>
-<section id="google-scholar" class="level2">
-<h2 class="anchored" data-anchor-id="google-scholar">Google Scholar</h2>
-<p><a href="https://scholar.google.com/">Google Scholar</a> is the most accessible starting point – free, broad coverage, easy to use.</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Pros:</strong></p>
-<ul>
-<li>Free and always available</li>
-<li>Covers most disciplines</li>
-<li>“Cited by” feature for snowballing</li>
-<li>Full-text search across papers</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><strong>Cons:</strong></p>
-<ul>
-<li>Quality varies widely</li>
-<li>No advanced filtering options</li>
-<li>Includes non-peer-reviewed work</li>
-<li>Metadata can be incomplete</li>
-</ul>
-</div>
-</div>
-<p>Useful search techniques: use <span class="highlight">quotes for exact phrases</span> like <code>"vehicle routing problem"</code>, the <code>author:</code> operator (e.g.&nbsp;<code>author:taillard</code>) to find a specific researcher’s work, and date ranges to focus on recent publications. The “Cited by” link under each result lets you find newer papers that reference a given work, and “Related articles” surfaces similar papers.</p>
-<div class="callout callout-style-simple callout-tip">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>Create a Google Scholar profile and set up <strong>alerts</strong> for your search terms. You will be notified when new papers match your query.</p>
-</div>
-</div>
-</div>
-</section>
-<section id="specialized-databases" class="level2">
-<h2 class="anchored" data-anchor-id="specialized-databases">Specialized databases</h2>
-<p>Beyond Google Scholar, use <span class="highlight">specialized databases</span> for more thorough coverage:</p>
-<div data-tbl-colwidths="[30,45,25]">
-<table class="caption-top table">
-<colgroup>
-<col style="width: 30%">
-<col style="width: 45%">
-<col style="width: 25%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Database</th>
-<th>Strength</th>
-<th>Access</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://www.scopus.com/">Scopus</a></td>
-<td>Comprehensive, citation analysis</td>
-<td>University login</td>
-</tr>
-<tr class="even">
-<td><a href="https://www.webofscience.com/">Web of Science</a></td>
-<td>High-quality journals</td>
-<td>University login</td>
-</tr>
-<tr class="odd">
-<td><a href="https://ieeexplore.ieee.org/">IEEE Xplore</a></td>
-<td>Engineering and CS</td>
-<td>University login</td>
-</tr>
-<tr class="even">
-<td><a href="https://www.ssrn.com/">SSRN</a></td>
-<td>Working papers, business/economics</td>
-<td>Free</td>
-</tr>
-<tr class="odd">
-<td><a href="https://search.ebscohost.com/">EBSCOhost</a></td>
-<td>Multi-disciplinary</td>
-<td>University library</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="callout callout-style-simple callout-note">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>Access most of these through the <a href="https://www.sub.uni-hamburg.de/">University of Hamburg library</a> or VPN.</p>
-</div>
-</div>
-</div>
-</section>
-<section id="building-search-strings" class="level2">
-<h2 class="anchored" data-anchor-id="building-search-strings">Building search strings</h2>
-<p>Use <span class="highlight">Boolean operators</span> to combine search terms:</p>
-<ul>
-<li><strong>AND</strong> — both terms must appear: <code>"vehicle routing" AND "metaheuristic"</code></li>
-<li><strong>OR</strong> — either term can appear: <code>"genetic algorithm" OR "simulated annealing"</code></li>
-<li><strong>NOT</strong> — exclude a term: <code>"optimization" NOT "continuous"</code></li>
-<li><strong>Wildcards</strong> — match variations: <code>optimi*</code> matches optimize, optimization, optimizing</li>
-</ul>
-<p>A complete search string for our example:</p>
-<pre><code>("vehicle routing" OR "VRP") AND
-("metaheuristic" OR "genetic algorithm" OR
-"simulated annealing") AND "optimization"</code></pre>
-<p><span class="highlight">Start broad</span>, then narrow with additional terms. Document your search strings so you can reproduce and refine them, and track how many results each search returns.</p>
-<div class="callout callout-style-simple callout-tip">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>Keep a search log: record the database, search string, date, and number of results for each search you run.</p>
-</div>
-</div>
-</div>
-</section>
-<section id="snowballing" class="level2">
-<h2 class="anchored" data-anchor-id="snowballing">Snowballing</h2>
-<p>Snowballing is <span class="highlight">how you find papers that keyword search misses</span>.</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Forward citation tracking:</strong></p>
-<ul>
-<li>Who cited this paper?</li>
-<li>Use Google Scholar “Cited by”</li>
-<li>Finds newer work that builds on a given paper</li>
-<li>Good for finding the latest developments</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><strong>Backward citation tracking:</strong></p>
-<ul>
-<li>What does this paper cite?</li>
-<li>Check the reference list</li>
-<li>Finds foundational and seminal papers</li>
-<li>Helps you understand the research lineage</li>
-</ul>
-</div>
-</div>
-<div class="callout callout-style-simple callout-important">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>Combine both directions. Forward snowballing finds new work; backward snowballing finds the foundations. Together, they fill the gaps that keyword search leaves.</p>
-</div>
-</div>
-</div>
-</section>
-</section>
-<section id="ai-tools-for-literature-research" class="level1">
-<h1><span class="flow">AI Tools for Literature Research</span></h1>
-<section id="ai-discovery-tools" class="level2">
-<h2 class="anchored" data-anchor-id="ai-discovery-tools">AI discovery tools</h2>
-<p>Several tools now use AI to <span class="highlight">help you find papers faster</span>. They complement traditional database searches — they are good at surfacing papers you would not discover through keyword search alone, at showing how papers relate to each other, and at giving you a quick overview of a research field.</p>
-<div data-tbl-colwidths="[30,70]">
-<table class="caption-top table">
-<colgroup>
-<col style="width: 30%">
-<col style="width: 70%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Tool</th>
-<th>What It Does</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://www.semanticscholar.org/">Semantic Scholar</a></td>
-<td>AI-powered academic search, finds related papers</td>
-</tr>
-<tr class="even">
-<td><a href="https://www.connectedpapers.com/">Connected Papers</a></td>
-<td>Visual graph of related papers</td>
-</tr>
-<tr class="odd">
-<td><a href="https://elicit.com/">Elicit</a></td>
-<td>AI research assistant, extracts findings</td>
-</tr>
-<tr class="even">
-<td><a href="https://www.researchrabbit.ai/">Research Rabbit</a></td>
-<td>Discovers related work from seed papers</td>
-</tr>
-<tr class="odd">
-<td><a href="https://consensus.app/">Consensus</a></td>
-<td>AI search engine for research findings</td>
-</tr>
-<tr class="even">
-<td><a href="https://www.perplexity.ai/">Perplexity</a></td>
-<td>AI search with academic sources</td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-<section id="using-ai-tools-effectively" class="level2">
-<h2 class="anchored" data-anchor-id="using-ai-tools-effectively">Using AI tools effectively</h2>
-<p>Start with a <span class="highlight">seed paper</span> you know is relevant, then use Connected Papers to visualize how papers connect, Semantic Scholar to find semantically similar work, and Elicit to quickly extract findings across many papers.</p>
-<p><span class="highlight">No single tool is sufficient</span> on its own. Use a layered approach:</p>
-<ol type="1">
-<li><strong>Start</strong> with Google Scholar and database searches</li>
-<li><strong>Expand</strong> with AI tools (Semantic Scholar, Connected Papers)</li>
-<li><strong>Snowball</strong> forwards and backwards from relevant papers</li>
-<li><strong>Verify</strong> everything you find by reading the actual papers</li>
-</ol>
-<div class="callout callout-style-simple callout-warning">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>AI tools are helpful for <strong>discovery</strong>, but always verify: check the actual paper, read abstracts yourself, and do not trust AI summaries blindly. AI can hallucinate references that do not exist.</p>
-</div>
-</div>
-</div>
-</section>
-</section>
-<section id="reference-management-with-zotero" class="level1">
-<h1><span class="flow">Reference Management with Zotero</span></h1>
-<section id="why-use-a-reference-manager" class="level2">
-<h2 class="anchored" data-anchor-id="why-use-a-reference-manager">Why use a reference manager?</h2>
-<p>You will read <span class="highlight">dozens to hundreds of papers</span>. Without a system, you will lose track of what you have read, waste time reformatting citations, and miss papers when writing your bibliography. A reference manager lets you organize papers by topic, cite correctly in any format, collaborate with others, and sync across devices.</p>
-</section>
-<section id="zotero-and-the-workflow" class="level2">
-<h2 class="anchored" data-anchor-id="zotero-and-the-workflow">Zotero and the workflow</h2>
-<p><a href="https://www.zotero.org/">Zotero</a> is free, open-source, and works on Windows, Mac, and Linux. It comes with a <strong>browser connector</strong> for saving papers with one click, <strong>PDF storage</strong> for attaching and annotating papers directly, <strong>collections</strong> and <strong>tags</strong> for organizing your library, <strong>groups</strong> for collaborative projects, and <strong>sync</strong> for accessing everything from any device.</p>
-<div class="callout callout-style-simple callout-important">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p><strong>Always import via DOI</strong> when possible. This gives you the most accurate and complete metadata. After importing, always check that the data is correct.</p>
-</div>
-</div>
-</div>
-<p>The workflow for your seminar or thesis:</p>
-<ol type="1">
-<li><strong>Find</strong> a paper via Google Scholar, Scopus, or an AI tool</li>
-<li><strong>Save</strong> it with the Zotero browser connector or import via DOI</li>
-<li><strong>Organize</strong> it into a collection for your project</li>
-<li><strong>Auto-export</strong> a <code>.bib</code> file with Better BibTeX</li>
-<li><strong>Cite</strong> in Quarto using <code>[@citationkey]</code></li>
-</ol>
+<section id="the-problem-and-the-solution" class="level2">
+<h2 class="anchored" data-anchor-id="the-problem-and-the-solution">The problem and the solution</h2>
 <div class="columns">
 <div class="column" style="width:45%;">
-<p><strong>In your <code>.qmd</code> file:</strong></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>Recent work by <span class="co">[</span><span class="ot">@taillard1993</span><span class="co">]</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>shows that...</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>What usually happens:</strong></p>
+<pre><code>essay_final.docx
+essay_final_v2.docx
+essay_final_REALLY_FINAL.docx
+essay_final_REALLY_FINAL_revised.docx</code></pre>
 </div><div class="column" style="width:10%;">
 
 </div><div class="column" style="width:45%;">
-<p><strong>Rendered output:</strong></p>
-<p>Recent work by Taillard (1993) shows that…</p>
+<p><strong>What version control gives you:</strong></p>
+<ul>
+<li>A complete history of every change you made, so you can see what your project looked like at any point in time</li>
+<li>The ability to undo any mistake, even weeks later</li>
+<li>A backup in the cloud through GitHub, so your work survives a lost or broken laptop</li>
+<li>A way to work with others without overwriting each other’s changes</li>
+</ul>
 </div>
-</div>
-</section>
-</section>
-<section id="evaluating-sources" class="level1">
-<h1><span class="flow">Evaluating Sources</span></h1>
-<section id="source-types-and-quality-indicators" class="level2">
-<h2 class="anchored" data-anchor-id="source-types-and-quality-indicators">Source types and quality indicators</h2>
-<p>Not all sources <span class="highlight">carry the same weight</span>:</p>
-<div data-tbl-colwidths="[35,40,25]">
-<table class="caption-top table">
-<colgroup>
-<col style="width: 35%">
-<col style="width: 40%">
-<col style="width: 25%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Source Type</th>
-<th>Reliability</th>
-<th>Peer-Reviewed?</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Journal articles</td>
-<td>High</td>
-<td>Yes</td>
-</tr>
-<tr class="even">
-<td>Conference papers</td>
-<td>Medium–High</td>
-<td>Usually</td>
-</tr>
-<tr class="odd">
-<td>Preprints (arXiv)</td>
-<td>Variable</td>
-<td>No</td>
-</tr>
-<tr class="even">
-<td>Textbooks</td>
-<td>High</td>
-<td>Editorial review</td>
-</tr>
-<tr class="odd">
-<td>Working papers (SSRN)</td>
-<td>Variable</td>
-<td>No</td>
-</tr>
-<tr class="even">
-<td>Blog posts, websites</td>
-<td>Low–Variable</td>
-<td>No</td>
-</tr>
-</tbody>
-</table>
 </div>
 <div class="callout callout-style-simple callout-warning">
 <div class="callout-body d-flex">
@@ -719,32 +314,299 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>Prefer peer-reviewed journal articles and reputable conference proceedings. Use preprints and working papers with caution.</p>
+<p>If your laptop dies tomorrow, is your thesis safe? Git and GitHub make sure the answer is yes.</p>
 </div>
 </div>
 </div>
-<p>When evaluating a paper, consider: <strong>journal reputation</strong> (is it recognized in the field?), <strong>author credentials</strong> (are they established researchers?), <strong>methodology</strong> (is the approach rigorous and well-described?), <strong>recency</strong> (has it been superseded?), and <strong>citation count</strong> (has it been cited by others, and how often?).</p>
+</section>
+<section id="git-vs-github" class="level2">
+<h2 class="anchored" data-anchor-id="git-vs-github">Git vs GitHub</h2>
+<div data-tbl-colwidths="[20,40,40]">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 40%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Git</th>
+<th>GitHub</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>What</strong></td>
+<td>Software on your computer</td>
+<td>A website that hosts repositories</td>
+</tr>
+<tr class="even">
+<td><strong>Purpose</strong></td>
+<td>Tracks changes to files</td>
+<td>Sharing, collaboration, backup</td>
+</tr>
+<tr class="odd">
+<td><strong>Connection</strong></td>
+<td>Works entirely offline</td>
+<td>Requires internet</td>
+</tr>
+<tr class="even">
+<td><strong>Cost</strong></td>
+<td>Free and open-source</td>
+<td>Free tier available</td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="callout callout-style-simple callout-note">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>For operations research specifically: check the <strong>benchmark instances</strong> used, the <strong>computational setup</strong>, and whether the results are <strong>reproducible</strong>.</p>
+<p>Git is the engine. GitHub is one of several online platforms (others include GitLab and Bitbucket) where you store your Git repositories.</p>
 </div>
 </div>
 </div>
 </section>
-<section id="reading-critically" class="level2">
-<h2 class="anchored" data-anchor-id="reading-critically">Reading critically</h2>
-<p>Do not accept results at face value. Ask yourself whether the <span class="highlight">sample size</span> is sufficient, whether the <strong>assumptions</strong> are reasonable, whether the <strong>conclusions</strong> follow from the results, whether the findings can be <strong>generalized</strong> to other contexts, and whether there are <strong>limitations</strong> the authors do not discuss.</p>
+</section>
+<section id="setting-up-git" class="level1">
+<h1><span class="flow">Setting Up Git</span></h1>
+<section id="installing-and-configuring-git" class="level2">
+<h2 class="anchored" data-anchor-id="installing-and-configuring-git">Installing and configuring Git</h2>
+<p><strong>macOS</strong> (via Homebrew, which you installed in the earlier workshop):</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install git</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Windows:</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">winget</span> install Git.Git</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Linux:</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt install git</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Verify it works with <code>git --version</code>.</p>
+<p>Once installed, open <span class="highlight">Zed’s integrated terminal</span> and tell Git who you are:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.name <span class="st">"Your Name"</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.email <span class="st">"your.email@uni-hamburg.de"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This labels your commits with your name and email. You only need to do this once.</p>
+<div class="callout callout-style-simple callout-important">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Use the same email you will register on GitHub. This links your commits to your GitHub account.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="the-core-git-workflow" class="level1">
+<h1><span class="flow">The Core Git Workflow</span></h1>
+<section id="how-git-works" class="level2">
+<h2 class="anchored" data-anchor-id="how-git-works">How Git works</h2>
+<p>Git organizes your work into <span class="highlight">three zones</span>:</p>
+<ol type="1">
+<li><strong>Working directory</strong> – your files as you edit them</li>
+<li><strong>Staging area</strong> – changes you have selected for the next snapshot</li>
+<li><strong>Repository</strong> – permanent saved snapshots (commits)</li>
+</ol>
+<p>Think of it like writing an email: you draft the text (working directory), you review what to include (staging), you hit send (commit). The command <code>git add</code> moves changes to staging, and <code>git commit</code> saves the snapshot. This two-step process lets you choose exactly what goes into each commit.</p>
+<p>You can interact with Git in two ways. <strong>Zed’s Git panel</strong> lets you click to stage, commit, and view diffs visually – this is enough for most daily work. <strong>Terminal commands</strong> give you full control over every operation and work in any environment, not just Zed. We will teach both: start with Zed’s visual tools for comfort, then learn the terminal commands so you understand what is happening underneath.</p>
+<p>Zed has <span class="highlight">built-in Git support</span>: the <strong>source control panel</strong> shows all changed files at a glance, you can <strong>click the <code>+</code></strong> next to a file to stage it, <strong>type a commit message</strong> and commit without leaving the editor, and the <strong>diff view</strong> shows exactly which lines changed inline. Colored <strong>gutter markers</strong> in the margin indicate added, modified, and deleted lines.</p>
 <div class="callout callout-style-simple callout-tip">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>A good literature review is not about reading everything — it is about finding and connecting the right papers.</p>
+<p>For daily work, Zed’s Git panel is all you need. The terminal commands in the following sections show you what is happening behind the scenes – useful when you need more control or when something goes wrong.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="starting-a-new-project" class="level2">
+<h2 class="anchored" data-anchor-id="starting-a-new-project">Starting a new project</h2>
+<p>In Zed’s terminal, navigate to where you want your project and run:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> my-project</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> my-project</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>You should see: <code>Initialized empty Git repository in .../my-project/.git/</code></p>
+<p>Now create a file and check the status:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"# My First Project"</span> <span class="op">&gt;</span> README.md</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Git will tell you <code>README.md</code> is an <span class="highlight">untracked file</span> – it exists, but Git is not watching it yet. Zed shows this directly in the file tree: untracked and modified files are marked automatically once you run <code>git init</code>.</p>
+</section>
+<section id="staging-and-committing" class="level2">
+<h2 class="anchored" data-anchor-id="staging-and-committing">Staging and committing</h2>
+<p><strong>Stage</strong> a file – tell Git you want to include it in the next snapshot:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add README.md</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Commit</strong> – save the snapshot with a message:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add initial README file"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>That is your first commit. Now edit the file and repeat:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"This project is for learning Git."</span> <span class="op">&gt;&gt;</span> README.md</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add README.md</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add project description to README"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><code>git add .</code> stages all changed files at once. Use it when you want to commit everything, but be careful not to include files you did not intend to track.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="commit-messages-and-history" class="level2">
+<h2 class="anchored" data-anchor-id="commit-messages-and-history">Commit messages and history</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Unhelpful messages:</strong></p>
+<ul>
+<li>“fixed stuff”</li>
+<li>“update”</li>
+<li>“final version”</li>
+<li>“asdf”</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><strong>Descriptive messages:</strong></p>
+<ul>
+<li>“Add methodology section”</li>
+<li>“Fix citation format in literature review”</li>
+<li>“Update results table with revised data”</li>
+<li>“Remove unused figures from images folder”</li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-simple callout-warning">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Write messages that describe <span class="highlight">what changed and why</span>. Six months from now, “update” tells you nothing. “Fix broken cross-reference in chapter 3” tells you everything.</p>
+</div>
+</div>
+</div>
+<p>To see all your commits in a compact view, run <code>git log --oneline</code>. Each line shows a short identifier (the commit hash) and your message – this is the timeline of your project. To see what changed since your last commit, run <code>git diff</code>. Zed’s source control panel shows diffs visually, so you can see exactly which lines were added, changed, or removed without memorizing the command.</p>
+</section>
+<section id="ignoring-files-you-do-not-need" class="level2">
+<h2 class="anchored" data-anchor-id="ignoring-files-you-do-not-need">Ignoring files you do not need</h2>
+<p>Some files should <span class="highlight">not be tracked</span> – compiled output, system files, large data. Create a <code>.gitignore</code> file:</p>
+<pre><code>_site/
+_freeze/
+.DS_Store
+*.pdf</code></pre>
+<p>For a Quarto project, this means you track your <code>.qmd</code> source files but not the rendered output. The output can always be regenerated.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Add <code>.gitignore</code> early in your project. It is much easier to ignore files from the start than to remove them from Git history later.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="connecting-to-github" class="level1">
+<h1><span class="flow">Connecting to GitHub</span></h1>
+<section id="setting-up-github" class="level2">
+<h2 class="anchored" data-anchor-id="setting-up-github">Setting up GitHub</h2>
+<p>Go to <a href="https://github.com">github.com</a> and sign up with your university email. Apply for the <a href="https://education.github.com/pack">GitHub Student Developer Pack</a> for extra features. If you already set up GitHub for Copilot in the earlier workshop, you are ready to go.</p>
+<p>To create your first remote repository, click the <strong>+</strong> icon in the top-right corner and select <strong>“New repository”</strong>. Name it <code>my-project</code> (matching your local folder), leave it <strong>public</strong> (or private if you prefer), and <strong>do not</strong> initialize with a README since you already have one locally. Click <strong>“Create repository”</strong> and GitHub will show you setup instructions.</p>
+</section>
+<section id="pushing-to-github" class="level2">
+<h2 class="anchored" data-anchor-id="pushing-to-github">Pushing to GitHub</h2>
+<p>Back in Zed’s terminal, connect your local repo to GitHub and push your commits:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin https://github.com/YOUR-USERNAME/my-project.git</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch <span class="at">-M</span> main</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin main</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Refresh your GitHub page – your files and commit history are now visible online.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>GitHub will ask you to log in the first time you push. If the login prompts become annoying, look into SSH keys or the GitHub CLI (<code>gh auth login</code>) for a smoother setup.</p>
+</div>
+</div>
+</div>
+<p>After the initial setup, the day-to-day cycle is simple. Both approaches – Zed’s visual panel and the terminal – accomplish the same thing:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>In Zed’s Git panel:</strong></p>
+<ol type="1">
+<li>Edit your files</li>
+<li>Open the source control panel</li>
+<li>Click <code>+</code> to stage changes</li>
+<li>Type a commit message and commit</li>
+<li>Push to GitHub</li>
+</ol>
+</div><div class="column" style="width:50%;">
+<p><strong>In the terminal:</strong></p>
+<ol type="1">
+<li>Edit your files</li>
+<li><code>git add .</code></li>
+<li><code>git commit -m "message"</code></li>
+<li><code>git push</code></li>
+</ol>
+</div>
+</div>
+<div class="callout callout-style-simple callout-important">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Commit and push at the end of every work session. This is your backup. If anything happens to your machine, your work is safe on GitHub.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="branching" class="level1">
+<h1><span class="flow">Branching</span></h1>
+<section id="working-with-branches" class="level2">
+<h2 class="anchored" data-anchor-id="working-with-branches">Working with branches</h2>
+<p>Sometimes you want to try a new analysis approach but do not want to break what works. A <span class="highlight">branch</span> is an independent line of development that lets you experiment safely.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Without branches:</strong></p>
+<ul>
+<li>You edit your only copy</li>
+<li>If it goes wrong, you have to undo manually</li>
+<li>Risky for larger changes</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><strong>With branches:</strong></p>
+<ul>
+<li>You create a separate copy to experiment</li>
+<li>Your main version stays untouched</li>
+<li>Merge back only if you are happy with the result</li>
+</ul>
+</div>
+</div>
+<p>The commands:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create and switch to a new branch</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> experiment</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Do your work, then add and commit as usual</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Try a new approach to analysis"</span></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Switch back to main</span></span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout main</span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Merge the branch into main</span></span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> merge experiment</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Branching becomes more useful as your project grows. For now, just know it exists. In professional teams, developers create a branch for every new feature or fix, then merge it back after review through <strong>pull requests</strong>.</p>
 </div>
 </div>
 </div>
@@ -752,17 +614,66 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="wrap-up" class="level1">
 <h1><span class="flow">Wrap-up</span></h1>
-<section id="summary-and-resources" class="level2">
-<h2 class="anchored" data-anchor-id="summary-and-resources">Summary and resources</h2>
-<p>The full process:</p>
+<section id="reference-and-resources" class="level2">
+<h2 class="anchored" data-anchor-id="reference-and-resources">Reference and resources</h2>
+<div data-tbl-colwidths="[45,55]">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 45%">
+<col style="width: 55%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Command</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>git init</code></td>
+<td>Start tracking a folder</td>
+</tr>
+<tr class="even">
+<td><code>git status</code></td>
+<td>See what has changed</td>
+</tr>
+<tr class="odd">
+<td><code>git add &lt;file&gt;</code></td>
+<td>Stage a file for commit</td>
+</tr>
+<tr class="even">
+<td><code>git commit -m "..."</code></td>
+<td>Save a snapshot</td>
+</tr>
+<tr class="odd">
+<td><code>git log --oneline</code></td>
+<td>View commit history</td>
+</tr>
+<tr class="even">
+<td><code>git remote add origin &lt;url&gt;</code></td>
+<td>Connect to GitHub</td>
+</tr>
+<tr class="odd">
+<td><code>git push</code></td>
+<td>Send commits to GitHub</td>
+</tr>
+<tr class="even">
+<td><code>git pull</code></td>
+<td>Get updates from GitHub</td>
+</tr>
+<tr class="odd">
+<td><code>git checkout -b &lt;name&gt;</code></td>
+<td>Create and switch to a branch</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Takeaways:</strong></p>
 <ol type="1">
-<li><strong>Question</strong> — Define a clear, focused research question</li>
-<li><strong>Search</strong> — Use databases, Boolean operators, and search strings</li>
-<li><strong>Snowball</strong> — Follow citations forwards and backwards</li>
-<li><strong>Discover</strong> — Use AI tools to find related work</li>
-<li><strong>Organize</strong> — Store everything in Zotero with Better BibTeX</li>
-<li><strong>Evaluate</strong> — Assess quality, relevance, and reliability</li>
-<li><strong>Write</strong> — Synthesize findings into a coherent review</li>
+<li><strong>Version control protects your work</strong> – no more “final_v2_REALLY_FINAL.docx”</li>
+<li><strong>Zed’s Git panel handles daily tasks</strong> – stage, commit, and diff without leaving your editor</li>
+<li><strong>Terminal commands give you full control</strong> – needed for setup, branching, and when things go wrong</li>
+<li><strong>Push to GitHub at the end of every session</strong> – it is your backup</li>
 </ol>
 <div class="callout callout-style-simple callout-important">
 <div class="callout-body d-flex">
@@ -770,15 +681,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>Start your literature research <strong>early</strong>. It is an iterative process that improves as you learn more about your topic.</p>
+<p>Start using Git now, even for a single file. The safety net is worth the 30 seconds it takes to commit.</p>
 </div>
 </div>
 </div>
-<div data-tbl-colwidths="[30,70]">
+<div data-tbl-colwidths="[35,65]">
 <table class="caption-top table">
 <colgroup>
-<col style="width: 30%">
-<col style="width: 70%">
+<col style="width: 35%">
+<col style="width: 65%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -788,31 +699,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </thead>
 <tbody>
 <tr class="odd">
-<td>Google Scholar</td>
-<td><a href="https://scholar.google.com/">scholar.google.com</a></td>
+<td>Pro Git (free book)</td>
+<td><a href="https://git-scm.com/book/en/v2">git-scm.com/book</a></td>
 </tr>
 <tr class="even">
-<td>Semantic Scholar</td>
-<td><a href="https://www.semanticscholar.org/">semanticscholar.org</a></td>
+<td>GitHub Docs</td>
+<td><a href="https://docs.github.com">docs.github.com</a></td>
 </tr>
 <tr class="odd">
-<td>Connected Papers</td>
-<td><a href="https://www.connectedpapers.com/">connectedpapers.com</a></td>
+<td>Learn Git Branching</td>
+<td><a href="https://learngitbranching.js.org/">learngitbranching.js.org</a></td>
 </tr>
 <tr class="even">
-<td>Elicit</td>
-<td><a href="https://elicit.com/">elicit.com</a></td>
-</tr>
-<tr class="odd">
-<td>Zotero</td>
-<td><a href="https://www.zotero.org/">zotero.org</a></td>
-</tr>
-<tr class="even">
-<td>UHH Library</td>
-<td><a href="https://www.sub.uni-hamburg.de/">sub.uni-hamburg.de</a></td>
+<td>GitHub Student Pack</td>
+<td><a href="https://education.github.com/pack">education.github.com/pack</a></td>
 </tr>
 </tbody>
 </table>
+</div>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Pro Git chapters 1-3 cover everything you need for your thesis work. The interactive tutorial at Learn Git Branching is a good way to practice.</p>
+</div>
+</div>
 </div>
 
 
@@ -1228,7 +1141,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </div>   
     <div class="nav-footer-center">
 <p>Research Workshops, Tobias Vlćek<br>CC BY-NC-SA 4.0</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/beyondsimulations/Research-Workshops/edit/main/workshops/literature-research.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/blob/main/workshops/literature-research.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/beyondsimulations/Research-Workshops/edit/main/workshops/git-github.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/blob/main/workshops/git-github.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
