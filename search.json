@@ -6,7 +6,7 @@
     "section": "",
     "text": "This section provides a curated list of books and resources to enhance your understanding of Large Language Models. Each recommendation includes a brief description to help you choose the most suitable resources for you.",
     "crumbs": [
-      "Literature"
+      "Literature & Resources"
     ]
   },
   {
@@ -16,7 +16,7 @@
     "section": "Hosted LLMs",
     "text": "Hosted LLMs\nThese are powerful LLMs hosted by companies, which you can access through APIs (Application Programming Interfaces). You typically pay for usage.\n\nOpenAI (ChatGPT): The creators of ChatGPT and GPT-4, offering a range of models.\nMistral: A European-based company offering competitive models.\nGoogle (Gemini): Google’s LLM, offering strong performance and integration with Google services.\nAnthropic (Claude): Known for its its ability to handle code effectively.",
     "crumbs": [
-      "Literature"
+      "Literature & Resources"
     ]
   },
   {
@@ -26,7 +26,7 @@
     "section": "Local LLMs",
     "text": "Local LLMs\nThese tools can be used to run open-source LLMs that you can download and run on your own machine. This gives you more privacy and control, but requires more technical expertise and computational resources.\n\nOllama: Free and open-source tool to run large language models locally, supports a wide range of models. Note, that the models are not as powerful as the hosted ones and that your computer needs to have a good GPU to run larger models. Smaller models with less than 8B parameters can also often be run on a CPU with enough available RAM. Great for privacy and if you don’t want to pay for the hosted models.\nHugging Face: Hosts a wide range of large language models, including models fine-tuned for specific tasks by the community. Models can also be downloaded to Ollama and run locally, if your computer is powerful enough.",
     "crumbs": [
-      "Literature"
+      "Literature & Resources"
     ]
   },
   {
@@ -36,17 +36,876 @@
     "section": "Working with data",
     "text": "Working with data\nIn addition to the hosted and local LLMs, there are also tools that allow you to work with LLMs in a browser to build RAG apps or custom chatbots.\n\nNotebookLM**: Google’s Gemini that can be fed with files, images and YouTube videos to generate text based on the content. Only works within a workspace of Google, you can’t make it available to the public (yet).\nLM Studio: An application for discovering, downloading, and running LLMs locally. It supports various model architectures and offers both a Chat UI and an OpenAI-compatible local server. Features include offline document chat capabilities and easy model downloads from Hugging Face.\nOpen Web UI: Open Web UI is a tool to run large language models locally (in conjuction with, for example, Ollama). It is a browser-based interface that allows you to interact with the models and build RAG apps.",
     "crumbs": [
-      "Literature"
+      "Literature & Resources"
+    ]
+  },
+  {
+    "objectID": "general/literature.html#ai-coding-tools",
+    "href": "general/literature.html#ai-coding-tools",
+    "title": "Literature and Resources",
+    "section": "AI Coding Tools",
+    "text": "AI Coding Tools\n\nZed: A modern, fast code editor built in Rust with built-in AI assistant support. Recommended for this course.\nGitHub Copilot: AI pair programmer integrated into editors. Free for students via GitHub Student Developer Pack.\nOpenCode: Open-source terminal-based AI coding assistant.\nClaude Code: Anthropic’s CLI coding agent for autonomous multi-step tasks.",
+    "crumbs": [
+      "Literature & Resources"
+    ]
+  },
+  {
+    "objectID": "general/literature.html#ai-tools-for-literature-research",
+    "href": "general/literature.html#ai-tools-for-literature-research",
+    "title": "Literature and Resources",
+    "section": "AI Tools for Literature Research",
+    "text": "AI Tools for Literature Research\n\nSemantic Scholar: AI-powered academic search engine with related paper recommendations.\nConnected Papers: Visual graph of related papers, great for discovering research clusters.\nElicit: AI research assistant that extracts key findings from papers.\nResearch Rabbit: Discovers related work from seed papers.\nConsensus: AI search engine for research findings.",
+    "crumbs": [
+      "Literature & Resources"
+    ]
+  },
+  {
+    "objectID": "general/literature.html#reference-management",
+    "href": "general/literature.html#reference-management",
+    "title": "Literature and Resources",
+    "section": "Reference Management",
+    "text": "Reference Management\n\nZotero: Free, open-source reference manager. Recommended for this course.\nBetter BibTeX for Zotero: Plugin for auto-exporting .bib files, integrates well with Quarto.",
+    "crumbs": [
+      "Literature & Resources"
+    ]
+  },
+  {
+    "objectID": "general/literature.html#understanding-ai",
+    "href": "general/literature.html#understanding-ai",
+    "title": "Literature and Resources",
+    "section": "Understanding AI",
+    "text": "Understanding AI\n\nOne Useful Thing: Ethan Mollick’s blog on practical AI use. Especially recommended: A Guide to Which AI to Use — explains the models, apps, and harnesses framework.\n3Blue1Brown: Excellent visual explanations of how LLMs and neural networks work.",
+    "crumbs": [
+      "Literature & Resources"
     ]
   },
   {
     "objectID": "general/literature.html#further-resources",
     "href": "general/literature.html#further-resources",
     "title": "Literature and Resources",
-    "section": "Further resources",
-    "text": "Further resources\n\nQuarto: A static website generator that is very powerful and flexible. Used to create the slides and the website for the course.\nGithub: The largest provider for git repositories owned by Microsoft. A lot of open source projects are hosted here and you can read the code.\nDaily Dose of Data Science: A website and a newsletter with lots of easy-to-digest resources to improve your skills in Data Science and Large Language Models.\nAlpha Signal: A newsletter with lots of resources on the current developments of Large Language Models.",
+    "section": "Further Resources",
+    "text": "Further Resources\n\nQuarto: Open-source scientific publishing system. Used to create the slides and the website for this course.\nGithub: The largest provider for git repositories owned by Microsoft. A lot of open source projects are hosted here and you can read the code.\nDaily Dose of Data Science: A website and a newsletter with lots of easy-to-digest resources to improve your skills in Data Science and Large Language Models.\nAlpha Signal: A newsletter with lots of resources on the current developments of Large Language Models.",
     "crumbs": [
-      "Literature"
+      "Literature & Resources"
+    ]
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-presentation.html#quarto-at-a-glance",
+    "href": "workshops/quarto-academic-writing-presentation.html#quarto-at-a-glance",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "Quarto at a Glance",
+    "text": "Quarto at a Glance\n\nQuarto is an open-source scientific publishing system\nDeveloped by Posit (formerly RStudio)\nWrite in Markdown, render to multiple formats:\n\nPDF (via Typst or LaTeX)\nHTML pages and websites\nPresentation slides (like these!)\nWord documents\n\n\n\n\n\n\n\n\n\nTip\n\n\nThink of Quarto as a modern replacement for LaTeX that is simpler to learn, easier to use, and just as powerful for academic writing."
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-presentation.html#why-quarto-over-latex",
+    "href": "workshops/quarto-academic-writing-presentation.html#why-quarto-over-latex",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "Why Quarto over LaTeX?",
+    "text": "Why Quarto over LaTeX?\n\n\nLaTeX\n\nSteep learning curve\nComplex syntax for simple tasks\nDifficult to debug errors\nLarge installation (several GB)\nOutput mainly PDF\n\n\nQuarto\n\nSimple Markdown syntax\nEasy to read and write\nClear error messages\nLightweight installation\nPDF, HTML, Word, slides, websites\n\n\n\n\n\n\n\n\n\nNote\n\n\nQuarto produces publication-quality PDFs via Typst – no need to install a full TeX distribution!"
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-presentation.html#latex-vs-quarto-side-by-side",
+    "href": "workshops/quarto-academic-writing-presentation.html#latex-vs-quarto-side-by-side",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "LaTeX vs Quarto: Side-by-Side",
+    "text": "LaTeX vs Quarto: Side-by-Side\n\n\nLaTeX\n\\textbf{bold} and \\textit{italic}\n\n\\begin{itemize}\n  \\item First item\n  \\item Second item\n\\end{itemize}\n\n\\section{Introduction}\n\n\\parencite{smith2023}\n\nQuarto\n**bold** and *italic*\n\n- First item\n- Second item\n\n## Introduction\n\n[@smith2023]\n\n\nSame output quality – much less typing!"
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-presentation.html#installation-by-platform",
+    "href": "workshops/quarto-academic-writing-presentation.html#installation-by-platform",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "Installation by Platform",
+    "text": "Installation by Platform\n\n\nmacOS\nbrew install quarto\nOr download the installer from quarto.org\n\nWindows\nwinget install Posit.Quarto\nOr download the installer from quarto.org\n\nLinux\nDownload the .deb or .rpm package from quarto.org\n# Debian/Ubuntu\nsudo dpkg -i quarto-*.deb"
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-presentation.html#pdf-output-with-typst",
+    "href": "workshops/quarto-academic-writing-presentation.html#pdf-output-with-typst",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "PDF Output with Typst",
+    "text": "PDF Output with Typst\n\nQuarto uses Typst for PDF rendering – it is built in!\nNo need to install a full TeX distribution (saves several GB)\nSimply set format: typst in your YAML frontmatter\n\n\n---\ntitle: \"My Paper\"\nformat:\n  typst:\n    toc: true\n    number-sections: true\n---\n\n\n\n\n\n\n\n\nTip\n\n\nTypst is fast, modern, and produces beautiful PDFs. It compiles in milliseconds rather than seconds."
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-presentation.html#recommended-editors",
+    "href": "workshops/quarto-academic-writing-presentation.html#recommended-editors",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "Recommended Editors",
+    "text": "Recommended Editors\n\nZed – fast, modern editor with built-in Quarto support\nVS Code – install the Quarto extension for syntax highlighting, preview, and more\nRStudio – has native Quarto support built in\n\n\n\n\n\n\n\n\nNote\n\n\nAny text editor works with Quarto files since they are just plain text (.qmd files). The editors above simply provide extra convenience features like live preview and autocompletion."
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-presentation.html#yaml-frontmatter",
+    "href": "workshops/quarto-academic-writing-presentation.html#yaml-frontmatter",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "YAML Frontmatter",
+    "text": "YAML Frontmatter\n\nEvery Quarto document starts with a YAML header between --- markers\nControls title, author, format, and options\n\n---\ntitle: \"My Seminar Paper\"\nauthor: \"Jane Doe\"\ndate: today\nbibliography: references.bib\nformat:\n  typst:\n    toc: true\n    number-sections: true\n---\n\n\n\n\n\n\n\nTip\n\n\nYAML uses indentation (spaces, not tabs!) to define structure. Be careful with alignment."
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-presentation.html#markdown-syntax-essentials",
+    "href": "workshops/quarto-academic-writing-presentation.html#markdown-syntax-essentials",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "Markdown Syntax Essentials",
+    "text": "Markdown Syntax Essentials\n\n\nSyntax\n# Heading 1\n## Heading 2\n### Heading 3\n\n**bold text**\n*italic text*\n\n- Bullet list\n- Another item\n  - Nested item\n\n1. Numbered list\n2. Second item\n\n[Link text](https://example.com)\n\nResult\nHeading 3\nbold text and italic text\n\nBullet list\nAnother item\n\nNested item\n\n\n\nNumbered list\nSecond item\n\nLink text"
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-presentation.html#figures",
+    "href": "workshops/quarto-academic-writing-presentation.html#figures",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "Figures",
+    "text": "Figures\n\nInclude images with captions and cross-reference labels\n\n![Caption text](images/figure.png){#fig-example width=\"80%\"}\n\nReference in text: @fig-example renders as “Figure 1”\n\n\n\n\n\n\n\n\nWarning\n\n\nThe label must start with #fig- for Quarto to recognize it as a figure cross-reference."
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-presentation.html#tables",
+    "href": "workshops/quarto-academic-writing-presentation.html#tables",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "Tables",
+    "text": "Tables\n\nUse pipe tables for simple data presentation\n\n| Method | Objective | Time (s) |\n|--------|----------:|:--------:|\n| Exact  |   142.5   |   3.21   |\n| Greedy |   138.7   |   0.05   |\n\n: Comparison of solution methods {#tbl-results}\n\nReference in text: @tbl-results renders as “Table 1”\n\n\nThe label must start with #tbl- for table cross-references."
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-presentation.html#math-equations",
+    "href": "workshops/quarto-academic-writing-presentation.html#math-equations",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "Math Equations",
+    "text": "Math Equations\n\nInline math: $x^2 + y^2 = z^2$ renders as \\(x^2 + y^2 = z^2\\)\nDisplay math with cross-reference:\n\n$$\n\\min \\sum_{i \\in \\mathcal{I}} \\sum_{j \\in \\mathcal{J}} c_{ij} \\cdot x_{ij}\n$$ {#eq-objective}\n\n\\[\n\\min \\sum_{i \\in \\mathcal{I}} \\sum_{j \\in \\mathcal{J}} c_{ij} \\cdot x_{ij}\n\\tag{1}\\]\n\nReference in text: @eq-objective renders as “Equation 1”"
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-presentation.html#citations-with-bibtex",
+    "href": "workshops/quarto-academic-writing-presentation.html#citations-with-bibtex",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "Citations with BibTeX",
+    "text": "Citations with BibTeX\n\nStore references in a .bib file and set bibliography: references.bib in YAML\nUse the [@key] syntax to cite:\n\n\n\n\n\nSyntax\nOutput\n\n\n\n\n[@smith2023]\n(Smith, 2023)\n\n\n@smith2023\nSmith (2023)\n\n\n[@smith2023; @jones2024]\n(Smith, 2023; Jones, 2024)\n\n\n[@smith2023, p. 42]\n(Smith, 2023, p. 42)\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nUse a .csl file (e.g., apa.csl) to control citation and bibliography style. Set csl: apa.csl in your YAML frontmatter."
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-presentation.html#cross-references-overview",
+    "href": "workshops/quarto-academic-writing-presentation.html#cross-references-overview",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "Cross-References Overview",
+    "text": "Cross-References Overview\n\nQuarto has a unified cross-referencing system:\n\n\n\n\nElement\nLabel Prefix\nReference Syntax\n\n\n\n\nFigure\n#fig-\n@fig-label\n\n\nTable\n#tbl-\n@tbl-label\n\n\nEquation\n#eq-\n@eq-label\n\n\nSection\n#sec-\n@sec-label\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nAll cross-references are automatically numbered and updated when you add or remove elements. No more manual numbering!"
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-presentation.html#figures-with-cross-references",
+    "href": "workshops/quarto-academic-writing-presentation.html#figures-with-cross-references",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "Figures with Cross-References",
+    "text": "Figures with Cross-References\n![The metro system in Mecca, Saudi Arabia.\n](images/metro.png){#fig-metro width=\"80%\"}\n\nAs shown in @fig-metro, the system connects ...\n\nThe label #fig-metro makes the figure referenceable\n@fig-metro in text becomes “Figure 1” automatically\nWorks with PNG, JPG, SVG, and PDF images"
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-presentation.html#tables-with-cross-references",
+    "href": "workshops/quarto-academic-writing-presentation.html#tables-with-cross-references",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "Tables with Cross-References",
+    "text": "Tables with Cross-References\n| Instance | Optimal | Heuristic | Gap (%) |\n|----------|--------:|----------:|--------:|\n| Small    |   245   |    248    |   1.2   |\n| Medium   |  1,340  |   1,382   |   3.1   |\n| Large    | 12,450  |  13,102   |   5.2   |\n\n: Computational results {#tbl-computation}\n\nThe results in @tbl-computation show that ...\n\nThe caption goes below the table with : Caption text {#tbl-label}"
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-presentation.html#equations-with-cross-references",
+    "href": "workshops/quarto-academic-writing-presentation.html#equations-with-cross-references",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "Equations with Cross-References",
+    "text": "Equations with Cross-References\n$$\n\\sum_{j \\in \\mathcal{J}} a_{ij} \\cdot x_{ij}\n  \\leq b_i \\quad \\forall i \\in \\mathcal{I}\n$$ {#eq-capacity}\n\nThe capacity constraint in @eq-capacity ensures ...\n\n\\[\n\\sum_{j \\in \\mathcal{J}} a_{ij} \\cdot x_{ij} \\leq b_i \\quad \\forall i \\in \\mathcal{I}\n\\tag{2}\\]\n\nThe label {#eq-label} goes right after the closing $$"
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-presentation.html#ready-to-use-templates",
+    "href": "workshops/quarto-academic-writing-presentation.html#ready-to-use-templates",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "Ready-to-Use Templates",
+    "text": "Ready-to-Use Templates\n\nWe provide ready-to-use Quarto templates for your seminar papers\nAvailable in German and English\nDownload from the course repository\n\n\nThe templates include:\n\nCorrect margins and formatting for UHH\nTable of contents, list of figures, list of tables\nCitation setup with APA style\nExample content showing all features\nDeclaration of authorship"
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-presentation.html#template-structure",
+    "href": "workshops/quarto-academic-writing-presentation.html#template-structure",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "Template Structure",
+    "text": "Template Structure\n---\ntitle: \"Title of the Thesis\"\nauthor: \"First Name Last Name\"\nbibliography: references.bib\ncsl: apa.csl\nformat:\n  typst:\n    toc: true\n    number-sections: true\n    margin:\n      top: 30mm, bottom: 20mm\n      left: 40mm, right: 25mm\n---\n\n# Introduction\nYour content here with [@citations] ...\n\n# Literature Review\n..."
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-presentation.html#how-to-render",
+    "href": "workshops/quarto-academic-writing-presentation.html#how-to-render",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "How to Render",
+    "text": "How to Render\n\nRender your document from the terminal:\n\nquarto render paper.qmd\n\nOr use live preview while writing:\n\nquarto preview paper.qmd\n\n\n\n\n\n\n\nTip\n\n\nquarto preview opens a browser window that automatically refreshes every time you save the file. This is the best way to write and check your formatting simultaneously."
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-presentation.html#reference-management",
+    "href": "workshops/quarto-academic-writing-presentation.html#reference-management",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "Reference Management",
+    "text": "Reference Management\n\nUse Zotero (free) with the Better BibTeX extension\nBetter BibTeX automatically exports your library to a .bib file\nWorkflow: find paper, save to Zotero, cite in Quarto with [@key]\n\n\n\n\n\n\n\n\nRecommended Setup\n\n\n\nInstall Zotero and the Better BibTeX plugin\nSet up auto-export to references.bib in your project folder\nUse the Zotero browser connector to save papers with one click\nCitation keys are generated automatically (e.g., smith2023)"
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-presentation.html#practical-tips",
+    "href": "workshops/quarto-academic-writing-presentation.html#practical-tips",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "Practical Tips",
+    "text": "Practical Tips\n\nKeep figures in an images/ folder for clean project structure\nUse quarto preview for live preview while writing\nWrite one sentence per line for better version control diffs\nUse &lt;!-- comments --&gt; to leave notes for yourself\n\n\n\n\n\n\n\n\nKey Takeaway\n\n\nQuarto lets you focus on content, not formatting. Write your ideas in simple Markdown, and Quarto handles the rest – citations, cross-references, numbering, and beautiful PDF output."
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-page.html",
+    "href": "workshops/quarto-academic-writing-page.html",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "",
+    "text": "Quarto is an open-source scientific publishing system\nDeveloped by Posit (formerly RStudio)\nWrite in Markdown, render to multiple formats:\n\nPDF (via Typst or LaTeX)\nHTML pages and websites\nPresentation slides (like these!)\nWord documents\n\n\n. . .\n\n\n\n\n\n\nThink of Quarto as a modern replacement for LaTeX that is simpler to learn, easier to use, and just as powerful for academic writing.\n\n\n\n\n\n\n\n\nLaTeX\n\nSteep learning curve\nComplex syntax for simple tasks\nDifficult to debug errors\nLarge installation (several GB)\nOutput mainly PDF\n\n\nQuarto\n\nSimple Markdown syntax\nEasy to read and write\nClear error messages\nLightweight installation\nPDF, HTML, Word, slides, websites\n\n\n\n. . .\n\n\n\n\n\n\nQuarto produces publication-quality PDFs via Typst – no need to install a full TeX distribution!\n\n\n\n\n\n\n\n\nLaTeX\n\\textbf{bold} and \\textit{italic}\n\n\\begin{itemize}\n  \\item First item\n  \\item Second item\n\\end{itemize}\n\n\\section{Introduction}\n\n\\parencite{smith2023}\n\nQuarto\n**bold** and *italic*\n\n- First item\n- Second item\n\n## Introduction\n\n[@smith2023]\n\n\n. . .\nSame output quality – much less typing!",
+    "crumbs": [
+      "Quarto for Academic Writing"
+    ]
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-page.html#quarto-at-a-glance",
+    "href": "workshops/quarto-academic-writing-page.html#quarto-at-a-glance",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "",
+    "text": "Quarto is an open-source scientific publishing system\nDeveloped by Posit (formerly RStudio)\nWrite in Markdown, render to multiple formats:\n\nPDF (via Typst or LaTeX)\nHTML pages and websites\nPresentation slides (like these!)\nWord documents\n\n\n. . .\n\n\n\n\n\n\nThink of Quarto as a modern replacement for LaTeX that is simpler to learn, easier to use, and just as powerful for academic writing.",
+    "crumbs": [
+      "Quarto for Academic Writing"
+    ]
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-page.html#why-quarto-over-latex",
+    "href": "workshops/quarto-academic-writing-page.html#why-quarto-over-latex",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "",
+    "text": "LaTeX\n\nSteep learning curve\nComplex syntax for simple tasks\nDifficult to debug errors\nLarge installation (several GB)\nOutput mainly PDF\n\n\nQuarto\n\nSimple Markdown syntax\nEasy to read and write\nClear error messages\nLightweight installation\nPDF, HTML, Word, slides, websites\n\n\n\n. . .\n\n\n\n\n\n\nQuarto produces publication-quality PDFs via Typst – no need to install a full TeX distribution!",
+    "crumbs": [
+      "Quarto for Academic Writing"
+    ]
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-page.html#latex-vs-quarto-side-by-side",
+    "href": "workshops/quarto-academic-writing-page.html#latex-vs-quarto-side-by-side",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "",
+    "text": "LaTeX\n\\textbf{bold} and \\textit{italic}\n\n\\begin{itemize}\n  \\item First item\n  \\item Second item\n\\end{itemize}\n\n\\section{Introduction}\n\n\\parencite{smith2023}\n\nQuarto\n**bold** and *italic*\n\n- First item\n- Second item\n\n## Introduction\n\n[@smith2023]\n\n\n. . .\nSame output quality – much less typing!",
+    "crumbs": [
+      "Quarto for Academic Writing"
+    ]
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-page.html#installation-by-platform",
+    "href": "workshops/quarto-academic-writing-page.html#installation-by-platform",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "Installation by Platform",
+    "text": "Installation by Platform\n\n\nmacOS\nbrew install quarto\nOr download the installer from quarto.org\n\nWindows\nwinget install Posit.Quarto\nOr download the installer from quarto.org\n\nLinux\nDownload the .deb or .rpm package from quarto.org\n# Debian/Ubuntu\nsudo dpkg -i quarto-*.deb",
+    "crumbs": [
+      "Quarto for Academic Writing"
+    ]
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-page.html#pdf-output-with-typst",
+    "href": "workshops/quarto-academic-writing-page.html#pdf-output-with-typst",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "PDF Output with Typst",
+    "text": "PDF Output with Typst\n\nQuarto uses Typst for PDF rendering – it is built in!\nNo need to install a full TeX distribution (saves several GB)\nSimply set format: typst in your YAML frontmatter\n\n. . .\n---\ntitle: \"My Paper\"\nformat:\n  typst:\n    toc: true\n    number-sections: true\n---\n. . .\n\n\n\n\n\n\nTypst is fast, modern, and produces beautiful PDFs. It compiles in milliseconds rather than seconds.",
+    "crumbs": [
+      "Quarto for Academic Writing"
+    ]
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-page.html#recommended-editors",
+    "href": "workshops/quarto-academic-writing-page.html#recommended-editors",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "Recommended Editors",
+    "text": "Recommended Editors\n\nZed – fast, modern editor with built-in Quarto support\nVS Code – install the Quarto extension for syntax highlighting, preview, and more\nRStudio – has native Quarto support built in\n\n. . .\n\n\n\n\n\n\nAny text editor works with Quarto files since they are just plain text (.qmd files). The editors above simply provide extra convenience features like live preview and autocompletion.",
+    "crumbs": [
+      "Quarto for Academic Writing"
+    ]
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-page.html#yaml-frontmatter",
+    "href": "workshops/quarto-academic-writing-page.html#yaml-frontmatter",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "YAML Frontmatter",
+    "text": "YAML Frontmatter\n\nEvery Quarto document starts with a YAML header between --- markers\nControls title, author, format, and options\n\n---\ntitle: \"My Seminar Paper\"\nauthor: \"Jane Doe\"\ndate: today\nbibliography: references.bib\nformat:\n  typst:\n    toc: true\n    number-sections: true\n---\n. . .\n\n\n\n\n\n\nYAML uses indentation (spaces, not tabs!) to define structure. Be careful with alignment.",
+    "crumbs": [
+      "Quarto for Academic Writing"
+    ]
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-page.html#markdown-syntax-essentials",
+    "href": "workshops/quarto-academic-writing-page.html#markdown-syntax-essentials",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "Markdown Syntax Essentials",
+    "text": "Markdown Syntax Essentials\n\n\nSyntax\n# Heading 1\n## Heading 2\n### Heading 3\n\n**bold text**\n*italic text*\n\n- Bullet list\n- Another item\n  - Nested item\n\n1. Numbered list\n2. Second item\n\n[Link text](https://example.com)\n\nResult\n\nHeading 3\nbold text and italic text\n\nBullet list\nAnother item\n\nNested item\n\n\n\nNumbered list\nSecond item\n\nLink text",
+    "crumbs": [
+      "Quarto for Academic Writing"
+    ]
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-page.html#figures",
+    "href": "workshops/quarto-academic-writing-page.html#figures",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "Figures",
+    "text": "Figures\n\nInclude images with captions and cross-reference labels\n\n![Caption text](images/figure.png){#fig-example width=\"80%\"}\n\nReference in text: @fig-example renders as “Figure 1”\n\n. . .\n\n\n\n\n\n\nThe label must start with #fig- for Quarto to recognize it as a figure cross-reference.",
+    "crumbs": [
+      "Quarto for Academic Writing"
+    ]
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-page.html#tables",
+    "href": "workshops/quarto-academic-writing-page.html#tables",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "Tables",
+    "text": "Tables\n\nUse pipe tables for simple data presentation\n\n| Method | Objective | Time (s) |\n|--------|----------:|:--------:|\n| Exact  |   142.5   |   3.21   |\n| Greedy |   138.7   |   0.05   |\n\n: Comparison of solution methods {#tbl-results}\n\nReference in text: @tbl-results renders as “Table 1”\n\n. . .\nThe label must start with #tbl- for table cross-references.",
+    "crumbs": [
+      "Quarto for Academic Writing"
+    ]
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-page.html#math-equations",
+    "href": "workshops/quarto-academic-writing-page.html#math-equations",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "Math Equations",
+    "text": "Math Equations\n\nInline math: $x^2 + y^2 = z^2$ renders as \\(x^2 + y^2 = z^2\\)\nDisplay math with cross-reference:\n\n$$\n\\min \\sum_{i \\in \\mathcal{I}} \\sum_{j \\in \\mathcal{J}} c_{ij} \\cdot x_{ij}\n$$ {#eq-objective}\n. . .\n\\[\n\\min \\sum_{i \\in \\mathcal{I}} \\sum_{j \\in \\mathcal{J}} c_{ij} \\cdot x_{ij}\n\\tag{1}\\]\n\nReference in text: @eq-objective renders as “Equation 1”",
+    "crumbs": [
+      "Quarto for Academic Writing"
+    ]
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-page.html#citations-with-bibtex",
+    "href": "workshops/quarto-academic-writing-page.html#citations-with-bibtex",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "Citations with BibTeX",
+    "text": "Citations with BibTeX\n\nStore references in a .bib file and set bibliography: references.bib in YAML\nUse the [@key] syntax to cite:\n\n. . .\n\n\n\nSyntax\nOutput\n\n\n\n\n[@smith2023]\n(Smith, 2023)\n\n\n@smith2023\nSmith (2023)\n\n\n[@smith2023; @jones2024]\n(Smith, 2023; Jones, 2024)\n\n\n[@smith2023, p. 42]\n(Smith, 2023, p. 42)\n\n\n\n. . .\n\n\n\n\n\n\nUse a .csl file (e.g., apa.csl) to control citation and bibliography style. Set csl: apa.csl in your YAML frontmatter.",
+    "crumbs": [
+      "Quarto for Academic Writing"
+    ]
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-page.html#cross-references-overview",
+    "href": "workshops/quarto-academic-writing-page.html#cross-references-overview",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "Cross-References Overview",
+    "text": "Cross-References Overview\n\nQuarto has a unified cross-referencing system:\n\n\n\n\nElement\nLabel Prefix\nReference Syntax\n\n\n\n\nFigure\n#fig-\n@fig-label\n\n\nTable\n#tbl-\n@tbl-label\n\n\nEquation\n#eq-\n@eq-label\n\n\nSection\n#sec-\n@sec-label\n\n\n\n. . .\n\n\n\n\n\n\nAll cross-references are automatically numbered and updated when you add or remove elements. No more manual numbering!",
+    "crumbs": [
+      "Quarto for Academic Writing"
+    ]
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-page.html#figures-with-cross-references",
+    "href": "workshops/quarto-academic-writing-page.html#figures-with-cross-references",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "Figures with Cross-References",
+    "text": "Figures with Cross-References\n![The metro system in Mecca, Saudi Arabia.\n](images/metro.png){#fig-metro width=\"80%\"}\n\nAs shown in @fig-metro, the system connects ...\n\nThe label #fig-metro makes the figure referenceable\n@fig-metro in text becomes “Figure 1” automatically\nWorks with PNG, JPG, SVG, and PDF images",
+    "crumbs": [
+      "Quarto for Academic Writing"
+    ]
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-page.html#tables-with-cross-references",
+    "href": "workshops/quarto-academic-writing-page.html#tables-with-cross-references",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "Tables with Cross-References",
+    "text": "Tables with Cross-References\n| Instance | Optimal | Heuristic | Gap (%) |\n|----------|--------:|----------:|--------:|\n| Small    |   245   |    248    |   1.2   |\n| Medium   |  1,340  |   1,382   |   3.1   |\n| Large    | 12,450  |  13,102   |   5.2   |\n\n: Computational results {#tbl-computation}\n\nThe results in @tbl-computation show that ...\n\nThe caption goes below the table with : Caption text {#tbl-label}",
+    "crumbs": [
+      "Quarto for Academic Writing"
+    ]
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-page.html#equations-with-cross-references",
+    "href": "workshops/quarto-academic-writing-page.html#equations-with-cross-references",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "Equations with Cross-References",
+    "text": "Equations with Cross-References\n$$\n\\sum_{j \\in \\mathcal{J}} a_{ij} \\cdot x_{ij}\n  \\leq b_i \\quad \\forall i \\in \\mathcal{I}\n$$ {#eq-capacity}\n\nThe capacity constraint in @eq-capacity ensures ...\n. . .\n\\[\n\\sum_{j \\in \\mathcal{J}} a_{ij} \\cdot x_{ij} \\leq b_i \\quad \\forall i \\in \\mathcal{I}\n\\tag{2}\\]\n\nThe label {#eq-label} goes right after the closing $$",
+    "crumbs": [
+      "Quarto for Academic Writing"
+    ]
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-page.html#ready-to-use-templates",
+    "href": "workshops/quarto-academic-writing-page.html#ready-to-use-templates",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "Ready-to-Use Templates",
+    "text": "Ready-to-Use Templates\n\nWe provide ready-to-use Quarto templates for your seminar papers\nAvailable in German and English\nDownload from the course repository\n\n. . .\nThe templates include:\n\nCorrect margins and formatting for UHH\nTable of contents, list of figures, list of tables\nCitation setup with APA style\nExample content showing all features\nDeclaration of authorship",
+    "crumbs": [
+      "Quarto for Academic Writing"
+    ]
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-page.html#template-structure",
+    "href": "workshops/quarto-academic-writing-page.html#template-structure",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "Template Structure",
+    "text": "Template Structure\n---\ntitle: \"Title of the Thesis\"\nauthor: \"First Name Last Name\"\nbibliography: references.bib\ncsl: apa.csl\nformat:\n  typst:\n    toc: true\n    number-sections: true\n    margin:\n      top: 30mm, bottom: 20mm\n      left: 40mm, right: 25mm\n---\n\n# Introduction\nYour content here with [@citations] ...\n\n# Literature Review\n...",
+    "crumbs": [
+      "Quarto for Academic Writing"
+    ]
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-page.html#how-to-render",
+    "href": "workshops/quarto-academic-writing-page.html#how-to-render",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "How to Render",
+    "text": "How to Render\n\nRender your document from the terminal:\n\nquarto render paper.qmd\n\nOr use live preview while writing:\n\nquarto preview paper.qmd\n. . .\n\n\n\n\n\n\nquarto preview opens a browser window that automatically refreshes every time you save the file. This is the best way to write and check your formatting simultaneously.",
+    "crumbs": [
+      "Quarto for Academic Writing"
+    ]
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-page.html#reference-management",
+    "href": "workshops/quarto-academic-writing-page.html#reference-management",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "Reference Management",
+    "text": "Reference Management\n\nUse Zotero (free) with the Better BibTeX extension\nBetter BibTeX automatically exports your library to a .bib file\nWorkflow: find paper, save to Zotero, cite in Quarto with [@key]\n\n. . .\n\n\n\n\n\n\nTipRecommended Setup\n\n\n\n\nInstall Zotero and the Better BibTeX plugin\nSet up auto-export to references.bib in your project folder\nUse the Zotero browser connector to save papers with one click\nCitation keys are generated automatically (e.g., smith2023)",
+    "crumbs": [
+      "Quarto for Academic Writing"
+    ]
+  },
+  {
+    "objectID": "workshops/quarto-academic-writing-page.html#practical-tips",
+    "href": "workshops/quarto-academic-writing-page.html#practical-tips",
+    "title": "Lecture - Quarto for Academic Writing",
+    "section": "Practical Tips",
+    "text": "Practical Tips\n\nKeep figures in an images/ folder for clean project structure\nUse quarto preview for live preview while writing\nWrite one sentence per line for better version control diffs\nUse &lt;!-- comments --&gt; to leave notes for yourself\n\n. . .\n\n\n\n\n\n\nNoteKey Takeaway\n\n\n\nQuarto lets you focus on content, not formatting. Write your ideas in simple Markdown, and Quarto handles the rest – citations, cross-references, numbering, and beautiful PDF output.",
+    "crumbs": [
+      "Quarto for Academic Writing"
+    ]
+  },
+  {
+    "objectID": "workshops/large-language-models-presentation.html#welcome",
+    "href": "workshops/large-language-models-presentation.html#welcome",
+    "title": "Lecture - Working with AI",
+    "section": "Welcome!",
+    "text": "Welcome!\n\nThis workshop: AI Programming & Large Language Models\nYou have likely already used LLMs:\n\nChatGPT, Claude, Gemini, and others\n\nBy the end of this workshop, you will understand:\n\nHow LLMs work at a conceptual level\nThe difference between models, apps, and harnesses\nWhich AI coding tools to use and how to get started"
+  },
+  {
+    "objectID": "workshops/large-language-models-presentation.html#what-is-an-llm",
+    "href": "workshops/large-language-models-presentation.html#what-is-an-llm",
+    "title": "Lecture - Working with AI",
+    "section": "What is an LLM?",
+    "text": "What is an LLM?\n\nThink of them as advanced pattern recognition systems\nThey have “read” massive amounts of text from the internet, books, and code\nBased on those patterns, they can generate new text\n\n\n\nLLMs really do one thing: predict the next token\nLike an incredibly advanced version of autocomplete on your phone\nBut they cannot truly “think” or “understand” like humans\n\n\n\n\n\n\n\n\n\nTip\n\n\nDespite their limitations, LLMs are genuinely useful for coding, writing, research, and analysis."
+  },
+  {
+    "objectID": "workshops/large-language-models-presentation.html#the-transformer-architecture",
+    "href": "workshops/large-language-models-presentation.html#the-transformer-architecture",
+    "title": "Lecture - Working with AI",
+    "section": "The Transformer Architecture",
+    "text": "The Transformer Architecture\n\nModern LLMs are powered by the Transformer architecture\nIntroduced in “Attention is All You Need” (Vaswani et al., 2017)\n\n\nHow it works (simplified):\n\nTokenization: Text is split into smaller units called tokens\nRelationship mapping: The model builds a mathematical representation of how tokens relate\nAttention mechanism: The model focuses on the most relevant parts of the input to generate each output token\n\n\n\n\n\n\n\n\n\nNote\n\n\n“The cat sat on the mat because it was warm.” – Attention helps the model understand that “it” refers to “the mat,” not “the cat.”"
+  },
+  {
+    "objectID": "workshops/large-language-models-presentation.html#tokens-the-building-blocks",
+    "href": "workshops/large-language-models-presentation.html#tokens-the-building-blocks",
+    "title": "Lecture - Working with AI",
+    "section": "Tokens: The Building Blocks",
+    "text": "Tokens: The Building Blocks\n\nLLMs process text as tokens, not whole words\nA token can be:\n\nA whole word (e.g., “cat”)\nA subword (e.g., “un-”, “break”, “-able”)\nAn individual character or punctuation mark\n\n\n\nWhy tokens?\n\nHandles unknown words by breaking them into known subwords\nMore efficient than processing character by character\nTrade-off: tokenization works better for some languages than others\n\n\n\n\n\n\n\n\n\nTip\n\n\nYou can explore how text is tokenized at platform.openai.com/tokenizer."
+  },
+  {
+    "objectID": "workshops/large-language-models-presentation.html#context-window-the-llms-memory",
+    "href": "workshops/large-language-models-presentation.html#context-window-the-llms-memory",
+    "title": "Lecture - Working with AI",
+    "section": "Context Window: The LLM’s Memory",
+    "text": "Context Window: The LLM’s Memory\n\nThe context window is the number of tokens an LLM can process at once\nThink of it as the model’s short-term memory\n\n\n\n\nLarger context window:\n\n“Remembers” more of the conversation\nMore coherent responses\nMore computational cost\n\n\nSmaller context window:\n\nFaster processing\nMay lose track of earlier parts\nLess expensive to run\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\nManaging context windows matters when working with AI tools! Break down problems into smaller chunks."
+  },
+  {
+    "objectID": "workshops/large-language-models-presentation.html#training-phases",
+    "href": "workshops/large-language-models-presentation.html#training-phases",
+    "title": "Lecture - Working with AI",
+    "section": "Training Phases",
+    "text": "Training Phases\n\nTraining an LLM happens in three phases:\n\n\n1. Self-Supervised Learning (Pre-training)\n\nTrained on massive text datasets without explicit labels\nLearns to predict the next token – learns grammar, facts, and patterns\n\n\n\n2. Supervised Fine-Tuning\n\nTrained on smaller, curated datasets for specific tasks\nMakes the model better at following instructions\n\n\n\n3. Reinforcement Learning from Human Feedback (RLHF)\n\nHuman evaluators rank model outputs by quality\nModel learns to produce responses that are more helpful, honest, and harmless"
+  },
+  {
+    "objectID": "workshops/large-language-models-presentation.html#llm-architectures-overview",
+    "href": "workshops/large-language-models-presentation.html#llm-architectures-overview",
+    "title": "Lecture - Working with AI",
+    "section": "LLM Architectures (Overview)",
+    "text": "LLM Architectures (Overview)\n\n\n\n\n\n\n\n\nArchitecture\nHow it works\nBest for\n\n\n\n\nEncoder-Decoder\nUnderstands input, then generates output\nTranslation, summarization\n\n\nEncoder-Only\nFocuses on understanding input\nClassification, search (BERT)\n\n\nDecoder-Only\nGenerates text token by token\nChatbots, code generation (GPT, Claude)\n\n\nMixture of Experts\nRoutes input to specialized sub-models\nEfficient scaling (fewer params active)\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nMost LLMs you interact with today (ChatGPT, Claude, Gemini) are decoder-only models, sometimes enhanced with Mixture of Experts."
+  },
+  {
+    "objectID": "workshops/large-language-models-presentation.html#limitations",
+    "href": "workshops/large-language-models-presentation.html#limitations",
+    "title": "Lecture - Working with AI",
+    "section": "Limitations",
+    "text": "Limitations\n\nHallucinations: LLMs can confidently generate incorrect information\nBias: Training data contains biases that the model can reproduce\nNo true understanding: Pattern matching, not reasoning from first principles\nKnowledge cutoff: Models only know what they were trained on\n\n\n\nContext limits: Can lose coherence in very long conversations\nSensitivity to prompts: Small changes in wording can produce very different results\n\n\n\n\n\n\n\n\n\nWarning\n\n\nAlways verify important information from LLMs. They are tools, not oracles."
+  },
+  {
+    "objectID": "workshops/large-language-models-presentation.html#a-great-overview-by-3blue1brown",
+    "href": "workshops/large-language-models-presentation.html#a-great-overview-by-3blue1brown",
+    "title": "Lecture - Working with AI",
+    "section": "A Great Overview by 3Blue1Brown",
+    "text": "A Great Overview by 3Blue1Brown\n\nGrant Sanderson explains LLMs visually better than most textbooks\nGood starting point for the concepts we just covered\nCheck out his YouTube channel, 3Blue1Brown for more\nWatch the video: Large Language Models explained briefly"
+  },
+  {
+    "objectID": "workshops/large-language-models-presentation.html#a-framework-for-understanding-ai-tools",
+    "href": "workshops/large-language-models-presentation.html#a-framework-for-understanding-ai-tools",
+    "title": "Lecture - Working with AI",
+    "section": "A Framework for Understanding AI Tools",
+    "text": "A Framework for Understanding AI Tools\n\nBased on Ethan Mollick’s framework from “One Useful Thing”\nThree layers to understand:\n\n\n\nModels = the underlying AI “brains”\nApps = the interfaces you interact with\nHarnesses = systems that give AI access to tools for autonomous work\n\n\n\n\n\n\n\n\n\nImportant\n\n\nThe same model can produce very different results depending on the harness it is placed in!"
+  },
+  {
+    "objectID": "workshops/large-language-models-presentation.html#models-the-ai-brains",
+    "href": "workshops/large-language-models-presentation.html#models-the-ai-brains",
+    "title": "Lecture - Working with AI",
+    "section": "Models: The AI Brains",
+    "text": "Models: The AI Brains\n\nThe foundation model is the core intelligence\nDifferent providers train different models:\n\nOpenAI: GPT-4o, o3, o4-mini\nAnthropic: Claude Opus, Claude Sonnet\nGoogle: Gemini Pro, Gemini Flash\nMistral: Mistral Large, Mistral Medium\nMeta: Llama (open-source)\n\n\n\n\n\n\n\n\n\nWarning\n\n\nFree/default tiers often use weaker models. Always select the frontier or advanced model when available – the difference is noticeable."
+  },
+  {
+    "objectID": "workshops/large-language-models-presentation.html#apps-the-interfaces",
+    "href": "workshops/large-language-models-presentation.html#apps-the-interfaces",
+    "title": "Lecture - Working with AI",
+    "section": "Apps: The Interfaces",
+    "text": "Apps: The Interfaces\n\nApps are how you access the models\n\n\n\n\n\nApp\nURL\nProvider\n\n\n\n\nChatGPT\nchatgpt.com\nOpenAI\n\n\nClaude\nclaude.ai\nAnthropic\n\n\nGemini\ngemini.google.com\nGoogle\n\n\nLe Chat\nchat.mistral.ai\nMistral\n\n\n\n\n\n\nAll four offer free access to capable models\nPaid tiers unlock the most powerful models and higher usage limits\nMistral offers an affordable student tier with access to Mistral Vibe (not flawless, but acceptable)\nThe app is just the interface – the model behind it matters most"
+  },
+  {
+    "objectID": "workshops/large-language-models-presentation.html#harnesses-the-real-differentiator",
+    "href": "workshops/large-language-models-presentation.html#harnesses-the-real-differentiator",
+    "title": "Lecture - Working with AI",
+    "section": "Harnesses: The real differentiator",
+    "text": "Harnesses: The real differentiator\n\nA harness is a system that wraps a model with tools and capabilities\nSame model, different harness = completely different results\n\n\nExamples of harnesses:\n\nA chat window (Claude.ai) – conversational Q&A\nA coding agent (Claude Code) – reads files, writes code, runs tests\nAn IDE integration (Copilot in Zed) – inline code suggestions\n\n\n\n\n\n\n\n\n\nTip\n\n\nPick the right harness for the task! A chat window is great for brainstorming, but a coding agent is better for building features."
+  },
+  {
+    "objectID": "workshops/large-language-models-presentation.html#ai-providers-today",
+    "href": "workshops/large-language-models-presentation.html#ai-providers-today",
+    "title": "Lecture - Working with AI",
+    "section": "AI providers today",
+    "text": "AI providers today\n\n\n\n\n\n\n\n\n\nProvider\nModel\nApp\nStrength\n\n\n\n\nOpenAI\nGPT-4o / o3\nChatGPT\nGeneral purpose, multimodal\n\n\nAnthropic\nClaude Opus/Sonnet\nClaude.ai\nReasoning, coding, long context\n\n\nGoogle\nGemini Pro\nGemini\nGoogle integration, multimodal\n\n\nMistral\nMistral Large\nLe Chat\nAffordable student tier, European provider\n\n\nMeta\nLlama\nOpen-source\nLocal deployment, customizable\n\n\n\n\n\nThis changes fast – new models appear every few months\nWhat matters: understand the model/app/harness distinction so you can evaluate new tools as they emerge"
+  },
+  {
+    "objectID": "workshops/large-language-models-presentation.html#why-this-framework-matters",
+    "href": "workshops/large-language-models-presentation.html#why-this-framework-matters",
+    "title": "Lecture - Working with AI",
+    "section": "Why This Framework Matters",
+    "text": "Why This Framework Matters\n\nQuestion: Why does the same AI feel “smarter” in some tools than others?\n\n\n\nBecause the harness determines:\n\nWhat context the model receives\nWhat tools it can use (web search, file access, code execution)\nHow many steps it can take autonomously\nHow results are presented back to you\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nWhen someone says “AI can’t do X,” ask: which model, in which harness? The answer often changes with the right setup."
+  },
+  {
+    "objectID": "workshops/large-language-models-presentation.html#homebrew-your-package-manager",
+    "href": "workshops/large-language-models-presentation.html#homebrew-your-package-manager",
+    "title": "Lecture - Working with AI",
+    "section": "Homebrew: Your Package Manager",
+    "text": "Homebrew: Your Package Manager\n\nHomebrew is a package manager for macOS\nInstalls command-line tools and applications with a single command\nNo more hunting for download pages or dragging .dmg files\n\n\nHow to install Homebrew:\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"\n\n\nThen installing tools is as simple as:\nbrew install &lt;tool-name&gt;        # CLI tools\nbrew install --cask &lt;app-name&gt;  # GUI applications\n\n\n\n\n\n\n\n\nTip\n\n\nWe will use Homebrew to install all coding tools in this workshop. If you are not on macOS, download links are provided as alternatives."
+  },
+  {
+    "objectID": "workshops/large-language-models-presentation.html#zed-a-modern-code-editor",
+    "href": "workshops/large-language-models-presentation.html#zed-a-modern-code-editor",
+    "title": "Lecture - Working with AI",
+    "section": "Zed: A Modern Code Editor",
+    "text": "Zed: A Modern Code Editor\n\nRecommended IDE for this course\nModern, fast code editor built in Rust\nBuilt-in AI assistant with multiple model support\n\n\nKey features:\n\nSupports cloud models (Claude, GPT) and local models (Ollama)\nGreat for pair programming with AI\nFree and open-source\nFast, lightweight, and actively developed\n\n\n\nHow to install (macOS):\nbrew install --cask zed\nFor Linux or Windows, download from zed.dev.\n\n\n\n\n\n\n\n\nTip\n\n\nZed offers a free student tier with solid code completion and $10 in API credits for at least one year. Sign up at zed.dev with your university email."
+  },
+  {
+    "objectID": "workshops/large-language-models-presentation.html#github-copilot",
+    "href": "workshops/large-language-models-presentation.html#github-copilot",
+    "title": "Lecture - Working with AI",
+    "section": "GitHub Copilot",
+    "text": "GitHub Copilot\n\nAI pair programmer integrated into editors (VS Code, Zed, JetBrains)\nFree for students via GitHub Student Developer Pack\nProvides inline code completion as you type\n\n\nHow to get access:\n\nGo to education.github.com/pack\nSign up with your university email\nVerify your student status\nWait for approval (usually 1-2 days)\n\n\n\n\n\n\n\n\n\nNote\n\n\nCopilot’s code completion can also be activated in Zed if you prefer it over Zed’s built-in completion."
+  },
+  {
+    "objectID": "workshops/large-language-models-presentation.html#opencode-terminal-ai-assistant",
+    "href": "workshops/large-language-models-presentation.html#opencode-terminal-ai-assistant",
+    "title": "Lecture - Working with AI",
+    "section": "OpenCode: Terminal AI Assistant",
+    "text": "OpenCode: Terminal AI Assistant\n\nOpen-source terminal-based AI coding assistant\nGreat for quick tasks directly in your terminal\n\n\nHow to install (macOS):\nbrew install opencode-ai/tap/opencode\nFor other platforms, see opencode.ai.\n\n\nKey features:\n\nSupports multiple AI providers (bring your own API key)\nLightweight and fast\nRead, edit, and create files from the terminal\nGood for quick fixes and file operations"
+  },
+  {
+    "objectID": "workshops/large-language-models-presentation.html#claude-code-autonomous-coding-agent",
+    "href": "workshops/large-language-models-presentation.html#claude-code-autonomous-coding-agent",
+    "title": "Lecture - Working with AI",
+    "section": "Claude Code: Autonomous Coding Agent",
+    "text": "Claude Code: Autonomous Coding Agent\n\nAnthropic’s CLI coding agent\nGoes beyond suggestions: autonomous multi-step task execution\n\n\nHow to install (macOS):\nbrew install claude-code\nFor other platforms, see claude.ai/code.\n\n\nWhat makes it different:\n\nReads your entire codebase for context\nCan plan, write, test, and debug code autonomously\nExecutes terminal commands and iterates on errors\nBest for complex, multi-step tasks\n\n\n\n\n\n\n\n\n\nNote\n\n\nClaude Code requires an Anthropic API key and incurs usage costs."
+  },
+  {
+    "objectID": "workshops/large-language-models-presentation.html#comparing-ai-coding-tools",
+    "href": "workshops/large-language-models-presentation.html#comparing-ai-coding-tools",
+    "title": "Lecture - Working with AI",
+    "section": "Comparing AI Coding Tools",
+    "text": "Comparing AI Coding Tools\n\n\n\n\n\n\n\n\n\nTool\nType\nBest For\nCost\n\n\n\n\nZed\nIDE\nDaily coding with AI assist\nFree\n\n\nGitHub Copilot\nIDE extension\nInline code suggestions\nFree for students\n\n\nOpenCode\nTerminal\nQuick terminal tasks\nFree (bring API key)\n\n\nClaude Code\nTerminal agent\nComplex multi-step tasks\nAPI costs\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nStart with Zed + Copilot for daily coding. Use Claude Code or OpenCode when you need to tackle larger tasks from the terminal."
+  },
+  {
+    "objectID": "workshops/large-language-models-presentation.html#choosing-the-right-tool",
+    "href": "workshops/large-language-models-presentation.html#choosing-the-right-tool",
+    "title": "Lecture - Working with AI",
+    "section": "Choosing the Right Tool",
+    "text": "Choosing the Right Tool\n\nQuestion: When would you use a chat interface vs. a coding agent?\n\n\n\n\nChat interface (Claude.ai, ChatGPT)\n\nBrainstorming ideas\nExplaining concepts\nDrafting text or outlines\nQuick one-off questions\n\n\nCoding agent (Claude Code, OpenCode)\n\nBuilding features across files\nDebugging complex issues\nRefactoring codebases\nRunning and testing code\n\n\n\n\n\n\n\n\n\n\nImportant\n\n\nRemember: same model, different harness = different capabilities. Pick the right tool for the job."
+  },
+  {
+    "objectID": "workshops/large-language-models-presentation.html#tips-for-effective-ai-pair-programming",
+    "href": "workshops/large-language-models-presentation.html#tips-for-effective-ai-pair-programming",
+    "title": "Lecture - Working with AI",
+    "section": "Tips for Effective AI Pair Programming",
+    "text": "Tips for Effective AI Pair Programming\n1. Be precise in your instructions\n\nThe more specific your prompt, the better the result\nInclude context: language, framework, expected behavior\n\n\n2. Always review generated code\n\nLLMs make mistakes, suggest inefficient solutions, or miss edge cases\nYour code, your responsibility\n\n\n\n3. Iterate and refine\n\nUse the output as a starting point\nAsk follow-up questions to improve the result\nBreak complex requests into smaller steps"
+  },
+  {
+    "objectID": "workshops/large-language-models-presentation.html#manage-context-effectively",
+    "href": "workshops/large-language-models-presentation.html#manage-context-effectively",
+    "title": "Lecture - Working with AI",
+    "section": "Manage Context Effectively",
+    "text": "Manage Context Effectively\n\nLLMs have a finite context window – treat it as a precious resource\n\n\n\nBreak down problems into manageable chunks rather than dumping everything at once\nBe specific about which files or functions you need help with\nStart fresh conversations when switching topics to avoid confusion\nProvide relevant context upfront rather than expecting the model to guess\n\n\n\n\n\n\n\n\n\nTip\n\n\nThink of context like a desk: keep only what you need for the current task on it, and clear it when you move to the next task."
+  },
+  {
+    "objectID": "workshops/large-language-models-presentation.html#takeaways",
+    "href": "workshops/large-language-models-presentation.html#takeaways",
+    "title": "Lecture - Working with AI",
+    "section": "Takeaways",
+    "text": "Takeaways\n\nAI is a tool, not a replacement – you still need to understand the fundamentals\nUnderstand before accepting – always read and verify AI-generated output\nPick the right harness – chat for brainstorming, agents for building, IDE for daily coding\nModels matter – always use the most capable model available to you\nContext matters – clear prompts and managed context give you better output\n\n\n\n\n\n\n\n\nWarning\n\n\nIf you use free models, be aware that your prompts may be used by providers and are not private. For learning and experimenting, this should be no issue."
+  },
+  {
+    "objectID": "workshops/large-language-models-presentation.html#resources",
+    "href": "workshops/large-language-models-presentation.html#resources",
+    "title": "Lecture - Working with AI",
+    "section": "Resources",
+    "text": "Resources\nGetting started:\n\nZed Editor – recommended IDE\nGitHub Student Pack – free Copilot access\nClaude.ai – Anthropic’s chat interface\nChatGPT – OpenAI’s chat interface\n\n\nLearning more:\n\n3Blue1Brown: LLMs – visual explanation of how LLMs work\nAnthropic Research – understanding AI safety and interpretability\nOne Useful Thing – Ethan Mollick’s blog on practical AI use\nPrompt Engineering Guide – techniques for better prompts"
+  },
+  {
+    "objectID": "workshops/large-language-models-page.html",
+    "href": "workshops/large-language-models-page.html",
+    "title": "Lecture - Working with AI",
+    "section": "",
+    "text": "This workshop: AI Programming & Large Language Models\nYou have likely already used LLMs:\n\nChatGPT, Claude, Gemini, and others\n\nBy the end of this workshop, you will understand:\n\nHow LLMs work at a conceptual level\nThe difference between models, apps, and harnesses\nWhich AI coding tools to use and how to get started\n\n\n\n\n\n\nThink of them as advanced pattern recognition systems\nThey have “read” massive amounts of text from the internet, books, and code\nBased on those patterns, they can generate new text\n\n. . .\n\nLLMs really do one thing: predict the next token\nLike an incredibly advanced version of autocomplete on your phone\nBut they cannot truly “think” or “understand” like humans\n\n. . .\n\n\n\n\n\n\nDespite their limitations, LLMs are genuinely useful for coding, writing, research, and analysis.\n\n\n\n\n\n\n\nModern LLMs are powered by the Transformer architecture\nIntroduced in “Attention is All You Need” (Vaswani et al., 2017)\n\n. . .\nHow it works (simplified):\n\n\nTokenization: Text is split into smaller units called tokens\nRelationship mapping: The model builds a mathematical representation of how tokens relate\nAttention mechanism: The model focuses on the most relevant parts of the input to generate each output token\n\n\n. . .\n\n\n\n\n\n\n“The cat sat on the mat because it was warm.” – Attention helps the model understand that “it” refers to “the mat,” not “the cat.”\n\n\n\n\n\n\n\nLLMs process text as tokens, not whole words\nA token can be:\n\nA whole word (e.g., “cat”)\nA subword (e.g., “un-”, “break”, “-able”)\nAn individual character or punctuation mark\n\n\n. . .\nWhy tokens?\n\nHandles unknown words by breaking them into known subwords\nMore efficient than processing character by character\nTrade-off: tokenization works better for some languages than others\n\n. . .\n\n\n\n\n\n\nYou can explore how text is tokenized at platform.openai.com/tokenizer.\n\n\n\n\n\n\n\nThe context window is the number of tokens an LLM can process at once\nThink of it as the model’s short-term memory\n\n. . .\n\n\nLarger context window:\n\n“Remembers” more of the conversation\nMore coherent responses\nMore computational cost\n\n\nSmaller context window:\n\nFaster processing\nMay lose track of earlier parts\nLess expensive to run\n\n\n\n. . .\n\n\n\n\n\n\nManaging context windows matters when working with AI tools! Break down problems into smaller chunks.\n\n\n\n\n\n\n\nTraining an LLM happens in three phases:\n\n. . .\n1. Self-Supervised Learning (Pre-training)\n\nTrained on massive text datasets without explicit labels\nLearns to predict the next token – learns grammar, facts, and patterns\n\n. . .\n2. Supervised Fine-Tuning\n\nTrained on smaller, curated datasets for specific tasks\nMakes the model better at following instructions\n\n. . .\n3. Reinforcement Learning from Human Feedback (RLHF)\n\nHuman evaluators rank model outputs by quality\nModel learns to produce responses that are more helpful, honest, and harmless\n\n\n\n\n\n\n\n\n\n\n\n\nArchitecture\nHow it works\nBest for\n\n\n\n\nEncoder-Decoder\nUnderstands input, then generates output\nTranslation, summarization\n\n\nEncoder-Only\nFocuses on understanding input\nClassification, search (BERT)\n\n\nDecoder-Only\nGenerates text token by token\nChatbots, code generation (GPT, Claude)\n\n\nMixture of Experts\nRoutes input to specialized sub-models\nEfficient scaling (fewer params active)\n\n\n\n. . .\n\n\n\n\n\n\nMost LLMs you interact with today (ChatGPT, Claude, Gemini) are decoder-only models, sometimes enhanced with Mixture of Experts.\n\n\n\n\n\n\n\nHallucinations: LLMs can confidently generate incorrect information\nBias: Training data contains biases that the model can reproduce\nNo true understanding: Pattern matching, not reasoning from first principles\nKnowledge cutoff: Models only know what they were trained on\n\n. . .\n\nContext limits: Can lose coherence in very long conversations\nSensitivity to prompts: Small changes in wording can produce very different results\n\n. . .\n\n\n\n\n\n\nAlways verify important information from LLMs. They are tools, not oracles.\n\n\n\n\n\n\n\nGrant Sanderson explains LLMs visually better than most textbooks\nGood starting point for the concepts we just covered\nCheck out his YouTube channel, 3Blue1Brown for more\nWatch the video: Large Language Models explained briefly",
+    "crumbs": [
+      "Working with AI"
+    ]
+  },
+  {
+    "objectID": "workshops/large-language-models-page.html#welcome",
+    "href": "workshops/large-language-models-page.html#welcome",
+    "title": "Lecture - Working with AI",
+    "section": "",
+    "text": "This workshop: AI Programming & Large Language Models\nYou have likely already used LLMs:\n\nChatGPT, Claude, Gemini, and others\n\nBy the end of this workshop, you will understand:\n\nHow LLMs work at a conceptual level\nThe difference between models, apps, and harnesses\nWhich AI coding tools to use and how to get started",
+    "crumbs": [
+      "Working with AI"
+    ]
+  },
+  {
+    "objectID": "workshops/large-language-models-page.html#what-is-an-llm",
+    "href": "workshops/large-language-models-page.html#what-is-an-llm",
+    "title": "Lecture - Working with AI",
+    "section": "",
+    "text": "Think of them as advanced pattern recognition systems\nThey have “read” massive amounts of text from the internet, books, and code\nBased on those patterns, they can generate new text\n\n. . .\n\nLLMs really do one thing: predict the next token\nLike an incredibly advanced version of autocomplete on your phone\nBut they cannot truly “think” or “understand” like humans\n\n. . .\n\n\n\n\n\n\nDespite their limitations, LLMs are genuinely useful for coding, writing, research, and analysis.",
+    "crumbs": [
+      "Working with AI"
+    ]
+  },
+  {
+    "objectID": "workshops/large-language-models-page.html#the-transformer-architecture",
+    "href": "workshops/large-language-models-page.html#the-transformer-architecture",
+    "title": "Lecture - Working with AI",
+    "section": "",
+    "text": "Modern LLMs are powered by the Transformer architecture\nIntroduced in “Attention is All You Need” (Vaswani et al., 2017)\n\n. . .\nHow it works (simplified):\n\n\nTokenization: Text is split into smaller units called tokens\nRelationship mapping: The model builds a mathematical representation of how tokens relate\nAttention mechanism: The model focuses on the most relevant parts of the input to generate each output token\n\n\n. . .\n\n\n\n\n\n\n“The cat sat on the mat because it was warm.” – Attention helps the model understand that “it” refers to “the mat,” not “the cat.”",
+    "crumbs": [
+      "Working with AI"
+    ]
+  },
+  {
+    "objectID": "workshops/large-language-models-page.html#tokens-the-building-blocks",
+    "href": "workshops/large-language-models-page.html#tokens-the-building-blocks",
+    "title": "Lecture - Working with AI",
+    "section": "",
+    "text": "LLMs process text as tokens, not whole words\nA token can be:\n\nA whole word (e.g., “cat”)\nA subword (e.g., “un-”, “break”, “-able”)\nAn individual character or punctuation mark\n\n\n. . .\nWhy tokens?\n\nHandles unknown words by breaking them into known subwords\nMore efficient than processing character by character\nTrade-off: tokenization works better for some languages than others\n\n. . .\n\n\n\n\n\n\nYou can explore how text is tokenized at platform.openai.com/tokenizer.",
+    "crumbs": [
+      "Working with AI"
+    ]
+  },
+  {
+    "objectID": "workshops/large-language-models-page.html#context-window-the-llms-memory",
+    "href": "workshops/large-language-models-page.html#context-window-the-llms-memory",
+    "title": "Lecture - Working with AI",
+    "section": "",
+    "text": "The context window is the number of tokens an LLM can process at once\nThink of it as the model’s short-term memory\n\n. . .\n\n\nLarger context window:\n\n“Remembers” more of the conversation\nMore coherent responses\nMore computational cost\n\n\nSmaller context window:\n\nFaster processing\nMay lose track of earlier parts\nLess expensive to run\n\n\n\n. . .\n\n\n\n\n\n\nManaging context windows matters when working with AI tools! Break down problems into smaller chunks.",
+    "crumbs": [
+      "Working with AI"
+    ]
+  },
+  {
+    "objectID": "workshops/large-language-models-page.html#training-phases",
+    "href": "workshops/large-language-models-page.html#training-phases",
+    "title": "Lecture - Working with AI",
+    "section": "",
+    "text": "Training an LLM happens in three phases:\n\n. . .\n1. Self-Supervised Learning (Pre-training)\n\nTrained on massive text datasets without explicit labels\nLearns to predict the next token – learns grammar, facts, and patterns\n\n. . .\n2. Supervised Fine-Tuning\n\nTrained on smaller, curated datasets for specific tasks\nMakes the model better at following instructions\n\n. . .\n3. Reinforcement Learning from Human Feedback (RLHF)\n\nHuman evaluators rank model outputs by quality\nModel learns to produce responses that are more helpful, honest, and harmless",
+    "crumbs": [
+      "Working with AI"
+    ]
+  },
+  {
+    "objectID": "workshops/large-language-models-page.html#llm-architectures-overview",
+    "href": "workshops/large-language-models-page.html#llm-architectures-overview",
+    "title": "Lecture - Working with AI",
+    "section": "",
+    "text": "Architecture\nHow it works\nBest for\n\n\n\n\nEncoder-Decoder\nUnderstands input, then generates output\nTranslation, summarization\n\n\nEncoder-Only\nFocuses on understanding input\nClassification, search (BERT)\n\n\nDecoder-Only\nGenerates text token by token\nChatbots, code generation (GPT, Claude)\n\n\nMixture of Experts\nRoutes input to specialized sub-models\nEfficient scaling (fewer params active)\n\n\n\n. . .\n\n\n\n\n\n\nMost LLMs you interact with today (ChatGPT, Claude, Gemini) are decoder-only models, sometimes enhanced with Mixture of Experts.",
+    "crumbs": [
+      "Working with AI"
+    ]
+  },
+  {
+    "objectID": "workshops/large-language-models-page.html#limitations",
+    "href": "workshops/large-language-models-page.html#limitations",
+    "title": "Lecture - Working with AI",
+    "section": "",
+    "text": "Hallucinations: LLMs can confidently generate incorrect information\nBias: Training data contains biases that the model can reproduce\nNo true understanding: Pattern matching, not reasoning from first principles\nKnowledge cutoff: Models only know what they were trained on\n\n. . .\n\nContext limits: Can lose coherence in very long conversations\nSensitivity to prompts: Small changes in wording can produce very different results\n\n. . .\n\n\n\n\n\n\nAlways verify important information from LLMs. They are tools, not oracles.",
+    "crumbs": [
+      "Working with AI"
+    ]
+  },
+  {
+    "objectID": "workshops/large-language-models-page.html#a-great-overview-by-3blue1brown",
+    "href": "workshops/large-language-models-page.html#a-great-overview-by-3blue1brown",
+    "title": "Lecture - Working with AI",
+    "section": "",
+    "text": "Grant Sanderson explains LLMs visually better than most textbooks\nGood starting point for the concepts we just covered\nCheck out his YouTube channel, 3Blue1Brown for more\nWatch the video: Large Language Models explained briefly",
+    "crumbs": [
+      "Working with AI"
+    ]
+  },
+  {
+    "objectID": "workshops/large-language-models-page.html#a-framework-for-understanding-ai-tools",
+    "href": "workshops/large-language-models-page.html#a-framework-for-understanding-ai-tools",
+    "title": "Lecture - Working with AI",
+    "section": "A Framework for Understanding AI Tools",
+    "text": "A Framework for Understanding AI Tools\n\nBased on Ethan Mollick’s framework from “One Useful Thing”\nThree layers to understand:\n\n. . .\n\n\nModels = the underlying AI “brains”\nApps = the interfaces you interact with\nHarnesses = systems that give AI access to tools for autonomous work\n\n\n. . .\n\n\n\n\n\n\nThe same model can produce very different results depending on the harness it is placed in!",
+    "crumbs": [
+      "Working with AI"
+    ]
+  },
+  {
+    "objectID": "workshops/large-language-models-page.html#models-the-ai-brains",
+    "href": "workshops/large-language-models-page.html#models-the-ai-brains",
+    "title": "Lecture - Working with AI",
+    "section": "Models: The AI Brains",
+    "text": "Models: The AI Brains\n\nThe foundation model is the core intelligence\nDifferent providers train different models:\n\nOpenAI: GPT-4o, o3, o4-mini\nAnthropic: Claude Opus, Claude Sonnet\nGoogle: Gemini Pro, Gemini Flash\nMistral: Mistral Large, Mistral Medium\nMeta: Llama (open-source)\n\n\n. . .\n\n\n\n\n\n\nFree/default tiers often use weaker models. Always select the frontier or advanced model when available – the difference is noticeable.",
+    "crumbs": [
+      "Working with AI"
+    ]
+  },
+  {
+    "objectID": "workshops/large-language-models-page.html#apps-the-interfaces",
+    "href": "workshops/large-language-models-page.html#apps-the-interfaces",
+    "title": "Lecture - Working with AI",
+    "section": "Apps: The Interfaces",
+    "text": "Apps: The Interfaces\n\nApps are how you access the models\n\n. . .\n\n\n\nApp\nURL\nProvider\n\n\n\n\nChatGPT\nchatgpt.com\nOpenAI\n\n\nClaude\nclaude.ai\nAnthropic\n\n\nGemini\ngemini.google.com\nGoogle\n\n\nLe Chat\nchat.mistral.ai\nMistral\n\n\n\n. . .\n\nAll four offer free access to capable models\nPaid tiers unlock the most powerful models and higher usage limits\nMistral offers an affordable student tier with access to Mistral Vibe (not flawless, but acceptable)\nThe app is just the interface – the model behind it matters most",
+    "crumbs": [
+      "Working with AI"
+    ]
+  },
+  {
+    "objectID": "workshops/large-language-models-page.html#harnesses-the-real-differentiator",
+    "href": "workshops/large-language-models-page.html#harnesses-the-real-differentiator",
+    "title": "Lecture - Working with AI",
+    "section": "Harnesses: The real differentiator",
+    "text": "Harnesses: The real differentiator\n\nA harness is a system that wraps a model with tools and capabilities\nSame model, different harness = completely different results\n\n. . .\nExamples of harnesses:\n\n\nA chat window (Claude.ai) – conversational Q&A\nA coding agent (Claude Code) – reads files, writes code, runs tests\nAn IDE integration (Copilot in Zed) – inline code suggestions\n\n\n. . .\n\n\n\n\n\n\nPick the right harness for the task! A chat window is great for brainstorming, but a coding agent is better for building features.",
+    "crumbs": [
+      "Working with AI"
+    ]
+  },
+  {
+    "objectID": "workshops/large-language-models-page.html#ai-providers-today",
+    "href": "workshops/large-language-models-page.html#ai-providers-today",
+    "title": "Lecture - Working with AI",
+    "section": "AI providers today",
+    "text": "AI providers today\n\n\n\n\n\n\n\n\n\nProvider\nModel\nApp\nStrength\n\n\n\n\nOpenAI\nGPT-4o / o3\nChatGPT\nGeneral purpose, multimodal\n\n\nAnthropic\nClaude Opus/Sonnet\nClaude.ai\nReasoning, coding, long context\n\n\nGoogle\nGemini Pro\nGemini\nGoogle integration, multimodal\n\n\nMistral\nMistral Large\nLe Chat\nAffordable student tier, European provider\n\n\nMeta\nLlama\nOpen-source\nLocal deployment, customizable\n\n\n\n. . .\n\nThis changes fast – new models appear every few months\nWhat matters: understand the model/app/harness distinction so you can evaluate new tools as they emerge",
+    "crumbs": [
+      "Working with AI"
+    ]
+  },
+  {
+    "objectID": "workshops/large-language-models-page.html#why-this-framework-matters",
+    "href": "workshops/large-language-models-page.html#why-this-framework-matters",
+    "title": "Lecture - Working with AI",
+    "section": "Why This Framework Matters",
+    "text": "Why This Framework Matters\n\nQuestion: Why does the same AI feel “smarter” in some tools than others?\n\n. . .\n\nBecause the harness determines:\n\nWhat context the model receives\nWhat tools it can use (web search, file access, code execution)\nHow many steps it can take autonomously\nHow results are presented back to you\n\n\n. . .\n\n\n\n\n\n\nWhen someone says “AI can’t do X,” ask: which model, in which harness? The answer often changes with the right setup.",
+    "crumbs": [
+      "Working with AI"
+    ]
+  },
+  {
+    "objectID": "workshops/large-language-models-page.html#homebrew-your-package-manager",
+    "href": "workshops/large-language-models-page.html#homebrew-your-package-manager",
+    "title": "Lecture - Working with AI",
+    "section": "Homebrew: Your Package Manager",
+    "text": "Homebrew: Your Package Manager\n\nHomebrew is a package manager for macOS\nInstalls command-line tools and applications with a single command\nNo more hunting for download pages or dragging .dmg files\n\n. . .\nHow to install Homebrew:\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"\n. . .\nThen installing tools is as simple as:\nbrew install &lt;tool-name&gt;        # CLI tools\nbrew install --cask &lt;app-name&gt;  # GUI applications\n. . .\n\n\n\n\n\n\nWe will use Homebrew to install all coding tools in this workshop. If you are not on macOS, download links are provided as alternatives.",
+    "crumbs": [
+      "Working with AI"
+    ]
+  },
+  {
+    "objectID": "workshops/large-language-models-page.html#zed-a-modern-code-editor",
+    "href": "workshops/large-language-models-page.html#zed-a-modern-code-editor",
+    "title": "Lecture - Working with AI",
+    "section": "Zed: A Modern Code Editor",
+    "text": "Zed: A Modern Code Editor\n\nRecommended IDE for this course\nModern, fast code editor built in Rust\nBuilt-in AI assistant with multiple model support\n\n. . .\nKey features:\n\nSupports cloud models (Claude, GPT) and local models (Ollama)\nGreat for pair programming with AI\nFree and open-source\nFast, lightweight, and actively developed\n\n. . .\nHow to install (macOS):\nbrew install --cask zed\nFor Linux or Windows, download from zed.dev.\n. . .\n\n\n\n\n\n\nZed offers a free student tier with solid code completion and $10 in API credits for at least one year. Sign up at zed.dev with your university email.",
+    "crumbs": [
+      "Working with AI"
+    ]
+  },
+  {
+    "objectID": "workshops/large-language-models-page.html#github-copilot",
+    "href": "workshops/large-language-models-page.html#github-copilot",
+    "title": "Lecture - Working with AI",
+    "section": "GitHub Copilot",
+    "text": "GitHub Copilot\n\nAI pair programmer integrated into editors (VS Code, Zed, JetBrains)\nFree for students via GitHub Student Developer Pack\nProvides inline code completion as you type\n\n. . .\nHow to get access:\n\nGo to education.github.com/pack\nSign up with your university email\nVerify your student status\nWait for approval (usually 1-2 days)\n\n. . .\n\n\n\n\n\n\nCopilot’s code completion can also be activated in Zed if you prefer it over Zed’s built-in completion.",
+    "crumbs": [
+      "Working with AI"
+    ]
+  },
+  {
+    "objectID": "workshops/large-language-models-page.html#opencode-terminal-ai-assistant",
+    "href": "workshops/large-language-models-page.html#opencode-terminal-ai-assistant",
+    "title": "Lecture - Working with AI",
+    "section": "OpenCode: Terminal AI Assistant",
+    "text": "OpenCode: Terminal AI Assistant\n\nOpen-source terminal-based AI coding assistant\nGreat for quick tasks directly in your terminal\n\n. . .\nHow to install (macOS):\nbrew install opencode-ai/tap/opencode\nFor other platforms, see opencode.ai.\n. . .\nKey features:\n\nSupports multiple AI providers (bring your own API key)\nLightweight and fast\nRead, edit, and create files from the terminal\nGood for quick fixes and file operations",
+    "crumbs": [
+      "Working with AI"
+    ]
+  },
+  {
+    "objectID": "workshops/large-language-models-page.html#claude-code-autonomous-coding-agent",
+    "href": "workshops/large-language-models-page.html#claude-code-autonomous-coding-agent",
+    "title": "Lecture - Working with AI",
+    "section": "Claude Code: Autonomous Coding Agent",
+    "text": "Claude Code: Autonomous Coding Agent\n\nAnthropic’s CLI coding agent\nGoes beyond suggestions: autonomous multi-step task execution\n\n. . .\nHow to install (macOS):\nbrew install claude-code\nFor other platforms, see claude.ai/code.\n. . .\nWhat makes it different:\n\nReads your entire codebase for context\nCan plan, write, test, and debug code autonomously\nExecutes terminal commands and iterates on errors\nBest for complex, multi-step tasks\n\n. . .\n\n\n\n\n\n\nClaude Code requires an Anthropic API key and incurs usage costs.",
+    "crumbs": [
+      "Working with AI"
+    ]
+  },
+  {
+    "objectID": "workshops/large-language-models-page.html#comparing-ai-coding-tools",
+    "href": "workshops/large-language-models-page.html#comparing-ai-coding-tools",
+    "title": "Lecture - Working with AI",
+    "section": "Comparing AI Coding Tools",
+    "text": "Comparing AI Coding Tools\n\n\n\n\n\n\n\n\n\nTool\nType\nBest For\nCost\n\n\n\n\nZed\nIDE\nDaily coding with AI assist\nFree\n\n\nGitHub Copilot\nIDE extension\nInline code suggestions\nFree for students\n\n\nOpenCode\nTerminal\nQuick terminal tasks\nFree (bring API key)\n\n\nClaude Code\nTerminal agent\nComplex multi-step tasks\nAPI costs\n\n\n\n. . .\n\n\n\n\n\n\nStart with Zed + Copilot for daily coding. Use Claude Code or OpenCode when you need to tackle larger tasks from the terminal.",
+    "crumbs": [
+      "Working with AI"
+    ]
+  },
+  {
+    "objectID": "workshops/large-language-models-page.html#choosing-the-right-tool",
+    "href": "workshops/large-language-models-page.html#choosing-the-right-tool",
+    "title": "Lecture - Working with AI",
+    "section": "Choosing the Right Tool",
+    "text": "Choosing the Right Tool\n\nQuestion: When would you use a chat interface vs. a coding agent?\n\n. . .\n\n\nChat interface (Claude.ai, ChatGPT)\n\nBrainstorming ideas\nExplaining concepts\nDrafting text or outlines\nQuick one-off questions\n\n\nCoding agent (Claude Code, OpenCode)\n\nBuilding features across files\nDebugging complex issues\nRefactoring codebases\nRunning and testing code\n\n\n\n. . .\n\n\n\n\n\n\nRemember: same model, different harness = different capabilities. Pick the right tool for the job.",
+    "crumbs": [
+      "Working with AI"
+    ]
+  },
+  {
+    "objectID": "workshops/large-language-models-page.html#tips-for-effective-ai-pair-programming",
+    "href": "workshops/large-language-models-page.html#tips-for-effective-ai-pair-programming",
+    "title": "Lecture - Working with AI",
+    "section": "Tips for Effective AI Pair Programming",
+    "text": "Tips for Effective AI Pair Programming\n1. Be precise in your instructions\n\nThe more specific your prompt, the better the result\nInclude context: language, framework, expected behavior\n\n. . .\n2. Always review generated code\n\nLLMs make mistakes, suggest inefficient solutions, or miss edge cases\nYour code, your responsibility\n\n. . .\n3. Iterate and refine\n\nUse the output as a starting point\nAsk follow-up questions to improve the result\nBreak complex requests into smaller steps",
+    "crumbs": [
+      "Working with AI"
+    ]
+  },
+  {
+    "objectID": "workshops/large-language-models-page.html#manage-context-effectively",
+    "href": "workshops/large-language-models-page.html#manage-context-effectively",
+    "title": "Lecture - Working with AI",
+    "section": "Manage Context Effectively",
+    "text": "Manage Context Effectively\n\nLLMs have a finite context window – treat it as a precious resource\n\n. . .\n\n\nBreak down problems into manageable chunks rather than dumping everything at once\nBe specific about which files or functions you need help with\nStart fresh conversations when switching topics to avoid confusion\nProvide relevant context upfront rather than expecting the model to guess\n\n\n. . .\n\n\n\n\n\n\nThink of context like a desk: keep only what you need for the current task on it, and clear it when you move to the next task.",
+    "crumbs": [
+      "Working with AI"
+    ]
+  },
+  {
+    "objectID": "workshops/large-language-models-page.html#takeaways",
+    "href": "workshops/large-language-models-page.html#takeaways",
+    "title": "Lecture - Working with AI",
+    "section": "Takeaways",
+    "text": "Takeaways\n\n\nAI is a tool, not a replacement – you still need to understand the fundamentals\nUnderstand before accepting – always read and verify AI-generated output\nPick the right harness – chat for brainstorming, agents for building, IDE for daily coding\nModels matter – always use the most capable model available to you\nContext matters – clear prompts and managed context give you better output\n\n\n. . .\n\n\n\n\n\n\nIf you use free models, be aware that your prompts may be used by providers and are not private. For learning and experimenting, this should be no issue.",
+    "crumbs": [
+      "Working with AI"
+    ]
+  },
+  {
+    "objectID": "workshops/large-language-models-page.html#resources",
+    "href": "workshops/large-language-models-page.html#resources",
+    "title": "Lecture - Working with AI",
+    "section": "Resources",
+    "text": "Resources\nGetting started:\n\nZed Editor – recommended IDE\nGitHub Student Pack – free Copilot access\nClaude.ai – Anthropic’s chat interface\nChatGPT – OpenAI’s chat interface\n\n. . .\nLearning more:\n\n3Blue1Brown: LLMs – visual explanation of how LLMs work\nAnthropic Research – understanding AI safety and interpretability\nOne Useful Thing – Ethan Mollick’s blog on practical AI use\nPrompt Engineering Guide – techniques for better prompts",
+    "crumbs": [
+      "Working with AI"
     ]
   },
   {
@@ -54,309 +913,760 @@
     "href": "index.html",
     "title": "Welcome to the workshops!",
     "section": "",
-    "text": "Description\nWelcome to this collection of resources! This website hosts a collection of information and resources that will help you prepare for your research. If you are interested in large language models, these materials are designed for you. The material is self-contained and provides you with the fundamental knowledge and practical skills needed for your research project.\nThe resources are mostly available on this website with links to some other resources. I will try to update the website in the future, to extend the content and reflect the latest developments in the field.\n\n\nQuestions\nIf you have any questions, please contact me under tobias.vlcek@uni-hamburg.de.",
+    "text": "Description\nWelcome to this collection of resources! This website hosts workshops and materials to help you prepare for your seminar and thesis work. The material is self-contained and covers the skills you need for your research project.\n\n\nWorkshops\n\nWorking with AI — LLM fundamentals, models vs. apps vs. harnesses, AI coding tools (Zed, Copilot, OpenCode, Claude Code)\nAI Prompting — The RBTF framework for effective prompts, iteration strategies\nQuarto for Academic Writing — Writing papers in Quarto Markdown, citations, cross-references, templates\nLiterature Research — Search strategies, databases, AI research tools, Zotero\n\nPaper templates (German and English) are available in the course repository.\n\n\nResources\nA curated list of tools, LLMs, and further reading is available on the Literature & Resources page.\n\n\nQuestions\nIf you have any questions, please contact me under tobias.vlcek@uni-hamburg.de.",
     "crumbs": [
       "Welcome"
     ]
   },
   {
-    "objectID": "workshops/large-language-models.html",
-    "href": "workshops/large-language-models.html",
-    "title": "Working with Large Language Models",
+    "objectID": "workshops/prompting-page.html",
+    "href": "workshops/prompting-page.html",
+    "title": "Lecture - AI Prompting for Researchers",
     "section": "",
-    "text": "Explore Large Language Models (LLMs).\nYou’ve likely interacted with LLMs already:\n\nChatGPT\nGoogle’s Gemini\nClaude\n\nBy the end of this workshop, you’ll understand:\n\nHow LLMs work at a conceptual level\nThe practical applications of these powerful tools\nHow to effectively use them in your own work",
+    "text": "Why most people get mediocre results from AI\nA simple framework to dramatically improve your prompts\nThe power of iteration over perfection\nCommon mistakes and how to avoid them\n\n. . .\n\n\n\n\n\n\nThis is not about tricks or hacks. It is about clear communication — the same skill that makes you a better researcher.",
     "crumbs": [
-      "Large Language Models"
+      "AI Prompting"
     ]
   },
   {
-    "objectID": "workshops/large-language-models.html#welcome-to-todays-workshop",
-    "href": "workshops/large-language-models.html#welcome-to-todays-workshop",
-    "title": "Working with Large Language Models",
+    "objectID": "workshops/prompting-page.html#what-we-will-cover",
+    "href": "workshops/prompting-page.html#what-we-will-cover",
+    "title": "Lecture - AI Prompting for Researchers",
     "section": "",
-    "text": "Explore Large Language Models (LLMs).\nYou’ve likely interacted with LLMs already:\n\nChatGPT\nGoogle’s Gemini\nClaude\n\nBy the end of this workshop, you’ll understand:\n\nHow LLMs work at a conceptual level\nThe practical applications of these powerful tools\nHow to effectively use them in your own work",
+    "text": "Why most people get mediocre results from AI\nA simple framework to dramatically improve your prompts\nThe power of iteration over perfection\nCommon mistakes and how to avoid them\n\n. . .\n\n\n\n\n\n\nThis is not about tricks or hacks. It is about clear communication — the same skill that makes you a better researcher.",
     "crumbs": [
-      "Large Language Models"
+      "AI Prompting"
     ]
   },
   {
-    "objectID": "workshops/large-language-models.html#what-is-an-llm",
-    "href": "workshops/large-language-models.html#what-is-an-llm",
-    "title": "Working with Large Language Models",
-    "section": "What is an LLM?",
-    "text": "What is an LLM?\n\nLLMs are sophisticated Artificial Intelligence (AI) systems.\nThey represent a breakthrough in Natural Language Processing (NLP).\nThese models are designed to:\n\nComprehend human language in its nuance and complexity\nGenerate coherent and contextually appropriate text\nEngage in natural conversation and respond to queries\nPerform language tasks with human-like understanding\n\nThey achieve this by training on vast datasets of text from diverse sources.\nThe underlying technology uses advanced statistical methods to identify patterns and predict language.\n\n\n\n\n\n\n\nTip\n\n\n\nWhy should you care? LLMs are rapidly transforming how we:\n\nWrite and edit content\nDevelop software\nConduct research\nAnalyze data\nAutomate tasks\nLearn new concepts\n\nUnderstanding these tools is becoming essential across nearly every professional field.",
+    "objectID": "workshops/prompting-page.html#the-typical-experience",
+    "href": "workshops/prompting-page.html#the-typical-experience",
+    "title": "Lecture - AI Prompting for Researchers",
+    "section": "The Typical Experience",
+    "text": "The Typical Experience\n\n\nWhat most people type:\n\n“Help me with my literature review”\n\n\nWhat the AI returns:\n\n“A literature review is a comprehensive survey of scholarly sources on a specific topic. Here are some general steps: 1. Define your research question… 2. Search databases… 3. Evaluate sources…”\n\n\n\n. . .\nThis is correct but useless — generic advice you could find on any study skills website.",
     "crumbs": [
-      "Large Language Models"
+      "AI Prompting"
     ]
   },
   {
-    "objectID": "workshops/large-language-models.html#a-great-overview-by-3blue1brown",
-    "href": "workshops/large-language-models.html#a-great-overview-by-3blue1brown",
-    "title": "Working with Large Language Models",
-    "section": "A Great Overview by 3Blue1Brown",
-    "text": "A Great Overview by 3Blue1Brown\n\nGreg Sanderson provides an excellent, concise explanation of LLMs.\nGreat starting point to understand LLMs.\nCheck out his YouTube channel, 3Blue1Brown for more.",
+    "objectID": "workshops/prompting-page.html#why-does-this-happen",
+    "href": "workshops/prompting-page.html#why-does-this-happen",
+    "title": "Lecture - AI Prompting for Researchers",
+    "section": "Why Does This Happen?",
+    "text": "Why Does This Happen?\n\n\nThe AI does not know who you are — a first-year student or a PhD candidate?\nIt does not know what you already have — 5 papers or 50?\nIt does not know what you actually need — a structure, a gap analysis, a synthesis?\nIt does not know how you want it — a table, a paragraph, bullet points?",
     "crumbs": [
-      "Large Language Models"
+      "AI Prompting"
     ]
   },
   {
-    "objectID": "workshops/large-language-models.html#todays-key-concepts",
-    "href": "workshops/large-language-models.html#todays-key-concepts",
-    "title": "Working with Large Language Models",
-    "section": "Today’s Key Concepts",
-    "text": "Today’s Key Concepts\n\nFundamental principles behind how LLMs work.\nThe process of training these powerful models.\nLimitations and ethical considerations of LLMs.\nPractical applications, including pair-programming.\nHow to use LLMs with your own data (Retrieval Augmented Generation).\nFurther resources and tools.",
+    "objectID": "workshops/prompting-page.html#the-core-problem",
+    "href": "workshops/prompting-page.html#the-core-problem",
+    "title": "Lecture - AI Prompting for Researchers",
+    "section": "The Core Problem",
+    "text": "The Core Problem\n\n\n\n\n\n\nWithout context, AI gives you the average answer for everyone — which helps no one.\n\n\n\n. . .\nThe quality of the output is directly proportional to the quality of the input. This is true for every AI tool, whether it is ChatGPT, Claude, Gemini, or any other system.",
     "crumbs": [
-      "Large Language Models"
+      "AI Prompting"
     ]
   },
   {
-    "objectID": "workshops/large-language-models.html#deep-learning-and-text-data",
-    "href": "workshops/large-language-models.html#deep-learning-and-text-data",
-    "title": "Working with Large Language Models",
-    "section": "Deep Learning and Text Data",
-    "text": "Deep Learning and Text Data\n\nLLMs are deep learning models.\nBuilt using artificial neural networks with many layers (“deep”).\nTrained on enormous amounts of text data:\n\nInternet\nBooks\nArticles\nCode\nAnd more!\n\nTraining allows them to learn statistical patterns of language.\nBecome incredibly good at predicting word sequences.\nFoundation for tasks like:\n\nText Generation: Creating new text similar to training data.\nTranslation: Converting text between languages.\nSummarization: Condensing text into shorter summaries.\nQuestion Answering: Answering questions based on learned information.\nSentiment Analysis: Determining emotional tone of text.",
+    "objectID": "workshops/prompting-page.html#context-and-iteration",
+    "href": "workshops/prompting-page.html#context-and-iteration",
+    "title": "Lecture - AI Prompting for Researchers",
+    "section": "Context and Iteration",
+    "text": "Context and Iteration\n\n\n\nContext is Everything\n\nThe more relevant detail you provide, the better the response\nThink of it as briefing a new research assistant\nThey are brilliant but know nothing about your specific project\n\n\n\n\nIteration Beats Perfection\n\nYour first prompt does not need to be perfect\nTreat AI conversations as a dialogue, not a one-shot query\nRefine, redirect, and build on each response\n\n\n\n\n. . .\n\n\n\n\n\n\nYou would never hand a new colleague a one-sentence instruction and expect perfect results. Treat AI the same way.",
     "crumbs": [
-      "Large Language Models"
+      "AI Prompting"
     ]
   },
   {
-    "objectID": "workshops/large-language-models.html#the-transformer",
-    "href": "workshops/large-language-models.html#the-transformer",
-    "title": "Working with Large Language Models",
-    "section": "The Transformer",
-    "text": "The Transformer\n\nModern LLMs are powered by the revolutionary transformer architecture.\nIntroduced in the groundbreaking paper “Attention is All You Need” (Vaswani et al., 2017).\nThis innovation fundamentally changed the landscape of NLP.\n\nHow Transformers Work (Simplified):\n\nTokenization: Text is segmented into meaningful units called tokens.\nRelationship Mapping: The model creates a mathematical representation of how tokens relate to each other.\n\nThis allows understanding of complex connections between words and phrases in context.\n\nAttention Mechanism: The critical innovation that makes transformers so powerful.\n\nEnables the model to focus selectively on relevant parts of the input.\nWeighs the importance of different words based on their relevance to the current task.\n\n\nExample: The Power of Attention\n\nConsider the sentence: “The cat sat on the mat because it was warm.”\nThe attention mechanism helps the model understand that:\n\n“it” refers to “the mat,” not “the cat.”\nThis is determined by analyzing the contextual relationships between all words in the sentence.",
+    "objectID": "workshops/prompting-page.html#role-background-task-format",
+    "href": "workshops/prompting-page.html#role-background-task-format",
+    "title": "Lecture - AI Prompting for Researchers",
+    "section": "Role, Background, Task, Format",
+    "text": "Role, Background, Task, Format\n\n\n\n\n\n\n\n\nComponent\nQuestion to Ask Yourself\nExample\n\n\n\n\nRole\nWho should the AI act as?\n“Act as a methodologist in social science research”\n\n\nBackground\nWhat context does it need?\n“I am writing my Master’s thesis on climate policy in the EU”\n\n\nTask\nWhat exactly should it do?\n“Identify gaps in my literature on carbon pricing mechanisms”\n\n\nFormat\nHow should the output look?\n“Present this as a table with columns: gap, relevant authors, potential research questions”",
     "crumbs": [
-      "Large Language Models"
+      "AI Prompting"
     ]
   },
   {
-    "objectID": "workshops/large-language-models.html#tokens-the-building-blocks",
-    "href": "workshops/large-language-models.html#tokens-the-building-blocks",
-    "title": "Working with Large Language Models",
-    "section": "Tokens: The Building Blocks",
-    "text": "Tokens: The Building Blocks\n\nLLMs process text as tokens, not whole words.\nToken can be:\n\nWhole word (e.g., “cat”)\nSubword (e.g., “un-”, “break”, “-able” for “unbreakable”)\nIndividual characters\n\n\nWhy use tokens?\n\nHandles Unknown Words: Processes unseen words via subword units.\nEfficiency: Learning relationships between tokens is more efficient.\n\nChallenges with Tokenization:\n\nTokenization can be tricky.\nEspecially for languages without spaces (Chinese, Japanese).\nCurrent methods better for languages with similar scripts (English, Spanish, French).\nPotentially disadvantages other languages.\nArea of ongoing research.\n\n\n\n\n\n\n\nNote\n\n\n\nThink about this: How might this impact the fairness and inclusivity of LLMs?",
+    "objectID": "workshops/prompting-page.html#why-rbtf-works",
+    "href": "workshops/prompting-page.html#why-rbtf-works",
+    "title": "Lecture - AI Prompting for Researchers",
+    "section": "Why RBTF Works",
+    "text": "Why RBTF Works\n\nRole — shapes the expertise and tone of the response\nBackground — anchors the answer to your specific situation\nTask — eliminates ambiguity about what you need\nFormat — ensures the output is immediately usable\n\n. . .\n\n\n\n\n\n\nYou do not always need all four components. But the more you include, the better the result will be.",
     "crumbs": [
-      "Large Language Models"
+      "AI Prompting"
     ]
   },
   {
-    "objectID": "workshops/large-language-models.html#context-window-llms-memory",
-    "href": "workshops/large-language-models.html#context-window-llms-memory",
-    "title": "Working with Large Language Models",
-    "section": "Context Window: LLM’s “Memory”",
-    "text": "Context Window: LLM’s “Memory”\n\nContext window: LLM’s short-term memory.\nNumber of tokens the model can process at once.\nLarger context window:\n\n“Remembers” more of conversation/document.\nMore coherent and contextually relevant responses.\nMore computational resources needed.\nPotentially less coherence if too long.\n\nShorter context window:\n\nFaster processing.\nMay lose track of earlier conversation parts.\n\n\n\n\n\n\n\n\nTip\n\n\n\nThere is a trade-off between the context window and the size of the model. A larger model can usually handle a larger context window, but it will also take more computational resources to run.",
+    "objectID": "workshops/prompting-page.html#context-in-action-before",
+    "href": "workshops/prompting-page.html#context-in-action-before",
+    "title": "Lecture - AI Prompting for Researchers",
+    "section": "Context in Action: Before",
+    "text": "Context in Action: Before\n\n“Explain machine learning”\n\n. . .\nAI Response: “Machine learning is a subset of artificial intelligence that enables systems to learn from data and improve over time without being explicitly programmed. There are three main types: supervised learning, unsupervised learning, and reinforcement learning…”\n. . .\nA textbook answer. Fine if you are a complete beginner, but not tailored to anyone.",
     "crumbs": [
-      "Large Language Models"
+      "AI Prompting"
     ]
   },
   {
-    "objectID": "workshops/large-language-models.html#encoder-decoder",
-    "href": "workshops/large-language-models.html#encoder-decoder",
-    "title": "Working with Large Language Models",
-    "section": "Encoder-Decoder",
-    "text": "Encoder-Decoder\n\nHow it works:\n\nEncoder: Processes input text -&gt; condensed representation (“thought vector”).\nDecoder: Takes representation -&gt; generates output text.\nTwo-step process: understand, then create.\n\nAnalogy: Translation.\n\nUnderstand English sentence (encoder).\nConstruct German sentence (decoder).\n\nKey Feature: Excellent for tasks with different input and output sequences.",
+    "objectID": "workshops/prompting-page.html#context-in-action-after",
+    "href": "workshops/prompting-page.html#context-in-action-after",
+    "title": "Lecture - AI Prompting for Researchers",
+    "section": "Context in Action: After",
+    "text": "Context in Action: After\n\n“I am a social scientist studying voting behaviour. I have no programming background, but I need to understand how machine learning could help me predict election turnout from demographic data. Explain the key concepts I would need, avoiding technical jargon, and suggest which ML approach would suit my small dataset of 2,000 observations.”\n\n. . .\nThis prompt gives the AI everything it needs to provide a genuinely useful, specific response — tailored to the researcher’s discipline, skill level, and dataset.",
     "crumbs": [
-      "Large Language Models"
+      "AI Prompting"
     ]
   },
   {
-    "objectID": "workshops/large-language-models.html#encoder-only",
-    "href": "workshops/large-language-models.html#encoder-only",
-    "title": "Working with Large Language Models",
-    "section": "Encoder-Only",
-    "text": "Encoder-Only\n\nHow it works:\n\nFocuses on understanding input.\nProcesses input -&gt; rich representation of meaning.\n\nAnalogy: Detective analyzing crime scene.\n\nGather clues (input) -&gt; build complete picture.\nNo long report needed (output).\n\nKey Feature: Great for classification or information extraction.",
+    "objectID": "workshops/prompting-page.html#refining-your-results",
+    "href": "workshops/prompting-page.html#refining-your-results",
+    "title": "Lecture - AI Prompting for Researchers",
+    "section": "Refining Your Results",
+    "text": "Refining Your Results\nYour first response will rarely be exactly what you need. That is normal. Use follow-up prompts to steer the conversation.\n. . .\n\n\n\n\n\n\n\nWhen you get…\nSay this…\n\n\n\n\nToo broad\n“Focus specifically on [X] and go deeper”\n\n\nToo technical\n“Explain this for someone without a background in [field]”\n\n\nToo superficial\n“Provide more detail, especially regarding [aspect]”\n\n\nWrong angle\n“Approach this from the perspective of [discipline/method]”\n\n\nMissing something\n“Also consider [factor/variable/theory]”\n\n\nToo long\n“Condense this to the 3 most important points”",
     "crumbs": [
-      "Large Language Models"
+      "AI Prompting"
     ]
   },
   {
-    "objectID": "workshops/large-language-models.html#decoder-only",
-    "href": "workshops/large-language-models.html#decoder-only",
-    "title": "Working with Large Language Models",
-    "section": "Decoder-Only",
-    "text": "Decoder-Only\n\nHow it works:\n\nFocuses on generating text.\nTakes prompt/conversation history -&gt; predicts next word, then next, etc.\nBuilds output sequence.\n\nAnalogy: Creative writer or conversation.\n\nWriter starts with sentence and continues story.\nConversation builds upon previous turns.\n\nKey Feature: Ideal for original text creation.\n\n\nMixture of Experts (MoE)\n\nHow it works:\n\nUses multiple smaller “expert” models.\nEach expert specialized in different aspect.\n“Gating network” decides which expert(s) to use.\n\nAnalogy: Large company with departments.\n\nManager (gating network) assigns project to relevant departments.\n\nKey Feature: Efficient scaling to large models/datasets.\n\nOnly subset of experts activated per input.\nImproves performance and reduces cost.\nUsed in large chatbot models.",
+    "objectID": "workshops/prompting-page.html#iteration-example",
+    "href": "workshops/prompting-page.html#iteration-example",
+    "title": "Lecture - AI Prompting for Researchers",
+    "section": "Iteration Example",
+    "text": "Iteration Example\n\n\n\n\n\n\nNotePrompt 1 — Starting Point\n\n\n\n“I need help choosing a statistical test for my research.”\n\n\n. . .\n\n\n\n\n\n\nNotePrompt 2 — Adding Context\n\n\n\n“I have survey data from 200 respondents. My dependent variable is satisfaction (measured on a 5-point Likert scale) and I want to compare results across 3 age groups. I am using SPSS.”\n\n\n. . .\n\n\n\n\n\n\nNotePrompt 3 — Refining Further\n\n\n\n“My data is not normally distributed according to the Shapiro-Wilk test. What non-parametric alternative should I use, and how do I run it in SPSS? Also, how should I report the results in APA format?”",
     "crumbs": [
-      "Large Language Models"
+      "AI Prompting"
     ]
   },
   {
-    "objectID": "workshops/large-language-models.html#the-training-process",
-    "href": "workshops/large-language-models.html#the-training-process",
-    "title": "Working with Large Language Models",
-    "section": "The Training Process",
-    "text": "The Training Process\n\nLLMs learn via “pre-training” on massive text/code datasets.\n\n\nInput Processing:\n\nModel receives token sequence.\nText broken into tokens (words, subwords, characters).\n\nPrediction Task:\n\nGiven sequence, predict next token.\nLike filling in the blank: “The cat sat on the ___”\n\nLearning Loop:\n\nMake prediction.\nCompare to actual answer.\nAdjust internal parameters.\nRepeat billions of times.\n\n\n\n\n\n\n\n\nNote\n\n\n\nThis process requires enormous computational resources - training a large model can cost millions of dollars in computing power!",
+    "objectID": "workshops/prompting-page.html#what-changed",
+    "href": "workshops/prompting-page.html#what-changed",
+    "title": "Lecture - AI Prompting for Researchers",
+    "section": "What Changed?",
+    "text": "What Changed?\n\nPrompt 1 would get a generic overview of statistical tests\nPrompt 2 gives enough context for a specific recommendation\nPrompt 3 addresses a real-world complication and asks for actionable output\n\n. . .\nEach iteration builds on the previous response, turning a vague question into a concrete, usable answer. The AI retains context from the full conversation.",
     "crumbs": [
-      "Large Language Models"
+      "AI Prompting"
     ]
   },
   {
-    "objectID": "workshops/large-language-models.html#computational-power-and-parallelism",
-    "href": "workshops/large-language-models.html#computational-power-and-parallelism",
-    "title": "Working with Large Language Models",
-    "section": "Computational Power and Parallelism",
-    "text": "Computational Power and Parallelism\n\nTraining needs immense computational power.\nSpecialized hardware: GPUs (Graphics Processing Units).\nModel Parallelism: Distributes model parts across multiple GPUs.\n\nSpeeds up training via parallel processing.\nReason for Nvidia’s stock increase.",
+    "objectID": "workshops/prompting-page.html#before-the-lazy-prompt",
+    "href": "workshops/prompting-page.html#before-the-lazy-prompt",
+    "title": "Lecture - AI Prompting for Researchers",
+    "section": "Before: The Lazy Prompt",
+    "text": "Before: The Lazy Prompt\n\n“Help me with my literature review on climate change”\n\n. . .\nResult: A generic list of well-known climate change topics, basic search strategies, and textbook advice about synthesising sources. Nothing specific to your actual research.",
     "crumbs": [
-      "Large Language Models"
+      "AI Prompting"
     ]
   },
   {
-    "objectID": "workshops/large-language-models.html#training-phases",
-    "href": "workshops/large-language-models.html#training-phases",
-    "title": "Working with Large Language Models",
-    "section": "Training Phases",
-    "text": "Training Phases\n\nTraining process often divided into phases:\nSelf-Supervised Learning:\n\nTrained on massive dataset without explicit labels.\nLearns to predict next token.\nLearns basic language rules and patterns.\nLike learning grammar/vocab by reading books.\n\nSupervised Fine-tuning:\n\nTrained on smaller, labeled dataset for specific tasks.\nSpecialized for tasks like question answering, summarization.\nLike specialized course after learning basics.\n\nReinforcement Learning from Human Feedback (RLHF):\n\nHuman feedback refines model output.\nMakes output more helpful, honest, and harmless.\nAligns text generation with human preferences.\nLike teacher feedback to improve writing.",
+    "objectID": "workshops/prompting-page.html#after-the-rbtf-prompt",
+    "href": "workshops/prompting-page.html#after-the-rbtf-prompt",
+    "title": "Lecture - AI Prompting for Researchers",
+    "section": "After: The RBTF Prompt",
+    "text": "After: The RBTF Prompt\n\nRole: “Act as an expert in environmental economics and systematic review methodology.”\nBackground: “I am a Master’s student at University of Hamburg writing my thesis on the effectiveness of carbon pricing mechanisms in the EU. I have already collected 35 papers focused on the EU Emissions Trading System from 2018–2025.”\nTask: “Analyse the common themes across my collected literature and identify 3 potential research gaps that could form the basis of my thesis contribution.”\nFormat: “Present the themes as a structured table with columns: theme, key findings, authors, and identified gap. Then provide a brief paragraph for each gap explaining why it matters.”",
     "crumbs": [
-      "Large Language Models"
+      "AI Prompting"
     ]
   },
   {
-    "objectID": "workshops/large-language-models.html#bias-a-reflection-of-the-data",
-    "href": "workshops/large-language-models.html#bias-a-reflection-of-the-data",
-    "title": "Working with Large Language Models",
-    "section": "Bias: A Reflection of the Data",
-    "text": "Bias: A Reflection of the Data\n\nLLMs can exhibit biases (gender, racial, cultural, etc.).\nLearn biases from training data.\nBiased training data -&gt; biased output.\n\nExample:\n\nTrained mostly on text by men -&gt; reflect male perspectives/stereotypes.\n\nImpact of Bias:\n\nUnfair/discriminatory outcomes.\nReinforcement of harmful stereotypes.\nErosion of trust in AI.\n\nMitigating Bias:\n\nData Curation: Carefully select diverse training data. Include data from different demographics, languages, cultures.\nModel Fine-tuning: Train on datasets to counteract bias.\nAuditing and Evaluation: Rigorously test models for bias.",
+    "objectID": "workshops/prompting-page.html#the-difference",
+    "href": "workshops/prompting-page.html#the-difference",
+    "title": "Lecture - AI Prompting for Researchers",
+    "section": "The Difference",
+    "text": "The Difference\n\n\nWithout RBTF\n\nGeneric advice\nCould apply to anyone\nNo actionable output\nRequires extensive rework\n\n\nWith RBTF\n\nTailored to your project\nSpecific to your field\nImmediately usable structure\nBuilds on your existing work\n\n\n\n. . .\n\n\n\n\n\n\nThe RBTF prompt takes 2 minutes longer to write but saves hours of back-and-forth.",
     "crumbs": [
-      "Large Language Models"
+      "AI Prompting"
     ]
   },
   {
-    "objectID": "workshops/large-language-models.html#adversarial-attacks-tricking-the-model",
-    "href": "workshops/large-language-models.html#adversarial-attacks-tricking-the-model",
-    "title": "Working with Large Language Models",
-    "section": "Adversarial Attacks: Tricking the Model",
-    "text": "Adversarial Attacks: Tricking the Model\n\nAdversarial attacks: small input changes to mislead LLM.\nExploit model vulnerabilities.\n\nExample:\n\nSlightly change prompt wording -&gt; biased/harmful/nonsensical response.\n\nWhy is this a problem?\n\nManipulate LLMs for malicious purposes.\nSpreading misinformation or generating harmful content.",
+    "objectID": "workshops/prompting-page.html#mistakes-to-avoid",
+    "href": "workshops/prompting-page.html#mistakes-to-avoid",
+    "title": "Lecture - AI Prompting for Researchers",
+    "section": "Mistakes to Avoid",
+    "text": "Mistakes to Avoid\n\n\n\n\n\n\nCautionAccepting the First Response\n\n\n\nAlways iterate. The first output is a starting point, not a final answer. Push the AI to go deeper, be more specific, or reconsider its approach.\n\n\n. . .\n\n\n\n\n\n\nCautionBeing Vague About Format\n\n\n\n“Give me some ideas” produces a generic list. “Give me 5 ideas, each with a one-sentence description and a feasibility rating from 1–5” produces something you can actually work with.\n\n\n. . .\n\n\n\n\n\n\nCautionForgetting to Verify\n\n\n\nAI can produce confident-sounding but incorrect information. Always verify key claims, citations, statistics, and dates against primary sources. Never cite an AI-generated reference without checking it exists.",
     "crumbs": [
-      "Large Language Models"
+      "AI Prompting"
     ]
   },
   {
-    "objectID": "workshops/large-language-models.html#a-broader-view",
-    "href": "workshops/large-language-models.html#a-broader-view",
-    "title": "Working with Large Language Models",
-    "section": "A Broader View",
-    "text": "A Broader View\n\nLLMs raise broader ethical concerns:\nJob Displacement: Automate human tasks -&gt; potential job losses.\n\nHow to prepare for this shift?\n\nMisinformation: Generate realistic fake news easily.\n\nHow to combat misinformation spread?\n\nMalicious Use: Deepfakes, harmful content, propaganda.\n\nWhat safeguards are needed?\n\nPrivacy: Trained on personal data.\n\nData usage and privacy regulations needed?\n\nAccountability: Unclear who is responsible for LLM-generated content.\n\nHow to hold producers/users accountable?\n\nTransparency: Difficult to understand LLM decision-making.\n\nHow to make LLMs more transparent?\n\nAddressing ethical concerns requires: researchers, policymakers, public.",
+    "objectID": "workshops/prompting-page.html#what-to-remember",
+    "href": "workshops/prompting-page.html#what-to-remember",
+    "title": "Lecture - AI Prompting for Researchers",
+    "section": "What to Remember",
+    "text": "What to Remember\n\nContext is everything — the more relevant detail you provide, the better the output\nUse the RBTF Framework — Role, Background, Task, Format\nIterate — treat it as a conversation, not a single query\nSpecify your format — tell the AI exactly how you want the output\nAlways verify — AI is a powerful assistant, not an infallible oracle\n\n. . .\n\n\n\n\n\n\nAI does not replace your expertise. It amplifies it. The better researcher you are, the better results you will get from AI tools.",
     "crumbs": [
-      "Large Language Models"
+      "AI Prompting"
     ]
   },
   {
-    "objectID": "workshops/large-language-models.html#pair-programming-with-llms",
-    "href": "workshops/large-language-models.html#pair-programming-with-llms",
-    "title": "Working with Large Language Models",
-    "section": "Pair Programming with LLMs",
-    "text": "Pair Programming with LLMs\n\nPair programming: two programmers work together.\n\nOne writes code, other reviews/feedback.\n\nLLMs as “AI pair programmer”:\n\nCode Completion: Suggest code snippets, complete lines.\nError Detection: Identify bugs, suggest fixes.\nCode Generation: Generate functions/blocks from instructions.\nCode Explanation: Explain how code works.\nBest Practices: Suggest improvements and best practices.\n\n\nTools for Pair Programming:\n\nGitHub Copilot: VS Code integration, AI-powered suggestions.\nCursor: VS Code fork, more powerful AI features.\nZed: Code editor for pair programming (LLMs and humans). Local and API models.",
+    "objectID": "workshops/prompting-page.html#thank-you",
+    "href": "workshops/prompting-page.html#thank-you",
+    "title": "Lecture - AI Prompting for Researchers",
+    "section": "Thank You",
+    "text": "Thank You\n\n\n\n\n\n\nTipStart Practising Today\n\n\n\nPick one task from your current research — a paragraph to draft, a method to choose, a source to summarise — and try using the RBTF Framework. Compare the result to what you would get from a one-line prompt.",
     "crumbs": [
-      "Large Language Models"
+      "AI Prompting"
     ]
   },
   {
-    "objectID": "workshops/large-language-models.html#tips-for-effective-pair-programming",
-    "href": "workshops/large-language-models.html#tips-for-effective-pair-programming",
-    "title": "Working with Large Language Models",
-    "section": "Tips for Effective Pair Programming",
-    "text": "Tips for Effective Pair Programming\n\nStart with Simple Tasks: Begin with code completion and gradually move to more complex tasks.\nBe Precise in Your Instructions: The more specific your prompt, the better the LLM’s response.\nAlways Review Generated Code: LLMs can make mistakes or suggest inefficient solutions.\nLearn as You Collaborate: Pay attention to new techniques and patterns the LLM introduces.\nIterate and Refine: Use the LLM’s output as a starting point, then improve through conversation.\n\n\n\n\n\n\n\nTip\n\n\n\nManage Context Effectively: Remember that LLMs have a finite context window. For large codebases, focus on specific components rather than the entire project at once. Break down complex problems into manageable chunks.",
+    "objectID": "workshops/prompting-presentation.html#what-we-will-cover",
+    "href": "workshops/prompting-presentation.html#what-we-will-cover",
+    "title": "Lecture - AI Prompting for Researchers",
+    "section": "What We Will Cover",
+    "text": "What We Will Cover\n\nWhy most people get mediocre results from AI\nA simple framework to dramatically improve your prompts\nThe power of iteration over perfection\nCommon mistakes and how to avoid them\n\n\n\n\n\n\n\n\nTip\n\n\nThis is not about tricks or hacks. It is about clear communication — the same skill that makes you a better researcher."
+  },
+  {
+    "objectID": "workshops/prompting-presentation.html#the-typical-experience",
+    "href": "workshops/prompting-presentation.html#the-typical-experience",
+    "title": "Lecture - AI Prompting for Researchers",
+    "section": "The Typical Experience",
+    "text": "The Typical Experience\n\n\nWhat most people type:\n\n“Help me with my literature review”\n\n\nWhat the AI returns:\n\n“A literature review is a comprehensive survey of scholarly sources on a specific topic. Here are some general steps: 1. Define your research question… 2. Search databases… 3. Evaluate sources…”\n\n\n\nThis is correct but useless — generic advice you could find on any study skills website."
+  },
+  {
+    "objectID": "workshops/prompting-presentation.html#why-does-this-happen",
+    "href": "workshops/prompting-presentation.html#why-does-this-happen",
+    "title": "Lecture - AI Prompting for Researchers",
+    "section": "Why Does This Happen?",
+    "text": "Why Does This Happen?\n\nThe AI does not know who you are — a first-year student or a PhD candidate?\nIt does not know what you already have — 5 papers or 50?\nIt does not know what you actually need — a structure, a gap analysis, a synthesis?\nIt does not know how you want it — a table, a paragraph, bullet points?"
+  },
+  {
+    "objectID": "workshops/prompting-presentation.html#the-core-problem",
+    "href": "workshops/prompting-presentation.html#the-core-problem",
+    "title": "Lecture - AI Prompting for Researchers",
+    "section": "The Core Problem",
+    "text": "The Core Problem\n\n\n\n\n\n\nImportant\n\n\nWithout context, AI gives you the average answer for everyone — which helps no one.\n\n\n\n\nThe quality of the output is directly proportional to the quality of the input. This is true for every AI tool, whether it is ChatGPT, Claude, Gemini, or any other system."
+  },
+  {
+    "objectID": "workshops/prompting-presentation.html#context-and-iteration",
+    "href": "workshops/prompting-presentation.html#context-and-iteration",
+    "title": "Lecture - AI Prompting for Researchers",
+    "section": "Context and Iteration",
+    "text": "Context and Iteration\n\n\nContext is Everything\n\nThe more relevant detail you provide, the better the response\nThink of it as briefing a new research assistant\nThey are brilliant but know nothing about your specific project\n\n\nIteration Beats Perfection\n\nYour first prompt does not need to be perfect\nTreat AI conversations as a dialogue, not a one-shot query\nRefine, redirect, and build on each response\n\n\n\n\n\n\n\n\n\nTip\n\n\nYou would never hand a new colleague a one-sentence instruction and expect perfect results. Treat AI the same way."
+  },
+  {
+    "objectID": "workshops/prompting-presentation.html#role-background-task-format",
+    "href": "workshops/prompting-presentation.html#role-background-task-format",
+    "title": "Lecture - AI Prompting for Researchers",
+    "section": "Role, Background, Task, Format",
+    "text": "Role, Background, Task, Format\n\n\n\n\n\n\n\n\nComponent\nQuestion to Ask Yourself\nExample\n\n\n\n\nRole\nWho should the AI act as?\n“Act as a methodologist in social science research”\n\n\nBackground\nWhat context does it need?\n“I am writing my Master’s thesis on climate policy in the EU”\n\n\nTask\nWhat exactly should it do?\n“Identify gaps in my literature on carbon pricing mechanisms”\n\n\nFormat\nHow should the output look?\n“Present this as a table with columns: gap, relevant authors, potential research questions”"
+  },
+  {
+    "objectID": "workshops/prompting-presentation.html#why-rbtf-works",
+    "href": "workshops/prompting-presentation.html#why-rbtf-works",
+    "title": "Lecture - AI Prompting for Researchers",
+    "section": "Why RBTF Works",
+    "text": "Why RBTF Works\n\nRole — shapes the expertise and tone of the response\nBackground — anchors the answer to your specific situation\nTask — eliminates ambiguity about what you need\nFormat — ensures the output is immediately usable\n\n\n\n\n\n\n\n\nNote\n\n\nYou do not always need all four components. But the more you include, the better the result will be."
+  },
+  {
+    "objectID": "workshops/prompting-presentation.html#context-in-action-before",
+    "href": "workshops/prompting-presentation.html#context-in-action-before",
+    "title": "Lecture - AI Prompting for Researchers",
+    "section": "Context in Action: Before",
+    "text": "Context in Action: Before\n\n“Explain machine learning”\n\n\nAI Response: “Machine learning is a subset of artificial intelligence that enables systems to learn from data and improve over time without being explicitly programmed. There are three main types: supervised learning, unsupervised learning, and reinforcement learning…”\n\n\nA textbook answer. Fine if you are a complete beginner, but not tailored to anyone."
+  },
+  {
+    "objectID": "workshops/prompting-presentation.html#context-in-action-after",
+    "href": "workshops/prompting-presentation.html#context-in-action-after",
+    "title": "Lecture - AI Prompting for Researchers",
+    "section": "Context in Action: After",
+    "text": "Context in Action: After\n\n“I am a social scientist studying voting behaviour. I have no programming background, but I need to understand how machine learning could help me predict election turnout from demographic data. Explain the key concepts I would need, avoiding technical jargon, and suggest which ML approach would suit my small dataset of 2,000 observations.”\n\n\nThis prompt gives the AI everything it needs to provide a genuinely useful, specific response — tailored to the researcher’s discipline, skill level, and dataset."
+  },
+  {
+    "objectID": "workshops/prompting-presentation.html#refining-your-results",
+    "href": "workshops/prompting-presentation.html#refining-your-results",
+    "title": "Lecture - AI Prompting for Researchers",
+    "section": "Refining Your Results",
+    "text": "Refining Your Results\nYour first response will rarely be exactly what you need. That is normal. Use follow-up prompts to steer the conversation.\n\n\n\n\n\n\n\n\nWhen you get…\nSay this…\n\n\n\n\nToo broad\n“Focus specifically on [X] and go deeper”\n\n\nToo technical\n“Explain this for someone without a background in [field]”\n\n\nToo superficial\n“Provide more detail, especially regarding [aspect]”\n\n\nWrong angle\n“Approach this from the perspective of [discipline/method]”\n\n\nMissing something\n“Also consider [factor/variable/theory]”\n\n\nToo long\n“Condense this to the 3 most important points”"
+  },
+  {
+    "objectID": "workshops/prompting-presentation.html#iteration-example",
+    "href": "workshops/prompting-presentation.html#iteration-example",
+    "title": "Lecture - AI Prompting for Researchers",
+    "section": "Iteration Example",
+    "text": "Iteration Example\n\n\n\n\n\n\nPrompt 1 — Starting Point\n\n\n“I need help choosing a statistical test for my research.”\n\n\n\n\n\n\n\n\n\n\nPrompt 2 — Adding Context\n\n\n“I have survey data from 200 respondents. My dependent variable is satisfaction (measured on a 5-point Likert scale) and I want to compare results across 3 age groups. I am using SPSS.”\n\n\n\n\n\n\n\n\n\n\n\nPrompt 3 — Refining Further\n\n\n“My data is not normally distributed according to the Shapiro-Wilk test. What non-parametric alternative should I use, and how do I run it in SPSS? Also, how should I report the results in APA format?”"
+  },
+  {
+    "objectID": "workshops/prompting-presentation.html#what-changed",
+    "href": "workshops/prompting-presentation.html#what-changed",
+    "title": "Lecture - AI Prompting for Researchers",
+    "section": "What Changed?",
+    "text": "What Changed?\n\nPrompt 1 would get a generic overview of statistical tests\nPrompt 2 gives enough context for a specific recommendation\nPrompt 3 addresses a real-world complication and asks for actionable output\n\n\nEach iteration builds on the previous response, turning a vague question into a concrete, usable answer. The AI retains context from the full conversation."
+  },
+  {
+    "objectID": "workshops/prompting-presentation.html#before-the-lazy-prompt",
+    "href": "workshops/prompting-presentation.html#before-the-lazy-prompt",
+    "title": "Lecture - AI Prompting for Researchers",
+    "section": "Before: The Lazy Prompt",
+    "text": "Before: The Lazy Prompt\n\n“Help me with my literature review on climate change”\n\n\nResult: A generic list of well-known climate change topics, basic search strategies, and textbook advice about synthesising sources. Nothing specific to your actual research."
+  },
+  {
+    "objectID": "workshops/prompting-presentation.html#after-the-rbtf-prompt",
+    "href": "workshops/prompting-presentation.html#after-the-rbtf-prompt",
+    "title": "Lecture - AI Prompting for Researchers",
+    "section": "After: The RBTF Prompt",
+    "text": "After: The RBTF Prompt\n\nRole: “Act as an expert in environmental economics and systematic review methodology.”\nBackground: “I am a Master’s student at University of Hamburg writing my thesis on the effectiveness of carbon pricing mechanisms in the EU. I have already collected 35 papers focused on the EU Emissions Trading System from 2018–2025.”\nTask: “Analyse the common themes across my collected literature and identify 3 potential research gaps that could form the basis of my thesis contribution.”\nFormat: “Present the themes as a structured table with columns: theme, key findings, authors, and identified gap. Then provide a brief paragraph for each gap explaining why it matters.”"
+  },
+  {
+    "objectID": "workshops/prompting-presentation.html#the-difference",
+    "href": "workshops/prompting-presentation.html#the-difference",
+    "title": "Lecture - AI Prompting for Researchers",
+    "section": "The Difference",
+    "text": "The Difference\n\n\nWithout RBTF\n\nGeneric advice\nCould apply to anyone\nNo actionable output\nRequires extensive rework\n\n\nWith RBTF\n\nTailored to your project\nSpecific to your field\nImmediately usable structure\nBuilds on your existing work\n\n\n\n\n\n\n\n\n\nTip\n\n\nThe RBTF prompt takes 2 minutes longer to write but saves hours of back-and-forth."
+  },
+  {
+    "objectID": "workshops/prompting-presentation.html#mistakes-to-avoid",
+    "href": "workshops/prompting-presentation.html#mistakes-to-avoid",
+    "title": "Lecture - AI Prompting for Researchers",
+    "section": "Mistakes to Avoid",
+    "text": "Mistakes to Avoid\n\n\n\n\n\n\nAccepting the First Response\n\n\nAlways iterate. The first output is a starting point, not a final answer. Push the AI to go deeper, be more specific, or reconsider its approach.\n\n\n\n\n\n\n\n\n\n\nBeing Vague About Format\n\n\n“Give me some ideas” produces a generic list. “Give me 5 ideas, each with a one-sentence description and a feasibility rating from 1–5” produces something you can actually work with.\n\n\n\n\n\n\n\n\n\n\n\nForgetting to Verify\n\n\nAI can produce confident-sounding but incorrect information. Always verify key claims, citations, statistics, and dates against primary sources. Never cite an AI-generated reference without checking it exists."
+  },
+  {
+    "objectID": "workshops/prompting-presentation.html#what-to-remember",
+    "href": "workshops/prompting-presentation.html#what-to-remember",
+    "title": "Lecture - AI Prompting for Researchers",
+    "section": "What to Remember",
+    "text": "What to Remember\n\nContext is everything — the more relevant detail you provide, the better the output\nUse the RBTF Framework — Role, Background, Task, Format\nIterate — treat it as a conversation, not a single query\nSpecify your format — tell the AI exactly how you want the output\nAlways verify — AI is a powerful assistant, not an infallible oracle\n\n\n\n\n\n\n\n\nImportant\n\n\nAI does not replace your expertise. It amplifies it. The better researcher you are, the better results you will get from AI tools."
+  },
+  {
+    "objectID": "workshops/prompting-presentation.html#thank-you",
+    "href": "workshops/prompting-presentation.html#thank-you",
+    "title": "Lecture - AI Prompting for Researchers",
+    "section": "Thank You",
+    "text": "Thank You\n\n\n\n\n\n\nStart Practising Today\n\n\nPick one task from your current research — a paragraph to draft, a method to choose, a source to summarise — and try using the RBTF Framework. Compare the result to what you would get from a one-line prompt."
+  },
+  {
+    "objectID": "workshops/literature-research-page.html",
+    "href": "workshops/literature-research-page.html",
+    "title": "Lecture - Structured Literature Research",
+    "section": "",
+    "text": "Today we cover structured literature research\nA core skill for any Bachelor or Master thesis\nIn 30 minutes, you will learn how to:\n\nFormulate a clear research question\nBuild effective search strategies\nUse modern AI tools for discovery\nOrganize references with Zotero\nEvaluate sources critically\n\n\n. . .\n\n\n\n\n\n\nFinding the right literature early saves you weeks of work later.\n\n\n\n\n\n\n\nGoogling randomly and hoping for the best\nReading only what is cited in one paper\nStopping after the first five results\nNot keeping track of what you have already read\nRelying on a single database or search engine\n\n. . .\n\n\n\n\n\n\nThese mistakes lead to incomplete reviews, missed key papers, and wasted time.\n\n\n\n\n\n\n\nA systematic process saves time and produces better results\nThe goal is to find, evaluate, and organize relevant literature\n\n. . .\nThe process at a glance:\n\nFormulate a clear research question\nSearch systematically across databases\nSnowball forwards and backwards\nOrganize references in a manager\nEvaluate sources critically\nWrite your literature review",
     "crumbs": [
-      "Large Language Models"
+      "Literature Research"
     ]
   },
   {
-    "objectID": "workshops/large-language-models.html#ollama",
-    "href": "workshops/large-language-models.html#ollama",
-    "title": "Working with Large Language Models",
-    "section": "Ollama",
-    "text": "Ollama\n\nOllama: free, open-source.\nSimplifies downloading, installing, running LLMs (macOS, Linux, Windows).\nCommand-line interface (CLI), wide model support.\n\nKey Features of Ollama:\n\nEasy Installation: Simple download and install.\nModel Management: Download/manage models from library (Hugging Face).\nCommand-Line Interface: Interact via commands.\nAPI Server: Local API server, integrate in applications.",
+    "objectID": "workshops/literature-research-page.html#welcome",
+    "href": "workshops/literature-research-page.html#welcome",
+    "title": "Lecture - Structured Literature Research",
+    "section": "",
+    "text": "Today we cover structured literature research\nA core skill for any Bachelor or Master thesis\nIn 30 minutes, you will learn how to:\n\nFormulate a clear research question\nBuild effective search strategies\nUse modern AI tools for discovery\nOrganize references with Zotero\nEvaluate sources critically\n\n\n. . .\n\n\n\n\n\n\nFinding the right literature early saves you weeks of work later.",
     "crumbs": [
-      "Large Language Models"
+      "Literature Research"
     ]
   },
   {
-    "objectID": "workshops/large-language-models.html#hardware-requirements",
-    "href": "workshops/large-language-models.html#hardware-requirements",
-    "title": "Working with Large Language Models",
-    "section": "Hardware Requirements",
-    "text": "Hardware Requirements\n\nLocal LLMs need sufficient resources:\n\n\n\n\n\n\n\n\n\nComponent\nRequirement\nNotes\n\n\n\n\nRAM\nMinimum 8GB\n- 16GB recommended- 32GB+ for larger models\n\n\nCPU\nModern multi-core\n- Can run smaller models (&lt; 7B params)- Faster = better performance\n\n\nGPU\nVRAM dependent\n- More VRAM = larger models- NVIDIA GPUs preferred\n\n\nStorage\n10GB+ free\n- Models can be several GB each\n\n\n\n\n\n\n\n\n\nWarning\n\n\n\nPerformance Note: CPU-only can be much slower compared to GPU.",
+    "objectID": "workshops/literature-research-page.html#common-mistakes",
+    "href": "workshops/literature-research-page.html#common-mistakes",
+    "title": "Lecture - Structured Literature Research",
+    "section": "",
+    "text": "Googling randomly and hoping for the best\nReading only what is cited in one paper\nStopping after the first five results\nNot keeping track of what you have already read\nRelying on a single database or search engine\n\n. . .\n\n\n\n\n\n\nThese mistakes lead to incomplete reviews, missed key papers, and wasted time.",
     "crumbs": [
-      "Large Language Models"
+      "Literature Research"
     ]
   },
   {
-    "objectID": "workshops/large-language-models.html#billions-of-parameters-b",
-    "href": "workshops/large-language-models.html#billions-of-parameters-b",
-    "title": "Working with Large Language Models",
-    "section": "Billions of Parameters (B)",
-    "text": "Billions of Parameters (B)\n\nLLMs described by parameters (internal learned values).\nMore parameters -&gt; more capable (generally), larger model, more resources.\nModel size not everything, quality depends on data/training/architecture.\nNewer models can be more efficient.",
+    "objectID": "workshops/literature-research-page.html#a-structured-approach",
+    "href": "workshops/literature-research-page.html#a-structured-approach",
+    "title": "Lecture - Structured Literature Research",
+    "section": "",
+    "text": "A systematic process saves time and produces better results\nThe goal is to find, evaluate, and organize relevant literature\n\n. . .\nThe process at a glance:\n\nFormulate a clear research question\nSearch systematically across databases\nSnowball forwards and backwards\nOrganize references in a manager\nEvaluate sources critically\nWrite your literature review",
     "crumbs": [
-      "Large Language Models"
+      "Literature Research"
     ]
   },
   {
-    "objectID": "workshops/large-language-models.html#size-overview",
-    "href": "workshops/large-language-models.html#size-overview",
-    "title": "Working with Large Language Models",
-    "section": "Size Overview",
-    "text": "Size Overview\n\nSmall Models (&lt; 7B): CPU with 16GB+ RAM. Experimentation, less demanding tasks.\nMedium Models (7B - 13B): Benefit from GPU, sometimes CPU with 32GB+ RAM.\nLarge Models (30B+): Powerful GPU with VRAM needed.\nVery Large Models (70B+): High-end/multiple GPUs.\n\n\n\n\n\n\n\nTip\n\n\n\nModel names like mistral:7b, codellama:34b - “b” = billions of parameters.",
+    "objectID": "workshops/literature-research-page.html#start-broad-then-narrow-down",
+    "href": "workshops/literature-research-page.html#start-broad-then-narrow-down",
+    "title": "Lecture - Structured Literature Research",
+    "section": "Start Broad, Then Narrow Down",
+    "text": "Start Broad, Then Narrow Down\n\nBegin with your general topic area\nAsk yourself: What specifically do I want to investigate?\nNarrow down step by step\n\n. . .\n\n\nToo broad:\n“Vehicle routing problems”\n\nFocused:\n“How do metaheuristics compare to exact methods for vehicle routing problems with time windows?”",
     "crumbs": [
-      "Large Language Models"
+      "Literature Research"
     ]
   },
   {
-    "objectID": "workshops/large-language-models.html#quantization-making-models-smaller",
-    "href": "workshops/large-language-models.html#quantization-making-models-smaller",
-    "title": "Working with Large Language Models",
-    "section": "Quantization: Making Models Smaller",
-    "text": "Quantization: Making Models Smaller\n\nQuantization: Reduce size/compute of LLMs “without significantly impacting performance”.\nRepresent parameters with lower precision (e.g., 8-bit, 4-bit integers).\n\nBenefits of Quantization:\n\nSmaller Model Size: Less RAM/disk needed.\nFaster Inference: Faster low-precision calculations.\nLower Power Consumption: Less hardware demand.\nTrade-offs: Small accuracy decrease possible. More aggressive quantization = more performance impact.\nOllama and Quantization: Supports quantized models from Hugging Face.\n\nq4_0, q8_0 suffixes indicate quantization level.\nq4_0: 4-bit (balance size/quality).\nq8_0: 8-bit (closer to original, larger size).\n\n\n\n\n\n\n\n\nTip\n\n\n\nQuantization levels offer different balance of speed, size, quality. Experiment to find best option for your hardware/needs. Default model often sufficient, quantization not always needed.",
+    "objectID": "workshops/literature-research-page.html#use-a-framework-to-structure-your-question",
+    "href": "workshops/literature-research-page.html#use-a-framework-to-structure-your-question",
+    "title": "Lecture - Structured Literature Research",
+    "section": "Use a Framework to Structure Your Question",
+    "text": "Use a Framework to Structure Your Question\n\nThe PICO framework helps you define your question clearly\n\n. . .\n\n\n\n\n\n\n\n\nElement\nMeaning\nExample\n\n\n\n\nPopulation\nWhat problem or domain?\nVehicle routing with time windows\n\n\nIntervention\nWhat approach or method?\nMetaheuristic algorithms\n\n\nComparison\nCompared to what?\nExact methods (branch-and-bound)\n\n\nOutcome\nWhat do you measure?\nSolution quality, computation time\n\n\n\n. . .\n\n\n\n\n\n\nNot every research question fits PICO perfectly. Use it as a guide, not a strict rule.",
     "crumbs": [
-      "Large Language Models"
+      "Literature Research"
     ]
   },
   {
-    "objectID": "workshops/large-language-models.html#getting-started-with-ollama",
-    "href": "workshops/large-language-models.html#getting-started-with-ollama",
-    "title": "Working with Large Language Models",
-    "section": "Getting Started with Ollama",
-    "text": "Getting Started with Ollama\n\nDownload and Install Ollama: ollama.com.\nPull a Model: ollama pull mistral:7b (terminal/command prompt).\nRun the Model: ollama run mistral:7b (terminal). Chat interface opens.\nAsk a Question: Type prompt and press Enter.\nExperiment: Try different models from the Ollama website model library. Use Hugging Face for more models/quantization.",
+    "objectID": "workshops/literature-research-page.html#your-research-question-guides-everything",
+    "href": "workshops/literature-research-page.html#your-research-question-guides-everything",
+    "title": "Lecture - Structured Literature Research",
+    "section": "Your Research Question Guides Everything",
+    "text": "Your Research Question Guides Everything\n\nA well-defined question determines:\n\nWhich databases to search\nWhich keywords and search terms to use\nWhich papers are relevant and which are not\nWhen you have covered enough ground\n\n\n. . .\n\n\n\n\n\n\nWrite down your research question before you start searching. Revisit and refine it as you learn more about the field.",
     "crumbs": [
-      "Large Language Models"
+      "Literature Research"
     ]
   },
   {
-    "objectID": "workshops/large-language-models.html#talk-to-the-llm-in-code",
-    "href": "workshops/large-language-models.html#talk-to-the-llm-in-code",
-    "title": "Working with Large Language Models",
-    "section": "Talk to the LLM in code",
-    "text": "Talk to the LLM in code\n\nTo talk to the LLM in code, you can use the following code\nMake sure that you have a local Ollama with the model you want to use running!\n\n\nimport requests\nimport json\n\ndef ask_llm(prompt, model=\"mistral:7b\"):\n    \"\"\"\n    Send a prompt to a locally running Ollama model and get the response.\n    \n    Args:\n        prompt (str): The question or prompt to send to the model\n        model (str): The name of the model to use (default: \"mistral:7b\")\n    \n    Returns:\n        str: The model's response\n    \"\"\"\n\n    url = \"http://localhost:11434/api/generate\"\n    \n    data = {\n        \"model\": model,\n        \"prompt\": prompt,\n        \"stream\": False\n    }\n    \n    try:\n        response = requests.post(url, json=data)\n        response.raise_for_status()  # Raise an exception for bad status\n        result = response.json()\n        return result[\"response\"]\n    except requests.exceptions.RequestException as e:\n        return f\"Error: {str(e)}\\nMake sure Ollama is running locally!\"\n\ndef main():\n    print(\"Local LLM Chat (type 'quit' to exit)\")\n    print(\"-\" * 50)\n    \n    while True:\n        user_input = input(\"\\nYour question: \")\n        \n        if user_input.lower() in ['quit', 'exit']:\n            print(\"\\nGoodbye!\")\n            break\n            \n        response = ask_llm(user_input)\n        print(\"\\nResponse:\", response)\n\nif __name__ == \"__main__\":\n    main()\nTo ask questions in Julia, you can use the following code:\n\nusing HTTP\nusing JSON3\n\nfunction send_prompt(prompt::String, model::String=\"mistral:7b\")\n    url = \"http://localhost:11434/api/generate\"\n    headers = [\"Content-Type\" =&gt; \"application/json\"]\n    \n    body = JSON3.write(Dict(\n        \"model\" =&gt; model,\n        \"prompt\" =&gt; prompt,\n        \"stream\" =&gt; false\n    ))\n    \n    response = HTTP.post(url, headers, body)\n    result = JSON3.read(response.body)\n    return result.response\nend\n\nfunction chat()\n    println(\"Chat with AI (type 'exit' to quit)\")\n    println(\"Loading model...\")\n    println(\"Note: Working in the REPL in VS Code is tricky with user input.\")\n    println(\"Thus, you first need to enter some random value and press enter.\")\n    println(\"Then, you can start chatting by asking a question.\")\n    println(\"Afterwards, you can continue by asking questions and pressing enter.\")\n    println(\"To prevent this, you have to run the code in a terminal directly.\")\n    \n    while true\n        print(\"\\nYou: \")\n        user_input = readline()\n        \n        if lowercase(user_input) == \"exit\"\n            println(\"\\nGoodbye!\")\n            break\n        end\n        \n        try\n            response = send_prompt(user_input)\n            println(\"\\nAI: \", response)\n        catch e\n            println(\"\\nError: Make sure Ollama is running and the model is installed.\")\n            println(\"You can install the model with: ollama pull mistral:7b\")\n            break\n        end\n    end\nend\n\n# Start the chat\nchat()",
+    "objectID": "workshops/literature-research-page.html#google-scholar-as-your-starting-point",
+    "href": "workshops/literature-research-page.html#google-scholar-as-your-starting-point",
+    "title": "Lecture - Structured Literature Research",
+    "section": "Google Scholar as Your Starting Point",
+    "text": "Google Scholar as Your Starting Point\n\nGoogle Scholar is the most accessible tool\nFree, broad coverage, easy to use\n\n. . .\n\n\nPros:\n\nFree and always available\nCovers most disciplines\n“Cited by” feature for snowballing\nFull-text search across papers\n\n\nCons:\n\nQuality varies widely\nNo advanced filtering options\nIncludes non-peer-reviewed work\nMetadata can be incomplete",
     "crumbs": [
-      "Large Language Models"
+      "Literature Research"
     ]
   },
   {
-    "objectID": "workshops/large-language-models.html#multimodality-beyond-text",
-    "href": "workshops/large-language-models.html#multimodality-beyond-text",
-    "title": "Working with Large Language Models",
-    "section": "Multimodality: Beyond Text",
-    "text": "Multimodality: Beyond Text\n\nModern LLMs are evolving to work with multiple types of data:\n\nText-to-Image Models: Create detailed images from textual descriptions (DALL-E, Midjourney, Stable Diffusion)\nImage Understanding: Analyze and describe visual content with sophisticated language\nAudio Processing: Convert speech to text and generate natural-sounding speech\nVideo Analysis: Comprehend and narrate the content of video sequences",
+    "objectID": "workshops/literature-research-page.html#google-scholar-tips",
+    "href": "workshops/literature-research-page.html#google-scholar-tips",
+    "title": "Lecture - Structured Literature Research",
+    "section": "Google Scholar Tips",
+    "text": "Google Scholar Tips\n\nUse quotes for exact phrases: \"vehicle routing problem\"\nUse the author: operator: author:taillard\nSet date ranges to find recent work\nUse “Cited by” to find newer papers that reference a key work\nUse “Related articles” for similar papers\n\n. . .\n\n\n\n\n\n\nCreate a Google Scholar profile and set up alerts for your key search terms. You will be notified when new papers match your query.",
     "crumbs": [
-      "Large Language Models"
+      "Literature Research"
     ]
   },
   {
-    "objectID": "workshops/large-language-models.html#specialized-llms",
-    "href": "workshops/large-language-models.html#specialized-llms",
-    "title": "Working with Large Language Models",
-    "section": "Specialized LLMs",
-    "text": "Specialized LLMs\n\nDomain-specific models are emerging to address specialized needs:\n\nMedical LLMs: Trained on medical literature to assist healthcare professionals\nLegal LLMs: Specialized in analyzing legal documents and case law\nScientific Models: Focused on research papers and scientific terminology\nCode-specific Models: Optimized for software development across multiple languages",
+    "objectID": "workshops/literature-research-page.html#other-important-databases",
+    "href": "workshops/literature-research-page.html#other-important-databases",
+    "title": "Lecture - Structured Literature Research",
+    "section": "Other Important Databases",
+    "text": "Other Important Databases\nBeyond Google Scholar, use specialized databases:\n\n\n\nDatabase\nStrength\nAccess\n\n\n\n\nScopus\nComprehensive, citation analysis\nUniversity login\n\n\nWeb of Science\nHigh-quality journals\nUniversity login\n\n\nIEEE Xplore\nEngineering and CS\nUniversity login\n\n\nSSRN\nWorking papers, business/economics\nFree\n\n\nEBSCOhost\nMulti-disciplinary\nUniversity library\n\n\n\n. . .\n\n\n\n\n\n\nAccess most of these through the University of Hamburg library or VPN.",
     "crumbs": [
-      "Large Language Models"
+      "Literature Research"
     ]
   },
   {
-    "objectID": "workshops/large-language-models.html#frontier-research",
-    "href": "workshops/large-language-models.html#frontier-research",
-    "title": "Working with Large Language Models",
-    "section": "Frontier Research",
-    "text": "Frontier Research\n\nCutting-edge research is addressing key challenges:\n\nEnhanced Reasoning: Developing models with stronger logical analysis capabilities\nImproved Factuality: Reducing hallucinations and increasing reliability of information\nModel Efficiency: Creating powerful models that require fewer computational resources\nBetter Alignment: Ensuring models behave according to human values and expectations",
+    "objectID": "workshops/literature-research-page.html#building-search-strings",
+    "href": "workshops/literature-research-page.html#building-search-strings",
+    "title": "Lecture - Structured Literature Research",
+    "section": "Building Search Strings",
+    "text": "Building Search Strings\n\nUse Boolean operators to combine search terms\n\n. . .\nAND — both terms must appear:\n\"vehicle routing\" AND \"metaheuristic\"\n. . .\nOR — either term can appear:\n\"genetic algorithm\" OR \"simulated annealing\"\n. . .\nNOT — exclude a term:\n\"optimization\" NOT \"continuous\"\n. . .\nWildcards — match variations:\noptimi* matches optimize, optimization, optimizing",
     "crumbs": [
-      "Large Language Models"
+      "Literature Research"
     ]
+  },
+  {
+    "objectID": "workshops/literature-research-page.html#putting-it-all-together",
+    "href": "workshops/literature-research-page.html#putting-it-all-together",
+    "title": "Lecture - Structured Literature Research",
+    "section": "Putting It All Together",
+    "text": "Putting It All Together\n\nA complete search string for our example:\n\n. . .\n(\"vehicle routing\" OR \"VRP\") AND\n(\"metaheuristic\" OR \"genetic algorithm\" OR\n\"simulated annealing\") AND \"optimization\"\n. . .\n\nStart broad, then narrow with additional terms\nDocument your search strings so you can reproduce and refine them\nTrack how many results each search returns\n\n. . .\n\n\n\n\n\n\nKeep a search log: record the database, search string, date, and number of results for each search you run.",
+    "crumbs": [
+      "Literature Research"
+    ]
+  },
+  {
+    "objectID": "workshops/literature-research-page.html#snowballing",
+    "href": "workshops/literature-research-page.html#snowballing",
+    "title": "Lecture - Structured Literature Research",
+    "section": "Snowballing",
+    "text": "Snowballing\n\nSnowballing is essential for comprehensive coverage\n\n. . .\n\n\nForward citation tracking:\n\nWho cited this paper?\nUse Google Scholar “Cited by”\nFinds newer work that builds on a key paper\nGreat for finding the latest developments\n\n\nBackward citation tracking:\n\nWhat does this paper cite?\nCheck the reference list\nFinds foundational and seminal papers\nHelps you understand the research lineage\n\n\n\n. . .\n\n\n\n\n\n\nCombine both directions. Forward snowballing finds new work; backward snowballing finds the foundations. Together, they give you the full picture.",
+    "crumbs": [
+      "Literature Research"
+    ]
+  },
+  {
+    "objectID": "workshops/literature-research-page.html#ai-powered-discovery-tools",
+    "href": "workshops/literature-research-page.html#ai-powered-discovery-tools",
+    "title": "Lecture - Structured Literature Research",
+    "section": "AI-Powered Discovery Tools",
+    "text": "AI-Powered Discovery Tools\n\nA new generation of tools uses AI to accelerate literature discovery\nThey complement traditional database searches\n\n. . .\n\n\n\nTool\nWhat It Does\n\n\n\n\nSemantic Scholar\nAI-powered academic search, finds related papers\n\n\nConnected Papers\nVisual graph of related papers\n\n\nElicit\nAI research assistant, extracts key findings",
+    "crumbs": [
+      "Literature Research"
+    ]
+  },
+  {
+    "objectID": "workshops/literature-research-page.html#more-ai-tools",
+    "href": "workshops/literature-research-page.html#more-ai-tools",
+    "title": "Lecture - Structured Literature Research",
+    "section": "More AI Tools",
+    "text": "More AI Tools\n\n\n\nTool\nWhat It Does\n\n\n\n\nResearch Rabbit\nDiscovers related work from seed papers\n\n\nConsensus\nAI search engine for research findings\n\n\nPerplexity\nAI search with academic sources\n\n\n\n. . .\n\nThese tools are particularly useful for:\n\nFinding papers you would not discover through keyword search alone\nUnderstanding how papers relate to each other\nGetting a quick overview of a research field",
+    "crumbs": [
+      "Literature Research"
+    ]
+  },
+  {
+    "objectID": "workshops/literature-research-page.html#how-to-use-ai-tools-effectively",
+    "href": "workshops/literature-research-page.html#how-to-use-ai-tools-effectively",
+    "title": "Lecture - Structured Literature Research",
+    "section": "How to Use AI Tools Effectively",
+    "text": "How to Use AI Tools Effectively\n\nStart with a seed paper you know is relevant\nUse Connected Papers to visualize the research landscape\nUse Semantic Scholar to find semantically similar papers\nUse Elicit to quickly extract findings across many papers\n\n. . .\n\n\n\n\n\n\nWarningImportant Caveat\n\n\n\nAI tools are helpful for discovery, but always verify: check the actual paper, read abstracts yourself, and do not trust AI summaries blindly. AI can hallucinate references that do not exist.",
+    "crumbs": [
+      "Literature Research"
+    ]
+  },
+  {
+    "objectID": "workshops/literature-research-page.html#combining-traditional-and-ai-search",
+    "href": "workshops/literature-research-page.html#combining-traditional-and-ai-search",
+    "title": "Lecture - Structured Literature Research",
+    "section": "Combining Traditional and AI Search",
+    "text": "Combining Traditional and AI Search\n\nNo single tool is sufficient on its own\nUse a layered approach:\n\n. . .\n\nStart with Google Scholar and database searches\nExpand with AI tools (Semantic Scholar, Connected Papers)\nSnowball forwards and backwards from key papers\nVerify everything you find by reading the actual papers\n\n. . .\n\n\n\n\n\n\nThink of AI tools as a way to cast a wider net, not as a replacement for careful reading and evaluation.",
+    "crumbs": [
+      "Literature Research"
+    ]
+  },
+  {
+    "objectID": "workshops/literature-research-page.html#why-use-a-reference-manager",
+    "href": "workshops/literature-research-page.html#why-use-a-reference-manager",
+    "title": "Lecture - Structured Literature Research",
+    "section": "Why Use a Reference Manager?",
+    "text": "Why Use a Reference Manager?\n\nYou will read dozens to hundreds of papers\nWithout a system, you will:\n\nLose track of what you have read\nWaste time reformatting citations\nMiss papers when writing your bibliography\n\n\n. . .\n\nA reference manager helps you:\n\nOrganize papers by topic and project\nCite correctly in any format\nCollaborate with others\nSync across devices",
+    "crumbs": [
+      "Literature Research"
+    ]
+  },
+  {
+    "objectID": "workshops/literature-research-page.html#zotero-the-recommended-tool",
+    "href": "workshops/literature-research-page.html#zotero-the-recommended-tool",
+    "title": "Lecture - Structured Literature Research",
+    "section": "Zotero — The Recommended Tool",
+    "text": "Zotero — The Recommended Tool\n\nZotero is free and open-source\nWorks on Windows, Mac, and Linux\n\n. . .\nKey features:\n\nBrowser connector — save papers with one click\nPDF storage — attach and annotate PDFs directly\nCollections — organize papers into folders\nTags — add custom labels for flexible organization\nGroups — share libraries for collaborative projects\nSync — access your library from any device\n\n. . .\n\n\n\n\n\n\nAlways import via DOI when possible. This gives you the most accurate and complete metadata. After importing, always check that the data is correct.",
+    "crumbs": [
+      "Literature Research"
+    ]
+  },
+  {
+    "objectID": "workshops/literature-research-page.html#better-bibtex-plugin",
+    "href": "workshops/literature-research-page.html#better-bibtex-plugin",
+    "title": "Lecture - Structured Literature Research",
+    "section": "Better BibTeX Plugin",
+    "text": "Better BibTeX Plugin\n\nBetter BibTeX is essential for Quarto and LaTeX users\n\n. . .\n\nAuto-exports .bib files that stay in sync\nGenerates consistent citation keys (e.g., taillard1993)\nKeeps your .bib file updated automatically when you add new papers\n\n. . .\n\n\n\n\n\n\nSet up Better BibTeX once and your bibliography file will always be up to date. No more manual .bib file editing.",
+    "crumbs": [
+      "Literature Research"
+    ]
+  },
+  {
+    "objectID": "workshops/literature-research-page.html#the-zotero-workflow",
+    "href": "workshops/literature-research-page.html#the-zotero-workflow",
+    "title": "Lecture - Structured Literature Research",
+    "section": "The Zotero Workflow",
+    "text": "The Zotero Workflow\nA streamlined workflow for your seminar or thesis:\n. . .\n\nFind a paper via Google Scholar, Scopus, or an AI tool\nSave it with the Zotero browser connector or import via DOI\nOrganize it into a collection for your project\nAuto-export a .bib file with Better BibTeX\nCite in Quarto using [@citationkey]\n\n. . .\n\n\nIn your .qmd file:\nRecent work by [@taillard1993]\nshows that...\n\nRendered output:\nRecent work by Taillard (1993) shows that…",
+    "crumbs": [
+      "Literature Research"
+    ]
+  },
+  {
+    "objectID": "workshops/literature-research-page.html#types-of-sources",
+    "href": "workshops/literature-research-page.html#types-of-sources",
+    "title": "Lecture - Structured Literature Research",
+    "section": "Types of Sources",
+    "text": "Types of Sources\n\nNot all sources are created equal\n\n. . .\n\n\n\nSource Type\nReliability\nPeer-Reviewed?\n\n\n\n\nJournal articles\nHigh\nYes\n\n\nConference papers\nMedium–High\nUsually\n\n\nPreprints (arXiv)\nVariable\nNo\n\n\nTextbooks\nHigh\nEditorial review\n\n\nWorking papers (SSRN)\nVariable\nNo\n\n\nBlog posts, websites\nLow–Variable\nNo\n\n\n\n. . .\n\n\n\n\n\n\nPrefer peer-reviewed journal articles and reputable conference proceedings. Use preprints and working papers with caution.",
+    "crumbs": [
+      "Literature Research"
+    ]
+  },
+  {
+    "objectID": "workshops/literature-research-page.html#what-to-check",
+    "href": "workshops/literature-research-page.html#what-to-check",
+    "title": "Lecture - Structured Literature Research",
+    "section": "What to Check",
+    "text": "What to Check\n\nWhen evaluating a paper, consider the following quality indicators:\n\n. . .\n\nJournal reputation — Is it a recognized journal in the field?\nAuthor credentials — Are the authors established researchers?\nMethodology — Is the approach rigorous and well-described?\nRecency — Is the paper still current, or has it been superseded?\nCitations — Has it been cited by others? How many times?\n\n. . .\n\n\n\n\n\n\nFor operations research specifically: check the benchmark instances used, the computational setup, and whether the results are reproducible.",
+    "crumbs": [
+      "Literature Research"
+    ]
+  },
+  {
+    "objectID": "workshops/literature-research-page.html#read-critically",
+    "href": "workshops/literature-research-page.html#read-critically",
+    "title": "Lecture - Structured Literature Research",
+    "section": "Read Critically",
+    "text": "Read Critically\n\nDo not accept results at face value\nAsk yourself:\n\n. . .\n\nIs the sample size sufficient?\nAre the assumptions reasonable?\nDo the conclusions follow from the results?\nCan the findings be generalized to other contexts?\nAre there limitations the authors do not discuss?\n\n. . .\n\n\n\n\n\n\nA good literature review is not about reading everything — it is about finding and connecting the right papers.",
+    "crumbs": [
+      "Literature Research"
+    ]
+  },
+  {
+    "objectID": "workshops/literature-research-page.html#the-literature-research-process",
+    "href": "workshops/literature-research-page.html#the-literature-research-process",
+    "title": "Lecture - Structured Literature Research",
+    "section": "The Literature Research Process",
+    "text": "The Literature Research Process\nPutting it all together:\n. . .\n\nQuestion — Define a clear, focused research question\nSearch — Use databases, Boolean operators, and search strings\nSnowball — Follow citations forwards and backwards\nDiscover — Use AI tools to find related work\nOrganize — Store everything in Zotero with Better BibTeX\nEvaluate — Assess quality, relevance, and reliability\nWrite — Synthesize findings into a coherent review\n\n. . .\n\n\n\n\n\n\nStart your literature research early. It is an iterative process that improves as you learn more about your topic.",
+    "crumbs": [
+      "Literature Research"
+    ]
+  },
+  {
+    "objectID": "workshops/literature-research-page.html#key-resources",
+    "href": "workshops/literature-research-page.html#key-resources",
+    "title": "Lecture - Structured Literature Research",
+    "section": "Key Resources",
+    "text": "Key Resources\n\n\n\nResource\nLink\n\n\n\n\nGoogle Scholar\nscholar.google.com\n\n\nSemantic Scholar\nsemanticscholar.org\n\n\nConnected Papers\nconnectedpapers.com\n\n\nElicit\nelicit.com\n\n\nResearch Rabbit\nresearchrabbit.ai\n\n\nZotero\nzotero.org\n\n\nBetter BibTeX\nretorque.re/zotero-better-bibtex\n\n\nUHH Library\nsub.uni-hamburg.de\n\n\n\n. . .\n\n\n\n\n\n\nBe systematic, use the right tools, and start early. Your future self will thank you.",
+    "crumbs": [
+      "Literature Research"
+    ]
+  },
+  {
+    "objectID": "workshops/literature-research-presentation.html#welcome",
+    "href": "workshops/literature-research-presentation.html#welcome",
+    "title": "Lecture - Structured Literature Research",
+    "section": "Welcome",
+    "text": "Welcome\n\nToday we cover structured literature research\nA core skill for any Bachelor or Master thesis\nIn 30 minutes, you will learn how to:\n\nFormulate a clear research question\nBuild effective search strategies\nUse modern AI tools for discovery\nOrganize references with Zotero\nEvaluate sources critically\n\n\n\n\n\n\n\n\n\nTip\n\n\nFinding the right literature early saves you weeks of work later."
+  },
+  {
+    "objectID": "workshops/literature-research-presentation.html#common-mistakes",
+    "href": "workshops/literature-research-presentation.html#common-mistakes",
+    "title": "Lecture - Structured Literature Research",
+    "section": "Common Mistakes",
+    "text": "Common Mistakes\n\nGoogling randomly and hoping for the best\nReading only what is cited in one paper\nStopping after the first five results\nNot keeping track of what you have already read\nRelying on a single database or search engine\n\n\n\n\n\n\n\n\nWarning\n\n\nThese mistakes lead to incomplete reviews, missed key papers, and wasted time."
+  },
+  {
+    "objectID": "workshops/literature-research-presentation.html#a-structured-approach",
+    "href": "workshops/literature-research-presentation.html#a-structured-approach",
+    "title": "Lecture - Structured Literature Research",
+    "section": "A Structured Approach",
+    "text": "A Structured Approach\n\nA systematic process saves time and produces better results\nThe goal is to find, evaluate, and organize relevant literature\n\n\nThe process at a glance:\n\nFormulate a clear research question\nSearch systematically across databases\nSnowball forwards and backwards\nOrganize references in a manager\nEvaluate sources critically\nWrite your literature review"
+  },
+  {
+    "objectID": "workshops/literature-research-presentation.html#start-broad-then-narrow-down",
+    "href": "workshops/literature-research-presentation.html#start-broad-then-narrow-down",
+    "title": "Lecture - Structured Literature Research",
+    "section": "Start Broad, Then Narrow Down",
+    "text": "Start Broad, Then Narrow Down\n\nBegin with your general topic area\nAsk yourself: What specifically do I want to investigate?\nNarrow down step by step\n\n\n\n\nToo broad:\n“Vehicle routing problems”\n\nFocused:\n“How do metaheuristics compare to exact methods for vehicle routing problems with time windows?”"
+  },
+  {
+    "objectID": "workshops/literature-research-presentation.html#use-a-framework-to-structure-your-question",
+    "href": "workshops/literature-research-presentation.html#use-a-framework-to-structure-your-question",
+    "title": "Lecture - Structured Literature Research",
+    "section": "Use a Framework to Structure Your Question",
+    "text": "Use a Framework to Structure Your Question\n\nThe PICO framework helps you define your question clearly\n\n\n\n\n\n\n\n\n\n\nElement\nMeaning\nExample\n\n\n\n\nPopulation\nWhat problem or domain?\nVehicle routing with time windows\n\n\nIntervention\nWhat approach or method?\nMetaheuristic algorithms\n\n\nComparison\nCompared to what?\nExact methods (branch-and-bound)\n\n\nOutcome\nWhat do you measure?\nSolution quality, computation time\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nNot every research question fits PICO perfectly. Use it as a guide, not a strict rule."
+  },
+  {
+    "objectID": "workshops/literature-research-presentation.html#your-research-question-guides-everything",
+    "href": "workshops/literature-research-presentation.html#your-research-question-guides-everything",
+    "title": "Lecture - Structured Literature Research",
+    "section": "Your Research Question Guides Everything",
+    "text": "Your Research Question Guides Everything\n\nA well-defined question determines:\n\nWhich databases to search\nWhich keywords and search terms to use\nWhich papers are relevant and which are not\nWhen you have covered enough ground\n\n\n\n\n\n\n\n\n\nImportant\n\n\nWrite down your research question before you start searching. Revisit and refine it as you learn more about the field."
+  },
+  {
+    "objectID": "workshops/literature-research-presentation.html#google-scholar-as-your-starting-point",
+    "href": "workshops/literature-research-presentation.html#google-scholar-as-your-starting-point",
+    "title": "Lecture - Structured Literature Research",
+    "section": "Google Scholar as Your Starting Point",
+    "text": "Google Scholar as Your Starting Point\n\nGoogle Scholar is the most accessible tool\nFree, broad coverage, easy to use\n\n\n\n\nPros:\n\nFree and always available\nCovers most disciplines\n“Cited by” feature for snowballing\nFull-text search across papers\n\n\nCons:\n\nQuality varies widely\nNo advanced filtering options\nIncludes non-peer-reviewed work\nMetadata can be incomplete"
+  },
+  {
+    "objectID": "workshops/literature-research-presentation.html#google-scholar-tips",
+    "href": "workshops/literature-research-presentation.html#google-scholar-tips",
+    "title": "Lecture - Structured Literature Research",
+    "section": "Google Scholar Tips",
+    "text": "Google Scholar Tips\n\nUse quotes for exact phrases: \"vehicle routing problem\"\nUse the author: operator: author:taillard\nSet date ranges to find recent work\nUse “Cited by” to find newer papers that reference a key work\nUse “Related articles” for similar papers\n\n\n\n\n\n\n\n\nTip\n\n\nCreate a Google Scholar profile and set up alerts for your key search terms. You will be notified when new papers match your query."
+  },
+  {
+    "objectID": "workshops/literature-research-presentation.html#other-important-databases",
+    "href": "workshops/literature-research-presentation.html#other-important-databases",
+    "title": "Lecture - Structured Literature Research",
+    "section": "Other Important Databases",
+    "text": "Other Important Databases\nBeyond Google Scholar, use specialized databases:\n\n\n\nDatabase\nStrength\nAccess\n\n\n\n\nScopus\nComprehensive, citation analysis\nUniversity login\n\n\nWeb of Science\nHigh-quality journals\nUniversity login\n\n\nIEEE Xplore\nEngineering and CS\nUniversity login\n\n\nSSRN\nWorking papers, business/economics\nFree\n\n\nEBSCOhost\nMulti-disciplinary\nUniversity library\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nAccess most of these through the University of Hamburg library or VPN."
+  },
+  {
+    "objectID": "workshops/literature-research-presentation.html#building-search-strings",
+    "href": "workshops/literature-research-presentation.html#building-search-strings",
+    "title": "Lecture - Structured Literature Research",
+    "section": "Building Search Strings",
+    "text": "Building Search Strings\n\nUse Boolean operators to combine search terms\n\n\nAND — both terms must appear:\n\"vehicle routing\" AND \"metaheuristic\"\n\n\nOR — either term can appear:\n\"genetic algorithm\" OR \"simulated annealing\"\n\n\nNOT — exclude a term:\n\"optimization\" NOT \"continuous\"\n\n\nWildcards — match variations:\noptimi* matches optimize, optimization, optimizing"
+  },
+  {
+    "objectID": "workshops/literature-research-presentation.html#putting-it-all-together",
+    "href": "workshops/literature-research-presentation.html#putting-it-all-together",
+    "title": "Lecture - Structured Literature Research",
+    "section": "Putting It All Together",
+    "text": "Putting It All Together\n\nA complete search string for our example:\n\n\n(\"vehicle routing\" OR \"VRP\") AND\n(\"metaheuristic\" OR \"genetic algorithm\" OR\n\"simulated annealing\") AND \"optimization\"\n\n\n\nStart broad, then narrow with additional terms\nDocument your search strings so you can reproduce and refine them\nTrack how many results each search returns\n\n\n\n\n\n\n\n\n\nTip\n\n\nKeep a search log: record the database, search string, date, and number of results for each search you run."
+  },
+  {
+    "objectID": "workshops/literature-research-presentation.html#snowballing",
+    "href": "workshops/literature-research-presentation.html#snowballing",
+    "title": "Lecture - Structured Literature Research",
+    "section": "Snowballing",
+    "text": "Snowballing\n\nSnowballing is essential for comprehensive coverage\n\n\n\n\nForward citation tracking:\n\nWho cited this paper?\nUse Google Scholar “Cited by”\nFinds newer work that builds on a key paper\nGreat for finding the latest developments\n\n\nBackward citation tracking:\n\nWhat does this paper cite?\nCheck the reference list\nFinds foundational and seminal papers\nHelps you understand the research lineage\n\n\n\n\n\n\n\n\n\n\nImportant\n\n\nCombine both directions. Forward snowballing finds new work; backward snowballing finds the foundations. Together, they give you the full picture."
+  },
+  {
+    "objectID": "workshops/literature-research-presentation.html#ai-powered-discovery-tools",
+    "href": "workshops/literature-research-presentation.html#ai-powered-discovery-tools",
+    "title": "Lecture - Structured Literature Research",
+    "section": "AI-Powered Discovery Tools",
+    "text": "AI-Powered Discovery Tools\n\nA new generation of tools uses AI to accelerate literature discovery\nThey complement traditional database searches\n\n\n\n\n\nTool\nWhat It Does\n\n\n\n\nSemantic Scholar\nAI-powered academic search, finds related papers\n\n\nConnected Papers\nVisual graph of related papers\n\n\nElicit\nAI research assistant, extracts key findings"
+  },
+  {
+    "objectID": "workshops/literature-research-presentation.html#more-ai-tools",
+    "href": "workshops/literature-research-presentation.html#more-ai-tools",
+    "title": "Lecture - Structured Literature Research",
+    "section": "More AI Tools",
+    "text": "More AI Tools\n\n\n\nTool\nWhat It Does\n\n\n\n\nResearch Rabbit\nDiscovers related work from seed papers\n\n\nConsensus\nAI search engine for research findings\n\n\nPerplexity\nAI search with academic sources\n\n\n\n\n\nThese tools are particularly useful for:\n\nFinding papers you would not discover through keyword search alone\nUnderstanding how papers relate to each other\nGetting a quick overview of a research field"
+  },
+  {
+    "objectID": "workshops/literature-research-presentation.html#how-to-use-ai-tools-effectively",
+    "href": "workshops/literature-research-presentation.html#how-to-use-ai-tools-effectively",
+    "title": "Lecture - Structured Literature Research",
+    "section": "How to Use AI Tools Effectively",
+    "text": "How to Use AI Tools Effectively\n\nStart with a seed paper you know is relevant\nUse Connected Papers to visualize the research landscape\nUse Semantic Scholar to find semantically similar papers\nUse Elicit to quickly extract findings across many papers\n\n\n\n\n\n\n\n\nImportant Caveat\n\n\nAI tools are helpful for discovery, but always verify: check the actual paper, read abstracts yourself, and do not trust AI summaries blindly. AI can hallucinate references that do not exist."
+  },
+  {
+    "objectID": "workshops/literature-research-presentation.html#combining-traditional-and-ai-search",
+    "href": "workshops/literature-research-presentation.html#combining-traditional-and-ai-search",
+    "title": "Lecture - Structured Literature Research",
+    "section": "Combining Traditional and AI Search",
+    "text": "Combining Traditional and AI Search\n\nNo single tool is sufficient on its own\nUse a layered approach:\n\n\n\nStart with Google Scholar and database searches\nExpand with AI tools (Semantic Scholar, Connected Papers)\nSnowball forwards and backwards from key papers\nVerify everything you find by reading the actual papers\n\n\n\n\n\n\n\n\n\nTip\n\n\nThink of AI tools as a way to cast a wider net, not as a replacement for careful reading and evaluation."
+  },
+  {
+    "objectID": "workshops/literature-research-presentation.html#why-use-a-reference-manager",
+    "href": "workshops/literature-research-presentation.html#why-use-a-reference-manager",
+    "title": "Lecture - Structured Literature Research",
+    "section": "Why Use a Reference Manager?",
+    "text": "Why Use a Reference Manager?\n\nYou will read dozens to hundreds of papers\nWithout a system, you will:\n\nLose track of what you have read\nWaste time reformatting citations\nMiss papers when writing your bibliography\n\n\n\n\nA reference manager helps you:\n\nOrganize papers by topic and project\nCite correctly in any format\nCollaborate with others\nSync across devices"
+  },
+  {
+    "objectID": "workshops/literature-research-presentation.html#zotero-the-recommended-tool",
+    "href": "workshops/literature-research-presentation.html#zotero-the-recommended-tool",
+    "title": "Lecture - Structured Literature Research",
+    "section": "Zotero — The Recommended Tool",
+    "text": "Zotero — The Recommended Tool\n\nZotero is free and open-source\nWorks on Windows, Mac, and Linux\n\n\nKey features:\n\nBrowser connector — save papers with one click\nPDF storage — attach and annotate PDFs directly\nCollections — organize papers into folders\nTags — add custom labels for flexible organization\nGroups — share libraries for collaborative projects\nSync — access your library from any device\n\n\n\n\n\n\n\n\n\nImportant\n\n\nAlways import via DOI when possible. This gives you the most accurate and complete metadata. After importing, always check that the data is correct."
+  },
+  {
+    "objectID": "workshops/literature-research-presentation.html#better-bibtex-plugin",
+    "href": "workshops/literature-research-presentation.html#better-bibtex-plugin",
+    "title": "Lecture - Structured Literature Research",
+    "section": "Better BibTeX Plugin",
+    "text": "Better BibTeX Plugin\n\nBetter BibTeX is essential for Quarto and LaTeX users\n\n\n\nAuto-exports .bib files that stay in sync\nGenerates consistent citation keys (e.g., taillard1993)\nKeeps your .bib file updated automatically when you add new papers\n\n\n\n\n\n\n\n\n\nTip\n\n\nSet up Better BibTeX once and your bibliography file will always be up to date. No more manual .bib file editing."
+  },
+  {
+    "objectID": "workshops/literature-research-presentation.html#the-zotero-workflow",
+    "href": "workshops/literature-research-presentation.html#the-zotero-workflow",
+    "title": "Lecture - Structured Literature Research",
+    "section": "The Zotero Workflow",
+    "text": "The Zotero Workflow\nA streamlined workflow for your seminar or thesis:\n\n\nFind a paper via Google Scholar, Scopus, or an AI tool\nSave it with the Zotero browser connector or import via DOI\nOrganize it into a collection for your project\nAuto-export a .bib file with Better BibTeX\nCite in Quarto using [@citationkey]\n\n\n\n\n\nIn your .qmd file:\nRecent work by [@taillard1993]\nshows that...\n\nRendered output:\nRecent work by Taillard (1993) shows that…"
+  },
+  {
+    "objectID": "workshops/literature-research-presentation.html#types-of-sources",
+    "href": "workshops/literature-research-presentation.html#types-of-sources",
+    "title": "Lecture - Structured Literature Research",
+    "section": "Types of Sources",
+    "text": "Types of Sources\n\nNot all sources are created equal\n\n\n\n\n\nSource Type\nReliability\nPeer-Reviewed?\n\n\n\n\nJournal articles\nHigh\nYes\n\n\nConference papers\nMedium–High\nUsually\n\n\nPreprints (arXiv)\nVariable\nNo\n\n\nTextbooks\nHigh\nEditorial review\n\n\nWorking papers (SSRN)\nVariable\nNo\n\n\nBlog posts, websites\nLow–Variable\nNo\n\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\nPrefer peer-reviewed journal articles and reputable conference proceedings. Use preprints and working papers with caution."
+  },
+  {
+    "objectID": "workshops/literature-research-presentation.html#what-to-check",
+    "href": "workshops/literature-research-presentation.html#what-to-check",
+    "title": "Lecture - Structured Literature Research",
+    "section": "What to Check",
+    "text": "What to Check\n\nWhen evaluating a paper, consider the following quality indicators:\n\n\n\nJournal reputation — Is it a recognized journal in the field?\nAuthor credentials — Are the authors established researchers?\nMethodology — Is the approach rigorous and well-described?\nRecency — Is the paper still current, or has it been superseded?\nCitations — Has it been cited by others? How many times?\n\n\n\n\n\n\n\n\n\nNote\n\n\nFor operations research specifically: check the benchmark instances used, the computational setup, and whether the results are reproducible."
+  },
+  {
+    "objectID": "workshops/literature-research-presentation.html#read-critically",
+    "href": "workshops/literature-research-presentation.html#read-critically",
+    "title": "Lecture - Structured Literature Research",
+    "section": "Read Critically",
+    "text": "Read Critically\n\nDo not accept results at face value\nAsk yourself:\n\n\n\nIs the sample size sufficient?\nAre the assumptions reasonable?\nDo the conclusions follow from the results?\nCan the findings be generalized to other contexts?\nAre there limitations the authors do not discuss?\n\n\n\n\n\n\n\n\n\nTip\n\n\nA good literature review is not about reading everything — it is about finding and connecting the right papers."
+  },
+  {
+    "objectID": "workshops/literature-research-presentation.html#the-literature-research-process",
+    "href": "workshops/literature-research-presentation.html#the-literature-research-process",
+    "title": "Lecture - Structured Literature Research",
+    "section": "The Literature Research Process",
+    "text": "The Literature Research Process\nPutting it all together:\n\n\nQuestion — Define a clear, focused research question\nSearch — Use databases, Boolean operators, and search strings\nSnowball — Follow citations forwards and backwards\nDiscover — Use AI tools to find related work\nOrganize — Store everything in Zotero with Better BibTeX\nEvaluate — Assess quality, relevance, and reliability\nWrite — Synthesize findings into a coherent review\n\n\n\n\n\n\n\n\n\nImportant\n\n\nStart your literature research early. It is an iterative process that improves as you learn more about your topic."
+  },
+  {
+    "objectID": "workshops/literature-research-presentation.html#key-resources",
+    "href": "workshops/literature-research-presentation.html#key-resources",
+    "title": "Lecture - Structured Literature Research",
+    "section": "Key Resources",
+    "text": "Key Resources\n\n\n\nResource\nLink\n\n\n\n\nGoogle Scholar\nscholar.google.com\n\n\nSemantic Scholar\nsemanticscholar.org\n\n\nConnected Papers\nconnectedpapers.com\n\n\nElicit\nelicit.com\n\n\nResearch Rabbit\nresearchrabbit.ai\n\n\nZotero\nzotero.org\n\n\nBetter BibTeX\nretorque.re/zotero-better-bibtex\n\n\nUHH Library\nsub.uni-hamburg.de\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nBe systematic, use the right tools, and start early. Your future self will thank you."
   }
 ]

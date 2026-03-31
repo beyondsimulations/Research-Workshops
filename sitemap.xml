@@ -2,14 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://beyondsimulations.github.io/Research-Workshops/general/literature.html</loc>
-    <lastmod>2025-02-24T13:18:22.020Z</lastmod>
+    <lastmod>2026-03-31T06:40:42.322Z</lastmod>
+  </url>
+  <url>
+    <loc>https://beyondsimulations.github.io/Research-Workshops/workshops/quarto-academic-writing-presentation.html</loc>
+    <lastmod>2026-03-31T06:38:26.850Z</lastmod>
+  </url>
+  <url>
+    <loc>https://beyondsimulations.github.io/Research-Workshops/workshops/quarto-academic-writing-page.html</loc>
+    <lastmod>2026-03-31T06:38:26.850Z</lastmod>
+  </url>
+  <url>
+    <loc>https://beyondsimulations.github.io/Research-Workshops/workshops/large-language-models-presentation.html</loc>
+    <lastmod>2026-03-31T06:59:46.413Z</lastmod>
+  </url>
+  <url>
+    <loc>https://beyondsimulations.github.io/Research-Workshops/workshops/large-language-models-page.html</loc>
+    <lastmod>2026-03-31T06:59:46.413Z</lastmod>
   </url>
   <url>
     <loc>https://beyondsimulations.github.io/Research-Workshops/index.html</loc>
-    <lastmod>2025-02-24T05:29:28.418Z</lastmod>
+    <lastmod>2026-03-31T06:52:21.051Z</lastmod>
   </url>
   <url>
-    <loc>https://beyondsimulations.github.io/Research-Workshops/workshops/large-language-models.html</loc>
-    <lastmod>2025-02-26T07:40:41.222Z</lastmod>
+    <loc>https://beyondsimulations.github.io/Research-Workshops/workshops/prompting-page.html</loc>
+    <lastmod>2026-03-31T06:56:41.815Z</lastmod>
+  </url>
+  <url>
+    <loc>https://beyondsimulations.github.io/Research-Workshops/workshops/prompting-presentation.html</loc>
+    <lastmod>2026-03-31T06:56:41.815Z</lastmod>
+  </url>
+  <url>
+    <loc>https://beyondsimulations.github.io/Research-Workshops/workshops/literature-research-page.html</loc>
+    <lastmod>2026-03-31T06:37:36.383Z</lastmod>
+  </url>
+  <url>
+    <loc>https://beyondsimulations.github.io/Research-Workshops/workshops/literature-research-presentation.html</loc>
+    <lastmod>2026-03-31T06:37:36.383Z</lastmod>
   </url>
 </urlset>
