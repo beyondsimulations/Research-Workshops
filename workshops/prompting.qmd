@@ -1,0 +1,250 @@
+---
+title: "Lecture - AI Prompting for Researchers"
+subtitle: "Seminar Preparation"
+author: "Dr. Tobias Vlćek"
+format:
+  html:
+    output-file: prompting-page.html
+---
+
+# [AI Prompting for Researchers]{.flow}
+
+## What we will cover
+
+This workshop addresses why most people get [mediocre results]{.highlight} from AI and how to fix that. Specifically, we will look at:
+
+- A simple framework to get better results from your prompts
+- Why [iteration]{.highlight} beats perfection
+- Common mistakes and how to avoid them
+
+:::{.callout-tip}
+This is not about tricks or hacks. It is about **clear communication** — the same skill that makes you a better researcher.
+:::
+
+# [The Problem]{.flow}
+
+## The typical experience
+
+::::{.columns}
+
+:::{.column width="50%"}
+
+**What most people type:**
+
+> "Help me with my literature review"
+
+:::
+
+:::{.column width="50%"}
+
+**What the AI returns:**
+
+> "A literature review is a comprehensive survey of scholarly sources on a specific topic. Here are some general steps: 1. Define your research question... 2. Search databases... 3. Evaluate sources..."
+
+:::
+
+::::
+
+This is [correct but useless]{.highlight} — generic advice you could find on any study skills website.
+
+## Why does this happen?
+
+The AI does not know [who you are]{.highlight} — whether you are a first-year student or a PhD candidate. It has no idea [what you already have]{.highlight}, be it 5 papers or 50, nor does it know [what you actually need]{.highlight} — a structure, a gap analysis, or a synthesis. And without being told, it cannot guess [how you want the output]{.highlight} — as a table, a paragraph, or bullet points.
+
+## The core problem
+
+:::{.callout-important}
+**Without context, AI gives you the average answer for everyone — which helps no one.**
+:::
+
+The quality of the output is [directly proportional]{.highlight} to the quality of the input. This is true for every AI tool, whether it is ChatGPT, Claude, Gemini, or any other system.
+
+# [Two principles for better results]{.flow}
+
+## Context and iteration
+
+::::{.columns}
+
+:::{.column width="50%"}
+
+### Context matters most
+
+The more relevant detail you provide, the [better the response]{.highlight}. Think of it as briefing a new research assistant — they are brilliant but know **nothing** about your specific project.
+
+:::
+
+:::{.column width="50%"}
+
+### Iteration beats perfection
+
+Your first prompt [does not need to be perfect]{.highlight}. Treat AI conversations as a **dialogue**, not a one-shot query. Refine, redirect, and build on each response.
+
+:::
+
+::::
+
+:::{.callout-tip}
+You would never hand a new colleague a one-sentence instruction and expect perfect results. Treat AI the same way.
+:::
+
+# [The RBTF Framework]{.flow}
+
+## Role, background, task, format
+
+::: {tbl-colwidths="[15,30,55]"}
+| Component | Question to Ask Yourself | Example |
+|-----------|--------------------------|---------|
+| **Role** | Who should the AI act as? | "Act as a methodologist in social science research" |
+| **Background** | What context does it need? | "I am writing my Master's thesis on climate policy in the EU" |
+| **Task** | What exactly should it do? | "Identify gaps in my literature on carbon pricing mechanisms" |
+| **Format** | How should the output look? | "Present this as a table with columns: gap, relevant authors, potential research questions" |
+:::
+
+## Why RBTF works
+
+Each component serves a specific purpose:
+
+- [Role]{.highlight} — by assigning a specific expertise, you shape the depth and vocabulary of the response, so the AI draws on the right domain knowledge instead of giving a generalist answer.
+- [Background]{.highlight} — anchoring the prompt in your specific situation (your field, your data, your progress) prevents the AI from making assumptions that miss the mark.
+- [Task]{.highlight} — a precisely stated task eliminates ambiguity, so the AI focuses on exactly what you need rather than guessing which of several possible requests you meant.
+- [Format]{.highlight} — specifying the output structure (table, bullet list, APA paragraph) means you get something immediately usable instead of spending time reformatting.
+
+:::{.callout-note}
+You do not always need all four components. But the more you include, the better the result will be.
+:::
+
+## Context in action
+
+> "Explain machine learning"
+
+**AI Response:** "Machine learning is a subset of artificial intelligence that enables systems to learn from data and improve over time without being explicitly programmed. There are three main types: supervised learning, unsupervised learning, and reinforcement learning..."
+
+A textbook answer. Fine if you are a complete beginner, but [not tailored to anyone]{.highlight}.
+
+Now compare that with a prompt that includes context:
+
+> "I am a social scientist studying voting behaviour. I have no programming background, but I need to understand how machine learning could help me predict election turnout from demographic data. Explain the relevant concepts I would need, avoiding technical jargon, and suggest which ML approach would suit my small dataset of 2,000 observations."
+
+This prompt gives the AI [enough context]{.highlight} to produce a useful, specific response — tailored to the researcher's discipline, skill level, and dataset.
+
+# [Iteration in practice]{.flow}
+
+## Refining your results
+
+Your first response will rarely be exactly what you need. That is normal. Use [follow-up prompts]{.highlight} to steer the conversation.
+
+::: {tbl-colwidths="[25,75]"}
+| When you get... | Say this... |
+|-----------------|-------------|
+| Too broad | "Focus specifically on [X] and go deeper" |
+| Too technical | "Explain this for someone without a background in [field]" |
+| Too superficial | "Provide more detail, especially regarding [aspect]" |
+| Wrong angle | "Approach this from the perspective of [discipline/method]" |
+| Missing something | "Also consider [factor/variable/theory]" |
+| Too long | "Condense this to the 3 most important points" |
+:::
+
+## Iteration example
+
+:::{.callout-note}
+### Prompt 1 — Starting point
+"I need help choosing a statistical test for my research."
+:::
+
+:::{.callout-note}
+### Prompt 2 — Adding context
+"I have survey data from 200 respondents. My dependent variable is satisfaction (measured on a 5-point Likert scale) and I want to compare results across 3 age groups. I am using SPSS."
+:::
+
+:::{.callout-note}
+### Prompt 3 — Refining further
+"My data is not normally distributed according to the Shapiro-Wilk test. What non-parametric alternative should I use, and how do I run it in SPSS? Also, how should I report the results in APA format?"
+:::
+
+**Prompt 1** would get a generic overview of statistical tests. **Prompt 2** gives enough context for a [specific recommendation]{.highlight}. **Prompt 3** addresses a real complication and asks for [usable output]{.highlight}. Each iteration [builds on the previous response]{.highlight}, turning a vague question into a concrete answer because the AI retains context from the full conversation.
+
+# [The transformation]{.flow}
+
+## From lazy prompt to RBTF prompt
+
+> "Help me with my literature review on climate change"
+
+**Result:** A generic list of well-known climate change topics, basic search strategies, and textbook advice about synthesising sources. Nothing specific to your actual research.
+
+Now apply RBTF to the same topic:
+
+> **Role:** "Act as an expert in environmental economics and systematic review methodology."
+>
+> **Background:** "I am a Master's student at University of Hamburg writing my thesis on the effectiveness of carbon pricing mechanisms in the EU. I have already collected 35 papers focused on the EU Emissions Trading System from 2018–2025."
+>
+> **Task:** "Analyse the common themes across my collected literature and identify 3 potential research gaps that could form the basis of my thesis contribution."
+>
+> **Format:** "Present the themes as a structured table with columns: theme, findings, authors, and identified gap. Then provide a brief paragraph for each gap explaining why it matters."
+
+::::{.columns}
+
+:::{.column width="50%"}
+
+**Without RBTF**
+
+- Generic advice that could apply to anyone
+- No actionable output
+- Requires extensive rework
+
+:::
+
+:::{.column width="50%"}
+
+**With RBTF**
+
+- Tailored to your project and field
+- Immediately usable structure
+- Builds on your existing work
+
+:::
+
+::::
+
+:::{.callout-tip}
+The RBTF prompt takes 2 minutes longer to write but saves **hours** of back-and-forth.
+:::
+
+# [Common Mistakes]{.flow}
+
+## Mistakes to avoid
+
+:::{.callout-caution}
+### Accepting the first response
+Always iterate. The first output is a [starting point]{.highlight}, not a final answer. Push the AI to go deeper, be more specific, or reconsider its approach.
+:::
+
+:::{.callout-caution}
+### Being vague about format
+"Give me some ideas" produces a generic list. "Give me 5 ideas, each with a one-sentence description and a feasibility rating from 1–5" produces something you can [actually work with]{.highlight}.
+:::
+
+:::{.callout-caution}
+### Forgetting to verify
+AI can produce confident-sounding but incorrect information. [Always verify]{.highlight} claims, citations, statistics, and dates against primary sources. Never cite an AI-generated reference without checking it exists.
+:::
+
+# [Takeaways]{.flow}
+
+## What to remember
+
+These are the key principles to take away:
+
+- [Context matters]{.highlight} — the more relevant detail you provide, the better the output
+- Use the [RBTF Framework]{.highlight} — Role, Background, Task, Format
+- [Iterate]{.highlight} — treat it as a conversation, not a single query
+- [Specify your format]{.highlight} — tell the AI exactly how you want the output
+- [Always verify]{.highlight} — AI is a useful assistant, not an oracle
+
+:::{.callout-important}
+AI does not replace your expertise. It **amplifies** it. The better researcher you are, the better results you will get from AI tools.
+:::
+
+:::{.callout-tip}
+### Start practising today
+Pick one task from your current research — a paragraph to draft, a method to choose, a source to summarise — and try using the RBTF Framework. Compare the result to what you would get from a one-line prompt.
+:::

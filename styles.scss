@@ -1,99 +1,59 @@
 /*-- scss:defaults --*/
-$presentation-title-slide-text-align: left;
 
-// fonts from Google Fonts
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+// ========================================================================
+// HTML BASE THEME VARS
+// ========================================================================
 
-// colors background
-$background-color: #ffffff;
+// Callouts
+$callout-color-note: $brand-oneLight;
+$callout-color-tip: $brand-twoLight;
+$callout-color-warning: $brand-threeLight;
+$callout-color-important: $brand-oneDark;
+$callout-color-caution: $brand-threeDark;
 
-// theme colors
-$theme-color-primary: #fe9a57;
-$theme-color-secondary: #00389f;
-$theme-color-tertiary: #D94F04;
-$theme-color-quaternary: #F4E2DE;
+// Code styling
+$code-block-border-left: $brand-threeLight;
 
-// fonts colors
-$font-color: #000000;
-$font-color-inverted: $background-color;
-$font-color-loud: $theme-color-secondary;
+// ========================================================================
+// RULES: only for custom visual effects / overrides
+// ========================================================================
 
-// colors
-$body-bg: $background-color;
-$body-color: $font-color;
-$link-color: $theme-color-tertiary;
-
-// headings
-$presentation-heading-font: "Palatino Linotype", "Book Antiqua", Palatino, FreeSerif, serif !default;
-
-// line height
-$presentation-line-height: 1.5 !default;
-$presentation-heading-line-height: 1.5 !default;
-
-/*-- scss:rules --*/
-
-.reveal .title {
-  background-color: $theme-color-primary;
-}
-
-.title-slide.title {
-  background-color: $theme-color-quaternary !important;
-}
-
+// Utility text classes
 .highlight {
-  color: $theme-color-primary;
-  font-weight: bold;
+    color: $brand-threeDark;
+    font-weight: bold;
 }
-
 .task {
-  color: $theme-color-secondary;
-  font-weight: bold;
+    color: $brand-oneDark;
+    font-weight: bold;
 }
-
 .question {
-  color: $theme-color-tertiary;
-  font-weight: bold;
+    color: $brand-greyer;
+    font-weight: bold;
 }
-
 .light {
-  color: $theme-color-quaternary;
+    color: $brand-oneLight;
+}
+.errors {
+    color: $brand-threeDark;
+    font-weight: bold;
 }
 
-.invert-font {
-  color: $font-color-inverted;
-  background-color: #000000;
-  border-width: 5px;
-  border-radius: 0px;
-  border-color: #000000;
-  border-style: solid;
-}
-
-.loud-slide {
-  background-color: $theme-color-primary !important; 
-  color: $font-color-loud !important;
-  font-weight: bold !important;
-}
-
+// Animation effect for section headings
 .flow {
-  background-image: url("https://images.beyondsimulations.com/logo/image_applied-optimization.png");
-  background-size: 3840px 2160px;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  animation: animate 60s linear infinite;
+    background-image: url("https://images.beyondsimulations.com/logo/main-web.png");
+    background-size: 3840px 2160px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: animate 60s linear infinite;
 }
 
 @keyframes animate {
-  0% {
-    background-position: left 384px top 216px;
-  }
-  100% {
-    background-position: left 3456px top 1944px;
-  }
+    0% {
+        background-position: left 384px top 216px;
+    }
+    100% {
+        background-position: left 3456px top 1944px;
+    }
 }
-
-.reveal pre code {
-  font-size: 0.8em;  // Makes code blocks 80% of the default size
-  line-height: 1.2;  // Slightly tighter line spacing for code
-}
-

@@ -1,6 +1,6 @@
 ---
 title: "Welcome to the workshops!"
-subtitle: "University of Hamburg - Spring 2025"
+subtitle: "University of Hamburg - Spring 2026"
 
 html:
     theme: [default, styles.scss]
@@ -8,10 +8,28 @@ html:
     linkcolor: "#a60000"
 ---
 
-# Description
-Welcome to this collection of resources! This website hosts a collection of information and resources that will help you prepare for your research. If you are interested in large language models, these materials are designed for you. The material is self-contained and provides you with the fundamental knowledge and practical skills needed for your research project.
+# About these workshops
 
-The resources are mostly available on this website with links to some other resources. I will try to update the website in the future, to extend the content and reflect the latest developments in the field.
+This website collects five workshops for Bachelor and Master students preparing their seminar paper or thesis. Each workshop is self-contained and takes about 30 minutes to work through. The material covers practical skills -- from writing with AI and managing references to version control -- that you will use throughout your research project.
+
+The workshops build on each other. We recommend reading them in the order listed below, though you can jump to any topic you need.
+
+# Workshops
+
+- **[Working with AI](workshops/large-language-models.qmd)** -- How large language models work at a conceptual level, and how to pick the right AI tool for a given task. Covers the difference between models, apps, and harnesses (based on Ethan Mollick's framework), then walks through the coding tools you will use in this course: Zed, GitHub Copilot, OpenCode, and Claude Code.
+- **[AI Prompting](workshops/prompting.qmd)** -- Most people get generic results from AI because they provide too little context. This workshop introduces the RBTF framework (Role, Background, Task, Format) and shows how to iterate on AI responses. Includes before-and-after examples with real research tasks.
+- **[Literature Research](workshops/literature-research.qmd)** -- A structured approach to finding, evaluating, and organizing academic literature. Covers Google Scholar and specialized databases, Boolean search strings, forward and backward snowballing, and AI-powered discovery tools (Semantic Scholar, Connected Papers, Elicit). Ends with a Zotero workflow for reference management.
+- **[Quarto for Academic Writing](workshops/quarto-academic-writing.qmd)** -- Write your seminar paper in Quarto Markdown instead of LaTeX or Word. Covers the basics -- headings, figures, tables, math equations -- and the academic features: BibTeX citations, cross-references, and PDF output via Typst. Includes ready-to-use templates for German and English papers.
+- **[Git & GitHub](workshops/git-github.qmd)** -- Version control for your thesis project. Learn to track changes with Git, use Zed's built-in Git panel for daily work, and push your project to GitHub as a backup. Also covers `.gitignore` for Quarto projects and a brief preview of branching.
+
+# Templates
+
+Paper templates (German and English) are available in the [course repository](https://github.com/beyondsimulations/Research-Workshops/tree/main/templates). They work with Quarto and Typst -- no LaTeX installation needed.
+
+# Resources
+
+A curated list of tools, LLMs, and further reading is available on the [Literature & Resources](general/literature.qmd) page.
 
 # Questions
-If you have any questions, please contact me under [tobias.vlcek@uni-hamburg.de](mailto:tobias.vlcek@uni-hamburg.de?subject=Seminar%20Preparation%3A%20%3CYour%20subject%3E).
+
+If you have any questions, please contact me at [tobias.vlcek@uni-hamburg.de](mailto:tobias.vlcek@uni-hamburg.de?subject=Seminar%20Preparation%3A%20%3CYour%20subject%3E).

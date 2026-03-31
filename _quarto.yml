@@ -4,8 +4,12 @@ project:
     - 404.qmd
     - index.qmd
     - workshops/large-language-models.qmd
+    - workshops/prompting.qmd
+    - workshops/quarto-academic-writing.qmd
+    - workshops/literature-research.qmd
+    - workshops/git-github.qmd
     - general/literature.qmd
-    
+
 website:
   title: "Seminar Preparation"
   repo-url: https://github.com/beyondsimulations/Research-Workshops
@@ -15,19 +19,29 @@ website:
   sidebar:
     style: floating
     logo: https://images.beyondsimulations.com/logo/midjourney-solar-mirror.png
-    collapse-level: 1 
+    collapse-level: 1
     search: true
     contents:
       - text: "Welcome"
         href: index.qmd
-      - text: "Large Language Models"
+      - text: "***"
+      - text: "AI Tools"
         href: workshops/large-language-models.qmd
+      - text: "Prompting"
+        href: workshops/prompting.qmd
+      - text: "Quarto"
+        href: workshops/quarto-academic-writing.qmd
       - text: "Literature"
+        href: workshops/literature-research.qmd
+      - text: "Git"
+        href: workshops/git-github.qmd
+      - text: "***"
+      - text: "Resources"
         href: general/literature.qmd
 
-  page-footer: 
-    center: "Research Workshops, Tobias Vlćek</br>CC BY-NC-SA 4.0" 
-    right: 
+  page-footer:
+    center: "Research Workshops, Tobias Vlćek</br>CC BY-NC-SA 4.0"
+    right:
       - icon: github
         href: https://github.com/beyondsimulations/Research-Workshops
       - icon: linkedin
@@ -35,31 +49,20 @@ website:
 
 format:
   html:
-    theme: [litera, styles.scss]
+    theme:
+      - default
+      - styles.scss
+      - brand
     toc: true
-    highlight-style: arrow
-    linkcolor: "#a60000"
+    callout-appearance: simple
     code-copy: true
     code-link: true
     toc-location: right
     code-overflow: wrap
-    code-block-bg: true
-    code-block-border-left: "#AD1F00"
     include-in-header:
       - general/header.html
 
-  pdf:
-    documentclass: report
-    geometry:
-        - margin=1in
-    fontfamily: roboto
-    fontfamilyoptions: sfdefault
-    colorlinks: true
-    include-in-header: 
-      text: |
-        \usepackage{fvextra}
-        \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
 execute:
   freeze: auto
 
-
+brand: _brand.yml
