@@ -22,15 +22,15 @@ These are LLMs hosted by companies, which you can access through their websites 
 - [Anthropic (Claude)](https://claude.ai): Strong at reasoning, coding, and handling long documents. Claude Opus and Sonnet are the main models, with a generous free tier.
 - [Google (Gemini)](https://gemini.google.com): Google's LLM with tight integration into Google services (Docs, Sheets, Gmail) and multimodal capabilities including image and video understanding.
 - [Mistral (Le Chat)](https://chat.mistral.ai/): A European provider based in France. Offers an affordable student tier through Mistral Vibe, and their models run well for both English and European languages.
+- [NotebookLM](https://notebooklm.google/): Google's Gemini that can be fed with files, images, and YouTube videos to generate text based on the content. Works within a Google workspace only, so you cannot share the results publicly.
 
-## Local LLMs and data tools
+## Local LLMs and tools
 
-These tools let you run open-source models on your own machine or feed your own documents into an LLM. Running locally gives you more privacy and control, but requires a decent GPU for larger models.
+These tools let you run open-source models on your own machine. Running locally gives you more privacy and control, but requires a decent GPU for larger models.
 
 - [Ollama](https://ollama.com/): Free and open-source tool to run large language models locally. Supports a wide range of models including Llama, Mistral, and Gemma. Smaller models (under 8B parameters) can often run on a CPU with enough RAM, though responses will be slower than hosted alternatives.
 - [Hugging Face](https://huggingface.co/): The largest open repository of AI models, datasets, and community fine-tunes. You can browse models by task (text generation, translation, summarization), download them, and run them locally through Ollama or the Hugging Face Transformers library.
 - [LM Studio](https://lmstudio.ai/): A desktop application for discovering, downloading, and running LLMs locally. Offers both a chat UI and an OpenAI-compatible local server, which means tools that work with the OpenAI API can connect to your local model instead.
-- [NotebookLM](https://notebooklm.google/): Google's Gemini that can be fed with files, images, and YouTube videos to generate text based on the content. Works within a Google workspace only, so you cannot share the results publicly.
 - [Open Web UI](https://openwebui.com/): A browser-based interface for interacting with local models (works with Ollama). Useful for building RAG apps where you upload your own documents and query them through an LLM.
 
 # AI Coding Tools
@@ -97,6 +97,9 @@ These resources go deeper into how AI works and how to use it effectively. They 
 - [One Useful Thing](https://www.oneusefulthing.org/): Ethan Mollick's blog on practical AI use. His [Guide to Which AI to Use](https://www.oneusefulthing.org/p/a-guide-to-which-ai-to-use-in-the) explains the models, apps, and harnesses framework used in the first workshop and is updated regularly as new models appear.
 - [3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw): Visual explanations of how LLMs and neural networks work, by Grant Sanderson. The videos on attention and transformers are particularly useful for understanding the concepts from the first workshop.
 - [Prompt Engineering Guide](https://www.promptingguide.ai/): A community-maintained collection of prompting techniques and strategies. Covers zero-shot, few-shot, chain-of-thought, and other approaches beyond the RBTF framework taught in the prompting workshop.
+- [AI Assistance and Coding Skills](https://www.anthropic.com/research/AI-assistance-coding-skills): A 2025 Anthropic study that ran a randomized trial with 52 developers. Those using AI scored 17% lower on comprehension tests, with the biggest gap in debugging -- but developers who asked for explanations rather than just code performed nearly as well as those coding by hand.
+- [The Many Masks LLMs Wear](https://www.understandingai.org/p/the-many-masks-that-llms-wear): Kai Williams at Understanding AI on how LLMs shift personas mid-conversation, how fine-tuning on one task can trigger unexpected behavior elsewhere, and what that means for trusting model output.
+- [Effective Harnesses for Long-Running Agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents): Justin Young at Anthropic Engineering on building agent systems that work across multiple sessions. Covers a two-agent architecture with progress tracking and automated testing -- a concrete example of why the harness matters more than the model.
 
 # Further Reading
 

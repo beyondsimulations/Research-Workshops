@@ -292,9 +292,9 @@ First Name Last Name
 
 The following AI tools were used during the preparation of this thesis:
 
-- **ChatGPT**: Used for ... .
-- **Claude**: Used for ... .
-- **GitHub Copilot**: Used for ... .
+- **Tool 1**: Used for ... .
+- **Tool 2**: Used for ... .
+- **Tool 3**: Used for ... .
 
 ```{=typst}
 #v(2cm)

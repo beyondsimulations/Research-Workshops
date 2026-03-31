@@ -4,6 +4,8 @@ bibliographystyle: apa
 lang: de
 format:
   typst:
+    template-partials:
+      - typst-show.typ
     toc: false
     toc-depth: 3
     number-sections: true
@@ -13,8 +15,6 @@ format:
       left: 40mm
       right: 25mm
     font-size: 11pt
-    template-partials:
-      - typst-show.typ
     include-before-body:
       text: |
         // ==== TITELSEITE — Felder mit ← anpassen ====
@@ -297,9 +297,9 @@ Vorname Nachname
 
 Die folgenden KI-Werkzeuge wurden bei der Erstellung dieser Arbeit eingesetzt:
 
-- **ChatGPT**: Verwendet für ... .
-- **Claude**: Verwendet für ... .
-- **GitHub Copilot**: Verwendet für ... .
+- **Tool 1**: Verwendet für ... .
+- **Tool 2**: Verwendet für ... .
+- **Tool 3**: Verwendet für ... .
 
 ```{=typst}
 #v(2cm)

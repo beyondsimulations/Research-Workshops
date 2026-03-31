@@ -10,9 +10,9 @@ html:
 
 # About these workshops
 
-This website collects five workshops for Bachelor and Master students preparing their seminar paper or thesis. Each workshop is self-contained and takes about 30 minutes to work through. The material covers practical skills -- from writing with AI and managing references to version control -- that you will use throughout your research project.
+This website collects five workshops for Bachelor and Master students preparing their seminar paper or thesis. Each workshop is self-contained and takes about 30 minutes to work through. The material covers practical skills, from writing with AI and managing references to version control, hat you will use throughout your research project.
 
-The workshops build on each other. We recommend reading them in the order listed below, though you can jump to any topic you need.
+The workshops build on each other. I recommend reading them in the order listed below, though you can jump to any topic you need.
 
 # Workshops
 

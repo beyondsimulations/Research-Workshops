@@ -99,11 +99,11 @@ LLMs have several important limitations to be aware of:
 
 - [Unreliable output]{.highlight}: LLMs can confidently generate **incorrect information** (hallucinations), and because their training data contains biases, those biases can surface in their responses -- sometimes in subtle ways you will not catch without careful review.
 - **No true understanding**: What looks like reasoning is pattern matching on training data, not thinking from first principles. Models also only know what they were trained on, so anything after their knowledge cutoff is simply absent.
-- **Inconsistent behavior**: Small changes in wording can produce very different results, and in long conversations the model may lose coherence as earlier context fades from its effective attention.
+- **Inconsistent behavior**: Small changes in wording can produce very different results. Models can also [drift persona](https://www.understandingai.org/p/the-many-masks-that-llms-wear) mid-conversation -- researchers have documented cases where fine-tuning on one task triggered unexpected behavior elsewhere, and long conversations can push a model away from its intended character entirely.
 - **Overconfident tone**: LLMs rarely signal uncertainty, so a wrong answer reads exactly like a correct one.
 
 :::{.callout-warning}
-Always verify important information from LLMs. They are tools, not oracles.
+A [2025 Anthropic study](https://www.anthropic.com/research/AI-assistance-coding-skills) found that developers using AI scored 17% lower on comprehension tests -- roughly two letter grades -- with the biggest gap in debugging. Leaning on AI for code generation without engaging with what it produces erodes the skills you need to catch its mistakes.
 :::
 
 # [Models, Apps & Harnesses]{.flow}
@@ -175,6 +175,8 @@ Because the [harness]{.highlight} determines:
 
 - What **context** the model receives and what **tools** it can use (web search, file access, code execution)
 - How many **steps** it can take autonomously and how results are **presented** back to you
+
+Anthropic's own engineering team [showed this concretely](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents): the same model failed at complex coding tasks when given a bare prompt, but succeeded when wrapped in a harness with progress tracking, environment setup, and automated testing.
 
 :::{.callout-note}
 When someone says "AI can't do X," ask: which model, in which harness? The answer often changes with the right setup.
@@ -314,7 +316,7 @@ The more specific your prompt, the better the result. Include context: language,
 
 **2. Always review generated code**
 
-LLMs make mistakes, suggest inefficient solutions, or miss edge cases. [Your code, your responsibility]{.highlight}.
+LLMs make mistakes, suggest inefficient solutions, or miss edge cases. [Your code, your responsibility]{.highlight}. In the Anthropic study mentioned earlier, developers who asked the AI to *explain* its code rather than just generate it performed nearly as well as those coding by hand.
 
 **3. Iterate and refine**
 
@@ -347,6 +349,9 @@ If you use free models, be aware that your prompts may be used by providers and 
 - [Anthropic Research](https://www.anthropic.com/research) -- AI safety and interpretability
 - [One Useful Thing](https://www.oneusefulthing.org/) -- Ethan Mollick's blog on practical AI use
 - [Prompt Engineering Guide](https://www.promptingguide.ai/) -- techniques for better prompts
+- [AI Assistance and Coding Skills](https://www.anthropic.com/research/AI-assistance-coding-skills) -- Anthropic's study on how AI help affects learning (the 17% finding cited in this workshop)
+- [The Many Masks LLMs Wear](https://www.understandingai.org/p/the-many-masks-that-llms-wear) -- Kai Williams on persona drift and why models behave unpredictably
+- [Effective Harnesses for Long-Running Agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) -- practical patterns for building agent systems that actually work
 
 :::{.callout-note}
 ### LLM architecture types (reference)
