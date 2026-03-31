@@ -267,7 +267,7 @@ Store references in a `.bib` file and set `bibliography: references.bib` in YAML
 :::
 
 :::{.callout-tip}
-Use a `.csl` file (e.g., `apa.csl`) to control citation and bibliography style. Set `csl: apa.csl` in your YAML frontmatter.
+For Typst output, use `bibliographystyle: apa` in your YAML. This uses Typst's built-in APA style -- no extra `.csl` file needed.
 :::
 
 ## Cross-references overview
@@ -339,46 +339,61 @@ We provide [ready-to-use Quarto templates]{.highlight} for your seminar papers, 
 
 The templates include:
 
-- **Correct margins and formatting for UHH** -- page dimensions, font sizes, and spacing are pre-configured to meet the university's submission requirements, so you do not need to adjust them yourself.
-- **Table of contents, list of figures, list of tables** -- these are generated automatically from your headings, figure captions, and table captions, keeping your document navigable as it grows.
-- **Citation setup with APA style** -- the CSL file and bibliography path are already configured, meaning you can start citing sources with `[@key]` right away.
-- **Example content showing all features** -- the template is pre-filled with sample sections, figures, tables, and equations that demonstrate correct syntax you can adapt for your own writing.
-- **Declaration of authorship** -- the required signed statement is included at the end of the document, formatted according to university guidelines.
+- **Custom UHH title page** -- university name, faculty, institute, thesis type, supervisor, matriculation number, and your details, all pre-formatted.
+- **Correct margins and formatting** -- page dimensions (40/25/30/20mm), 11pt font, and 1.5 line spacing are pre-configured to match UHH requirements.
+- **Table of contents, list of figures, list of tables** -- generated automatically from your headings, figure captions, and table captions.
+- **List of abbreviations and list of symbols** -- pre-filled with examples you can adapt.
+- **Citation setup with APA style** -- uses Typst's built-in `bibliographystyle: apa`, so you can cite with `[@key]` right away.
+- **Booktabs-style tables** -- clean academic tables with horizontal rules only.
+- **Example content** -- sample sections, figures, tables, equations, and cross-references you can adapt.
+- **Declaration of authorship** -- the required signed statement, formatted according to university guidelines.
+- **AI tools declaration** -- a section to document which AI tools you used and how.
 
 
-```markdown
----
-title: "Title of the Thesis"
-author: "First Name Last Name"
-bibliography: references.bib
-csl: apa.csl
-format:
-  typst:
-    toc: true
-    number-sections: true
-    margin:
-      top: 30mm, bottom: 20mm
-      left: 40mm, right: 25mm
----
+## Template files
 
-# Introduction
-Your content here with [@citations] ...
+You need [three files]{.highlight} in the same folder:
 
-# Literature Review
-...
+| File | Purpose |
+|------|---------|
+| `seminar-paper-en.qmd` (or `-de.qmd`) | Your paper (edit this) |
+| `references.bib` | Your bibliography entries |
+| `typst-show.typ` | Required helper (do not delete) |
+
+. . .
+
+:::{.callout-warning}
+The `typst-show.typ` file is required for the custom title page to work. Keep it in the same folder as your `.qmd` file.
+:::
+
+
+## Editing the title page
+
+The title page is defined in [Typst code]{.highlight} inside the YAML header. Look for the `// ←` markers to find the fields you need to change:
+
+```yaml
+# In include-before-body, look for lines like:
+#text(...)[Title of the Thesis]  // ← your title
+*Last Name, First Name*          // ← your name
+Matriculation No.: XXXXXXX       // ← your number
+Prof. Dr. Knut Haase             // ← your supervisor
 ```
 
+The rest of the YAML controls formatting and should not need changes.
+
+
+## Rendering
 
 Render your document from the terminal:
 
 ```bash
-quarto render paper.qmd
+quarto render seminar-paper-en.qmd
 ```
 
 Or use **live preview** while writing:
 
 ```bash
-quarto preview paper.qmd
+quarto preview seminar-paper-en.qmd
 ```
 
 :::{.callout-tip}
