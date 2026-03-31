@@ -16,13 +16,13 @@ This page collects the tools, databases, and references mentioned across the wor
 
 ## Hosted LLMs
 
-These are LLMs hosted by companies, which you can access through their websites or APIs. Free tiers are available for all of them; paid tiers unlock more capable models and higher usage limits.
+These are LLMs hosted by companies, which you can access through their websites or APIs. Free tiers are available for most of them; paid tiers unlock more capable models and higher usage limits.
 
 - [OpenAI (ChatGPT)](https://chatgpt.com): The creators of ChatGPT, currently on GPT-5.4. General-purpose models with text, image, and voice capabilities. The free tier uses a weaker model; paid plans give access to the latest version.
-- [Anthropic (Claude)](https://claude.ai): Strong at reasoning, coding, and handling long documents. Claude Opus and Sonnet are the main models, with a generous free tier.
+- [Anthropic (Claude)](https://claude.ai): Strong at reasoning, coding, and handling long documents. Claude Opus and Sonnet are the main models, with a limited free tier.
 - [Google (Gemini)](https://gemini.google.com): Google's LLM with tight integration into Google services (Docs, Sheets, Gmail) and multimodal capabilities including image and video understanding.
-- [Mistral (Le Chat)](https://chat.mistral.ai/): A European provider based in France. Offers an affordable student tier through Mistral Vibe, and their models run well for both English and European languages.
-- [NotebookLM](https://notebooklm.google/): Google's Gemini that can be fed with files, images, and YouTube videos to generate text based on the content. Works within a Google workspace only, so you cannot share the results publicly.
+- [Mistral (Le Chat)](https://chat.mistral.ai/): A European provider based in France. Offers an affordable student tier and access to Mistral Vibe, and their models run well for both English and European languages.
+- [NotebookLM](https://notebooklm.google/): Google's Gemini that can be fed with files, images, and YouTube videos to generate text based on the content. Great for understanding and summarizing content from lectures or to create podcasts from papers.
 
 ## Local LLMs and tools
 
@@ -30,17 +30,17 @@ These tools let you run open-source models on your own machine. Running locally 
 
 - [Ollama](https://ollama.com/): Free and open-source tool to run large language models locally. Supports a wide range of models including Llama, Mistral, and Gemma. Smaller models (under 8B parameters) can often run on a CPU with enough RAM, though responses will be slower than hosted alternatives.
 - [Hugging Face](https://huggingface.co/): The largest open repository of AI models, datasets, and community fine-tunes. You can browse models by task (text generation, translation, summarization), download them, and run them locally through Ollama or the Hugging Face Transformers library.
-- [LM Studio](https://lmstudio.ai/): A desktop application for discovering, downloading, and running LLMs locally. Offers both a chat UI and an OpenAI-compatible local server, which means tools that work with the OpenAI API can connect to your local model instead.
-- [Open Web UI](https://openwebui.com/): A browser-based interface for interacting with local models (works with Ollama). Useful for building RAG apps where you upload your own documents and query them through an LLM.
+- [LM Studio](https://lmstudio.ai/): A desktop application for discovering, downloading, and running LLMs locally. Offers both a chat UI and an OpenAI-compatible local server, which means tools that work with the OpenAI API can connect to your local model instead. *Better than Ollama for most users.*
 
 # AI Coding Tools
 
 These are the tools covered in the [Working with AI](../workshops/large-language-models.qmd) workshop. They range from full editors with built-in AI to terminal-based agents that can work autonomously.
 
-- [Zed](https://zed.dev/): A modern, fast code editor built in Rust with built-in AI assistant support. Recommended for this course. Offers a [free student tier](https://zed.dev) with code completion and API credits when you sign up with a university email.
+- [Zed](https://zed.dev/): A modern, fast code editor built in Rust with built-in AI assistant support. Recommended for this course. Offers a [free student tier](https://zed.dev/education) with code completion and API credits when you sign up with a university email.
 - [GitHub Copilot](https://github.com/features/copilot): AI pair programmer that provides inline code suggestions as you type. Integrates into VS Code, Zed, and JetBrains. Free for students via the [GitHub Student Developer Pack](https://education.github.com/pack).
 - [OpenCode](https://opencode.ai): Open-source terminal-based AI coding assistant. Lightweight and fast, supports multiple AI providers with your own API keys. Good for quick file edits and terminal tasks.
 - [Claude Code](https://claude.ai/code): Anthropic's CLI coding agent for autonomous multi-step tasks. Reads your entire codebase for context, runs terminal commands, and iterates on errors. Requires an API key and incurs usage costs.
+- [Mistral Vibe](https://mistral.ai/vibe): Mistral's open-source CLI coding agent. It scans your project’s file structure and Git status, supports natural language commands, and can modify and execute changes across multiple files. Included in the [Mistral Student subscription](https://help.mistral.ai/en/articles/347553-as-a-student-am-i-eligible-for-a-discount-on-le-chat-pro).
 
 # Literature Research
 

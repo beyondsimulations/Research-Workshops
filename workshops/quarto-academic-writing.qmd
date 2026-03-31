@@ -7,8 +7,6 @@ format:
     output-file: quarto-academic-writing-page.html
 ---
 
-# [What is Quarto?]{.flow}
-
 ## What is Quarto and why use it?
 
 Quarto is an [open-source scientific publishing system]{.highlight} developed by Posit (formerly RStudio). Write in **Markdown**, render to multiple formats:
@@ -84,7 +82,7 @@ Quarto produces **publication-quality** PDFs via Typst -- no need to install a f
 
 Same output quality -- [much less typing]{.highlight}!
 
-# [Installing Quarto]{.flow}
+# [Getting Started]{.flow}
 
 ## Installation by platform
 
@@ -399,8 +397,6 @@ quarto preview seminar-paper-en.qmd
 :::{.callout-tip}
 `quarto preview` opens a browser window that **automatically refreshes** every time you save the file. This is the best way to write and check your formatting simultaneously.
 :::
-
-# [Tips for Your Workflow]{.flow}
 
 ## Workflow tips
 

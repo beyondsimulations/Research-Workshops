@@ -54,6 +54,7 @@ format:
       - styles.scss
       - brand
     toc: true
+    highlight-style: github
     callout-appearance: simple
     code-copy: true
     code-link: true

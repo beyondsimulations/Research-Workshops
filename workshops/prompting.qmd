@@ -59,8 +59,6 @@ The AI does not know [who you are]{.highlight} — whether you are a first-year 
 
 The quality of the output is [directly proportional]{.highlight} to the quality of the input. This is true for every AI tool, whether it is ChatGPT, Claude, Gemini, or any other system.
 
-# [Two principles for better results]{.flow}
-
 ## Context and iteration
 
 ::::{.columns}
@@ -89,7 +87,7 @@ You would never hand a new colleague a one-sentence instruction and expect perfe
 
 # [The RBTF Framework]{.flow}
 
-## Role, background, task, format
+## The framework: Role, background, task, format
 
 ::: {tbl-colwidths="[15,30,55]"}
 | Component | Question to Ask Yourself | Example |
@@ -163,8 +161,6 @@ Your first response will rarely be exactly what you need. That is normal. Use [f
 
 **Prompt 1** would get a generic overview of statistical tests. **Prompt 2** gives enough context for a [specific recommendation]{.highlight}. **Prompt 3** addresses a real complication and asks for [usable output]{.highlight}. Each iteration [builds on the previous response]{.highlight}, turning a vague question into a concrete answer because the AI retains context from the full conversation.
 
-# [The transformation]{.flow}
-
 ## From lazy prompt to RBTF prompt
 
 > "Help me with my literature review on climate change"
@@ -209,7 +205,7 @@ Now apply RBTF to the same topic:
 The RBTF prompt takes 2 minutes longer to write but saves **hours** of back-and-forth.
 :::
 
-# [Common Mistakes]{.flow}
+# [Wrap-up]{.flow}
 
 ## Mistakes to avoid
 
@@ -227,8 +223,6 @@ Always iterate. The first output is a [starting point]{.highlight}, not a final 
 ### Forgetting to verify
 AI can produce confident-sounding but incorrect information. [Always verify]{.highlight} claims, citations, statistics, and dates against primary sources. Never cite an AI-generated reference without checking it exists.
 :::
-
-# [Takeaways]{.flow}
 
 ## What to remember
 
