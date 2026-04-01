@@ -1,6 +1,6 @@
 ---
-title: "Lecture - Quarto for Academic Writing"
-subtitle: "Seminar Preparation"
+title: "Quarto for Academic Writing"
+subtitle: "Write in Markdown, render to PDF with citations and cross-references"
 author: "Dr. Tobias Vlćek"
 format:
   html:

@@ -1,6 +1,6 @@
 ---
-title: "Lecture - Working with AI"
-subtitle: "Seminar Preparation"
+title: "Working with AI"
+subtitle: "How LLMs work and which coding tools to use"
 author: "Dr. Tobias Vlćek"
 format:
   html:

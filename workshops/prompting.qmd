@@ -1,6 +1,6 @@
 ---
-title: "Lecture - AI Prompting for Researchers"
-subtitle: "Seminar Preparation"
+title: "AI Prompting for Researchers"
+subtitle: "Getting useful results from AI with the RBTF framework"
 author: "Dr. Tobias Vlćek"
 format:
   html:

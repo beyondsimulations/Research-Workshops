@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-A Quarto website for university seminar preparation materials (University of Hamburg). Authored by Dr. Tobias Vlcek. The site hosts four workshops and curated literature/resources for Bachelor and Master students in operations research.
+A Quarto website for university seminar preparation materials (University of Hamburg). Authored by Dr. Tobias Vlćek. The site hosts four workshops and curated literature/resources for Bachelor and Master students in operations research.
 
 ## Build Commands
 

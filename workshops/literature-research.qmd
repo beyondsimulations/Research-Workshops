@@ -1,6 +1,6 @@
 ---
-title: "Lecture - Structured Literature Research"
-subtitle: "Seminar Preparation"
+title: "Structured Literature Research"
+subtitle: "Finding, evaluating, and organizing academic sources"
 author: "Dr. Tobias Vlćek"
 format:
   html:

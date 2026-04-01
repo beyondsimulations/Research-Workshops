@@ -1,6 +1,7 @@
 ---
 title: "Scientific Writing"
 subtitle: "How to structure and write your seminar paper or thesis"
+author: "Dr. Tobias Vlćek"
 ---
 
 This guide covers the craft of academic writing: how to structure your paper, write clearly, present results, and avoid common mistakes. For thesis types, evaluation criteria, supervisor guidance, and template downloads, see the [Templates](templates.qmd) page.

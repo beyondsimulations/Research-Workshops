@@ -1,6 +1,7 @@
 ---
 title: "Literature and Resources"
 subtitle: "Tools and references from the workshops"
+author: "Dr. Tobias Vlćek"
 
 html:
     theme: [default, ../styles.scss]
