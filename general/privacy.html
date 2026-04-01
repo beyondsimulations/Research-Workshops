@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Dr.&nbsp;Tobias Vlćek">
+<meta name="dcterms.date" content="2026-04-01">
 
-<title>AI Prompting for Researchers – Seminar Preparation</title>
+<title>Privacy Policy – Seminar Preparation</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -89,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../workshops/prompting-page.html">Prompting</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Privacy Policy</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -144,7 +144,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../workshops/prompting-page.html" class="sidebar-item-text sidebar-link active">
+  <a href="../workshops/prompting-page.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Prompting</span></a>
   </div>
 </li>
@@ -185,57 +185,42 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#ai-prompting-for-researchers" id="toc-ai-prompting-for-researchers" class="nav-link active" data-scroll-target="#ai-prompting-for-researchers"><span class="flow">AI Prompting for Researchers</span></a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">1. Introduction</a></li>
+  <li><a href="#data-controller" id="toc-data-controller" class="nav-link" data-scroll-target="#data-controller">2. Data Controller</a></li>
+  <li><a href="#what-we-collect" id="toc-what-we-collect" class="nav-link" data-scroll-target="#what-we-collect">3. What We Collect</a>
   <ul class="collapse">
-  <li><a href="#what-we-will-cover" id="toc-what-we-will-cover" class="nav-link" data-scroll-target="#what-we-will-cover">What we will cover</a></li>
+  <li><a href="#private-mode" id="toc-private-mode" class="nav-link" data-scroll-target="#private-mode">Private Mode</a></li>
   </ul></li>
-  <li><a href="#the-problem" id="toc-the-problem" class="nav-link" data-scroll-target="#the-problem"><span class="flow">The Problem</span></a>
-  <ul class="collapse">
-  <li><a href="#the-typical-experience" id="toc-the-typical-experience" class="nav-link" data-scroll-target="#the-typical-experience">The typical experience</a></li>
-  <li><a href="#why-does-this-happen" id="toc-why-does-this-happen" class="nav-link" data-scroll-target="#why-does-this-happen">Why does this happen?</a></li>
-  <li><a href="#the-core-problem" id="toc-the-core-problem" class="nav-link" data-scroll-target="#the-core-problem">The core problem</a></li>
-  <li><a href="#context-and-iteration" id="toc-context-and-iteration" class="nav-link" data-scroll-target="#context-and-iteration">Context and iteration</a></li>
-  </ul></li>
-  <li><a href="#the-rbtf-framework" id="toc-the-rbtf-framework" class="nav-link" data-scroll-target="#the-rbtf-framework"><span class="flow">The RBTF Framework</span></a>
-  <ul class="collapse">
-  <li><a href="#the-framework-role-background-task-format" id="toc-the-framework-role-background-task-format" class="nav-link" data-scroll-target="#the-framework-role-background-task-format">The framework: Role, background, task, format</a></li>
-  <li><a href="#why-rbtf-works" id="toc-why-rbtf-works" class="nav-link" data-scroll-target="#why-rbtf-works">Why RBTF works</a></li>
-  <li><a href="#context-in-action" id="toc-context-in-action" class="nav-link" data-scroll-target="#context-in-action">Context in action</a></li>
-  </ul></li>
-  <li><a href="#iteration-in-practice" id="toc-iteration-in-practice" class="nav-link" data-scroll-target="#iteration-in-practice"><span class="flow">Iteration in practice</span></a>
-  <ul class="collapse">
-  <li><a href="#refining-your-results" id="toc-refining-your-results" class="nav-link" data-scroll-target="#refining-your-results">Refining your results</a></li>
-  <li><a href="#iteration-example" id="toc-iteration-example" class="nav-link" data-scroll-target="#iteration-example">Iteration example</a></li>
-  <li><a href="#from-lazy-prompt-to-rbtf-prompt" id="toc-from-lazy-prompt-to-rbtf-prompt" class="nav-link" data-scroll-target="#from-lazy-prompt-to-rbtf-prompt">From lazy prompt to RBTF prompt</a></li>
-  </ul></li>
-  <li><a href="#wrap-up" id="toc-wrap-up" class="nav-link" data-scroll-target="#wrap-up"><span class="flow">Wrap-up</span></a>
-  <ul class="collapse">
-  <li><a href="#mistakes-to-avoid" id="toc-mistakes-to-avoid" class="nav-link" data-scroll-target="#mistakes-to-avoid">Mistakes to avoid</a></li>
-  <li><a href="#what-to-remember" id="toc-what-to-remember" class="nav-link" data-scroll-target="#what-to-remember">What to remember</a></li>
-  </ul></li>
+  <li><a href="#why-we-collect-it" id="toc-why-we-collect-it" class="nav-link" data-scroll-target="#why-we-collect-it">4. Why We Collect It</a></li>
+  <li><a href="#legal-basis" id="toc-legal-basis" class="nav-link" data-scroll-target="#legal-basis">5. Legal Basis</a></li>
+  <li><a href="#who-sees-your-data" id="toc-who-sees-your-data" class="nav-link" data-scroll-target="#who-sees-your-data">6. Who Sees Your Data</a></li>
+  <li><a href="#how-your-data-flows" id="toc-how-your-data-flows" class="nav-link" data-scroll-target="#how-your-data-flows">7. How Your Data Flows</a></li>
+  <li><a href="#storage-security-and-retention" id="toc-storage-security-and-retention" class="nav-link" data-scroll-target="#storage-security-and-retention">8. Storage, Security, and Retention</a></li>
+  <li><a href="#your-rights" id="toc-your-rights" class="nav-link" data-scroll-target="#your-rights">9. Your Rights</a></li>
+  <li><a href="#changes-to-this-policy" id="toc-changes-to-this-policy" class="nav-link" data-scroll-target="#changes-to-this-policy">10. Changes to This Policy</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/beyondsimulations/Research-Workshops/edit/main/workshops/prompting.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/blob/main/workshops/prompting.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/beyondsimulations/Research-Workshops/edit/main/general/privacy.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/blob/main/general/privacy.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">AI Prompting for Researchers</h1>
-<p class="subtitle lead">Getting useful results from AI with the RBTF framework</p>
+<h1 class="title">Privacy Policy</h1>
+<p class="subtitle lead">How we handle your data</p>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Dr.&nbsp;Tobias Vlćek </p>
-          </div>
-  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 1, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -245,380 +230,110 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="ai-prompting-for-researchers" class="level1">
-<h1><span class="flow">AI Prompting for Researchers</span></h1>
-<section id="what-we-will-cover" class="level2">
-<h2 class="anchored" data-anchor-id="what-we-will-cover">What we will cover</h2>
-<p>This workshop addresses why most people get <span class="highlight">mediocre results</span> from AI and how to fix that. Specifically, we will look at:</p>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">1. Introduction</h2>
+<p><em>Short version: This policy covers the AI Chatbot on this website — nothing else. Use the Chatbot, and these rules apply.</em></p>
+<p>This Privacy Policy explains how we collect, use, share, and protect your information when you interact with our AI Chatbot service (the “Chatbot”). It does not cover any other services we may offer.</p>
+<p>We take your privacy seriously, and we’ve tried to write this policy in a way that’s actually readable. If anything is unclear, reach out — our contact details are in Section 2.</p>
+</section>
+<section id="data-controller" class="level2">
+<h2 class="anchored" data-anchor-id="data-controller">2. Data Controller</h2>
+<p><em>Short version: Beyond Simulations GmbH is responsible for your data.</em></p>
+<p>Beyond Simulations GmbH<br>
+Am Eich 9d<br>
+22113 Oststeinbek<br>
+Germany</p>
+<p>Email: <a href="mailto:info@beyondsimulations.com">info@beyondsimulations.com</a></p>
+</section>
+<section id="what-we-collect" class="level2">
+<h2 class="anchored" data-anchor-id="what-we-collect">3. What We Collect</h2>
+<p><em>Short version: Your messages, a hashed version of your IP, and some technical metadata. We never ask for your name or email.</em></p>
+<p>When you use the Chatbot, here’s what we collect:</p>
 <ul>
-<li>A simple framework to get better results from your prompts</li>
-<li>Why <span class="highlight">iteration</span> beats perfection</li>
-<li>Common mistakes and how to avoid them</li>
+<li><strong>Your messages and the Chatbot’s replies</strong> — unless you turn on private mode (see below), we store the full text in our database. We do not ask for or store personal identifiers like your name or email alongside these messages.</li>
+<li><strong>A pseudonymized user ID</strong> — we take your IP address and run it through a one-way SHA-256 hash. The result lets us group your messages into a session, but it can’t be reversed to recover your actual IP.</li>
+<li><strong>Technical metadata</strong> — timestamps, session and trace IDs, which AI model answered, how many tokens were used, and how long the response took. All of this lives on our self-hosted server at Hetzner in Germany.</li>
+<li><strong>Aggregated usage data</strong> — error rates, performance metrics, and similar statistics that help us keep the service running well. None of this is tied to you individually.</li>
+<li><strong>Rate limiting data</strong> — your IP address and request count are held in server memory to enforce limits (50 chat requests/min, 5 login attempts/min). This data exists only in memory and disappears when the server restarts.</li>
 </ul>
-<div class="callout callout-style-simple callout-tip">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>This is not about tricks or hacks. It is about <strong>clear communication</strong> — the same skill that makes you a better researcher.</p>
-</div>
-</div>
-</div>
+<section id="private-mode" class="level3">
+<h3 class="anchored" data-anchor-id="private-mode">Private Mode</h3>
+<p>The Chatbot supports a private mode. When it’s enabled, your message text is replaced with <code>[private]</code> in our logs. We still record technical metadata (timestamps, token counts, model, latency), but the actual content of what you wrote is not stored.</p>
 </section>
 </section>
-<section id="the-problem" class="level1">
-<h1><span class="flow">The Problem</span></h1>
-<section id="the-typical-experience" class="level2">
-<h2 class="anchored" data-anchor-id="the-typical-experience">The typical experience</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>What most people type:</strong></p>
-<blockquote class="blockquote">
-<p>“Help me with my literature review”</p>
-</blockquote>
-</div><div class="column" style="width:50%;">
-<p><strong>What the AI returns:</strong></p>
-<blockquote class="blockquote">
-<p>“A literature review is a comprehensive survey of scholarly sources on a specific topic. Here are some general steps: 1. Define your research question… 2. Search databases… 3. Evaluate sources…”</p>
-</blockquote>
-</div>
-</div>
-<p>This is <span class="highlight">correct but useless</span> — generic advice you could find on any study skills website.</p>
-</section>
-<section id="why-does-this-happen" class="level2">
-<h2 class="anchored" data-anchor-id="why-does-this-happen">Why does this happen?</h2>
-<p>The AI does not know <span class="highlight">who you are</span> — whether you are a first-year student or a PhD candidate. It has no idea <span class="highlight">what you already have</span>, be it 5 papers or 50, nor does it know <span class="highlight">what you actually need</span> — a structure, a gap analysis, or a synthesis. And without being told, it cannot guess <span class="highlight">how you want the output</span> — as a table, a paragraph, or bullet points.</p>
-</section>
-<section id="the-core-problem" class="level2">
-<h2 class="anchored" data-anchor-id="the-core-problem">The core problem</h2>
-<div class="callout callout-style-simple callout-important">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p><strong>Without context, AI gives you the average answer for everyone — which helps no one.</strong></p>
-</div>
-</div>
-</div>
-<p>The quality of the output is <span class="highlight">directly proportional</span> to the quality of the input. This is true for every AI tool, whether it is ChatGPT, Claude, Gemini, or any other system.</p>
-</section>
-<section id="context-and-iteration" class="level2">
-<h2 class="anchored" data-anchor-id="context-and-iteration">Context and iteration</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<section id="context-matters-most" class="level3">
-<h3 class="anchored" data-anchor-id="context-matters-most">Context matters most</h3>
-<p>The more relevant detail you provide, the <span class="highlight">better the response</span>. Think of it as briefing a new research assistant — they are brilliant but know <strong>nothing</strong> about your specific project.</p>
-</section>
-</div><div class="column" style="width:50%;">
-<section id="iteration-beats-perfection" class="level3">
-<h3 class="anchored" data-anchor-id="iteration-beats-perfection">Iteration beats perfection</h3>
-<p>Your first prompt <span class="highlight">does not need to be perfect</span>. Treat AI conversations as a <strong>dialogue</strong>, not a one-shot query. Refine, redirect, and build on each response.</p>
-</section>
-</div>
-</div>
-<div class="callout callout-style-simple callout-tip">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>You would never hand a new colleague a one-sentence instruction and expect perfect results. Treat AI the same way.</p>
-</div>
-</div>
-</div>
-</section>
-</section>
-<section id="the-rbtf-framework" class="level1">
-<h1><span class="flow">The RBTF Framework</span></h1>
-<section id="the-framework-role-background-task-format" class="level2">
-<h2 class="anchored" data-anchor-id="the-framework-role-background-task-format">The framework: Role, background, task, format</h2>
-<div data-tbl-colwidths="[15,30,55]">
-<table class="caption-top table">
-<colgroup>
-<col style="width: 15%">
-<col style="width: 30%">
-<col style="width: 55%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Component</th>
-<th>Question to Ask Yourself</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Role</strong></td>
-<td>Who should the AI act as?</td>
-<td>“Act as a methodologist in social science research”</td>
-</tr>
-<tr class="even">
-<td><strong>Background</strong></td>
-<td>What context does it need?</td>
-<td>“I am writing my Master’s thesis on climate policy in the EU”</td>
-</tr>
-<tr class="odd">
-<td><strong>Task</strong></td>
-<td>What exactly should it do?</td>
-<td>“Identify gaps in my literature on carbon pricing mechanisms”</td>
-</tr>
-<tr class="even">
-<td><strong>Format</strong></td>
-<td>How should the output look?</td>
-<td>“Present this as a table with columns: gap, relevant authors, potential research questions”</td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-<section id="why-rbtf-works" class="level2">
-<h2 class="anchored" data-anchor-id="why-rbtf-works">Why RBTF works</h2>
-<p>Each component serves a specific purpose:</p>
+<section id="why-we-collect-it" class="level2">
+<h2 class="anchored" data-anchor-id="why-we-collect-it">4. Why We Collect It</h2>
+<p><em>Short version: To run the Chatbot, keep it secure, make it better, and meet legal requirements.</em></p>
 <ul>
-<li><span class="highlight">Role</span> — by assigning a specific expertise, you shape the depth and vocabulary of the response, so the AI draws on the right domain knowledge instead of giving a generalist answer.</li>
-<li><span class="highlight">Background</span> — anchoring the prompt in your specific situation (your field, your data, your progress) prevents the AI from making assumptions that miss the mark.</li>
-<li><span class="highlight">Task</span> — a precisely stated task eliminates ambiguity, so the AI focuses on exactly what you need rather than guessing which of several possible requests you meant.</li>
-<li><span class="highlight">Format</span> — specifying the output structure (table, bullet list, APA paragraph) means you get something immediately usable instead of spending time reformatting.</li>
+<li><strong>Running the service</strong> — receiving your messages, processing them through AI models, and sending back answers.</li>
+<li><strong>Routing requests</strong> — managing the communication chain between the Chatbot interface and the underlying AI models.</li>
+<li><strong>Improving the service</strong> — understanding usage patterns, spotting issues, and making the Chatbot more useful over time.</li>
+<li><strong>Security</strong> — enforcing rate limits, preventing misuse, and monitoring for abuse.</li>
+<li><strong>Legal compliance</strong> — meeting applicable legal or regulatory requirements.</li>
 </ul>
-<div class="callout callout-style-simple callout-note">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>You do not always need all four components. But the more you include, the better the result will be.</p>
-</div>
-</div>
-</div>
 </section>
-<section id="context-in-action" class="level2">
-<h2 class="anchored" data-anchor-id="context-in-action">Context in action</h2>
-<blockquote class="blockquote">
-<p>“Explain machine learning”</p>
-</blockquote>
-<p><strong>AI Response:</strong> “Machine learning is a subset of artificial intelligence that enables systems to learn from data and improve over time without being explicitly programmed. There are three main types: supervised learning, unsupervised learning, and reinforcement learning…”</p>
-<p>A textbook answer. Fine if you are a complete beginner, but <span class="highlight">not tailored to anyone</span>.</p>
-<p>Now compare that with a prompt that includes context:</p>
-<blockquote class="blockquote">
-<p>“I am a social scientist studying voting behaviour. I have no programming background, but I need to understand how machine learning could help me predict election turnout from demographic data. Explain the relevant concepts I would need, avoiding technical jargon, and suggest which ML approach would suit my small dataset of 2,000 observations.”</p>
-</blockquote>
-<p>This prompt gives the AI <span class="highlight">enough context</span> to produce a useful, specific response — tailored to the researcher’s discipline, skill level, and dataset.</p>
-</section>
-</section>
-<section id="iteration-in-practice" class="level1">
-<h1><span class="flow">Iteration in practice</span></h1>
-<section id="refining-your-results" class="level2">
-<h2 class="anchored" data-anchor-id="refining-your-results">Refining your results</h2>
-<p>Your first response will rarely be exactly what you need. That is normal. Use <span class="highlight">follow-up prompts</span> to steer the conversation.</p>
-<div data-tbl-colwidths="[25,75]">
-<table class="caption-top table">
-<colgroup>
-<col style="width: 25%">
-<col style="width: 75%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>When you get…</th>
-<th>Say this…</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Too broad</td>
-<td>“Focus specifically on [X] and go deeper”</td>
-</tr>
-<tr class="even">
-<td>Too technical</td>
-<td>“Explain this for someone without a background in [field]”</td>
-</tr>
-<tr class="odd">
-<td>Too superficial</td>
-<td>“Provide more detail, especially regarding [aspect]”</td>
-</tr>
-<tr class="even">
-<td>Wrong angle</td>
-<td>“Approach this from the perspective of [discipline/method]”</td>
-</tr>
-<tr class="odd">
-<td>Missing something</td>
-<td>“Also consider [factor/variable/theory]”</td>
-</tr>
-<tr class="even">
-<td>Too long</td>
-<td>“Condense this to the 3 most important points”</td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-<section id="iteration-example" class="level2">
-<h2 class="anchored" data-anchor-id="iteration-example">Iteration example</h2>
-<div class="callout callout-style-simple callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Prompt 1 — Starting point
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>“I need help choosing a statistical test for my research.”</p>
-</div>
-</div>
-<div class="callout callout-style-simple callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Prompt 2 — Adding context
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>“I have survey data from 200 respondents. My dependent variable is satisfaction (measured on a 5-point Likert scale) and I want to compare results across 3 age groups. I am using SPSS.”</p>
-</div>
-</div>
-<div class="callout callout-style-simple callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Prompt 3 — Refining further
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>“My data is not normally distributed according to the Shapiro-Wilk test. What non-parametric alternative should I use, and how do I run it in SPSS? Also, how should I report the results in APA format?”</p>
-</div>
-</div>
-<p><strong>Prompt 1</strong> would get a generic overview of statistical tests. <strong>Prompt 2</strong> gives enough context for a <span class="highlight">specific recommendation</span>. <strong>Prompt 3</strong> addresses a real complication and asks for <span class="highlight">usable output</span>. Each iteration <span class="highlight">builds on the previous response</span>, turning a vague question into a concrete answer because the AI retains context from the full conversation.</p>
-</section>
-<section id="from-lazy-prompt-to-rbtf-prompt" class="level2">
-<h2 class="anchored" data-anchor-id="from-lazy-prompt-to-rbtf-prompt">From lazy prompt to RBTF prompt</h2>
-<blockquote class="blockquote">
-<p>“Help me with my literature review on climate change”</p>
-</blockquote>
-<p><strong>Result:</strong> A generic list of well-known climate change topics, basic search strategies, and textbook advice about synthesising sources. Nothing specific to your actual research.</p>
-<p>Now apply RBTF to the same topic:</p>
-<blockquote class="blockquote">
-<p><strong>Role:</strong> “Act as an expert in environmental economics and systematic review methodology.”</p>
-<p><strong>Background:</strong> “I am a Master’s student at University of Hamburg writing my thesis on the effectiveness of carbon pricing mechanisms in the EU. I have already collected 35 papers focused on the EU Emissions Trading System from 2018–2025.”</p>
-<p><strong>Task:</strong> “Analyse the common themes across my collected literature and identify 3 potential research gaps that could form the basis of my thesis contribution.”</p>
-<p><strong>Format:</strong> “Present the themes as a structured table with columns: theme, findings, authors, and identified gap. Then provide a brief paragraph for each gap explaining why it matters.”</p>
-</blockquote>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Without RBTF</strong></p>
+<section id="legal-basis" class="level2">
+<h2 class="anchored" data-anchor-id="legal-basis">5. Legal Basis</h2>
+<p><em>Short version: We rely mainly on legitimate interest (running a useful, secure service). In some cases, we may ask for your consent.</em></p>
+<p>Under the EU General Data Protection Regulation (GDPR), we process your data on these grounds:</p>
 <ul>
-<li>Generic advice that could apply to anyone</li>
-<li>No actionable output</li>
-<li>Requires extensive rework</li>
+<li><strong>Legitimate interests (Art. 6(1)(f) GDPR)</strong> — operating and improving the Chatbot and keeping it secure, provided these interests don’t override your data protection rights.</li>
+<li><strong>Consent (Art. 6(1)(a) GDPR)</strong> — where we ask for your explicit permission for specific processing activities.</li>
+<li><strong>Legal obligation (Art. 6(1)(c) GDPR)</strong> — where the law requires us to process certain data.</li>
 </ul>
-</div><div class="column" style="width:50%;">
-<p><strong>With RBTF</strong></p>
+</section>
+<section id="who-sees-your-data" class="level2">
+<h2 class="anchored" data-anchor-id="who-sees-your-data">6. Who Sees Your Data</h2>
+<p><em>Short version: Hetzner hosts our servers in Germany. Mistral AI generates the answers. Neither trains on your data.</em></p>
+<p>Two third parties are involved in delivering the service:</p>
 <ul>
-<li>Tailored to your project and field</li>
-<li>Immediately usable structure</li>
-<li>Builds on your existing work</li>
+<li><strong>Hetzner Online GmbH</strong> hosts our servers in Germany. They provide the infrastructure — they don’t access or process your chat content. All data (messages, logs, metadata) is stored on these servers.</li>
+<li><strong>Mistral AI</strong> is the large language model provider that generates the Chatbot’s responses. Your messages are sent to Mistral’s API for processing. According to Mistral’s data processing terms, data sent via their API is not used for training. We encourage you to review <a href="https://mistral.ai/terms/#privacy-policy">Mistral AI’s privacy policy</a> for full details.</li>
 </ul>
-</div>
-</div>
-<div class="callout callout-style-simple callout-tip">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>The RBTF prompt takes 2 minutes longer to write but saves <strong>hours</strong> of back-and-forth.</p>
-</div>
-</div>
-</div>
+<p>We do not share personal identifiers (name, email) with any third party through the Chatbot — unless you happen to include such information in your messages yourself.</p>
 </section>
+<section id="how-your-data-flows" class="level2">
+<h2 class="anchored" data-anchor-id="how-your-data-flows">7. How Your Data Flows</h2>
+<p><em>Short version: Your message travels from your browser to our server in Germany, then to Mistral AI, and back. Everything is encrypted.</em></p>
+<p>Here’s the path your message takes:</p>
+<ol type="1">
+<li>You type a message in the Chatbot running in your browser.</li>
+<li>It’s sent over HTTPS to our backend server at Hetzner in Germany.</li>
+<li>The server creates a pseudonymized user ID (SHA-256 hash of your IP) and logs the interaction to our database — unless private mode is on.</li>
+<li>Your message is forwarded to our Mistral adapter (also at Hetzner), which sends it to Mistral AI’s cloud API.</li>
+<li>Mistral’s response travels back along the same path to your browser.</li>
+</ol>
+<p>Every link in this chain is encrypted with HTTPS/TLS.</p>
 </section>
-<section id="wrap-up" class="level1">
-<h1><span class="flow">Wrap-up</span></h1>
-<section id="mistakes-to-avoid" class="level2">
-<h2 class="anchored" data-anchor-id="mistakes-to-avoid">Mistakes to avoid</h2>
-<div class="callout callout-style-simple callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Caution</span>Accepting the first response
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Always iterate. The first output is a <span class="highlight">starting point</span>, not a final answer. Push the AI to go deeper, be more specific, or reconsider its approach.</p>
-</div>
-</div>
-<div class="callout callout-style-simple callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Caution</span>Being vague about format
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>“Give me some ideas” produces a generic list. “Give me 5 ideas, each with a one-sentence description and a feasibility rating from 1–5” produces something you can <span class="highlight">actually work with</span>.</p>
-</div>
-</div>
-<div class="callout callout-style-simple callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Caution</span>Forgetting to verify
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>AI can produce confident-sounding but incorrect information. <span class="highlight">Always verify</span> claims, citations, statistics, and dates against primary sources. Never cite an AI-generated reference without checking it exists.</p>
-</div>
-</div>
+<section id="storage-security-and-retention" class="level2">
+<h2 class="anchored" data-anchor-id="storage-security-and-retention">8. Storage, Security, and Retention</h2>
+<p><em>Short version: Data stays on our German server, protected by encryption and access controls. We delete it at the end of each semester.</em></p>
+<p><strong>Where we store it</strong> — chat messages, responses, and metadata live in a PostgreSQL database on our Hetzner server in Germany. Session data (login state) exists only in server memory and is gone when the server restarts.</p>
+<p><strong>How we protect it</strong> — HTTPS encryption for all data in transit, Argon2-hashed passwords, restricted access to backend systems, and rate limiting to prevent abuse.</p>
+<p><strong>How long we keep it</strong> — we retain chat data and logs for the duration of the current academic semester. We may keep data longer if needed for troubleshooting, security, or legal reasons, but we periodically review and delete what’s no longer necessary.</p>
 </section>
-<section id="what-to-remember" class="level2">
-<h2 class="anchored" data-anchor-id="what-to-remember">What to remember</h2>
-<p>These are the key principles to take away:</p>
+<section id="your-rights" class="level2">
+<h2 class="anchored" data-anchor-id="your-rights">9. Your Rights</h2>
+<p><em>Short version: You can access, correct, delete, or export your data. You can object to processing or withdraw consent. Contact us to exercise any of these.</em></p>
+<p>Under the GDPR, you have the right to:</p>
 <ul>
-<li><span class="highlight">Context matters</span> — the more relevant detail you provide, the better the output</li>
-<li>Use the <span class="highlight">RBTF Framework</span> — Role, Background, Task, Format</li>
-<li><span class="highlight">Iterate</span> — treat it as a conversation, not a single query</li>
-<li><span class="highlight">Specify your format</span> — tell the AI exactly how you want the output</li>
-<li><span class="highlight">Always verify</span> — AI is a useful assistant, not an oracle</li>
+<li><strong>Access</strong> your data (Art. 15) — find out what we have about you.</li>
+<li><strong>Correct</strong> inaccurate data (Art. 16) — ask us to fix mistakes.</li>
+<li><strong>Delete</strong> your data (Art. 17) — request erasure under certain conditions.</li>
+<li><strong>Restrict</strong> processing (Art. 18) — limit how we use your data in certain situations.</li>
+<li><strong>Export</strong> your data (Art. 20) — receive it in a portable format or have it transferred to another organization.</li>
+<li><strong>Object</strong> to processing (Art. 21) — push back on processing based on legitimate interests.</li>
+<li><strong>Withdraw consent</strong> (Art. 7(3)) — if we process based on consent, you can revoke it at any time without affecting past processing.</li>
+<li><strong>Complain</strong> to a supervisory authority — in the EU member state where you live, work, or where the alleged infringement happened.</li>
 </ul>
-<div class="callout callout-style-simple callout-important">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>AI does not replace your expertise. It <strong>amplifies</strong> it. The better researcher you are, the better results you will get from AI tools.</p>
-</div>
-</div>
-</div>
-<div class="callout callout-style-simple callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Start practising today
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Pick one task from your current research — a paragraph to draft, a method to choose, a source to summarise — and try using the RBTF Framework. Compare the result to what you would get from a one-line prompt.</p>
-</div>
-</div>
+<p>To exercise any of these rights, contact us at the address in Section 2. We may need to verify your identity first, and we’ll respond within one month.</p>
+</section>
+<section id="changes-to-this-policy" class="level2">
+<h2 class="anchored" data-anchor-id="changes-to-this-policy">10. Changes to This Policy</h2>
+<p><em>Short version: If we change this policy, we’ll update it here and change the date at the top.</em></p>
+<p>We may update this Privacy Policy from time to time. Significant changes will be posted on this page with an updated date. We encourage you to check back occasionally.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -1052,7 +767,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
   </li>  
     <li class="nav-item">
-    <a class="nav-link" href="../general/privacy.html">
+    <a class="nav-link active" href="../general/privacy.html" aria-current="page">
 <p>Privacy Policy</p>
 </a>
   </li>  
@@ -1060,7 +775,7 @@ ul.task-list li input[type="checkbox"] {
     </div>   
     <div class="nav-footer-center">
 <p>Scientific Research Workshops, Tobias Vlćek<br>CC BY-NC-SA 4.0</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/beyondsimulations/Research-Workshops/edit/main/workshops/prompting.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/blob/main/workshops/prompting.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/beyondsimulations/Research-Workshops/edit/main/general/privacy.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/blob/main/general/privacy.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

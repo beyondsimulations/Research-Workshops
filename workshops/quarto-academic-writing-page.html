@@ -8,7 +8,7 @@
 
 <meta name="author" content="Dr.&nbsp;Tobias Vlćek">
 
-<title>Lecture - Quarto for Academic Writing – Seminar Preparation</title>
+<title>Quarto for Academic Writing – Seminar Preparation</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -190,6 +190,18 @@ window.Quarto = {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../general/scientific-writing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Scientific Writing</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../workshops/literature-research-page.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Literature</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../workshops/large-language-models-page.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">AI Tools</span></a>
   </div>
@@ -202,25 +214,25 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../workshops/git-github-page.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Version Control</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../workshops/quarto-academic-writing-page.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Quarto</span></a>
   </div>
 </li>
         <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../workshops/literature-research-page.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Literature</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../workshops/git-github-page.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Git</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
  <span class="menu-text">***</span>
   </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../general/templates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Templates</span></a>
+  </div>
+</li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../general/literature.html" class="sidebar-item-text sidebar-link">
@@ -256,13 +268,16 @@ window.Quarto = {
   <li><a href="#cross-references-overview" id="toc-cross-references-overview" class="nav-link" data-scroll-target="#cross-references-overview">Cross-references overview</a></li>
   <li><a href="#cross-references-in-practice" id="toc-cross-references-in-practice" class="nav-link" data-scroll-target="#cross-references-in-practice">Cross-references in practice</a></li>
   </ul></li>
-  <li><a href="#the-template" id="toc-the-template" class="nav-link" data-scroll-target="#the-template"><span class="flow">The Template</span></a>
+  <li><a href="#advanced-formatting-with-typst" id="toc-advanced-formatting-with-typst" class="nav-link" data-scroll-target="#advanced-formatting-with-typst"><span class="flow">Advanced Formatting with Typst</span></a>
   <ul class="collapse">
-  <li><a href="#the-template-and-rendering" id="toc-the-template-and-rendering" class="nav-link" data-scroll-target="#the-template-and-rendering">The template and rendering</a></li>
-  <li><a href="#template-files" id="toc-template-files" class="nav-link" data-scroll-target="#template-files">Template files</a></li>
-  <li><a href="#editing-the-title-page" id="toc-editing-the-title-page" class="nav-link" data-scroll-target="#editing-the-title-page">Editing the title page</a></li>
-  <li><a href="#rendering" id="toc-rendering" class="nav-link" data-scroll-target="#rendering">Rendering</a></li>
-  <li><a href="#workflow-tips" id="toc-workflow-tips" class="nav-link" data-scroll-target="#workflow-tips">Workflow tips</a></li>
+  <li><a href="#embedding-raw-typst" id="toc-embedding-raw-typst" class="nav-link" data-scroll-target="#embedding-raw-typst">Embedding raw Typst</a></li>
+  <li><a href="#footnotes-and-special-characters" id="toc-footnotes-and-special-characters" class="nav-link" data-scroll-target="#footnotes-and-special-characters">Footnotes and special characters</a></li>
+  </ul></li>
+  <li><a href="#workflow-tips" id="toc-workflow-tips" class="nav-link" data-scroll-target="#workflow-tips"><span class="flow">Workflow Tips</span></a>
+  <ul class="collapse">
+  <li><a href="#reference-management-with-zotero" id="toc-reference-management-with-zotero" class="nav-link" data-scroll-target="#reference-management-with-zotero">Reference management with Zotero</a></li>
+  <li><a href="#writing-best-practices" id="toc-writing-best-practices" class="nav-link" data-scroll-target="#writing-best-practices">Writing best practices</a></li>
+  <li><a href="#templates" id="toc-templates" class="nav-link" data-scroll-target="#templates">Templates</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/beyondsimulations/Research-Workshops/edit/main/workshops/quarto-academic-writing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/blob/main/workshops/quarto-academic-writing.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -272,8 +287,8 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lecture - Quarto for Academic Writing</h1>
-<p class="subtitle lead">Seminar Preparation</p>
+<h1 class="title">Quarto for Academic Writing</h1>
+<p class="subtitle lead">Write in Markdown, render to PDF with citations and cross-references</p>
 </div>
 
 
@@ -674,115 +689,58 @@ window.Quarto = {
 </ul>
 </section>
 </section>
-<section id="the-template" class="level1">
-<h1><span class="flow">The Template</span></h1>
-<section id="the-template-and-rendering" class="level2">
-<h2 class="anchored" data-anchor-id="the-template-and-rendering">The template and rendering</h2>
-<p>We provide <span class="highlight">ready-to-use Quarto templates</span> for your seminar papers, available in <strong>German</strong> and <strong>English</strong>. Download them from the course repository.</p>
-<p>The templates include:</p>
+<section id="advanced-formatting-with-typst" class="level1">
+<h1><span class="flow">Advanced Formatting with Typst</span></h1>
+<section id="embedding-raw-typst" class="level2">
+<h2 class="anchored" data-anchor-id="embedding-raw-typst">Embedding raw Typst</h2>
+<p>The Quarto templates use <span class="highlight">Typst</span> (not LaTeX) to produce the PDF. For most writing, you only need Markdown. But for advanced formatting, you can embed raw Typst code in a fenced block:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{=typst}</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="in">#v(1cm)                          // vertical space</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="in">#text(fill: red)[important]      // colored text</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="in">#align(center)[centered text]    // alignment</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="in">#line(length: 100%)              // horizontal line</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="in">#set text(size: 9pt)             // change font size locally</span></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Typst is much simpler than LaTeX. See the <a href="https://typst.app/docs">Typst documentation</a> for the full reference.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="footnotes-and-special-characters" class="level2">
+<h2 class="anchored" data-anchor-id="footnotes-and-special-characters">Footnotes and special characters</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>This claim needs a source^<span class="co">[</span><span class="ot">See Smith (2023) for details.</span><span class="co">]</span>.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
-<li><strong>Custom UHH title page:</strong> University name, faculty, institute, thesis type, supervisor, matriculation number, and your details, all pre-formatted.</li>
-<li><strong>Correct margins and formatting:</strong> Page dimensions (40/25/30/20mm), 11pt font, and 1.5 line spacing are pre-configured to match UHH requirements.</li>
-<li><strong>Table of contents, list of figures, list of tables:</strong> Generated automatically from your headings, figure captions, and table captions.</li>
-<li><strong>List of abbreviations and list of symbols:</strong> Pre-filled with examples you can adapt.</li>
-<li><strong>Citation setup with APA style:</strong> Uses Typst’s built-in <code>bibliographystyle: apa</code>, so you can cite with <code>[@key]</code> right away.</li>
-<li><strong>Booktabs-style tables:</strong> Clean academic tables with horizontal rules only.</li>
-<li><strong>Example content:</strong> Sample sections, figures, tables, equations, and cross-references you can adapt.</li>
-<li><strong>Declaration of authorship:</strong> The required signed statement, formatted according to university guidelines.</li>
-<li><strong>AI tools declaration:</strong> A section to document which AI tools you used and how.</li>
+<li>En-dash for ranges: <code>5--10</code> renders as 5–10</li>
+<li>Em-dash for parenthetical remarks: <code>---</code> renders as —</li>
+<li>Non-breaking space: <code>16\ GB</code> keeps the number and unit together</li>
 </ul>
 </section>
-<section id="template-files" class="level2">
-<h2 class="anchored" data-anchor-id="template-files">Template files</h2>
-<p>You need <span class="highlight">three files</span> in the same folder:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>File</th>
-<th>Purpose</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>seminar-paper-en.qmd</code> (or <code>-de.qmd</code>)</td>
-<td>Your paper (edit this)</td>
-</tr>
-<tr class="even">
-<td><code>references.bib</code></td>
-<td>Your bibliography entries</td>
-</tr>
-<tr class="odd">
-<td><code>typst-show.typ</code></td>
-<td>Required helper (do not delete)</td>
-</tr>
-</tbody>
-</table>
-<p>. . .</p>
-<div class="callout callout-style-simple callout-warning">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>The <code>typst-show.typ</code> file is required for the custom title page to work. Keep it in the same folder as your <code>.qmd</code> file.</p>
-</div>
-</div>
-</div>
 </section>
-<section id="editing-the-title-page" class="level2">
-<h2 class="anchored" data-anchor-id="editing-the-title-page">Editing the title page</h2>
-<p>The title page is defined in <span class="highlight">Typst code</span> inside the YAML header. Look for the <code>// ←</code> markers to find the fields you need to change:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># In include-before-body, look for lines like:</span></span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="co">#text(...)[Title of the Thesis]  // ← your title</span></span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="ot">*Last</span><span class="at"> Name, First Name*          // ← your name</span></span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="fu">Matriculation No.</span><span class="kw">:</span><span class="at"> XXXXXXX       // ← your number</span></span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="at">Prof. Dr. Knut Haase             // ← your supervisor</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>The rest of the YAML controls formatting and should not need changes.</p>
+<section id="workflow-tips" class="level1">
+<h1><span class="flow">Workflow Tips</span></h1>
+<section id="reference-management-with-zotero" class="level2">
+<h2 class="anchored" data-anchor-id="reference-management-with-zotero">Reference management with Zotero</h2>
+<p>Use <a href="https://www.zotero.org/">Zotero</a> (free) with the <a href="https://retorque.re/zotero-better-bibtex/">Better BibTeX</a> extension to manage your references. Better BibTeX auto-exports your library to a <code>.bib</code> file, so the workflow becomes: save a paper to Zotero, cite it in Quarto with <code>[@key]</code>. See the <a href="../workshops/literature-research-page.html">Literature Research</a> workshop for detailed setup instructions.</p>
 </section>
-<section id="rendering" class="level2">
-<h2 class="anchored" data-anchor-id="rendering">Rendering</h2>
-<p>Render your document from the terminal:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render seminar-paper-en.qmd</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Or use <strong>live preview</strong> while writing:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview seminar-paper-en.qmd</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="callout callout-style-simple callout-tip">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-body-container">
-<p><code>quarto preview</code> opens a browser window that <strong>automatically refreshes</strong> every time you save the file. This is the best way to write and check your formatting simultaneously.</p>
-</div>
-</div>
-</div>
-</section>
-<section id="workflow-tips" class="level2">
-<h2 class="anchored" data-anchor-id="workflow-tips">Workflow tips</h2>
-<p>Use <a href="https://www.zotero.org/">Zotero</a> (free) with the <a href="https://retorque.re/zotero-better-bibtex/">Better BibTeX</a> extension. Better BibTeX <strong>automatically exports</strong> your library to a <code>.bib</code> file, so the workflow becomes: find a paper, save it to Zotero, and cite it in Quarto with <code>[@key]</code>.</p>
-<div class="callout callout-style-simple callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Recommended setup
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ol type="1">
-<li>Install Zotero and the Better BibTeX plugin</li>
-<li>Set up auto-export to <code>references.bib</code> in your project folder</li>
-<li>Use the Zotero browser connector to save papers with one click</li>
-<li>Citation keys are generated automatically (e.g., <code>smith2023</code>)</li>
-</ol>
-</div>
-</div>
+<section id="writing-best-practices" class="level2">
+<h2 class="anchored" data-anchor-id="writing-best-practices">Writing best practices</h2>
 <ul>
 <li><strong>Keep figures in an <code>images/</code> folder.</strong> A dedicated folder prevents clutter in your project root and makes it straightforward to locate and update graphics later.</li>
 <li><strong>Use <code>quarto preview</code> for <span class="highlight">live preview</span> while writing.</strong> Seeing your rendered output update in real time helps you catch formatting issues early, before they pile up.</li>
 <li><strong>Write one sentence per line.</strong> This makes version control diffs much cleaner, because a change to one sentence shows up as a single changed line rather than a reflow of an entire paragraph.</li>
 <li><strong>Use <code>&lt;!-- comments --&gt;</code> to leave notes for yourself.</strong> HTML comments are invisible in the rendered output, so you can mark sections that need revision or leave reminders without affecting the final document.</li>
 </ul>
+<p>For guidance on academic language, paragraph structure, and precision in scientific writing, see the <a href="../general/scientific-writing.html">Scientific Writing</a> guide.</p>
+</section>
+<section id="templates" class="level2">
+<h2 class="anchored" data-anchor-id="templates">Templates</h2>
+<p>Ready-to-use templates for seminar papers, bachelor theses, and master theses are available on the <a href="../general/templates.html">Templates</a> page. Download them there, then come back to this workshop for the formatting syntax.</p>
 <div class="callout callout-style-simple callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1206,15 +1164,9 @@ window.Quarto = {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-      &nbsp;
-    </div>   
-    <div class="nav-footer-center">
-<p>Research Workshops, Tobias Vlćek<br>CC BY-NC-SA 4.0</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/beyondsimulations/Research-Workshops/edit/main/workshops/quarto-academic-writing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/blob/main/workshops/quarto-academic-writing.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
-    <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/beyondsimulations/Research-Workshops">
+    <a class="nav-link" href="https://github.com/beyondsimulations/Applied-Optimization">
       <i class="bi bi-github" role="img">
 </i> 
     </a>
@@ -1225,7 +1177,30 @@ window.Quarto = {
 </i> 
     </a>
   </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:tobias.vlcek@uni-hamburg.de">
+      <i class="bi bi-envelope" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://tobiasvlcek.com/lectures/">
+      <i class="bi bi-skip-backward" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../general/privacy.html">
+<p>Privacy Policy</p>
+</a>
+  </li>  
 </ul>
+    </div>   
+    <div class="nav-footer-center">
+<p>Scientific Research Workshops, Tobias Vlćek<br>CC BY-NC-SA 4.0</p>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/beyondsimulations/Research-Workshops/edit/main/workshops/quarto-academic-writing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/blob/main/workshops/quarto-academic-writing.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
     </div>
   </div>
 </footer>

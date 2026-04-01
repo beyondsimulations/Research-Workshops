@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Dr.&nbsp;Tobias Vlćek">
 
 <title>Literature and Resources – Seminar Preparation</title>
 <style>
@@ -125,6 +126,18 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../general/scientific-writing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Scientific Writing</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../workshops/literature-research-page.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Literature</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../workshops/large-language-models-page.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">AI Tools</span></a>
   </div>
@@ -137,25 +150,25 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../workshops/git-github-page.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Version Control</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../workshops/quarto-academic-writing-page.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Quarto</span></a>
   </div>
 </li>
         <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../workshops/literature-research-page.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Literature</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../workshops/git-github-page.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Git</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
  <span class="menu-text">***</span>
   </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../general/templates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Templates</span></a>
+  </div>
+</li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../general/literature.html" class="sidebar-item-text sidebar-link active">
@@ -184,7 +197,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#ai-discovery-tools" id="toc-ai-discovery-tools" class="nav-link" data-scroll-target="#ai-discovery-tools">AI discovery tools</a></li>
   <li><a href="#reference-management" id="toc-reference-management" class="nav-link" data-scroll-target="#reference-management">Reference management</a></li>
   </ul></li>
-  <li><a href="#academic-writing" id="toc-academic-writing" class="nav-link" data-scroll-target="#academic-writing">Academic Writing</a></li>
+  <li><a href="#scientific-writing" id="toc-scientific-writing" class="nav-link" data-scroll-target="#scientific-writing">Scientific Writing</a></li>
+  <li><a href="#optimization" id="toc-optimization" class="nav-link" data-scroll-target="#optimization">Optimization</a></li>
+  <li><a href="#academic-writing-tools" id="toc-academic-writing-tools" class="nav-link" data-scroll-target="#academic-writing-tools">Academic Writing Tools</a></li>
   <li><a href="#version-control" id="toc-version-control" class="nav-link" data-scroll-target="#version-control">Version Control</a></li>
   <li><a href="#understanding-ai" id="toc-understanding-ai" class="nav-link" data-scroll-target="#understanding-ai">Understanding AI</a></li>
   <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further Reading</a></li>
@@ -204,6 +219,12 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Dr.&nbsp;Tobias Vlćek </p>
+          </div>
+  </div>
     
   
     
@@ -285,8 +306,25 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 </section>
-<section id="academic-writing" class="level1">
-<h1>Academic Writing</h1>
+<section id="scientific-writing" class="level1">
+<h1>Scientific Writing</h1>
+<p>These resources cover the principles of academic writing, from structuring your argument to meeting university requirements. See also the <a href="../general/scientific-writing.html">Scientific Writing</a> guide on this site.</p>
+<ul>
+<li><a href="https://studienperspektiven.check.uni-hamburg.de/wie-schreibe-ich-wissenschaftlich/">Wie schreibe ich wissenschaftlich?</a> (University of Hamburg, StudienPerspektivTage): an introduction to academic writing principles, with links to writing center workshops and individual consultations at UHH.</li>
+<li><a href="https://apastyle.apa.org/">APA Style</a>: the citation and formatting standard used in the course templates. The website covers in-text citations, reference lists, and formatting rules.</li>
+</ul>
+</section>
+<section id="optimization" class="level1">
+<h1>Optimization</h1>
+<p>If your thesis involves implementing optimization models, the following resources will help you get started.</p>
+<ul>
+<li><a href="https://beyondsimulations.github.io/Optimization-with-Julia/">Optimization with Julia</a>: A full course on mathematical optimization with Julia, covering linear programming, mixed-integer programming, and heuristics. Includes hands-on exercises and solver integration. This is the recommended programming course at the institute.</li>
+<li><a href="https://www.gurobi.com/">Gurobi</a>: Commercial optimization solver with a <a href="https://www.gurobi.com/academia/academic-program-and-licenses/">free academic license</a>. One of the fastest solvers available for LP, MIP, and QP. Install via the website after obtaining your academic license.</li>
+<li><a href="https://highs.dev/">HiGHs</a>: Open-source solver for linear and mixed-integer programming. No license required, easy to install (<code>pip install highspy</code> or via Julia’s package manager). A good default if you don’t need Gurobi’s speed.</li>
+</ul>
+</section>
+<section id="academic-writing-tools" class="level1">
+<h1>Academic Writing Tools</h1>
 <p>These tools are covered in the <a href="../workshops/quarto-academic-writing-page.html">Quarto for Academic Writing</a> workshop. Together they replace LaTeX for most academic writing tasks.</p>
 <ul>
 <li><a href="https://quarto.org">Quarto</a>: Open-source scientific publishing system by Posit. Write in Markdown, render to PDF, HTML, Word, or slides. Handles citations, cross-references, and numbering automatically. Used to create this website and the course templates.</li>
@@ -731,15 +769,9 @@ ul.task-list li input[type="checkbox"] {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-      &nbsp;
-    </div>   
-    <div class="nav-footer-center">
-<p>Research Workshops, Tobias Vlćek<br>CC BY-NC-SA 4.0</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/beyondsimulations/Research-Workshops/edit/main/general/literature.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/blob/main/general/literature.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
-    <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/beyondsimulations/Research-Workshops">
+    <a class="nav-link" href="https://github.com/beyondsimulations/Applied-Optimization">
       <i class="bi bi-github" role="img">
 </i> 
     </a>
@@ -750,7 +782,30 @@ ul.task-list li input[type="checkbox"] {
 </i> 
     </a>
   </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:tobias.vlcek@uni-hamburg.de">
+      <i class="bi bi-envelope" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://tobiasvlcek.com/lectures/">
+      <i class="bi bi-skip-backward" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../general/privacy.html">
+<p>Privacy Policy</p>
+</a>
+  </li>  
 </ul>
+    </div>   
+    <div class="nav-footer-center">
+<p>Scientific Research Workshops, Tobias Vlćek<br>CC BY-NC-SA 4.0</p>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/beyondsimulations/Research-Workshops/edit/main/general/literature.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/blob/main/general/literature.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
     </div>
   </div>
 </footer>

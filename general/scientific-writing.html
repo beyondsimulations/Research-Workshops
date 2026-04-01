@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Dr.&nbsp;Tobias Vlćek">
+
+<title>Scientific Writing – Seminar Preparation</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37f1b6a4dc8ee4ee7f9eea507a13561b.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-a9abb12a99cb215b9abd04c9eb1042c7.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37f1b6a4dc8ee4ee7f9eea507a13561b.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a628349b759f161a97b1928e1a5a3acb.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-d330036a5a8d075558b9691e740260d3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-a628349b759f161a97b1928e1a5a3acb.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script defer="" src="https://umami.byndsim.com/getinfo" data-website-id="c9696f17-b99d-4e18-b36c-20af187a680b"></script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../general/scientific-writing.html">Scientific Writing</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="https://images.beyondsimulations.com/logo/midjourney-solar-mirror.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="https://images.beyondsimulations.com/logo/midjourney-solar-mirror.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+ <span class="menu-text">***</span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../general/scientific-writing.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Scientific Writing</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../workshops/literature-research-page.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Literature</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../workshops/large-language-models-page.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">AI Tools</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../workshops/prompting-page.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prompting</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../workshops/git-github-page.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Version Control</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../workshops/quarto-academic-writing-page.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quarto</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+ <span class="menu-text">***</span>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../general/templates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Templates</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../general/literature.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Resources</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#structure-of-a-paper" id="toc-structure-of-a-paper" class="nav-link active" data-scroll-target="#structure-of-a-paper">Structure of a Paper</a>
+  <ul class="collapse">
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a>
+  <ul class="collapse">
+  <li><a href="#formulating-the-research-question" id="toc-formulating-the-research-question" class="nav-link" data-scroll-target="#formulating-the-research-question">Formulating the research question</a></li>
+  </ul></li>
+  <li><a href="#literature-review" id="toc-literature-review" class="nav-link" data-scroll-target="#literature-review">Literature Review</a>
+  <ul class="collapse">
+  <li><a href="#source-quality" id="toc-source-quality" class="nav-link" data-scroll-target="#source-quality">Source quality</a></li>
+  </ul></li>
+  <li><a href="#model" id="toc-model" class="nav-link" data-scroll-target="#model">Model</a>
+  <ul class="collapse">
+  <li><a href="#assumptions" id="toc-assumptions" class="nav-link" data-scroll-target="#assumptions">Assumptions</a></li>
+  <li><a href="#formulation" id="toc-formulation" class="nav-link" data-scroll-target="#formulation">Formulation</a></li>
+  </ul></li>
+  <li><a href="#computational-study" id="toc-computational-study" class="nav-link" data-scroll-target="#computational-study">Computational Study</a>
+  <ul class="collapse">
+  <li><a href="#methodology-quality" id="toc-methodology-quality" class="nav-link" data-scroll-target="#methodology-quality">Methodology quality</a></li>
+  </ul></li>
+  <li><a href="#presenting-results-figures-and-tables" id="toc-presenting-results-figures-and-tables" class="nav-link" data-scroll-target="#presenting-results-figures-and-tables">Presenting Results: Figures and Tables</a>
+  <ul class="collapse">
+  <li><a href="#chart-types" id="toc-chart-types" class="nav-link" data-scroll-target="#chart-types">Chart types</a></li>
+  <li><a href="#figure-design" id="toc-figure-design" class="nav-link" data-scroll-target="#figure-design">Figure design</a></li>
+  <li><a href="#table-design" id="toc-table-design" class="nav-link" data-scroll-target="#table-design">Table design</a></li>
+  </ul></li>
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion">Discussion</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  </ul></li>
+  <li><a href="#academic-language-and-style" id="toc-academic-language-and-style" class="nav-link" data-scroll-target="#academic-language-and-style">Academic Language and Style</a>
+  <ul class="collapse">
+  <li><a href="#precision-and-objectivity" id="toc-precision-and-objectivity" class="nav-link" data-scroll-target="#precision-and-objectivity">Precision and objectivity</a></li>
+  <li><a href="#paragraph-structure" id="toc-paragraph-structure" class="nav-link" data-scroll-target="#paragraph-structure">Paragraph structure</a></li>
+  <li><a href="#proofreading" id="toc-proofreading" class="nav-link" data-scroll-target="#proofreading">Proofreading</a></li>
+  </ul></li>
+  <li><a href="#plagiarism-ethics-and-ai" id="toc-plagiarism-ethics-and-ai" class="nav-link" data-scroll-target="#plagiarism-ethics-and-ai">Plagiarism, Ethics, and AI</a>
+  <ul class="collapse">
+  <li><a href="#plagiarism" id="toc-plagiarism" class="nav-link" data-scroll-target="#plagiarism">Plagiarism</a></li>
+  <li><a href="#research-ethics" id="toc-research-ethics" class="nav-link" data-scroll-target="#research-ethics">Research ethics</a></li>
+  <li><a href="#using-ai-tools" id="toc-using-ai-tools" class="nav-link" data-scroll-target="#using-ai-tools">Using AI tools</a>
+  <ul class="collapse">
+  <li><a href="#declare-everything" id="toc-declare-everything" class="nav-link" data-scroll-target="#declare-everything">Declare everything</a></li>
+  <li><a href="#editing-vs.-generating" id="toc-editing-vs.-generating" class="nav-link" data-scroll-target="#editing-vs.-generating">Editing vs.&nbsp;generating</a></li>
+  <li><a href="#why-this-matters-more-for-you-than-for-an-experienced-researcher" id="toc-why-this-matters-more-for-you-than-for-an-experienced-researcher" class="nav-link" data-scroll-target="#why-this-matters-more-for-you-than-for-an-experienced-researcher">Why this matters more for you than for an experienced researcher</a></li>
+  <li><a href="#writing-fast-is-not-the-same-as-understanding" id="toc-writing-fast-is-not-the-same-as-understanding" class="nav-link" data-scroll-target="#writing-fast-is-not-the-same-as-understanding">Writing fast is not the same as understanding</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#common-mistakes" id="toc-common-mistakes" class="nav-link" data-scroll-target="#common-mistakes">Common Mistakes</a></li>
+  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further Reading</a></li>
+  <li><a href="#next-steps" id="toc-next-steps" class="nav-link" data-scroll-target="#next-steps">Next Steps</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/beyondsimulations/Research-Workshops/edit/main/general/scientific-writing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/blob/main/general/scientific-writing.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Scientific Writing</h1>
+<p class="subtitle lead">How to structure and write your seminar paper or thesis</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Dr.&nbsp;Tobias Vlćek </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>This guide covers the craft of academic writing: how to structure your paper, write clearly, present results, and avoid common mistakes. For thesis types, evaluation criteria, supervisor guidance, and template downloads, see the <a href="../general/templates.html">Templates</a> page.</p>
+<section id="structure-of-a-paper" class="level1">
+<h1>Structure of a Paper</h1>
+<p>A typical paper or thesis in operations research follows a standard structure. Readers expect information in a specific order, and deviating without good reason will confuse them.</p>
+<p>The structure should be systematic and balanced. Each subsection must logically connect to the next, and the overall outline should be driven by your research question. A subsection that has no sibling (section 2.1 without a 2.2) signals a structural problem. Subsections shorter than half a page are usually better merged with something else.</p>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>The introduction establishes why your work matters and what it sets out to do. Think of it as a funnel: start broad, then narrow down.</p>
+<ol type="1">
+<li>Broad context: why does this field matter? What is the practical relevance?</li>
+<li>Specific problem: what is the concrete challenge you address?</li>
+<li>Research gap: what is missing in the existing literature?</li>
+<li>Your contribution: what does this paper do? One or two sentences.</li>
+<li>Paper outline: briefly describe the structure of the remaining sections.</li>
+</ol>
+<section id="formulating-the-research-question" class="level3">
+<h3 class="anchored" data-anchor-id="formulating-the-research-question">Formulating the research question</h3>
+<p>The research question determines everything: structure, method, and how your work will be evaluated. A vague question leads to vague results.</p>
+<p>Analytical questions work better than purely descriptive ones. “What methods exist for solving the VRP?” is descriptive and barely requires original thought. “How does the proposed heuristic compare to exact methods in terms of solution quality and runtime?” is analytical and gives you something concrete to answer.</p>
+<p>Be precise. A common mistake is choosing a question that is too ambitious for the available time. If you cannot answer it within your timeline, narrow the scope. And keep the question visible as you write. Every section should connect back to it. I see many students who lose sight of their question halfway through and end up answering something else entirely by the conclusion.</p>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Write the introduction last, once you actually know your contribution.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="literature-review" class="level2">
+<h2 class="anchored" data-anchor-id="literature-review">Literature Review</h2>
+<p>The literature review is not a list of summaries. It should build an argument for why your work is needed.</p>
+<p>Group sources by theme or method, not chronologically. Exact methods in one block, heuristics in another, machine-learning approaches in a third. Compare and contrast the approaches: don’t just state what each paper does, but how they relate to each other and where they fall short. Every cited paper should connect to your research question. End the section with a transition to your own contribution: what remains unsolved?</p>
+<section id="source-quality" class="level3">
+<h3 class="anchored" data-anchor-id="source-quality">Source quality</h3>
+<p>Not all sources carry equal weight. Textbook knowledge is assumed and should not be reproduced. Use journal articles, conference proceedings, and dissertations. Check source currency: are you citing recent developments, or only papers from 10+ years ago? A good review includes both foundational work and recent contributions.</p>
+<p>Use journal rankings (e.g., VHB-JOURQUAL for business research) to assess source quality. And cite critically. Don’t just reference a paper; engage with its methods, findings, and limitations. Show that you have actually read it.</p>
+<div class="callout callout-style-simple callout-warning">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Knowledge of publications by your supervisor’s research group on your topic is expected. Check their publication list before you begin.</p>
+</div>
+</div>
+</div>
+<p>For a seminar paper, a focused review of 10–15 key sources is usually sufficient. A master thesis should cover 40–60 sources and demonstrate that you have read the field comprehensively. The <a href="../workshops/literature-research-page.html">Literature Research</a> workshop covers how to find, evaluate, and organize your sources systematically.</p>
+</section>
+</section>
+<section id="model" class="level2">
+<h2 class="anchored" data-anchor-id="model">Model</h2>
+<section id="assumptions" class="level3">
+<h3 class="anchored" data-anchor-id="assumptions">Assumptions</h3>
+<p>Every model relies on simplifying assumptions. For each assumption, justify why it is reasonable for your specific problem, acknowledge what would change if it were relaxed, and order assumptions from the most fundamental to the most specific.</p>
+</section>
+<section id="formulation" class="level3">
+<h3 class="anchored" data-anchor-id="formulation">Formulation</h3>
+<p>Define all notation before using it. The templates include a notation table for this purpose. Follow consistent conventions throughout: sets in calligraphic letters (<span class="math inline">\(\mathcal{J}\)</span>), decision variables in uppercase (<span class="math inline">\(X_j\)</span>), parameters in lowercase (<span class="math inline">\(b_i\)</span>).</p>
+<p>Every constraint must be explained in prose. A wall of equations without commentary is unreadable. Reference constraints by their labels when discussing them, for example: “Constraint (2) ensures that each customer is visited exactly once.”</p>
+</section>
+</section>
+<section id="computational-study" class="level2">
+<h2 class="anchored" data-anchor-id="computational-study">Computational Study</h2>
+<p>A computational study must be reproducible. Report the hardware (CPU, RAM), the software (solver name and version, programming language), where the test data comes from or how you generated it, and what baselines you compare against (a benchmark, exact solution, or published results). Report both solution quality (optimality gap, objective value) and computation time, and discuss how performance changes across instance sizes rather than just listing individual numbers.</p>
+<section id="methodology-quality" class="level3">
+<h3 class="anchored" data-anchor-id="methodology-quality">Methodology quality</h3>
+<p>Reflect on the quality of your research design. Does your method actually measure what you claim it measures (validity)? Would repeating the experiment produce the same results (reliability)? Are your test instances representative of the broader problem class (representativity)?</p>
+<p>Present results descriptively first (what did you observe?), then analytically (what does this mean in relation to your research question?).</p>
+</section>
+</section>
+<section id="presenting-results-figures-and-tables" class="level2">
+<h2 class="anchored" data-anchor-id="presenting-results-figures-and-tables">Presenting Results: Figures and Tables</h2>
+<p>Use a table when the reader needs exact numbers, such as benchmark results. Use a figure when the reader needs to see patterns or trends, such as how runtime scales with problem size. Don’t present the same data in both formats.</p>
+<section id="chart-types" class="level3">
+<h3 class="anchored" data-anchor-id="chart-types">Chart types</h3>
+<div id="tbl-chart-types" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-chart-types-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Chart type selection guide
+</figcaption>
+<div aria-describedby="tbl-chart-types-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Data type</th>
+<th style="text-align: left;">Good choice</th>
+<th style="text-align: left;">Avoid</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Comparison across categories</td>
+<td style="text-align: left;">Bar chart</td>
+<td style="text-align: left;">Pie chart (hard to compare slices)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Trend over time or instances</td>
+<td style="text-align: left;">Line chart</td>
+<td style="text-align: left;">Bar chart (loses the trend)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Distribution</td>
+<td style="text-align: left;">Histogram, box plot</td>
+<td style="text-align: left;">Bar chart of means (hides variance)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Relationship between two variables</td>
+<td style="text-align: left;">Scatter plot</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Performance across many instances</td>
+<td style="text-align: left;">Box plot, violin plot</td>
+<td style="text-align: left;">Table with 50+ rows</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="figure-design" class="level3">
+<h3 class="anchored" data-anchor-id="figure-design">Figure design</h3>
+<p>Label every axis with units. Use consistent colors across all figures: if Method A is blue in Figure 1, keep it blue everywhere. Remove gridlines, background shading, 3D effects, and any decorative elements that don’t encode data. Make figures readable in grayscale (not everyone prints in color) by using line styles or markers in addition to colors, and avoid red-green combinations. The <em>viridis</em> and <em>cividis</em> palettes are safe for colorblind readers. For computational studies, plotting the optimality gap or computation time on a log scale often reveals patterns that are invisible on a linear scale.</p>
+</section>
+<section id="table-design" class="level3">
+<h3 class="anchored" data-anchor-id="table-design">Table design</h3>
+<p>Use booktabs style: horizontal rules only (<code>\toprule</code>, <code>\midrule</code>, <code>\bottomrule</code>), no vertical lines. Right-align numeric columns, left-align text columns, and put units in column headers rather than repeating them in every cell. Keep tables compact by removing unnecessary columns. Every table needs a caption and must be referenced in the text.</p>
+</section>
+</section>
+<section id="discussion" class="level2">
+<h2 class="anchored" data-anchor-id="discussion">Discussion</h2>
+<p>The discussion is where you interpret your results and put them into context. It is distinct from the computational study (which presents the results) and the conclusion (which summarizes).</p>
+<p>Connect your results to the research question you posed in the introduction. Do your findings answer it? If only partially, say so explicitly. Compare with existing literature: are your results consistent with prior work? Where do they differ, and why? If something did not work as expected, analyze why rather than skipping over it. Unexpected results often contain the most interesting insights.</p>
+<p>Address limitations honestly. Every study has them, and discussing how they affect the interpretation of your results shows that you understand your own work. Hiding limitations does not make them invisible to your examiner. Also be careful to distinguish observation from interpretation. “The heuristic found solutions within 5% of the optimum for all small instances” is an observation. “This suggests the heuristic is suitable for small-scale applications” is an interpretation. Both belong in the discussion, but don’t conflate the two.</p>
+<div class="callout callout-style-simple callout-important">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Do not introduce entirely new topics in the discussion. Reflect on what you have already presented. New directions belong in the conclusion’s outlook section.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Separate summary from outlook. First state what you did and found, then suggest directions for future research. Don’t introduce new results here; the conclusion synthesizes, it does not analyze. Future research directions should be concrete: not “further research is needed” but “extending the model to include time windows would allow applications in last-mile delivery.” Use “suggests” rather than “proves,” and “indicates” rather than “demonstrates,” unless you provide formal proof. The conclusion should refer back to the research question from the introduction. Can you answer it? If not fully, explain what remains open.</p>
+</section>
+</section>
+<section id="academic-language-and-style" class="level1">
+<h1>Academic Language and Style</h1>
+<p>Scientific writing is not literary writing. The goal is clarity and precision.</p>
+<section id="precision-and-objectivity" class="level2">
+<h2 class="anchored" data-anchor-id="precision-and-objectivity">Precision and objectivity</h2>
+<p>Choose exact terms over vague ones. “Several studies” is better than “a lot of studies.” A specific year is better than “recently.” Avoid value judgments (“this excellent method”) and emotional language (“unfortunately”). Let the evidence speak for itself. Use the same term for the same concept throughout your paper. If you call it “optimality gap” on page three, don’t switch to “solution quality deviation” on page eight. Readers will wonder whether you mean something different.</p>
+<p>Define technical terms on first use if they are not standard in the field. Cut filler words like “basically,” “actually,” “of course,” and “it is important to note that,” which add length without adding meaning. Use inclusive language and avoid discriminatory formulations.</p>
+</section>
+<section id="paragraph-structure" class="level2">
+<h2 class="anchored" data-anchor-id="paragraph-structure">Paragraph structure</h2>
+<p>Each paragraph should contain one main idea. Start with a topic sentence that states the point, follow with evidence or reasoning, and close with a sentence that connects to the next paragraph or back to the research question.</p>
+<p>A paragraph covering multiple unrelated ideas should be split. A paragraph consisting of only one sentence is too short.</p>
+</section>
+<section id="proofreading" class="level2">
+<h2 class="anchored" data-anchor-id="proofreading">Proofreading</h2>
+<p>Read your paper aloud before submission. Listen for awkward phrasing, overly long sentences, and words that can be removed without changing the meaning. If a sentence runs longer than three lines, split it. In my experience, clear writing usually means the author actually understands the material. Muddled writing usually means they don’t.</p>
+</section>
+</section>
+<section id="plagiarism-ethics-and-ai" class="level1">
+<h1>Plagiarism, Ethics, and AI</h1>
+<section id="plagiarism" class="level2">
+<h2 class="anchored" data-anchor-id="plagiarism">Plagiarism</h2>
+<p>All content taken verbatim or paraphrased from another source must be cited. Failing to do so is plagiarism, which the university treats as a serious academic offense that can lead to a failing grade or further disciplinary action.</p>
+<p>Direct quotes must be in quotation marks with an exact citation, including the page number. Paraphrased content must be cited even when you use your own words. Self-plagiarism (reusing your own prior work without attribution) is also not permitted. Content from Wikipedia, other students’ papers, or online forums without citation counts as plagiarism. Universities use specialized software to detect it.</p>
+</section>
+<section id="research-ethics" class="level2">
+<h2 class="anchored" data-anchor-id="research-ethics">Research ethics</h2>
+<p>Plagiarism is not the only integrity issue. Inventing data or results is fraud, full stop. It does not matter how plausible the fabricated numbers look. Negative results are a legitimate scientific contribution; making up positive ones is not. Selective reporting is the milder cousin: presenting only the runs where your method worked well, while quietly dropping the ones where it didn’t. The same goes for cherry-picking metrics, instances, or parameter settings that make your approach look better than it is. If you tried 20 configurations and only report the best one, say so explicitly.</p>
+<p>Citing a paper for a claim it doesn’t actually make, or citing it without having read it, is also misconduct. Supervisors and examiners who know the field will notice. If your method doesn’t outperform the baseline, that is a valid finding. Write it up honestly and discuss why.</p>
+</section>
+<section id="using-ai-tools" class="level2">
+<h2 class="anchored" data-anchor-id="using-ai-tools">Using AI tools</h2>
+<p>AI tools (ChatGPT, Claude, GitHub Copilot, Grammarly, and similar) may be used during your work. They can help with brainstorming, debugging code, checking grammar, or exploring ideas. But using them well requires more judgment than most people assume.</p>
+<section id="declare-everything" class="level3">
+<h3 class="anchored" data-anchor-id="declare-everything">Declare everything</h3>
+<p>You must declare all AI tool usage in the AI tools section of your paper. The templates include this section; see the <a href="../general/templates.html">Templates</a> page for how to fill it in. Be specific about which tool you used and for what. Undeclared use of AI-generated text is treated the same as any other uncited source.</p>
+</section>
+<section id="editing-vs.-generating" class="level3">
+<h3 class="anchored" data-anchor-id="editing-vs.-generating">Editing vs.&nbsp;generating</h3>
+<p>There is a real difference between using AI to improve text you wrote yourself and using AI to produce text you hadn’t thought of. Fixing the grammar in a paragraph you drafted, or rephrasing an awkward sentence, is closer to using a spell-checker. You remain the author; the idea is yours, and the tool cleaned up the expression.</p>
+<p>Using AI to generate an argument, write a literature review section, or produce a model formulation is a different thing entirely. You need to fully understand the output, verify every claim against the actual sources, and be able to explain the reasoning as if you had developed it yourself. If you cannot do that, the text should not be in your paper.</p>
+</section>
+<section id="why-this-matters-more-for-you-than-for-an-experienced-researcher" class="level3">
+<h3 class="anchored" data-anchor-id="why-this-matters-more-for-you-than-for-an-experienced-researcher">Why this matters more for you than for an experienced researcher</h3>
+<p>Someone who has spent years in a field can read AI output and immediately spot what is wrong, what is oversimplified, and what is subtly off. They have the disciplinary judgment to tell useful output from plausible nonsense.</p>
+<p>You are still building that judgment. That is not a failing on your part; acquiring it is the whole point of writing a thesis. But it means that AI output is riskier for you than for someone with two decades of experience. The output looks polished and confident, which makes it harder to question than a rough draft from a classmate. Studies on how students use AI tools consistently find that students tend to trust AI output even when they notice errors, because it sounds authoritative and arrives instantly. This tendency, sometimes called automation bias, is worth knowing about so you can watch for it in yourself.</p>
+</section>
+<section id="writing-fast-is-not-the-same-as-understanding" class="level3">
+<h3 class="anchored" data-anchor-id="writing-fast-is-not-the-same-as-understanding">Writing fast is not the same as understanding</h3>
+<p>AI can help you produce text at a speed that far outpaces your ability to think through the ideas behind it. If you find yourself generating pages of content in minutes, stop and ask whether you actually understand what is on the screen, or whether you are assembling text you haven’t fully thought through. The purpose of a thesis is not to produce a document. It is to show that you can work through a problem, engage with existing research, and arrive at a conclusion you can defend. Much of that thinking happens during the writing process itself. Outsource the writing, and you risk outsourcing the thinking with it.</p>
+<p>You are the author of your paper, not the AI. You are responsible for every claim and every citation. If an AI tool produces an incorrect reference, a flawed argument, or a misleading result and you include it, that is your mistake.</p>
+<div class="callout callout-style-simple callout-important">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>If you cannot explain and defend every sentence in your paper during a discussion with your supervisor, it should not be in there, regardless of who or what wrote it.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="common-mistakes" class="level1">
+<h1>Common Mistakes</h1>
+<div class="callout callout-style-simple callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Checklist before submission
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul class="task-list">
+<li><label><input type="checkbox">Every figure and table is referenced in the text before it appears</label></li>
+<li><label><input type="checkbox">Sentences never start with a math symbol (“The variable <span class="math inline">\(x\)</span>…” not “<span class="math inline">\(x\)</span> is…”)</label></li>
+<li><label><input type="checkbox">Notation is consistent throughout</label></li>
+<li><label><input type="checkbox">No orphan sections (a single subsection under a section)</label></li>
+<li><label><input type="checkbox">Each section is at least one page long</label></li>
+<li><label><input type="checkbox">Acronyms are defined on first use</label></li>
+<li><label><input type="checkbox">No Wikipedia or lecture slides in the bibliography</label></li>
+<li><label><input type="checkbox">En-dashes for ranges (pages 5–10), not hyphens</label></li>
+<li><label><input type="checkbox">Numbers one through twelve spelled out in running text</label></li>
+<li><label><input type="checkbox">Units have a thin space: 16 GB, 245 s</label></li>
+<li><label><input type="checkbox">Figures are readable in grayscale with colorblind-safe colors</label></li>
+<li><label><input type="checkbox">All figures have axis labels with units</label></li>
+<li><label><input type="checkbox">The research question from the introduction is answered in the conclusion</label></li>
+<li><label><input type="checkbox">The paper has been proofread by reading it aloud</label></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="further-reading" class="level1">
+<h1>Further Reading</h1>
+<p>These resources go deeper into scientific writing at the University of Hamburg:</p>
+<ul>
+<li><a href="https://studienperspektiven.check.uni-hamburg.de/wie-schreibe-ich-wissenschaftlich/">Wie schreibe ich wissenschaftlich?</a> (University of Hamburg, StudienPerspektivTage): an introduction to the principles of academic writing, with links to writing center workshops and individual consultations.</li>
+<li><a href="https://www.bwl.uni-hamburg.de/stman/fotos-dateien/hinweise-wiss-arbeiten-01-26.pdf">Leitfaden zur Anfertigung von Seminar-, Bachelor- und Masterarbeiten</a> (Prof.&nbsp;Dr.&nbsp;Nicola Berg, Strategic Management): a detailed guide covering evaluation criteria, structure, formal requirements, and citation rules at the Faculty of Business Administration.</li>
+</ul>
+</section>
+<section id="next-steps" class="level1">
+<h1>Next Steps</h1>
+<ul>
+<li>Download a template and set up your project on the <a href="../general/templates.html">Templates</a> page.</li>
+<li>Learn how to find and organize literature in the <a href="../workshops/literature-research-page.html">Literature Research</a> workshop.</li>
+<li>Learn the formatting syntax (Markdown, citations, equations) in the <a href="../workshops/quarto-academic-writing-page.html">Quarto</a> workshop.</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/beyondsimulations\.github\.io\/Research-Workshops");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/beyondsimulations/Applied-Optimization">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://linkedin.com/in/tobiasvlcek">
+      <i class="bi bi-linkedin" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:tobias.vlcek@uni-hamburg.de">
+      <i class="bi bi-envelope" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://tobiasvlcek.com/lectures/">
+      <i class="bi bi-skip-backward" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../general/privacy.html">
+<p>Privacy Policy</p>
+</a>
+  </li>  
+</ul>
+    </div>   
+    <div class="nav-footer-center">
+<p>Scientific Research Workshops, Tobias Vlćek<br>CC BY-NC-SA 4.0</p>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/beyondsimulations/Research-Workshops/edit/main/general/scientific-writing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/blob/main/general/scientific-writing.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

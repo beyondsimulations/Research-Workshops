@@ -1,31 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://beyondsimulations.github.io/Research-Workshops/general/literature.html</loc>
-    <lastmod>2026-04-01T06:52:53.344Z</lastmod>
+    <loc>https://beyondsimulations.github.io/Research-Workshops/general/privacy.html</loc>
+    <lastmod>2026-04-01T10:32:00.813Z</lastmod>
   </url>
   <url>
-    <loc>https://beyondsimulations.github.io/Research-Workshops/workshops/literature-research-page.html</loc>
-    <lastmod>2026-04-01T06:50:46.218Z</lastmod>
-  </url>
-  <url>
-    <loc>https://beyondsimulations.github.io/Research-Workshops/workshops/prompting-page.html</loc>
-    <lastmod>2026-03-31T19:25:40.215Z</lastmod>
-  </url>
-  <url>
-    <loc>https://beyondsimulations.github.io/Research-Workshops/index.html</loc>
-    <lastmod>2026-04-01T06:50:42.480Z</lastmod>
+    <loc>https://beyondsimulations.github.io/Research-Workshops/general/templates.html</loc>
+    <lastmod>2026-04-01T15:39:36.142Z</lastmod>
   </url>
   <url>
     <loc>https://beyondsimulations.github.io/Research-Workshops/workshops/large-language-models-page.html</loc>
-    <lastmod>2026-04-01T06:55:05.792Z</lastmod>
+    <lastmod>2026-04-01T15:37:45.258Z</lastmod>
   </url>
   <url>
-    <loc>https://beyondsimulations.github.io/Research-Workshops/workshops/quarto-academic-writing-page.html</loc>
-    <lastmod>2026-04-01T06:53:43.811Z</lastmod>
+    <loc>https://beyondsimulations.github.io/Research-Workshops/workshops/prompting-page.html</loc>
+    <lastmod>2026-04-01T15:37:41.482Z</lastmod>
+  </url>
+  <url>
+    <loc>https://beyondsimulations.github.io/Research-Workshops/general/scientific-writing.html</loc>
+    <lastmod>2026-04-01T15:39:36.142Z</lastmod>
+  </url>
+  <url>
+    <loc>https://beyondsimulations.github.io/Research-Workshops/index.html</loc>
+    <lastmod>2026-04-01T14:59:42.287Z</lastmod>
+  </url>
+  <url>
+    <loc>https://beyondsimulations.github.io/Research-Workshops/workshops/literature-research-page.html</loc>
+    <lastmod>2026-04-01T15:37:39.954Z</lastmod>
   </url>
   <url>
     <loc>https://beyondsimulations.github.io/Research-Workshops/workshops/git-github-page.html</loc>
-    <lastmod>2026-04-01T06:53:05.328Z</lastmod>
+    <lastmod>2026-04-01T15:37:42.962Z</lastmod>
+  </url>
+  <url>
+    <loc>https://beyondsimulations.github.io/Research-Workshops/workshops/quarto-academic-writing-page.html</loc>
+    <lastmod>2026-04-01T15:37:46.646Z</lastmod>
+  </url>
+  <url>
+    <loc>https://beyondsimulations.github.io/Research-Workshops/general/literature.html</loc>
+    <lastmod>2026-04-01T15:39:36.142Z</lastmod>
   </url>
 </urlset>

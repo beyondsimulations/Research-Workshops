@@ -8,7 +8,7 @@
 
 <meta name="author" content="Dr.&nbsp;Tobias Vlćek">
 
-<title>Lecture - Git and GitHub – Seminar Preparation</title>
+<title>Git and GitHub – Seminar Preparation</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -124,7 +124,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../workshops/git-github-page.html">Git</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../workshops/git-github-page.html">Version Control</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -161,6 +161,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../general/scientific-writing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Scientific Writing</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../workshops/literature-research-page.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Literature</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../workshops/large-language-models-page.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">AI Tools</span></a>
   </div>
@@ -173,25 +185,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../workshops/git-github-page.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Version Control</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../workshops/quarto-academic-writing-page.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Quarto</span></a>
   </div>
 </li>
         <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../workshops/literature-research-page.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Literature</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../workshops/git-github-page.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Git</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
  <span class="menu-text">***</span>
   </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../general/templates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Templates</span></a>
+  </div>
+</li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../general/literature.html" class="sidebar-item-text sidebar-link">
@@ -235,6 +247,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#working-with-branches" id="toc-working-with-branches" class="nav-link" data-scroll-target="#working-with-branches">Working with branches</a></li>
   </ul></li>
+  <li><a href="#project-organization" id="toc-project-organization" class="nav-link" data-scroll-target="#project-organization"><span class="flow">Project Organization</span></a>
+  <ul class="collapse">
+  <li><a href="#folder-structure" id="toc-folder-structure" class="nav-link" data-scroll-target="#folder-structure">Folder structure</a></li>
+  <li><a href="#file-naming-conventions" id="toc-file-naming-conventions" class="nav-link" data-scroll-target="#file-naming-conventions">File naming conventions</a></li>
+  <li><a href="#what-to-track-and-what-not-to" id="toc-what-to-track-and-what-not-to" class="nav-link" data-scroll-target="#what-to-track-and-what-not-to">What to track (and what not to)</a></li>
+  </ul></li>
   <li><a href="#wrap-up" id="toc-wrap-up" class="nav-link" data-scroll-target="#wrap-up"><span class="flow">Wrap-up</span></a>
   <ul class="collapse">
   <li><a href="#reference-and-resources" id="toc-reference-and-resources" class="nav-link" data-scroll-target="#reference-and-resources">Reference and resources</a></li>
@@ -247,8 +265,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lecture - Git and GitHub</h1>
-<p class="subtitle lead">Seminar Preparation</p>
+<h1 class="title">Git and GitHub</h1>
+<p class="subtitle lead">Version control and project organization for your thesis</p>
 </div>
 
 
@@ -610,6 +628,93 @@ _freeze/
 </div>
 </div>
 </div>
+</section>
+</section>
+<section id="project-organization" class="level1">
+<h1><span class="flow">Project Organization</span></h1>
+<section id="folder-structure" class="level2">
+<h2 class="anchored" data-anchor-id="folder-structure">Folder structure</h2>
+<p>A clean folder structure makes your project easier to navigate, version-control, and share. Here is a recommended layout for a thesis project:</p>
+<pre><code>my-thesis/
+├── seminar-paper-en.qmd    # Your paper (or -de.qmd)
+├── references.bib           # Bibliography
+├── typst-show.typ           # Required Typst helper
+├── images/                  # All figures
+│   ├── fig-results.png
+│   └── fig-network.pdf
+├── code/                    # Scripts and implementation
+│   ├── model.py
+│   └── analysis.py
+└── data/                    # Input data and instances
+    ├── instances/
+    └── results/</code></pre>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Keep your project root clean. Put figures in <code>images/</code>, scripts in <code>code/</code>, and data in <code>data/</code>. This makes it easy to find files and write clean <code>.gitignore</code> rules.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="file-naming-conventions" class="level2">
+<h2 class="anchored" data-anchor-id="file-naming-conventions">File naming conventions</h2>
+<ul>
+<li><strong>No spaces</strong> — use hyphens or underscores: <code>fig-results.png</code>, not <code>fig results.png</code></li>
+<li><strong>Lowercase</strong> — avoids cross-platform issues: <code>data/instances/</code>, not <code>Data/Instances/</code></li>
+<li><strong>Be descriptive</strong> — <code>fig-gap-by-instance-size.png</code> is better than <code>plot1.png</code></li>
+<li><strong>Date-prefix raw data</strong> if versioned: <code>2026-03-15-survey-responses.csv</code></li>
+</ul>
+</section>
+<section id="what-to-track-and-what-not-to" class="level2">
+<h2 class="anchored" data-anchor-id="what-to-track-and-what-not-to">What to track (and what not to)</h2>
+<div id="tbl-git-track" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-git-track-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Version control decisions
+</figcaption>
+<div aria-describedby="tbl-git-track-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Track with Git</th>
+<th style="text-align: left;">Do NOT track</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><code>.qmd</code> source files</td>
+<td style="text-align: left;">Generated PDFs (<code>_site/</code>, <code>*.pdf</code>)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>.bib</code> bibliography</td>
+<td style="text-align: left;">Quarto cache (<code>_freeze/</code>)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Code and scripts</td>
+<td style="text-align: left;">Large datasets (use cloud storage)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>.gitignore</code></td>
+<td style="text-align: left;">System files (<code>.DS_Store</code>)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>typst-show.typ</code></td>
+<td style="text-align: left;">Editor settings (<code>.vscode/</code>)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>A good <code>.gitignore</code> for a Quarto thesis project:</p>
+<pre><code>_site/
+_freeze/
+*.pdf
+.DS_Store
+.quarto/</code></pre>
 </section>
 </section>
 <section id="wrap-up" class="level1">
@@ -1137,15 +1242,9 @@ _freeze/
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-      &nbsp;
-    </div>   
-    <div class="nav-footer-center">
-<p>Research Workshops, Tobias Vlćek<br>CC BY-NC-SA 4.0</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/beyondsimulations/Research-Workshops/edit/main/workshops/git-github.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/blob/main/workshops/git-github.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
-    <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/beyondsimulations/Research-Workshops">
+    <a class="nav-link" href="https://github.com/beyondsimulations/Applied-Optimization">
       <i class="bi bi-github" role="img">
 </i> 
     </a>
@@ -1156,7 +1255,30 @@ _freeze/
 </i> 
     </a>
   </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:tobias.vlcek@uni-hamburg.de">
+      <i class="bi bi-envelope" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://tobiasvlcek.com/lectures/">
+      <i class="bi bi-skip-backward" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../general/privacy.html">
+<p>Privacy Policy</p>
+</a>
+  </li>  
 </ul>
+    </div>   
+    <div class="nav-footer-center">
+<p>Scientific Research Workshops, Tobias Vlćek<br>CC BY-NC-SA 4.0</p>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/beyondsimulations/Research-Workshops/edit/main/workshops/git-github.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/blob/main/workshops/git-github.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
     </div>
   </div>
 </footer>
