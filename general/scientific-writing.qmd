@@ -1,0 +1,275 @@
+---
+title: "Scientific Writing"
+subtitle: "Guidelines and templates for your seminar paper"
+code-links:
+  - text: Template (English)
+    icon: file-earmark-text
+    href: ../templates/seminar-paper-en.qmd
+  - text: Template (German)
+    icon: file-earmark-text
+    href: ../templates/seminar-paper-de.qmd
+  - text: Template (LaTeX)
+    icon: file-earmark-code
+    href: ../templates/Vorlage.tex
+  - text: Bibliography
+    icon: journal-bookmark
+    href: ../templates/references.bib
+  - text: Typst Helper
+    icon: gear
+    href: ../templates/typst-show.typ
+---
+
+# Getting Started
+
+We provide ready-to-use templates for your seminar paper. The recommended option is **Quarto with Typst**, which produces professional PDFs without a LaTeX installation. A traditional LaTeX template is also available.
+
+| Template | Format | Requirements |
+|----------|--------|-------------|
+| `seminar-paper-en.qmd` | English, Quarto/Typst | Quarto installed |
+| `seminar-paper-de.qmd` | German, Quarto/Typst | Quarto installed |
+| `Vorlage.tex` | German, LaTeX | LaTeX distribution + Biber |
+
+: Available templates {#tbl-templates}
+
+Download the files using the buttons in the sidebar. For the Quarto templates, you need three files in the same folder: the `.qmd` template, `references.bib`, and `typst-show.typ`. For detailed setup instructions and how to edit the title page, see the [Quarto workshop](../workshops/quarto-academic-writing.qmd).
+
+:::{.callout-tip}
+Use `quarto preview seminar-paper-en.qmd` to open a live preview that refreshes automatically every time you save the file.
+:::
+
+
+# Structure of a Seminar Paper
+
+A typical seminar paper or thesis in operations research follows a standard structure. Each section has a specific purpose and readers expect information in a specific order.
+
+## Introduction
+
+Structure your introduction as a **funnel** — start broad and narrow down:
+
+1. **Broad context** — Why does this field matter? What is the practical relevance?
+2. **Specific problem** — What is the concrete challenge you address?
+3. **Research gap** — What is missing in the existing literature?
+4. **Your contribution** — What does this paper do? State it clearly in one or two sentences.
+5. **Paper outline** — Briefly describe the structure of the remaining sections.
+
+:::{.callout-tip}
+Write the introduction last, once you know your actual contribution. It should answer three questions: Why should the reader care? What gap exists? What is new here?
+:::
+
+## Literature Review
+
+The literature review is not a list of summaries. It should **build an argument** for why your work is needed.
+
+- **Group by theme or method**, not chronologically. For example, group exact methods together, then heuristics, then machine-learning approaches.
+- **Compare and contrast** — don't just state what each paper does, but how they relate to each other and where they fall short.
+- **Identify the gap** that your work fills. Every cited paper should connect to your research question.
+- **End with a transition** to your own contribution: what remains unsolved?
+
+Use `[@key]` for parenthetical citations — *(Author, Year)* — and `@key` for narrative citations — *Author (Year)*.
+
+## Model
+
+### Assumptions
+
+Every model relies on simplifying assumptions. For each assumption:
+
+- **Justify it** — why is it reasonable for your problem?
+- **Acknowledge limitations** — what would change if the assumption were relaxed?
+- **Order** from most fundamental to most specific.
+
+### Formulation
+
+- **Define all notation before using it.** Use a notation table (the templates include one).
+- Follow consistent conventions: sets in calligraphic letters ($\mathcal{J}$), decision variables in uppercase ($X_j$), parameters in lowercase ($b_i$).
+- **Explain every constraint in prose** — don't just list equations. For example: *"Constraint (2) ensures that each customer is visited exactly once."*
+- Reference constraints by their labels when discussing them.
+
+## Computational Study
+
+A computational study must be **reproducible**. Always report:
+
+- **Hardware and software**: CPU, RAM, solver name and version, programming language.
+- **Instance sources**: where the test data comes from, or how you generated it.
+- **Baselines**: compare against a benchmark, exact solution, or published results.
+- **Metrics**: report both solution quality (optimality gap, objective value) and computation time.
+- **Trends**: discuss how performance changes across instance sizes — don't just list individual numbers.
+
+## Conclusion
+
+- **Separate summary from outlook.** First state what you did and what you found, then suggest directions for future research.
+- **Don't introduce new results** here. The conclusion synthesizes, it does not analyze.
+- Future research directions should be **concrete and actionable** — not *"further research is needed"* but *"extending the model to include time windows would allow..."*.
+- **Don't overclaim**: use *"suggests"* rather than *"proves"*, *"indicates"* rather than *"demonstrates"* — unless you provide formal proof.
+
+
+# Formatting Essentials
+
+## Text Formatting (Markdown)
+
+| What you want | What you write | Result |
+|:---|:---|:---|
+| Bold | `**bold text**` | **bold text** |
+| Italic | `*italic text*` | *italic text* |
+| Bold + italic | `***both***` | ***both*** |
+| Inline code | `` `code` `` | `code` |
+| Footnote | `text^[A footnote.]` | text^[A footnote.] |
+| Link | `[text](https://...)` | [text](https://example.com) |
+| En-dash (ranges) | `5--10` | 5--10 |
+
+: Markdown text formatting {#tbl-formatting}
+
+## Lists
+
+:::::{.columns}
+::::{.column width="48%"}
+**Unordered list:**
+
+```markdown
+- Item 1
+- Item 2
+  - Nested item
+```
+
+- Item 1
+- Item 2
+  - Nested item
+::::
+::::{.column width="4%"}
+::::
+::::{.column width="48%"}
+**Ordered list:**
+
+```markdown
+1. First
+2. Second
+   a. Sub-item
+```
+
+1. First
+2. Second
+   a. Sub-item
+::::
+:::::
+
+## Citations
+
+| Syntax | Output | Use when... |
+|:---|:---|:---|
+| `[@key]` | (Author, Year) | Supporting a claim at the end of a sentence |
+| `@key` | Author (Year) | The author is the subject of the sentence |
+| `[@a; @b]` | (Author1; Author2) | Citing multiple sources |
+| `[@key, p. 42]` | (Author, Year, p. 42) | Pointing to a specific page |
+
+: Citation syntax {#tbl-citations}
+
+## Figures and Tables
+
+**Figures** — include with a caption and label for cross-referencing:
+
+```markdown
+![Caption text](images/file.png){#fig-label width="80%"}
+```
+
+Reference in text with `@fig-label`.
+
+**Tables** — use pipe syntax with a caption below the table:
+
+```markdown
+| Column A | Column B |
+|----------|----------|
+| Data 1   | Data 2   |
+
+: Table caption {#tbl-label}
+```
+
+Reference in text with `@tbl-label`.
+
+:::{.callout-important}
+Every figure and table **must be referenced in the text before it appears**. Figures have captions below them; tables have captions above (in LaTeX) or below (in Quarto).
+:::
+
+## Equations
+
+Write display equations with labels for cross-referencing:
+
+```markdown
+$$
+\min \sum_{i} c_i \cdot x_i
+$$ {#eq-objective}
+```
+
+$$
+\min \sum_{i} c_i \cdot x_i
+$$ {#eq-objective}
+
+Reference in text with `@eq-objective`.
+
+## Cross-References
+
+| Element | Label syntax | Reference syntax |
+|:---|:---|:---|
+| Figure | `{#fig-name}` | `@fig-name` |
+| Table | `{#tbl-name}` | `@tbl-name` |
+| Equation | `{#eq-name}` | `@eq-name` |
+| Section | `{#sec-name}` | `@sec-name` |
+
+: Cross-reference syntax {#tbl-crossrefs}
+
+
+# Common Mistakes
+
+Avoid these frequent issues in seminar papers:
+
+:::{.callout-warning}
+## Checklist before submission
+
+- [ ] Every figure and table is referenced in the text **before** it appears.
+- [ ] Sentences never start with a math symbol. Write *"The variable $x$ is..."* instead of *"$x$ is..."*.
+- [ ] Notation is consistent throughout — don't switch between $x_{ij}$ and $x(i,j)$.
+- [ ] No orphan sections (a single subsection under a section).
+- [ ] Each section is at least one page long. If not, merge it with another.
+- [ ] Acronyms are defined on first use, then abbreviated consistently.
+- [ ] No Wikipedia or lecture slides in the bibliography — find and cite the original source.
+- [ ] En-dashes (`--`) are used for ranges (pages 5--10), not hyphens.
+- [ ] Numbers one through twelve are spelled out in running text; 13 and above use digits.
+- [ ] Units have a thin space before them: 16 GB, 245 s.
+:::
+
+## Table Design
+
+- Use **booktabs style**: horizontal rules only (`\toprule`, `\midrule`, `\bottomrule`), no vertical lines.
+- **Right-align** numeric columns, **left-align** text columns.
+- Put **units in column headers**, not in every cell.
+- Keep tables compact — remove unnecessary columns.
+
+
+# Working with Typst
+
+The Quarto templates use **Typst** (not LaTeX) to produce the PDF. For most writing, you only need Markdown. But for advanced formatting, you can embed raw Typst code:
+
+```{{=typst}}
+#v(1cm)                          // vertical space
+#text(fill: red)[important]      // colored text
+#align(center)[centered text]    // alignment
+#line(length: 100%)              // horizontal line
+#set text(size: 9pt)             // change font size locally
+```
+
+:::{.callout-note}
+Typst is much simpler than LaTeX. See the [Typst documentation](https://typst.app/docs) for the full reference.
+:::
+
+
+# AI Tools Declaration
+
+Both templates include a section for documenting your use of AI tools. This is **required** — fill it in honestly and specifically.
+
+For each tool you used, describe:
+
+- **Which tool** (e.g., ChatGPT, Claude, GitHub Copilot, Grammarly)
+- **For which tasks** (e.g., brainstorming structure, debugging code, proofreading)
+- **How you verified the output** (e.g., checked against source material, tested code)
+
+:::{.callout-important}
+All AI-generated content must be reviewed, verified, and revised by you. You are responsible for the correctness of everything in your paper.
+:::

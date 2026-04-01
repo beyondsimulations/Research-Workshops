@@ -22,9 +22,9 @@ The workshops build on each other. I recommend reading them in the order listed 
 - **[Quarto for Academic Writing](workshops/quarto-academic-writing.qmd):** Write your seminar paper in Quarto Markdown instead of LaTeX or Word. Covers the basics (headings, figures, tables, math equations) and the academic features: BibTeX citations, cross-references, and PDF output via Typst. Includes ready-to-use templates for German and English papers.
 - **[Git & GitHub](workshops/git-github.qmd):** Version control for your thesis project. Learn to track changes with Git, use Zed's built-in Git panel for daily work, and push your project to GitHub as a backup. Also covers `.gitignore` for Quarto projects and a brief preview of branching.
 
-# Templates
+# Templates & Writing Guide
 
-Paper templates (German and English) are available in the [course repository](https://github.com/beyondsimulations/Research-Workshops/tree/main/templates). They work with Quarto and Typst, so no LaTeX installation is needed.
+Paper templates (German and English) and a guide on scientific writing are available on the [Writing Guide](general/scientific-writing.qmd) page. The templates work with Quarto and Typst, so no LaTeX installation is needed. A traditional LaTeX template is also available.
 
 # Resources
 

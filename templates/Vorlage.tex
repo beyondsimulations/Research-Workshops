@@ -70,92 +70,257 @@
 \listoftables
 
 % Abkürzungsverzeichnis
+% Einträge hinzufügen oder entfernen. Alphabetisch sortieren.
+% Bei erster Verwendung im Text ausschreiben.
 \newpage
 \addcontentsline{toc}{section}{Abkürzungsverzeichnis}
 \section*{Abkürzungsverzeichnis}
-\begin{acronym}[Bash]
-	\acro{meA}{meine eigene Abkürzung}
+\begin{acronym}[VRP]
+	\acro{LLM}{Large Language Model}
+	\acro{OR}{Operations Research}
+	\acro{VRP}{Vehicle Routing Problem (Tourenplanungsproblem)}
 \end{acronym}
 
 % Symbolverzeichnis
+% Einträge hinzufügen oder entfernen. Alphabetisch sortieren.
 \newpage
 \addcontentsline{toc}{section}{Symbolverzeichnis}
 \section*{Symbolverzeichnis}
 \begin{tabular}{p{0.08\textwidth} p{0.92\textwidth}}
-	$d_i$ &	Kapazität der Maschine $i\in \mathcal{I}$\\
-	$\mathcal{I}$ & Menge der Maschinen\\
-	$\mathcal{J}$ & Menge der Produkte\\
-        $\mathcal{K}$ & Menge der Menschen\\
-	$Z$ & Symbole sind alphabetisch sortiert
+	$c_{ij}$ & Transportkosten von Standort $i$ nach Standort $j$\\
+	$d_i$ & Bedarf des Kunden $i \in \mathcal{I}$\\
+	$\mathcal{I}$ & Menge der Kunden\\
+	$\mathcal{J}$ & Menge aller Standorte (Kunden und Depot)\\
+	$K$ & Anzahl der Fahrzeuge\\
+	$Q$ & Fahrzeugkapazität\\
+	$x_{ij}$ & Binärvariable, 1 falls ein Fahrzeug von $i$ nach $j$ fährt
 \end{tabular}
 
 \newpage
 \pagenumbering{arabic}
 
-% Inhalt
+% ============================================================
+%   VERWENDUNG DIESER VORLAGE
+%
+%   1. Titelseite oben anpassen (############# Markierungen beachten)
+%   2. Literaturverweise in references.bib eintragen (Zotero + Better BibTeX)
+%   3. Inhalte unten in LaTeX schreiben
+%   4. Kompilieren: pdflatex → biber → pdflatex → pdflatex
+%
+%   KURZREFERENZ
+%   Zitate:        \parencite{key} → (Autor, Jahr)
+%                  \textcite{key}  → Autor (Jahr)
+%                  \parencite{a,b} → mehrere
+%                  \parencite[S.~42]{key} → mit Seite
+%   Querverweise:  \ref{fig:label}  \ref{tab:label}  \ref{eq:label}  \ref{sec:label}
+%   Abbildungen:   \begin{figure}[H] ... \caption{...} \label{fig:...} \end{figure}
+%   Tabellen:      \begin{table}[H] ... \caption{...} \label{tab:...} \end{table}
+%   Gleichungen:   \begin{align} ... \label{eq:...} \end{align}
+%   Abschnitte:    \section{...} \label{sec:...}
+%
+%   FORMATIERUNG — GRUNDLAGEN
+%   Fett:          \textbf{fetter Text}
+%   Kursiv:        \textit{kursiver Text}   oder   \emph{hervorgehoben}
+%   Unterstrichen: \underline{unterstrichener Text}
+%   Schreibmasch.: \texttt{Code oder Dateiname}
+%   Aufzählung:    \begin{itemize}
+%                    \item Punkt 1
+%                    \item Punkt 2
+%                    \begin{itemize}
+%                      \item Unterpunkt (verschachtelt)
+%                    \end{itemize}
+%                  \end{itemize}
+%   Nummerierung:  \begin{enumerate}
+%                    \item Erstens
+%                    \item Zweitens
+%                  \end{enumerate}
+%   Fußnoten:      Text\footnote{Das ist eine Fußnote.}
+%   Links:         \href{https://example.com}{Linktext}  (hyperref-Paket)
+%   Abstände:      \vspace{1cm}  (vertikal)
+%                  \hspace{1cm}  (horizontal)
+%                  ~             (geschütztes Leerzeichen, z.B. Abbildung~\ref{})
+%                  \,            (schmales Leerzeichen, z.B. 16\,GB)
+%   Gedankenstrich: -- (für Bereiche, z.B. Seiten 5--10)
+%
+%   HÄUFIGE FEHLER
+%   - Jede Abbildung und Tabelle muss im Text referenziert werden,
+%     *bevor* sie erscheint.
+%   - Abbildungen haben Beschriftungen darunter (\caption nach \includegraphics),
+%     Tabellen darüber (\caption vor \begin{tabular}).
+%   - Sätze nicht mit einem Symbol beginnen ("$X$ ist..." →
+%     "Die Variable $X$ ist...").
+%   - Notation konsistent halten — nicht zwischen $X_{ij}$ und $X(i,j)$
+%     wechseln.
+%   - Keine verwaisten Abschnitte (ein einzelner \subsection in einem
+%     \section).
+%   - Jeder Abschnitt/Unterabschnitt sollte mindestens eine Seite lang sein.
+%     Wenn nicht, mit einem anderen Abschnitt zusammenfassen.
+%   - Abkürzungen bei der ersten Verwendung mit \ac{} ausschreiben,
+%     danach konsequent die Kurzform verwenden.
+%   - Wikipedia und Vorlesungsfolien nicht zitieren — die Originalquelle
+%     suchen.
+%   - Gedankenstriche (--) für Bereiche verwenden (Seiten 5--10), keine
+%     Bindestriche (-).
+%   - Zahlen eins bis zwölf im Fließtext ausschreiben, ab 13 Ziffern
+%     verwenden.
+%   - Schmales Leerzeichen vor Einheiten: 16\,GB, 245\,s.
+%   - Geschütztes Leerzeichen vor \ref verwenden: Abbildung~\ref{fig:...}
+% ============================================================
+
+% SCHREIBHILFE: Einführung
+% Strukturieren Sie die Einleitung als Trichter:
+%   1. Breiter Kontext — warum ist dieses Feld relevant?
+%   2. Konkretes Problem — was ist die spezifische Herausforderung?
+%   3. Forschungslücke — was fehlt in der bisherigen Literatur?
+%   4. Eigener Beitrag — was leistet diese Arbeit?
+%   5. Aufbau der Arbeit — kurz die Struktur beschreiben.
+% Tipp: Schreiben Sie diese Sektion zuletzt, wenn Sie Ihren tatsächlichen
+% Beitrag kennen. Sie sollte beantworten: Warum sollte der Leser sich
+% dafür interessieren? Was ist neu?
 \section{Einführung}
-Die erste Anwendung \ac{meA} wird ausgeschrieben.
-Anschließend wird \ac{meA} abgekürzt.
-Die Abbildung \ref{fig:food} zeigt den Streckenverlauf der Mekka Metro in Saudi Arabien.
+\label{sec:einfuehrung}
+\ac{OR} stellt leistungsfähige Methoden für die Entscheidungsfindung in komplexen Systemen bereit. In den letzten Jahren haben Fortschritte in der Computertechnik die Lösung immer größerer Optimierungsprobleme ermöglicht \parencite{desaulniers2005column}. Die vorliegende Arbeit befasst sich mit dem Problem \ldots
+
+Abbildung \ref{fig:beispiel} zeigt eine schematische Übersicht der Problemstruktur.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{images/Image.pdf}
-	\caption{Schematische Abbildung der Metro in Mekka, Saudi Arabien.}
-	\label{fig:food}
+	\caption{Ersetzen Sie dies durch Ihre eigene Abbildung.}
+	\label{fig:beispiel}
 \end{figure}
 
+Die Arbeit ist wie folgt gegliedert. Abschnitt \ref{sec:literatur} gibt einen Überblick über die relevante Literatur. Abschnitt \ref{sec:modell} stellt das mathematische Modell vor, wobei Abschnitt \ref{sec:annahmen} die zugrundeliegenden Annahmen und Abschnitt \ref{sec:aufbau} die formale Formulierung enthält. Abschnitt \ref{sec:rechenstudie} präsentiert die Rechenstudie, und Abschnitt \ref{sec:zusammenfassung} fasst die Ergebnisse zusammen und gibt einen Ausblick.
+
+% SCHREIBHILFE: Literaturüberblick
+% - Quellen thematisch oder methodisch gruppieren, nicht chronologisch.
+% - Nicht nur zusammenfassen — Ansätze vergleichen, Stärken und Schwächen
+%   aufzeigen und die Lücke identifizieren, die Ihre Arbeit füllt.
+% - Jede zitierte Arbeit sollte einen Bezug zu Ihrer Forschungsfrage haben.
+% - Am Ende überleiten zum eigenen Beitrag: Was bleibt ungelöst?
+% - \parencite{key} für Klammerzitate und \textcite{key} für narrative Zitate.
 \section{Literatur}
-Quellen für Aussagen können in Klammern am Ende des Satzes stehen \parencite{kohlmorgen1999experiences}.
-Alternativ kann auf eine Quelle ohne Klammern verwiesen werden, wie es z.B. in \textcite{haase2001beschaffungs} steht.
+\label{sec:literatur}
+Das \ac{VRP} wird seit der grundlegenden Arbeit von \textcite{dantzig1959truck} umfassend untersucht. Im Laufe der Jahrzehnte wurden zahlreiche exakte und heuristische Ansätze vorgeschlagen \parencite{toth2014vehicle}.
 
+Spaltengenerierung hat sich als besonders effektive Technik zur Lösung großskaliger Touren- und Ablaufplanungsprobleme erwiesen \parencite{desaulniers2005column}. Zudem werden seit einiger Zeit Methoden des maschinellen Lernens eingesetzt, um die Leistung von Heuristiken zu verbessern \parencite{bengio2021machine}.
+
+Ein umfassender Überblick über Lösungsmethoden geht über den Rahmen dieser Arbeit hinaus. Für eine detaillierte Darstellung sei auf \textcite{toth2014vehicle} verwiesen.
+
+% SCHREIBHILFE: Modell
+% Kurzen Überblick über den Modellierungsansatz geben, bevor Sie ins Detail
+% gehen. Aufteilen in Annahmen (was vereinfacht wird) und Formulierung
+% (die Mathematik).
 \section{Modell}
-Hier führen wir unser Modell ein. Dazu unterteilen wir den Abschnitt in zwei Unterabschnitte. Achten Sie immer darauf, dass jeder Abschnitt oder Unterabschnitt mindestens eine Seite lang sein sollte. Ist das nicht der Fall, fassen Sie die Abschnitte lieber zusammen.
+\label{sec:modell}
+Dieser Abschnitt stellt das mathematische Modell für das oben beschriebene Problem vor. Zunächst werden die wesentlichen Annahmen erläutert, anschließend folgt die formale Formulierung.
 
+% SCHREIBHILFE: Annahmen
+% - Jede Annahme muss begründet werden: Warum ist sie vertretbar?
+% - Einschränkungen benennen: Was würde sich ändern, wenn eine Annahme
+%   gelockert wird?
+% - Von der grundlegendsten zur spezifischsten Annahme ordnen.
 \subsection{Annahmen}
-Die Modellierung des Sachverhaltes erfordert einige Abstraktionen. Die könnten Sie beispielsweise hier erläutern.
+\label{sec:annahmen}
+Die Modellierung des Problems erfordert einige vereinfachende Annahmen:
+\begin{itemize}
+	\item Ein einzelnes Depot dient als Start- und Endpunkt für alle Fahrzeuge.
+	\item Jeder Kunde $i \in \mathcal{I}$ hat einen bekannten Bedarf $d_i$, der vollständig erfüllt werden muss.
+	\item Die Flotte besteht aus $K$ identischen Fahrzeugen mit jeweils der Kapazität $Q$.
+	\item Die Transportkosten $c_{ij}$ zwischen den Standorten $i$ und $j$ sind symmetrisch und erfüllen die Dreiecksungleichung.
+\end{itemize}
 
+% SCHREIBHILFE: Formulierung
+% - Alle Notation definieren, bevor sie verwendet wird.
+% - Konsistente Konventionen: Mengen = kalligraphisch ($\mathcal{J}$),
+%   Variablen = Großbuchstaben ($X_j$), Parameter = Kleinbuchstaben ($b_i$).
+% - Jede Nebenbedingung muss im Text erläutert werden — nicht nur
+%   Gleichungen auflisten.
+% - Nebenbedingungen per Label referenzieren:
+%   "Nebenbedingung (\ref{eq:zuweisung}) stellt sicher..."
+%
+% TIPPS ZUR TABELLENGESTALTUNG
+% - Booktabs-Stil verwenden (\toprule, \midrule, \bottomrule) — keine
+%   vertikalen Linien.
+% - Zahlenspalten rechtsbündig (r), Textspalten linksbündig (l) ausrichten.
+% - Einheiten in Spaltenüberschriften, nicht in jeder Zelle.
+% - Tabellen kompakt halten — unnötige Spalten vermeiden.
 \subsection{Aufbau}
+\label{sec:aufbau}
 Mengen haben kalligraphische Symbole wie z.B. $\mathcal{J}$.
-Für Variablen werden Großbuchstaben verwendet $X_j$, $j \in \mathcal{J}$, wobei für Parameter und Indizes Kleinbuchstaben verwendet werden $b_i$.
+Für Variablen werden Großbuchstaben verwendet ($X_j$, $j \in \mathcal{J}$), wobei für Parameter und Indizes Kleinbuchstaben verwendet werden ($b_i$).
 Das Modell ist wie folgt definiert:
 \begin{align}
-	\text{maximiere} \ F = & \sum_{j\in \mathcal{J}} c_j \times X_j\\
+	\label{eq:zielfunktion}
+	\min \sum_{i \in \mathcal{J}} \sum_{j \in \mathcal{J}} c_{ij} \cdot x_{ij} & \\
 	\intertext{unter den Nebenbedingungen}
-	& \sum_{j\in \mathcal{J}}a_{ij} \times X_j \leq b_i && \forall i\in \mathcal{I}\\
-	\label{eq:nichtnegativitaet}
-	&X_j \geq 0 && \forall j\in \mathcal{J}
+	\label{eq:zuweisung}
+	\sum_{j \in \mathcal{J}} x_{ij} = 1 && \forall i \in \mathcal{I} \\
+	\label{eq:fluss}
+	\sum_{i \in \mathcal{J}} x_{ij} = 1 && \forall j \in \mathcal{I} \\
+	\label{eq:binaer}
+	x_{ij} \in \{0, 1\} && \forall i, j \in \mathcal{J}
 \end{align}
-Die Nebenbedingung (\ref{eq:nichtnegativitaet}) stellt die Nichtnegativität sicher.
-Erläutern Sie stets die Zielfunktion und die Restriktionen.
+Die Zielfunktion (\ref{eq:zielfunktion}) minimiert die gesamten Transportkosten. Nebenbedingung (\ref{eq:zuweisung}) stellt sicher, dass jeder Kunde genau einmal besucht wird, während (\ref{eq:fluss}) die Flusserhaltung garantiert. (\ref{eq:binaer}) definiert die binären Entscheidungsvariablen.
 
+% SCHREIBHILFE: Rechenstudie
+% - Hardware (CPU, RAM), Software (Solver, Version) und Sprache angeben.
+% - Instanzquellen beschreiben oder erklären, wie Testdaten erzeugt wurden.
+% - Immer gegen eine Baseline, Benchmark oder exakte Lösung vergleichen.
+% - Sowohl Lösungsqualität (Gap, Zielfunktionswert) als auch Rechenzeit
+%   berichten.
+% - Trends über Instanzgrößen hinweg diskutieren, nicht nur einzelne Zahlen
+%   auflisten.
+% - Zeitlimits, Anzahl der Durchläufe oder andere experimentelle Parameter
+%   erwähnen.
 \section{Rechenstudie}
-Tabelle \ref{tab:ergebnisse} zeigt die Werte der Merkmalsausprägungen der Alternativen A, B und C.
+\label{sec:rechenstudie}
+Zur Bewertung des vorgeschlagenen Ansatzes führen wir eine Reihe von Rechenexperimenten durch. Alle Experimente wurden auf einem Rechner mit Intel Core i7 Prozessor und 16\,GB RAM durchgeführt. Das Modell wurde in Python unter Verwendung von Gurobi 11.0 als Solver implementiert.
+
+Tabelle \ref{tab:ergebnisse} zeigt die Rechenergebnisse im Vergleich von exakter und heuristischer Lösung.
 \begin{table}[H]
 	\centering
-	\caption{Tabellen haben Überschriften}
+	\caption{Rechenergebnisse im Vergleich von exakter und heuristischer Lösung}
 	\label{tab:ergebnisse}
-	\begin{tabular}{ccc}
+	\begin{tabular}{lcrrrr}
 		\toprule
-		A & B & C\\
+		Instanz & $|\mathcal{I}|$ & Optimal & Heuristik & Gap (\%) & Zeit (s)\\
 		\midrule
-		1 & 2 & 3\\
-		4 & 5 & 6 \\
+		Klein-1  & 25  &   245,3 &   248,1 & 1,14 &    0,8\\
+		Klein-2  & 25  &   312,7 &   318,4 & 1,82 &    1,1\\
+		Mittel-1 & 50  & 1.340,5 & 1.382,9 & 3,16 &   12,4\\
+		Mittel-2 & 50  & 1.128,3 & 1.167,2 & 3,44 &   15,7\\
+		Groß-1   & 100 & 3.450,1 & 3.621,3 & 4,96 &  245,3\\
+		Groß-2   & 100 & 4.217,8 & 4.485,6 & 6,35 &  310,2\\
 		\bottomrule
 	\end{tabular}
 \end{table}
 
+Die Ergebnisse in Tabelle \ref{tab:ergebnisse} zeigen, dass der heuristische Ansatz nahezu optimale Lösungen innerhalb vertretbarer Rechenzeiten findet. Für kleine Instanzen bleibt die Optimalitätslücke unter 2\%, während sie für größere Instanzen auf etwa 5--6\% ansteigt.
+
+% SCHREIBHILFE: Zusammenfassung
+% - Zusammenfassung (was wurde gemacht und gefunden) von Ausblick
+%   (zukünftige Forschung) trennen.
+% - Keine neuen Ergebnisse oder Analysen hier einführen.
+% - Zukünftige Forschungsrichtungen sollten konkret und umsetzbar sein,
+%   nicht vage ("weitere Forschung ist nötig").
+% - Nicht übertreiben: "deutet darauf hin" statt "beweist",
+%   "legt nahe" statt "zeigt" — es sei denn, ein formaler Beweis liegt vor.
 \section{Zusammenfassung und Ausblick}
-Hier steht eine kurze Zusammenfassung und ein Ausblick auf sinnvolle Forschungsfragen, die aufbauend auf diese Arbeit durchgeführt werden können.
+\label{sec:zusammenfassung}
+Die vorliegende Arbeit hat ein mathematisches Modell und einen heuristischen Lösungsansatz für das Tourenplanungsproblem vorgestellt. Die Rechenstudie hat gezeigt, dass die vorgeschlagene Methode nahezu optimale Lösungen bei deutlich reduzierten Rechenzeiten im Vergleich zu exakten Methoden erzielt.
+
+Aus dieser Arbeit ergeben sich mehrere Richtungen für zukünftige Forschung. Erstens könnte das Modell um Zeitfenster und heterogene Flotten erweitert werden. Zweitens könnte die Heuristik durch Methoden des maschinellen Lernens verbessert werden. Schließlich würden Fallstudien aus der Praxis dazu beitragen, die praktische Anwendbarkeit des Ansatzes zu validieren.
 
 % Literaturverzeichnis ausgeben
 \newpage
 \pagenumbering{Roman}
-\setcounter{page}{6}
+\setcounter{page}{6} % ggf. an die tatsächliche Seitenzahl anpassen
 \addcontentsline{toc}{section}{Literatur}
 \printbibliography
 
 \newpage
+\addcontentsline{toc}{section}{Eidesstattliche Erklärung}
 \section*{Eidesstattliche Erklärung}
 Ich versichere an Eides statt, dass ich die vorstehende Arbeit selbstständig und ohne fremde Hilfe angefertigt und mich anderer als der im beigefügten Verzeichnis angegebenen Hilfsmittel nicht bedient habe. Alle Stellen, die wörtlich oder sinngemäß aus Veröffentlichungen übernommen wurden, sind als solche kenntlich gemacht. Alle Internetquellen sind der Arbeit beigefügt. Des Weiteren versichere ich, dass ich die Arbeit vorher nicht in einem anderen Prüfungsverfahren eingereicht habe und dass die eingereichte schriftliche Fassung der auf dem elektronischen Speichermedium entspricht.
 

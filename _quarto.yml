@@ -8,6 +8,7 @@ project:
     - workshops/quarto-academic-writing.qmd
     - workshops/literature-research.qmd
     - workshops/git-github.qmd
+    - general/scientific-writing.qmd
     - general/literature.qmd
 
 website:
@@ -36,6 +37,8 @@ website:
       - text: "Git"
         href: workshops/git-github.qmd
       - text: "***"
+      - text: "Writing Guide"
+        href: general/scientific-writing.qmd
       - text: "Resources"
         href: general/literature.qmd
 
