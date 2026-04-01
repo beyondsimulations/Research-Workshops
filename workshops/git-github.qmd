@@ -14,7 +14,7 @@ format:
 This workshop covers [Git and GitHub]{.highlight}. By the end, you will be able to track changes to your files with Git, use Zed's built-in Git integration to stage and commit, push your work to GitHub as a backup, and understand the terminal commands behind what Zed does visually.
 
 :::{.callout-tip}
-Version control is not just for programmers. It protects every document you write -- thesis drafts, code, data analysis scripts.
+Version control is not just for programmers. It protects every document you write: thesis drafts, code, and data analysis scripts.
 :::
 
 ## The problem and the solution
@@ -104,18 +104,18 @@ Use the same email you will register on GitHub. This links your commits to your 
 
 Git organizes your work into [three zones]{.highlight}:
 
-1. **Working directory** -- your files as you edit them
-2. **Staging area** -- changes you have selected for the next snapshot
-3. **Repository** -- permanent saved snapshots (commits)
+1. **Working directory:** your files as you edit them
+2. **Staging area:** changes you have selected for the next snapshot
+3. **Repository:** permanent saved snapshots (commits)
 
 Think of it like writing an email: you draft the text (working directory), you review what to include (staging), you hit send (commit). The command `git add` moves changes to staging, and `git commit` saves the snapshot. This two-step process lets you choose exactly what goes into each commit.
 
-You can interact with Git in two ways. **Zed's Git panel** lets you click to stage, commit, and view diffs visually -- this is enough for most daily work. **Terminal commands** give you full control over every operation and work in any environment, not just Zed. We will teach both: start with Zed's visual tools for comfort, then learn the terminal commands so you understand what is happening underneath.
+You can interact with Git in two ways. **Zed's Git panel** lets you click to stage, commit, and view diffs visually, which is enough for most daily work. **Terminal commands** give you full control over every operation and work in any environment, not just Zed. We will teach both: start with Zed's visual tools for comfort, then learn the terminal commands so you understand what is happening underneath.
 
-Zed has [built-in Git support]{.highlight}: the **source control panel** shows all changed files at a glance, you can **click the `+`** next to a file to stage it, **type a commit message** and commit without leaving the editor, and the **diff view** shows exactly which lines changed inline. Colored **gutter markers** in the margin indicate added, modified, and deleted lines.
+Zed has [built-in Git support]{.highlight}: the **source control panel** shows all changed files at a glance, you can **check the box** next to a file to stage it, **type a commit message** and commit without leaving the editor, and the **diff view** shows exactly which lines changed inline. Colored **gutter markers** in the margin indicate added, modified, and deleted lines.
 
 :::{.callout-tip}
-For daily work, Zed's Git panel is all you need. The terminal commands in the following sections show you what is happening behind the scenes -- useful when you need more control or when something goes wrong.
+For daily work, Zed's Git panel is all you need. The terminal commands in the following sections show you what is happening behind the scenes and become useful when you need more control or when something goes wrong.
 :::
 
 ## Starting a new project
@@ -137,17 +137,17 @@ echo "# My First Project" > README.md
 git status
 ```
 
-Git will tell you `README.md` is an [untracked file]{.highlight} -- it exists, but Git is not watching it yet. Zed shows this directly in the file tree: untracked and modified files are marked automatically once you run `git init`.
+Git will tell you `README.md` is an [untracked file]{.highlight}. It exists, but Git is not watching it yet. Zed shows this directly in the file tree: untracked and modified files are marked automatically once you run `git init`.
 
 ## Staging and committing
 
-**Stage** a file -- tell Git you want to include it in the next snapshot:
+**Stage** a file to tell Git you want to include it in the next snapshot:
 
 ```bash
 git add README.md
 ```
 
-**Commit** -- save the snapshot with a message:
+**Commit** to save the snapshot with a message:
 
 ```bash
 git commit -m "Add initial README file"
@@ -190,11 +190,11 @@ git commit -m "Add project description to README"
 Write messages that describe [what changed and why]{.highlight}. Six months from now, "update" tells you nothing. "Fix broken cross-reference in chapter 3" tells you everything.
 :::
 
-To see all your commits in a compact view, run `git log --oneline`. Each line shows a short identifier (the commit hash) and your message -- this is the timeline of your project. To see what changed since your last commit, run `git diff`. Zed's source control panel shows diffs visually, so you can see exactly which lines were added, changed, or removed without memorizing the command.
+To see all your commits in a compact view, run `git log --oneline`. Each line shows a short identifier (the commit hash) and your message, forming the timeline of your project. To see what changed since your last commit, run `git diff`. Zed's source control panel shows diffs visually, so you can see exactly which lines were added, changed, or removed without memorizing the command.
 
 ## Ignoring files you do not need
 
-Some files should [not be tracked]{.highlight} -- compiled output, system files, large data. Create a `.gitignore` file:
+Some files should [not be tracked]{.highlight}, such as compiled output, system files, and large data. Create a `.gitignore` file:
 
 ```
 _site/
@@ -227,13 +227,13 @@ git branch -M main
 git push -u origin main
 ```
 
-Refresh your GitHub page -- your files and commit history are now visible online.
+Refresh your GitHub page. Your files and commit history are now visible online.
 
 :::{.callout-note}
 GitHub will ask you to log in the first time you push. If the login prompts become annoying, look into SSH keys or the GitHub CLI (`gh auth login`) for a smoother setup.
 :::
 
-After the initial setup, the day-to-day cycle is simple. Both approaches -- Zed's visual panel and the terminal -- accomplish the same thing:
+After the initial setup, the day-to-day cycle is simple. Both approaches (Zed's visual panel and the terminal) accomplish the same thing:
 
 ::::{.columns}
 :::{.column width="50%"}
@@ -241,7 +241,7 @@ After the initial setup, the day-to-day cycle is simple. Both approaches -- Zed'
 
 1. Edit your files
 2. Open the source control panel
-3. Click `+` to stage changes
+3. Check the boxes to stage changes
 4. Type a commit message and commit
 5. Push to GitHub
 :::
@@ -323,10 +323,10 @@ Branching becomes more useful as your project grows. For now, just know it exist
 
 **Takeaways:**
 
-1. **Version control protects your work** -- no more "final_v2_REALLY_FINAL.docx"
-2. **Zed's Git panel handles daily tasks** -- stage, commit, and diff without leaving your editor
-3. **Terminal commands give you full control** -- needed for setup, branching, and when things go wrong
-4. **Push to GitHub at the end of every session** -- it is your backup
+1. **Version control protects your work.** No more "final_v2_REALLY_FINAL.docx"
+2. **Zed's Git panel handles daily tasks.** Stage, commit, and diff without leaving your editor
+3. **Terminal commands give you full control.** Needed for setup, branching, and when things go wrong
+4. **Push to GitHub at the end of every session.** It is your backup
 
 :::{.callout-important}
 Start using Git now, even for a single file. The safety net is worth the 30 seconds it takes to commit.

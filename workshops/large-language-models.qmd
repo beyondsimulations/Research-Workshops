@@ -21,7 +21,7 @@ This workshop covers [AI Programming & Large Language Models]{.highlight}. You h
 
 Think of LLMs as [advanced pattern recognition systems]{.highlight}. They have "read" **massive amounts of text** from the internet, books, and code, and based on those patterns, they can **generate new text**.
 
-What they really do is [predict the next token]{.highlight} -- like an incredibly advanced version of **autocomplete on your phone**. But they cannot truly "think" or "understand" like humans.
+What they really do is [predict the next token]{.highlight}, like an incredibly advanced version of **autocomplete on your phone**. But they cannot truly "think" or "understand" like humans.
 
 :::{.callout-tip}
 Despite their limitations, LLMs are genuinely useful for coding, writing, research, and analysis.
@@ -33,12 +33,12 @@ Modern LLMs use the [Transformer architecture]{.highlight}, introduced in "[Atte
 
 **The process (simplified):**
 
-1. **Tokenization:** Text is split into *tokens* -- not whole words, but subwords like "un-", "break", "-able". This lets the model handle words it has never seen before.
+1. **Tokenization:** Text is split into *tokens*, meaning not whole words but subwords like "un-", "break", "-able". This lets the model handle words it has never seen before.
 2. **Relationship mapping:** The model builds a mathematical representation of how these tokens relate to each other
 3. **Attention mechanism:** The model focuses on the [most relevant parts]{.highlight} of the input to generate each output token
 
 :::{.callout-note}
-"The cat sat on the mat because **it** was warm." -- Attention helps the model understand that "it" refers to "the mat," not "the cat."
+"The cat sat on the mat because **it** was warm." Attention helps the model understand that "it" refers to "the mat," not "the cat."
 :::
 
 :::{.callout-tip}
@@ -68,7 +68,7 @@ The [context window]{.highlight} is the number of tokens an LLM can process at o
 
 **How to manage context well:**
 
-Break problems into manageable chunks rather than dumping everything at once, and be specific about which files or functions you need help with. When you switch topics, start a fresh conversation so stale context does not confuse the model. Providing relevant context upfront -- instead of expecting the model to guess -- consistently leads to better results.
+Break problems into manageable chunks rather than dumping everything at once, and be specific about which files or functions you need help with. When you switch topics, start a fresh conversation so stale context does not confuse the model. Providing relevant context upfront, instead of expecting the model to guess, consistently leads to better results.
 
 :::{.callout-tip}
 Think of context like a desk: keep only what you need for the current task on it, and clear it when you move to the next task.
@@ -81,7 +81,7 @@ Training an LLM happens in [three phases]{.highlight}:
 **1. Self-supervised learning (pre-training)**
 
 - Trained on massive text datasets **without explicit labels**
-- Learns to predict the next token -- learns grammar, facts, and patterns
+- Learns to predict the next token, picking up grammar, facts, and patterns
 
 **2. Supervised fine-tuning**
 
@@ -97,13 +97,13 @@ Training an LLM happens in [three phases]{.highlight}:
 
 LLMs have several important limitations to be aware of:
 
-- [Unreliable output]{.highlight}: LLMs can confidently generate **incorrect information** (hallucinations), and because their training data contains biases, those biases can surface in their responses -- sometimes in subtle ways you will not catch without careful review.
+- [Unreliable output]{.highlight}: LLMs can confidently generate **incorrect information** (hallucinations), and because their training data contains biases, those biases can surface in their responses, sometimes in subtle ways you will not catch without careful review.
 - **No true understanding**: What looks like reasoning is pattern matching on training data, not thinking from first principles. Models also only know what they were trained on, so anything after their knowledge cutoff is simply absent.
-- **Inconsistent behavior**: Small changes in wording can produce very different results. Models can also [drift persona](https://www.understandingai.org/p/the-many-masks-that-llms-wear) mid-conversation -- researchers have documented cases where fine-tuning on one task triggered unexpected behavior elsewhere, and long conversations can push a model away from its intended character entirely.
+- **Inconsistent behavior**: Small changes in wording can produce very different results. Models can also [drift persona](https://www.understandingai.org/p/the-many-masks-that-llms-wear) mid-conversation. Researchers have documented cases where fine-tuning on one task triggered unexpected behavior elsewhere, and long conversations can push a model away from its intended character entirely.
 - **Overconfident tone**: LLMs rarely signal uncertainty, so a wrong answer reads exactly like a correct one.
 
 :::{.callout-warning}
-A [2025 Anthropic study](https://www.anthropic.com/research/AI-assistance-coding-skills) found that developers using AI scored 17% lower on comprehension tests -- roughly two letter grades -- with the biggest gap in debugging. Leaning on AI for code generation without engaging with what it produces erodes the skills you need to catch its mistakes.
+A [2025 Anthropic study](https://www.anthropic.com/research/AI-assistance-coding-skills) found that developers using AI scored 17% lower on comprehension tests (roughly two letter grades), with the biggest gap in debugging. Leaning on AI for code generation without engaging with what it produces erodes the skills you need to catch its mistakes.
 :::
 
 # [Models, Apps & Harnesses]{.flow}
@@ -134,10 +134,10 @@ The **foundation model** is the core intelligence. Different providers have diff
 | Meta | Llama (open-source) | Local deployment, customizable |
 :::
 
-This changes fast -- [new models appear every few months]{.highlight}.
+This changes fast. [New models appear every few months]{.highlight}.
 
 :::{.callout-warning}
-Free/default tiers often use **weaker models**. Always select the [frontier or advanced model]{.highlight} when available -- the difference is noticeable.
+Free/default tiers often use **weaker models**. Always select the [frontier or advanced model]{.highlight} when available, as the difference is noticeable.
 :::
 
 ## Apps and harnesses
@@ -155,7 +155,7 @@ Apps are [how you access the models]{.highlight}.
 
 All four offer free access to capable models, while paid tiers unlock stronger models and higher usage limits. Mistral offers an [affordable student tier]{.highlight} with access to Mistral Vibe (not flawless, but acceptable).
 
-Every app also comes with a [harness]{.highlight} -- a system that gives the model **tools and capabilities**. Same model, different harness = **completely different results**.
+Every app also comes with a [harness]{.highlight}, a system that gives the model **tools and capabilities**. Same model, different harness = **completely different results**.
 
 **Different apps, different harnesses:**
 
@@ -224,7 +224,7 @@ brew install --cask zed
 For Linux or Windows, download from [zed.dev](https://zed.dev).
 
 :::{.callout-tip}
-Zed offers a [free student tier]{.highlight} with solid code completion and **$10 in API credits** for at least one year. Sign up at [zed.dev](https://zed.dev) with your university email.
+Zed offers a [free student tier]{.highlight} with unlimited edit predictions and **$10/month in API credits** for one year. Sign up at [zed.dev/education](https://zed.dev/education) with your GitHub account and university email.
 :::
 
 ## GitHub Copilot
@@ -250,10 +250,10 @@ Terminal-based coding assistants let you work with AI [directly from the command
 
 - [Open-source]{.highlight} terminal-based AI coding assistant
 - Supports **multiple AI providers** (bring your own API key)
-- Reads, edits, and creates files from the terminal -- good for quick fixes and file operations
+- Reads, edits, and creates files from the terminal, good for quick fixes and file operations
 
 ```bash
-brew install opencode-ai/tap/opencode
+brew install opencode
 ```
 
 For other platforms, see [opencode.ai](https://opencode.ai).
@@ -262,16 +262,16 @@ For other platforms, see [opencode.ai](https://opencode.ai).
 
 - Anthropic's [CLI coding agent]{.highlight} that goes beyond suggestions: **autonomous multi-step task execution**
 - Reads your entire codebase for context and can **plan, write, test, and debug** code autonomously
-- Executes terminal commands and iterates on errors -- best for [involved, multi-step tasks]{.highlight}
+- Executes terminal commands and iterates on errors, best for [involved, multi-step tasks]{.highlight}
 
 ```bash
-brew install claude-code
+brew install --cask claude-code
 ```
 
 For other platforms, see [claude.ai/code](https://claude.ai/code).
 
 :::{.callout-note}
-Claude Code requires an Anthropic API key and incurs usage costs. OpenCode is free but also requires you to bring your own API key for whichever provider you choose.
+Claude Code requires a Claude subscription or Anthropic API key. OpenCode is free but requires you to bring your own API key for whichever provider you choose.
 :::
 
 ## Choosing the right tool
@@ -324,11 +324,11 @@ Use the output as a starting point. Ask follow-up questions to improve the resul
 
 **Takeaways:**
 
-1. **AI is a tool, not a replacement** -- you still need to understand the fundamentals
-2. **Understand before accepting** -- always read and verify AI-generated output
-3. **Pick the right harness** -- chat for brainstorming, agents for building, IDE for daily coding
-4. **Models matter** -- always use the most capable model available to you
-5. **Context matters** -- clear prompts and managed context give you better output
+1. **AI is a tool, not a replacement.** You still need to understand the fundamentals
+2. **Understand before accepting.** Always read and verify AI-generated output
+3. **Pick the right harness.** Chat for brainstorming, agents for building, IDE for daily coding
+4. **Models matter.** Always use the most capable model available to you
+5. **Context matters.** Clear prompts and managed context give you better output
 
 :::{.callout-warning}
 If you use free models, be aware that your prompts may be used by providers and are not private. For learning and experimenting, this should be no issue.
@@ -338,20 +338,20 @@ If you use free models, be aware that your prompts may be used by providers and 
 
 **Getting started:**
 
-- [Zed Editor](https://zed.dev) -- recommended IDE
-- [GitHub Student Pack](https://education.github.com/pack) -- free Copilot access
-- [Claude.ai](https://claude.ai) -- Anthropic's chat interface
-- [ChatGPT](https://chatgpt.com) -- OpenAI's chat interface
+- [Zed Editor](https://zed.dev): Recommended IDE
+- [GitHub Student Pack](https://education.github.com/pack): Free Copilot access
+- [Claude.ai](https://claude.ai): Anthropic's chat interface
+- [ChatGPT](https://chatgpt.com): OpenAI's chat interface
 
 **Going deeper:**
 
-- [3Blue1Brown: LLMs](https://www.youtube.com/watch?v=LPZh9BOjkQs) -- Grant Sanderson explains LLMs visually better than most textbooks
-- [Anthropic Research](https://www.anthropic.com/research) -- AI safety and interpretability
-- [One Useful Thing](https://www.oneusefulthing.org/) -- Ethan Mollick's blog on practical AI use
-- [Prompt Engineering Guide](https://www.promptingguide.ai/) -- techniques for better prompts
-- [AI Assistance and Coding Skills](https://www.anthropic.com/research/AI-assistance-coding-skills) -- Anthropic's study on how AI help affects learning (the 17% finding cited in this workshop)
-- [The Many Masks LLMs Wear](https://www.understandingai.org/p/the-many-masks-that-llms-wear) -- Kai Williams on persona drift and why models behave unpredictably
-- [Effective Harnesses for Long-Running Agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) -- practical patterns for building agent systems that actually work
+- [3Blue1Brown: LLMs](https://www.youtube.com/watch?v=LPZh9BOjkQs): Grant Sanderson explains LLMs visually better than most textbooks
+- [Anthropic Research](https://www.anthropic.com/research): AI safety and interpretability
+- [One Useful Thing](https://www.oneusefulthing.org/): Ethan Mollick's blog on practical AI use
+- [Prompt Engineering Guide](https://www.promptingguide.ai/): Techniques for better prompts
+- [AI Assistance and Coding Skills](https://www.anthropic.com/research/AI-assistance-coding-skills): Anthropic's study on how AI help affects learning (the 17% finding cited in this workshop)
+- [The Many Masks LLMs Wear](https://www.understandingai.org/p/the-many-masks-that-llms-wear): Kai Williams on persona drift and why models behave unpredictably
+- [Effective Harnesses for Long-Running Agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents): Practical patterns for building agent systems that actually work
 
 :::{.callout-note}
 ### LLM architecture types (reference)

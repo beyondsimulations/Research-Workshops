@@ -36,11 +36,11 @@ These tools let you run open-source models on your own machine. Running locally 
 
 These are the tools covered in the [Working with AI](../workshops/large-language-models.qmd) workshop. They range from full editors with built-in AI to terminal-based agents that can work autonomously.
 
-- [Zed](https://zed.dev/): A modern, fast code editor built in Rust with built-in AI assistant support. Recommended for this course. Offers a [free student tier](https://zed.dev/education) with code completion and API credits when you sign up with a university email.
+- [Zed](https://zed.dev/): A modern, fast code editor built in Rust with built-in AI assistant support. Recommended for this course. Offers a [free student tier](https://zed.dev/education) with unlimited edit predictions and $10/month in API credits for one year when you sign up with a GitHub account and university email.
 - [GitHub Copilot](https://github.com/features/copilot): AI pair programmer that provides inline code suggestions as you type. Integrates into VS Code, Zed, and JetBrains. Free for students via the [GitHub Student Developer Pack](https://education.github.com/pack).
 - [OpenCode](https://opencode.ai): Open-source terminal-based AI coding assistant. Lightweight and fast, supports multiple AI providers with your own API keys. Good for quick file edits and terminal tasks.
-- [Claude Code](https://claude.ai/code): Anthropic's CLI coding agent for autonomous multi-step tasks. Reads your entire codebase for context, runs terminal commands, and iterates on errors. Requires an API key and incurs usage costs.
-- [Mistral Vibe](https://mistral.ai/vibe): Mistral's open-source CLI coding agent. It scans your project’s file structure and Git status, supports natural language commands, and can modify and execute changes across multiple files. Included in the [Mistral Student subscription](https://help.mistral.ai/en/articles/347553-as-a-student-am-i-eligible-for-a-discount-on-le-chat-pro).
+- [Claude Code](https://claude.ai/code): Anthropic's CLI coding agent for autonomous multi-step tasks. Reads your entire codebase for context, runs terminal commands, and iterates on errors. Requires a Claude subscription or Anthropic API key.
+- [Mistral Vibe](https://github.com/mistralai/mistral-vibe): Mistral's open-source CLI coding agent. It scans your project’s file structure and Git status, supports natural language commands, and can modify and execute changes across multiple files. Included in the [Mistral Student subscription](https://help.mistral.ai/en/articles/347553-as-a-student-am-i-eligible-for-a-discount-on-le-chat-pro).
 
 # Literature Research
 
@@ -63,7 +63,7 @@ These tools use AI to surface papers you might miss through keyword search alone
 - [Semantic Scholar](https://www.semanticscholar.org/): AI-powered academic search engine that finds related papers and surfaces connections across disciplines. Also provides TLDR summaries and citation context for many papers.
 - [Connected Papers](https://www.connectedpapers.com/): Builds a visual graph of related papers from a seed paper. The graph shows similarity (not citation direction), so you can see clusters of related work at a glance.
 - [Elicit](https://elicit.com/): AI research assistant that extracts findings from papers and helps with systematic reviews. You can ask it a research question and it will pull relevant results from the literature.
-- [Research Rabbit](https://www.researchrabbit.ai/): Discovers related work from seed papers you provide. Works like a recommendation engine for academic literature -- add papers you know, and it suggests what to read next.
+- [Research Rabbit](https://www.researchrabbit.ai/): Discovers related work from seed papers you provide. Works like a recommendation engine for academic literature: add papers you know, and it suggests what to read next.
 - [Consensus](https://consensus.app/): AI search engine that returns research findings rather than web pages. Useful when you want to know "what does the evidence say about X" rather than finding individual papers.
 - [Perplexity](https://www.perplexity.ai/): AI search with support for academic sources. Useful for quick overviews of a topic with inline citations, though you should always check the original sources.
 
@@ -97,9 +97,9 @@ These resources go deeper into how AI works and how to use it effectively. They 
 - [One Useful Thing](https://www.oneusefulthing.org/): Ethan Mollick's blog on practical AI use. His [Guide to Which AI to Use](https://www.oneusefulthing.org/p/a-guide-to-which-ai-to-use-in-the) explains the models, apps, and harnesses framework used in the first workshop and is updated regularly as new models appear.
 - [3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw): Visual explanations of how LLMs and neural networks work, by Grant Sanderson. The videos on attention and transformers are particularly useful for understanding the concepts from the first workshop.
 - [Prompt Engineering Guide](https://www.promptingguide.ai/): A community-maintained collection of prompting techniques and strategies. Covers zero-shot, few-shot, chain-of-thought, and other approaches beyond the RBTF framework taught in the prompting workshop.
-- [AI Assistance and Coding Skills](https://www.anthropic.com/research/AI-assistance-coding-skills): A 2025 Anthropic study that ran a randomized trial with 52 developers. Those using AI scored 17% lower on comprehension tests, with the biggest gap in debugging -- but developers who asked for explanations rather than just code performed nearly as well as those coding by hand.
+- [AI Assistance and Coding Skills](https://www.anthropic.com/research/AI-assistance-coding-skills): A 2025 Anthropic study that ran a randomized trial with 52 developers. Those using AI scored 17% lower on comprehension tests, with the biggest gap in debugging. However, developers who asked for explanations rather than just code performed nearly as well as those coding by hand.
 - [The Many Masks LLMs Wear](https://www.understandingai.org/p/the-many-masks-that-llms-wear): Kai Williams at Understanding AI on how LLMs shift personas mid-conversation, how fine-tuning on one task can trigger unexpected behavior elsewhere, and what that means for trusting model output.
-- [Effective Harnesses for Long-Running Agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents): Justin Young at Anthropic Engineering on building agent systems that work across multiple sessions. Covers a two-agent architecture with progress tracking and automated testing -- a concrete example of why the harness matters more than the model.
+- [Effective Harnesses for Long-Running Agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents): Justin Young at Anthropic Engineering on building agent systems that work across multiple sessions. Covers a two-agent architecture with progress tracking and automated testing, offering a concrete example of why the harness matters more than the model.
 
 # Further Reading
 

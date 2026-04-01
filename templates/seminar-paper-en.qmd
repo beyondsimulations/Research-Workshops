@@ -144,7 +144,7 @@ Operations research provides powerful tools for decision-making in complex syste
 @fig-example shows a schematic overview of the problem structure.
 
 <!-- Figure syntax: ![Caption](images/file.png){#fig-label width="80%"} -->
-![Replace this with your own figure](https://placehold.co/600x300/f0f0f0/333?text=Your+Figure+Here){#fig-example width="80%"}
+![Replace this with your own figure](images/Image.pdf){#fig-example width="80%"}
 
 The remainder of this paper is structured as follows. @sec-literature reviews the relevant literature. @sec-model introduces the mathematical model, including the underlying assumptions in @sec-assumptions and the formal formulation in @sec-formulation. @sec-computational presents the computational study, and @sec-conclusion concludes with a summary and outlook for future research.
 

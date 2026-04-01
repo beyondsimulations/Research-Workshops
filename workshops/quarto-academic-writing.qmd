@@ -43,7 +43,7 @@ Think of Quarto as a **modern replacement for LaTeX** that is simpler to learn a
 ::::
 
 :::{.callout-note}
-Quarto produces **publication-quality** PDFs via Typst -- no need to install a full TeX distribution!
+Quarto produces **publication-quality** PDFs via Typst with no need to install a full TeX distribution!
 :::
 
 
@@ -80,7 +80,7 @@ Quarto produces **publication-quality** PDFs via Typst -- no need to install a f
 :::
 ::::
 
-Same output quality -- [much less typing]{.highlight}!
+Same output quality, [much less typing]{.highlight}!
 
 # [Getting Started]{.flow}
 
@@ -113,7 +113,7 @@ sudo dpkg -i quarto-*.deb
 
 ## PDF output with Typst
 
-Quarto uses [Typst]{.highlight} for PDF rendering -- it is **built in**, so there is no need to install a full TeX distribution (saves several GB). Simply set `format: typst` in your YAML frontmatter.
+Quarto uses [Typst]{.highlight} for PDF rendering. It is **built in**, so there is no need to install a full TeX distribution (saves several GB). Simply set `format: typst` in your YAML frontmatter.
 
 ```yaml
 ---
@@ -131,9 +131,9 @@ Typst is fast and produces clean PDFs. It compiles in milliseconds rather than s
 
 ## Recommended editors
 
-- **Zed** -- a fast, modern editor that ships with built-in Quarto support, so you can start writing `.qmd` files without installing anything extra.
-- **VS Code** -- with the [Quarto extension](https://marketplace.visualstudio.com/items?itemName=quarto.quarto) installed, you get syntax highlighting, an integrated live preview, and autocompletion for YAML options and cross-references.
-- **RStudio** -- has native Quarto support built in, making it a natural choice if you already use R for data analysis or are familiar with the RStudio interface.
+- **Zed:** A fast, modern editor with Quarto support available through a [community extension](https://zed.dev/extensions?query=quarto). Install it from the extensions panel and you are ready to write `.qmd` files.
+- **VS Code:** With the [Quarto extension](https://marketplace.visualstudio.com/items?itemName=quarto.quarto) installed, you get syntax highlighting, an integrated live preview, and autocompletion for YAML options and cross-references.
+- **RStudio:** Has native Quarto support built in, making it a natural choice if you already use R for data analysis or are familiar with the RStudio interface.
 
 :::{.callout-note}
 Any text editor works with Quarto files since they are just plain text (`.qmd` files). The editors above simply provide extra convenience features like live preview and autocompletion.
@@ -265,7 +265,7 @@ Store references in a `.bib` file and set `bibliography: references.bib` in YAML
 :::
 
 :::{.callout-tip}
-For Typst output, use `bibliographystyle: apa` in your YAML. This uses Typst's built-in APA style -- no extra `.csl` file needed.
+For Typst output, use `bibliographystyle: apa` in your YAML. This uses Typst's built-in APA style, so no extra `.csl` file is needed.
 :::
 
 ## Cross-references overview
@@ -337,15 +337,15 @@ We provide [ready-to-use Quarto templates]{.highlight} for your seminar papers, 
 
 The templates include:
 
-- **Custom UHH title page** -- university name, faculty, institute, thesis type, supervisor, matriculation number, and your details, all pre-formatted.
-- **Correct margins and formatting** -- page dimensions (40/25/30/20mm), 11pt font, and 1.5 line spacing are pre-configured to match UHH requirements.
-- **Table of contents, list of figures, list of tables** -- generated automatically from your headings, figure captions, and table captions.
-- **List of abbreviations and list of symbols** -- pre-filled with examples you can adapt.
-- **Citation setup with APA style** -- uses Typst's built-in `bibliographystyle: apa`, so you can cite with `[@key]` right away.
-- **Booktabs-style tables** -- clean academic tables with horizontal rules only.
-- **Example content** -- sample sections, figures, tables, equations, and cross-references you can adapt.
-- **Declaration of authorship** -- the required signed statement, formatted according to university guidelines.
-- **AI tools declaration** -- a section to document which AI tools you used and how.
+- **Custom UHH title page:** University name, faculty, institute, thesis type, supervisor, matriculation number, and your details, all pre-formatted.
+- **Correct margins and formatting:** Page dimensions (40/25/30/20mm), 11pt font, and 1.5 line spacing are pre-configured to match UHH requirements.
+- **Table of contents, list of figures, list of tables:** Generated automatically from your headings, figure captions, and table captions.
+- **List of abbreviations and list of symbols:** Pre-filled with examples you can adapt.
+- **Citation setup with APA style:** Uses Typst's built-in `bibliographystyle: apa`, so you can cite with `[@key]` right away.
+- **Booktabs-style tables:** Clean academic tables with horizontal rules only.
+- **Example content:** Sample sections, figures, tables, equations, and cross-references you can adapt.
+- **Declaration of authorship:** The required signed statement, formatted according to university guidelines.
+- **AI tools declaration:** A section to document which AI tools you used and how.
 
 
 ## Template files
@@ -411,12 +411,12 @@ Use [Zotero](https://www.zotero.org/) (free) with the [Better BibTeX](https://re
 :::
 
 
-- **Keep figures in an `images/` folder** -- a dedicated folder prevents clutter in your project root and makes it straightforward to locate and update graphics later.
-- **Use `quarto preview` for [live preview]{.highlight} while writing** -- seeing your rendered output update in real time helps you catch formatting issues early, before they pile up.
-- **Write one sentence per line** -- this makes version control diffs much cleaner, because a change to one sentence shows up as a single changed line rather than a reflow of an entire paragraph.
-- **Use `<!-- comments -->` to leave notes for yourself** -- HTML comments are invisible in the rendered output, so you can mark sections that need revision or leave reminders without affecting the final document.
+- **Keep figures in an `images/` folder.** A dedicated folder prevents clutter in your project root and makes it straightforward to locate and update graphics later.
+- **Use `quarto preview` for [live preview]{.highlight} while writing.** Seeing your rendered output update in real time helps you catch formatting issues early, before they pile up.
+- **Write one sentence per line.** This makes version control diffs much cleaner, because a change to one sentence shows up as a single changed line rather than a reflow of an entire paragraph.
+- **Use `<!-- comments -->` to leave notes for yourself.** HTML comments are invisible in the rendered output, so you can mark sections that need revision or leave reminders without affecting the final document.
 
 :::{.callout-note}
 ## Takeaway
-Quarto lets you **focus on content, not formatting**. Write your ideas in simple Markdown, and Quarto handles the rest -- citations, cross-references, numbering, and clean PDF output.
+Quarto lets you **focus on content, not formatting**. Write your ideas in simple Markdown, and Quarto handles the rest: citations, cross-references, numbering, and clean PDF output.
 :::

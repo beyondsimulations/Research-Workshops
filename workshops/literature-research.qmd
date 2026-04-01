@@ -11,7 +11,7 @@ format:
 
 ## Welcome
 
-This workshop covers [structured literature research]{.highlight} -- a core skill for any Bachelor or Master thesis. You will learn how to formulate a clear research question, build effective search strategies, use AI tools for discovery, organize references with Zotero, and evaluate sources critically.
+This workshop covers [structured literature research]{.highlight}, a core skill for any Bachelor or Master thesis. You will learn how to formulate a clear research question, build effective search strategies, use AI tools for discovery, organize references with Zotero, and evaluate sources critically.
 
 :::{.callout-tip}
 Finding the right literature early saves you weeks of work later.
@@ -82,7 +82,7 @@ Write down your research question before you start searching. Revisit and refine
 
 ## Google Scholar
 
-[Google Scholar](https://scholar.google.com/) is the most accessible starting point -- free, broad coverage, easy to use.
+[Google Scholar](https://scholar.google.com/) is the most accessible starting point: free, broad coverage, and easy to use.
 
 ::::{.columns}
 :::{.column width="50%"}

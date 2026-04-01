@@ -147,7 +147,7 @@ Operations Research stellt leistungsfähige Methoden für die Entscheidungsfindu
 @fig-beispiel zeigt eine schematische Übersicht der Problemstruktur.
 
 <!-- Abbildung: ![Beschriftung](images/datei.png){#fig-label width="80%"} -->
-![Ersetzen Sie dies durch Ihre eigene Abbildung](https://placehold.co/600x300/f0f0f0/333?text=Ihre+Abbildung+hier){#fig-beispiel width="80%"}
+![Ersetzen Sie dies durch Ihre eigene Abbildung](images/Image.pdf){#fig-beispiel width="80%"}
 
 Die Arbeit ist wie folgt gegliedert. @sec-literatur gibt einen Überblick über die relevante Literatur. @sec-modell stellt das mathematische Modell vor, wobei @sec-annahmen die zugrundeliegenden Annahmen und @sec-aufbau die formale Formulierung enthält. @sec-rechenstudie präsentiert die Rechenstudie, und @sec-zusammenfassung fasst die Ergebnisse zusammen und gibt einen Ausblick auf zukünftige Forschung.
 

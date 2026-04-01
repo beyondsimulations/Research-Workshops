@@ -16,15 +16,15 @@ The workshops build on each other. I recommend reading them in the order listed 
 
 # Workshops
 
-- **[Working with AI](workshops/large-language-models.qmd)** -- How large language models work at a conceptual level, and how to pick the right AI tool for a given task. Covers the difference between models, apps, and harnesses (based on Ethan Mollick's framework), then walks through the coding tools you will use in this course: Zed, GitHub Copilot, OpenCode, and Claude Code.
-- **[AI Prompting](workshops/prompting.qmd)** -- Most people get generic results from AI because they provide too little context. This workshop introduces the RBTF framework (Role, Background, Task, Format) and shows how to iterate on AI responses. Includes before-and-after examples with real research tasks.
-- **[Literature Research](workshops/literature-research.qmd)** -- A structured approach to finding, evaluating, and organizing academic literature. Covers Google Scholar and specialized databases, Boolean search strings, forward and backward snowballing, and AI-powered discovery tools (Semantic Scholar, Connected Papers, Elicit). Ends with a Zotero workflow for reference management.
-- **[Quarto for Academic Writing](workshops/quarto-academic-writing.qmd)** -- Write your seminar paper in Quarto Markdown instead of LaTeX or Word. Covers the basics -- headings, figures, tables, math equations -- and the academic features: BibTeX citations, cross-references, and PDF output via Typst. Includes ready-to-use templates for German and English papers.
-- **[Git & GitHub](workshops/git-github.qmd)** -- Version control for your thesis project. Learn to track changes with Git, use Zed's built-in Git panel for daily work, and push your project to GitHub as a backup. Also covers `.gitignore` for Quarto projects and a brief preview of branching.
+- **[Working with AI](workshops/large-language-models.qmd):** How large language models work at a conceptual level, and how to pick the right AI tool for a given task. Covers the difference between models, apps, and harnesses (based on Ethan Mollick's framework), then walks through the coding tools you will use in this course: Zed, GitHub Copilot, OpenCode, and Claude Code.
+- **[AI Prompting](workshops/prompting.qmd):** Most people get generic results from AI because they provide too little context. This workshop introduces the RBTF framework (Role, Background, Task, Format) and shows how to iterate on AI responses. Includes before-and-after examples with real research tasks.
+- **[Literature Research](workshops/literature-research.qmd):** A structured approach to finding, evaluating, and organizing academic literature. Covers Google Scholar and specialized databases, Boolean search strings, forward and backward snowballing, and AI-powered discovery tools (Semantic Scholar, Connected Papers, Elicit). Ends with a Zotero workflow for reference management.
+- **[Quarto for Academic Writing](workshops/quarto-academic-writing.qmd):** Write your seminar paper in Quarto Markdown instead of LaTeX or Word. Covers the basics (headings, figures, tables, math equations) and the academic features: BibTeX citations, cross-references, and PDF output via Typst. Includes ready-to-use templates for German and English papers.
+- **[Git & GitHub](workshops/git-github.qmd):** Version control for your thesis project. Learn to track changes with Git, use Zed's built-in Git panel for daily work, and push your project to GitHub as a backup. Also covers `.gitignore` for Quarto projects and a brief preview of branching.
 
 # Templates
 
-Paper templates (German and English) are available in the [course repository](https://github.com/beyondsimulations/Research-Workshops/tree/main/templates). They work with Quarto and Typst -- no LaTeX installation needed.
+Paper templates (German and English) are available in the [course repository](https://github.com/beyondsimulations/Research-Workshops/tree/main/templates). They work with Quarto and Typst, so no LaTeX installation is needed.
 
 # Resources
 
