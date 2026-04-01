@@ -282,7 +282,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>Version control is not just for programmers. It protects every document you write – thesis drafts, code, data analysis scripts.</p>
+<p>Version control is not just for programmers. It protects every document you write: thesis drafts, code, and data analysis scripts.</p>
 </div>
 </div>
 </div>
@@ -404,20 +404,20 @@ essay_final_REALLY_FINAL_revised.docx</code></pre>
 <h2 class="anchored" data-anchor-id="how-git-works">How Git works</h2>
 <p>Git organizes your work into <span class="highlight">three zones</span>:</p>
 <ol type="1">
-<li><strong>Working directory</strong> – your files as you edit them</li>
-<li><strong>Staging area</strong> – changes you have selected for the next snapshot</li>
-<li><strong>Repository</strong> – permanent saved snapshots (commits)</li>
+<li><strong>Working directory:</strong> your files as you edit them</li>
+<li><strong>Staging area:</strong> changes you have selected for the next snapshot</li>
+<li><strong>Repository:</strong> permanent saved snapshots (commits)</li>
 </ol>
 <p>Think of it like writing an email: you draft the text (working directory), you review what to include (staging), you hit send (commit). The command <code>git add</code> moves changes to staging, and <code>git commit</code> saves the snapshot. This two-step process lets you choose exactly what goes into each commit.</p>
-<p>You can interact with Git in two ways. <strong>Zed’s Git panel</strong> lets you click to stage, commit, and view diffs visually – this is enough for most daily work. <strong>Terminal commands</strong> give you full control over every operation and work in any environment, not just Zed. We will teach both: start with Zed’s visual tools for comfort, then learn the terminal commands so you understand what is happening underneath.</p>
-<p>Zed has <span class="highlight">built-in Git support</span>: the <strong>source control panel</strong> shows all changed files at a glance, you can <strong>click the <code>+</code></strong> next to a file to stage it, <strong>type a commit message</strong> and commit without leaving the editor, and the <strong>diff view</strong> shows exactly which lines changed inline. Colored <strong>gutter markers</strong> in the margin indicate added, modified, and deleted lines.</p>
+<p>You can interact with Git in two ways. <strong>Zed’s Git panel</strong> lets you click to stage, commit, and view diffs visually, which is enough for most daily work. <strong>Terminal commands</strong> give you full control over every operation and work in any environment, not just Zed. We will teach both: start with Zed’s visual tools for comfort, then learn the terminal commands so you understand what is happening underneath.</p>
+<p>Zed has <span class="highlight">built-in Git support</span>: the <strong>source control panel</strong> shows all changed files at a glance, you can <strong>check the box</strong> next to a file to stage it, <strong>type a commit message</strong> and commit without leaving the editor, and the <strong>diff view</strong> shows exactly which lines changed inline. Colored <strong>gutter markers</strong> in the margin indicate added, modified, and deleted lines.</p>
 <div class="callout callout-style-simple callout-tip">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>For daily work, Zed’s Git panel is all you need. The terminal commands in the following sections show you what is happening behind the scenes – useful when you need more control or when something goes wrong.</p>
+<p>For daily work, Zed’s Git panel is all you need. The terminal commands in the following sections show you what is happening behind the scenes and become useful when you need more control or when something goes wrong.</p>
 </div>
 </div>
 </div>
@@ -432,13 +432,13 @@ essay_final_REALLY_FINAL_revised.docx</code></pre>
 <p>Now create a file and check the status:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"# My First Project"</span> <span class="op">&gt;</span> README.md</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> status</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Git will tell you <code>README.md</code> is an <span class="highlight">untracked file</span> – it exists, but Git is not watching it yet. Zed shows this directly in the file tree: untracked and modified files are marked automatically once you run <code>git init</code>.</p>
+<p>Git will tell you <code>README.md</code> is an <span class="highlight">untracked file</span>. It exists, but Git is not watching it yet. Zed shows this directly in the file tree: untracked and modified files are marked automatically once you run <code>git init</code>.</p>
 </section>
 <section id="staging-and-committing" class="level2">
 <h2 class="anchored" data-anchor-id="staging-and-committing">Staging and committing</h2>
-<p><strong>Stage</strong> a file – tell Git you want to include it in the next snapshot:</p>
+<p><strong>Stage</strong> a file to tell Git you want to include it in the next snapshot:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add README.md</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p><strong>Commit</strong> – save the snapshot with a message:</p>
+<p><strong>Commit</strong> to save the snapshot with a message:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add initial README file"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>That is your first commit. Now edit the file and repeat:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"This project is for learning Git."</span> <span class="op">&gt;&gt;</span> README.md</span>
@@ -486,11 +486,11 @@ essay_final_REALLY_FINAL_revised.docx</code></pre>
 </div>
 </div>
 </div>
-<p>To see all your commits in a compact view, run <code>git log --oneline</code>. Each line shows a short identifier (the commit hash) and your message – this is the timeline of your project. To see what changed since your last commit, run <code>git diff</code>. Zed’s source control panel shows diffs visually, so you can see exactly which lines were added, changed, or removed without memorizing the command.</p>
+<p>To see all your commits in a compact view, run <code>git log --oneline</code>. Each line shows a short identifier (the commit hash) and your message, forming the timeline of your project. To see what changed since your last commit, run <code>git diff</code>. Zed’s source control panel shows diffs visually, so you can see exactly which lines were added, changed, or removed without memorizing the command.</p>
 </section>
 <section id="ignoring-files-you-do-not-need" class="level2">
 <h2 class="anchored" data-anchor-id="ignoring-files-you-do-not-need">Ignoring files you do not need</h2>
-<p>Some files should <span class="highlight">not be tracked</span> – compiled output, system files, large data. Create a <code>.gitignore</code> file:</p>
+<p>Some files should <span class="highlight">not be tracked</span>, such as compiled output, system files, and large data. Create a <code>.gitignore</code> file:</p>
 <pre><code>_site/
 _freeze/
 .DS_Store
@@ -521,7 +521,7 @@ _freeze/
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin https://github.com/YOUR-USERNAME/my-project.git</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch <span class="at">-M</span> main</span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin main</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Refresh your GitHub page – your files and commit history are now visible online.</p>
+<p>Refresh your GitHub page. Your files and commit history are now visible online.</p>
 <div class="callout callout-style-simple callout-note">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
@@ -532,14 +532,14 @@ _freeze/
 </div>
 </div>
 </div>
-<p>After the initial setup, the day-to-day cycle is simple. Both approaches – Zed’s visual panel and the terminal – accomplish the same thing:</p>
+<p>After the initial setup, the day-to-day cycle is simple. Both approaches (Zed’s visual panel and the terminal) accomplish the same thing:</p>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><strong>In Zed’s Git panel:</strong></p>
 <ol type="1">
 <li>Edit your files</li>
 <li>Open the source control panel</li>
-<li>Click <code>+</code> to stage changes</li>
+<li>Check the boxes to stage changes</li>
 <li>Type a commit message and commit</li>
 <li>Push to GitHub</li>
 </ol>
@@ -670,10 +670,10 @@ _freeze/
 </div>
 <p><strong>Takeaways:</strong></p>
 <ol type="1">
-<li><strong>Version control protects your work</strong> – no more “final_v2_REALLY_FINAL.docx”</li>
-<li><strong>Zed’s Git panel handles daily tasks</strong> – stage, commit, and diff without leaving your editor</li>
-<li><strong>Terminal commands give you full control</strong> – needed for setup, branching, and when things go wrong</li>
-<li><strong>Push to GitHub at the end of every session</strong> – it is your backup</li>
+<li><strong>Version control protects your work.</strong> No more “final_v2_REALLY_FINAL.docx”</li>
+<li><strong>Zed’s Git panel handles daily tasks.</strong> Stage, commit, and diff without leaving your editor</li>
+<li><strong>Terminal commands give you full control.</strong> Needed for setup, branching, and when things go wrong</li>
+<li><strong>Push to GitHub at the end of every session.</strong> It is your backup</li>
 </ol>
 <div class="callout callout-style-simple callout-important">
 <div class="callout-body d-flex">

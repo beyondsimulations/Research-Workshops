@@ -283,7 +283,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="what-is-an-llm" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-an-llm">What is an LLM?</h2>
 <p>Think of LLMs as <span class="highlight">advanced pattern recognition systems</span>. They have “read” <strong>massive amounts of text</strong> from the internet, books, and code, and based on those patterns, they can <strong>generate new text</strong>.</p>
-<p>What they really do is <span class="highlight">predict the next token</span> – like an incredibly advanced version of <strong>autocomplete on your phone</strong>. But they cannot truly “think” or “understand” like humans.</p>
+<p>What they really do is <span class="highlight">predict the next token</span>, like an incredibly advanced version of <strong>autocomplete on your phone</strong>. But they cannot truly “think” or “understand” like humans.</p>
 <div class="callout callout-style-simple callout-tip">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
@@ -300,7 +300,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Modern LLMs use the <span class="highlight">Transformer architecture</span>, introduced in “<a href="https://arxiv.org/abs/1706.03762">Attention is All You Need</a>” (Vaswani et al., 2017).</p>
 <p><strong>The process (simplified):</strong></p>
 <ol type="1">
-<li><strong>Tokenization:</strong> Text is split into <em>tokens</em> – not whole words, but subwords like “un-”, “break”, “-able”. This lets the model handle words it has never seen before.</li>
+<li><strong>Tokenization:</strong> Text is split into <em>tokens</em>, meaning not whole words but subwords like “un-”, “break”, “-able”. This lets the model handle words it has never seen before.</li>
 <li><strong>Relationship mapping:</strong> The model builds a mathematical representation of how these tokens relate to each other</li>
 <li><strong>Attention mechanism:</strong> The model focuses on the <span class="highlight">most relevant parts</span> of the input to generate each output token</li>
 </ol>
@@ -310,7 +310,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>“The cat sat on the mat because <strong>it</strong> was warm.” – Attention helps the model understand that “it” refers to “the mat,” not “the cat.”</p>
+<p>“The cat sat on the mat because <strong>it</strong> was warm.” Attention helps the model understand that “it” refers to “the mat,” not “the cat.”</p>
 </div>
 </div>
 </div>
@@ -346,7 +346,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p><strong>How to manage context well:</strong></p>
-<p>Break problems into manageable chunks rather than dumping everything at once, and be specific about which files or functions you need help with. When you switch topics, start a fresh conversation so stale context does not confuse the model. Providing relevant context upfront – instead of expecting the model to guess – consistently leads to better results.</p>
+<p>Break problems into manageable chunks rather than dumping everything at once, and be specific about which files or functions you need help with. When you switch topics, start a fresh conversation so stale context does not confuse the model. Providing relevant context upfront, instead of expecting the model to guess, consistently leads to better results.</p>
 <div class="callout callout-style-simple callout-tip">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
@@ -364,7 +364,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><strong>1. Self-supervised learning (pre-training)</strong></p>
 <ul>
 <li>Trained on massive text datasets <strong>without explicit labels</strong></li>
-<li>Learns to predict the next token – learns grammar, facts, and patterns</li>
+<li>Learns to predict the next token, picking up grammar, facts, and patterns</li>
 </ul>
 <p><strong>2. Supervised fine-tuning</strong></p>
 <ul>
@@ -381,9 +381,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="what-llms-get-wrong">What LLMs get wrong</h2>
 <p>LLMs have several important limitations to be aware of:</p>
 <ul>
-<li><span class="highlight">Unreliable output</span>: LLMs can confidently generate <strong>incorrect information</strong> (hallucinations), and because their training data contains biases, those biases can surface in their responses – sometimes in subtle ways you will not catch without careful review.</li>
+<li><span class="highlight">Unreliable output</span>: LLMs can confidently generate <strong>incorrect information</strong> (hallucinations), and because their training data contains biases, those biases can surface in their responses, sometimes in subtle ways you will not catch without careful review.</li>
 <li><strong>No true understanding</strong>: What looks like reasoning is pattern matching on training data, not thinking from first principles. Models also only know what they were trained on, so anything after their knowledge cutoff is simply absent.</li>
-<li><strong>Inconsistent behavior</strong>: Small changes in wording can produce very different results. Models can also <a href="https://www.understandingai.org/p/the-many-masks-that-llms-wear">drift persona</a> mid-conversation – researchers have documented cases where fine-tuning on one task triggered unexpected behavior elsewhere, and long conversations can push a model away from its intended character entirely.</li>
+<li><strong>Inconsistent behavior</strong>: Small changes in wording can produce very different results. Models can also <a href="https://www.understandingai.org/p/the-many-masks-that-llms-wear">drift persona</a> mid-conversation. Researchers have documented cases where fine-tuning on one task triggered unexpected behavior elsewhere, and long conversations can push a model away from its intended character entirely.</li>
 <li><strong>Overconfident tone</strong>: LLMs rarely signal uncertainty, so a wrong answer reads exactly like a correct one.</li>
 </ul>
 <div class="callout callout-style-simple callout-warning">
@@ -392,7 +392,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>A <a href="https://www.anthropic.com/research/AI-assistance-coding-skills">2025 Anthropic study</a> found that developers using AI scored 17% lower on comprehension tests – roughly two letter grades – with the biggest gap in debugging. Leaning on AI for code generation without engaging with what it produces erodes the skills you need to catch its mistakes.</p>
+<p>A <a href="https://www.anthropic.com/research/AI-assistance-coding-skills">2025 Anthropic study</a> found that developers using AI scored 17% lower on comprehension tests (roughly two letter grades), with the biggest gap in debugging. Leaning on AI for code generation without engaging with what it produces erodes the skills you need to catch its mistakes.</p>
 </div>
 </div>
 </div>
@@ -465,14 +465,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tbody>
 </table>
 </div>
-<p>This changes fast – <span class="highlight">new models appear every few months</span>.</p>
+<p>This changes fast. <span class="highlight">New models appear every few months</span>.</p>
 <div class="callout callout-style-simple callout-warning">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>Free/default tiers often use <strong>weaker models</strong>. Always select the <span class="highlight">frontier or advanced model</span> when available – the difference is noticeable.</p>
+<p>Free/default tiers often use <strong>weaker models</strong>. Always select the <span class="highlight">frontier or advanced model</span> when available, as the difference is noticeable.</p>
 </div>
 </div>
 </div>
@@ -519,7 +519,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </table>
 </div>
 <p>All four offer free access to capable models, while paid tiers unlock stronger models and higher usage limits. Mistral offers an <span class="highlight">affordable student tier</span> with access to Mistral Vibe (not flawless, but acceptable).</p>
-<p>Every app also comes with a <span class="highlight">harness</span> – a system that gives the model <strong>tools and capabilities</strong>. Same model, different harness = <strong>completely different results</strong>.</p>
+<p>Every app also comes with a <span class="highlight">harness</span>, a system that gives the model <strong>tools and capabilities</strong>. Same model, different harness = <strong>completely different results</strong>.</p>
 <p><strong>Different apps, different harnesses:</strong></p>
 <ul>
 <li><strong>Claude.ai</strong> harnesses Claude with web search and code execution → a chat assistant</li>
@@ -597,7 +597,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>Zed offers a <span class="highlight">free student tier</span> with solid code completion and <strong>$10 in API credits</strong> for at least one year. Sign up at <a href="https://zed.dev">zed.dev</a> with your university email.</p>
+<p>Zed offers a <span class="highlight">free student tier</span> with unlimited edit predictions and <strong>$10/month in API credits</strong> for one year. Sign up at <a href="https://zed.dev/education">zed.dev/education</a> with your GitHub account and university email.</p>
 </div>
 </div>
 </div>
@@ -630,17 +630,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li><span class="highlight">Open-source</span> terminal-based AI coding assistant</li>
 <li>Supports <strong>multiple AI providers</strong> (bring your own API key)</li>
-<li>Reads, edits, and creates files from the terminal – good for quick fixes and file operations</li>
+<li>Reads, edits, and creates files from the terminal, good for quick fixes and file operations</li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install opencode-ai/tap/opencode</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install opencode</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>For other platforms, see <a href="https://opencode.ai">opencode.ai</a>.</p>
 <p><strong>Claude Code</strong></p>
 <ul>
 <li>Anthropic’s <span class="highlight">CLI coding agent</span> that goes beyond suggestions: <strong>autonomous multi-step task execution</strong></li>
 <li>Reads your entire codebase for context and can <strong>plan, write, test, and debug</strong> code autonomously</li>
-<li>Executes terminal commands and iterates on errors – best for <span class="highlight">involved, multi-step tasks</span></li>
+<li>Executes terminal commands and iterates on errors, best for <span class="highlight">involved, multi-step tasks</span></li>
 </ul>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install claude-code</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install <span class="at">--cask</span> claude-code</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>For other platforms, see <a href="https://claude.ai/code">claude.ai/code</a>.</p>
 <div class="callout callout-style-simple callout-note">
 <div class="callout-body d-flex">
@@ -648,7 +648,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>Claude Code requires an Anthropic API key and incurs usage costs. OpenCode is free but also requires you to bring your own API key for whichever provider you choose.</p>
+<p>Claude Code requires a Claude subscription or Anthropic API key. OpenCode is free but requires you to bring your own API key for whichever provider you choose.</p>
 </div>
 </div>
 </div>
@@ -739,11 +739,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Use the output as a starting point. Ask follow-up questions to improve the result, and break requests into smaller steps when things get involved.</p>
 <p><strong>Takeaways:</strong></p>
 <ol type="1">
-<li><strong>AI is a tool, not a replacement</strong> – you still need to understand the fundamentals</li>
-<li><strong>Understand before accepting</strong> – always read and verify AI-generated output</li>
-<li><strong>Pick the right harness</strong> – chat for brainstorming, agents for building, IDE for daily coding</li>
-<li><strong>Models matter</strong> – always use the most capable model available to you</li>
-<li><strong>Context matters</strong> – clear prompts and managed context give you better output</li>
+<li><strong>AI is a tool, not a replacement.</strong> You still need to understand the fundamentals</li>
+<li><strong>Understand before accepting.</strong> Always read and verify AI-generated output</li>
+<li><strong>Pick the right harness.</strong> Chat for brainstorming, agents for building, IDE for daily coding</li>
+<li><strong>Models matter.</strong> Always use the most capable model available to you</li>
+<li><strong>Context matters.</strong> Clear prompts and managed context give you better output</li>
 </ol>
 <div class="callout callout-style-simple callout-warning">
 <div class="callout-body d-flex">
@@ -760,20 +760,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="resources">Resources</h2>
 <p><strong>Getting started:</strong></p>
 <ul>
-<li><a href="https://zed.dev">Zed Editor</a> – recommended IDE</li>
-<li><a href="https://education.github.com/pack">GitHub Student Pack</a> – free Copilot access</li>
-<li><a href="https://claude.ai">Claude.ai</a> – Anthropic’s chat interface</li>
-<li><a href="https://chatgpt.com">ChatGPT</a> – OpenAI’s chat interface</li>
+<li><a href="https://zed.dev">Zed Editor</a>: Recommended IDE</li>
+<li><a href="https://education.github.com/pack">GitHub Student Pack</a>: Free Copilot access</li>
+<li><a href="https://claude.ai">Claude.ai</a>: Anthropic’s chat interface</li>
+<li><a href="https://chatgpt.com">ChatGPT</a>: OpenAI’s chat interface</li>
 </ul>
 <p><strong>Going deeper:</strong></p>
 <ul>
-<li><a href="https://www.youtube.com/watch?v=LPZh9BOjkQs">3Blue1Brown: LLMs</a> – Grant Sanderson explains LLMs visually better than most textbooks</li>
-<li><a href="https://www.anthropic.com/research">Anthropic Research</a> – AI safety and interpretability</li>
-<li><a href="https://www.oneusefulthing.org/">One Useful Thing</a> – Ethan Mollick’s blog on practical AI use</li>
-<li><a href="https://www.promptingguide.ai/">Prompt Engineering Guide</a> – techniques for better prompts</li>
-<li><a href="https://www.anthropic.com/research/AI-assistance-coding-skills">AI Assistance and Coding Skills</a> – Anthropic’s study on how AI help affects learning (the 17% finding cited in this workshop)</li>
-<li><a href="https://www.understandingai.org/p/the-many-masks-that-llms-wear">The Many Masks LLMs Wear</a> – Kai Williams on persona drift and why models behave unpredictably</li>
-<li><a href="https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents">Effective Harnesses for Long-Running Agents</a> – practical patterns for building agent systems that actually work</li>
+<li><a href="https://www.youtube.com/watch?v=LPZh9BOjkQs">3Blue1Brown: LLMs</a>: Grant Sanderson explains LLMs visually better than most textbooks</li>
+<li><a href="https://www.anthropic.com/research">Anthropic Research</a>: AI safety and interpretability</li>
+<li><a href="https://www.oneusefulthing.org/">One Useful Thing</a>: Ethan Mollick’s blog on practical AI use</li>
+<li><a href="https://www.promptingguide.ai/">Prompt Engineering Guide</a>: Techniques for better prompts</li>
+<li><a href="https://www.anthropic.com/research/AI-assistance-coding-skills">AI Assistance and Coding Skills</a>: Anthropic’s study on how AI help affects learning (the 17% finding cited in this workshop)</li>
+<li><a href="https://www.understandingai.org/p/the-many-masks-that-llms-wear">The Many Masks LLMs Wear</a>: Kai Williams on persona drift and why models behave unpredictably</li>
+<li><a href="https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents">Effective Harnesses for Long-Running Agents</a>: Practical patterns for building agent systems that actually work</li>
 </ul>
 <div class="callout callout-style-simple callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
