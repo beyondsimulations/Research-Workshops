@@ -133,11 +133,67 @@ $x_{ij}$ : Binary variable, 1 if a vehicle travels from $i$ to $j$
      Tables:        pipe table + ": Caption {#tbl-label}" below
      Equations:     $$ ... $$ {#eq-label}
      Sections:      # Heading {#sec-label}
+
+     FORMATTING BASICS
+     Bold:          **bold text**
+     Italic:        *italic text*
+     Bold+italic:   ***bold and italic***
+     Unordered list:
+                    - Item 1
+                    - Item 2
+                      - Nested item (indent 2 spaces)
+     Ordered list:
+                    1. First
+                    2. Second
+                       a. Sub-item (indent 3 spaces)
+     Footnotes:     Some text^[This is an inline footnote].
+                    Or use a reference[^1] and define it later:
+                    [^1]: Footnote text here.
+     Links:         [link text](https://example.com)
+     Inline code:   `variable_name`
+     En-dash:       -- (for ranges, e.g. pages 5--10)
+
+     TYPST BACKEND
+     This template uses Typst (not LaTeX) to produce the PDF.
+     For advanced formatting, you can embed raw Typst code:
+
+         ```{=typst}
+         #v(1cm)                          // vertical space
+         #text(fill: red)[important]      // colored text
+         #align(center)[centered text]    // alignment
+         #line(length: 100%)              // horizontal line
+         #set text(size: 9pt)             // change font size locally
+         ```
+
+     See https://typst.app/docs for the full Typst reference.
+
+     COMMON MISTAKES TO AVOID
+     - Every figure and table must be referenced in the text *before* it appears.
+     - Figures have captions below; tables have captions above.
+     - Don't start a sentence with a math symbol ("$X$ is..." → "The variable $X$ is...").
+     - Be consistent with notation — don't switch between $X_{ij}$ and $X(i,j)$.
+     - Avoid orphan sections (a single subsection under a section).
+     - Each section or subsection should be at least one page long.
+       If not, merge it with another section.
+     - Define acronyms on first use, then use the abbreviation consistently.
+     - Don't cite Wikipedia or lecture slides — find the original source.
+     - Use en-dashes (--) for ranges (pages 5--10), not hyphens (-).
+     - Spell out numbers one through twelve in running text; use digits for 13+.
+     - Use a thin space before units: 16 GB, 245 s (Typst handles this automatically
+       in math mode, but watch for it in running text).
      ============================================================ -->
 
 # Introduction {#sec-introduction}
 
-<!-- Introduce the topic, motivate the research question, and outline the structure. -->
+<!-- WRITING GUIDE: Introduction
+     Structure your introduction as a funnel:
+       1. Broad context — why does this field matter?
+       2. Specific problem — what is the concrete challenge?
+       3. Research gap — what is missing in the literature?
+       4. Your contribution — what does this paper do?
+       5. Paper outline — briefly describe the structure of the paper.
+     Tip: Write this section last, once you know your actual contribution.
+     It should answer: Why should the reader care? What is new here? -->
 
 Operations research provides powerful tools for decision-making in complex systems. In recent years, advances in computational methods have enabled the solution of increasingly large-scale optimization problems [@desaulniers2005column]. This paper addresses the problem of ... .
 
@@ -152,7 +208,13 @@ The remainder of this paper is structured as follows. @sec-literature reviews th
 
 # Literature Review {#sec-literature}
 
-<!-- Summarize relevant literature. Use [@key] and @key citations. -->
+<!-- WRITING GUIDE: Literature Review
+     - Group sources by theme or method, not chronologically.
+     - Don't just summarize — compare approaches, identify strengths and
+       weaknesses, and show the gap your work fills.
+     - Every cited work should connect to your research question.
+     - End with a transition to your own contribution: what remains unsolved?
+     - Use [@key] for parenthetical and @key for narrative citations. -->
 
 The vehicle routing problem has been studied extensively since the seminal work of @dantzig1959truck. Several exact and heuristic approaches have been proposed over the decades [@toth2014vehicle].
 
@@ -164,13 +226,18 @@ A comprehensive overview of solution methods is beyond the scope of this paper. 
 
 # Model {#sec-model}
 
-<!-- Overview, then split into assumptions and formulation. -->
+<!-- WRITING GUIDE: Model
+     Give a brief overview of the modeling approach before diving into details.
+     Split into assumptions (what you simplify) and formulation (the math). -->
 
 This section introduces the mathematical model for the problem described above. We first state the key assumptions, then present the formal formulation.
 
 ## Assumptions {#sec-assumptions}
 
-<!-- List the simplifying assumptions underlying your model. -->
+<!-- WRITING GUIDE: Assumptions
+     - Every assumption must be justified: why is it reasonable?
+     - Acknowledge limitations: what would change if an assumption is relaxed?
+     - Order from most fundamental to most specific. -->
 
 The modeling of the problem requires several simplifying assumptions:
 
@@ -181,9 +248,20 @@ The modeling of the problem requires several simplifying assumptions:
 
 ## Formulation {#sec-formulation}
 
-<!-- Table caption: ": Caption {#tbl-label}" below the table.
-     Equation label: {#eq-label} right after closing $$.
-     Always explain the objective and each constraint in text. -->
+<!-- WRITING GUIDE: Formulation
+     - Define all notation before using it (see the notation table below).
+     - Use consistent conventions: sets = calligraphic ($\mathcal{J}$),
+       variables = uppercase ($X_j$), parameters = lowercase ($b_i$).
+     - Every constraint must be explained in prose — don't just list equations.
+     - Reference constraints by label: "Constraint (@eq-assignment) ensures..."
+     - Table caption: ": Caption {#tbl-label}" below the table.
+     - Equation label: {#eq-label} right after closing $$.
+
+     TABLE DESIGN TIPS
+     - Use pipe tables with booktabs-style formatting (Quarto handles this).
+     - Right-align numeric columns, left-align text columns.
+     - Put units in column headers, not in every cell.
+     - Keep tables compact — avoid unnecessary columns. -->
 
 We define the following notation:
 
@@ -226,7 +304,13 @@ The objective function (@eq-objective) minimizes total travel cost. @eq-assignme
 
 # Computational Study {#sec-computational}
 
-<!-- Describe setup, instances, and results. -->
+<!-- WRITING GUIDE: Computational Study
+     - Report hardware (CPU, RAM), software (solver, version), and language.
+     - Describe instance sources or how you generated test data.
+     - Always compare against a baseline, benchmark, or exact solution.
+     - Report both solution quality (gap, objective value) and computation time.
+     - Discuss trends across instance sizes, don't just list individual numbers.
+     - Mention time limits, number of runs, or other experimental parameters. -->
 
 To evaluate the performance of the proposed approach, we conduct a series of computational experiments. All experiments were performed on a machine with an Intel Core i7 processor and 16 GB of RAM. The model was implemented in Python using Gurobi 11.0 as the solver.
 
@@ -247,7 +331,13 @@ The results in @tbl-results show that the heuristic approach finds near-optimal 
 
 # Conclusion and Outlook {#sec-conclusion}
 
-<!-- Summarize contributions, then suggest future research directions. -->
+<!-- WRITING GUIDE: Conclusion
+     - Distinguish summary (what you did and found) from outlook (future work).
+     - Do not introduce new results or analysis here.
+     - Future research directions should be concrete and actionable,
+       not vague ("further research is needed").
+     - Don't overclaim: use "suggests" rather than "proves",
+       "indicates" rather than "demonstrates" — unless you have formal proof. -->
 
 This paper presented a mathematical model and heuristic solution approach for the vehicle routing problem. The computational study demonstrated that the proposed method achieves near-optimal solutions with significantly reduced computation times compared to exact methods.
 

@@ -136,11 +136,76 @@ $x_{ij}$ : Binärvariable, 1 falls ein Fahrzeug von $i$ nach $j$ fährt
      Tabellen:      Pipe-Tabelle + ": Beschriftung {#tbl-label}" darunter
      Gleichungen:   $$ ... $$ {#eq-label}
      Abschnitte:    # Überschrift {#sec-label}
+
+     FORMATIERUNG — GRUNDLAGEN
+     Fett:          **fetter Text**
+     Kursiv:        *kursiver Text*
+     Fett+kursiv:   ***fett und kursiv***
+     Aufzählung:
+                    - Punkt 1
+                    - Punkt 2
+                      - Unterpunkt (2 Leerzeichen einrücken)
+     Nummerierung:
+                    1. Erstens
+                    2. Zweitens
+                       a. Unterpunkt (3 Leerzeichen einrücken)
+     Fußnoten:      Text^[Das ist eine Inline-Fußnote].
+                    Oder mit Verweis[^1], der später definiert wird:
+                    [^1]: Fußnotentext hier.
+     Links:         [Linktext](https://example.com)
+     Inline-Code:   `variablen_name`
+     Gedankenstrich: -- (für Bereiche, z.B. Seiten 5--10)
+
+     TYPST-BACKEND
+     Diese Vorlage verwendet Typst (nicht LaTeX) zur PDF-Erzeugung.
+     Für erweiterte Formatierung kann Typst-Code direkt eingebettet werden:
+
+         ```{=typst}
+         #v(1cm)                          // Vertikaler Abstand
+         #text(fill: red)[wichtig]        // Farbiger Text
+         #align(center)[Zentrierter Text] // Ausrichtung
+         #line(length: 100%)              // Horizontale Linie
+         #set text(size: 9pt)             // Schriftgröße lokal ändern
+         ```
+
+     Siehe https://typst.app/docs für die vollständige Typst-Referenz.
+
+     HÄUFIGE FEHLER
+     - Jede Abbildung und Tabelle muss im Text referenziert werden,
+       *bevor* sie erscheint.
+     - Abbildungen haben Beschriftungen darunter, Tabellen darüber.
+     - Sätze nicht mit einem Symbol beginnen ("$X$ ist..." →
+       "Die Variable $X$ ist...").
+     - Notation konsistent halten — nicht zwischen $X_{ij}$ und $X(i,j)$
+       wechseln.
+     - Keine verwaisten Abschnitte (ein einzelner Unterabschnitt in einem
+       Abschnitt).
+     - Jeder Abschnitt/Unterabschnitt sollte mindestens eine Seite lang sein.
+       Wenn nicht, mit einem anderen Abschnitt zusammenfassen.
+     - Abkürzungen bei der ersten Verwendung ausschreiben, danach konsequent
+       die Kurzform verwenden.
+     - Wikipedia und Vorlesungsfolien nicht zitieren — die Originalquelle
+       suchen.
+     - Gedankenstriche (--) für Bereiche verwenden (Seiten 5--10), keine
+       Bindestriche (-).
+     - Zahlen eins bis zwölf im Fließtext ausschreiben, ab 13 Ziffern
+       verwenden.
+     - Schmales Leerzeichen vor Einheiten: 16 GB, 245 s (Typst handhabt
+       dies im Mathematikmodus automatisch, im Fließtext darauf achten).
      ============================================================ -->
 
 # Einführung {#sec-einfuehrung}
 
-<!-- Thema einführen, Forschungsfrage motivieren, Aufbau der Arbeit skizzieren. -->
+<!-- SCHREIBHILFE: Einführung
+     Strukturieren Sie die Einleitung als Trichter:
+       1. Breiter Kontext — warum ist dieses Feld relevant?
+       2. Konkretes Problem — was ist die spezifische Herausforderung?
+       3. Forschungslücke — was fehlt in der bisherigen Literatur?
+       4. Eigener Beitrag — was leistet diese Arbeit?
+       5. Aufbau der Arbeit — kurz die Struktur beschreiben.
+     Tipp: Schreiben Sie diese Sektion zuletzt, wenn Sie Ihren tatsächlichen
+     Beitrag kennen. Sie sollte beantworten: Warum sollte der Leser sich
+     dafür interessieren? Was ist neu? -->
 
 Operations Research stellt leistungsfähige Methoden für die Entscheidungsfindung in komplexen Systemen bereit. In den letzten Jahren haben Fortschritte in der Computertechnik die Lösung immer größerer Optimierungsprobleme ermöglicht [@desaulniers2005column]. Die vorliegende Arbeit befasst sich mit dem Problem ... .
 
@@ -155,7 +220,13 @@ Die Arbeit ist wie folgt gegliedert. @sec-literatur gibt einen Überblick über 
 
 # Literatur {#sec-literatur}
 
-<!-- Relevante Literatur zusammenfassen. [@key] und @key Zitate verwenden. -->
+<!-- SCHREIBHILFE: Literaturüberblick
+     - Quellen thematisch oder methodisch gruppieren, nicht chronologisch.
+     - Nicht nur zusammenfassen — Ansätze vergleichen, Stärken und Schwächen
+       aufzeigen und die Lücke identifizieren, die Ihre Arbeit füllt.
+     - Jede zitierte Arbeit sollte einen Bezug zu Ihrer Forschungsfrage haben.
+     - Am Ende überleiten zum eigenen Beitrag: Was bleibt ungelöst?
+     - [@key] für Klammerzitate und @key für narrative Zitate verwenden. -->
 
 Das Tourenplanungsproblem wird seit der grundlegenden Arbeit von @dantzig1959truck umfassend untersucht. Im Laufe der Jahrzehnte wurden zahlreiche exakte und heuristische Ansätze vorgeschlagen [@toth2014vehicle].
 
@@ -167,13 +238,20 @@ Ein umfassender Überblick über Lösungsmethoden geht über den Rahmen dieser A
 
 # Modell {#sec-modell}
 
-<!-- Überblick, dann Annahmen und Formulierung. -->
+<!-- SCHREIBHILFE: Modell
+     Kurzen Überblick über den Modellierungsansatz geben, bevor Sie ins Detail
+     gehen. Aufteilen in Annahmen (was vereinfacht wird) und Formulierung
+     (die Mathematik). -->
 
 Dieser Abschnitt stellt das mathematische Modell für das oben beschriebene Problem vor. Zunächst werden die wesentlichen Annahmen erläutert, anschließend folgt die formale Formulierung.
 
 ## Annahmen {#sec-annahmen}
 
-<!-- Vereinfachende Annahmen des Modells auflisten. -->
+<!-- SCHREIBHILFE: Annahmen
+     - Jede Annahme muss begründet werden: Warum ist sie vertretbar?
+     - Einschränkungen benennen: Was würde sich ändern, wenn eine Annahme
+       gelockert wird?
+     - Von der grundlegendsten zur spezifischsten Annahme ordnen. -->
 
 Die Modellierung des Problems erfordert einige vereinfachende Annahmen:
 
@@ -184,9 +262,22 @@ Die Modellierung des Problems erfordert einige vereinfachende Annahmen:
 
 ## Aufbau {#sec-aufbau}
 
-<!-- Tabellenbeschriftung: ": Beschriftung {#tbl-label}" unter der Tabelle.
-     Gleichungslabel: {#eq-label} direkt nach $$.
-     Zielfunktion und jede Nebenbedingung im Text erläutern. -->
+<!-- SCHREIBHILFE: Formulierung
+     - Alle Notation definieren, bevor sie verwendet wird (s. Notationstabelle).
+     - Konsistente Konventionen: Mengen = kalligraphisch ($\mathcal{J}$),
+       Variablen = Großbuchstaben ($X_j$), Parameter = Kleinbuchstaben ($b_i$).
+     - Jede Nebenbedingung muss im Text erläutert werden — nicht nur
+       Gleichungen auflisten.
+     - Nebenbedingungen per Label referenzieren:
+       "Nebenbedingung (@eq-zuweisung) stellt sicher..."
+     - Tabellenbeschriftung: ": Beschriftung {#tbl-label}" unter der Tabelle.
+     - Gleichungslabel: {#eq-label} direkt nach $$.
+
+     TIPPS ZUR TABELLENGESTALTUNG
+     - Pipe-Tabellen mit Booktabs-Formatierung verwenden (Quarto erledigt das).
+     - Zahlenspalten rechtsbündig, Textspalten linksbündig ausrichten.
+     - Einheiten in Spaltenüberschriften, nicht in jeder Zelle.
+     - Tabellen kompakt halten — unnötige Spalten vermeiden. -->
 
 Wir definieren die folgende Notation. Mengen haben kalligraphische Symbole wie z.B. $\mathcal{J}$. Für Variablen werden Großbuchstaben verwendet ($X_j$, $j \in \mathcal{J}$), wobei für Parameter und Indizes Kleinbuchstaben verwendet werden ($b_i$).
 
@@ -229,7 +320,16 @@ Die Zielfunktion (@eq-zielfunktion) minimiert die gesamten Transportkosten. @eq-
 
 # Rechenstudie {#sec-rechenstudie}
 
-<!-- Versuchsaufbau, Instanzen und Ergebnisse beschreiben. -->
+<!-- SCHREIBHILFE: Rechenstudie
+     - Hardware (CPU, RAM), Software (Solver, Version) und Sprache angeben.
+     - Instanzquellen beschreiben oder erklären, wie Testdaten erzeugt wurden.
+     - Immer gegen eine Baseline, Benchmark oder exakte Lösung vergleichen.
+     - Sowohl Lösungsqualität (Gap, Zielfunktionswert) als auch Rechenzeit
+       berichten.
+     - Trends über Instanzgrößen hinweg diskutieren, nicht nur einzelne Zahlen
+       auflisten.
+     - Zeitlimits, Anzahl der Durchläufe oder andere experimentelle Parameter
+       erwähnen. -->
 
 Zur Bewertung des vorgeschlagenen Ansatzes führen wir eine Reihe von Rechenexperimenten durch. Alle Experimente wurden auf einem Rechner mit Intel Core i7 Prozessor und 16 GB RAM durchgeführt. Das Modell wurde in Python unter Verwendung von Gurobi 11.0 als Solver implementiert.
 
@@ -250,7 +350,14 @@ Die Ergebnisse in @tbl-ergebnisse zeigen, dass der heuristische Ansatz nahezu op
 
 # Zusammenfassung und Ausblick {#sec-zusammenfassung}
 
-<!-- Ergebnisse zusammenfassen, dann Richtungen für zukünftige Forschung aufzeigen. -->
+<!-- SCHREIBHILFE: Zusammenfassung
+     - Zusammenfassung (was wurde gemacht und gefunden) von Ausblick
+       (zukünftige Forschung) trennen.
+     - Keine neuen Ergebnisse oder Analysen hier einführen.
+     - Zukünftige Forschungsrichtungen sollten konkret und umsetzbar sein,
+       nicht vage ("weitere Forschung ist nötig").
+     - Nicht übertreiben: "deutet darauf hin" statt "beweist",
+       "legt nahe" statt "zeigt" — es sei denn, ein formaler Beweis liegt vor. -->
 
 Die vorliegende Arbeit hat ein mathematisches Modell und einen heuristischen Lösungsansatz für das Tourenplanungsproblem vorgestellt. Die Rechenstudie hat gezeigt, dass die vorgeschlagene Methode nahezu optimale Lösungen bei deutlich reduzierten Rechenzeiten im Vergleich zu exakten Methoden erzielt.
 
