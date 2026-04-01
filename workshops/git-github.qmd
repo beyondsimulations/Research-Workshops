@@ -303,6 +303,62 @@ git merge experiment
 Branching becomes more useful as your project grows. For now, just know it exists. In professional teams, developers create a branch for every new feature or fix, then merge it back after review through **pull requests**.
 :::
 
+# [Project Organization]{.flow}
+
+## Folder structure
+
+A clean folder structure makes your project easier to navigate, version-control, and share. Here is a recommended layout for a thesis project:
+
+```
+my-thesis/
+├── seminar-paper-en.qmd    # Your paper (or -de.qmd)
+├── references.bib           # Bibliography
+├── typst-show.typ           # Required Typst helper
+├── images/                  # All figures
+│   ├── fig-results.png
+│   └── fig-network.pdf
+├── code/                    # Scripts and implementation
+│   ├── model.py
+│   └── analysis.py
+└── data/                    # Input data and instances
+    ├── instances/
+    └── results/
+```
+
+:::{.callout-tip}
+Keep your project root clean. Put figures in `images/`, scripts in `code/`, and data in `data/`. This makes it easy to find files and write clean `.gitignore` rules.
+:::
+
+## File naming conventions
+
+- **No spaces** — use hyphens or underscores: `fig-results.png`, not `fig results.png`
+- **Lowercase** — avoids cross-platform issues: `data/instances/`, not `Data/Instances/`
+- **Be descriptive** — `fig-gap-by-instance-size.png` is better than `plot1.png`
+- **Date-prefix raw data** if versioned: `2026-03-15-survey-responses.csv`
+
+## What to track (and what not to)
+
+| Track with Git | Do NOT track |
+|:---|:---|
+| `.qmd` source files | Generated PDFs (`_site/`, `*.pdf`) |
+| `.bib` bibliography | Quarto cache (`_freeze/`) |
+| Code and scripts | Large datasets (use cloud storage) |
+| `.gitignore` | System files (`.DS_Store`) |
+| `typst-show.typ` | Editor settings (`.vscode/`) |
+
+: Version control decisions {#tbl-git-track}
+
+A good `.gitignore` for a Quarto thesis project:
+
+```
+_site/
+_freeze/
+*.pdf
+.DS_Store
+.quarto/
+```
+
+
 # [Wrap-up]{.flow}
 
 ## Reference and resources

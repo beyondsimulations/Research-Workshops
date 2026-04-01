@@ -25,7 +25,7 @@ format:
             #v(5mm)
             #text(size: 11pt)[
               Fakultät für Betriebswirtschaft \            // ← Ihre Fakultät
-              Institut für Logistik, Transport und Verkehr // ← Ihr Institut
+              Institut für Logistik, Transport und Produktion // ← Ihr Institut
             ]
             #v(3cm)
             #text(size: 16pt, smallcaps(strong[Bachelor-/Master-/Seminararbeit])) // ← Art der Arbeit
@@ -346,6 +346,23 @@ Zur Bewertung des vorgeschlagenen Ansatzes führen wir eine Reihe von Rechenexpe
 
 Die Ergebnisse in @tbl-ergebnisse zeigen, dass der heuristische Ansatz nahezu optimale Lösungen innerhalb vertretbarer Rechenzeiten findet. Für kleine Instanzen bleibt die Optimalitätslücke unter 2%, während sie für größere Instanzen auf etwa 5--6% ansteigt.
 
+
+# Diskussion {#sec-diskussion}
+
+<!-- SCHREIBHILFE: Diskussion
+     - Ergebnisse im Kontext der Forschungsfrage interpretieren.
+     - Ergebnisse mit bestehender Literatur vergleichen: Sind sie konsistent?
+       Wo unterscheiden sie sich, und warum?
+     - Limitationen ehrlich diskutieren — jede Studie hat welche.
+     - Beobachtung (die Daten zeigen X) von Interpretation (dies deutet auf Y
+       hin) unterscheiden.
+     - Unerwartete Ergebnisse ansprechen, nicht ignorieren.
+     - Keine völlig neuen Themen einführen. Neue Forschungsrichtungen
+       gehören in den Ausblick der Zusammenfassung. -->
+
+Die Ergebnisse deuten darauf hin, dass die vorgeschlagene Heuristik für kleine und mittlere Instanzen gut funktioniert, jedoch bei größeren Problemgrößen zunehmende Lücken aufweist. Dies ist konsistent mit den Beobachtungen von @toth2014vehicle, die ein ähnliches Skalierungsverhalten für konstruktive Heuristiken bei kapazitätsbeschränkten Tourenplanungsproblemen feststellten.
+
+Eine wesentliche Einschränkung dieser Studie ist die Verwendung symmetrischer Kostenmatrizen, die in realen Logistiknetzwerken mit Einbahnstraßen oder zeitabhängigen Fahrzeiten möglicherweise nicht zutreffen. Zudem wurden die Testinstanzen zufällig generiert und nicht aus realen Daten abgeleitet, was die Übertragbarkeit der Ergebnisse einschränkt.
 
 
 # Zusammenfassung und Ausblick {#sec-zusammenfassung}

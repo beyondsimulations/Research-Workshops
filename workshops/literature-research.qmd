@@ -276,12 +276,18 @@ When evaluating a paper, consider: **journal reputation** (is it recognized in t
 For operations research specifically: check the **benchmark instances** used, the **computational setup**, and whether the results are **reproducible**.
 :::
 
+## Reading papers efficiently
+
+You don't need to read every paper from start to finish. For most papers, start with the abstract and conclusion to decide whether it is relevant. If it is, read the introduction for context, then the methodology and results. Save a deep read for the papers that are closest to your own work.
+
+Annotate as you read. In Zotero, you can highlight and comment directly on PDFs. For each paper, note the research question, the method used, the main findings, and any limitations. This makes writing your literature review much faster because you won't need to re-read papers later.
+
 ## Reading critically
 
 Do not accept results at face value. Ask yourself whether the [sample size]{.highlight} is sufficient, whether the **assumptions** are reasonable, whether the **conclusions** follow from the results, whether the findings can be **generalized** to other contexts, and whether there are **limitations** the authors do not discuss.
 
 :::{.callout-tip}
-A good literature review is not about reading everything — it is about finding and connecting the right papers.
+A good literature review is not about reading everything. It is about finding and connecting the right papers. For guidance on how to write the review itself, see the [Scientific Writing](../general/scientific-writing.qmd) guide.
 :::
 
 # [Wrap-up]{.flow}

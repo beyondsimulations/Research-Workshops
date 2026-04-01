@@ -24,7 +24,7 @@ format:
             #v(5mm)
             #text(size: 11pt)[
               Faculty of Business Administration \       // ← your faculty
-              Institute for Logistics, Transport and Traffic // ← your institute
+              Institute of Logistics, Transport and Production // ← your institute
             ]
             #v(3cm)
             #text(size: 16pt, smallcaps(strong[Seminar Paper])) // ← Bachelor/Master/Seminar Paper
@@ -327,6 +327,23 @@ To evaluate the performance of the proposed approach, we conduct a series of com
 
 The results in @tbl-results show that the heuristic approach finds near-optimal solutions within reasonable computation times. For small instances, the optimality gap remains below 2%, while for larger instances the gap increases to approximately 5--6%.
 
+
+# Discussion {#sec-discussion}
+
+<!-- WRITING GUIDE: Discussion
+     - Interpret your results in the context of the research question.
+     - Compare findings with existing literature: are they consistent?
+       Where do they differ, and why?
+     - Discuss limitations honestly — every study has them.
+     - Distinguish observation (the data shows X) from interpretation
+       (this suggests Y).
+     - Address unexpected results rather than ignoring them.
+     - Do not introduce entirely new topics here. New directions
+       belong in the conclusion's outlook section. -->
+
+The results indicate that the proposed heuristic performs well for small and medium instances but shows increasing gaps for larger problem sizes. This is consistent with findings by @toth2014vehicle, who observed similar scaling behavior for constructive heuristics applied to capacitated routing problems.
+
+A key limitation of this study is the use of symmetric cost matrices, which may not hold in real-world logistics networks with one-way streets or time-dependent travel times. Furthermore, the test instances were generated randomly rather than derived from real-world data, which limits the generalizability of the results.
 
 
 # Conclusion and Outlook {#sec-conclusion}

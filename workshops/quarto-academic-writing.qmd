@@ -329,92 +329,54 @@ $$ {#eq-capacity}
 
 - The label `{#eq-label}` goes right after the closing `$$`
 
-# [The Template]{.flow}
+# [Advanced Formatting with Typst]{.flow}
 
-## The template and rendering
+## Embedding raw Typst
 
-We provide [ready-to-use Quarto templates]{.highlight} for your seminar papers, available in **German** and **English**. Download them from the course repository.
+The Quarto templates use [Typst]{.highlight} (not LaTeX) to produce the PDF. For most writing, you only need Markdown. But for advanced formatting, you can embed raw Typst code in a fenced block:
 
-The templates include:
+````markdown
+```{=typst}
+#v(1cm)                          // vertical space
+#text(fill: red)[important]      // colored text
+#align(center)[centered text]    // alignment
+#line(length: 100%)              // horizontal line
+#set text(size: 9pt)             // change font size locally
+```
+````
 
-- **Custom UHH title page:** University name, faculty, institute, thesis type, supervisor, matriculation number, and your details, all pre-formatted.
-- **Correct margins and formatting:** Page dimensions (40/25/30/20mm), 11pt font, and 1.5 line spacing are pre-configured to match UHH requirements.
-- **Table of contents, list of figures, list of tables:** Generated automatically from your headings, figure captions, and table captions.
-- **List of abbreviations and list of symbols:** Pre-filled with examples you can adapt.
-- **Citation setup with APA style:** Uses Typst's built-in `bibliographystyle: apa`, so you can cite with `[@key]` right away.
-- **Booktabs-style tables:** Clean academic tables with horizontal rules only.
-- **Example content:** Sample sections, figures, tables, equations, and cross-references you can adapt.
-- **Declaration of authorship:** The required signed statement, formatted according to university guidelines.
-- **AI tools declaration:** A section to document which AI tools you used and how.
-
-
-## Template files
-
-You need [three files]{.highlight} in the same folder:
-
-| File | Purpose |
-|------|---------|
-| `seminar-paper-en.qmd` (or `-de.qmd`) | Your paper (edit this) |
-| `references.bib` | Your bibliography entries |
-| `typst-show.typ` | Required helper (do not delete) |
-
-. . .
-
-:::{.callout-warning}
-The `typst-show.typ` file is required for the custom title page to work. Keep it in the same folder as your `.qmd` file.
+:::{.callout-note}
+Typst is much simpler than LaTeX. See the [Typst documentation](https://typst.app/docs) for the full reference.
 :::
 
+## Footnotes and special characters
 
-## Editing the title page
-
-The title page is defined in [Typst code]{.highlight} inside the YAML header. Look for the `// ←` markers to find the fields you need to change:
-
-```yaml
-# In include-before-body, look for lines like:
-#text(...)[Title of the Thesis]  // ← your title
-*Last Name, First Name*          // ← your name
-Matriculation No.: XXXXXXX       // ← your number
-Prof. Dr. Knut Haase             // ← your supervisor
+```markdown
+This claim needs a source^[See Smith (2023) for details.].
 ```
 
-The rest of the YAML controls formatting and should not need changes.
+- En-dash for ranges: `5--10` renders as 5--10
+- Em-dash for parenthetical remarks: `---` renders as ---
+- Non-breaking space: `16\ GB` keeps the number and unit together
 
+# [Workflow Tips]{.flow}
 
-## Rendering
+## Reference management with Zotero
 
-Render your document from the terminal:
+Use [Zotero](https://www.zotero.org/) (free) with the [Better BibTeX](https://retorque.re/zotero-better-bibtex/) extension to manage your references. Better BibTeX auto-exports your library to a `.bib` file, so the workflow becomes: save a paper to Zotero, cite it in Quarto with `[@key]`. See the [Literature Research](../workshops/literature-research.qmd) workshop for detailed setup instructions.
 
-```bash
-quarto render seminar-paper-en.qmd
-```
-
-Or use **live preview** while writing:
-
-```bash
-quarto preview seminar-paper-en.qmd
-```
-
-:::{.callout-tip}
-`quarto preview` opens a browser window that **automatically refreshes** every time you save the file. This is the best way to write and check your formatting simultaneously.
-:::
-
-## Workflow tips
-
-Use [Zotero](https://www.zotero.org/) (free) with the [Better BibTeX](https://retorque.re/zotero-better-bibtex/) extension. Better BibTeX **automatically exports** your library to a `.bib` file, so the workflow becomes: find a paper, save it to Zotero, and cite it in Quarto with `[@key]`.
-
-:::{.callout-tip}
-## Recommended setup
-1. Install Zotero and the Better BibTeX plugin
-2. Set up auto-export to `references.bib` in your project folder
-3. Use the Zotero browser connector to save papers with one click
-4. Citation keys are generated automatically (e.g., `smith2023`)
-:::
-
+## Writing best practices
 
 - **Keep figures in an `images/` folder.** A dedicated folder prevents clutter in your project root and makes it straightforward to locate and update graphics later.
 - **Use `quarto preview` for [live preview]{.highlight} while writing.** Seeing your rendered output update in real time helps you catch formatting issues early, before they pile up.
 - **Write one sentence per line.** This makes version control diffs much cleaner, because a change to one sentence shows up as a single changed line rather than a reflow of an entire paragraph.
 - **Use `<!-- comments -->` to leave notes for yourself.** HTML comments are invisible in the rendered output, so you can mark sections that need revision or leave reminders without affecting the final document.
+
+For guidance on academic language, paragraph structure, and precision in scientific writing, see the [Scientific Writing](../general/scientific-writing.qmd) guide.
+
+## Templates
+
+Ready-to-use templates for seminar papers, bachelor theses, and master theses are available on the [Templates](../general/templates.qmd) page. Download them there, then come back to this workshop for the formatting syntax.
 
 :::{.callout-note}
 ## Takeaway

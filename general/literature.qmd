@@ -74,7 +74,22 @@ A reference manager keeps your papers organized, generates citations automatical
 - [Zotero](https://www.zotero.org/): Free, open-source reference manager recommended for this course. Includes a browser connector for saving papers with one click, PDF storage and annotation, collections and tags for organizing your library, and sync across devices.
 - [Better BibTeX for Zotero](https://retorque.re/zotero-better-bibtex/): A plugin that auto-exports your Zotero library to a `.bib` file whenever you add or change a reference. This keeps your citations in sync with your Quarto project without manual steps.
 
-# Academic Writing
+# Scientific Writing
+
+These resources cover the principles of academic writing, from structuring your argument to meeting university requirements. See also the [Scientific Writing](scientific-writing.qmd) guide on this site.
+
+- [Wie schreibe ich wissenschaftlich?](https://studienperspektiven.check.uni-hamburg.de/wie-schreibe-ich-wissenschaftlich/) (University of Hamburg, StudienPerspektivTage): an introduction to academic writing principles, with links to writing center workshops and individual consultations at UHH.
+- [APA Style](https://apastyle.apa.org/): the citation and formatting standard used in the course templates. The website covers in-text citations, reference lists, and formatting rules.
+
+# Optimization
+
+If your thesis involves implementing optimization models, the following resources will help you get started.
+
+- [Optimization with Julia](https://beyondsimulations.github.io/Optimization-with-Julia/): A full course on mathematical optimization with Julia, covering linear programming, mixed-integer programming, and heuristics. Includes hands-on exercises and solver integration. This is the recommended programming course at the institute.
+- [Gurobi](https://www.gurobi.com/): Commercial optimization solver with a [free academic license](https://www.gurobi.com/academia/academic-program-and-licenses/). One of the fastest solvers available for LP, MIP, and QP. Install via the website after obtaining your academic license.
+- [HiGHs](https://highs.dev/): Open-source solver for linear and mixed-integer programming. No license required, easy to install (`pip install highspy` or via Julia's package manager). A good default if you don't need Gurobi's speed.
+
+# Academic Writing Tools
 
 These tools are covered in the [Quarto for Academic Writing](../workshops/quarto-academic-writing.qmd) workshop. Together they replace LaTeX for most academic writing tasks.
 

@@ -35,7 +35,7 @@
 		\begin{center}
 			{\LARGE\scshape Universität Hamburg}\\*[5mm]
       		{\normalsize Fakultät für Betriebswirtschaft\\
-			Institut für Logistik, Transport und Verkehr}\\*[3cm]
+			Institut für Logistik, Transport und Produktion}\\*[3cm]
       		{\Large\scshape Bachelor/Masterarbeit/Seminararbeit}\\*[12mm]
       		{\bfseries\Large\scshape Titel der Bachelor/Masterarbeit}\\*[12mm] % hier Titel einfügen #############
       		{\rmfamily Freie wissenschaftliche Arbeit\\
@@ -297,6 +297,22 @@ Tabelle \ref{tab:ergebnisse} zeigt die Rechenergebnisse im Vergleich von exakter
 \end{table}
 
 Die Ergebnisse in Tabelle \ref{tab:ergebnisse} zeigen, dass der heuristische Ansatz nahezu optimale Lösungen innerhalb vertretbarer Rechenzeiten findet. Für kleine Instanzen bleibt die Optimalitätslücke unter 2\%, während sie für größere Instanzen auf etwa 5--6\% ansteigt.
+
+% SCHREIBHILFE: Diskussion
+% - Ergebnisse im Kontext der Forschungsfrage interpretieren.
+% - Ergebnisse mit bestehender Literatur vergleichen: Sind sie konsistent?
+%   Wo unterscheiden sie sich, und warum?
+% - Limitationen ehrlich diskutieren — jede Studie hat welche.
+% - Beobachtung (die Daten zeigen X) von Interpretation (dies deutet auf Y
+%   hin) unterscheiden.
+% - Unerwartete Ergebnisse ansprechen, nicht ignorieren.
+% - Keine völlig neuen Themen einführen. Neue Forschungsrichtungen
+%   gehören in den Ausblick der Zusammenfassung.
+\section{Diskussion}
+\label{sec:diskussion}
+Die Ergebnisse deuten darauf hin, dass die vorgeschlagene Heuristik für kleine und mittlere Instanzen gut funktioniert, jedoch bei größeren Problemgrößen zunehmende Lücken aufweist. Dies ist konsistent mit den Beobachtungen von \textcite{toth2014vehicle}, die ein ähnliches Skalierungsverhalten für konstruktive Heuristiken bei kapazitätsbeschränkten Tourenplanungsproblemen feststellten.
+
+Eine wesentliche Einschränkung dieser Studie ist die Verwendung symmetrischer Kostenmatrizen, die in realen Logistiknetzwerken mit Einbahnstraßen oder zeitabhängigen Fahrzeiten möglicherweise nicht zutreffen. Zudem wurden die Testinstanzen zufällig generiert und nicht aus realen Daten abgeleitet, was die Übertragbarkeit der Ergebnisse einschränkt.
 
 % SCHREIBHILFE: Zusammenfassung
 % - Zusammenfassung (was wurde gemacht und gefunden) von Ausblick

@@ -1,6 +1,6 @@
 ---
-title: "Welcome to the workshops!"
-subtitle: "University of Hamburg - Spring 2026"
+title: "Scientific Writing at the Institute of Logistics, Transport and Production"
+subtitle: "University of Hamburg"
 
 html:
     theme: [default, styles.scss]
@@ -8,28 +8,27 @@ html:
     linkcolor: "#a60000"
 ---
 
-# About these workshops
+# About
 
-This website collects five workshops for Bachelor and Master students preparing their seminar paper or thesis. Each workshop is self-contained and takes about 30 minutes to work through. The material covers practical skills, from writing with AI and managing references to version control, hat you will use throughout your research project.
+If you are writing a seminar paper, bachelor thesis, or master thesis at our institute, this site is for you. It covers everything from structuring your argument and finding literature to setting up version control and formatting your paper, so you can focus on the research itself. The material is organized as a learning journey. Start with what makes good scientific writing, then work through the topics in order. Each page is self-contained and takes about 30 minutes, so you can also jump to whatever you need right now.
 
-The workshops build on each other. I recommend reading them in the order listed below, though you can jump to any topic you need.
+# Topics
 
-# Workshops
+- **[Scientific Writing](general/scientific-writing.qmd):** How to structure a paper (introduction, literature review, model, computational study, discussion, conclusion), write clearly, present results, avoid plagiarism, and a checklist of common mistakes before submission.
+- **[Literature Research](workshops/literature-research.qmd):** Finding, evaluating, and organizing academic sources. Covers Google Scholar, specialized databases, Boolean search strings, snowballing, AI discovery tools (Semantic Scholar, Connected Papers, Elicit), and a Zotero workflow for reference management.
+- **[AI Prompting](workshops/prompting.qmd):** Getting useful results from AI instead of generic ones. Introduces the RBTF framework (Role, Background, Task, Format) and shows how to iterate on responses with before-and-after examples from real research tasks.
+- **[Git & GitHub](workshops/git-github.qmd):** Version control for your thesis project. Track changes with Git, organize your project folder, use Zed's Git panel for daily work, and push to GitHub as a backup. Also covers `.gitignore` and branching.
+- **[Working with AI](workshops/large-language-models.qmd):** How large language models work and how to pick the right tool. Covers models, apps, and harnesses, then walks through the coding tools: Zed, GitHub Copilot, OpenCode, and Claude Code.
+- **[Quarto for Academic Writing](workshops/quarto-academic-writing.qmd):** Write your paper in Markdown instead of LaTeX or Word. Covers headings, figures, tables, math, BibTeX citations, cross-references, Typst formatting, and PDF output.
 
-- **[Working with AI](workshops/large-language-models.qmd):** How large language models work at a conceptual level, and how to pick the right AI tool for a given task. Covers the difference between models, apps, and harnesses (based on Ethan Mollick's framework), then walks through the coding tools you will use in this course: Zed, GitHub Copilot, OpenCode, and Claude Code.
-- **[AI Prompting](workshops/prompting.qmd):** Most people get generic results from AI because they provide too little context. This workshop introduces the RBTF framework (Role, Background, Task, Format) and shows how to iterate on AI responses. Includes before-and-after examples with real research tasks.
-- **[Literature Research](workshops/literature-research.qmd):** A structured approach to finding, evaluating, and organizing academic literature. Covers Google Scholar and specialized databases, Boolean search strings, forward and backward snowballing, and AI-powered discovery tools (Semantic Scholar, Connected Papers, Elicit). Ends with a Zotero workflow for reference management.
-- **[Quarto for Academic Writing](workshops/quarto-academic-writing.qmd):** Write your seminar paper in Quarto Markdown instead of LaTeX or Word. Covers the basics (headings, figures, tables, math equations) and the academic features: BibTeX citations, cross-references, and PDF output via Typst. Includes ready-to-use templates for German and English papers.
-- **[Git & GitHub](workshops/git-github.qmd):** Version control for your thesis project. Learn to track changes with Git, use Zed's built-in Git panel for daily work, and push your project to GitHub as a backup. Also covers `.gitignore` for Quarto projects and a brief preview of branching.
+# Templates
 
-# Templates & Writing Guide
-
-Paper templates (German and English) and a guide on scientific writing are available on the [Writing Guide](general/scientific-writing.qmd) page. The templates work with Quarto and Typst, so no LaTeX installation is needed. A traditional LaTeX template is also available.
+The [Templates](general/templates.qmd) page has everything you need to get started: thesis types and expectations, evaluation criteria, supervisor guidance, and downloadable templates in German and English. The templates use Quarto and Typst (no LaTeX installation needed). A LaTeX template is also available.
 
 # Resources
 
-A curated list of tools, LLMs, and further reading is available on the [Literature & Resources](general/literature.qmd) page.
+A curated list of tools, LLMs, databases, and further reading is on the [Resources](general/literature.qmd) page. If your thesis involves optimization modeling, see the [Optimization with Julia](https://beyondsimulations.github.io/Optimization-with-Julia/) course.
 
 # Questions
 
-If you have any questions, please contact me at [tobias.vlcek@uni-hamburg.de](mailto:tobias.vlcek@uni-hamburg.de?subject=Seminar%20Preparation%3A%20%3CYour%20subject%3E).
+If you have questions, contact me at [tobias.vlcek@uni-hamburg.de](mailto:tobias.vlcek@uni-hamburg.de?subject=Seminar%20Preparation%3A%20%3CYour%20subject%3E).

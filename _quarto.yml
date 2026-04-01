@@ -3,13 +3,15 @@ project:
   render:
     - 404.qmd
     - index.qmd
-    - workshops/large-language-models.qmd
-    - workshops/prompting.qmd
-    - workshops/quarto-academic-writing.qmd
-    - workshops/literature-research.qmd
-    - workshops/git-github.qmd
     - general/scientific-writing.qmd
+    - workshops/literature-research.qmd
+    - workshops/prompting.qmd
+    - workshops/git-github.qmd
+    - workshops/large-language-models.qmd
+    - workshops/quarto-academic-writing.qmd
+    - general/templates.qmd
     - general/literature.qmd
+    - general/privacy.qmd
 
 website:
   title: "Seminar Preparation"
@@ -26,29 +28,37 @@ website:
       - text: "Welcome"
         href: index.qmd
       - text: "***"
+      - text: "Scientific Writing"
+        href: general/scientific-writing.qmd
+      - text: "Literature"
+        href: workshops/literature-research.qmd
       - text: "AI Tools"
         href: workshops/large-language-models.qmd
       - text: "Prompting"
         href: workshops/prompting.qmd
+      - text: "Version Control"
+        href: workshops/git-github.qmd
       - text: "Quarto"
         href: workshops/quarto-academic-writing.qmd
-      - text: "Literature"
-        href: workshops/literature-research.qmd
-      - text: "Git"
-        href: workshops/git-github.qmd
       - text: "***"
-      - text: "Writing Guide"
-        href: general/scientific-writing.qmd
+      - text: "Templates"
+        href: general/templates.qmd
       - text: "Resources"
         href: general/literature.qmd
 
   page-footer:
-    center: "Research Workshops, Tobias Vlćek</br>CC BY-NC-SA 4.0"
-    right:
+    center: "Scientific Research Workshops, Tobias Vlćek</br>CC BY-NC-SA 4.0"
+    left:
       - icon: github
-        href: https://github.com/beyondsimulations/Research-Workshops
+        href: https://github.com/beyondsimulations/Applied-Optimization
       - icon: linkedin
         href: https://linkedin.com/in/tobiasvlcek
+      - icon: envelope
+        href: mailto:tobias.vlcek@uni-hamburg.de
+      - icon: skip-backward
+        href: https://tobiasvlcek.com/lectures/
+      - icon: shield-check
+        href: general/privacy.qmd
 
 format:
   html:
