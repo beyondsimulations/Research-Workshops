@@ -12,6 +12,8 @@ project:
     - general/templates.qmd
     - general/literature.qmd
     - general/privacy.qmd
+  post-render:
+    - helpers/convert_qmd_to_md.py
 
 website:
   title: "Seminar Preparation"

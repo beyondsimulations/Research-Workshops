@@ -70,9 +70,7 @@ Every constraint must be explained in prose. A wall of equations without comment
 
 ## Computational Study
 
-A computational study must be reproducible. Report the hardware (CPU, RAM), the software (solver name and version, programming language), where the test data comes from or how you generated it, and what baselines you compare against (a benchmark, exact solution, or published results).
-
-Report both solution quality (optimality gap, objective value) and computation time. Discuss how performance changes across instance sizes rather than just listing individual numbers.
+A computational study must be reproducible. Report the hardware (CPU, RAM), the software (solver name and version, programming language), where the test data comes from or how you generated it, and what baselines you compare against (a benchmark, exact solution, or published results). Report both solution quality (optimality gap, objective value) and computation time, and discuss how performance changes across instance sizes rather than just listing individual numbers.
 
 ### Methodology quality
 
@@ -99,28 +97,20 @@ Use a table when the reader needs exact numbers, such as benchmark results. Use 
 
 ### Figure design
 
-Label every axis with units. Use consistent colors across all figures: if Method A is blue in Figure 1, keep it blue everywhere. Remove gridlines, background shading, 3D effects, and decorative elements that don't encode data.
-
-Make figures readable in grayscale (not everyone prints in color) by using line styles or markers in addition to colors. Avoid red-green combinations; the *viridis* and *cividis* palettes are safe for colorblind readers.
-
-For computational studies, plotting the optimality gap or computation time on a log scale often reveals patterns that are invisible on a linear scale.
+Label every axis with units. Use consistent colors across all figures: if Method A is blue in Figure 1, keep it blue everywhere. Remove gridlines, background shading, 3D effects, and any decorative elements that don't encode data. Make figures readable in grayscale (not everyone prints in color) by using line styles or markers in addition to colors, and avoid red-green combinations. The *viridis* and *cividis* palettes are safe for colorblind readers. For computational studies, plotting the optimality gap or computation time on a log scale often reveals patterns that are invisible on a linear scale.
 
 ### Table design
 
-Use booktabs style: horizontal rules only (`\toprule`, `\midrule`, `\bottomrule`), no vertical lines. Right-align numeric columns, left-align text columns. Put units in column headers, not in every cell. Keep tables compact and remove unnecessary columns. Every table needs a caption and must be referenced in the text.
+Use booktabs style: horizontal rules only (`\toprule`, `\midrule`, `\bottomrule`), no vertical lines. Right-align numeric columns, left-align text columns, and put units in column headers rather than repeating them in every cell. Keep tables compact by removing unnecessary columns. Every table needs a caption and must be referenced in the text.
 
 
 ## Discussion
 
 The discussion is where you interpret your results and put them into context. It is distinct from the computational study (which presents the results) and the conclusion (which summarizes).
 
-Connect your results to the research question you posed in the introduction. Do your findings answer it? If only partially, say so explicitly. Compare with existing literature: are your results consistent with prior work? Where do they differ, and why?
+Connect your results to the research question you posed in the introduction. Do your findings answer it? If only partially, say so explicitly. Compare with existing literature: are your results consistent with prior work? Where do they differ, and why? If something did not work as expected, analyze why rather than skipping over it. Unexpected results often contain the most interesting insights.
 
-Address limitations honestly. Every study has them. Discussing how limitations affect the interpretation of your results shows that you understand your own work. Hiding them does not.
-
-If something did not work as expected, analyze why. Unexpected results are not a sign of failure. Ignoring them is.
-
-Distinguish observation from interpretation. "The heuristic found solutions within 5% of the optimum for all small instances" is an observation. "This suggests the heuristic is suitable for small-scale real-world applications" is an interpretation. Don't conflate the two.
+Address limitations honestly. Every study has them, and discussing how they affect the interpretation of your results shows that you understand your own work. Hiding limitations does not make them invisible to your examiner. Also be careful to distinguish observation from interpretation. "The heuristic found solutions within 5% of the optimum for all small instances" is an observation. "This suggests the heuristic is suitable for small-scale applications" is an interpretation. Both belong in the discussion, but don't conflate the two.
 
 :::{.callout-important}
 Do not introduce entirely new topics in the discussion. Reflect on what you have already presented. New directions belong in the conclusion's outlook section.
@@ -129,11 +119,7 @@ Do not introduce entirely new topics in the discussion. Reflect on what you have
 
 ## Conclusion
 
-Separate summary from outlook. First state what you did and found, then suggest directions for future research.
-
-Don't introduce new results here. The conclusion synthesizes; it does not analyze. Future research directions should be concrete: not "further research is needed" but "extending the model to include time windows would allow applications in last-mile delivery." Don't overclaim: "suggests" rather than "proves," "indicates" rather than "demonstrates," unless you provide formal proof.
-
-The conclusion should refer back to the research question from the introduction. Can you answer it? If not fully, explain what remains open.
+Separate summary from outlook. First state what you did and found, then suggest directions for future research. Don't introduce new results here; the conclusion synthesizes, it does not analyze. Future research directions should be concrete: not "further research is needed" but "extending the model to include time windows would allow applications in last-mile delivery." Use "suggests" rather than "proves," and "indicates" rather than "demonstrates," unless you provide formal proof. The conclusion should refer back to the research question from the introduction. Can you answer it? If not fully, explain what remains open.
 
 
 # Academic Language and Style
@@ -142,11 +128,9 @@ Scientific writing is not literary writing. The goal is clarity and precision.
 
 ## Precision and objectivity
 
-Choose exact terms over vague ones. "Several studies" is better than "a lot of studies." A specific year is better than "recently." Avoid value judgments ("this excellent method") and emotional language ("unfortunately"). Let the evidence speak for itself.
+Choose exact terms over vague ones. "Several studies" is better than "a lot of studies." A specific year is better than "recently." Avoid value judgments ("this excellent method") and emotional language ("unfortunately"). Let the evidence speak for itself. Use the same term for the same concept throughout your paper. If you call it "optimality gap" on page three, don't switch to "solution quality deviation" on page eight. Readers will wonder whether you mean something different.
 
-Use the same term for the same concept throughout your paper. If you call it "optimality gap" on page three, don't switch to "solution quality deviation" on page eight. Readers will wonder whether you mean something different.
-
-Use technical terms correctly and define them on first use if they are not standard in the field. Avoid filler words: "basically," "actually," "of course," "it is important to note that." These add length without adding meaning. Avoid discriminatory language and use inclusive formulations.
+Define technical terms on first use if they are not standard in the field. Cut filler words like "basically," "actually," "of course," and "it is important to note that," which add length without adding meaning. Use inclusive language and avoid discriminatory formulations.
 
 ## Paragraph structure
 
@@ -156,7 +140,7 @@ A paragraph covering multiple unrelated ideas should be split. A paragraph consi
 
 ## Proofreading
 
-Read your paper aloud before submission. Listen for awkward phrasing, overly long sentences, and words that can be removed without changing the meaning. If a sentence spans more than three lines, split it. Clear writing usually signals clear thinking. The reverse is also true.
+Read your paper aloud before submission. Listen for awkward phrasing, overly long sentences, and words that can be removed without changing the meaning. If a sentence runs longer than three lines, split it. In my experience, clear writing usually means the author actually understands the material. Muddled writing usually means they don't.
 
 
 # Plagiarism, Ethics, and AI
@@ -169,25 +153,38 @@ Direct quotes must be in quotation marks with an exact citation, including the p
 
 ## Research ethics
 
-Plagiarism is not the only integrity issue. Scientific misconduct includes:
+Plagiarism is not the only integrity issue. Inventing data or results is fraud, full stop. It does not matter how plausible the fabricated numbers look. Negative results are a legitimate scientific contribution; making up positive ones is not. Selective reporting is the milder cousin: presenting only the runs where your method worked well, while quietly dropping the ones where it didn't. The same goes for cherry-picking metrics, instances, or parameter settings that make your approach look better than it is. If you tried 20 configurations and only report the best one, say so explicitly.
 
-- **Data fabrication**: inventing data or results that were never observed. This is worse than reporting negative results. Negative results are a valid contribution; fabricated results are fraud.
-- **Selective reporting**: only presenting the runs where your method worked well, omitting the ones where it didn't. Report all results, including failures.
-- **Cherry-picking**: choosing metrics, instances, or parameter settings that make your approach look better than it is. If you tried 20 configurations and only report the best one, say so.
-- **Misrepresenting sources**: citing a paper for a claim it doesn't actually make, or citing it without having read it.
-
-None of these are worth the risk. Reviewers, supervisors, and examiners notice inconsistencies. If your method doesn't outperform the baseline, that is a valid finding worth discussing.
+Citing a paper for a claim it doesn't actually make, or citing it without having read it, is also misconduct. Supervisors and examiners who know the field will notice. If your method doesn't outperform the baseline, that is a valid finding. Write it up honestly and discuss why.
 
 ## Using AI tools
 
-AI tools (ChatGPT, Claude, GitHub Copilot, Grammarly, and similar) may be used during your work. They can be helpful for brainstorming, debugging code, checking grammar, or exploring ideas. But there are rules.
+AI tools (ChatGPT, Claude, GitHub Copilot, Grammarly, and similar) may be used during your work. They can help with brainstorming, debugging code, checking grammar, or exploring ideas. But using them well requires more judgment than most people assume.
 
-You must declare all AI tool usage in the AI tools section of your paper. The templates include this section; see the [Templates](templates.qmd) page for how to fill it in. Undeclared use of AI-generated text is treated the same as any other uncited source.
+### Declare everything
 
-More importantly: you are responsible for everything in your paper. If an AI tool produces an incorrect claim, a wrong citation, or a flawed argument and you include it in your work, that is your mistake, not the tool's. AI tools hallucinate references, invent plausible-sounding results, and confidently state things that are wrong. Every piece of AI output must be verified against the actual sources before you use it.
+You must declare all AI tool usage in the AI tools section of your paper. The templates include this section; see the [Templates](templates.qmd) page for how to fill it in. Be specific about which tool you used and for what. Undeclared use of AI-generated text is treated the same as any other uncited source.
+
+### Editing vs. generating
+
+There is a real difference between using AI to improve text you wrote yourself and using AI to produce text you hadn't thought of. Fixing the grammar in a paragraph you drafted, or rephrasing an awkward sentence, is closer to using a spell-checker. You remain the author; the idea is yours, and the tool cleaned up the expression.
+
+Using AI to generate an argument, write a literature review section, or produce a model formulation is a different thing entirely. You need to fully understand the output, verify every claim against the actual sources, and be able to explain the reasoning as if you had developed it yourself. If you cannot do that, the text should not be in your paper.
+
+### Why this matters more for you than for an experienced researcher
+
+Someone who has spent years in a field can read AI output and immediately spot what is wrong, what is oversimplified, and what is subtly off. They have the disciplinary judgment to tell useful output from plausible nonsense.
+
+You are still building that judgment. That is not a failing on your part; acquiring it is the whole point of writing a thesis. But it means that AI output is riskier for you than for someone with two decades of experience. The output looks polished and confident, which makes it harder to question than a rough draft from a classmate. Studies on how students use AI tools consistently find that students tend to trust AI output even when they notice errors, because it sounds authoritative and arrives instantly. This tendency, sometimes called automation bias, is worth knowing about so you can watch for it in yourself.
+
+### Writing fast is not the same as understanding
+
+AI can help you produce text at a speed that far outpaces your ability to think through the ideas behind it. If you find yourself generating pages of content in minutes, stop and ask whether you actually understand what is on the screen, or whether you are assembling text you haven't fully thought through. The purpose of a thesis is not to produce a document. It is to show that you can work through a problem, engage with existing research, and arrive at a conclusion you can defend. Much of that thinking happens during the writing process itself. Outsource the writing, and you risk outsourcing the thinking with it.
+
+You are the author of your paper, not the AI. You are responsible for every claim and every citation. If an AI tool produces an incorrect reference, a flawed argument, or a misleading result and you include it, that is your mistake.
 
 :::{.callout-important}
-The rule is simple: if you cannot explain and defend every sentence in your paper during a discussion with your supervisor, it should not be in there, regardless of who or what wrote it.
+If you cannot explain and defend every sentence in your paper during a discussion with your supervisor, it should not be in there, regardless of who or what wrote it.
 :::
 
 
