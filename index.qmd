@@ -2,10 +2,6 @@
 title: "Scientific Writing at the Institute of Logistics, Transport and Production"
 subtitle: "University of Hamburg"
 
-html:
-    theme: [default, styles.scss]
-    highlight-style: breezedark
-    linkcolor: "#a60000"
 ---
 
 # About

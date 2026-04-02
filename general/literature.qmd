@@ -2,13 +2,6 @@
 title: "Literature and Resources"
 subtitle: "Tools and references from the workshops"
 author: "Dr. Tobias Vlćek"
-
-html:
-    theme: [default, ../styles.scss]
-    code-copy: true
-    code-link: true
-    toc: true
-    toc-location: right
 ---
 
 This page collects the tools, databases, and references mentioned across the workshops. Use it as a quick-reference when you need a link or want to explore a topic further.

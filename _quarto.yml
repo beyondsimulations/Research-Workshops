@@ -16,10 +16,10 @@ project:
     - helpers/convert_qmd_to_md.py
 
 website:
-  title: "Seminar Preparation"
-  repo-url: https://github.com/beyondsimulations/Research-Workshops
+  title: "Scientific Research Workshops"
+  repo-url: https://github.com/beyondsimulations/Scientific-Research-Workshops
   repo-actions: [edit, source, issue]
-  site-url: https://beyondsimulations.github.io/Research-Workshops
+  site-url: https://beyondsimulations.github.io/Scientific-Research-Workshops
   bread-crumbs: true
   sidebar:
     style: floating
@@ -52,7 +52,7 @@ website:
     center: "Scientific Research Workshops, Tobias Vlćek</br>CC BY-NC-SA 4.0"
     left:
       - icon: github
-        href: https://github.com/beyondsimulations/Applied-Optimization
+        href: https://github.com/beyondsimulations/Scientific-Research-Workshops
       - icon: linkedin
         href: https://linkedin.com/in/tobiasvlcek
       - icon: envelope

@@ -17,10 +17,6 @@ This workshop addresses why most people get [mediocre results]{.highlight} from 
 - Why [iteration]{.highlight} beats perfection
 - Common mistakes and how to avoid them
 
-:::{.callout-tip}
-This is not about tricks or hacks. It is about **clear communication** — the same skill that makes you a better researcher.
-:::
-
 # [The Problem]{.flow}
 
 ## The typical experience

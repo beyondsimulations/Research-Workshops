@@ -228,7 +228,7 @@ The workflow for your seminar or thesis:
 1. **Find** a paper via Google Scholar, Scopus, or an AI tool
 2. **Save** it with the Zotero browser connector or import via DOI
 3. **Organize** it into a collection for your project
-4. **Auto-export** a `.bib` file with Better BibTeX
+4. **Export** a `.bib` file from Zotero
 5. **Cite** in Quarto using `[@citationkey]`
 
 ::::{.columns}
@@ -300,7 +300,7 @@ The full process:
 2. **Search** — Use databases, Boolean operators, and search strings
 3. **Snowball** — Follow citations forwards and backwards
 4. **Discover** — Use AI tools to find related work
-5. **Organize** — Store everything in Zotero with Better BibTeX
+5. **Organize** — Store everything in Zotero and export to `.bib`
 6. **Evaluate** — Assess quality, relevance, and reliability
 7. **Write** — Synthesize findings into a coherent review
 

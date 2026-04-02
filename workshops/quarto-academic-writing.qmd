@@ -7,6 +7,8 @@ format:
     output-file: quarto-academic-writing-page.html
 ---
 
+# [Quarto for Academic Writing]{.flow}
+
 ## What is Quarto and why use it?
 
 Quarto is an [open-source scientific publishing system]{.highlight} developed by Posit (formerly RStudio). Write in **Markdown**, render to multiple formats:
@@ -363,7 +365,7 @@ This claim needs a source^[See Smith (2023) for details.].
 
 ## Reference management with Zotero
 
-Use [Zotero](https://www.zotero.org/) (free) with the [Better BibTeX](https://retorque.re/zotero-better-bibtex/) extension to manage your references. Better BibTeX auto-exports your library to a `.bib` file, so the workflow becomes: save a paper to Zotero, cite it in Quarto with `[@key]`. See the [Literature Research](../workshops/literature-research.qmd) workshop for detailed setup instructions.
+Use [Zotero](https://www.zotero.org/) (free) to manage your references. Export your collection as a `.bib` file via *File → Export Library* (or right-click a collection → *Export Collection*) and select **BibTeX** as the format. The workflow becomes: save a paper to Zotero, export to `.bib`, cite in Quarto with `[@key]`. See the [Literature Research](../workshops/literature-research.qmd) workshop for detailed setup instructions.
 
 ## Writing best practices
 
