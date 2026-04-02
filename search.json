@@ -281,7 +281,7 @@
     "href": "workshops/prompting-page.html",
     "title": "AI Prompting for Researchers",
     "section": "",
-    "text": "This workshop addresses why most people get mediocre results from AI and how to fix that. Specifically, we will look at:\n\nA simple framework to get better results from your prompts\nWhy iteration beats perfection\nCommon mistakes and how to avoid them\n\n\n\n\n\n\n\nThis is not about tricks or hacks. It is about clear communication — the same skill that makes you a better researcher.",
+    "text": "This workshop addresses why most people get mediocre results from AI and how to fix that. Specifically, we will look at:\n\nA simple framework to get better results from your prompts\nWhy iteration beats perfection\nCommon mistakes and how to avoid them",
     "crumbs": [
       "Prompting"
     ]
@@ -291,7 +291,7 @@
     "href": "workshops/prompting-page.html#what-we-will-cover",
     "title": "AI Prompting for Researchers",
     "section": "",
-    "text": "This workshop addresses why most people get mediocre results from AI and how to fix that. Specifically, we will look at:\n\nA simple framework to get better results from your prompts\nWhy iteration beats perfection\nCommon mistakes and how to avoid them\n\n\n\n\n\n\n\nThis is not about tricks or hacks. It is about clear communication — the same skill that makes you a better researcher.",
+    "text": "This workshop addresses why most people get mediocre results from AI and how to fix that. Specifically, we will look at:\n\nA simple framework to get better results from your prompts\nWhy iteration beats perfection\nCommon mistakes and how to avoid them",
     "crumbs": [
       "Prompting"
     ]
@@ -701,7 +701,7 @@
     "href": "workshops/literature-research-page.html#zotero-and-the-workflow",
     "title": "Structured Literature Research",
     "section": "Zotero and the workflow",
-    "text": "Zotero and the workflow\nZotero is free, open-source, and works on Windows, Mac, and Linux. It comes with a browser connector for saving papers with one click, PDF storage for attaching and annotating papers directly, collections and tags for organizing your library, groups for collaborative projects, and sync for accessing everything from any device.\n\n\n\n\n\n\nAlways import via DOI when possible. This gives you the most accurate and complete metadata. After importing, always check that the data is correct.\n\n\n\nThe workflow for your seminar or thesis:\n\nFind a paper via Google Scholar, Scopus, or an AI tool\nSave it with the Zotero browser connector or import via DOI\nOrganize it into a collection for your project\nAuto-export a .bib file with Better BibTeX\nCite in Quarto using [@citationkey]\n\n\n\nIn your .qmd file:\nRecent work by [@taillard1993]\nshows that...\n\n\n\nRendered output:\nRecent work by Taillard (1993) shows that…",
+    "text": "Zotero and the workflow\nZotero is free, open-source, and works on Windows, Mac, and Linux. It comes with a browser connector for saving papers with one click, PDF storage for attaching and annotating papers directly, collections and tags for organizing your library, groups for collaborative projects, and sync for accessing everything from any device.\n\n\n\n\n\n\nAlways import via DOI when possible. This gives you the most accurate and complete metadata. After importing, always check that the data is correct.\n\n\n\nThe workflow for your seminar or thesis:\n\nFind a paper via Google Scholar, Scopus, or an AI tool\nSave it with the Zotero browser connector or import via DOI\nOrganize it into a collection for your project\nExport a .bib file from Zotero\nCite in Quarto using [@citationkey]\n\n\n\nIn your .qmd file:\nRecent work by [@taillard1993]\nshows that...\n\n\n\nRendered output:\nRecent work by Taillard (1993) shows that…",
     "crumbs": [
       "Literature"
     ]
@@ -741,7 +741,7 @@
     "href": "workshops/literature-research-page.html#summary-and-resources",
     "title": "Structured Literature Research",
     "section": "Summary and resources",
-    "text": "Summary and resources\nThe full process:\n\nQuestion — Define a clear, focused research question\nSearch — Use databases, Boolean operators, and search strings\nSnowball — Follow citations forwards and backwards\nDiscover — Use AI tools to find related work\nOrganize — Store everything in Zotero with Better BibTeX\nEvaluate — Assess quality, relevance, and reliability\nWrite — Synthesize findings into a coherent review\n\n\n\n\n\n\n\nStart your literature research early. It is an iterative process that improves as you learn more about your topic.\n\n\n\n\n\n\n\n\n\n\n\nResource\nLink\n\n\n\n\nGoogle Scholar\nscholar.google.com\n\n\nSemantic Scholar\nsemanticscholar.org\n\n\nConnected Papers\nconnectedpapers.com\n\n\nElicit\nelicit.com\n\n\nZotero\nzotero.org\n\n\nUHH Library\nsub.uni-hamburg.de",
+    "text": "Summary and resources\nThe full process:\n\nQuestion — Define a clear, focused research question\nSearch — Use databases, Boolean operators, and search strings\nSnowball — Follow citations forwards and backwards\nDiscover — Use AI tools to find related work\nOrganize — Store everything in Zotero and export to .bib\nEvaluate — Assess quality, relevance, and reliability\nWrite — Synthesize findings into a coherent review\n\n\n\n\n\n\n\nStart your literature research early. It is an iterative process that improves as you learn more about your topic.\n\n\n\n\n\n\n\n\n\n\n\nResource\nLink\n\n\n\n\nGoogle Scholar\nscholar.google.com\n\n\nSemantic Scholar\nsemanticscholar.org\n\n\nConnected Papers\nconnectedpapers.com\n\n\nElicit\nelicit.com\n\n\nZotero\nzotero.org\n\n\nUHH Library\nsub.uni-hamburg.de",
     "crumbs": [
       "Literature"
     ]
@@ -1051,7 +1051,7 @@
     "href": "workshops/quarto-academic-writing-page.html#reference-management-with-zotero",
     "title": "Quarto for Academic Writing",
     "section": "Reference management with Zotero",
-    "text": "Reference management with Zotero\nUse Zotero (free) with the Better BibTeX extension to manage your references. Better BibTeX auto-exports your library to a .bib file, so the workflow becomes: save a paper to Zotero, cite it in Quarto with [@key]. See the Literature Research workshop for detailed setup instructions.",
+    "text": "Reference management with Zotero\nUse Zotero (free) to manage your references. Export your collection as a .bib file via File → Export Library (or right-click a collection → Export Collection) and select BibTeX as the format. The workflow becomes: save a paper to Zotero, export to .bib, cite in Quarto with [@key]. See the Literature Research workshop for detailed setup instructions.",
     "crumbs": [
       "Quarto"
     ]

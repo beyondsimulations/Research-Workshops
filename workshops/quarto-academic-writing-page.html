@@ -8,7 +8,7 @@
 
 <meta name="author" content="Dr.&nbsp;Tobias Vlćek">
 
-<title>Quarto for Academic Writing – Seminar Preparation</title>
+<title>Quarto for Academic Writing – Scientific Research Workshops</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -249,7 +249,10 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#what-is-quarto-and-why-use-it" id="toc-what-is-quarto-and-why-use-it" class="nav-link active" data-scroll-target="#what-is-quarto-and-why-use-it">What is Quarto and why use it?</a></li>
+  <li><a href="#quarto-for-academic-writing" id="toc-quarto-for-academic-writing" class="nav-link active" data-scroll-target="#quarto-for-academic-writing"><span class="flow">Quarto for Academic Writing</span></a>
+  <ul class="collapse">
+  <li><a href="#what-is-quarto-and-why-use-it" id="toc-what-is-quarto-and-why-use-it" class="nav-link" data-scroll-target="#what-is-quarto-and-why-use-it">What is Quarto and why use it?</a></li>
+  </ul></li>
   <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started"><span class="flow">Getting Started</span></a>
   <ul class="collapse">
   <li><a href="#installation-by-platform" id="toc-installation-by-platform" class="nav-link" data-scroll-target="#installation-by-platform">Installation by platform</a></li>
@@ -280,7 +283,7 @@ window.Quarto = {
   <li><a href="#templates" id="toc-templates" class="nav-link" data-scroll-target="#templates">Templates</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/beyondsimulations/Research-Workshops/edit/main/workshops/quarto-academic-writing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/blob/main/workshops/quarto-academic-writing.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/beyondsimulations/Scientific-Research-Workshops/edit/main/workshops/quarto-academic-writing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/beyondsimulations/Scientific-Research-Workshops/blob/main/workshops/quarto-academic-writing.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/beyondsimulations/Scientific-Research-Workshops/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -311,6 +314,8 @@ window.Quarto = {
 </header>
 
 
+<section id="quarto-for-academic-writing" class="level1">
+<h1><span class="flow">Quarto for Academic Writing</span></h1>
 <section id="what-is-quarto-and-why-use-it" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-quarto-and-why-use-it">What is Quarto and why use it?</h2>
 <p>Quarto is an <span class="highlight">open-source scientific publishing system</span> developed by Posit (formerly RStudio). Write in <strong>Markdown</strong>, render to multiple formats:</p>
@@ -389,6 +394,7 @@ window.Quarto = {
 </div>
 </div>
 <p>Same output quality, <span class="highlight">much less typing</span>!</p>
+</section>
 </section>
 <section id="getting-started" class="level1">
 <h1><span class="flow">Getting Started</span></h1>
@@ -726,7 +732,7 @@ window.Quarto = {
 <h1><span class="flow">Workflow Tips</span></h1>
 <section id="reference-management-with-zotero" class="level2">
 <h2 class="anchored" data-anchor-id="reference-management-with-zotero">Reference management with Zotero</h2>
-<p>Use <a href="https://www.zotero.org/">Zotero</a> (free) with the <a href="https://retorque.re/zotero-better-bibtex/">Better BibTeX</a> extension to manage your references. Better BibTeX auto-exports your library to a <code>.bib</code> file, so the workflow becomes: save a paper to Zotero, cite it in Quarto with <code>[@key]</code>. See the <a href="../workshops/literature-research-page.html">Literature Research</a> workshop for detailed setup instructions.</p>
+<p>Use <a href="https://www.zotero.org/">Zotero</a> (free) to manage your references. Export your collection as a <code>.bib</code> file via <em>File → Export Library</em> (or right-click a collection → <em>Export Collection</em>) and select <strong>BibTeX</strong> as the format. The workflow becomes: save a paper to Zotero, export to <code>.bib</code>, cite in Quarto with <code>[@key]</code>. See the <a href="../workshops/literature-research-page.html">Literature Research</a> workshop for detailed setup instructions.</p>
 </section>
 <section id="writing-best-practices" class="level2">
 <h2 class="anchored" data-anchor-id="writing-best-practices">Writing best practices</h2>
@@ -833,7 +839,7 @@ window.Quarto = {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/beyondsimulations\.github\.io\/Research-Workshops");
+        var filterRegex = new RegExp("https:\/\/beyondsimulations\.github\.io\/Scientific-Research-Workshops");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -1166,7 +1172,7 @@ window.Quarto = {
     <div class="nav-footer-left">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/beyondsimulations/Applied-Optimization">
+    <a class="nav-link" href="https://github.com/beyondsimulations/Scientific-Research-Workshops">
       <i class="bi bi-github" role="img">
 </i> 
     </a>
@@ -1198,7 +1204,7 @@ window.Quarto = {
     </div>   
     <div class="nav-footer-center">
 <p>Scientific Research Workshops, Tobias Vlćek<br>CC BY-NC-SA 4.0</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/beyondsimulations/Research-Workshops/edit/main/workshops/quarto-academic-writing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/blob/main/workshops/quarto-academic-writing.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/beyondsimulations/Research-Workshops/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/beyondsimulations/Scientific-Research-Workshops/edit/main/workshops/quarto-academic-writing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/beyondsimulations/Scientific-Research-Workshops/blob/main/workshops/quarto-academic-writing.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/beyondsimulations/Scientific-Research-Workshops/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
