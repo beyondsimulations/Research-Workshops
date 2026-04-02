@@ -123,7 +123,7 @@ $x_{ij}$ : Binärvariable, 1 falls ein Fahrzeug von $i$ nach $j$ fährt
      VERWENDUNG DIESER VORLAGE
 
      1. Titelseite oben im YAML-Block anpassen (← Markierungen beachten)
-     2. Literaturverweise in references.bib eintragen (Zotero + Better BibTeX)
+     2. Literaturverweise in references.bib eintragen (aus Zotero als BibTeX exportieren)
      3. Inhalte unten in Markdown schreiben
      4. Rendern: quarto render seminar-paper-de.qmd
      5. Vorschau: quarto preview seminar-paper-de.qmd

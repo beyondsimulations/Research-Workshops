@@ -120,7 +120,7 @@ $x_{ij}$ : Binary variable, 1 if a vehicle travels from $i$ to $j$
      HOW TO USE THIS TEMPLATE
 
      1. Edit the title page in the YAML block above (look for ← markers)
-     2. Add your references to references.bib (use Zotero + Better BibTeX)
+     2. Add your references to references.bib (export from Zotero as BibTeX)
      3. Write your content below in Markdown
      4. Render: quarto render seminar-paper-en.qmd
      5. Live preview: quarto preview seminar-paper-en.qmd

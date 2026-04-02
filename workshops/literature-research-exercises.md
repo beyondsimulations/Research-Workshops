@@ -28,7 +28,7 @@ These exercises are designed to be added when workshops expand from 30 to 90 min
 - Install Zotero + browser connector
 - Import 3 papers via DOI
 - Create a collection for their seminar topic
-- Install Better BibTeX and export a .bib file
+- Export the collection as a .bib file
 
 ### Exercise 5: Critical Evaluation (15 min)
 - Each student picks one paper from their collection

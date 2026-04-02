@@ -185,4 +185,4 @@ All AI-generated content must be reviewed, verified, and revised by you. You are
 
 - Read the [Scientific Writing](scientific-writing.qmd) guide for paper structure, academic language, and common mistakes.
 - See the [Quarto workshop](../workshops/quarto-academic-writing.qmd) to learn the formatting syntax (citations, cross-references, equations, figures, tables).
-- Set up [Zotero](https://www.zotero.org/) with [Better BibTeX](https://retorque.re/zotero-better-bibtex/) for reference management (covered in the [Literature Research](../workshops/literature-research.qmd) workshop).
+- Set up [Zotero](https://www.zotero.org/) for reference management (covered in the [Literature Research](../workshops/literature-research.qmd) workshop).

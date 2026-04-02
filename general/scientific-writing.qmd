@@ -154,9 +154,9 @@ Direct quotes must be in quotation marks with an exact citation, including the p
 
 ## Research ethics
 
-Plagiarism is not the only integrity issue. Inventing data or results is fraud, full stop. It does not matter how plausible the fabricated numbers look. Negative results are a legitimate scientific contribution; making up positive ones is not. Selective reporting is the milder cousin: presenting only the runs where your method worked well, while quietly dropping the ones where it didn't. The same goes for cherry-picking metrics, instances, or parameter settings that make your approach look better than it is. If you tried 20 configurations and only report the best one, say so explicitly.
+Plagiarism is not the only integrity issue. Inventing data or results is wrong, it does not matter how plausible the fabricated numbers look. Negative results are a legitimate scientific contribution; making up positive ones is not. Selective reporting is wrong as well: presenting only the runs where your method worked well, while quietly dropping the ones where it didn't. The same goes for cherry-picking metrics, instances, or parameter settings that make your approach look better than it is. If you tried 20 configurations and only report the best one, say so explicitly.
 
-Citing a paper for a claim it doesn't actually make, or citing it without having read it, is also misconduct. Supervisors and examiners who know the field will notice. If your method doesn't outperform the baseline, that is a valid finding. Write it up honestly and discuss why.
+Citing a paper for a claim it doesn't actually make, or citing it without having read it, is also misconduct. Supervisors and examiners who know the field will usually notice. If your method doesn't outperform the baseline, that is a valid finding. Write it up honestly and discuss why.
 
 ## Using AI tools
 
