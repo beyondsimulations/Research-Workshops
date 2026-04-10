@@ -1,0 +1,438 @@
+---
+bibliography: references.bib
+bibliographystyle: apa
+lang: de
+format:
+  typst:
+    template-partials:
+      - typst-show.typ
+    toc: false
+    toc-depth: 3
+    number-sections: true
+    margin:
+      top: 30mm
+      bottom: 20mm
+      left: 40mm
+      right: 25mm
+    font-size: 11pt
+    include-before-body:
+      text: |
+        // ==== TITELSEITE — Felder mit ← anpassen ====
+        #page(numbering: none)[
+          #v(2cm)
+          #align(center)[
+            #text(size: 20pt, smallcaps(strong[Universität Hamburg]))
+            #v(5mm)
+            #text(size: 11pt)[
+              Fakultät für Betriebswirtschaft \            // ← Ihre Fakultät
+              Institut für Logistik, Transport und Produktion // ← Ihr Institut
+            ]
+            #v(3cm)
+            #text(size: 16pt, smallcaps(strong[Bachelor-/Master-/Seminararbeit])) // ← Art der Arbeit
+            #v(12mm)
+            #text(size: 16pt, weight: "bold")[Titel der Arbeit] // ← Ihr Titel
+            #v(12mm)
+            #text(size: 11pt)[
+              Freie wissenschaftliche Arbeit \
+              zur Erlangung des Grades "Bachelor/Master of Science" \ // ← Ihr Abschluss
+              im Studiengang ...                                      // ← Ihr Studiengang
+            ]
+            #v(12mm)
+            #text(size: 11pt)[Hamburg, #datetime.today().display()]
+          ]
+          #v(1fr)
+          #grid(
+            columns: (1fr, 1fr),
+            column-gutter: 2em,
+            [
+              _eingereicht von:_ \
+              #v(2mm)
+              *Name, Vorname* \             // ← Ihr Name
+              #v(2mm)
+              Matrikel-Nr.: XXXXXXX \       // ← Ihre Matrikelnummer
+              #v(2mm)
+              Fachsemester: X \             // ← Ihr Fachsemester
+              #v(2mm)
+              E-Mail: vorname.name\@studium.uni-hamburg.de // ← Ihre E-Mail
+            ],
+            [
+              _betreut von:_ \
+              #v(2mm)
+              Prof. Dr. Knut Haase // ← Ihr Betreuer
+            ],
+          )
+          #v(1cm)
+        ]
+        // ==== ENDE TITELSEITE ====
+        #outline(title: "Inhaltsverzeichnis", depth: 3, indent: 1em)
+        #pagebreak()
+        #outline(title: "Abbildungsverzeichnis", target: figure.where(kind: "quarto-float-fig"))
+        #pagebreak()
+        #outline(title: "Tabellenverzeichnis", target: figure.where(kind: "quarto-float-tbl"))
+        #pagebreak()
+    include-in-header:
+      text: |
+        #set text(lang: "de")
+        #set par(leading: 0.85em)
+        #show heading: it => { v(0.5em) + it + v(0.2em) }
+        #show figure: it => { v(0.4em) + it + v(0.4em) }
+        #set table(stroke: (_, y) => (
+          top: if y == 0 { 0.08em } else if y == 1 { 0.05em },
+        ))
+        #show table: it => block(width: auto, stroke: (bottom: 0.08em), it)
+        #set bibliography(title: "Literaturverzeichnis")
+        #show bibliography: it => {
+          pagebreak()
+          it
+        }
+---
+
+# Abkürzungsverzeichnis {.unnumbered}
+
+<!-- Einträge hinzufügen oder entfernen. Alphabetisch sortieren. Bei erster Verwendung im Text ausschreiben. -->
+
+LLM : Large Language Model
+
+OR : Operations Research
+
+VRP : Vehicle Routing Problem (Tourenplanungsproblem)
+
+{{< pagebreak >}}
+
+# Symbolverzeichnis {.unnumbered}
+
+<!-- Einträge hinzufügen oder entfernen. Alphabetisch sortieren. -->
+
+$\mathcal{I}$ : Menge der Kunden
+
+$\mathcal{J}$ : Menge aller Standorte (Kunden und Depot)
+
+$K$ : Anzahl der Fahrzeuge
+
+$c_{ij}$ : Transportkosten von Standort $i$ nach Standort $j$
+
+$d_i$ : Bedarf des Kunden $i \in \mathcal{I}$
+
+$Q$ : Fahrzeugkapazität
+
+$x_{ij}$ : Binärvariable, 1 falls ein Fahrzeug von $i$ nach $j$ fährt
+
+{{< pagebreak >}}
+
+<!-- ============================================================
+     VERWENDUNG DIESER VORLAGE
+
+     1. Titelseite oben im YAML-Block anpassen (← Markierungen beachten)
+     2. Literaturverweise in references.bib eintragen (aus Zotero als BibTeX exportieren)
+     3. Inhalte unten in Markdown schreiben
+     4. Rendern: quarto render seminar-paper-de.qmd
+     5. Vorschau: quarto preview seminar-paper-de.qmd
+
+     KURZREFERENZ
+     Zitate:        [@key] → (Autor, Jahr)     @key → Autor (Jahr)
+                    [@a; @b] → mehrere         [@key, S. 42] → mit Seite
+     Querverweise:  @fig-label  @tbl-label  @eq-label  @sec-label
+     Abbildungen:   ![Beschriftung](pfad.png){#fig-label width="80%"}
+     Tabellen:      Pipe-Tabelle + ": Beschriftung {#tbl-label}" darunter
+     Gleichungen:   $$ ... $$ {#eq-label}
+     Abschnitte:    # Überschrift {#sec-label}
+
+     FORMATIERUNG — GRUNDLAGEN
+     Fett:          **fetter Text**
+     Kursiv:        *kursiver Text*
+     Fett+kursiv:   ***fett und kursiv***
+     Aufzählung:
+                    - Punkt 1
+                    - Punkt 2
+                      - Unterpunkt (2 Leerzeichen einrücken)
+     Nummerierung:
+                    1. Erstens
+                    2. Zweitens
+                       a. Unterpunkt (3 Leerzeichen einrücken)
+     Fußnoten:      Text^[Das ist eine Inline-Fußnote].
+                    Oder mit Verweis[^1], der später definiert wird:
+                    [^1]: Fußnotentext hier.
+     Links:         [Linktext](https://example.com)
+     Inline-Code:   `variablen_name`
+     Gedankenstrich: -- (für Bereiche, z.B. Seiten 5--10)
+
+     TYPST-BACKEND
+     Diese Vorlage verwendet Typst (nicht LaTeX) zur PDF-Erzeugung.
+     Für erweiterte Formatierung kann Typst-Code direkt eingebettet werden:
+
+         ```{=typst}
+         #v(1cm)                          // Vertikaler Abstand
+         #text(fill: red)[wichtig]        // Farbiger Text
+         #align(center)[Zentrierter Text] // Ausrichtung
+         #line(length: 100%)              // Horizontale Linie
+         #set text(size: 9pt)             // Schriftgröße lokal ändern
+         ```
+
+     Siehe https://typst.app/docs für die vollständige Typst-Referenz.
+
+     HÄUFIGE FEHLER
+     - Jede Abbildung und Tabelle muss im Text referenziert werden,
+       *bevor* sie erscheint.
+     - Abbildungen haben Beschriftungen darunter, Tabellen darüber.
+     - Sätze nicht mit einem Symbol beginnen ("$X$ ist..." →
+       "Die Variable $X$ ist...").
+     - Notation konsistent halten — nicht zwischen $X_{ij}$ und $X(i,j)$
+       wechseln.
+     - Keine verwaisten Abschnitte (ein einzelner Unterabschnitt in einem
+       Abschnitt).
+     - Jeder Abschnitt/Unterabschnitt sollte mindestens eine Seite lang sein.
+       Wenn nicht, mit einem anderen Abschnitt zusammenfassen.
+     - Abkürzungen bei der ersten Verwendung ausschreiben, danach konsequent
+       die Kurzform verwenden.
+     - Wikipedia und Vorlesungsfolien nicht zitieren — die Originalquelle
+       suchen.
+     - Gedankenstriche (--) für Bereiche verwenden (Seiten 5--10), keine
+       Bindestriche (-).
+     - Zahlen eins bis zwölf im Fließtext ausschreiben, ab 13 Ziffern
+       verwenden.
+     - Schmales Leerzeichen vor Einheiten: 16 GB, 245 s (Typst handhabt
+       dies im Mathematikmodus automatisch, im Fließtext darauf achten).
+     ============================================================ -->
+
+# Einführung {#sec-einfuehrung}
+
+<!-- SCHREIBHILFE: Einführung
+     Strukturieren Sie die Einleitung als Trichter:
+       1. Breiter Kontext — warum ist dieses Feld relevant?
+       2. Konkretes Problem — was ist die spezifische Herausforderung?
+       3. Forschungslücke — was fehlt in der bisherigen Literatur?
+       4. Eigener Beitrag — was leistet diese Arbeit?
+       5. Aufbau der Arbeit — kurz die Struktur beschreiben.
+     Tipp: Schreiben Sie diese Sektion zuletzt, wenn Sie Ihren tatsächlichen
+     Beitrag kennen. Sie sollte beantworten: Warum sollte der Leser sich
+     dafür interessieren? Was ist neu? -->
+
+Operations Research stellt leistungsfähige Methoden für die Entscheidungsfindung in komplexen Systemen bereit. In den letzten Jahren haben Fortschritte in der Computertechnik die Lösung immer größerer Optimierungsprobleme ermöglicht [@desaulniers2005column]. Die vorliegende Arbeit befasst sich mit dem Problem ... .
+
+@fig-beispiel zeigt eine schematische Übersicht der Problemstruktur.
+
+<!-- Abbildung: ![Beschriftung](images/datei.png){#fig-label width="80%"} -->
+![Ersetzen Sie dies durch Ihre eigene Abbildung](images/Image.pdf){#fig-beispiel width="80%"}
+
+Die Arbeit ist wie folgt gegliedert. @sec-literatur gibt einen Überblick über die relevante Literatur. @sec-modell stellt das mathematische Modell vor, wobei @sec-annahmen die zugrundeliegenden Annahmen und @sec-aufbau die formale Formulierung enthält. @sec-rechenstudie präsentiert die Rechenstudie, und @sec-zusammenfassung fasst die Ergebnisse zusammen und gibt einen Ausblick auf zukünftige Forschung.
+
+
+
+# Literatur {#sec-literatur}
+
+<!-- SCHREIBHILFE: Literaturüberblick
+     - Quellen thematisch oder methodisch gruppieren, nicht chronologisch.
+     - Nicht nur zusammenfassen — Ansätze vergleichen, Stärken und Schwächen
+       aufzeigen und die Lücke identifizieren, die Ihre Arbeit füllt.
+     - Jede zitierte Arbeit sollte einen Bezug zu Ihrer Forschungsfrage haben.
+     - Am Ende überleiten zum eigenen Beitrag: Was bleibt ungelöst?
+     - [@key] für Klammerzitate und @key für narrative Zitate verwenden. -->
+
+Das Tourenplanungsproblem wird seit der grundlegenden Arbeit von @dantzig1959truck umfassend untersucht. Im Laufe der Jahrzehnte wurden zahlreiche exakte und heuristische Ansätze vorgeschlagen [@toth2014vehicle].
+
+
+Spaltengenerierung hat sich als besonders effektive Technik zur Lösung großskaliger Touren- und Ablaufplanungsprobleme erwiesen [@desaulniers2005column]. Zudem werden seit einiger Zeit Methoden des maschinellen Lernens eingesetzt, um die Leistung von Heuristiken zu verbessern [@bengio2021machine].
+
+Ein umfassender Überblick über Lösungsmethoden geht über den Rahmen dieser Arbeit hinaus. Für eine detaillierte Darstellung sei auf @toth2014vehicle verwiesen.
+
+
+# Modell {#sec-modell}
+
+<!-- SCHREIBHILFE: Modell
+     Kurzen Überblick über den Modellierungsansatz geben, bevor Sie ins Detail
+     gehen. Aufteilen in Annahmen (was vereinfacht wird) und Formulierung
+     (die Mathematik). -->
+
+Dieser Abschnitt stellt das mathematische Modell für das oben beschriebene Problem vor. Zunächst werden die wesentlichen Annahmen erläutert, anschließend folgt die formale Formulierung.
+
+## Annahmen {#sec-annahmen}
+
+<!-- SCHREIBHILFE: Annahmen
+     - Jede Annahme muss begründet werden: Warum ist sie vertretbar?
+     - Einschränkungen benennen: Was würde sich ändern, wenn eine Annahme
+       gelockert wird?
+     - Von der grundlegendsten zur spezifischsten Annahme ordnen. -->
+
+Die Modellierung des Problems erfordert einige vereinfachende Annahmen:
+
+- Ein einzelnes Depot dient als Start- und Endpunkt für alle Fahrzeuge.
+- Jeder Kunde $i \in \mathcal{I}$ hat einen bekannten Bedarf $d_i$, der vollständig erfüllt werden muss.
+- Die Flotte besteht aus $K$ identischen Fahrzeugen mit jeweils der Kapazität $Q$.
+- Die Transportkosten $c_{ij}$ zwischen den Standorten $i$ und $j$ sind symmetrisch und erfüllen die Dreiecksungleichung.
+
+## Aufbau {#sec-aufbau}
+
+<!-- SCHREIBHILFE: Formulierung
+     - Alle Notation definieren, bevor sie verwendet wird (s. Notationstabelle).
+     - Konsistente Konventionen: Mengen = kalligraphisch ($\mathcal{J}$),
+       Variablen = Großbuchstaben ($X_j$), Parameter = Kleinbuchstaben ($b_i$).
+     - Jede Nebenbedingung muss im Text erläutert werden — nicht nur
+       Gleichungen auflisten.
+     - Nebenbedingungen per Label referenzieren:
+       "Nebenbedingung (@eq-zuweisung) stellt sicher..."
+     - Tabellenbeschriftung: ": Beschriftung {#tbl-label}" unter der Tabelle.
+     - Gleichungslabel: {#eq-label} direkt nach $$.
+
+     TIPPS ZUR TABELLENGESTALTUNG
+     - Pipe-Tabellen mit Booktabs-Formatierung verwenden (Quarto erledigt das).
+     - Zahlenspalten rechtsbündig, Textspalten linksbündig ausrichten.
+     - Einheiten in Spaltenüberschriften, nicht in jeder Zelle.
+     - Tabellen kompakt halten — unnötige Spalten vermeiden. -->
+
+Wir definieren die folgende Notation. Mengen haben kalligraphische Symbole wie z.B. $\mathcal{J}$. Für Variablen werden Großbuchstaben verwendet ($X_j$, $j \in \mathcal{J}$), wobei für Parameter und Indizes Kleinbuchstaben verwendet werden ($b_i$).
+
+| Symbol | Beschreibung |
+|:------:|:-------------|
+| $\mathcal{I}$ | Menge der Kunden |
+| $\mathcal{J}$ | Menge aller Standorte (Kunden und Depot) |
+| $K$ | Anzahl der Fahrzeuge |
+| $c_{ij}$ | Kosten von Standort $i$ nach $j$ |
+| $d_i$ | Bedarf des Kunden $i \in \mathcal{I}$ |
+| $Q$ | Fahrzeugkapazität |
+| $x_{ij}$ | 1 falls Fahrzeug von $i$ nach $j$ fährt |
+
+: Notation {#tbl-notation}
+
+
+Das Modell ist wie folgt definiert:
+
+$$
+\min \sum_{i \in \mathcal{J}} \sum_{j \in \mathcal{J}} c_{ij} \cdot x_{ij}
+$$ {#eq-zielfunktion}
+
+unter den Nebenbedingungen:
+
+$$
+\sum_{j \in \mathcal{J}} x_{ij} = 1 \quad \forall i \in \mathcal{I}
+$$ {#eq-zuweisung}
+
+$$
+\sum_{i \in \mathcal{J}} x_{ij} = 1 \quad \forall j \in \mathcal{I}
+$$ {#eq-fluss}
+
+$$
+x_{ij} \in \{0, 1\} \quad \forall i, j \in \mathcal{J}
+$$ {#eq-binaer}
+
+
+Die Zielfunktion (@eq-zielfunktion) minimiert die gesamten Transportkosten. @eq-zuweisung stellt sicher, dass jeder Kunde genau einmal besucht wird, während @eq-fluss die Flusserhaltung garantiert. @eq-binaer definiert die binären Entscheidungsvariablen. Die Notation ist in @tbl-notation zusammengefasst.
+
+
+# Rechenstudie {#sec-rechenstudie}
+
+<!-- SCHREIBHILFE: Rechenstudie
+     - Hardware (CPU, RAM), Software (Solver, Version) und Sprache angeben.
+     - Instanzquellen beschreiben oder erklären, wie Testdaten erzeugt wurden.
+     - Immer gegen eine Baseline, Benchmark oder exakte Lösung vergleichen.
+     - Sowohl Lösungsqualität (Gap, Zielfunktionswert) als auch Rechenzeit
+       berichten.
+     - Trends über Instanzgrößen hinweg diskutieren, nicht nur einzelne Zahlen
+       auflisten.
+     - Zeitlimits, Anzahl der Durchläufe oder andere experimentelle Parameter
+       erwähnen. -->
+
+Zur Bewertung des vorgeschlagenen Ansatzes führen wir eine Reihe von Rechenexperimenten durch. Alle Experimente wurden auf einem Rechner mit Intel Core i7 Prozessor und 16 GB RAM durchgeführt. Das Modell wurde in Python unter Verwendung von Gurobi 11.0 als Solver implementiert.
+
+| Instanz | $|\mathcal{I}|$ | Optimal | Heuristik | Gap (%) | Zeit (s) |
+|---------|:---------------:|--------:|----------:|--------:|---------:|
+| Klein-1 |       25        |   245,3 |     248,1 |    1,14 |      0,8 |
+| Klein-2 |       25        |   312,7 |     318,4 |    1,82 |      1,1 |
+| Mittel-1|       50        | 1.340,5 |   1.382,9 |    3,16 |     12,4 |
+| Mittel-2|       50        | 1.128,3 |   1.167,2 |    3,44 |     15,7 |
+| Groß-1  |      100        | 3.450,1 |   3.621,3 |    4,96 |    245,3 |
+| Groß-2  |      100        | 4.217,8 |   4.485,6 |    6,35 |    310,2 |
+
+: Rechenergebnisse im Vergleich von exakter und heuristischer Lösung {#tbl-ergebnisse}
+
+Die Ergebnisse in @tbl-ergebnisse zeigen, dass der heuristische Ansatz nahezu optimale Lösungen innerhalb vertretbarer Rechenzeiten findet. Für kleine Instanzen bleibt die Optimalitätslücke unter 2%, während sie für größere Instanzen auf etwa 5--6% ansteigt.
+
+
+# Diskussion {#sec-diskussion}
+
+<!-- SCHREIBHILFE: Diskussion
+     - Ergebnisse im Kontext der Forschungsfrage interpretieren.
+     - Ergebnisse mit bestehender Literatur vergleichen: Sind sie konsistent?
+       Wo unterscheiden sie sich, und warum?
+     - Limitationen ehrlich diskutieren — jede Studie hat welche.
+     - Beobachtung (die Daten zeigen X) von Interpretation (dies deutet auf Y
+       hin) unterscheiden.
+     - Unerwartete Ergebnisse ansprechen, nicht ignorieren.
+     - Keine völlig neuen Themen einführen. Neue Forschungsrichtungen
+       gehören in den Ausblick der Zusammenfassung. -->
+
+Die Ergebnisse deuten darauf hin, dass die vorgeschlagene Heuristik für kleine und mittlere Instanzen gut funktioniert, jedoch bei größeren Problemgrößen zunehmende Lücken aufweist. Dies ist konsistent mit den Beobachtungen von @toth2014vehicle, die ein ähnliches Skalierungsverhalten für konstruktive Heuristiken bei kapazitätsbeschränkten Tourenplanungsproblemen feststellten.
+
+Eine wesentliche Einschränkung dieser Studie ist die Verwendung symmetrischer Kostenmatrizen, die in realen Logistiknetzwerken mit Einbahnstraßen oder zeitabhängigen Fahrzeiten möglicherweise nicht zutreffen. Zudem wurden die Testinstanzen zufällig generiert und nicht aus realen Daten abgeleitet, was die Übertragbarkeit der Ergebnisse einschränkt.
+
+
+# Zusammenfassung und Ausblick {#sec-zusammenfassung}
+
+<!-- SCHREIBHILFE: Zusammenfassung
+     - Zusammenfassung (was wurde gemacht und gefunden) von Ausblick
+       (zukünftige Forschung) trennen.
+     - Keine neuen Ergebnisse oder Analysen hier einführen.
+     - Zukünftige Forschungsrichtungen sollten konkret und umsetzbar sein,
+       nicht vage ("weitere Forschung ist nötig").
+     - Nicht übertreiben: "deutet darauf hin" statt "beweist",
+       "legt nahe" statt "zeigt" — es sei denn, ein formaler Beweis liegt vor. -->
+
+Die vorliegende Arbeit hat ein mathematisches Modell und einen heuristischen Lösungsansatz für das Tourenplanungsproblem vorgestellt. Die Rechenstudie hat gezeigt, dass die vorgeschlagene Methode nahezu optimale Lösungen bei deutlich reduzierten Rechenzeiten im Vergleich zu exakten Methoden erzielt.
+
+Aus dieser Arbeit ergeben sich mehrere Richtungen für zukünftige Forschung. Erstens könnte das Modell um Zeitfenster und heterogene Flotten erweitert werden. Zweitens könnte die Heuristik durch Methoden des maschinellen Lernens verbessert werden. Schließlich würden Fallstudien aus der Praxis dazu beitragen, die praktische Anwendbarkeit des Ansatzes zu validieren.
+
+
+<!-- Literaturverzeichnis wird automatisch aus references.bib erzeugt -->
+
+{{< pagebreak >}}
+
+# Eidesstattliche Erklärung {.unnumbered}
+
+Ich versichere an Eides statt, dass ich die vorstehende Arbeit selbstständig und ohne fremde Hilfe angefertigt und mich anderer als der im beigefügten Verzeichnis angegebenen Hilfsmittel nicht bedient habe. Alle Stellen, die wörtlich oder sinngemäß aus Veröffentlichungen übernommen wurden, sind als solche kenntlich gemacht. Alle Internetquellen sind der Arbeit beigefügt. Des Weiteren versichere ich, dass ich die Arbeit vorher nicht in einem anderen Prüfungsverfahren eingereicht habe und dass die eingereichte schriftliche Fassung der auf dem elektronischen Speichermedium entspricht.
+
+```{=typst}
+#v(2cm)
+```
+
+Hamburg, den \_\_\_\_\_\_\_\_\_\_\_\_
+
+```{=typst}
+#v(0.5cm)
+```
+
+\_\_\_\_\_\_\_\_\_\_\_\_
+
+Vorname Nachname
+
+{{< pagebreak >}}
+
+# Verwendung von KI-Werkzeugen {.unnumbered}
+
+<!-- Geben Sie an, welche KI-Werkzeuge Sie verwendet haben und wie.
+     Seien Sie konkret: welches Tool, für welche Aufgaben, und wie Sie die Ergebnisse geprüft haben. -->
+
+<!-- Verwendete KI-Werkzeuge unten auflisten. Einträge nach Bedarf ergänzen oder entfernen.
+     Beschreiben Sie konkret, wofür jedes Tool eingesetzt wurde.
+     Beispiele:
+     - "ChatGPT: Verwendet zur Strukturierung des Literaturüberblicks"
+     - "Claude: Verwendet zum Debugging von Python-Code in der Rechenstudie"
+     - "GitHub Copilot: Verwendet zur Code-Vervollständigung in der Implementierung"
+     - "Grammarly: Verwendet zum Korrekturlesen und zur Verbesserung von Abschnitt 3"
+     Alle KI-generierten Inhalte müssen eigenständig geprüft, verifiziert und überarbeitet werden. -->
+
+Die folgenden KI-Werkzeuge wurden bei der Erstellung dieser Arbeit eingesetzt:
+
+- **Tool 1**: Verwendet für ... .
+- **Tool 2**: Verwendet für ... .
+- **Tool 3**: Verwendet für ... .
+
+```{=typst}
+#v(2cm)
+```
+
+Hamburg, den \_\_\_\_\_\_\_\_\_\_\_\_
+
+```{=typst}
+#v(0.5cm)
+```
+
+Vorname Nachname
