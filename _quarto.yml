@@ -12,6 +12,13 @@ project:
     - general/templates.qmd
     - general/literature.qmd
     - general/privacy.qmd
+  resources:
+    - templates/seminar-paper-en.qmd
+    - templates/seminar-paper-de.qmd
+    - templates/Vorlage.tex
+    - templates/references.bib
+    - templates/typst-show.typ
+    - templates/images/Image.pdf
   post-render:
     - helpers/convert_qmd_to_md.py
 

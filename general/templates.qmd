@@ -18,6 +18,9 @@ code-links:
   - text: Typst Helper
     icon: gear
     href: ../templates/typst-show.typ
+  - text: Example Figure
+    icon: file-earmark-image
+    href: ../templates/images/Image.pdf
 ---
 
 # Types of Academic Work
@@ -87,18 +90,19 @@ Download the files using the buttons in the sidebar.
 
 # Setting Up the Quarto Templates
 
-You need three files in the same folder:
+Pick **one** language version of the `.qmd` file. Place it together with `references.bib` and `typst-show.typ` in your project folder, and create an `images/` subfolder for the example figure:
 
-| File | Purpose |
-|------|---------|
-| `seminar-paper-en.qmd` (or `-de.qmd`) | Your paper (edit this) |
-| `references.bib` | Your bibliography entries |
-| `typst-show.typ` | Required helper (do not delete) |
+| File | Location | Purpose |
+|------|----------|---------|
+| `seminar-paper-en.qmd` *or* `seminar-paper-de.qmd` | project folder | Your paper (edit this) — download only the language you need |
+| `references.bib` | project folder | Your bibliography entries |
+| `typst-show.typ` | project folder | Required helper for the custom title page |
+| `Image.pdf` | `images/` subfolder | Example figure referenced by the template |
 
 : Required files {#tbl-files}
 
-:::{.callout-warning}
-The `typst-show.typ` file is required for the custom title page to work. Keep it in the same folder as your `.qmd` file.
+:::{.callout-important}
+You must create an `images/` subfolder yourself and place `Image.pdf` inside it. The template references `images/Image.pdf` as a placeholder figure, so rendering will fail until both the folder and the file are in place. Use the same `images/` folder for your own figures, and do not delete `typst-show.typ` — it is required for the custom title page.
 :::
 
 ## What the templates include
@@ -150,15 +154,19 @@ quarto preview seminar-paper-en.qmd
 
 # Setting Up the LaTeX Template
 
-For the LaTeX template (`Vorlage.tex`), you need:
+For the LaTeX template, download `Vorlage.tex` together with `references.bib`, and create an `images/` subfolder for the example figure:
 
-| File | Purpose |
-|------|---------|
-| `Vorlage.tex` | Your paper (edit this) |
-| `references.bib` | Your bibliography entries |
-| `images/` folder | Place your figures here |
+| File | Location | Purpose |
+|------|----------|---------|
+| `Vorlage.tex` | project folder | Your paper (edit this) |
+| `references.bib` | project folder | Your bibliography entries |
+| `Image.pdf` | `images/` subfolder | Example figure referenced by the template |
 
 : Required files for LaTeX {#tbl-files-latex}
+
+:::{.callout-important}
+As with the Quarto templates, you must create an `images/` subfolder yourself and place `Image.pdf` inside it. The template references `images/Image.pdf`, so compilation will fail until both the folder and the file are in place. The Quarto `typst-show.typ` helper is **not** needed for the LaTeX path.
+:::
 
 Compile with the standard LaTeX toolchain:
 
