@@ -70,6 +70,7 @@ website:
         href: general/privacy.qmd
 
 format:
+  hugo-md: default
   html:
     theme:
       - default

@@ -1,0 +1,30 @@
+---
+title: Scientific Writing at the Institute of Logistics, Transport and Production
+subtitle: University of Hamburg
+---
+
+
+# About
+
+If you are writing a seminar paper, bachelor thesis, or master thesis at our institute, this site is for you. It covers everything from structuring your argument and finding literature to setting up version control and formatting your paper, so you can focus on the research itself. The material is organized as a learning journey. Start with what makes good scientific writing, then work through the topics in order. Each page is self-contained and takes about 30 minutes, so you can also jump to whatever you need right now.
+
+# Topics
+
+- **[Scientific Writing](general/scientific-writing.qmd):** How to structure a paper (introduction, literature review, model, computational study, discussion, conclusion), write clearly, present results, avoid plagiarism, and a checklist of common mistakes before submission.
+- **[Literature Research](workshops/literature-research.qmd):** Finding, evaluating, and organizing academic sources. Covers Google Scholar, specialized databases, Boolean search strings, snowballing, AI discovery tools (Semantic Scholar, Connected Papers, Elicit), and a Zotero workflow for reference management.
+- **[AI Prompting](workshops/prompting.qmd):** Getting useful results from AI instead of generic ones. Introduces the RBTF framework (Role, Background, Task, Format) and shows how to iterate on responses with before-and-after examples from real research tasks.
+- **[Git & GitHub](workshops/git-github.qmd):** Version control for your thesis project. Track changes with Git, organize your project folder, use Zed's Git panel for daily work, and push to GitHub as a backup. Also covers `.gitignore` and branching.
+- **[Working with AI](workshops/large-language-models.qmd):** How large language models work and how to pick the right tool. Covers models, apps, and harnesses, then walks through the coding tools: Zed, GitHub Copilot, OpenCode, and Claude Code.
+- **[Quarto for Academic Writing](workshops/quarto-academic-writing.qmd):** Write your paper in Markdown instead of LaTeX or Word. Covers headings, figures, tables, math, BibTeX citations, cross-references, Typst formatting, and PDF output.
+
+# Templates
+
+The [Templates](general/templates.qmd) page has everything you need to get started: thesis types and expectations, evaluation criteria, supervisor guidance, and downloadable templates in German and English. The templates use Quarto and Typst (no LaTeX installation needed). A LaTeX template is also available.
+
+# Resources
+
+A curated list of tools, LLMs, databases, and further reading is on the [Resources](general/literature.qmd) page. If your thesis involves optimization modeling, see the [Optimization with Julia](https://beyondsimulations.github.io/Optimization-with-Julia/) course.
+
+# Questions
+
+If you have questions, contact me at [tobias.vlcek@uni-hamburg.de](mailto:tobias.vlcek@uni-hamburg.de?subject=Seminar%20Preparation%3A%20%3CYour%20subject%3E).

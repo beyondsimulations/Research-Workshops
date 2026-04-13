@@ -1,0 +1,215 @@
+---
+title: Scientific Writing
+subtitle: How to structure and write your seminar paper or thesis
+author: Dr. Tobias Vlćek
+---
+
+
+This guide covers the craft of academic writing: how to structure your paper, write clearly, present results, and avoid common mistakes. For thesis types, evaluation criteria, supervisor guidance, and template downloads, see the [Templates](templates.qmd) page.
+
+# Structure of a Paper
+
+A typical paper or thesis in operations research follows a standard structure. Readers expect information in a specific order, and deviating without good reason will confuse them.
+
+The structure should be systematic and balanced. Each subsection must logically connect to the next, and the overall outline should be driven by your research question. A subsection that has no sibling (section 2.1 without a 2.2) signals a structural problem. Subsections shorter than half a page are usually better merged with something else.
+
+## Introduction
+
+The introduction establishes why your work matters and what it sets out to do. Think of it as a funnel: start broad, then narrow down.
+
+1.  Broad context: why does this field matter? What is the practical relevance?
+2.  Specific problem: what is the concrete challenge you address?
+3.  Research gap: what is missing in the existing literature?
+4.  Your contribution: what does this paper do? One or two sentences.
+5.  Paper outline: briefly describe the structure of the remaining sections.
+
+### Formulating the research question
+
+The research question determines everything: structure, method, and how your work will be evaluated. A vague question leads to vague results.
+
+Analytical questions work better than purely descriptive ones. "What methods exist for solving the VRP?" is descriptive and barely requires original thought. "How does the proposed heuristic compare to exact methods in terms of solution quality and runtime?" is analytical and gives you something concrete to answer.
+
+Be precise. A common mistake is choosing a question that is too ambitious for the available time. If you cannot answer it within your timeline, narrow the scope. And keep the question visible as you write. Every section should connect back to it. I see many students who lose sight of their question halfway through and end up answering something else entirely by the conclusion.
+
+> **Tip**
+>
+> Write the introduction last, once you actually know your contribution.
+
+## Literature Review
+
+The literature review is not a list of summaries. It should build an argument for why your work is needed.
+
+Group sources by theme or method, not chronologically. Exact methods in one block, heuristics in another, machine-learning approaches in a third. Compare and contrast the approaches: don't just state what each paper does, but how they relate to each other and where they fall short. Every cited paper should connect to your research question. End the section with a transition to your own contribution: what remains unsolved?
+
+### Source quality
+
+Not all sources carry equal weight. Textbook knowledge is assumed and should not be reproduced. Use journal articles, conference proceedings, and dissertations. Check source currency: are you citing recent developments, or only papers from 10+ years ago? A good review includes both foundational work and recent contributions.
+
+Use journal rankings (e.g., VHB-JOURQUAL for business research) to assess source quality. And cite critically. Don't just reference a paper; engage with its methods, findings, and limitations. Show that you have actually read it.
+
+> **Warning**
+>
+> Knowledge of publications by your supervisor's research group on your topic is expected. Check their publication list before you begin.
+
+For a seminar paper, a focused review of 10--15 key sources is usually sufficient. A master thesis should cover 40--60 sources and demonstrate that you have read the field comprehensively. The [Literature Research](../workshops/literature-research.qmd) workshop covers how to find, evaluate, and organize your sources systematically.
+
+## Model
+
+### Assumptions
+
+Every model relies on simplifying assumptions. For each assumption, justify why it is reasonable for your specific problem, acknowledge what would change if it were relaxed, and order assumptions from the most fundamental to the most specific.
+
+### Formulation
+
+Define all notation before using it. The templates include a notation table for this purpose. Follow consistent conventions throughout: sets in calligraphic letters ($\mathcal{J}$), decision variables in uppercase ($X_j$), parameters in lowercase ($b_i$).
+
+Every constraint must be explained in prose. A wall of equations without commentary is unreadable. Reference constraints by their labels when discussing them, for example: "Constraint (2) ensures that each customer is visited exactly once."
+
+## Computational Study
+
+A computational study must be reproducible. Report the hardware (CPU, RAM), the software (solver name and version, programming language), where the test data comes from or how you generated it, and what baselines you compare against (a benchmark, exact solution, or published results). Report both solution quality (optimality gap, objective value) and computation time, and discuss how performance changes across instance sizes rather than just listing individual numbers.
+
+### Methodology quality
+
+Reflect on the quality of your research design. Does your method actually measure what you claim it measures (validity)? Would repeating the experiment produce the same results (reliability)? Are your test instances representative of the broader problem class (representativity)?
+
+Present results descriptively first (what did you observe?), then analytically (what does this mean in relation to your research question?).
+
+## Presenting Results: Figures and Tables
+
+Use a table when the reader needs exact numbers, such as benchmark results. Use a figure when the reader needs to see patterns or trends, such as how runtime scales with problem size. Don't present the same data in both formats.
+
+### Chart types
+
+<div id="tbl-chart-types">
+
+| Data type | Good choice | Avoid |
+|:-----------------------|:-----------------------|:-----------------------|
+| Comparison across categories | Bar chart | Pie chart (hard to compare slices) |
+| Trend over time or instances | Line chart | Bar chart (loses the trend) |
+| Distribution | Histogram, box plot | Bar chart of means (hides variance) |
+| Relationship between two variables | Scatter plot |  |
+| Performance across many instances | Box plot, violin plot | Table with 50+ rows |
+
+Table 1: Chart type selection guide
+</div>
+
+### Figure design
+
+Label every axis with units. Use consistent colors across all figures: if Method A is blue in Figure 1, keep it blue everywhere. Remove gridlines, background shading, 3D effects, and any decorative elements that don't encode data. Make figures readable in grayscale (not everyone prints in color) by using line styles or markers in addition to colors, and avoid red-green combinations. The *viridis* and *cividis* palettes are safe for colorblind readers. For computational studies, plotting the optimality gap or computation time on a log scale often reveals patterns that are invisible on a linear scale.
+
+### Table design
+
+Use booktabs style: horizontal rules only (`\toprule`, `\midrule`, `\bottomrule`), no vertical lines. Right-align numeric columns, left-align text columns, and put units in column headers rather than repeating them in every cell. Keep tables compact by removing unnecessary columns. Every table needs a caption and must be referenced in the text.
+
+## Discussion
+
+The discussion is where you interpret your results and put them into context. It is distinct from the computational study (which presents the results) and the conclusion (which summarizes).
+
+Connect your results to the research question you posed in the introduction. Do your findings answer it? If only partially, say so explicitly. Compare with existing literature: are your results consistent with prior work? Where do they differ, and why? If something did not work as expected, analyze why rather than skipping over it. Unexpected results often contain the most interesting insights.
+
+Address limitations honestly. Every study has them, and discussing how they affect the interpretation of your results shows that you understand your own work. Hiding limitations does not make them invisible to your examiner. Also be careful to distinguish observation from interpretation. "The heuristic found solutions within 5% of the optimum for all small instances" is an observation. "This suggests the heuristic is suitable for small-scale applications" is an interpretation. Both belong in the discussion, but don't conflate the two.
+
+> **Important**
+>
+> Do not introduce entirely new topics in the discussion. Reflect on what you have already presented. New directions belong in the conclusion's outlook section.
+
+## Conclusion
+
+Separate summary from outlook. First state what you did and found, then suggest directions for future research. Don't introduce new results here; the conclusion synthesizes, it does not analyze. Future research directions should be concrete: not "further research is needed" but "extending the model to include time windows would allow applications in last-mile delivery." Use "suggests" rather than "proves," and "indicates" rather than "demonstrates," unless you provide formal proof. The conclusion should refer back to the research question from the introduction. Can you answer it? If not fully, explain what remains open.
+
+# Academic Language and Style
+
+Scientific writing is not literary writing. The goal is clarity and precision.
+
+## Precision and objectivity
+
+Choose exact terms over vague ones. "Several studies" is better than "a lot of studies." A specific year is better than "recently." Avoid value judgments ("this excellent method") and emotional language ("unfortunately"). Let the evidence speak for itself. Use the same term for the same concept throughout your paper. If you call it "optimality gap" on page three, don't switch to "solution quality deviation" on page eight. Readers will wonder whether you mean something different.
+
+Define technical terms on first use if they are not standard in the field. Cut filler words like "basically," "actually," "of course," and "it is important to note that," which add length without adding meaning. Use inclusive language and avoid discriminatory formulations.
+
+## Paragraph structure
+
+Each paragraph should contain one main idea. Start with a topic sentence that states the point, follow with evidence or reasoning, and close with a sentence that connects to the next paragraph or back to the research question.
+
+A paragraph covering multiple unrelated ideas should be split. A paragraph consisting of only one sentence is too short.
+
+## Proofreading
+
+Read your paper aloud before submission. Listen for awkward phrasing, overly long sentences, and words that can be removed without changing the meaning. If a sentence runs longer than three lines, split it. In my experience, clear writing usually means the author actually understands the material. Muddled writing usually means they don't.
+
+# Plagiarism, Ethics, and AI
+
+## Plagiarism
+
+All content taken verbatim or paraphrased from another source must be cited. Failing to do so is plagiarism, which the university treats as a serious academic offense that can lead to a failing grade or further disciplinary action.
+
+Direct quotes must be in quotation marks with an exact citation, including the page number. Paraphrased content must be cited even when you use your own words. Self-plagiarism (reusing your own prior work without attribution) is also not permitted. Content from Wikipedia, other students' papers, or online forums without citation counts as plagiarism. Universities use specialized software to detect it.
+
+## Research ethics
+
+Plagiarism is not the only integrity issue. Inventing data or results is wrong, it does not matter how plausible the fabricated numbers look. Negative results are a legitimate scientific contribution; making up positive ones is not. Selective reporting is wrong as well: presenting only the runs where your method worked well, while quietly dropping the ones where it didn't. The same goes for cherry-picking metrics, instances, or parameter settings that make your approach look better than it is. If you tried 20 configurations and only report the best one, say so explicitly.
+
+Citing a paper for a claim it doesn't actually make, or citing it without having read it, is also misconduct. Supervisors and examiners who know the field will usually notice. If your method doesn't outperform the baseline, that is a valid finding. Write it up honestly and discuss why.
+
+## Using AI tools
+
+AI tools (ChatGPT, Claude, GitHub Copilot, Grammarly, and similar) may be used during your work. They can help with brainstorming, debugging code, checking grammar, or exploring ideas. But using them well requires more judgment than most people assume.
+
+### Declare everything
+
+You must declare all AI tool usage in the AI tools section of your paper. The templates include this section; see the [Templates](templates.qmd) page for how to fill it in. Be specific about which tool you used and for what. Undeclared use of AI-generated text is treated the same as any other uncited source.
+
+### Editing vs. generating
+
+There is a real difference between using AI to improve text you wrote yourself and using AI to produce text you hadn't thought of. Fixing the grammar in a paragraph you drafted, or rephrasing an awkward sentence, is closer to using a spell-checker. You remain the author; the idea is yours, and the tool cleaned up the expression.
+
+Using AI to generate an argument, write a literature review section, or produce a model formulation is a different thing entirely. You need to fully understand the output, verify every claim against the actual sources, and be able to explain the reasoning as if you had developed it yourself. If you cannot do that, the text should not be in your paper.
+
+### Why this matters more for you than for an experienced researcher
+
+Someone who has spent years in a field can read AI output and immediately spot what is wrong, what is oversimplified, and what is subtly off. They have the disciplinary judgment to tell useful output from plausible nonsense.
+
+You are still building that judgment. That is not a failing on your part; acquiring it is the whole point of writing a thesis. But it means that AI output is riskier for you than for someone with two decades of experience. The output looks polished and confident, which makes it harder to question than a rough draft from a classmate. Studies on how students use AI tools consistently find that students tend to trust AI output even when they notice errors, because it sounds authoritative and arrives instantly. This tendency, sometimes called automation bias, is worth knowing about so you can watch for it in yourself.
+
+### Writing fast is not the same as understanding
+
+AI can help you produce text at a speed that far outpaces your ability to think through the ideas behind it. If you find yourself generating pages of content in minutes, stop and ask whether you actually understand what is on the screen, or whether you are assembling text you haven't fully thought through. The purpose of a thesis is not to produce a document. It is to show that you can work through a problem, engage with existing research, and arrive at a conclusion you can defend. Much of that thinking happens during the writing process itself. Outsource the writing, and you risk outsourcing the thinking with it.
+
+You are the author of your paper, not the AI. You are responsible for every claim and every citation. If an AI tool produces an incorrect reference, a flawed argument, or a misleading result and you include it, that is your mistake.
+
+> **Important**
+>
+> If you cannot explain and defend every sentence in your paper during a discussion with your supervisor, it should not be in there, regardless of who or what wrote it.
+
+# Common Mistakes
+
+> **Checklist before submission**
+>
+> - [ ] Every figure and table is referenced in the text before it appears
+> - [ ] Sentences never start with a math symbol ("The variable $x$..." not "$x$ is...")
+> - [ ] Notation is consistent throughout
+> - [ ] No orphan sections (a single subsection under a section)
+> - [ ] Each section is at least one page long
+> - [ ] Acronyms are defined on first use
+> - [ ] No Wikipedia or lecture slides in the bibliography
+> - [ ] En-dashes for ranges (pages 5--10), not hyphens
+> - [ ] Numbers one through twelve spelled out in running text
+> - [ ] Units have a thin space: 16 GB, 245 s
+> - [ ] Figures are readable in grayscale with colorblind-safe colors
+> - [ ] All figures have axis labels with units
+> - [ ] The research question from the introduction is answered in the conclusion
+> - [ ] The paper has been proofread by reading it aloud
+
+# Further Reading
+
+These resources go deeper into scientific writing at the University of Hamburg:
+
+- [Wie schreibe ich wissenschaftlich?](https://studienperspektiven.check.uni-hamburg.de/wie-schreibe-ich-wissenschaftlich/) (University of Hamburg, StudienPerspektivTage): an introduction to the principles of academic writing, with links to writing center workshops and individual consultations.
+- [Leitfaden zur Anfertigung von Seminar-, Bachelor- und Masterarbeiten](https://www.bwl.uni-hamburg.de/stman/fotos-dateien/hinweise-wiss-arbeiten-01-26.pdf) (Prof. Dr. Nicola Berg, Strategic Management): a detailed guide covering evaluation criteria, structure, formal requirements, and citation rules at the Faculty of Business Administration.
+
+# Next Steps
+
+- Download a template and set up your project on the [Templates](templates.qmd) page.
+- Learn how to find and organize literature in the [Literature Research](../workshops/literature-research.qmd) workshop.
+- Learn the formatting syntax (Markdown, citations, equations) in the [Quarto](../workshops/quarto-academic-writing.qmd) workshop.

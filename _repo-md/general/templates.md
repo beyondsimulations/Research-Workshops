@@ -1,0 +1,203 @@
+---
+title: Templates
+subtitle: Getting started with your seminar paper or thesis
+author: Dr. Tobias Vlćek
+code-links:
+  - text: Template (English)
+    icon: file-earmark-text
+    href: ../templates/seminar-paper-en.qmd
+  - text: Template (German)
+    icon: file-earmark-text
+    href: ../templates/seminar-paper-de.qmd
+  - text: Template (LaTeX)
+    icon: file-earmark-code
+    href: ../templates/Vorlage.tex
+  - text: Bibliography
+    icon: journal-bookmark
+    href: ../templates/references.bib
+  - text: Typst Helper
+    icon: gear
+    href: ../templates/typst-show.typ
+  - text: Example Figure
+    icon: file-earmark-image
+    href: ../templates/images/Image.pdf
+---
+
+
+# Types of Academic Work
+
+The Institute of Logistics, Transport and Production supervises three types of academic work. The structure is similar across all three, but they differ in scope and depth.
+
+<div id="tbl-thesis-types">
+
+|  | Seminar Paper | Bachelor Thesis | Master Thesis |
+|:-----------------|:-----------------|:-----------------|:-----------------|
+| **Length** | 14--16 pages | 26--40 pages | 38--50 pages |
+| **Literature review** | Focused overview | Comprehensive | Exhaustive, with clear gap analysis |
+| **Own contribution** | Reproduce or extend an existing approach | Apply a method to a new problem or dataset | Develop or significantly extend a method |
+| **Computational study** | Small-scale | Expected | Required (thorough, with benchmarks) |
+| **Timeline** | 4 months | Depends | 6 months |
+
+Table 1: Comparison of academic work types
+</div>
+
+These are general guidelines. Your supervisor may set different expectations, so clarify the scope early.
+
+# Evaluation Criteria
+
+Your work will be graded on these criteria. Keep them visible from day one, not just before submission.
+
+<div id="tbl-criteria">
+
+| Category | What is evaluated |
+|:------------------------|:-----------------------------------------------|
+| Problem statement & objective | Practical and theoretical relevance, clarity of the research question |
+| Structure | Systematic organization, balanced sections, logical flow |
+| Content | Breadth and depth, connection to the research question, stringency of argumentation, originality |
+| Methodology | Appropriateness of the chosen method, traceability, quality (validity, reliability) |
+| Literature | Specificity and currency of sources, critical engagement, depth of reception |
+| Form & style | Comprehensibility, precision, figures and tables, error-free text, consistency |
+
+Table 2: Evaluation criteria for academic work
+</div>
+
+The criteria are adapted from the University of Hamburg's guidelines for academic work at the Faculty of Business Administration.
+
+# Working with Your Supervisor
+
+Talk to your supervisor before you start writing. Not after.
+
+Discuss the scope, methodology, and timeline in your first meeting. Ask about specific requirements for your thesis type. Before you invest weeks of writing, submit a short exposé (one page for a bachelor thesis, one to two pages for a master thesis) outlining the problem, your research question, the planned methodology, and expected contributions. Your supervisor will give feedback on whether you are heading in a reasonable direction.
+
+If you are unsure about whether a method is appropriate, ask. Adjusting your approach in week two costs you an afternoon. Discovering the problem during the final review costs you much more.
+
+Revisit your research question regularly. Many students lose sight of it mid-way through and end up answering a different question by the conclusion. If your work drifts, discuss with your supervisor whether to adjust the question or refocus.
+
+> **Tip**
+>
+> Check the evaluation criteria in <a href="#tbl-criteria" class="quarto-xref">Table 2</a> periodically as you write. If a criterion is clearly not being met, address it early rather than hoping it won't be noticed.
+
+# Choosing a Template
+
+We provide ready-to-use templates for seminar papers, bachelor theses, and master theses. The recommended option is Quarto with Typst, which produces professional PDFs without a LaTeX installation. A traditional LaTeX template is also available.
+
+<div id="tbl-templates">
+
+| Template | Language | Format | Requirements |
+|------------------|------------------|---------------|-----------------------|
+| `seminar-paper-en.qmd` | English | Quarto/Typst | [Quarto](https://quarto.org/docs/get-started/) installed |
+| `seminar-paper-de.qmd` | German | Quarto/Typst | [Quarto](https://quarto.org/docs/get-started/) installed |
+| `Vorlage.tex` | German | LaTeX | LaTeX distribution + Biber |
+
+Table 3: Available templates
+</div>
+
+Download the files using the buttons in the sidebar.
+
+# Setting Up the Quarto Templates
+
+Pick **one** language version of the `.qmd` file. Place it together with `references.bib` and `typst-show.typ` in your project folder, and create an `images/` subfolder for the example figure:
+
+<div id="tbl-files">
+
+| File | Location | Purpose |
+|------------------|-----------------------------|--------------------------|
+| `seminar-paper-en.qmd` *or* `seminar-paper-de.qmd` | project folder | Your paper (edit this) --- download only the language you need |
+| `references.bib` | project folder | Your bibliography entries |
+| `typst-show.typ` | project folder | Required helper for the custom title page |
+| `Image.pdf` | `images/` subfolder | Example figure referenced by the template |
+
+Table 4: Required files
+</div>
+
+> **Important**
+>
+> You must create an `images/` subfolder yourself and place `Image.pdf` inside it. The template references `images/Image.pdf` as a placeholder figure, so rendering will fail until both the folder and the file are in place. Use the same `images/` folder for your own figures, and do not delete `typst-show.typ` --- it is required for the custom title page.
+
+## What the templates include
+
+- Custom UHH title page with university name, faculty, institute, thesis type, supervisor, and your details, all pre-formatted
+- Correct margins and formatting (40/25/30/20mm, 11pt, 1.5 line spacing) matching UHH requirements
+- Table of contents, list of figures, and list of tables, generated automatically
+- List of abbreviations and list of symbols, pre-filled with examples
+- Citation setup with APA style using `[@key]` syntax
+- Booktabs-style tables with horizontal rules only
+- Example content with sample sections, figures, tables, equations, and cross-references
+- Declaration of authorship formatted according to university guidelines
+- AI tools declaration section
+
+# Editing the Title Page
+
+The title page is defined in Typst code inside the YAML header. Look for the `// ←` markers to find the fields you need to change:
+
+``` yaml
+# In include-before-body, look for lines like:
+#text(...)[Title of the Thesis]  // ← your title
+*Last Name, First Name*          // ← your name
+Matriculation No.: XXXXXXX       // ← your number
+Prof. Dr. Knut Haase             // ← your supervisor
+```
+
+The rest of the YAML controls formatting and should not need changes.
+
+# Rendering
+
+Render your document from the terminal:
+
+``` bash
+quarto render seminar-paper-en.qmd
+```
+
+Or use live preview while writing:
+
+``` bash
+quarto preview seminar-paper-en.qmd
+```
+
+> **Tip**
+>
+> `quarto preview` opens a browser window that automatically refreshes every time you save the file.
+
+# Setting Up the LaTeX Template
+
+For the LaTeX template, download `Vorlage.tex` together with `references.bib`, and create an `images/` subfolder for the example figure:
+
+<div id="tbl-files-latex">
+
+| File | Location | Purpose |
+|------------------|-----------------------------|--------------------------|
+| `Vorlage.tex` | project folder | Your paper (edit this) |
+| `references.bib` | project folder | Your bibliography entries |
+| `Image.pdf` | `images/` subfolder | Example figure referenced by the template |
+
+Table 5: Required files for LaTeX
+</div>
+
+> **Important**
+>
+> As with the Quarto templates, you must create an `images/` subfolder yourself and place `Image.pdf` inside it. The template references `images/Image.pdf`, so compilation will fail until both the folder and the file are in place. The Quarto `typst-show.typ` helper is **not** needed for the LaTeX path.
+
+Compile with the standard LaTeX toolchain:
+
+``` bash
+pdflatex Vorlage.tex
+biber Vorlage
+pdflatex Vorlage.tex
+pdflatex Vorlage.tex
+```
+
+Look for `#############` markers in the file to find the fields you need to change (name, title, matriculation number, etc.).
+
+# AI Tools Declaration
+
+Both templates include a required section for documenting your use of AI tools. Fill it in honestly and specifically. For each tool, describe which tool you used, for which tasks, and how you verified the output.
+
+> **Important**
+>
+> All AI-generated content must be reviewed, verified, and revised by you. You are responsible for the correctness of everything in your paper.
+
+# Next Steps
+
+- Read the [Scientific Writing](scientific-writing.qmd) guide for paper structure, academic language, and common mistakes.
+- See the [Quarto workshop](../workshops/quarto-academic-writing.qmd) to learn the formatting syntax (citations, cross-references, equations, figures, tables).
+- Set up [Zotero](https://www.zotero.org/) for reference management (covered in the [Literature Research](../workshops/literature-research.qmd) workshop).

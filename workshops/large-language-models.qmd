@@ -2,9 +2,6 @@
 title: "Working with AI"
 subtitle: "How LLMs work and which coding tools to use"
 author: "Dr. Tobias Vlćek"
-format:
-  html:
-    output-file: large-language-models-page.html
 ---
 
 # [LLM Fundamentals]{.flow}

@@ -1,0 +1,347 @@
+---
+title: Working with AI
+subtitle: How LLMs work and which coding tools to use
+author: Dr. Tobias Vlćek
+---
+
+
+# <span class="flow">LLM Fundamentals</span>
+
+## Welcome!
+
+This workshop covers <span class="highlight">AI Programming & Large Language Models</span>. You have likely already used LLMs such as ChatGPT, Claude, Gemini, and others. By the end of this workshop, you will understand:
+
+- How LLMs work at a conceptual level
+- The difference between models, apps, and harnesses
+- Which AI coding tools to use and how to get started
+
+## What is an LLM?
+
+Think of LLMs as <span class="highlight">advanced pattern recognition systems</span>. They have "read" **massive amounts of text** from the internet, books, and code, and based on those patterns, they can **generate new text**.
+
+What they really do is <span class="highlight">predict the next token</span>, like an incredibly advanced version of **autocomplete on your phone**. But they cannot truly "think" or "understand" like humans.
+
+> **Tip**
+>
+> Despite their limitations, LLMs are genuinely useful for coding, writing, research, and analysis.
+
+## How LLMs work
+
+Modern LLMs use the <span class="highlight">Transformer architecture</span>, introduced in "[Attention is All You Need](https://arxiv.org/abs/1706.03762)" (Vaswani et al., 2017).
+
+**The process (simplified):**
+
+1.  **Tokenization:** Text is split into *tokens*, meaning not whole words but subwords like "un-", "break", "-able". This lets the model handle words it has never seen before.
+2.  **Relationship mapping:** The model builds a mathematical representation of how these tokens relate to each other
+3.  **Attention mechanism:** The model focuses on the <span class="highlight">most relevant parts</span> of the input to generate each output token
+
+> **Note**
+>
+> "The cat sat on the mat because **it** was warm." Attention helps the model understand that "it" refers to "the mat," not "the cat."
+
+> **Tip**
+>
+> You can explore how text is tokenized at [platform.openai.com/tokenizer](https://platform.openai.com/tokenizer).
+
+## Context windows
+
+The <span class="highlight">context window</span> is the number of tokens an LLM can process at once. Think of it as the model's **short-term memory**.
+
+**Larger context window:**
+
+- "Remembers" more of the conversation
+- More coherent responses
+- More computational cost
+
+**Smaller context window:**
+
+- Faster processing
+- May lose track of earlier parts
+- Less expensive to run
+
+**How to manage context well:**
+
+Break problems into manageable chunks rather than dumping everything at once, and be specific about which files or functions you need help with. When you switch topics, start a fresh conversation so stale context does not confuse the model. Providing relevant context upfront, instead of expecting the model to guess, consistently leads to better results.
+
+> **Tip**
+>
+> Think of context like a desk: keep only what you need for the current task on it, and clear it when you move to the next task.
+
+## How LLMs are trained
+
+Training an LLM happens in <span class="highlight">three phases</span>:
+
+**1. Self-supervised learning (pre-training)**
+
+- Trained on massive text datasets **without explicit labels**
+- Learns to predict the next token, picking up grammar, facts, and patterns
+
+**2. Supervised fine-tuning**
+
+- Trained on smaller, **curated datasets** for specific tasks
+- Makes the model better at following instructions
+
+**3. Reinforcement learning from human feedback (RLHF)**
+
+- Human evaluators **rank model outputs** by quality
+- Model learns to produce responses that are more helpful, honest, and harmless
+
+## What LLMs get wrong
+
+LLMs have several important limitations to be aware of:
+
+- <span class="highlight">Unreliable output</span>: LLMs can confidently generate **incorrect information** (hallucinations), and because their training data contains biases, those biases can surface in their responses, sometimes in subtle ways you will not catch without careful review.
+- **No true understanding**: What looks like reasoning is pattern matching on training data, not thinking from first principles. Models also only know what they were trained on, so anything after their knowledge cutoff is simply absent.
+- **Inconsistent behavior**: Small changes in wording can produce very different results. Models can also [drift persona](https://www.understandingai.org/p/the-many-masks-that-llms-wear) mid-conversation. Researchers have documented cases where fine-tuning on one task triggered unexpected behavior elsewhere, and long conversations can push a model away from its intended character entirely.
+- **Overconfident tone**: LLMs rarely signal uncertainty, so a wrong answer reads exactly like a correct one.
+
+> **Warning**
+>
+> A [2025 Anthropic study](https://www.anthropic.com/research/AI-assistance-coding-skills) found that developers using AI scored 17% lower on comprehension tests (roughly two letter grades), with the biggest gap in debugging. Leaning on AI for code generation without engaging with what it produces erodes the skills you need to catch its mistakes.
+
+# <span class="flow">Models, Apps & Harnesses</span>
+
+## A framework for understanding AI tools
+
+This framework is based on Ethan Mollick's work from "[One Useful Thing](https://www.oneusefulthing.org/)". There are three layers to understand:
+
+1.  **Models** = the underlying AI "brains"
+2.  **Apps** = the products you interact with
+3.  **Harnesses** = systems within apps that let the AI use tools and take action
+
+> **Important**
+>
+> The same model can produce <span class="highlight">very different results</span> depending on the harness it is placed in!
+
+## Models: The AI brains
+
+The **foundation model** is the core intelligence. Different providers have different strengths:
+
+| Provider  | Model               | Strength                        |
+|-----------|---------------------|---------------------------------|
+| OpenAI    | GPT-5.4             | General purpose, multimodal     |
+| Anthropic | Claude Opus/Sonnet  | Reasoning, coding, long context |
+| Google    | Gemini Pro          | Google integration, multimodal  |
+| Mistral   | Mistral Large       | Affordable, European provider   |
+| Meta      | Llama (open-source) | Local deployment, customizable  |
+
+This changes fast. <span class="highlight">New models appear every few months</span>.
+
+> **Warning**
+>
+> Free/default tiers often use **weaker models**. Always select the <span class="highlight">frontier or advanced model</span> when available, as the difference is noticeable.
+
+## Apps and harnesses
+
+Apps are <span class="highlight">how you access the models</span>.
+
+| App         | URL               | Provider  |
+|-------------|-------------------|-----------|
+| **ChatGPT** | chatgpt.com       | OpenAI    |
+| **Claude**  | claude.ai         | Anthropic |
+| **Gemini**  | gemini.google.com | Google    |
+| **Le Chat** | chat.mistral.ai   | Mistral   |
+
+All four offer free access to capable models, while paid tiers unlock stronger models and higher usage limits. Mistral offers an <span class="highlight">affordable student tier</span> with access to Mistral Vibe (not flawless, but acceptable).
+
+Every app also comes with a <span class="highlight">harness</span>, a system that gives the model **tools and capabilities**. Same model, different harness = **completely different results**.
+
+**Different apps, different harnesses:**
+
+- **Claude.ai** harnesses Claude with web search and code execution → a chat assistant
+- **Claude Code** harnesses the same Claude with file access, terminal, and testing → an autonomous coding agent
+- **Copilot in Zed** harnesses a model with your editor context → a pair programmer
+
+> **Tip**
+>
+> Pick the right app for the task! A chat app is great for brainstorming, but a coding agent is better for building features.
+
+## Why this framework matters
+
+<span class="question">Question</span>: Why does the same AI feel "smarter" in some tools than others?
+
+Because the <span class="highlight">harness</span> determines:
+
+- What **context** the model receives and what **tools** it can use (web search, file access, code execution)
+- How many **steps** it can take autonomously and how results are **presented** back to you
+
+Anthropic's own engineering team [showed this concretely](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents): the same model failed at complex coding tasks when given a bare prompt, but succeeded when wrapped in a harness with progress tracking, environment setup, and automated testing.
+
+> **Note**
+>
+> When someone says "AI can't do X," ask: which model, in which harness? The answer often changes with the right setup.
+
+# <span class="flow">AI Coding Tools</span>
+
+## Homebrew: Your package manager
+
+[Homebrew](https://brew.sh) is a <span class="highlight">package manager for macOS</span> that installs command-line tools and applications **with a single command**. We will use it to install all coding tools in this workshop.
+
+**Install Homebrew:**
+
+``` bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+**Then installing tools is as simple as:**
+
+``` bash
+brew install <tool-name>        # CLI tools
+brew install --cask <app-name>  # GUI applications
+```
+
+> **Tip**
+>
+> If you are not on macOS, download links are provided as alternatives for each tool.
+
+## Zed: A modern code editor
+
+Zed is the <span class="highlight">recommended IDE for this course</span> --- a modern, fast code editor **built in Rust** with a built-in AI assistant supporting **multiple model support**.
+
+**Features:**
+
+- Supports cloud models (Claude, GPT) and local models (Ollama)
+- Great for **pair programming** with AI
+- Free, **open-source**, and actively developed
+
+**How to install (macOS):**
+
+``` bash
+brew install --cask zed
+```
+
+For Linux or Windows, download from [zed.dev](https://zed.dev).
+
+> **Tip**
+>
+> Zed offers a <span class="highlight">free student tier</span> with unlimited edit predictions and **\$10/month in API credits** for one year. Sign up at [zed.dev/education](https://zed.dev/education) with your GitHub account and university email.
+
+## GitHub Copilot
+
+GitHub Copilot is an AI pair programmer <span class="highlight">integrated into editors</span> (VS Code, Zed, JetBrains). It is **free for students** via GitHub Student Developer Pack and provides **inline code completion** as you type.
+
+**How to get access:**
+
+1.  Go to [education.github.com/pack](https://education.github.com/pack)
+2.  Sign up with your **university email**
+3.  Verify your student status
+4.  Wait for approval (usually 1-2 days)
+
+> **Note**
+>
+> Copilot's code completion can also be activated in Zed if you prefer it over Zed's built-in completion.
+
+## Terminal-based AI tools
+
+Terminal-based coding assistants let you work with AI <span class="highlight">directly from the command line</span>, without leaving your editor or browser. Two options stand out:
+
+**OpenCode**
+
+- <span class="highlight">Open-source</span> terminal-based AI coding assistant
+- Supports **multiple AI providers** (bring your own API key)
+- Reads, edits, and creates files from the terminal, good for quick fixes and file operations
+
+``` bash
+brew install opencode
+```
+
+For other platforms, see [opencode.ai](https://opencode.ai).
+
+**Claude Code**
+
+- Anthropic's <span class="highlight">CLI coding agent</span> that goes beyond suggestions: **autonomous multi-step task execution**
+- Reads your entire codebase for context and can **plan, write, test, and debug** code autonomously
+- Executes terminal commands and iterates on errors, best for <span class="highlight">involved, multi-step tasks</span>
+
+``` bash
+brew install --cask claude-code
+```
+
+For other platforms, see [claude.ai/code](https://claude.ai/code).
+
+> **Note**
+>
+> Claude Code requires a Claude subscription or Anthropic API key. OpenCode is free but requires you to bring your own API key for whichever provider you choose.
+
+## Choosing the right tool
+
+| Tool | Type | Best for | Cost |
+|---------------|---------------|-------------------------|------------------|
+| **Zed** | IDE | Daily coding with AI assist | Free |
+| **GitHub Copilot** | IDE extension | Inline code suggestions | Free for students |
+| **OpenCode** | Terminal | Quick terminal tasks | Free (bring API key) |
+| **Claude Code** | Terminal agent | Multi-step tasks | API costs |
+
+<span class="question">Question</span>: When would you use a chat interface vs. a coding agent?
+
+**Chat interface** (Claude.ai, ChatGPT)
+
+- Brainstorming ideas and explaining concepts
+- Drafting text, outlines, or quick one-off questions
+
+**Coding agent** (Claude Code, OpenCode)
+
+- Building features across files and debugging involved issues
+- Refactoring codebases, running and testing code
+
+> **Important**
+>
+> Remember: same model, different harness = <span class="highlight">different capabilities</span>. Pick the right tool for the job.
+
+# <span class="flow">Wrap-up</span>
+
+## Tips and takeaways
+
+**1. Be precise in your instructions**
+
+The more specific your prompt, the better the result. Include context: language, framework, expected behavior.
+
+**2. Always review generated code**
+
+LLMs make mistakes, suggest inefficient solutions, or miss edge cases. <span class="highlight">Your code, your responsibility</span>. In the Anthropic study mentioned earlier, developers who asked the AI to *explain* its code rather than just generate it performed nearly as well as those coding by hand.
+
+**3. Iterate and refine**
+
+Use the output as a starting point. Ask follow-up questions to improve the result, and break requests into smaller steps when things get involved.
+
+**Takeaways:**
+
+1.  **AI is a tool, not a replacement.** You still need to understand the fundamentals
+2.  **Understand before accepting.** Always read and verify AI-generated output
+3.  **Pick the right harness.** Chat for brainstorming, agents for building, IDE for daily coding
+4.  **Models matter.** Always use the most capable model available to you
+5.  **Context matters.** Clear prompts and managed context give you better output
+
+> **Warning**
+>
+> If you use free models, be aware that your prompts may be used by providers and are not private. For learning and experimenting, this should be no issue.
+
+## Resources
+
+**Getting started:**
+
+- [Zed Editor](https://zed.dev): Recommended IDE
+- [GitHub Student Pack](https://education.github.com/pack): Free Copilot access
+- [Claude.ai](https://claude.ai): Anthropic's chat interface
+- [ChatGPT](https://chatgpt.com): OpenAI's chat interface
+
+**Going deeper:**
+
+- [3Blue1Brown: LLMs](https://www.youtube.com/watch?v=LPZh9BOjkQs): Grant Sanderson explains LLMs visually better than most textbooks
+- [Anthropic Research](https://www.anthropic.com/research): AI safety and interpretability
+- [One Useful Thing](https://www.oneusefulthing.org/): Ethan Mollick's blog on practical AI use
+- [Prompt Engineering Guide](https://www.promptingguide.ai/): Techniques for better prompts
+- [AI Assistance and Coding Skills](https://www.anthropic.com/research/AI-assistance-coding-skills): Anthropic's study on how AI help affects learning (the 17% finding cited in this workshop)
+- [The Many Masks LLMs Wear](https://www.understandingai.org/p/the-many-masks-that-llms-wear): Kai Williams on persona drift and why models behave unpredictably
+- [Effective Harnesses for Long-Running Agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents): Practical patterns for building agent systems that actually work
+
+> **LLM architecture types (reference)**
+>
+> | Architecture | How it works | Best for |
+> |-------------------|-------------------------|-----------------------------|
+> | **Encoder-Decoder** | Understands input, then generates output | Translation, summarization |
+> | **Encoder-Only** | Focuses on understanding input | Classification, search (BERT) |
+> | **Decoder-Only** | Generates text token by token | Chatbots, code generation (GPT, Claude) |
+> | **Mixture of Experts** | Routes input to specialized sub-models | Efficient scaling (fewer params active) |
+>
+> Most LLMs you interact with today (ChatGPT, Claude, Gemini) are **decoder-only** models, sometimes enhanced with Mixture of Experts.

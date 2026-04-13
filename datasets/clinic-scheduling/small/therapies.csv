@@ -1,0 +1,7 @@
+therapy_code,name,duration_slots,required_room_types,required_qualification,is_group
+PT,Physiotherapy,2,gym|treatment,PT_LICENSE,False
+OT,Occupational Therapy,2,treatment,OT_LICENSE,False
+ST,Speech Therapy,1,treatment,ST_LICENSE,False
+AT,Aquatic Therapy,2,pool,AT_LICENSE,False
+MA,Massage,1,treatment,MA_LICENSE,False
+GG,Group Gymnastics,2,gym,PT_LICENSE,True

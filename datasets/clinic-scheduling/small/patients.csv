@@ -1,0 +1,16 @@
+patient_id,admission_day,discharge_day,diagnosis_group
+P001,1,6,neurologic
+P002,0,4,orthopedic
+P003,0,6,cardiac
+P004,2,6,neurologic
+P005,3,6,orthopedic
+P006,0,5,cardiac
+P007,3,5,neurologic
+P008,3,6,neurologic
+P009,1,5,orthopedic
+P010,2,6,orthopedic
+P011,0,2,orthopedic
+P012,3,6,cardiac
+P013,2,4,neurologic
+P014,1,6,cardiac
+P015,0,5,orthopedic

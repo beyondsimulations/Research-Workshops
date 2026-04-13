@@ -1,0 +1,11 @@
+room_id,room_type,capacity
+R01,treatment,1
+R02,treatment,1
+R03,treatment,1
+R04,treatment,1
+R05,gym,8
+R06,gym,4
+R07,pool,2
+R08,treatment,1
+R09,gym,8
+R10,treatment,1
