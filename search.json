@@ -97,8 +97,8 @@
     ]
   },
   {
-    "objectID": "workshops/large-language-models-page.html",
-    "href": "workshops/large-language-models-page.html",
+    "objectID": "workshops/large-language-models.html",
+    "href": "workshops/large-language-models.html",
     "title": "Working with AI",
     "section": "",
     "text": "This workshop covers AI Programming & Large Language Models. You have likely already used LLMs such as ChatGPT, Claude, Gemini, and others. By the end of this workshop, you will understand:\n\nHow LLMs work at a conceptual level\nThe difference between models, apps, and harnesses\nWhich AI coding tools to use and how to get started\n\n\n\n\nThink of LLMs as advanced pattern recognition systems. They have “read” massive amounts of text from the internet, books, and code, and based on those patterns, they can generate new text.\nWhat they really do is predict the next token, like an incredibly advanced version of autocomplete on your phone. But they cannot truly “think” or “understand” like humans.\n\n\n\n\n\n\nDespite their limitations, LLMs are genuinely useful for coding, writing, research, and analysis.\n\n\n\n\n\n\nModern LLMs use the Transformer architecture, introduced in “Attention is All You Need” (Vaswani et al., 2017).\nThe process (simplified):\n\nTokenization: Text is split into tokens, meaning not whole words but subwords like “un-”, “break”, “-able”. This lets the model handle words it has never seen before.\nRelationship mapping: The model builds a mathematical representation of how these tokens relate to each other\nAttention mechanism: The model focuses on the most relevant parts of the input to generate each output token\n\n\n\n\n\n\n\n“The cat sat on the mat because it was warm.” Attention helps the model understand that “it” refers to “the mat,” not “the cat.”\n\n\n\n\n\n\n\n\n\nYou can explore how text is tokenized at platform.openai.com/tokenizer.\n\n\n\n\n\n\nThe context window is the number of tokens an LLM can process at once. Think of it as the model’s short-term memory.\n\n\nLarger context window:\n\n“Remembers” more of the conversation\nMore coherent responses\nMore computational cost\n\n\nSmaller context window:\n\nFaster processing\nMay lose track of earlier parts\nLess expensive to run\n\n\n\nHow to manage context well:\nBreak problems into manageable chunks rather than dumping everything at once, and be specific about which files or functions you need help with. When you switch topics, start a fresh conversation so stale context does not confuse the model. Providing relevant context upfront, instead of expecting the model to guess, consistently leads to better results.\n\n\n\n\n\n\nThink of context like a desk: keep only what you need for the current task on it, and clear it when you move to the next task.\n\n\n\n\n\n\nTraining an LLM happens in three phases:\n1. Self-supervised learning (pre-training)\n\nTrained on massive text datasets without explicit labels\nLearns to predict the next token, picking up grammar, facts, and patterns\n\n2. Supervised fine-tuning\n\nTrained on smaller, curated datasets for specific tasks\nMakes the model better at following instructions\n\n3. Reinforcement learning from human feedback (RLHF)\n\nHuman evaluators rank model outputs by quality\nModel learns to produce responses that are more helpful, honest, and harmless\n\n\n\n\nLLMs have several important limitations to be aware of:\n\nUnreliable output: LLMs can confidently generate incorrect information (hallucinations), and because their training data contains biases, those biases can surface in their responses, sometimes in subtle ways you will not catch without careful review.\nNo true understanding: What looks like reasoning is pattern matching on training data, not thinking from first principles. Models also only know what they were trained on, so anything after their knowledge cutoff is simply absent.\nInconsistent behavior: Small changes in wording can produce very different results. Models can also drift persona mid-conversation. Researchers have documented cases where fine-tuning on one task triggered unexpected behavior elsewhere, and long conversations can push a model away from its intended character entirely.\nOverconfident tone: LLMs rarely signal uncertainty, so a wrong answer reads exactly like a correct one.\n\n\n\n\n\n\n\nA 2025 Anthropic study found that developers using AI scored 17% lower on comprehension tests (roughly two letter grades), with the biggest gap in debugging. Leaning on AI for code generation without engaging with what it produces erodes the skills you need to catch its mistakes.",
@@ -107,8 +107,8 @@
     ]
   },
   {
-    "objectID": "workshops/large-language-models-page.html#welcome",
-    "href": "workshops/large-language-models-page.html#welcome",
+    "objectID": "workshops/large-language-models.html#welcome",
+    "href": "workshops/large-language-models.html#welcome",
     "title": "Working with AI",
     "section": "",
     "text": "This workshop covers AI Programming & Large Language Models. You have likely already used LLMs such as ChatGPT, Claude, Gemini, and others. By the end of this workshop, you will understand:\n\nHow LLMs work at a conceptual level\nThe difference between models, apps, and harnesses\nWhich AI coding tools to use and how to get started",
@@ -117,8 +117,8 @@
     ]
   },
   {
-    "objectID": "workshops/large-language-models-page.html#what-is-an-llm",
-    "href": "workshops/large-language-models-page.html#what-is-an-llm",
+    "objectID": "workshops/large-language-models.html#what-is-an-llm",
+    "href": "workshops/large-language-models.html#what-is-an-llm",
     "title": "Working with AI",
     "section": "",
     "text": "Think of LLMs as advanced pattern recognition systems. They have “read” massive amounts of text from the internet, books, and code, and based on those patterns, they can generate new text.\nWhat they really do is predict the next token, like an incredibly advanced version of autocomplete on your phone. But they cannot truly “think” or “understand” like humans.\n\n\n\n\n\n\nDespite their limitations, LLMs are genuinely useful for coding, writing, research, and analysis.",
@@ -127,8 +127,8 @@
     ]
   },
   {
-    "objectID": "workshops/large-language-models-page.html#how-llms-work",
-    "href": "workshops/large-language-models-page.html#how-llms-work",
+    "objectID": "workshops/large-language-models.html#how-llms-work",
+    "href": "workshops/large-language-models.html#how-llms-work",
     "title": "Working with AI",
     "section": "",
     "text": "Modern LLMs use the Transformer architecture, introduced in “Attention is All You Need” (Vaswani et al., 2017).\nThe process (simplified):\n\nTokenization: Text is split into tokens, meaning not whole words but subwords like “un-”, “break”, “-able”. This lets the model handle words it has never seen before.\nRelationship mapping: The model builds a mathematical representation of how these tokens relate to each other\nAttention mechanism: The model focuses on the most relevant parts of the input to generate each output token\n\n\n\n\n\n\n\n“The cat sat on the mat because it was warm.” Attention helps the model understand that “it” refers to “the mat,” not “the cat.”\n\n\n\n\n\n\n\n\n\nYou can explore how text is tokenized at platform.openai.com/tokenizer.",
@@ -137,8 +137,8 @@
     ]
   },
   {
-    "objectID": "workshops/large-language-models-page.html#context-windows",
-    "href": "workshops/large-language-models-page.html#context-windows",
+    "objectID": "workshops/large-language-models.html#context-windows",
+    "href": "workshops/large-language-models.html#context-windows",
     "title": "Working with AI",
     "section": "",
     "text": "The context window is the number of tokens an LLM can process at once. Think of it as the model’s short-term memory.\n\n\nLarger context window:\n\n“Remembers” more of the conversation\nMore coherent responses\nMore computational cost\n\n\nSmaller context window:\n\nFaster processing\nMay lose track of earlier parts\nLess expensive to run\n\n\n\nHow to manage context well:\nBreak problems into manageable chunks rather than dumping everything at once, and be specific about which files or functions you need help with. When you switch topics, start a fresh conversation so stale context does not confuse the model. Providing relevant context upfront, instead of expecting the model to guess, consistently leads to better results.\n\n\n\n\n\n\nThink of context like a desk: keep only what you need for the current task on it, and clear it when you move to the next task.",
@@ -147,8 +147,8 @@
     ]
   },
   {
-    "objectID": "workshops/large-language-models-page.html#how-llms-are-trained",
-    "href": "workshops/large-language-models-page.html#how-llms-are-trained",
+    "objectID": "workshops/large-language-models.html#how-llms-are-trained",
+    "href": "workshops/large-language-models.html#how-llms-are-trained",
     "title": "Working with AI",
     "section": "",
     "text": "Training an LLM happens in three phases:\n1. Self-supervised learning (pre-training)\n\nTrained on massive text datasets without explicit labels\nLearns to predict the next token, picking up grammar, facts, and patterns\n\n2. Supervised fine-tuning\n\nTrained on smaller, curated datasets for specific tasks\nMakes the model better at following instructions\n\n3. Reinforcement learning from human feedback (RLHF)\n\nHuman evaluators rank model outputs by quality\nModel learns to produce responses that are more helpful, honest, and harmless",
@@ -157,8 +157,8 @@
     ]
   },
   {
-    "objectID": "workshops/large-language-models-page.html#what-llms-get-wrong",
-    "href": "workshops/large-language-models-page.html#what-llms-get-wrong",
+    "objectID": "workshops/large-language-models.html#what-llms-get-wrong",
+    "href": "workshops/large-language-models.html#what-llms-get-wrong",
     "title": "Working with AI",
     "section": "",
     "text": "LLMs have several important limitations to be aware of:\n\nUnreliable output: LLMs can confidently generate incorrect information (hallucinations), and because their training data contains biases, those biases can surface in their responses, sometimes in subtle ways you will not catch without careful review.\nNo true understanding: What looks like reasoning is pattern matching on training data, not thinking from first principles. Models also only know what they were trained on, so anything after their knowledge cutoff is simply absent.\nInconsistent behavior: Small changes in wording can produce very different results. Models can also drift persona mid-conversation. Researchers have documented cases where fine-tuning on one task triggered unexpected behavior elsewhere, and long conversations can push a model away from its intended character entirely.\nOverconfident tone: LLMs rarely signal uncertainty, so a wrong answer reads exactly like a correct one.\n\n\n\n\n\n\n\nA 2025 Anthropic study found that developers using AI scored 17% lower on comprehension tests (roughly two letter grades), with the biggest gap in debugging. Leaning on AI for code generation without engaging with what it produces erodes the skills you need to catch its mistakes.",
@@ -167,8 +167,8 @@
     ]
   },
   {
-    "objectID": "workshops/large-language-models-page.html#a-framework-for-understanding-ai-tools",
-    "href": "workshops/large-language-models-page.html#a-framework-for-understanding-ai-tools",
+    "objectID": "workshops/large-language-models.html#a-framework-for-understanding-ai-tools",
+    "href": "workshops/large-language-models.html#a-framework-for-understanding-ai-tools",
     "title": "Working with AI",
     "section": "A framework for understanding AI tools",
     "text": "A framework for understanding AI tools\nThis framework is based on Ethan Mollick’s work from “One Useful Thing”. There are three layers to understand:\n\nModels = the underlying AI “brains”\nApps = the products you interact with\nHarnesses = systems within apps that let the AI use tools and take action\n\n\n\n\n\n\n\nThe same model can produce very different results depending on the harness it is placed in!",
@@ -177,8 +177,8 @@
     ]
   },
   {
-    "objectID": "workshops/large-language-models-page.html#models-the-ai-brains",
-    "href": "workshops/large-language-models-page.html#models-the-ai-brains",
+    "objectID": "workshops/large-language-models.html#models-the-ai-brains",
+    "href": "workshops/large-language-models.html#models-the-ai-brains",
     "title": "Working with AI",
     "section": "Models: The AI brains",
     "text": "Models: The AI brains\nThe foundation model is the core intelligence. Different providers have different strengths:\n\n\n\n\n\n\n\n\n\nProvider\nModel\nStrength\n\n\n\n\nOpenAI\nGPT-5.4\nGeneral purpose, multimodal\n\n\nAnthropic\nClaude Opus/Sonnet\nReasoning, coding, long context\n\n\nGoogle\nGemini Pro\nGoogle integration, multimodal\n\n\nMistral\nMistral Large\nAffordable, European provider\n\n\nMeta\nLlama (open-source)\nLocal deployment, customizable\n\n\n\n\nThis changes fast. New models appear every few months.\n\n\n\n\n\n\nFree/default tiers often use weaker models. Always select the frontier or advanced model when available, as the difference is noticeable.",
@@ -187,8 +187,8 @@
     ]
   },
   {
-    "objectID": "workshops/large-language-models-page.html#apps-and-harnesses",
-    "href": "workshops/large-language-models-page.html#apps-and-harnesses",
+    "objectID": "workshops/large-language-models.html#apps-and-harnesses",
+    "href": "workshops/large-language-models.html#apps-and-harnesses",
     "title": "Working with AI",
     "section": "Apps and harnesses",
     "text": "Apps and harnesses\nApps are how you access the models.\n\n\n\n\n\n\n\n\n\nApp\nURL\nProvider\n\n\n\n\nChatGPT\nchatgpt.com\nOpenAI\n\n\nClaude\nclaude.ai\nAnthropic\n\n\nGemini\ngemini.google.com\nGoogle\n\n\nLe Chat\nchat.mistral.ai\nMistral\n\n\n\n\nAll four offer free access to capable models, while paid tiers unlock stronger models and higher usage limits. Mistral offers an affordable student tier with access to Mistral Vibe (not flawless, but acceptable).\nEvery app also comes with a harness, a system that gives the model tools and capabilities. Same model, different harness = completely different results.\nDifferent apps, different harnesses:\n\nClaude.ai harnesses Claude with web search and code execution → a chat assistant\nClaude Code harnesses the same Claude with file access, terminal, and testing → an autonomous coding agent\nCopilot in Zed harnesses a model with your editor context → a pair programmer\n\n\n\n\n\n\n\nPick the right app for the task! A chat app is great for brainstorming, but a coding agent is better for building features.",
@@ -197,8 +197,8 @@
     ]
   },
   {
-    "objectID": "workshops/large-language-models-page.html#why-this-framework-matters",
-    "href": "workshops/large-language-models-page.html#why-this-framework-matters",
+    "objectID": "workshops/large-language-models.html#why-this-framework-matters",
+    "href": "workshops/large-language-models.html#why-this-framework-matters",
     "title": "Working with AI",
     "section": "Why this framework matters",
     "text": "Why this framework matters\nQuestion: Why does the same AI feel “smarter” in some tools than others?\nBecause the harness determines:\n\nWhat context the model receives and what tools it can use (web search, file access, code execution)\nHow many steps it can take autonomously and how results are presented back to you\n\nAnthropic’s own engineering team showed this concretely: the same model failed at complex coding tasks when given a bare prompt, but succeeded when wrapped in a harness with progress tracking, environment setup, and automated testing.\n\n\n\n\n\n\nWhen someone says “AI can’t do X,” ask: which model, in which harness? The answer often changes with the right setup.",
@@ -207,8 +207,8 @@
     ]
   },
   {
-    "objectID": "workshops/large-language-models-page.html#homebrew-your-package-manager",
-    "href": "workshops/large-language-models-page.html#homebrew-your-package-manager",
+    "objectID": "workshops/large-language-models.html#homebrew-your-package-manager",
+    "href": "workshops/large-language-models.html#homebrew-your-package-manager",
     "title": "Working with AI",
     "section": "Homebrew: Your package manager",
     "text": "Homebrew: Your package manager\nHomebrew is a package manager for macOS that installs command-line tools and applications with a single command. We will use it to install all coding tools in this workshop.\nInstall Homebrew:\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"\nThen installing tools is as simple as:\nbrew install &lt;tool-name&gt;        # CLI tools\nbrew install --cask &lt;app-name&gt;  # GUI applications\n\n\n\n\n\n\nIf you are not on macOS, download links are provided as alternatives for each tool.",
@@ -217,8 +217,8 @@
     ]
   },
   {
-    "objectID": "workshops/large-language-models-page.html#zed-a-modern-code-editor",
-    "href": "workshops/large-language-models-page.html#zed-a-modern-code-editor",
+    "objectID": "workshops/large-language-models.html#zed-a-modern-code-editor",
+    "href": "workshops/large-language-models.html#zed-a-modern-code-editor",
     "title": "Working with AI",
     "section": "Zed: A modern code editor",
     "text": "Zed: A modern code editor\nZed is the recommended IDE for this course — a modern, fast code editor built in Rust with a built-in AI assistant supporting multiple model support.\nFeatures:\n\nSupports cloud models (Claude, GPT) and local models (Ollama)\nGreat for pair programming with AI\nFree, open-source, and actively developed\n\nHow to install (macOS):\nbrew install --cask zed\nFor Linux or Windows, download from zed.dev.\n\n\n\n\n\n\nZed offers a free student tier with unlimited edit predictions and $10/month in API credits for one year. Sign up at zed.dev/education with your GitHub account and university email.",
@@ -227,8 +227,8 @@
     ]
   },
   {
-    "objectID": "workshops/large-language-models-page.html#github-copilot",
-    "href": "workshops/large-language-models-page.html#github-copilot",
+    "objectID": "workshops/large-language-models.html#github-copilot",
+    "href": "workshops/large-language-models.html#github-copilot",
     "title": "Working with AI",
     "section": "GitHub Copilot",
     "text": "GitHub Copilot\nGitHub Copilot is an AI pair programmer integrated into editors (VS Code, Zed, JetBrains). It is free for students via GitHub Student Developer Pack and provides inline code completion as you type.\nHow to get access:\n\nGo to education.github.com/pack\nSign up with your university email\nVerify your student status\nWait for approval (usually 1-2 days)\n\n\n\n\n\n\n\nCopilot’s code completion can also be activated in Zed if you prefer it over Zed’s built-in completion.",
@@ -237,8 +237,8 @@
     ]
   },
   {
-    "objectID": "workshops/large-language-models-page.html#terminal-based-ai-tools",
-    "href": "workshops/large-language-models-page.html#terminal-based-ai-tools",
+    "objectID": "workshops/large-language-models.html#terminal-based-ai-tools",
+    "href": "workshops/large-language-models.html#terminal-based-ai-tools",
     "title": "Working with AI",
     "section": "Terminal-based AI tools",
     "text": "Terminal-based AI tools\nTerminal-based coding assistants let you work with AI directly from the command line, without leaving your editor or browser. Two options stand out:\nOpenCode\n\nOpen-source terminal-based AI coding assistant\nSupports multiple AI providers (bring your own API key)\nReads, edits, and creates files from the terminal, good for quick fixes and file operations\n\nbrew install opencode\nFor other platforms, see opencode.ai.\nClaude Code\n\nAnthropic’s CLI coding agent that goes beyond suggestions: autonomous multi-step task execution\nReads your entire codebase for context and can plan, write, test, and debug code autonomously\nExecutes terminal commands and iterates on errors, best for involved, multi-step tasks\n\nbrew install --cask claude-code\nFor other platforms, see claude.ai/code.\n\n\n\n\n\n\nClaude Code requires a Claude subscription or Anthropic API key. OpenCode is free but requires you to bring your own API key for whichever provider you choose.",
@@ -247,8 +247,8 @@
     ]
   },
   {
-    "objectID": "workshops/large-language-models-page.html#choosing-the-right-tool",
-    "href": "workshops/large-language-models-page.html#choosing-the-right-tool",
+    "objectID": "workshops/large-language-models.html#choosing-the-right-tool",
+    "href": "workshops/large-language-models.html#choosing-the-right-tool",
     "title": "Working with AI",
     "section": "Choosing the right tool",
     "text": "Choosing the right tool\n\n\n\n\n\n\n\n\n\n\nTool\nType\nBest for\nCost\n\n\n\n\nZed\nIDE\nDaily coding with AI assist\nFree\n\n\nGitHub Copilot\nIDE extension\nInline code suggestions\nFree for students\n\n\nOpenCode\nTerminal\nQuick terminal tasks\nFree (bring API key)\n\n\nClaude Code\nTerminal agent\nMulti-step tasks\nAPI costs\n\n\n\n\nQuestion: When would you use a chat interface vs. a coding agent?\n\n\nChat interface (Claude.ai, ChatGPT)\n\nBrainstorming ideas and explaining concepts\nDrafting text, outlines, or quick one-off questions\n\n\nCoding agent (Claude Code, OpenCode)\n\nBuilding features across files and debugging involved issues\nRefactoring codebases, running and testing code\n\n\n\n\n\n\n\n\n\nRemember: same model, different harness = different capabilities. Pick the right tool for the job.",
@@ -257,8 +257,8 @@
     ]
   },
   {
-    "objectID": "workshops/large-language-models-page.html#tips-and-takeaways",
-    "href": "workshops/large-language-models-page.html#tips-and-takeaways",
+    "objectID": "workshops/large-language-models.html#tips-and-takeaways",
+    "href": "workshops/large-language-models.html#tips-and-takeaways",
     "title": "Working with AI",
     "section": "Tips and takeaways",
     "text": "Tips and takeaways\n1. Be precise in your instructions\nThe more specific your prompt, the better the result. Include context: language, framework, expected behavior.\n2. Always review generated code\nLLMs make mistakes, suggest inefficient solutions, or miss edge cases. Your code, your responsibility. In the Anthropic study mentioned earlier, developers who asked the AI to explain its code rather than just generate it performed nearly as well as those coding by hand.\n3. Iterate and refine\nUse the output as a starting point. Ask follow-up questions to improve the result, and break requests into smaller steps when things get involved.\nTakeaways:\n\nAI is a tool, not a replacement. You still need to understand the fundamentals\nUnderstand before accepting. Always read and verify AI-generated output\nPick the right harness. Chat for brainstorming, agents for building, IDE for daily coding\nModels matter. Always use the most capable model available to you\nContext matters. Clear prompts and managed context give you better output\n\n\n\n\n\n\n\nIf you use free models, be aware that your prompts may be used by providers and are not private. For learning and experimenting, this should be no issue.",
@@ -267,8 +267,8 @@
     ]
   },
   {
-    "objectID": "workshops/large-language-models-page.html#resources",
-    "href": "workshops/large-language-models-page.html#resources",
+    "objectID": "workshops/large-language-models.html#resources",
+    "href": "workshops/large-language-models.html#resources",
     "title": "Working with AI",
     "section": "Resources",
     "text": "Resources\nGetting started:\n\nZed Editor: Recommended IDE\nGitHub Student Pack: Free Copilot access\nClaude.ai: Anthropic’s chat interface\nChatGPT: OpenAI’s chat interface\n\nGoing deeper:\n\n3Blue1Brown: LLMs: Grant Sanderson explains LLMs visually better than most textbooks\nAnthropic Research: AI safety and interpretability\nOne Useful Thing: Ethan Mollick’s blog on practical AI use\nPrompt Engineering Guide: Techniques for better prompts\nAI Assistance and Coding Skills: Anthropic’s study on how AI help affects learning (the 17% finding cited in this workshop)\nThe Many Masks LLMs Wear: Kai Williams on persona drift and why models behave unpredictably\nEffective Harnesses for Long-Running Agents: Practical patterns for building agent systems that actually work\n\n\n\n\n\n\n\nNoteLLM architecture types (reference)\n\n\n\n\n\n\n\n\n\n\n\n\nArchitecture\nHow it works\nBest for\n\n\n\n\nEncoder-Decoder\nUnderstands input, then generates output\nTranslation, summarization\n\n\nEncoder-Only\nFocuses on understanding input\nClassification, search (BERT)\n\n\nDecoder-Only\nGenerates text token by token\nChatbots, code generation (GPT, Claude)\n\n\nMixture of Experts\nRoutes input to specialized sub-models\nEfficient scaling (fewer params active)\n\n\n\n\nMost LLMs you interact with today (ChatGPT, Claude, Gemini) are decoder-only models, sometimes enhanced with Mixture of Experts.",
@@ -277,8 +277,8 @@
     ]
   },
   {
-    "objectID": "workshops/prompting-page.html",
-    "href": "workshops/prompting-page.html",
+    "objectID": "workshops/prompting.html",
+    "href": "workshops/prompting.html",
     "title": "AI Prompting for Researchers",
     "section": "",
     "text": "This workshop addresses why most people get mediocre results from AI and how to fix that. Specifically, we will look at:\n\nA simple framework to get better results from your prompts\nWhy iteration beats perfection\nCommon mistakes and how to avoid them",
@@ -287,8 +287,8 @@
     ]
   },
   {
-    "objectID": "workshops/prompting-page.html#what-we-will-cover",
-    "href": "workshops/prompting-page.html#what-we-will-cover",
+    "objectID": "workshops/prompting.html#what-we-will-cover",
+    "href": "workshops/prompting.html#what-we-will-cover",
     "title": "AI Prompting for Researchers",
     "section": "",
     "text": "This workshop addresses why most people get mediocre results from AI and how to fix that. Specifically, we will look at:\n\nA simple framework to get better results from your prompts\nWhy iteration beats perfection\nCommon mistakes and how to avoid them",
@@ -297,8 +297,8 @@
     ]
   },
   {
-    "objectID": "workshops/prompting-page.html#the-typical-experience",
-    "href": "workshops/prompting-page.html#the-typical-experience",
+    "objectID": "workshops/prompting.html#the-typical-experience",
+    "href": "workshops/prompting.html#the-typical-experience",
     "title": "AI Prompting for Researchers",
     "section": "The typical experience",
     "text": "The typical experience\n\n\nWhat most people type:\n\n“Help me with my literature review”\n\n\nWhat the AI returns:\n\n“A literature review is a comprehensive survey of scholarly sources on a specific topic. Here are some general steps: 1. Define your research question… 2. Search databases… 3. Evaluate sources…”\n\n\n\nThis is correct but useless — generic advice you could find on any study skills website.",
@@ -307,8 +307,8 @@
     ]
   },
   {
-    "objectID": "workshops/prompting-page.html#why-does-this-happen",
-    "href": "workshops/prompting-page.html#why-does-this-happen",
+    "objectID": "workshops/prompting.html#why-does-this-happen",
+    "href": "workshops/prompting.html#why-does-this-happen",
     "title": "AI Prompting for Researchers",
     "section": "Why does this happen?",
     "text": "Why does this happen?\nThe AI does not know who you are — whether you are a first-year student or a PhD candidate. It has no idea what you already have, be it 5 papers or 50, nor does it know what you actually need — a structure, a gap analysis, or a synthesis. And without being told, it cannot guess how you want the output — as a table, a paragraph, or bullet points.",
@@ -317,8 +317,8 @@
     ]
   },
   {
-    "objectID": "workshops/prompting-page.html#the-core-problem",
-    "href": "workshops/prompting-page.html#the-core-problem",
+    "objectID": "workshops/prompting.html#the-core-problem",
+    "href": "workshops/prompting.html#the-core-problem",
     "title": "AI Prompting for Researchers",
     "section": "The core problem",
     "text": "The core problem\n\n\n\n\n\n\nWithout context, AI gives you the average answer for everyone — which helps no one.\n\n\n\nThe quality of the output is directly proportional to the quality of the input. This is true for every AI tool, whether it is ChatGPT, Claude, Gemini, or any other system.",
@@ -327,8 +327,8 @@
     ]
   },
   {
-    "objectID": "workshops/prompting-page.html#context-and-iteration",
-    "href": "workshops/prompting-page.html#context-and-iteration",
+    "objectID": "workshops/prompting.html#context-and-iteration",
+    "href": "workshops/prompting.html#context-and-iteration",
     "title": "AI Prompting for Researchers",
     "section": "Context and iteration",
     "text": "Context and iteration\n\n\n\nContext matters most\nThe more relevant detail you provide, the better the response. Think of it as briefing a new research assistant — they are brilliant but know nothing about your specific project.\n\n\n\nIteration beats perfection\nYour first prompt does not need to be perfect. Treat AI conversations as a dialogue, not a one-shot query. Refine, redirect, and build on each response.\n\n\n\n\n\n\n\n\n\nYou would never hand a new colleague a one-sentence instruction and expect perfect results. Treat AI the same way.",
@@ -337,8 +337,8 @@
     ]
   },
   {
-    "objectID": "workshops/prompting-page.html#the-framework-role-background-task-format",
-    "href": "workshops/prompting-page.html#the-framework-role-background-task-format",
+    "objectID": "workshops/prompting.html#the-framework-role-background-task-format",
+    "href": "workshops/prompting.html#the-framework-role-background-task-format",
     "title": "AI Prompting for Researchers",
     "section": "The framework: Role, background, task, format",
     "text": "The framework: Role, background, task, format\n\n\n\n\n\n\n\n\n\nComponent\nQuestion to Ask Yourself\nExample\n\n\n\n\nRole\nWho should the AI act as?\n“Act as a methodologist in social science research”\n\n\nBackground\nWhat context does it need?\n“I am writing my Master’s thesis on climate policy in the EU”\n\n\nTask\nWhat exactly should it do?\n“Identify gaps in my literature on carbon pricing mechanisms”\n\n\nFormat\nHow should the output look?\n“Present this as a table with columns: gap, relevant authors, potential research questions”",
@@ -347,8 +347,8 @@
     ]
   },
   {
-    "objectID": "workshops/prompting-page.html#why-rbtf-works",
-    "href": "workshops/prompting-page.html#why-rbtf-works",
+    "objectID": "workshops/prompting.html#why-rbtf-works",
+    "href": "workshops/prompting.html#why-rbtf-works",
     "title": "AI Prompting for Researchers",
     "section": "Why RBTF works",
     "text": "Why RBTF works\nEach component serves a specific purpose:\n\nRole — by assigning a specific expertise, you shape the depth and vocabulary of the response, so the AI draws on the right domain knowledge instead of giving a generalist answer.\nBackground — anchoring the prompt in your specific situation (your field, your data, your progress) prevents the AI from making assumptions that miss the mark.\nTask — a precisely stated task eliminates ambiguity, so the AI focuses on exactly what you need rather than guessing which of several possible requests you meant.\nFormat — specifying the output structure (table, bullet list, APA paragraph) means you get something immediately usable instead of spending time reformatting.\n\n\n\n\n\n\n\nYou do not always need all four components. But the more you include, the better the result will be.",
@@ -357,8 +357,8 @@
     ]
   },
   {
-    "objectID": "workshops/prompting-page.html#context-in-action",
-    "href": "workshops/prompting-page.html#context-in-action",
+    "objectID": "workshops/prompting.html#context-in-action",
+    "href": "workshops/prompting.html#context-in-action",
     "title": "AI Prompting for Researchers",
     "section": "Context in action",
     "text": "Context in action\n\n“Explain machine learning”\n\nAI Response: “Machine learning is a subset of artificial intelligence that enables systems to learn from data and improve over time without being explicitly programmed. There are three main types: supervised learning, unsupervised learning, and reinforcement learning…”\nA textbook answer. Fine if you are a complete beginner, but not tailored to anyone.\nNow compare that with a prompt that includes context:\n\n“I am a social scientist studying voting behaviour. I have no programming background, but I need to understand how machine learning could help me predict election turnout from demographic data. Explain the relevant concepts I would need, avoiding technical jargon, and suggest which ML approach would suit my small dataset of 2,000 observations.”\n\nThis prompt gives the AI enough context to produce a useful, specific response — tailored to the researcher’s discipline, skill level, and dataset.",
@@ -367,8 +367,8 @@
     ]
   },
   {
-    "objectID": "workshops/prompting-page.html#refining-your-results",
-    "href": "workshops/prompting-page.html#refining-your-results",
+    "objectID": "workshops/prompting.html#refining-your-results",
+    "href": "workshops/prompting.html#refining-your-results",
     "title": "AI Prompting for Researchers",
     "section": "Refining your results",
     "text": "Refining your results\nYour first response will rarely be exactly what you need. That is normal. Use follow-up prompts to steer the conversation.\n\n\n\n\n\n\n\n\nWhen you get…\nSay this…\n\n\n\n\nToo broad\n“Focus specifically on [X] and go deeper”\n\n\nToo technical\n“Explain this for someone without a background in [field]”\n\n\nToo superficial\n“Provide more detail, especially regarding [aspect]”\n\n\nWrong angle\n“Approach this from the perspective of [discipline/method]”\n\n\nMissing something\n“Also consider [factor/variable/theory]”\n\n\nToo long\n“Condense this to the 3 most important points”",
@@ -377,8 +377,8 @@
     ]
   },
   {
-    "objectID": "workshops/prompting-page.html#iteration-example",
-    "href": "workshops/prompting-page.html#iteration-example",
+    "objectID": "workshops/prompting.html#iteration-example",
+    "href": "workshops/prompting.html#iteration-example",
     "title": "AI Prompting for Researchers",
     "section": "Iteration example",
     "text": "Iteration example\n\n\n\n\n\n\nNotePrompt 1 — Starting point\n\n\n\n“I need help choosing a statistical test for my research.”\n\n\n\n\n\n\n\n\nNotePrompt 2 — Adding context\n\n\n\n“I have survey data from 200 respondents. My dependent variable is satisfaction (measured on a 5-point Likert scale) and I want to compare results across 3 age groups. I am using SPSS.”\n\n\n\n\n\n\n\n\nNotePrompt 3 — Refining further\n\n\n\n“My data is not normally distributed according to the Shapiro-Wilk test. What non-parametric alternative should I use, and how do I run it in SPSS? Also, how should I report the results in APA format?”\n\n\nPrompt 1 would get a generic overview of statistical tests. Prompt 2 gives enough context for a specific recommendation. Prompt 3 addresses a real complication and asks for usable output. Each iteration builds on the previous response, turning a vague question into a concrete answer because the AI retains context from the full conversation.",
@@ -387,8 +387,8 @@
     ]
   },
   {
-    "objectID": "workshops/prompting-page.html#from-lazy-prompt-to-rbtf-prompt",
-    "href": "workshops/prompting-page.html#from-lazy-prompt-to-rbtf-prompt",
+    "objectID": "workshops/prompting.html#from-lazy-prompt-to-rbtf-prompt",
+    "href": "workshops/prompting.html#from-lazy-prompt-to-rbtf-prompt",
     "title": "AI Prompting for Researchers",
     "section": "From lazy prompt to RBTF prompt",
     "text": "From lazy prompt to RBTF prompt\n\n“Help me with my literature review on climate change”\n\nResult: A generic list of well-known climate change topics, basic search strategies, and textbook advice about synthesising sources. Nothing specific to your actual research.\nNow apply RBTF to the same topic:\n\nRole: “Act as an expert in environmental economics and systematic review methodology.”\nBackground: “I am a Master’s student at University of Hamburg writing my thesis on the effectiveness of carbon pricing mechanisms in the EU. I have already collected 35 papers focused on the EU Emissions Trading System from 2018–2025.”\nTask: “Analyse the common themes across my collected literature and identify 3 potential research gaps that could form the basis of my thesis contribution.”\nFormat: “Present the themes as a structured table with columns: theme, findings, authors, and identified gap. Then provide a brief paragraph for each gap explaining why it matters.”\n\n\n\nWithout RBTF\n\nGeneric advice that could apply to anyone\nNo actionable output\nRequires extensive rework\n\n\nWith RBTF\n\nTailored to your project and field\nImmediately usable structure\nBuilds on your existing work\n\n\n\n\n\n\n\n\n\nThe RBTF prompt takes 2 minutes longer to write but saves hours of back-and-forth.",
@@ -397,8 +397,8 @@
     ]
   },
   {
-    "objectID": "workshops/prompting-page.html#mistakes-to-avoid",
-    "href": "workshops/prompting-page.html#mistakes-to-avoid",
+    "objectID": "workshops/prompting.html#mistakes-to-avoid",
+    "href": "workshops/prompting.html#mistakes-to-avoid",
     "title": "AI Prompting for Researchers",
     "section": "Mistakes to avoid",
     "text": "Mistakes to avoid\n\n\n\n\n\n\nCautionAccepting the first response\n\n\n\nAlways iterate. The first output is a starting point, not a final answer. Push the AI to go deeper, be more specific, or reconsider its approach.\n\n\n\n\n\n\n\n\nCautionBeing vague about format\n\n\n\n“Give me some ideas” produces a generic list. “Give me 5 ideas, each with a one-sentence description and a feasibility rating from 1–5” produces something you can actually work with.\n\n\n\n\n\n\n\n\nCautionForgetting to verify\n\n\n\nAI can produce confident-sounding but incorrect information. Always verify claims, citations, statistics, and dates against primary sources. Never cite an AI-generated reference without checking it exists.",
@@ -407,8 +407,8 @@
     ]
   },
   {
-    "objectID": "workshops/prompting-page.html#what-to-remember",
-    "href": "workshops/prompting-page.html#what-to-remember",
+    "objectID": "workshops/prompting.html#what-to-remember",
+    "href": "workshops/prompting.html#what-to-remember",
     "title": "AI Prompting for Researchers",
     "section": "What to remember",
     "text": "What to remember\nThese are the key principles to take away:\n\nContext matters — the more relevant detail you provide, the better the output\nUse the RBTF Framework — Role, Background, Task, Format\nIterate — treat it as a conversation, not a single query\nSpecify your format — tell the AI exactly how you want the output\nAlways verify — AI is a useful assistant, not an oracle\n\n\n\n\n\n\n\nAI does not replace your expertise. It amplifies it. The better researcher you are, the better results you will get from AI tools.\n\n\n\n\n\n\n\n\n\nTipStart practising today\n\n\n\nPick one task from your current research — a paragraph to draft, a method to choose, a source to summarise — and try using the RBTF Framework. Compare the result to what you would get from a one-line prompt.",
@@ -567,8 +567,8 @@
     ]
   },
   {
-    "objectID": "workshops/literature-research-page.html",
-    "href": "workshops/literature-research-page.html",
+    "objectID": "workshops/literature-research.html",
+    "href": "workshops/literature-research.html",
     "title": "Structured Literature Research",
     "section": "",
     "text": "This workshop covers structured literature research, a core skill for any Bachelor or Master thesis. You will learn how to formulate a clear research question, build effective search strategies, use AI tools for discovery, organize references with Zotero, and evaluate sources critically.\n\n\n\n\n\n\nFinding the right literature early saves you weeks of work later.\n\n\n\n\n\n\nMost students start by Googling randomly and hoping for the best. Other common pitfalls include reading only what is cited in one paper, stopping after the first five results, not keeping track of what you have already read, and relying on a single database or search engine.\n\n\n\n\n\n\nThese mistakes lead to incomplete reviews, missed papers, and wasted time.\n\n\n\n\n\n\nA systematic process saves time and produces better results. The goal is to find, evaluate, and organize relevant literature. The process at a glance:\n\nFormulate a clear research question\nSearch systematically across databases\nSnowball forwards and backwards\nOrganize references in a manager\nEvaluate sources critically\nWrite your literature review",
@@ -577,8 +577,8 @@
     ]
   },
   {
-    "objectID": "workshops/literature-research-page.html#welcome",
-    "href": "workshops/literature-research-page.html#welcome",
+    "objectID": "workshops/literature-research.html#welcome",
+    "href": "workshops/literature-research.html#welcome",
     "title": "Structured Literature Research",
     "section": "",
     "text": "This workshop covers structured literature research, a core skill for any Bachelor or Master thesis. You will learn how to formulate a clear research question, build effective search strategies, use AI tools for discovery, organize references with Zotero, and evaluate sources critically.\n\n\n\n\n\n\nFinding the right literature early saves you weeks of work later.",
@@ -587,8 +587,8 @@
     ]
   },
   {
-    "objectID": "workshops/literature-research-page.html#common-mistakes",
-    "href": "workshops/literature-research-page.html#common-mistakes",
+    "objectID": "workshops/literature-research.html#common-mistakes",
+    "href": "workshops/literature-research.html#common-mistakes",
     "title": "Structured Literature Research",
     "section": "",
     "text": "Most students start by Googling randomly and hoping for the best. Other common pitfalls include reading only what is cited in one paper, stopping after the first five results, not keeping track of what you have already read, and relying on a single database or search engine.\n\n\n\n\n\n\nThese mistakes lead to incomplete reviews, missed papers, and wasted time.",
@@ -597,8 +597,8 @@
     ]
   },
   {
-    "objectID": "workshops/literature-research-page.html#a-structured-approach",
-    "href": "workshops/literature-research-page.html#a-structured-approach",
+    "objectID": "workshops/literature-research.html#a-structured-approach",
+    "href": "workshops/literature-research.html#a-structured-approach",
     "title": "Structured Literature Research",
     "section": "",
     "text": "A systematic process saves time and produces better results. The goal is to find, evaluate, and organize relevant literature. The process at a glance:\n\nFormulate a clear research question\nSearch systematically across databases\nSnowball forwards and backwards\nOrganize references in a manager\nEvaluate sources critically\nWrite your literature review",
@@ -607,8 +607,8 @@
     ]
   },
   {
-    "objectID": "workshops/literature-research-page.html#start-broad-then-narrow-down",
-    "href": "workshops/literature-research-page.html#start-broad-then-narrow-down",
+    "objectID": "workshops/literature-research.html#start-broad-then-narrow-down",
+    "href": "workshops/literature-research.html#start-broad-then-narrow-down",
     "title": "Structured Literature Research",
     "section": "Start broad, then narrow down",
     "text": "Start broad, then narrow down\nBegin with your general topic area, ask yourself what specifically you want to investigate, and narrow down step by step.\n\n\nToo broad:\n“Vehicle routing problems”\n\nFocused:\n“How do metaheuristics compare to exact methods for vehicle routing problems with time windows?”",
@@ -617,8 +617,8 @@
     ]
   },
   {
-    "objectID": "workshops/literature-research-page.html#use-a-framework-to-structure-your-question",
-    "href": "workshops/literature-research-page.html#use-a-framework-to-structure-your-question",
+    "objectID": "workshops/literature-research.html#use-a-framework-to-structure-your-question",
+    "href": "workshops/literature-research.html#use-a-framework-to-structure-your-question",
     "title": "Structured Literature Research",
     "section": "Use a framework to structure your question",
     "text": "Use a framework to structure your question\nThe PICO framework helps you define your question clearly:\n\n\n\n\n\n\n\n\n\nElement\nMeaning\nExample\n\n\n\n\nPopulation\nWhat problem or domain?\nVehicle routing with time windows\n\n\nIntervention\nWhat approach or method?\nMetaheuristic algorithms\n\n\nComparison\nCompared to what?\nExact methods (branch-and-bound)\n\n\nOutcome\nWhat do you measure?\nSolution quality, computation time\n\n\n\n\n\n\n\n\n\n\nNot every research question fits PICO perfectly. Use it as a guide, not a strict rule.\n\n\n\nA well-defined question determines which databases to search, which keywords to use, which papers are relevant, and when you have covered enough ground.\n\n\n\n\n\n\nWrite down your research question before you start searching. Revisit and refine it as you learn more about the field.",
@@ -627,8 +627,8 @@
     ]
   },
   {
-    "objectID": "workshops/literature-research-page.html#google-scholar",
-    "href": "workshops/literature-research-page.html#google-scholar",
+    "objectID": "workshops/literature-research.html#google-scholar",
+    "href": "workshops/literature-research.html#google-scholar",
     "title": "Structured Literature Research",
     "section": "Google Scholar",
     "text": "Google Scholar\nGoogle Scholar is the most accessible starting point: free, broad coverage, and easy to use.\n\n\nPros:\n\nFree and always available\nCovers most disciplines\n“Cited by” feature for snowballing\nFull-text search across papers\n\n\nCons:\n\nQuality varies widely\nNo advanced filtering options\nIncludes non-peer-reviewed work\nMetadata can be incomplete\n\n\n\nUseful search techniques: use quotes for exact phrases like \"vehicle routing problem\", the author: operator (e.g. author:taillard) to find a specific researcher’s work, and date ranges to focus on recent publications. The “Cited by” link under each result lets you find newer papers that reference a given work, and “Related articles” surfaces similar papers.\n\n\n\n\n\n\nCreate a Google Scholar profile and set up alerts for your search terms. You will be notified when new papers match your query.",
@@ -637,8 +637,8 @@
     ]
   },
   {
-    "objectID": "workshops/literature-research-page.html#specialized-databases",
-    "href": "workshops/literature-research-page.html#specialized-databases",
+    "objectID": "workshops/literature-research.html#specialized-databases",
+    "href": "workshops/literature-research.html#specialized-databases",
     "title": "Structured Literature Research",
     "section": "Specialized databases",
     "text": "Specialized databases\nBeyond Google Scholar, use specialized databases for more thorough coverage:\n\n\n\n\n\n\n\n\n\nDatabase\nStrength\nAccess\n\n\n\n\nScopus\nComprehensive, citation analysis\nUniversity login\n\n\nWeb of Science\nHigh-quality journals\nUniversity login\n\n\nIEEE Xplore\nEngineering and CS\nUniversity login\n\n\nSSRN\nWorking papers, business/economics\nFree\n\n\nEBSCOhost\nMulti-disciplinary\nUniversity library\n\n\n\n\n\n\n\n\n\n\nAccess most of these through the University of Hamburg library or VPN.",
@@ -647,8 +647,8 @@
     ]
   },
   {
-    "objectID": "workshops/literature-research-page.html#building-search-strings",
-    "href": "workshops/literature-research-page.html#building-search-strings",
+    "objectID": "workshops/literature-research.html#building-search-strings",
+    "href": "workshops/literature-research.html#building-search-strings",
     "title": "Structured Literature Research",
     "section": "Building search strings",
     "text": "Building search strings\nUse Boolean operators to combine search terms:\n\nAND — both terms must appear: \"vehicle routing\" AND \"metaheuristic\"\nOR — either term can appear: \"genetic algorithm\" OR \"simulated annealing\"\nNOT — exclude a term: \"optimization\" NOT \"continuous\"\nWildcards — match variations: optimi* matches optimize, optimization, optimizing\n\nA complete search string for our example:\n(\"vehicle routing\" OR \"VRP\") AND\n(\"metaheuristic\" OR \"genetic algorithm\" OR\n\"simulated annealing\") AND \"optimization\"\nStart broad, then narrow with additional terms. Document your search strings so you can reproduce and refine them, and track how many results each search returns.\n\n\n\n\n\n\nKeep a search log: record the database, search string, date, and number of results for each search you run.",
@@ -657,8 +657,8 @@
     ]
   },
   {
-    "objectID": "workshops/literature-research-page.html#snowballing",
-    "href": "workshops/literature-research-page.html#snowballing",
+    "objectID": "workshops/literature-research.html#snowballing",
+    "href": "workshops/literature-research.html#snowballing",
     "title": "Structured Literature Research",
     "section": "Snowballing",
     "text": "Snowballing\nSnowballing is how you find papers that keyword search misses.\n\n\nForward citation tracking:\n\nWho cited this paper?\nUse Google Scholar “Cited by”\nFinds newer work that builds on a given paper\nGood for finding the latest developments\n\n\nBackward citation tracking:\n\nWhat does this paper cite?\nCheck the reference list\nFinds foundational and seminal papers\nHelps you understand the research lineage\n\n\n\n\n\n\n\n\n\nCombine both directions. Forward snowballing finds new work; backward snowballing finds the foundations. Together, they fill the gaps that keyword search leaves.",
@@ -667,8 +667,8 @@
     ]
   },
   {
-    "objectID": "workshops/literature-research-page.html#ai-discovery-tools",
-    "href": "workshops/literature-research-page.html#ai-discovery-tools",
+    "objectID": "workshops/literature-research.html#ai-discovery-tools",
+    "href": "workshops/literature-research.html#ai-discovery-tools",
     "title": "Structured Literature Research",
     "section": "AI discovery tools",
     "text": "AI discovery tools\nSeveral tools now use AI to help you find papers faster. They complement traditional database searches — they are good at surfacing papers you would not discover through keyword search alone, at showing how papers relate to each other, and at giving you a quick overview of a research field.\n\n\n\n\n\n\n\n\nTool\nWhat It Does\n\n\n\n\nSemantic Scholar\nAI-powered academic search, finds related papers\n\n\nConnected Papers\nVisual graph of related papers\n\n\nElicit\nAI research assistant, extracts findings\n\n\nResearch Rabbit\nDiscovers related work from seed papers\n\n\nConsensus\nAI search engine for research findings\n\n\nPerplexity\nAI search with academic sources",
@@ -677,8 +677,8 @@
     ]
   },
   {
-    "objectID": "workshops/literature-research-page.html#using-ai-tools-effectively",
-    "href": "workshops/literature-research-page.html#using-ai-tools-effectively",
+    "objectID": "workshops/literature-research.html#using-ai-tools-effectively",
+    "href": "workshops/literature-research.html#using-ai-tools-effectively",
     "title": "Structured Literature Research",
     "section": "Using AI tools effectively",
     "text": "Using AI tools effectively\nStart with a seed paper you know is relevant, then use Connected Papers to visualize how papers connect, Semantic Scholar to find semantically similar work, and Elicit to quickly extract findings across many papers.\nNo single tool is sufficient on its own. Use a layered approach:\n\nStart with Google Scholar and database searches\nExpand with AI tools (Semantic Scholar, Connected Papers)\nSnowball forwards and backwards from relevant papers\nVerify everything you find by reading the actual papers\n\n\n\n\n\n\n\nAI tools are helpful for discovery, but always verify: check the actual paper, read abstracts yourself, and do not trust AI summaries blindly. AI can hallucinate references that do not exist.",
@@ -687,8 +687,8 @@
     ]
   },
   {
-    "objectID": "workshops/literature-research-page.html#why-use-a-reference-manager",
-    "href": "workshops/literature-research-page.html#why-use-a-reference-manager",
+    "objectID": "workshops/literature-research.html#why-use-a-reference-manager",
+    "href": "workshops/literature-research.html#why-use-a-reference-manager",
     "title": "Structured Literature Research",
     "section": "Why use a reference manager?",
     "text": "Why use a reference manager?\nYou will read dozens to hundreds of papers. Without a system, you will lose track of what you have read, waste time reformatting citations, and miss papers when writing your bibliography. A reference manager lets you organize papers by topic, cite correctly in any format, collaborate with others, and sync across devices.",
@@ -697,8 +697,8 @@
     ]
   },
   {
-    "objectID": "workshops/literature-research-page.html#zotero-and-the-workflow",
-    "href": "workshops/literature-research-page.html#zotero-and-the-workflow",
+    "objectID": "workshops/literature-research.html#zotero-and-the-workflow",
+    "href": "workshops/literature-research.html#zotero-and-the-workflow",
     "title": "Structured Literature Research",
     "section": "Zotero and the workflow",
     "text": "Zotero and the workflow\nZotero is free, open-source, and works on Windows, Mac, and Linux. It comes with a browser connector for saving papers with one click, PDF storage for attaching and annotating papers directly, collections and tags for organizing your library, groups for collaborative projects, and sync for accessing everything from any device.\n\n\n\n\n\n\nAlways import via DOI when possible. This gives you the most accurate and complete metadata. After importing, always check that the data is correct.\n\n\n\nThe workflow for your seminar or thesis:\n\nFind a paper via Google Scholar, Scopus, or an AI tool\nSave it with the Zotero browser connector or import via DOI\nOrganize it into a collection for your project\nExport a .bib file from Zotero\nCite in Quarto using [@citationkey]\n\n\n\nIn your .qmd file:\nRecent work by [@taillard1993]\nshows that...\n\n\n\nRendered output:\nRecent work by Taillard (1993) shows that…",
@@ -707,8 +707,8 @@
     ]
   },
   {
-    "objectID": "workshops/literature-research-page.html#source-types-and-quality-indicators",
-    "href": "workshops/literature-research-page.html#source-types-and-quality-indicators",
+    "objectID": "workshops/literature-research.html#source-types-and-quality-indicators",
+    "href": "workshops/literature-research.html#source-types-and-quality-indicators",
     "title": "Structured Literature Research",
     "section": "Source types and quality indicators",
     "text": "Source types and quality indicators\nNot all sources carry the same weight:\n\n\n\n\n\n\n\n\n\nSource Type\nReliability\nPeer-Reviewed?\n\n\n\n\nJournal articles\nHigh\nYes\n\n\nConference papers\nMedium–High\nUsually\n\n\nPreprints (arXiv)\nVariable\nNo\n\n\nTextbooks\nHigh\nEditorial review\n\n\nWorking papers (SSRN)\nVariable\nNo\n\n\nBlog posts, websites\nLow–Variable\nNo\n\n\n\n\n\n\n\n\n\n\nPrefer peer-reviewed journal articles and reputable conference proceedings. Use preprints and working papers with caution.\n\n\n\nWhen evaluating a paper, consider: journal reputation (is it recognized in the field?), author credentials (are they established researchers?), methodology (is the approach rigorous and well-described?), recency (has it been superseded?), and citation count (has it been cited by others, and how often?).\n\n\n\n\n\n\nFor operations research specifically: check the benchmark instances used, the computational setup, and whether the results are reproducible.",
@@ -717,8 +717,8 @@
     ]
   },
   {
-    "objectID": "workshops/literature-research-page.html#reading-papers-efficiently",
-    "href": "workshops/literature-research-page.html#reading-papers-efficiently",
+    "objectID": "workshops/literature-research.html#reading-papers-efficiently",
+    "href": "workshops/literature-research.html#reading-papers-efficiently",
     "title": "Structured Literature Research",
     "section": "Reading papers efficiently",
     "text": "Reading papers efficiently\nYou don’t need to read every paper from start to finish. For most papers, start with the abstract and conclusion to decide whether it is relevant. If it is, read the introduction for context, then the methodology and results. Save a deep read for the papers that are closest to your own work.\nAnnotate as you read. In Zotero, you can highlight and comment directly on PDFs. For each paper, note the research question, the method used, the main findings, and any limitations. This makes writing your literature review much faster because you won’t need to re-read papers later.",
@@ -727,8 +727,8 @@
     ]
   },
   {
-    "objectID": "workshops/literature-research-page.html#reading-critically",
-    "href": "workshops/literature-research-page.html#reading-critically",
+    "objectID": "workshops/literature-research.html#reading-critically",
+    "href": "workshops/literature-research.html#reading-critically",
     "title": "Structured Literature Research",
     "section": "Reading critically",
     "text": "Reading critically\nDo not accept results at face value. Ask yourself whether the sample size is sufficient, whether the assumptions are reasonable, whether the conclusions follow from the results, whether the findings can be generalized to other contexts, and whether there are limitations the authors do not discuss.\n\n\n\n\n\n\nA good literature review is not about reading everything. It is about finding and connecting the right papers. For guidance on how to write the review itself, see the Scientific Writing guide.",
@@ -737,8 +737,8 @@
     ]
   },
   {
-    "objectID": "workshops/literature-research-page.html#summary-and-resources",
-    "href": "workshops/literature-research-page.html#summary-and-resources",
+    "objectID": "workshops/literature-research.html#summary-and-resources",
+    "href": "workshops/literature-research.html#summary-and-resources",
     "title": "Structured Literature Research",
     "section": "Summary and resources",
     "text": "Summary and resources\nThe full process:\n\nQuestion — Define a clear, focused research question\nSearch — Use databases, Boolean operators, and search strings\nSnowball — Follow citations forwards and backwards\nDiscover — Use AI tools to find related work\nOrganize — Store everything in Zotero and export to .bib\nEvaluate — Assess quality, relevance, and reliability\nWrite — Synthesize findings into a coherent review\n\n\n\n\n\n\n\nStart your literature research early. It is an iterative process that improves as you learn more about your topic.\n\n\n\n\n\n\n\n\n\n\n\nResource\nLink\n\n\n\n\nGoogle Scholar\nscholar.google.com\n\n\nSemantic Scholar\nsemanticscholar.org\n\n\nConnected Papers\nconnectedpapers.com\n\n\nElicit\nelicit.com\n\n\nZotero\nzotero.org\n\n\nUHH Library\nsub.uni-hamburg.de",
@@ -747,8 +747,8 @@
     ]
   },
   {
-    "objectID": "workshops/git-github-page.html",
-    "href": "workshops/git-github-page.html",
+    "objectID": "workshops/git-github.html",
+    "href": "workshops/git-github.html",
     "title": "Git and GitHub",
     "section": "",
     "text": "This workshop covers Git and GitHub. By the end, you will be able to track changes to your files with Git, use Zed’s built-in Git integration to stage and commit, push your work to GitHub as a backup, and understand the terminal commands behind what Zed does visually.\n\n\n\n\n\n\nVersion control is not just for programmers. It protects every document you write: thesis drafts, code, and data analysis scripts.\n\n\n\n\n\n\n\n\nWhat usually happens:\nessay_final.docx\nessay_final_v2.docx\nessay_final_REALLY_FINAL.docx\nessay_final_REALLY_FINAL_revised.docx\n\n\n\nWhat version control gives you:\n\nA complete history of every change you made, so you can see what your project looked like at any point in time\nThe ability to undo any mistake, even weeks later\nA backup in the cloud through GitHub, so your work survives a lost or broken laptop\nA way to work with others without overwriting each other’s changes\n\n\n\n\n\n\n\n\n\nIf your laptop dies tomorrow, is your thesis safe? Git and GitHub make sure the answer is yes.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGit\nGitHub\n\n\n\n\nWhat\nSoftware on your computer\nA website that hosts repositories\n\n\nPurpose\nTracks changes to files\nSharing, collaboration, backup\n\n\nConnection\nWorks entirely offline\nRequires internet\n\n\nCost\nFree and open-source\nFree tier available\n\n\n\n\n\n\n\n\n\n\nGit is the engine. GitHub is one of several online platforms (others include GitLab and Bitbucket) where you store your Git repositories.",
@@ -757,8 +757,8 @@
     ]
   },
   {
-    "objectID": "workshops/git-github-page.html#welcome",
-    "href": "workshops/git-github-page.html#welcome",
+    "objectID": "workshops/git-github.html#welcome",
+    "href": "workshops/git-github.html#welcome",
     "title": "Git and GitHub",
     "section": "",
     "text": "This workshop covers Git and GitHub. By the end, you will be able to track changes to your files with Git, use Zed’s built-in Git integration to stage and commit, push your work to GitHub as a backup, and understand the terminal commands behind what Zed does visually.\n\n\n\n\n\n\nVersion control is not just for programmers. It protects every document you write: thesis drafts, code, and data analysis scripts.",
@@ -767,8 +767,8 @@
     ]
   },
   {
-    "objectID": "workshops/git-github-page.html#the-problem-and-the-solution",
-    "href": "workshops/git-github-page.html#the-problem-and-the-solution",
+    "objectID": "workshops/git-github.html#the-problem-and-the-solution",
+    "href": "workshops/git-github.html#the-problem-and-the-solution",
     "title": "Git and GitHub",
     "section": "",
     "text": "What usually happens:\nessay_final.docx\nessay_final_v2.docx\nessay_final_REALLY_FINAL.docx\nessay_final_REALLY_FINAL_revised.docx\n\n\n\nWhat version control gives you:\n\nA complete history of every change you made, so you can see what your project looked like at any point in time\nThe ability to undo any mistake, even weeks later\nA backup in the cloud through GitHub, so your work survives a lost or broken laptop\nA way to work with others without overwriting each other’s changes\n\n\n\n\n\n\n\n\n\nIf your laptop dies tomorrow, is your thesis safe? Git and GitHub make sure the answer is yes.",
@@ -777,8 +777,8 @@
     ]
   },
   {
-    "objectID": "workshops/git-github-page.html#git-vs-github",
-    "href": "workshops/git-github-page.html#git-vs-github",
+    "objectID": "workshops/git-github.html#git-vs-github",
+    "href": "workshops/git-github.html#git-vs-github",
     "title": "Git and GitHub",
     "section": "",
     "text": "Git\nGitHub\n\n\n\n\nWhat\nSoftware on your computer\nA website that hosts repositories\n\n\nPurpose\nTracks changes to files\nSharing, collaboration, backup\n\n\nConnection\nWorks entirely offline\nRequires internet\n\n\nCost\nFree and open-source\nFree tier available\n\n\n\n\n\n\n\n\n\n\nGit is the engine. GitHub is one of several online platforms (others include GitLab and Bitbucket) where you store your Git repositories.",
@@ -787,8 +787,8 @@
     ]
   },
   {
-    "objectID": "workshops/git-github-page.html#installing-and-configuring-git",
-    "href": "workshops/git-github-page.html#installing-and-configuring-git",
+    "objectID": "workshops/git-github.html#installing-and-configuring-git",
+    "href": "workshops/git-github.html#installing-and-configuring-git",
     "title": "Git and GitHub",
     "section": "Installing and configuring Git",
     "text": "Installing and configuring Git\nmacOS (via Homebrew, which you installed in the earlier workshop):\nbrew install git\nWindows:\nwinget install Git.Git\nLinux:\nsudo apt install git\nVerify it works with git --version.\nOnce installed, open Zed’s integrated terminal and tell Git who you are:\ngit config --global user.name \"Your Name\"\ngit config --global user.email \"your.email@uni-hamburg.de\"\nThis labels your commits with your name and email. You only need to do this once.\n\n\n\n\n\n\nUse the same email you will register on GitHub. This links your commits to your GitHub account.",
@@ -797,8 +797,8 @@
     ]
   },
   {
-    "objectID": "workshops/git-github-page.html#how-git-works",
-    "href": "workshops/git-github-page.html#how-git-works",
+    "objectID": "workshops/git-github.html#how-git-works",
+    "href": "workshops/git-github.html#how-git-works",
     "title": "Git and GitHub",
     "section": "How Git works",
     "text": "How Git works\nGit organizes your work into three zones:\n\nWorking directory: your files as you edit them\nStaging area: changes you have selected for the next snapshot\nRepository: permanent saved snapshots (commits)\n\nThink of it like writing an email: you draft the text (working directory), you review what to include (staging), you hit send (commit). The command git add moves changes to staging, and git commit saves the snapshot. This two-step process lets you choose exactly what goes into each commit.\nYou can interact with Git in two ways. Zed’s Git panel lets you click to stage, commit, and view diffs visually, which is enough for most daily work. Terminal commands give you full control over every operation and work in any environment, not just Zed. We will teach both: start with Zed’s visual tools for comfort, then learn the terminal commands so you understand what is happening underneath.\nZed has built-in Git support: the source control panel shows all changed files at a glance, you can check the box next to a file to stage it, type a commit message and commit without leaving the editor, and the diff view shows exactly which lines changed inline. Colored gutter markers in the margin indicate added, modified, and deleted lines.\n\n\n\n\n\n\nFor daily work, Zed’s Git panel is all you need. The terminal commands in the following sections show you what is happening behind the scenes and become useful when you need more control or when something goes wrong.",
@@ -807,8 +807,8 @@
     ]
   },
   {
-    "objectID": "workshops/git-github-page.html#starting-a-new-project",
-    "href": "workshops/git-github-page.html#starting-a-new-project",
+    "objectID": "workshops/git-github.html#starting-a-new-project",
+    "href": "workshops/git-github.html#starting-a-new-project",
     "title": "Git and GitHub",
     "section": "Starting a new project",
     "text": "Starting a new project\nIn Zed’s terminal, navigate to where you want your project and run:\nmkdir my-project\ncd my-project\ngit init\nYou should see: Initialized empty Git repository in .../my-project/.git/\nNow create a file and check the status:\necho \"# My First Project\" &gt; README.md\ngit status\nGit will tell you README.md is an untracked file. It exists, but Git is not watching it yet. Zed shows this directly in the file tree: untracked and modified files are marked automatically once you run git init.",
@@ -817,8 +817,8 @@
     ]
   },
   {
-    "objectID": "workshops/git-github-page.html#staging-and-committing",
-    "href": "workshops/git-github-page.html#staging-and-committing",
+    "objectID": "workshops/git-github.html#staging-and-committing",
+    "href": "workshops/git-github.html#staging-and-committing",
     "title": "Git and GitHub",
     "section": "Staging and committing",
     "text": "Staging and committing\nStage a file to tell Git you want to include it in the next snapshot:\ngit add README.md\nCommit to save the snapshot with a message:\ngit commit -m \"Add initial README file\"\nThat is your first commit. Now edit the file and repeat:\necho \"This project is for learning Git.\" &gt;&gt; README.md\ngit add README.md\ngit commit -m \"Add project description to README\"\n\n\n\n\n\n\ngit add . stages all changed files at once. Use it when you want to commit everything, but be careful not to include files you did not intend to track.",
@@ -827,8 +827,8 @@
     ]
   },
   {
-    "objectID": "workshops/git-github-page.html#commit-messages-and-history",
-    "href": "workshops/git-github-page.html#commit-messages-and-history",
+    "objectID": "workshops/git-github.html#commit-messages-and-history",
+    "href": "workshops/git-github.html#commit-messages-and-history",
     "title": "Git and GitHub",
     "section": "Commit messages and history",
     "text": "Commit messages and history\n\n\nUnhelpful messages:\n\n“fixed stuff”\n“update”\n“final version”\n“asdf”\n\n\nDescriptive messages:\n\n“Add methodology section”\n“Fix citation format in literature review”\n“Update results table with revised data”\n“Remove unused figures from images folder”\n\n\n\n\n\n\n\n\n\nWrite messages that describe what changed and why. Six months from now, “update” tells you nothing. “Fix broken cross-reference in chapter 3” tells you everything.\n\n\n\nTo see all your commits in a compact view, run git log --oneline. Each line shows a short identifier (the commit hash) and your message, forming the timeline of your project. To see what changed since your last commit, run git diff. Zed’s source control panel shows diffs visually, so you can see exactly which lines were added, changed, or removed without memorizing the command.",
@@ -837,8 +837,8 @@
     ]
   },
   {
-    "objectID": "workshops/git-github-page.html#ignoring-files-you-do-not-need",
-    "href": "workshops/git-github-page.html#ignoring-files-you-do-not-need",
+    "objectID": "workshops/git-github.html#ignoring-files-you-do-not-need",
+    "href": "workshops/git-github.html#ignoring-files-you-do-not-need",
     "title": "Git and GitHub",
     "section": "Ignoring files you do not need",
     "text": "Ignoring files you do not need\nSome files should not be tracked, such as compiled output, system files, and large data. Create a .gitignore file:\n_site/\n_freeze/\n.DS_Store\n*.pdf\nFor a Quarto project, this means you track your .qmd source files but not the rendered output. The output can always be regenerated.\n\n\n\n\n\n\nAdd .gitignore early in your project. It is much easier to ignore files from the start than to remove them from Git history later.",
@@ -847,8 +847,8 @@
     ]
   },
   {
-    "objectID": "workshops/git-github-page.html#setting-up-github",
-    "href": "workshops/git-github-page.html#setting-up-github",
+    "objectID": "workshops/git-github.html#setting-up-github",
+    "href": "workshops/git-github.html#setting-up-github",
     "title": "Git and GitHub",
     "section": "Setting up GitHub",
     "text": "Setting up GitHub\nGo to github.com and sign up with your university email. Apply for the GitHub Student Developer Pack for extra features. If you already set up GitHub for Copilot in the earlier workshop, you are ready to go.\nTo create your first remote repository, click the + icon in the top-right corner and select “New repository”. Name it my-project (matching your local folder), leave it public (or private if you prefer), and do not initialize with a README since you already have one locally. Click “Create repository” and GitHub will show you setup instructions.",
@@ -857,8 +857,8 @@
     ]
   },
   {
-    "objectID": "workshops/git-github-page.html#pushing-to-github",
-    "href": "workshops/git-github-page.html#pushing-to-github",
+    "objectID": "workshops/git-github.html#pushing-to-github",
+    "href": "workshops/git-github.html#pushing-to-github",
     "title": "Git and GitHub",
     "section": "Pushing to GitHub",
     "text": "Pushing to GitHub\nBack in Zed’s terminal, connect your local repo to GitHub and push your commits:\ngit remote add origin https://github.com/YOUR-USERNAME/my-project.git\ngit branch -M main\ngit push -u origin main\nRefresh your GitHub page. Your files and commit history are now visible online.\n\n\n\n\n\n\nGitHub will ask you to log in the first time you push. If the login prompts become annoying, look into SSH keys or the GitHub CLI (gh auth login) for a smoother setup.\n\n\n\nAfter the initial setup, the day-to-day cycle is simple. Both approaches (Zed’s visual panel and the terminal) accomplish the same thing:\n\n\nIn Zed’s Git panel:\n\nEdit your files\nOpen the source control panel\nCheck the boxes to stage changes\nType a commit message and commit\nPush to GitHub\n\n\nIn the terminal:\n\nEdit your files\ngit add .\ngit commit -m \"message\"\ngit push\n\n\n\n\n\n\n\n\n\nCommit and push at the end of every work session. This is your backup. If anything happens to your machine, your work is safe on GitHub.",
@@ -867,8 +867,8 @@
     ]
   },
   {
-    "objectID": "workshops/git-github-page.html#working-with-branches",
-    "href": "workshops/git-github-page.html#working-with-branches",
+    "objectID": "workshops/git-github.html#working-with-branches",
+    "href": "workshops/git-github.html#working-with-branches",
     "title": "Git and GitHub",
     "section": "Working with branches",
     "text": "Working with branches\nSometimes you want to try a new analysis approach but do not want to break what works. A branch is an independent line of development that lets you experiment safely.\n\n\nWithout branches:\n\nYou edit your only copy\nIf it goes wrong, you have to undo manually\nRisky for larger changes\n\n\nWith branches:\n\nYou create a separate copy to experiment\nYour main version stays untouched\nMerge back only if you are happy with the result\n\n\n\nThe commands:\n# Create and switch to a new branch\ngit checkout -b experiment\n\n# Do your work, then add and commit as usual\ngit add .\ngit commit -m \"Try a new approach to analysis\"\n\n# Switch back to main\ngit checkout main\n\n# Merge the branch into main\ngit merge experiment\n\n\n\n\n\n\nBranching becomes more useful as your project grows. For now, just know it exists. In professional teams, developers create a branch for every new feature or fix, then merge it back after review through pull requests.",
@@ -877,8 +877,8 @@
     ]
   },
   {
-    "objectID": "workshops/git-github-page.html#folder-structure",
-    "href": "workshops/git-github-page.html#folder-structure",
+    "objectID": "workshops/git-github.html#folder-structure",
+    "href": "workshops/git-github.html#folder-structure",
     "title": "Git and GitHub",
     "section": "Folder structure",
     "text": "Folder structure\nA clean folder structure makes your project easier to navigate, version-control, and share. Here is a recommended layout for a thesis project:\nmy-thesis/\n├── seminar-paper-en.qmd    # Your paper (or -de.qmd)\n├── references.bib           # Bibliography\n├── typst-show.typ           # Required Typst helper\n├── images/                  # All figures\n│   ├── fig-results.png\n│   └── fig-network.pdf\n├── code/                    # Scripts and implementation\n│   ├── model.py\n│   └── analysis.py\n└── data/                    # Input data and instances\n    ├── instances/\n    └── results/\n\n\n\n\n\n\nKeep your project root clean. Put figures in images/, scripts in code/, and data in data/. This makes it easy to find files and write clean .gitignore rules.",
@@ -887,8 +887,8 @@
     ]
   },
   {
-    "objectID": "workshops/git-github-page.html#file-naming-conventions",
-    "href": "workshops/git-github-page.html#file-naming-conventions",
+    "objectID": "workshops/git-github.html#file-naming-conventions",
+    "href": "workshops/git-github.html#file-naming-conventions",
     "title": "Git and GitHub",
     "section": "File naming conventions",
     "text": "File naming conventions\n\nNo spaces — use hyphens or underscores: fig-results.png, not fig results.png\nLowercase — avoids cross-platform issues: data/instances/, not Data/Instances/\nBe descriptive — fig-gap-by-instance-size.png is better than plot1.png\nDate-prefix raw data if versioned: 2026-03-15-survey-responses.csv",
@@ -897,8 +897,8 @@
     ]
   },
   {
-    "objectID": "workshops/git-github-page.html#what-to-track-and-what-not-to",
-    "href": "workshops/git-github-page.html#what-to-track-and-what-not-to",
+    "objectID": "workshops/git-github.html#what-to-track-and-what-not-to",
+    "href": "workshops/git-github.html#what-to-track-and-what-not-to",
     "title": "Git and GitHub",
     "section": "What to track (and what not to)",
     "text": "What to track (and what not to)\n\n\n\nTable 1: Version control decisions\n\n\n\n\n\nTrack with Git\nDo NOT track\n\n\n\n\n.qmd source files\nGenerated PDFs (_site/, *.pdf)\n\n\n.bib bibliography\nQuarto cache (_freeze/)\n\n\nCode and scripts\nLarge datasets (use cloud storage)\n\n\n.gitignore\nSystem files (.DS_Store)\n\n\ntypst-show.typ\nEditor settings (.vscode/)\n\n\n\n\n\n\nA good .gitignore for a Quarto thesis project:\n_site/\n_freeze/\n*.pdf\n.DS_Store\n.quarto/",
@@ -907,8 +907,8 @@
     ]
   },
   {
-    "objectID": "workshops/git-github-page.html#reference-and-resources",
-    "href": "workshops/git-github-page.html#reference-and-resources",
+    "objectID": "workshops/git-github.html#reference-and-resources",
+    "href": "workshops/git-github.html#reference-and-resources",
     "title": "Git and GitHub",
     "section": "Reference and resources",
     "text": "Reference and resources\n\n\n\n\n\n\n\n\nCommand\nWhat it does\n\n\n\n\ngit init\nStart tracking a folder\n\n\ngit status\nSee what has changed\n\n\ngit add &lt;file&gt;\nStage a file for commit\n\n\ngit commit -m \"...\"\nSave a snapshot\n\n\ngit log --oneline\nView commit history\n\n\ngit remote add origin &lt;url&gt;\nConnect to GitHub\n\n\ngit push\nSend commits to GitHub\n\n\ngit pull\nGet updates from GitHub\n\n\ngit checkout -b &lt;name&gt;\nCreate and switch to a branch\n\n\n\n\nTakeaways:\n\nVersion control protects your work. No more “final_v2_REALLY_FINAL.docx”\nZed’s Git panel handles daily tasks. Stage, commit, and diff without leaving your editor\nTerminal commands give you full control. Needed for setup, branching, and when things go wrong\nPush to GitHub at the end of every session. It is your backup\n\n\n\n\n\n\n\nStart using Git now, even for a single file. The safety net is worth the 30 seconds it takes to commit.\n\n\n\n\n\n\n\n\n\n\n\nResource\nLink\n\n\n\n\nPro Git (free book)\ngit-scm.com/book\n\n\nGitHub Docs\ndocs.github.com\n\n\nLearn Git Branching\nlearngitbranching.js.org\n\n\nGitHub Student Pack\neducation.github.com/pack\n\n\n\n\n\n\n\n\n\n\nPro Git chapters 1-3 cover everything you need for your thesis work. The interactive tutorial at Learn Git Branching is a good way to practice.",
@@ -917,8 +917,8 @@
     ]
   },
   {
-    "objectID": "workshops/quarto-academic-writing-page.html",
-    "href": "workshops/quarto-academic-writing-page.html",
+    "objectID": "workshops/quarto-academic-writing.html",
+    "href": "workshops/quarto-academic-writing.html",
     "title": "Quarto for Academic Writing",
     "section": "",
     "text": "Quarto is an open-source scientific publishing system developed by Posit (formerly RStudio). Write in Markdown, render to multiple formats:\n\nPDF (via Typst or LaTeX)\nHTML pages and websites\nPresentation slides\nWord documents\n\n\n\n\n\n\n\nThink of Quarto as a modern replacement for LaTeX that is simpler to learn and just as capable for academic writing.\n\n\n\n\n\nLaTeX\n\nSteep learning curve\nComplex syntax for simple tasks\nDifficult to debug errors\nLarge installation (several GB)\nOutput mainly PDF\n\n\nQuarto\n\nSimple Markdown syntax\nEasy to read and write\nClear error messages\nLightweight installation\nPDF, HTML, Word, slides, websites\n\n\n\n\n\n\n\n\n\nQuarto produces publication-quality PDFs via Typst with no need to install a full TeX distribution!\n\n\n\n\n\nLaTeX\n\\textbf{bold} and \\textit{italic}\n\n\\begin{itemize}\n  \\item First item\n  \\item Second item\n\\end{itemize}\n\n\\section{Introduction}\n\n\\parencite{smith2023}\n\n\n\nQuarto\n**bold** and *italic*\n\n- First item\n- Second item\n\n## Introduction\n\n[@smith2023]\n\n\nSame output quality, much less typing!",
@@ -927,8 +927,8 @@
     ]
   },
   {
-    "objectID": "workshops/quarto-academic-writing-page.html#what-is-quarto-and-why-use-it",
-    "href": "workshops/quarto-academic-writing-page.html#what-is-quarto-and-why-use-it",
+    "objectID": "workshops/quarto-academic-writing.html#what-is-quarto-and-why-use-it",
+    "href": "workshops/quarto-academic-writing.html#what-is-quarto-and-why-use-it",
     "title": "Quarto for Academic Writing",
     "section": "",
     "text": "Quarto is an open-source scientific publishing system developed by Posit (formerly RStudio). Write in Markdown, render to multiple formats:\n\nPDF (via Typst or LaTeX)\nHTML pages and websites\nPresentation slides\nWord documents\n\n\n\n\n\n\n\nThink of Quarto as a modern replacement for LaTeX that is simpler to learn and just as capable for academic writing.\n\n\n\n\n\nLaTeX\n\nSteep learning curve\nComplex syntax for simple tasks\nDifficult to debug errors\nLarge installation (several GB)\nOutput mainly PDF\n\n\nQuarto\n\nSimple Markdown syntax\nEasy to read and write\nClear error messages\nLightweight installation\nPDF, HTML, Word, slides, websites\n\n\n\n\n\n\n\n\n\nQuarto produces publication-quality PDFs via Typst with no need to install a full TeX distribution!\n\n\n\n\n\nLaTeX\n\\textbf{bold} and \\textit{italic}\n\n\\begin{itemize}\n  \\item First item\n  \\item Second item\n\\end{itemize}\n\n\\section{Introduction}\n\n\\parencite{smith2023}\n\n\n\nQuarto\n**bold** and *italic*\n\n- First item\n- Second item\n\n## Introduction\n\n[@smith2023]\n\n\nSame output quality, much less typing!",
@@ -937,8 +937,8 @@
     ]
   },
   {
-    "objectID": "workshops/quarto-academic-writing-page.html#installation-by-platform",
-    "href": "workshops/quarto-academic-writing-page.html#installation-by-platform",
+    "objectID": "workshops/quarto-academic-writing.html#installation-by-platform",
+    "href": "workshops/quarto-academic-writing.html#installation-by-platform",
     "title": "Quarto for Academic Writing",
     "section": "Installation by platform",
     "text": "Installation by platform\nmacOS\nbrew install quarto\nOr download the installer from quarto.org\nWindows\nwinget install Posit.Quarto\nOr download the installer from quarto.org\nLinux\nDownload the .deb or .rpm package from quarto.org\n# Debian/Ubuntu\nsudo dpkg -i quarto-*.deb",
@@ -947,8 +947,8 @@
     ]
   },
   {
-    "objectID": "workshops/quarto-academic-writing-page.html#pdf-output-with-typst",
-    "href": "workshops/quarto-academic-writing-page.html#pdf-output-with-typst",
+    "objectID": "workshops/quarto-academic-writing.html#pdf-output-with-typst",
+    "href": "workshops/quarto-academic-writing.html#pdf-output-with-typst",
     "title": "Quarto for Academic Writing",
     "section": "PDF output with Typst",
     "text": "PDF output with Typst\nQuarto uses Typst for PDF rendering. It is built in, so there is no need to install a full TeX distribution (saves several GB). Simply set format: typst in your YAML frontmatter.\n---\ntitle: \"My Paper\"\nformat:\n  typst:\n    toc: true\n    number-sections: true\n---\n\n\n\n\n\n\nTypst is fast and produces clean PDFs. It compiles in milliseconds rather than seconds.",
@@ -957,8 +957,8 @@
     ]
   },
   {
-    "objectID": "workshops/quarto-academic-writing-page.html#recommended-editors",
-    "href": "workshops/quarto-academic-writing-page.html#recommended-editors",
+    "objectID": "workshops/quarto-academic-writing.html#recommended-editors",
+    "href": "workshops/quarto-academic-writing.html#recommended-editors",
     "title": "Quarto for Academic Writing",
     "section": "Recommended editors",
     "text": "Recommended editors\n\nZed: A fast, modern editor with Quarto support available through a community extension. Install it from the extensions panel and you are ready to write .qmd files.\nVS Code: With the Quarto extension installed, you get syntax highlighting, an integrated live preview, and autocompletion for YAML options and cross-references.\nRStudio: Has native Quarto support built in, making it a natural choice if you already use R for data analysis or are familiar with the RStudio interface.\n\n\n\n\n\n\n\nAny text editor works with Quarto files since they are just plain text (.qmd files). The editors above simply provide extra convenience features like live preview and autocompletion.",
@@ -967,8 +967,8 @@
     ]
   },
   {
-    "objectID": "workshops/quarto-academic-writing-page.html#yaml-frontmatter",
-    "href": "workshops/quarto-academic-writing-page.html#yaml-frontmatter",
+    "objectID": "workshops/quarto-academic-writing.html#yaml-frontmatter",
+    "href": "workshops/quarto-academic-writing.html#yaml-frontmatter",
     "title": "Quarto for Academic Writing",
     "section": "YAML frontmatter",
     "text": "YAML frontmatter\nEvery Quarto document starts with a YAML header between --- markers. This header controls the title, author, format, and options.\n---\ntitle: \"My Seminar Paper\"\nauthor: \"Jane Doe\"\ndate: today\nbibliography: references.bib\nformat:\n  typst:\n    toc: true\n    number-sections: true\n---\n\n\n\n\n\n\nYAML uses indentation (spaces, not tabs!) to define structure. Be careful with alignment.",
@@ -977,8 +977,8 @@
     ]
   },
   {
-    "objectID": "workshops/quarto-academic-writing-page.html#markdown-syntax-essentials",
-    "href": "workshops/quarto-academic-writing-page.html#markdown-syntax-essentials",
+    "objectID": "workshops/quarto-academic-writing.html#markdown-syntax-essentials",
+    "href": "workshops/quarto-academic-writing.html#markdown-syntax-essentials",
     "title": "Quarto for Academic Writing",
     "section": "Markdown syntax essentials",
     "text": "Markdown syntax essentials\n\n\nSyntax\n# Heading 1\n## Heading 2\n### Heading 3\n\n**bold text**\n*italic text*\n\n- Bullet list\n- Another item\n  - Nested item\n\n1. Numbered list\n2. Second item\n\n[Link text](https://example.com)\n\n\n\nResult\n\nHeading 3\nbold text and italic text\n\nBullet list\nAnother item\n\nNested item\n\n\n\nNumbered list\nSecond item\n\nLink text",
@@ -987,8 +987,8 @@
     ]
   },
   {
-    "objectID": "workshops/quarto-academic-writing-page.html#figures-tables-and-equations",
-    "href": "workshops/quarto-academic-writing-page.html#figures-tables-and-equations",
+    "objectID": "workshops/quarto-academic-writing.html#figures-tables-and-equations",
+    "href": "workshops/quarto-academic-writing.html#figures-tables-and-equations",
     "title": "Quarto for Academic Writing",
     "section": "Figures, tables, and equations",
     "text": "Figures, tables, and equations\nInclude images with captions and cross-reference labels:\n![Caption text](images/figure.png){#fig-example width=\"80%\"}\nReference in text: @fig-example renders as “Figure 1”.\n\n\n\n\n\n\nThe label must start with #fig- for Quarto to recognize it as a figure cross-reference.\n\n\n\nUse pipe tables for simple data presentation:\n| Method | Objective | Time (s) |\n|--------|----------:|:--------:|\n| Exact  |   142.5   |   3.21   |\n| Greedy |   138.7   |   0.05   |\n\n: Comparison of solution methods {#tbl-results}\nReference in text: @tbl-results renders as “Table 1”. The label must start with #tbl- for table cross-references.\n\nInline math: $x^2 + y^2 = z^2$ renders as \\(x^2 + y^2 = z^2\\)\nDisplay math with cross-reference:\n\n$$\n\\min \\sum_{i \\in \\mathcal{I}} \\sum_{j \\in \\mathcal{J}} c_{ij} \\cdot x_{ij}\n$$ {#eq-objective}\n\\[\n\\min \\sum_{i \\in \\mathcal{I}} \\sum_{j \\in \\mathcal{J}} c_{ij} \\cdot x_{ij}\n\\tag{1}\\]\n\nReference in text: @eq-objective renders as “Equation 1”",
@@ -997,8 +997,8 @@
     ]
   },
   {
-    "objectID": "workshops/quarto-academic-writing-page.html#citations-with-bibtex",
-    "href": "workshops/quarto-academic-writing-page.html#citations-with-bibtex",
+    "objectID": "workshops/quarto-academic-writing.html#citations-with-bibtex",
+    "href": "workshops/quarto-academic-writing.html#citations-with-bibtex",
     "title": "Quarto for Academic Writing",
     "section": "Citations with BibTeX",
     "text": "Citations with BibTeX\nStore references in a .bib file and set bibliography: references.bib in YAML. Then use the [@key] syntax to cite:\n\n\n\n\n\n\n\n\nSyntax\nOutput\n\n\n\n\n[@smith2023]\n(Smith, 2023)\n\n\n@smith2023\nSmith (2023)\n\n\n[@smith2023; @jones2024]\n(Smith, 2023; Jones, 2024)\n\n\n[@smith2023, p. 42]\n(Smith, 2023, p. 42)\n\n\n\n\n\n\n\n\n\n\nFor Typst output, use bibliographystyle: apa in your YAML. This uses Typst’s built-in APA style, so no extra .csl file is needed.",
@@ -1007,8 +1007,8 @@
     ]
   },
   {
-    "objectID": "workshops/quarto-academic-writing-page.html#cross-references-overview",
-    "href": "workshops/quarto-academic-writing-page.html#cross-references-overview",
+    "objectID": "workshops/quarto-academic-writing.html#cross-references-overview",
+    "href": "workshops/quarto-academic-writing.html#cross-references-overview",
     "title": "Quarto for Academic Writing",
     "section": "Cross-references overview",
     "text": "Cross-references overview\nQuarto has a unified cross-referencing system:\n\n\n\n\n\n\n\n\n\nElement\nLabel Prefix\nReference Syntax\n\n\n\n\nFigure\n#fig-\n@fig-label\n\n\nTable\n#tbl-\n@tbl-label\n\n\nEquation\n#eq-\n@eq-label\n\n\nSection\n#sec-\n@sec-label\n\n\n\n\n\n\n\n\n\n\nAll cross-references are automatically numbered and updated when you add or remove elements. No more manual numbering!",
@@ -1017,8 +1017,8 @@
     ]
   },
   {
-    "objectID": "workshops/quarto-academic-writing-page.html#cross-references-in-practice",
-    "href": "workshops/quarto-academic-writing-page.html#cross-references-in-practice",
+    "objectID": "workshops/quarto-academic-writing.html#cross-references-in-practice",
+    "href": "workshops/quarto-academic-writing.html#cross-references-in-practice",
     "title": "Quarto for Academic Writing",
     "section": "Cross-references in practice",
     "text": "Cross-references in practice\n![The metro system in Mecca, Saudi Arabia.\n](images/metro.png){#fig-metro width=\"80%\"}\n\nAs shown in @fig-metro, the system connects ...\n\nThe label #fig-metro makes the figure referenceable\n@fig-metro in text becomes “Figure 1” automatically\nWorks with PNG, JPG, SVG, and PDF images\n\n| Instance | Optimal | Heuristic | Gap (%) |\n|----------|--------:|----------:|--------:|\n| Small    |   245   |    248    |   1.2   |\n| Medium   |  1,340  |   1,382   |   3.1   |\n| Large    | 12,450  |  13,102   |   5.2   |\n\n: Computational results {#tbl-computation}\n\nThe results in @tbl-computation show that ...\n\nThe caption goes below the table with : Caption text {#tbl-label}\n\n$$\n\\sum_{j \\in \\mathcal{J}} a_{ij} \\cdot x_{ij}\n  \\leq b_i \\quad \\forall i \\in \\mathcal{I}\n$$ {#eq-capacity}\n\nThe capacity constraint in @eq-capacity ensures ...\n\\[\n\\sum_{j \\in \\mathcal{J}} a_{ij} \\cdot x_{ij} \\leq b_i \\quad \\forall i \\in \\mathcal{I}\n\\tag{2}\\]\n\nThe label {#eq-label} goes right after the closing $$",
@@ -1027,8 +1027,8 @@
     ]
   },
   {
-    "objectID": "workshops/quarto-academic-writing-page.html#embedding-raw-typst",
-    "href": "workshops/quarto-academic-writing-page.html#embedding-raw-typst",
+    "objectID": "workshops/quarto-academic-writing.html#embedding-raw-typst",
+    "href": "workshops/quarto-academic-writing.html#embedding-raw-typst",
     "title": "Quarto for Academic Writing",
     "section": "Embedding raw Typst",
     "text": "Embedding raw Typst\nThe Quarto templates use Typst (not LaTeX) to produce the PDF. For most writing, you only need Markdown. But for advanced formatting, you can embed raw Typst code in a fenced block:\n```{=typst}\n#v(1cm)                          // vertical space\n#text(fill: red)[important]      // colored text\n#align(center)[centered text]    // alignment\n#line(length: 100%)              // horizontal line\n#set text(size: 9pt)             // change font size locally\n```\n\n\n\n\n\n\nTypst is much simpler than LaTeX. See the Typst documentation for the full reference.",
@@ -1037,8 +1037,8 @@
     ]
   },
   {
-    "objectID": "workshops/quarto-academic-writing-page.html#footnotes-and-special-characters",
-    "href": "workshops/quarto-academic-writing-page.html#footnotes-and-special-characters",
+    "objectID": "workshops/quarto-academic-writing.html#footnotes-and-special-characters",
+    "href": "workshops/quarto-academic-writing.html#footnotes-and-special-characters",
     "title": "Quarto for Academic Writing",
     "section": "Footnotes and special characters",
     "text": "Footnotes and special characters\nThis claim needs a source^[See Smith (2023) for details.].\n\nEn-dash for ranges: 5--10 renders as 5–10\nEm-dash for parenthetical remarks: --- renders as —\nNon-breaking space: 16\\ GB keeps the number and unit together",
@@ -1047,8 +1047,8 @@
     ]
   },
   {
-    "objectID": "workshops/quarto-academic-writing-page.html#reference-management-with-zotero",
-    "href": "workshops/quarto-academic-writing-page.html#reference-management-with-zotero",
+    "objectID": "workshops/quarto-academic-writing.html#reference-management-with-zotero",
+    "href": "workshops/quarto-academic-writing.html#reference-management-with-zotero",
     "title": "Quarto for Academic Writing",
     "section": "Reference management with Zotero",
     "text": "Reference management with Zotero\nUse Zotero (free) to manage your references. Export your collection as a .bib file via File → Export Library (or right-click a collection → Export Collection) and select BibTeX as the format. The workflow becomes: save a paper to Zotero, export to .bib, cite in Quarto with [@key]. See the Literature Research workshop for detailed setup instructions.",
@@ -1057,8 +1057,8 @@
     ]
   },
   {
-    "objectID": "workshops/quarto-academic-writing-page.html#writing-best-practices",
-    "href": "workshops/quarto-academic-writing-page.html#writing-best-practices",
+    "objectID": "workshops/quarto-academic-writing.html#writing-best-practices",
+    "href": "workshops/quarto-academic-writing.html#writing-best-practices",
     "title": "Quarto for Academic Writing",
     "section": "Writing best practices",
     "text": "Writing best practices\n\nKeep figures in an images/ folder. A dedicated folder prevents clutter in your project root and makes it straightforward to locate and update graphics later.\nUse quarto preview for live preview while writing. Seeing your rendered output update in real time helps you catch formatting issues early, before they pile up.\nWrite one sentence per line. This makes version control diffs much cleaner, because a change to one sentence shows up as a single changed line rather than a reflow of an entire paragraph.\nUse &lt;!-- comments --&gt; to leave notes for yourself. HTML comments are invisible in the rendered output, so you can mark sections that need revision or leave reminders without affecting the final document.\n\nFor guidance on academic language, paragraph structure, and precision in scientific writing, see the Scientific Writing guide.",
@@ -1067,8 +1067,8 @@
     ]
   },
   {
-    "objectID": "workshops/quarto-academic-writing-page.html#templates",
-    "href": "workshops/quarto-academic-writing-page.html#templates",
+    "objectID": "workshops/quarto-academic-writing.html#templates",
+    "href": "workshops/quarto-academic-writing.html#templates",
     "title": "Quarto for Academic Writing",
     "section": "Templates",
     "text": "Templates\nReady-to-use templates for seminar papers, bachelor theses, and master theses are available on the Templates page. Download them there, then come back to this workshop for the formatting syntax.\n\n\n\n\n\n\nNoteTakeaway\n\n\n\nQuarto lets you focus on content, not formatting. Write your ideas in simple Markdown, and Quarto handles the rest: citations, cross-references, numbering, and clean PDF output.",
