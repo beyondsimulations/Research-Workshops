@@ -25,6 +25,7 @@ project:
 website:
   title: "Scientific Research Workshops"
   repo-url: https://github.com/beyondsimulations/Scientific-Research-Workshops
+  repo-branch: main
   repo-actions: [edit, source, issue]
   site-url: https://beyondsimulations.github.io/Scientific-Research-Workshops
   bread-crumbs: true
@@ -85,6 +86,16 @@ format:
     code-overflow: wrap
     include-in-header:
       - general/header.html
+    include-after-body:
+      text: |
+        <script src="https://agents.byndsim.com/static/floating-chat.js?v=9497b10c"></script>
+        <script>
+        new UniversalChatWidget({
+          "apiEndpoint": "https://chat.byndsim.com/chat",
+          "model": "thesis-helper",
+          "configUrl": "https://agents.byndsim.com/api/widget-config/thesis-helper"
+        });
+        </script>
 
 execute:
   freeze: auto
