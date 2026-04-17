@@ -12,6 +12,7 @@ project:
     - general/templates.qmd
     - general/literature.qmd
     - general/privacy.qmd
+    - general/faq.qmd
   resources:
     - templates/seminar-paper-en.qmd
     - templates/seminar-paper-de.qmd
@@ -55,6 +56,8 @@ website:
         href: general/templates.qmd
       - text: "Resources"
         href: general/literature.qmd
+      - text: "FAQs"
+        href: general/faq.qmd
 
   page-footer:
     center: "Scientific Research Workshops, Tobias Vlćek</br>CC BY-NC-SA 4.0"

@@ -1,0 +1,55 @@
+---
+title: "Frequently Asked Questions"
+subtitle: "Common questions from students about seminars and theses"
+author: "Dr. Tobias Vlćek"
+---
+
+This page collects the questions we get asked most often. If your question is not covered here, contact me at [tobias.vlcek@uni-hamburg.de](mailto:tobias.vlcek@uni-hamburg.de?subject=Question%3A%20%3CYour%20subject%3E).
+
+# Topics and supervision
+
+* **How do I get a topic for a seminar paper or thesis?**
+  Topics are announced and assigned via STiNE at the start of each semester. For seminar papers, the kickoff session walks through the available topics and how the assignment works. For a bachelor or master thesis, get in touch by email if you are interested in a topic from one of our research areas, and we will discuss whether and how it can be supervised.
+
+* **What is the kickoff session, and what if I miss it?**
+  The kickoff is for seminars only and is mandatory. It covers everything you need for the semester: available topics, deadlines, formal requirements, and supervisor assignments. If you already know in advance that you cannot attend, drop us a short email so we can keep you on the list and make sure you receive the materials. If we do not hear from you during the first weeks of the semester, we treat this as a sign that you are no longer participating and take you off our internal list. As a general principle, it is up to the students to stay informed at university level. We do not chase individual students with reminders. For bachelor and master theses there is no kickoff. The equivalent is the first meeting with your supervisor, where scope, methodology, and timeline are agreed.
+
+* **How often should I meet with my supervisor?**
+  That depends on your topic and where you are in the process, so the best is to agree on a rhythm in the first meeting. A common pattern is one meeting at the start, one after the literature review, one before the main analysis, and one before submission, with shorter check-ins by email in between. If something is unclear, get in touch early. Course corrections in week two are cheap. In week ten they are expensive.
+
+* **Can I change my topic or supervisor after I have started?**
+  Minor scope adjustments happen regularly and can usually be sorted out directly with your supervisor. A full topic change after registration is only possible in exceptional cases and should be raised with us as early as possible. The same applies to changing supervisors.
+
+# Format and language
+
+* **In which language do I write the paper and hold the presentation?**
+  For seminar papers, the language for both the written paper and the presentation follows what was set for the course. For bachelor and master theses, you can submit in either English or German. There is no presentation requirement for bachelor or master theses at our institute.
+
+* **Do I have to use Quarto, Typst, or LaTeX?**
+  Word is technically possible, but we strongly advise against it. From experience, it causes trouble in the final stages, and the resulting PDF often has formatting problems that can affect your grade. Our [templates](templates.html) are built around Quarto with Typst, which produces clean output without a LaTeX installation. A LaTeX template is also available if you prefer.
+
+* **How long should my paper be?**
+  Seminar papers run 14 to 18 pages, bachelor theses 26 to 40, master theses 38 to 50 (excluding title page and table of contents, but including images, tables, and references). See the [Templates](templates.html) page for the full breakdown. Cover the essential points rather than padding to hit a number.
+
+* **I am stuck with Quarto, Typst, or LaTeX. What now?**
+  First, try working through the issue with a large language model like Claude or Mistral. They are very good at solving these kinds of problems, especially if you paste in the exact error message and the relevant snippet of your file. If that does not get you anywhere, book an appointment and we can look at it together.
+
+# Working with literature and AI
+
+* **How should I manage my references?**
+  We recommend [Zotero](https://www.zotero.org/): it is free, runs on every platform, and works directly with Quarto and LaTeX through BibTeX. The [Literature Research](../workshops/literature-research.html) workshop walks through the full setup, from saving papers with the browser connector to citing them in your `.qmd` file with `[@key]`.
+
+* **Can I use AI tools while writing my paper?**
+  Yes, with care, and every tool you use must be declared in the AI tools section of the template. Use LLMs to clean up sentences you have already drafted, to critique your work as if the feedback came from your supervisor, or to brainstorm. Do not use them to produce sections you did not think through yourself, and never use them for citations: they regularly invent references that look plausible but do not exist. Always verify every citation against the original source. The [Scientific Writing](scientific-writing.html) guide and the [Working with AI](../workshops/large-language-models.html) workshop go into more depth.
+
+# Submission and deadlines
+
+* **How do I submit my final work?**
+  Bachelor and master theses are submitted through the examination office; the formal procedure is documented on the faculty website. Seminar papers are submitted directly to your supervisor by the deadline announced in the kickoff. Submit a PDF, not a Word file.
+
+* **What happens if I cannot meet the deadline?**
+  For bachelor and master theses, deadlines are formal and can only be extended through the examination office, usually with a medical certificate. For seminar papers, extensions are not possible: missing the deadline means failing this attempt and retaking the seminar in a later semester. Plan accordingly and start early.
+
+# Still have questions?
+
+If your question is not covered above, contact me at [tobias.vlcek@uni-hamburg.de](mailto:tobias.vlcek@uni-hamburg.de?subject=Question%3A%20%3CYour%20subject%3E).
